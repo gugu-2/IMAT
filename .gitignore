@@ -26,3 +26,6 @@ process_*.js
 generate_*.js
 fix_*.py
 temp_*
+build_clean_testas.js
+test_no_undefined.js
+update_imat.js
