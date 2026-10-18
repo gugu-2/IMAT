@@ -10,10 +10,10 @@
  */
 
 // Optional: Manual MySQL credentials (ONLY needed if you want custom MySQL instead of auto-SQLite)
-$custom_db_host = '';             // Leave blank for 100% automated zero-config SQLite
-$custom_db_name = '';             // Leave blank for 100% automated zero-config SQLite
-$custom_db_user = '';             // Leave blank for 100% automated zero-config SQLite
-$custom_db_pass = '';             // Leave blank for 100% automated zero-config SQLite
+$custom_db_host = 'localhost';             // Leave blank for 100% automated zero-config SQLite
+$custom_db_name = 'u713031512_sofia44martin';             // Leave blank for 100% automated zero-config SQLite
+$custom_db_user = 'u713031512_hypasia45space';             // Leave blank for 100% automated zero-config SQLite
+$custom_db_pass = 'YOUR_HOSTINGER_DB_PASSWORD_HERE';             // Leave blank for 100% automated zero-config SQLite
 
 // Optional API Secret Key (Leave blank for open multi-device access)
 define('IMAT_API_KEY', '');
