@@ -29,3 +29,6 @@ temp_*
 build_clean_testas.js
 test_no_undefined.js
 update_imat.js
+build_detailed_solutions.js
+analyze_bank.js
+unique_stems.json
