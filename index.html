@@ -146,6 +146,19 @@
     <header class="h-20 bg-white/80 backdrop-blur-md border-b border-[#EAECEF] px-8 flex items-center justify-between sticky top-0 z-30">
       <div class="flex items-center gap-6">
 
+        <!-- EXAM ECOSYSTEM SWITCHER (IMAT to TestAS) -->
+        <div class="flex items-center bg-slate-100 p-1 rounded-2xl border border-slate-200 shadow-inner">
+          <button id="exam-toggle-imat" onclick="switchExamMode('imat')" class="px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-amber-400 shadow-sm flex items-center gap-1.5" title="Switch to IMAT (Italian Medicine & Surgery)">
+            <span>🇮🇹</span>
+            <span>IMAT</span>
+            <span class="text-[10px] text-amber-300/80 font-mono hidden md:inline">Italy MD</span>
+          </button>
+          <button id="exam-toggle-testas" onclick="switchExamMode('testas')" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-500 hover:text-slate-900 transition-all flex items-center gap-1.5" title="Switch to TestAS (German Bachelor Admissions)">
+            <span>🇩🇪</span>
+            <span>TestAS</span>
+            <span class="text-[10px] text-slate-400 font-mono hidden md:inline">Germany BSc</span>
+          </button>
+        </div>
         <div class="min-w-max">
           <h1 id="app-view-title" class="text-xl font-bold text-slate-900 tracking-tight whitespace-nowrap">Solar Insights Cockpit</h1>
           <p id="app-view-subtitle" class="text-xs text-slate-400 font-medium whitespace-nowrap">Italian Medicine & Surgery (MUR IMAT)</p>
@@ -5501,6 +5514,1387 @@ ight)$
 
     
     
+    // ==========================================
+    // TESTAS ECOSYSTEM DATA & ENGINE (GERMANY BSC)
+    // ==========================================
+    const testasBundle = {
+  "syllabus": [
+    {
+      "id": "tas_quant_01",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Mental arithmetic & fraction-decimal speed conversion",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_02",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Percentage increase, decrease & compounded markups",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_03",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Direct and inverse proportionality word problems",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_04",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Ratios & multi-substance mixture problems (Alligation)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_05",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Work rate & pipe filling/emptying equations (1/t1 + 1/t2)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_06",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Speed, distance & time (relative velocity & average speed)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_07",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Linear systems & simultaneous equations in word scenarios",
+      "stars": 4,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_08",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Geometric perimeter, area & volume optimization",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_09",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Simple interest, profit-loss margins & currency rates",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_quant_10",
+      "subject": "TestAS Core",
+      "chapter": "1. Quantitative Problems",
+      "title": "Combinatorics (Permutations & combinations in sets)",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_rel_01",
+      "subject": "TestAS Core",
+      "chapter": "2. Inferring Relationships",
+      "title": "Part-to-whole & whole-to-part analogies",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_rel_02",
+      "subject": "TestAS Core",
+      "chapter": "2. Inferring Relationships",
+      "title": "Cause-and-effect & chronological sequence analogies",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_rel_03",
+      "subject": "TestAS Core",
+      "chapter": "2. Inferring Relationships",
+      "title": "Tool-to-function & professional-to-object pairs",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_rel_04",
+      "subject": "TestAS Core",
+      "chapter": "2. Inferring Relationships",
+      "title": "Synonym, antonym & degree of intensity hierarchies",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_rel_05",
+      "subject": "TestAS Core",
+      "chapter": "2. Inferring Relationships",
+      "title": "Taxonomic superordinate-subordinate categorization",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_rel_06",
+      "subject": "TestAS Core",
+      "chapter": "2. Inferring Relationships",
+      "title": "Dual-gap verbal analogies (A : ___ = ___ : D)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_rel_07",
+      "subject": "TestAS Core",
+      "chapter": "2. Inferring Relationships",
+      "title": "Scientific & academic vocabulary analogies in English",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_pat_01",
+      "subject": "TestAS Core",
+      "chapter": "3. Completing Patterns",
+      "title": "Clockwise & counterclockwise rotational transformations",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_pat_02",
+      "subject": "TestAS Core",
+      "chapter": "3. Completing Patterns",
+      "title": "Horizontal & vertical axis reflection symmetry",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_pat_03",
+      "subject": "TestAS Core",
+      "chapter": "3. Completing Patterns",
+      "title": "Figural addition, subtraction & superimposition (XOR logic)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_pat_04",
+      "subject": "TestAS Core",
+      "chapter": "3. Completing Patterns",
+      "title": "Shading, hatching & color alternation progressions",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_pat_05",
+      "subject": "TestAS Core",
+      "chapter": "3. Completing Patterns",
+      "title": "Element count & dot-line quantitative sequences",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_pat_06",
+      "subject": "TestAS Core",
+      "chapter": "3. Completing Patterns",
+      "title": "3x3 Matrix row-by-row vs column-by-column rule synthesis",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_num_01",
+      "subject": "TestAS Core",
+      "chapter": "4. Number Series",
+      "title": "Single-operation arithmetic progressions (+k, -k, *k, /k)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_num_02",
+      "subject": "TestAS Core",
+      "chapter": "4. Number Series",
+      "title": "Alternating two-rule sequences (e.g. +3, *2, +3, *2)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_num_03",
+      "subject": "TestAS Core",
+      "chapter": "4. Number Series",
+      "title": "Two-tier interleaved independent sub-series (indices 1,3,5 vs 2,4,6)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_num_04",
+      "subject": "TestAS Core",
+      "chapter": "4. Number Series",
+      "title": "Difference of differences series (second-order delta)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_num_05",
+      "subject": "TestAS Core",
+      "chapter": "4. Number Series",
+      "title": "Fibonacci summation variants (T_n = T_{n-1} + T_{n-2})",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_num_06",
+      "subject": "TestAS Core",
+      "chapter": "4. Number Series",
+      "title": "Square & cube power offset patterns (n^2 +/- k)",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_min_01",
+      "subject": "MIN Module",
+      "chapter": "5. MIN: Scientific Interrelationships",
+      "title": "Reading multi-variable experimental curves & phase diagrams",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_min_02",
+      "subject": "MIN Module",
+      "chapter": "5. MIN: Scientific Interrelationships",
+      "title": "Enzymatic Michaelis-Menten kinetics & Lineweaver-Burk plots",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_min_03",
+      "subject": "MIN Module",
+      "chapter": "5. MIN: Scientific Interrelationships",
+      "title": "Chemical equilibrium shifts & Le Chatelier curve extraction",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_min_04",
+      "subject": "MIN Module",
+      "chapter": "5. MIN: Scientific Interrelationships",
+      "title": "Physics kinematics & force-displacement integral interpretations",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_min_05",
+      "subject": "MIN Module",
+      "chapter": "6. MIN: Formal Depictions",
+      "title": "Flowchart algorithm tracing & variable state tracking tables",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_min_06",
+      "subject": "MIN Module",
+      "chapter": "6. MIN: Formal Depictions",
+      "title": "Boolean logic networks (AND, OR, NOT, XOR truth tables)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_min_07",
+      "subject": "MIN Module",
+      "chapter": "6. MIN: Formal Depictions",
+      "title": "Decision trees & state transition finite automata (DFA/NFA)",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_eng_01",
+      "subject": "Engineering Module",
+      "chapter": "7. Engineering: Technical Relationships",
+      "title": "Mechanical levers, gears, torque & pulley balance ratios",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_eng_02",
+      "subject": "Engineering Module",
+      "chapter": "7. Engineering: Technical Relationships",
+      "title": "Thermodynamic heat engine cycles & fluid flow continuity",
+      "stars": 4,
+      "tier": 2,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_eng_03",
+      "subject": "Engineering Module",
+      "chapter": "8. Engineering: Visualizing Solids",
+      "title": "Orthographic 3D projections (Top, Front, and Side views)",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    },
+    {
+      "id": "tas_eng_04",
+      "subject": "Engineering Module",
+      "chapter": "8. Engineering: Visualizing Solids",
+      "title": "Folded nets of cubes, prisms, pyramids & cross-sections",
+      "stars": 5,
+      "tier": 1,
+      "status": "not_started"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tas_t1",
+      "title": "Timed Number Series Speed Sprint (22 Qs in 25 min)",
+      "subject": "TestAS Core",
+      "day": "Mon",
+      "time": "08:30 - 10:00 AM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Core Test"
+    },
+    {
+      "id": "tas_t2",
+      "title": "Quantitative Problems: Mixture & Work Rates",
+      "subject": "TestAS Core",
+      "day": "Mon",
+      "time": "14:00 - 16:30 PM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Problem Set"
+    },
+    {
+      "id": "tas_t3",
+      "title": "Inferring Relationships: Rapid Verbal Analogies",
+      "subject": "TestAS Core",
+      "day": "Tue",
+      "time": "08:30 - 10:00 AM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Speed Drill"
+    },
+    {
+      "id": "tas_t4",
+      "title": "Completing Patterns: 3x3 Matrix Transformations",
+      "subject": "TestAS Core",
+      "day": "Tue",
+      "time": "14:00 - 16:30 PM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Core Test"
+    },
+    {
+      "id": "tas_t5",
+      "title": "MIN Module: Scientific Curve & Graph Interpretations",
+      "subject": "MIN Module",
+      "day": "Wed",
+      "time": "08:30 - 11:30 AM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Subject Module"
+    },
+    {
+      "id": "tas_t6",
+      "title": "Flowchart Algorithm Tracing & Variable Tables",
+      "subject": "MIN Module",
+      "day": "Wed",
+      "time": "14:00 - 16:30 PM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Subject Module"
+    },
+    {
+      "id": "tas_t7",
+      "title": "Engineering Module: 3D Orthographic Views (Top/Side)",
+      "subject": "Engineering Module",
+      "day": "Thu",
+      "time": "08:30 - 11:30 AM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Subject Module"
+    },
+    {
+      "id": "tas_t8",
+      "title": "Quantitative Word Problems: Proportions & Percentages",
+      "subject": "TestAS Core",
+      "day": "Thu",
+      "time": "14:00 - 16:30 PM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Core Test"
+    },
+    {
+      "id": "tas_t9",
+      "title": "Mixed Interleaved Number Series (Two-Tier Rules)",
+      "subject": "TestAS Core",
+      "day": "Fri",
+      "time": "08:30 - 10:30 AM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Speed Drill"
+    },
+    {
+      "id": "tas_t10",
+      "title": "Technical Systems: Levers, Pulleys & Mechanical Advantage",
+      "subject": "Engineering Module",
+      "day": "Fri",
+      "time": "14:00 - 16:30 PM",
+      "tier": 2,
+      "status": "not_started",
+      "tag": "Subject Module"
+    },
+    {
+      "id": "tas_t11",
+      "title": "Full Official TestAS Simulation (Core + MIN Module, 3.5 hrs)",
+      "subject": "TestAS Core",
+      "day": "Sat",
+      "time": "09:00 - 12:30 PM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Simulation"
+    },
+    {
+      "id": "tas_t12",
+      "title": "Detailed Error Analysis & Standard Score Mapping",
+      "subject": "TestAS Core",
+      "day": "Sun",
+      "time": "14:00 - 16:30 PM",
+      "tier": 1,
+      "status": "not_started",
+      "tag": "Analysis"
+    }
+  ],
+  "specializations": [
+    {
+      "subject": "Quantitative Problems",
+      "weight": "25.0% Core",
+      "maxPts": "22 Qs (45m)",
+      "qCount": 22,
+      "accuracy": 0,
+      "delta": "+0%",
+      "strengths": "Unrated (Slide to set baseline)",
+      "weak": "Awaiting Diagnostic",
+      "color": "amber"
+    },
+    {
+      "subject": "Inferring Relationships",
+      "weight": "25.0% Core",
+      "maxPts": "22 Qs (10m)",
+      "qCount": 22,
+      "accuracy": 0,
+      "delta": "+0%",
+      "strengths": "Unrated (Slide to set baseline)",
+      "weak": "Awaiting Diagnostic",
+      "color": "purple"
+    },
+    {
+      "subject": "Completing Patterns",
+      "weight": "25.0% Core",
+      "maxPts": "22 Qs (20m)",
+      "qCount": 22,
+      "accuracy": 0,
+      "delta": "+0%",
+      "strengths": "Unrated (Slide to set baseline)",
+      "weak": "Awaiting Diagnostic",
+      "color": "indigo"
+    },
+    {
+      "subject": "Number Series",
+      "weight": "25.0% Core",
+      "maxPts": "22 Qs (25m)",
+      "qCount": 22,
+      "accuracy": 0,
+      "delta": "+0%",
+      "strengths": "Unrated (Slide to set baseline)",
+      "weak": "Awaiting Diagnostic",
+      "color": "emerald"
+    },
+    {
+      "subject": "MIN / Engineering Module",
+      "weight": "Subject Module",
+      "maxPts": "44 Qs (145m)",
+      "qCount": 44,
+      "accuracy": 0,
+      "delta": "+0%",
+      "strengths": "Unrated (Slide to set baseline)",
+      "weak": "Awaiting Diagnostic",
+      "color": "cyan"
+    }
+  ],
+  "universities": [
+    {
+      "name": "Technical University of Munich (TUM)",
+      "city": "Munich, Bavaria",
+      "flagship": "B.Sc. Informatics, B.Sc. Management & Tech, Mechanical Engineering",
+      "standardScoreCutoff": 115,
+      "percentileCutoff": "Top 7%",
+      "ncBonus": "-0.3 to -0.5 grade boost on Abitur scale",
+      "badge": "Top University in Germany (QS #28)",
+      "moduleRequired": "MIN or Engineering Module"
+    },
+    {
+      "name": "RWTH Aachen University",
+      "city": "Aachen, North Rhine-Westphalia",
+      "flagship": "B.Sc. Mechanical Engineering, Electrical Eng, Computer Science",
+      "standardScoreCutoff": 110,
+      "percentileCutoff": "Top 16%",
+      "ncBonus": "Direct quota allocation for TestAS >= 110",
+      "badge": "Germany's Leading Tech University (TU9)",
+      "moduleRequired": "Engineering or MIN Module"
+    },
+    {
+      "name": "Heidelberg University (Ruprecht-Karls-Universität)",
+      "city": "Heidelberg, Baden-Württemberg",
+      "flagship": "B.Sc. Biosciences, B.Sc. Computer Science, Medicine (Intl Quota)",
+      "standardScoreCutoff": 118,
+      "percentileCutoff": "Top 4%",
+      "ncBonus": "Crucial differentiator in selection interview rank",
+      "badge": "Oldest University in Germany (Founded 1386)",
+      "moduleRequired": "MIN Module"
+    },
+    {
+      "name": "Karlsruhe Institute of Technology (KIT)",
+      "city": "Karlsruhe, Baden-Württemberg",
+      "flagship": "B.Sc. Informatics, B.Sc. Chemical & Process Engineering",
+      "standardScoreCutoff": 112,
+      "percentileCutoff": "Top 12%",
+      "ncBonus": "+15 points in academic ranking formula",
+      "badge": "National Research Center (Helmholtz Association)",
+      "moduleRequired": "MIN or Engineering Module"
+    },
+    {
+      "name": "LMU Munich (Ludwig-Maximilians-Universität)",
+      "city": "Munich, Bavaria",
+      "flagship": "B.Sc. Business Administration, Data Science, Physics",
+      "standardScoreCutoff": 110,
+      "percentileCutoff": "Top 16%",
+      "ncBonus": "Converts directly to bonus credits in admission assessment",
+      "badge": "Excellence University",
+      "moduleRequired": "Economics or MIN Module"
+    },
+    {
+      "name": "TU Berlin (Technische Universität Berlin)",
+      "city": "Berlin",
+      "flagship": "B.Sc. Computer Engineering, Architecture, Industrial Engineering",
+      "standardScoreCutoff": 108,
+      "percentileCutoff": "Top 21%",
+      "ncBonus": "Guaranteed selection tier for standard score > 105",
+      "badge": "Capital Hub of Innovation",
+      "moduleRequired": "Engineering Module"
+    },
+    {
+      "name": "University of Cologne (Universität zu Köln)",
+      "city": "Cologne, North Rhine-Westphalia",
+      "flagship": "B.Sc. Economics, Social Sciences, Management",
+      "standardScoreCutoff": 105,
+      "percentileCutoff": "Top 30%",
+      "ncBonus": "Standard score replaces local assessment test",
+      "badge": "Top Economics Faculty in Germany",
+      "moduleRequired": "Economics Module"
+    }
+  ],
+  "questions": [
+    {
+      "id": "tas_q_num_01",
+      "subtest": "Number Series",
+      "title": "Two-Tier Alternating Rule Series",
+      "question": "What number continues the series logically? 3, 6, 11, 18, 27, 38, ?",
+      "options": [
+        "A) 49",
+        "B) 51",
+        "C) 50",
+        "D) 52",
+        "E) 48"
+      ],
+      "correctIndex": 1,
+      "explanation": "Compute the first differences between consecutive terms: 6 - 3 = 3; 11 - 6 = 5; 18 - 11 = 7; 27 - 18 = 9; 38 - 27 = 11. The differences are consecutive odd prime numbers: +3, +5, +7, +9, +11. The next difference must be +13. Therefore: 38 + 13 = 51.",
+      "trapAlert": "TestAS Examiner Trap: Do not jump to squares (n^2 + 2: 1+2=3, 4+2=6, 9+2=11, 16+2=18, 25+2=27, 36+2=38 -> 49+2=51). Both methods yield 51, confirming the answer!"
+    },
+    {
+      "id": "tas_q_num_02",
+      "subtest": "Number Series",
+      "title": "Interleaved Sub-Series (Even & Odd Positions)",
+      "question": "Find the missing number in the following sequence: 4, 18, 8, 15, 12, 12, 16, 9, 20, ?",
+      "options": [
+        "A) 6",
+        "B) 7",
+        "C) 8",
+        "D) 5",
+        "E) 10"
+      ],
+      "correctIndex": 0,
+      "explanation": "This is an interleaved double-sequence: Odd positions (1st, 3rd, 5th, 7th, 9th): 4, 8, 12, 16, 20 (rule: +4). Even positions (2nd, 4th, 6th, 8th, 10th): 18, 15, 12, 9, ? (rule: -3). The 10th position is in the even series: 9 - 3 = 6.",
+      "trapAlert": "When a sequence oscillates up and down, immediately separate it into odd and even index positions!"
+    },
+    {
+      "id": "tas_q_num_03",
+      "subtest": "Number Series",
+      "title": "Alternating Operations (*2, -3)",
+      "question": "What is the next number in this sequence? 5, 10, 7, 14, 11, 22, 19, ?",
+      "options": [
+        "A) 38",
+        "B) 35",
+        "C) 26",
+        "D) 36",
+        "E) 23"
+      ],
+      "correctIndex": 0,
+      "explanation": "Observe the step operations between successive numbers: 5 -> 10 (*2); 10 -> 7 (-3); 7 -> 14 (*2); 14 -> 11 (-3); 11 -> 22 (*2); 22 -> 19 (-3). The pattern is alternating *2 and -3. The next operation is *2: 19 * 2 = 38.",
+      "trapAlert": "TestAS time management: Recognizing *k and -c takes under 15 seconds if you compare adjacent ratios and differences."
+    },
+    {
+      "id": "tas_q_quant_01",
+      "subtest": "Quantitative Problems",
+      "title": "Work Rate & Machine Output",
+      "question": "Pump A fills a water reservoir in 6 hours. Pump B fills the same reservoir in 9 hours. If both pumps operate simultaneously, how many hours will it take to fill the reservoir completely?",
+      "options": [
+        "A) 3.6 hours (3h 36min)",
+        "B) 7.5 hours",
+        "C) 4.0 hours",
+        "D) 3.0 hours",
+        "E) 4.5 hours"
+      ],
+      "correctIndex": 0,
+      "explanation": "In 1 hour, Pump A fills 1/6 of the reservoir, and Pump B fills 1/9. Combined rate in 1 hour = 1/6 + 1/9 = 3/18 + 2/18 = 5/18 of the reservoir per hour. Total time required = 1 / (5/18) = 18 / 5 = 3.6 hours. 0.6 hours = 0.6 * 60 = 36 minutes -> 3 hours 36 minutes.",
+      "trapAlert": "Never take the average of times (6 + 9)/2 = 7.5 hrs! When working together, the time must be LESS than the fastest single pump (less than 6 hours)."
+    },
+    {
+      "id": "tas_q_quant_02",
+      "subtest": "Quantitative Problems",
+      "title": "Mixture & Concentration Alligation",
+      "question": "A chemical technician mixes 40 liters of a 15% acid solution with 60 liters of a 35% acid solution. What is the acid concentration of the resulting mixture?",
+      "options": [
+        "A) 25%",
+        "B) 27%",
+        "C) 26%",
+        "D) 28%",
+        "E) 30%"
+      ],
+      "correctIndex": 1,
+      "explanation": "Pure acid in first solution = 40 L * 0.15 = 6.0 L. Pure acid in second solution = 60 L * 0.35 = 21.0 L. Total pure acid = 6.0 + 21.0 = 27.0 L. Total volume of mixture = 40 + 60 = 100 L. Concentration = (27.0 L / 100 L) * 100% = 27%.",
+      "trapAlert": "Because the total volume is 100 L, the total acid directly equals the percentage without further division!"
+    },
+    {
+      "id": "tas_q_quant_03",
+      "subtest": "Quantitative Problems",
+      "title": "Relative Speed & Distance",
+      "question": "Two commuter trains leave Munich and Stuttgart, 220 km apart, traveling toward each other on parallel tracks at 08:00 AM. Train A travels at 60 km/h and Train B travels at 50 km/h. At what time will they meet?",
+      "options": [
+        "A) 09:45 AM",
+        "B) 10:00 AM",
+        "C) 10:15 AM",
+        "D) 10:30 AM",
+        "E) 09:30 AM"
+      ],
+      "correctIndex": 1,
+      "explanation": "When traveling toward each other, relative approach speed = vA + vB = 60 + 50 = 110 km/h. Time to meet = Distance / Relative Speed = 220 km / 110 km/h = 2.0 hours. Meeting time = 08:00 AM + 2 hours = 10:00 AM.",
+      "trapAlert": "When moving toward each other, ADD speeds. When one pursues the other in the same direction, SUBTRACT speeds."
+    },
+    {
+      "id": "tas_q_rel_01",
+      "subtest": "Inferring Relationships",
+      "title": "Dual-Gap Conceptual Analogy",
+      "question": "Find the word pair that completes the analogy: [ ___ : Physician = Blueprint : ___ ]",
+      "options": [
+        "A) Stethoscope : Architect",
+        "B) Hospital : Building",
+        "C) Diagnosis : Architect",
+        "D) Scalpel : Engineer",
+        "E) Patient : Construction"
+      ],
+      "correctIndex": 2,
+      "explanation": "Analyze the semantic relationship: A Physician produces or formulates a Diagnosis to guide treatment; an Architect produces or draws a Blueprint to guide construction. In both cases, the professional creates a foundational formal plan/analysis.",
+      "trapAlert": "Choice A is tempting, but a stethoscope is a physical tool, whereas a blueprint is a planned intellectual design, not a tool."
+    },
+    {
+      "id": "tas_q_rel_02",
+      "subtest": "Inferring Relationships",
+      "title": "Tool to Operation Analogy",
+      "question": "Scalpel : Incision = Chisel : ?",
+      "options": [
+        "A) Sculpture",
+        "B) Carving",
+        "C) Marble",
+        "D) Hammer",
+        "E) Painter"
+      ],
+      "correctIndex": 1,
+      "explanation": "A scalpel is the specific sharp handheld cutting instrument used to produce an incision (the direct action/cut). A chisel is the specific sharp handheld cutting instrument used to produce a carving (the direct action/cut).",
+      "trapAlert": "Sculpture is the final finished object, whereas carving is the direct cutting action, matching incision."
+    },
+    {
+      "id": "tas_q_pat_01",
+      "subtest": "Completing Patterns",
+      "title": "3x3 Matrix Transformation (XOR Overlap)",
+      "question": "In a 3x3 pattern matrix, Row 1 contains a vertical bar and a horizontal bar combining into a plus sign (+). In Row 2, a diagonal forward slash and backslash combine into an X. In Row 3, an open square and a center dot combine. What rule governs the third column?",
+      "options": [
+        "A) 90-degree counterclockwise rotation",
+        "B) Superimposition / addition of features from Column 1 and Column 2",
+        "C) Subtraction of overlapping black pixels",
+        "D) Color inversion of background",
+        "E) Diagonal reflection"
+      ],
+      "correctIndex": 1,
+      "explanation": "The rule across each horizontal row is feature addition (superimposition): Element in Column 1 is superimposed onto the Element in Column 2 to generate the final compound figure in Column 3.",
+      "trapAlert": "TestAS abstract matrices almost always use either: 1) Rotation progression (45 or 90 deg), 2) Element arithmetic (Count1 + Count2 = Count3), or 3) Boolean logic (OR / XOR addition/subtraction)."
+    },
+    {
+      "id": "tas_q_min_01",
+      "subtest": "MIN Module",
+      "title": "Scientific Curve Analysis (Reaction Kinetics)",
+      "question": "A biological experiment measures substrate concentration [S] vs reaction rate V for an enzyme at pH 7.4. At very high [S], the curve levels off asymptotically to a plateau. What biological phenomenon explains this plateau?",
+      "options": [
+        "A) The substrate undergoes spontaneous thermal denaturation.",
+        "B) All active sites of the enzyme molecules are saturated with substrate (reaching Vmax).",
+        "C) The activation energy of the reaction increases exponentially.",
+        "D) The enzyme changes into an irreversible competitive inhibitor.",
+        "E) Water molecules displace the cofactors."
+      ],
+      "correctIndex": 1,
+      "explanation": "At high substrate concentrations ([S] >> Km), every active site of the enzyme molecules in solution is continually occupied by substrate. The rate of product formation is limited solely by the catalytic turnover rate kcat of the enzyme, producing an asymptotic maximum velocity (Vmax).",
+      "trapAlert": "The enzyme is not damaged or denatured; it is simply operating at 100% capacity (saturation)."
+    },
+    {
+      "id": "tas_q_min_02",
+      "subtest": "MIN Module",
+      "title": "Flowchart Algorithm Trace",
+      "question": "Consider the flowchart loop: Start with X = 1, Y = 10. Step 1: If X >= Y, output X and STOP. Step 2: X = X + 3. Step 3: Y = Y - 1. Step 4: Go back to Step 1. What value of X is output when the algorithm terminates?",
+      "options": [
+        "A) 10",
+        "B) 13",
+        "C) 7",
+        "D) 12",
+        "E) 16"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trace iterations in a table: Init: X=1, Y=10. Test X>=Y (1>=10? False). Iteration 1: X=1+3=4, Y=10-1=9. Test: 4>=9? False. Iteration 2: X=4+3=7, Y=9-1=8. Test: 7>=8? False. Iteration 3: X=7+3=10, Y=8-1=7. Test: 10>=7? TRUE! Output X = 10 and STOP.",
+      "trapAlert": "Always trace line by line on scrap paper! At Iteration 3, X becomes 10 and Y becomes 7. Since 10 >= 7 is true, the algorithm stops and outputs 10."
+    }
+  ]
+};
+
+    let currentExamMode = localStorage.getItem('active_exam_mode') || 'imat';
+
+    // Store separate progress state for TestAS
+    let testasSyllabus = [];
+    try {
+      const savedTasSyllabus = localStorage.getItem('testas_master_syllabus');
+      if (savedTasSyllabus) {
+        testasSyllabus = JSON.parse(savedTasSyllabus);
+      } else {
+        testasSyllabus = JSON.parse(JSON.stringify(testasBundle.syllabus));
+      }
+    } catch(e) { testasSyllabus = JSON.parse(JSON.stringify(testasBundle.syllabus)); }
+
+    let testasTasks = [];
+    try {
+      const savedTasTasks = localStorage.getItem('testas_timetable_tasks');
+      if (savedTasTasks) {
+        testasTasks = JSON.parse(savedTasTasks);
+      } else {
+        testasTasks = JSON.parse(JSON.stringify(testasBundle.tasks));
+      }
+    } catch(e) { testasTasks = JSON.parse(JSON.stringify(testasBundle.tasks)); }
+
+    let testasSpecializations = JSON.parse(JSON.stringify(testasBundle.specializations));
+    try {
+      const savedTasSpecs = localStorage.getItem('testas_specializations');
+      if (savedTasSpecs) testasSpecializations = JSON.parse(savedTasSpecs);
+    } catch(e) {}
+
+    let testasQuestionsState = {};
+    try {
+      const savedTasQState = localStorage.getItem('testas_questions_state');
+      if (savedTasQState) testasQuestionsState = JSON.parse(savedTasQState);
+    } catch(e) {}
+
+    function switchExamMode(mode) {
+      currentExamMode = mode;
+      localStorage.setItem('active_exam_mode', mode);
+
+      const imatBtn = document.getElementById('exam-toggle-imat');
+      const testasBtn = document.getElementById('exam-toggle-testas');
+
+      if (mode === 'testas') {
+        if (imatBtn) imatBtn.className = 'px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-500 hover:text-slate-900 transition-all flex items-center gap-1.5';
+        if (testasBtn) testasBtn.className = 'px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-cyan-400 shadow-sm flex items-center gap-1.5';
+        
+        applyTestASMode();
+      } else {
+        if (imatBtn) imatBtn.className = 'px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-amber-400 shadow-sm flex items-center gap-1.5';
+        if (testasBtn) testasBtn.className = 'px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-500 hover:text-slate-900 transition-all flex items-center gap-1.5';
+        
+        applyIMATMode();
+      }
+      triggerAutoSync();
+    }
+
+    function applyTestASMode() {
+      // Update Title & Subtitle
+      const titleEl = document.getElementById('app-view-title');
+      if (titleEl) titleEl.innerText = 'TestAS Mastery Cockpit';
+      
+      const subHeader = document.getElementById('app-view-subtitle') || document.querySelector('header p');
+      if (subHeader) subHeader.innerText = 'German University Admissions (BSc • ITB Consulting)';
+
+      // Update Global Progress Counter
+      const total = testasSyllabus.length;
+      const mastered = testasSyllabus.filter(t => t.status === 'mastered').length;
+      const pct = Math.round((mastered / total) * 100);
+      const bar = document.getElementById('global-progress-bar');
+      const text = document.getElementById('global-progress-text');
+      if (bar) bar.style.width = `${pct}%`;
+      if (text) text.innerText = `${pct}% (${mastered}/${total})`;
+
+      // Toggle Simulator Containers
+      const simImat = document.getElementById('sim-container-imat');
+      const simTas = document.getElementById('sim-container-testas');
+      if (simImat) simImat.classList.add('hidden');
+      if (simTas) simTas.classList.remove('hidden');
+
+      // Toggle Vault Containers
+      const vImat = document.getElementById('vault-container-imat');
+      const vTas = document.getElementById('vault-container-testas');
+      if (vImat) vImat.classList.add('hidden');
+      if (vTas) vTas.classList.remove('hidden');
+
+      // Toggle Question Bank Containers
+      const qbImat = document.getElementById('qb-container-imat');
+      const qbTas = document.getElementById('qb-container-testas');
+      if (qbImat) qbImat.classList.add('hidden');
+      if (qbTas) qbTas.classList.remove('hidden');
+
+      // Render TestAS Specific Views
+      renderTestASScheduler();
+      renderTestASChecklist();
+      renderTestASSpecializations();
+      renderTestASSimulator();
+      renderTestASVault();
+      renderTestASQuestions();
+    }
+
+    function applyIMATMode() {
+      const titleEl = document.getElementById('app-view-title');
+      if (titleEl) titleEl.innerText = 'Solar Insights Cockpit';
+
+      const subHeader = document.getElementById('app-view-subtitle') || document.querySelector('header p');
+      if (subHeader) subHeader.innerText = 'Italian Medicine & Surgery (MUR IMAT)';
+
+      // Toggle Simulator Containers
+      const simImat = document.getElementById('sim-container-imat');
+      const simTas = document.getElementById('sim-container-testas');
+      if (simImat) simImat.classList.remove('hidden');
+      if (simTas) simTas.classList.add('hidden');
+
+      // Toggle Vault Containers
+      const vImat = document.getElementById('vault-container-imat');
+      const vTas = document.getElementById('vault-container-testas');
+      if (vImat) vImat.classList.remove('hidden');
+      if (vTas) vTas.classList.add('hidden');
+
+      // Toggle Question Bank Containers
+      const qbImat = document.getElementById('qb-container-imat');
+      const qbTas = document.getElementById('qb-container-testas');
+      if (qbImat) qbImat.classList.remove('hidden');
+      if (qbTas) qbTas.classList.add('hidden');
+
+      recalculateGlobalStats();
+      renderSchedulerGrid();
+      renderChecklist();
+      renderSpecializationCards();
+      recalcSimulator();
+      renderPastPapersView();
+    }
+
+    // ==========================================
+    // TESTAS RENDERERS
+    // ==========================================
+    function renderTestASScheduler() {
+      const grid = document.getElementById('scheduler-grid');
+      if (!grid) return;
+
+      const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+      let html = '';
+
+      days.forEach(day => {
+        const dayTasks = testasTasks.filter(t => t.day === day);
+        html += `
+          <div class="bg-slate-50/70 rounded-2xl p-4 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-200">
+              <span class="font-bold text-slate-800 text-xs">${day}</span>
+              <span class="text-[10px] font-bold text-cyan-700 bg-cyan-100 px-2 py-0.5 rounded-full">${dayTasks.length} drills</span>
+            </div>
+            <div class="space-y-2.5">
+        `;
+
+        if (dayTasks.length === 0) {
+          html += `<div class="p-4 text-center text-slate-400 text-xs italic">Review day</div>`;
+        } else {
+          dayTasks.forEach(t => {
+            const isDone = (t.status === 'mastered');
+            html += `
+              <div onclick="toggleTestASTask('${t.id}')" class="p-3 bg-white rounded-xl border border-slate-200 hover:border-cyan-400 transition-all cursor-pointer shadow-xs space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[9px] font-bold bg-cyan-50 text-cyan-800">${t.tag}</span>
+                  <span class="text-[10px] font-mono text-slate-400">${t.time}</span>
+                </div>
+                <div class="text-xs font-bold text-slate-900 leading-snug ${isDone ? 'line-through text-slate-400' : ''}">${t.title}</div>
+                <div class="flex items-center justify-between text-[10px] text-slate-500 pt-1">
+                  <span>${t.subject}</span>
+                  <span class="${isDone ? 'text-emerald-600 font-bold' : 'text-slate-400'}">${isDone ? '✓ Completed' : '⭕ Pending'}</span>
+                </div>
+              </div>
+            `;
+          });
+        }
+
+        html += `</div></div>`;
+      });
+
+      grid.innerHTML = html;
+    }
+
+    function toggleTestASTask(taskId) {
+      const task = testasTasks.find(t => t.id === taskId);
+      if (task) {
+        task.status = (task.status === 'mastered') ? 'not_started' : 'mastered';
+        localStorage.setItem('testas_timetable_tasks', JSON.stringify(testasTasks));
+        renderTestASScheduler();
+        triggerAutoSync();
+      }
+    }
+
+    function renderTestASChecklist() {
+      const container = document.getElementById('syllabus-list-container');
+      if (!container) return;
+
+      let html = '';
+      const chapters = Array.from(new Set(testasSyllabus.map(t => t.chapter)));
+
+      chapters.forEach(ch => {
+        const chTopics = testasSyllabus.filter(t => t.chapter === ch);
+        const chMastered = chTopics.filter(t => t.status === 'mastered').length;
+        const chPct = Math.round((chMastered / chTopics.length) * 100);
+
+        html += `
+          <div class="ref-card p-6 space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+              <div>
+                <span class="text-[10px] font-bold text-cyan-700 bg-cyan-50 px-2 py-0.5 rounded-full uppercase">TestAS Core & Module</span>
+                <h3 class="text-base font-bold text-slate-900 mt-1">${ch}</h3>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-mono font-bold text-slate-600">${chMastered} / ${chTopics.length} Mastered (${chPct}%)</span>
+                <div class="w-24 h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div class="h-full bg-cyan-500 rounded-full" style="width: ${chPct}%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+        `;
+
+        chTopics.forEach(topic => {
+          const isDone = (topic.status === 'mastered');
+          html += `
+            <div onclick="toggleTestASTopic('${topic.id}')" class="p-3 rounded-xl border transition-all cursor-pointer flex items-center justify-between gap-3 ${isDone ? 'bg-emerald-50/50 border-emerald-300 text-emerald-950 font-semibold' : 'bg-slate-50/60 border-slate-200 hover:bg-slate-100/80 text-slate-800'}">
+              <div class="flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded border flex items-center justify-center text-[10px] ${isDone ? 'bg-emerald-600 text-white border-emerald-600 font-bold' : 'border-slate-300 bg-white'}">
+                  ${isDone ? '✓' : ''}
+                </span>
+                <span class="text-xs">${topic.title}</span>
+              </div>
+              <span class="text-[10px] font-mono font-bold text-amber-500 shrink-0">${'★' * topic.stars}</span>
+            </div>
+          `;
+        });
+
+        html += `</div></div>`;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function toggleTestASTopic(topicId) {
+      const topic = testasSyllabus.find(t => t.id === topicId);
+      if (topic) {
+        topic.status = (topic.status === 'mastered') ? 'not_started' : 'mastered';
+        localStorage.setItem('testas_master_syllabus', JSON.stringify(testasSyllabus));
+        renderTestASChecklist();
+        applyTestASMode();
+        triggerAutoSync();
+      }
+    }
+
+    function renderTestASSpecializations() {
+      const container = document.getElementById('specialization-cards-container');
+      if (!container) return;
+
+      let html = '';
+      testasSpecializations.forEach(spec => {
+        html += `
+          <div class="ref-card p-6 space-y-4 border-l-4 border-l-cyan-500">
+            <div class="flex items-start justify-between">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-0.5 rounded-full">${spec.weight}</span>
+                <h3 class="text-lg font-bold text-slate-900 mt-2">${spec.subject}</h3>
+                <p class="text-xs text-slate-500">${spec.maxPts} • Benchmark Standard Score: 100 Mean</p>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-mono text-slate-900">${spec.accuracy}%</div>
+                <span class="text-[11px] font-semibold text-emerald-600">Standard: ${100 + Math.round(spec.accuracy * 0.3)} pts</span>
+              </div>
+            </div>
+
+            <div class="space-y-1.5">
+              <div class="flex justify-between text-xs font-semibold text-slate-600">
+                <span>Sub-test Mastery:</span>
+                <span class="font-mono">${spec.accuracy}%</span>
+              </div>
+              <input type="range" min="0" max="100" value="${spec.accuracy}" oninput="updateTestASSpecAccuracy('${spec.subject}', this.value)" class="w-full accent-cyan-600">
+            </div>
+
+            <div class="p-3 bg-slate-50 rounded-xl text-xs space-y-1 border border-slate-100">
+              <div class="text-slate-700"><span class="font-bold text-slate-800">Target Speed:</span> Under 1.5 min per question</div>
+              <div class="text-slate-500"><span class="font-bold text-slate-700">TUM / Aachen Benchmark:</span> Standard Score >= 115 (Top 7%)</div>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function updateTestASSpecAccuracy(subj, val) {
+      const item = testasSpecializations.find(s => s.subject === subj);
+      if (item) {
+        item.accuracy = parseInt(val);
+        localStorage.setItem('testas_specializations', JSON.stringify(testasSpecializations));
+        renderTestASSpecializations();
+        triggerAutoSync();
+      }
+    }
+
+    function renderTestASSimulator() {
+      const simContainer = document.getElementById('sim-container-testas');
+      if (!simContainer) return;
+
+      const unis = testasBundle.universities;
+      let html = `
+        <div class="ref-card p-6 space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-cyan-100 text-cyan-800">Germany Admissions Engine</span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800">Abitur NC & TestAS Calculator</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 tracking-tight">German Universities TestAS & NC Admission Simulator</h2>
+          <p class="text-xs text-slate-500">Simulate your German NC admission grade (1.0–4.0 scale) combining foreign high school GPA with TestAS Standard Score bonus (70–130) for top German universities.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          
+          <!-- Calculator Card -->
+          <div class="lg:col-span-5 ref-card p-6 space-y-4">
+            <h3 class="text-sm font-bold text-slate-900 border-b border-slate-100 pb-2">🇩🇪 Modified Bavarian Formula Calculator</h3>
+            
+            <div class="space-y-3 text-xs">
+              <div>
+                <label class="font-bold text-slate-700">Your High School GPA / Percentage:</label>
+                <input type="number" id="tas-input-gpa" value="90" min="50" max="100" step="1" oninput="calcGermanNC()" class="w-full mt-1 p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-mono">
+                <span class="text-[10px] text-slate-400">Scale: 50% passing to 100% maximum</span>
+              </div>
+
+              <div>
+                <label class="font-bold text-slate-700">Your TestAS Standard Score (70–130):</label>
+                <input type="number" id="tas-input-score" value="115" min="70" max="130" step="1" oninput="calcGermanNC()" class="w-full mt-1 p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-mono text-cyan-700 font-bold">
+                <span class="text-[10px] text-slate-400">Mean = 100. >= 115 is top 7% in Germany</span>
+              </div>
+
+              <div class="p-4 bg-slate-900 text-white rounded-xl space-y-2 mt-4">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 text-xs">Converted German Grade:</span>
+                  <span id="tas-res-nc" class="text-2xl font-black font-mono text-cyan-400">1.60</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-slate-400">TestAS Score Bonus:</span>
+                  <span id="tas-res-bonus" class="font-mono text-emerald-400 font-bold">-0.40 NC Bonus</span>
+                </div>
+                <div class="border-t border-slate-800 pt-2 flex justify-between items-center">
+                  <span class="font-bold text-amber-300">Final Adjusted German Grade:</span>
+                  <span id="tas-res-final" class="text-xl font-bold font-mono text-emerald-300">1.20 (Sehr Gut)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- University Cutoffs Grid -->
+          <div class="lg:col-span-7 space-y-3">
+      `;
+
+      unis.forEach(u => {
+        html += `
+          <div class="ref-card p-4 space-y-2 hover:border-cyan-400 transition-all">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-bold text-slate-900 text-sm">${u.name}</h4>
+                  <span class="px-2 py-0.5 rounded text-[9px] font-bold bg-cyan-50 text-cyan-800">${u.badge}</span>
+                </div>
+                <div class="text-xs text-slate-500">${u.city} • ${u.flagship}</div>
+              </div>
+              <div class="text-right shrink-0">
+                <div class="text-base font-black font-mono text-slate-900">Score ≥ ${u.standardScoreCutoff}</div>
+                <div class="text-[10px] font-semibold text-emerald-600">${u.percentileCutoff}</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between text-xs text-slate-600 pt-1 border-t border-slate-100">
+              <span>Required: <strong class="text-slate-800">${u.moduleRequired}</strong></span>
+              <span class="text-cyan-700 font-medium">${u.ncBonus}</span>
+            </div>
+          </div>
+        `;
+      });
+
+      html += `</div></div>`;
+      simContainer.innerHTML = html;
+      calcGermanNC();
+    }
+
+    function calcGermanNC() {
+      const gpaInput = document.getElementById('tas-input-gpa');
+      const scoreInput = document.getElementById('tas-input-score');
+      if (!gpaInput || !scoreInput) return;
+
+      const gpa = parseFloat(gpaInput.value) || 80;
+      const score = parseFloat(scoreInput.value) || 100;
+
+      // Modified Bavarian formula: NC = 1 + 3 * (Nmax - Nd) / (Nmax - Nmin)
+      // Nmax = 100, Nmin = 50
+      let nc = 1.0 + 3.0 * ((100.0 - gpa) / (100.0 - 50.0));
+      if (nc < 1.0) nc = 1.0;
+      if (nc > 4.0) nc = 4.0;
+
+      // TestAS bonus
+      let bonus = 0.0;
+      if (score >= 120) bonus = 0.5;
+      else if (score >= 115) bonus = 0.4;
+      else if (score >= 110) bonus = 0.3;
+      else if (score >= 105) bonus = 0.2;
+      else if (score >= 100) bonus = 0.1;
+
+      let finalNC = nc - bonus;
+      if (finalNC < 1.0) finalNC = 1.0;
+
+      let rating = "Sehr Gut (Outstanding)";
+      if (finalNC > 1.5 && finalNC <= 2.5) rating = "Gut (Good)";
+      else if (finalNC > 2.5 && finalNC <= 3.5) rating = "Befriedigend (Satisfactory)";
+      else if (finalNC > 3.5) rating = "Ausreichend (Sufficient)";
+
+      document.getElementById('tas-res-nc').innerText = nc.toFixed(2);
+      document.getElementById('tas-res-bonus').innerText = `-${bonus.toFixed(2)} NC Bonus`;
+      document.getElementById('tas-res-final').innerText = `${finalNC.toFixed(2)} (${rating})`;
+    }
+
+    function renderTestASVault() {
+      const vaultContainer = document.getElementById('vault-container-testas');
+      if (!vaultContainer) return;
+
+      vaultContainer.innerHTML = `
+        <div class="ref-card p-6">
+          <h2 class="text-lg font-bold text-slate-900">TestAS Number Series & Mental Math Vault</h2>
+          <p class="text-xs text-slate-500">Core formulas, number sequence algorithms, and German admission conversion tables.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Number Series Algorithms -->
+          <div class="ref-card p-6 space-y-3">
+            <h3 class="text-sm font-bold text-slate-900 border-b border-slate-100 pb-2">🔢 Number Series Recognition Catalog</h3>
+            <div class="text-xs text-slate-700 space-y-2 font-mono">
+              <div class="p-2.5 bg-slate-50 rounded-lg">
+                <strong class="text-slate-900">1. Two-Tier Interleaved:</strong>
+                <div>Odd indices follow Rule 1 (e.g. +4), Even indices follow Rule 2 (e.g. -3)</div>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-lg">
+                <strong class="text-slate-900">2. Delta of Deltas:</strong>
+                <div>Differences themselves increase by a constant (e.g. +3, +5, +7, +9, +11)</div>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-lg">
+                <strong class="text-slate-900">3. Alternating Operations:</strong>
+                <div>Step 1: *2, Step 2: -3, Step 3: *2, Step 4: -3...</div>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-lg">
+                <strong class="text-slate-900">4. Fibonacci Summation:</strong>
+                <div>Term(n) = Term(n-1) + Term(n-2)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Non-Calculator Quantitative Shortcuts -->
+          <div class="ref-card p-6 space-y-3">
+            <h3 class="text-sm font-bold text-slate-900 border-b border-slate-100 pb-2">⚡ Speed Arithmetic & Mixture Formulas</h3>
+            <div class="text-xs text-slate-700 space-y-2">
+              <div class="p-2.5 bg-slate-50 rounded-lg font-mono">
+                <strong class="text-slate-900">Combined Work Rate:</strong>
+                <div>1/T_total = 1/t1 + 1/t2 -> T_total = (t1 * t2) / (t1 + t2)</div>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-lg font-mono">
+                <strong class="text-slate-900">Relative Motion:</strong>
+                <div>Opposite directions: V_rel = V1 + V2 | Same direction: V_rel = |V1 - V2|</div>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-lg font-mono">
+                <strong class="text-slate-900">Modified Bavarian Formula:</strong>
+                <div>German NC = 1 + 3 * ((Nmax - Nd) / (Nmax - Nmin))</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderTestASQuestions() {
+      const container = document.getElementById('qb-container-testas') || document.getElementById('past-questions-container');
+      if (!container) return;
+
+      const questions = testasBundle.questions;
+      let html = `
+        <div class="ref-card p-6 mb-4 bg-gradient-to-r from-slate-900 to-slate-800 text-white flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-cyan-400/20 text-cyan-300 border border-cyan-400/30">TestAS Core & Module Bank</span>
+            <h3 class="text-lg font-bold mt-1">Official TestAS Practice Drills & Step-by-Step Logic</h3>
+            <p class="text-xs text-slate-300">Number series, quantitative problems, verbal analogies, pattern matrices, and MIN scientific interrelationships.</p>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-black font-mono text-cyan-400">${questions.length}</div>
+            <div class="text-[10px] text-slate-400 uppercase font-semibold">TestAS Drills</div>
+          </div>
+        </div>
+      `;
+
+      questions.forEach(q => {
+        const userAttempt = testasQuestionsState[q.id];
+        const isAnswered = !!userAttempt;
+
+        html += `
+          <div class="ref-card p-6 space-y-4 hover:shadow-md transition-shadow">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-cyan-50 text-cyan-800 border border-cyan-200">${q.subtest}</span>
+                <span class="text-xs font-bold text-slate-800">${q.title}</span>
+              </div>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600">TestAS Standard</span>
+            </div>
+
+            <div class="text-sm font-semibold text-slate-900 leading-relaxed font-mono">
+              ${q.question}
+            </div>
+
+            <div class="space-y-2 pt-1">
+              ${q.options.map((opt, optIdx) => {
+                let optClass = "w-full text-left p-3 rounded-xl border text-xs font-medium transition-all flex items-start justify-between gap-3 ";
+                let badge = "";
+
+                if (!isAnswered) {
+                  optClass += "bg-slate-50/70 border-slate-200 hover:bg-slate-100 text-slate-800 cursor-pointer";
+                } else {
+                  const isSelected = (userAttempt.selected === optIdx);
+                  const isCorrect = (optIdx === q.correctIndex);
+
+                  if (isSelected && isCorrect) {
+                    optClass += "bg-emerald-50 border-emerald-400 text-emerald-900 font-bold shadow-sm";
+                    badge = `<span class="px-2 py-0.5 rounded-md text-[10px] font-black bg-emerald-600 text-white shrink-0">✓ Correct</span>`;
+                  } else if (isSelected && !isCorrect) {
+                    optClass += "bg-rose-50 border-rose-400 text-rose-900 font-bold shadow-sm";
+                    badge = `<span class="px-2 py-0.5 rounded-md text-[10px] font-black bg-rose-600 text-white shrink-0">✕ Incorrect</span>`;
+                  } else if (!isSelected && isCorrect) {
+                    optClass += "bg-emerald-50/40 border-dashed border-emerald-400 text-emerald-800 font-semibold";
+                    badge = `<span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-100 text-emerald-800 shrink-0">Correct Answer</span>`;
+                  } else {
+                    optClass += "bg-slate-50/40 border-slate-200 text-slate-400 opacity-60";
+                  }
+                }
+
+                return `
+                  <button type="button" ${isAnswered ? '' : `onclick="answerTestASQuestion('${q.id}', ${optIdx})"`} class="${optClass}">
+                    <span class="flex-1">${opt}</span>
+                    ${badge}
+                  </button>
+                `;
+              }).join('')}
+            </div>
+
+            ${isAnswered ? `
+              <div class="pt-3 border-t border-slate-100 space-y-3">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div class="font-bold text-slate-900">💡 Step-by-Step Logic Breakdown:</div>
+                  <div class="text-slate-700 leading-relaxed">${q.explanation}</div>
+                </div>
+                ${q.trapAlert ? `
+                  <div class="p-3 bg-amber-50/80 rounded-xl border border-amber-200 text-xs text-amber-900 flex items-start gap-2">
+                    <span>⚠️</span>
+                    <div><strong>TestAS Strategy Trap:</strong> ${q.trapAlert}</div>
+                  </div>
+                ` : ''}
+              </div>
+            ` : ''}
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function answerTestASQuestion(qId, selectedIdx) {
+      const q = testasBundle.questions.find(item => item.id === qId);
+      if (!q) return;
+
+      testasQuestionsState[qId] = {
+        selected: selectedIdx,
+        isCorrect: (selectedIdx === q.correctIndex),
+        timestamp: new Date().toISOString()
+      };
+
+      localStorage.setItem('testas_questions_state', JSON.stringify(testasQuestionsState));
+      renderTestASQuestions();
+      triggerAutoSync();
+    }
+
     // ==========================================
     // 10B. IMAT PAST PAPERS & QUESTION BANK ENGINE (2011–2024)
     // ==========================================
