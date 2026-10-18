@@ -21,3 +21,8 @@ desktop.ini
 # Draft notes & Archives
 New Text Document.txt
 *.zip
+clean_*.js
+process_*.js
+generate_*.js
+fix_*.py
+temp_*
