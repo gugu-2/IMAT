@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "phys_2027_f01",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Class 1 Lever: Atlanto-Occipital Joint & Cervical Equilibrium",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The human head has a mass of m = 5.0 kg (weight W = 50.0 N, taking g = 10.0 m/s²) with its center of gravity located at a perpendicular horizontal distance of d_w = 4.0 cm anterior to the atlanto-occipital joint (the fulcrum). The posterior neck extensor muscles (splenius capitis and trapezius) insert at a horizontal distance of d_m = 2.0 cm posterior to the fulcrum and pull vertically downward to keep the head upright. In static rotational equilibrium, what is the tension force F_m exerted by the neck extensor muscles, and what is the total vertical compressive reaction force R exerted by the superior articular facets of the C1 atlas vertebra on the occipital condyles?",
+    "options": [
+      "A. F_m = 100.0 N; R = 150.0 N downward",
+      "B. F_m = 50.0 N; R = 100.0 N downward",
+      "C. F_m = 25.0 N; R = 75.0 N downward",
+      "D. F_m = 100.0 N; R = 50.0 N downward",
+      "E. F_m = 200.0 N; R = 250.0 N downward"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The atlanto-occipital joint operates as a Class 1 lever where the fulcrum (pivot) lies between the load (head center of gravity anteriorly) and the effort (neck extensor muscles posteriorly). For static equilibrium, both the net torque about the fulcrum and the net translational force must equal zero: sum(tau) = 0 and sum(F_y) = 0.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Rotational equilibrium about fulcrum:<br>tau_clockwise = tau_counterclockwise<br>W * d_w = F_m * d_m<br>(50.0 N) * (4.0 cm) = F_m * (2.0 cm)<br>200.0 N·cm = F_m * 2.0 cm => F_m = 100.0 N.<br>2. Translational equilibrium along the vertical axis (y-axis):<br>Both the gravitational force W and the muscle force F_m pull downward. To maintain equilibrium, the cervical joint reaction force R must push upward on the head (meaning the compressive force felt by C1 is downward):<br>R = F_m + W = 100.0 N + 50.0 N = 150.0 N.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates F_m = 100.0 N and joint compressive reaction force R = 150.0 N.<br>• Option B is false: Erroneously sets F_m equal to W (50 N), ignoring the unequal lever arms (4 cm vs 2 cm).<br>• Option C is false: Inverts the lever arm ratio, computing F_m = 50 * (2/4) = 25 N instead of 50 * (4/2).<br>• Option D is false: Subtracts the forces (100 - 50 = 50 N) rather than adding them to support the downward sum.<br>• Option E is false: Double counts the torque ratio (computing 50 * 4 = 200 N).",
+    "trapAlert": "A Class 1 lever places both the effort force and load force on opposite sides of the fulcrum pulling in the SAME direction (downward). Consequently, the joint reaction force is the SUM of both forces (F_m + W = 150 N), not their difference."
+  },
+  {
+    "id": "phys_2027_f02",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Class 2 Lever: Gastrocnemius Plantarflexion & Mechanical Advantage",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A 70.0 kg ballerina rises onto the ball of one foot (plantarflexion), balancing her entire body weight (W = 700.0 N, g = 10.0 m/s²) on the single foot. The contact point of the metatarsophalangeal joints with the floor acts as the fulcrum. The downward body load transmitted through the tibia acts at a horizontal distance of d_load = 15.0 cm from the fulcrum. The Achilles tendon pulls vertically upward at the calcaneus at a distance of d_effort = 20.0 cm from the fulcrum. What is the tension force T in the Achilles tendon, and what is the mechanical advantage (MA) of this musculoskeletal lever?",
+    "options": [
+      "A. T = 933.3 N; MA = 0.75",
+      "B. T = 525.0 N; MA = 1.33",
+      "C. T = 700.0 N; MA = 1.00",
+      "D. T = 350.0 N; MA = 2.00",
+      "E. T = 525.0 N; MA = 0.75"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Plantarflexion at the metatarsophalangeal joint is the classic anatomical example of a Class 2 lever. The load (tibial body weight) is positioned between the fulcrum (toes/ball of foot) and the effort (Achilles tendon insertion at the posterior calcaneus). Because d_effort > d_load, the mechanical advantage MA = d_effort / d_load is strictly greater than 1.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Rotational equilibrium about the fulcrum (metatarsophalangeal joint):<br>sum(tau) = 0 => T * d_effort = W * d_load<br>T * (20.0 cm) = (700.0 N) * (15.0 cm)<br>T * 20.0 = 10500 N·cm => T = 10500 / 20.0 = 525.0 N.<br>2. Mechanical advantage:<br>MA = d_effort / d_load = 20.0 cm / 15.0 cm = 4/3 ≈ 1.333.<br>Alternatively, MA = Load / Effort = 700.0 N / 525.0 N = 1.333.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts the torque equation by assuming T = 700 * (20/15) = 933.3 N and MA = 0.75 (confusing Class 2 with Class 3).<br>• Option B is CORRECT: Accurately calculates Achilles tension T = 525.0 N and MA = 1.33.<br>• Option C is false: Assumes a 1:1 lever ratio where tendon tension equals body weight.<br>• Option D is false: Arbitrary arithmetic halving of body weight.<br>• Option E is false: Pairs the correct tension (525.0 N) with the inverted mechanical advantage (0.75).",
+    "trapAlert": "Class 2 levers ALWAYS have a mechanical advantage MA > 1 because the effort arm extends beyond the load arm from the fulcrum. If your calculated muscle force exceeds the load in a Class 2 lever, you have inverted the lever arms."
+  },
+  {
+    "id": "phys_2027_f03",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Class 3 Lever: Biceps Brachii Elbow Flexion & Joint Reaction Force",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A student holds a mass of M = 5.0 kg in the palm of their hand with the forearm oriented horizontally at 90° flexion. The humeroulnar joint acts as the fulcrum. The forearm and hand have a combined mass of m_f = 1.5 kg with their center of mass located at d_f = 14.0 cm from the joint axis. The held mass is located at d_h = 35.0 cm from the joint. The biceps brachii inserts vertically onto the radial tuberosity at d_b = 3.5 cm from the joint axis. Taking g = 10.0 m/s², what is the contractile force F_b required of the biceps brachii, and what is the magnitude of the downward compressive reaction force F_J exerted by the humerus on the trochlear notch of the ulna?",
+    "options": [
+      "A. F_b = 65.0 N; F_J = 0.0 N",
+      "B. F_b = 280.0 N; F_J = 215.0 N",
+      "C. F_b = 560.0 N; F_J = 495.0 N",
+      "D. F_b = 560.0 N; F_J = 625.0 N",
+      "E. F_b = 490.0 N; F_J = 425.0 N"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Elbow flexion by the biceps brachii is the archetypal Class 3 lever. The effort force (biceps insertion) lies between the fulcrum (elbow joint) and the load (forearm mass and handheld load). Because the effort arm (3.5 cm) is far shorter than the load arms (14 cm and 35 cm), MA < 1, requiring muscle force to substantially exceed the total supported weight. Vertical translational equilibrium determines joint reaction force: sum(F_y) = 0.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Identify gravitational forces:<br>Forearm weight W_f = m_f * g = 1.5 kg * 10.0 m/s² = 15.0 N.<br>Handheld load weight W_h = M * g = 5.0 kg * 10.0 m/s² = 50.0 N.<br>2. Calculate clockwise gravitational torques about elbow joint:<br>tau_f = W_f * d_f = 15.0 N * 14.0 cm = 210.0 N·cm.<br>tau_h = W_h * d_h = 50.0 N * 35.0 cm = 1750.0 N·cm.<br>Total clockwise torque = 210.0 + 1750.0 = 1960.0 N·cm.<br>3. Counterclockwise torque by biceps:<br>tau_b = F_b * d_b = F_b * 3.5 cm.<br>Equilibrium: F_b * 3.5 = 1960.0 => F_b = 1960.0 / 3.5 = 560.0 N.<br>4. Joint reaction force at humeroulnar joint:<br>Upward forces = Downward forces => F_b = F_J + W_f + W_h<br>560.0 N = F_J + 15.0 N + 50.0 N = F_J + 65.0 N => F_J = 560.0 - 65.0 = 495.0 N downward.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Confuses muscle force with total weight (65 N) and assumes zero joint force.<br>• Option B is false: Omits the handheld mass, calculating torque only for the forearm.<br>• Option C is CORRECT: Accurately computes F_b = 560.0 N and joint reaction force F_J = 495.0 N.<br>• Option D is false: Adds total weight to biceps force (560 + 65 = 625 N) instead of subtracting it to balance the vertical vector equation.<br>• Option E is false: Omits forearm weight from torque calculation (50 * 35 / 3.5 = 500 N, with arithmetic approximation).",
+    "trapAlert": "In Class 3 levers, the joint reaction force acts DOWNWARD on the lever to counteract the massive upward pull of the muscle: F_J = F_muscle - W_total. Adding the forces (560 + 65 = 625 N) is a classic sign error."
+  },
+  {
+    "id": "phys_2027_f04",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Vector Decomposition of Musculoskeletal Force: Deltoid Abduction",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A patient holds their arm horizontally in 90° abduction. The entire arm has a mass of m = 3.0 kg (weight W = 30.0 N, taking g = 10.0 m/s²) with its center of gravity located at d_arm = 28.0 cm from the glenohumeral joint center. The middle deltoid muscle inserts onto the deltoid tuberosity of the humerus at d_deltoid = 14.0 cm from the joint, pulling upward and medially at an angle of alpha = 30.0° relative to the horizontal axis of the humerus. In static rotational equilibrium, what is the total tension force F_d exerted by the deltoid muscle, and what is the magnitude of the horizontal compressive force F_x stabilizing the humeral head into the glenoid cavity?",
+    "options": [
+      "A. F_d = 60.0 N; F_x = 30.0 N",
+      "B. F_d = 120.0 N; F_x = 60.0 N",
+      "C. F_d = 120.0 N; F_x = 60.0 N",
+      "D. F_d = 120.0 N; F_x = 60.0√3 N (≈ 103.9 N)",
+      "E. F_d = 240.0 N; F_x = 120.0√3 N (≈ 207.8 N)"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Muscle force vectors pull at acute angles to skeletal levers. The deltoid force vector F_d decomposes into two orthogonal components: a perpendicular rotational component F_y = F_d * sin(alpha) that generates torque to support arm weight, and a parallel stabilizing component F_x = F_d * cos(alpha) that drives the humeral head horizontally into the glenoid fossa.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate gravitational torque about glenohumeral joint:<br>tau_grav = W * d_arm = (30.0 N) * (28.0 cm) = 840.0 N·cm.<br>2. Deltoid rotational torque:<br>tau_deltoid = [F_d * sin(30.0°)] * d_deltoid = F_d * (0.50) * (14.0 cm) = F_d * 7.0 cm.<br>3. Equating torques for rotational equilibrium:<br>F_d * 7.0 = 840.0 => F_d = 840.0 / 7.0 = 120.0 N.<br>4. Horizontal stabilizing component (compression into glenoid fossa):<br>F_x = F_d * cos(30.0°) = 120.0 N * (√3 / 2) = 60.0√3 N ≈ 103.92 N.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Forgets to divide by sin(30°), yielding F_d = 840 / 14 = 60 N.<br>• Option B is false: Conflates the horizontal component with the vertical component, taking F_x = F_d * sin(30°) = 60 N.<br>• Option C is false: Duplicate distractor with incorrect horizontal component calculation.<br>• Option D is CORRECT: Accurately calculates total deltoid tension F_d = 120.0 N and horizontal compressive force F_x = 60.0√3 N ≈ 103.9 N.<br>• Option E is false: Doubles the muscle force by halving the angle or doubling torque.",
+    "trapAlert": "Only the perpendicular component of muscle force (F_d * sin(alpha)) produces torque. The parallel component (F_d * cos(alpha)) produces zero torque about the pivot but generates massive compressive stress across the joint cartilage."
+  },
+  {
+    "id": "phys_2027_f05",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Mechanical Advantage & Velocity-Excursion Trade-off in Class 3 Levers",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In the human elbow joint (Class 3 lever), the biceps brachii tendon inserts at d_effort = 4.0 cm from the joint axis, while a basketball is held in the hand at d_load = 36.0 cm from the joint axis. If the biceps muscle contracts and shortens by Delta x_muscle = 1.0 cm in a time interval of Delta t = 0.05 s, what is the vertical displacement of the hand Delta y_hand, the vertical velocity of the hand v_hand, and the mechanical advantage MA of this lever system?",
+    "options": [
+      "A. Delta y_hand = 0.11 cm; v_hand = 2.2 cm/s; MA = 9.0",
+      "B. Delta y_hand = 4.0 cm; v_hand = 80.0 cm/s; MA = 0.25",
+      "C. Delta y_hand = 9.0 cm; v_hand = 45.0 cm/s; MA = 0.11",
+      "D. Delta y_hand = 1.0 cm; v_hand = 20.0 cm/s; MA = 1.0",
+      "E. Delta y_hand = 9.0 cm; v_hand = 180.0 cm/s; MA = 0.11 (or 1/9)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In any lever system rotating through a small angular displacement Delta theta, arc length is given by s = r * Delta theta. Therefore, displacement and linear velocity scale in direct proportion to the radius from the pivot: Delta y_hand / Delta x_muscle = d_load / d_effort = 1 / MA. While a Class 3 lever operates at a mechanical force disadvantage (MA < 1), it acts as a displacement and velocity amplifier.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Angular displacement:<br>Delta theta = Delta x_muscle / d_effort = 1.0 cm / 4.0 cm = 0.25 rad.<br>2. Hand vertical displacement:<br>Delta y_hand = d_load * Delta theta = 36.0 cm * 0.25 rad = 9.0 cm.<br>Alternatively: Delta y_hand = Delta x_muscle * (d_load / d_effort) = 1.0 cm * (36.0 / 4.0) = 9.0 cm.<br>3. Hand linear velocity:<br>v_hand = Delta y_hand / Delta t = 9.0 cm / 0.05 s = 180.0 cm/s = 1.8 m/s.<br>(Notice that muscle shortening velocity is v_muscle = 1.0 cm / 0.05 s = 20.0 cm/s; the hand moves 9 times faster!).<br>4. Mechanical advantage:<br>MA = d_effort / d_load = 4.0 cm / 36.0 cm = 1/9 ≈ 0.111.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts the displacement ratio, computing 1.0 / 9 = 0.11 cm.<br>• Option B is false: Uses an arbitrary 4.0 cm displacement and incorrect velocity.<br>• Option C is false: Computes displacement correctly (9.0 cm) but divides by an incorrect time factor (yielding 45 cm/s).<br>• Option D is false: Assumes a 1:1 motion transfer.<br>• Option E is CORRECT: Accurately computes Delta y_hand = 9.0 cm, v_hand = 180.0 cm/s, and MA = 0.11 (1/9).",
+    "trapAlert": "Musculoskeletal systems in animals are dominated by Class 3 levers because evolutionary fitness prioritizes rapid limb velocities and wide ranges of motion over force economy. A small muscle shortening produces an expansive, high-velocity hand movement."
+  },
+  {
+    "id": "phys_2027_f06",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Spinal Biomechanics: L5-S1 Intervertebral Disc Compression During Lifting",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A person bends forward at the waist (stoop lift) to pick up a box. The upper body trunk has a weight of W_trunk = 400.0 N acting at a horizontal distance of d_trunk = 30.0 cm anterior to the lumbosacral disc (L5-S1 joint axis). The box being lifted has a weight of W_box = 200.0 N acting at a horizontal distance of d_box = 50.0 cm anterior to L5-S1. The erector spinae back muscles act along a line parallel to the spine with an effective perpendicular lever arm of only d_muscle = 5.0 cm posterior to the L5-S1 joint axis. Treating the spine as a rigid lever pivoting about L5-S1, what is the tension force F_m in the erector spinae muscles, and what is the total axial compressive force F_comp exerted on the L5-S1 intervertebral disc?",
+    "options": [
+      "A. F_m = 4400.0 N; F_comp = 5000.0 N",
+      "B. F_m = 2200.0 N; F_comp = 2800.0 N",
+      "C. F_m = 4400.0 N; F_comp = 3800.0 N",
+      "D. F_m = 5000.0 N; F_comp = 5600.0 N",
+      "E. F_m = 1200.0 N; F_comp = 1800.0 N"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In forward flexion, the spine acts as a Class 1 lever where the L5-S1 disc serves as the fulcrum. Because the erector spinae muscles attach very close to the vertebral column (d_muscle = 5.0 cm), their lever arm is an order of magnitude smaller than the load arms of the trunk and lifted object. Rotational equilibrium requires massive muscle tension. Vertical equilibrium dictates that the disc compression force equals the sum of the downward muscle pull and downward gravitational loads.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate forward (clockwise) gravitational torques about L5-S1:<br>tau_trunk = W_trunk * d_trunk = 400.0 N * 30.0 cm = 12000.0 N·cm.<br>tau_box = W_box * d_box = 200.0 N * 50.0 cm = 10000.0 N·cm.<br>Total load torque = 12000.0 + 10000.0 = 22000.0 N·cm.<br>2. Counterclockwise muscle torque:<br>tau_muscle = F_m * d_muscle = F_m * 5.0 cm.<br>Equilibrium: F_m * 5.0 = 22000.0 => F_m = 22000.0 / 5.0 = 4400.0 N.<br>3. Total compressive load across L5-S1 disc:<br>sum(F_vertical) = 0 => F_comp = F_m + W_trunk + W_box<br>F_comp = 4400.0 N + 400.0 N + 200.0 N = 5000.0 N = 5.0 kN.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates erector spinae force F_m = 4400.0 N and disc compression F_comp = 5000.0 N (5.0 kN).<br>• Option B is false: Forgets the box torque, calculating F_m = 12000 / 5 = 2400 N or halving the total torque.<br>• Option C is false: Subtracts the loads from muscle force (4400 - 600 = 3800 N) instead of adding them.<br>• Option D is false: Sets muscle force to 5000 N and adds 600 N.<br>• Option E is false: Uses an arithmetic average of lever arms.",
+    "trapAlert": "Lifting with a stooped back generates intervertebral compressive forces exceeding 5000 N (~0.5 metric tons) on a disc with an area of only ~10 cm², resulting in pressures over 5 MPa that readily induce disc herniation."
+  },
+  {
+    "id": "phys_2027_f07",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Pelvic Equilibrium in Single-Leg Stance: Hip Abductor Mechanics & Trendelenburg Physics",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "During the single-leg stance phase of normal walking, a 60.0 kg patient supports 5/6 of their body weight on the femoral head of the stance leg (W = 500.0 N, taking g = 10.0 m/s²), while the swing leg and pelvis create a downward gravitational force centered at d_w = 12.0 cm medial to the center of the femoral head (the pivot). To prevent pelvic drop (Trendelenburg sign), the hip abductor muscles (gluteus medius and minimus) contract, inserting onto the greater trochanter at a horizontal distance of d_m = 6.0 cm lateral to the pivot and pulling downward-laterally at an angle of theta = 60.0° to the horizontal. What is the tension force F_abductor exerted by the hip abductors to maintain horizontal pelvic equilibrium?",
+    "options": [
+      "A. F_abductor = 1000.0 N",
+      "B. F_abductor = (2000.0 / √3) N (≈ 1154.7 N)",
+      "C. F_abductor = 500.0 N",
+      "D. F_abductor = 2000.0 N",
+      "E. F_abductor = (1000.0 / √3) N (≈ 577.4 N)"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Single-leg pelvic stability is modeled as a Class 1 lever pivoting about the femoral head. The body weight of the unsupported torso and swing leg generates a clockwise adduction torque about the stance hip. The hip abductor muscles generate an opposing counterclockwise abduction torque. Only the vertical component of the abductor force (F_abductor * sin(theta)) contributes to counteracting the vertical gravitational torque when lever arms are measured horizontally.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Clockwise gravitational torque about femoral head:<br>tau_grav = W * d_w = 500.0 N * 12.0 cm = 6000.0 N·cm.<br>2. Counterclockwise abductor muscle torque:<br>The abductor pulls at an angle theta = 60.0° to the horizontal lever arm of length d_m = 6.0 cm.<br>tau_abductor = [F_abductor * sin(60.0°)] * d_m = F_abductor * (√3 / 2) * (6.0 cm) = F_abductor * (3.0√3) cm.<br>3. Rotational equilibrium:<br>tau_abductor = tau_grav<br>F_abductor * (3.0√3) = 6000.0<br>F_abductor = 6000.0 / (3.0√3) = 2000.0 / √3 N ≈ 1154.7 N.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Completely ignores the 60° pull angle, calculating F = 6000 / 6 = 1000 N.<br>• Option B is CORRECT: Accurately evaluates F_abductor = 2000 / √3 N ≈ 1154.7 N.<br>• Option C is false: Assumes abductor force equals supported body weight (500 N).<br>• Option D is false: Multiplies by 2 instead of dividing by sin(60°).<br>• Option E is false: Uses 1000 / √3 N by confusing the lever arm ratio.",
+    "trapAlert": "Failing to account for the angle of muscle pull underestimates the required abductor muscle force. Because sin(60°) = √3/2 ≈ 0.866, the abductor muscle must exert 15% more total tension than if it pulled purely vertically."
+  },
+  {
+    "id": "phys_2027_f08",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Class 1 Lever: Triceps Brachii Elbow Extension & Mechanical Advantage",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A physical therapy patient performs an isometric elbow extension against a fixed force plate. The humeroulnar joint serves as the fulcrum. The triceps brachii inserts onto the olecranon process at a perpendicular distance of d_effort = 2.5 cm behind the joint axis. The patient's palm presses against the plate at a distance of d_load = 30.0 cm from the joint axis, registering a pushing force of F_push = 60.0 N. Neglecting the weight of the forearm, what is the contractile force F_triceps exerted by the triceps brachii, and what is the mechanical advantage (MA) of this Class 1 anatomical lever?",
+    "options": [
+      "A. F_triceps = 60.0 N; MA = 1.00",
+      "B. F_triceps = 5.0 N; MA = 12.0",
+      "C. F_triceps = 720.0 N; MA = 0.083 (or 1/12)",
+      "D. F_triceps = 720.0 N; MA = 12.0",
+      "E. F_triceps = 150.0 N; MA = 0.40"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Elbow extension by the triceps brachii is a biological Class 1 lever. The fulcrum (humeroulnar joint) is situated between the effort (olecranon process posterior to the joint) and the load (hand contact anterior to the joint). Because d_effort (2.5 cm) is much shorter than d_load (30.0 cm), this Class 1 lever has a mechanical advantage MA < 1, functioning to amplify speed rather than force.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Rotational equilibrium about elbow joint:<br>sum(tau) = 0 => F_triceps * d_effort = F_push * d_load<br>F_triceps * (2.5 cm) = (60.0 N) * (30.0 cm)<br>F_triceps * 2.5 = 1800.0 N·cm => F_triceps = 1800.0 / 2.5 = 720.0 N.<br>2. Mechanical advantage:<br>MA = d_effort / d_load = 2.5 cm / 30.0 cm = 1 / 12 ≈ 0.0833.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Assumes a 1:1 force transfer.<br>• Option B is false: Inverts the torque equation, calculating F = 60 * (2.5 / 30) = 5.0 N and MA = 12.<br>• Option C is CORRECT: Accurately evaluates F_triceps = 720.0 N and MA = 1/12 ≈ 0.083.<br>• Option D is false: Calculates the correct force (720 N) but pairs it with an inverted MA of 12.0.<br>• Option E is false: Uses arbitrary arithmetic (60 * 2.5 = 150 N).",
+    "trapAlert": "Although Class 1 levers CAN have MA > 1, MA = 1, or MA < 1 depending on geometry, almost all human anatomical Class 1 levers (such as the triceps-olecranon and atlanto-occipital joint) have MA < 1 because muscles attach close to the bones' rotational axes."
+  },
+  {
+    "id": "phys_2027_f09",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Mandibular Biomechanics: Masticatory Bite Forces at Incisors vs Molars",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The human mandible functions as a lever pivoting at the temporomandibular joint (TMJ). During biting, the masseter and medial pterygoid muscles exert an upward vertical contractile force of F_m = 600.0 N located at a horizontal distance of d_m = 5.0 cm anterior to the TMJ fulcrum. A dentist measures the maximum vertical biting force achievable at the incisors (anterior teeth, located at d_incisor = 10.0 cm from the TMJ) versus the first molar (posterior teeth, located at d_molar = 6.0 cm from the TMJ). Assuming static equilibrium, what are the maximum biting forces exerted at the incisors (F_inc) and molars (F_mol)?",
+    "options": [
+      "A. F_inc = 600.0 N; F_mol = 600.0 N",
+      "B. F_inc = 1200.0 N; F_mol = 720.0 N",
+      "C. F_inc = 150.0 N; F_mol = 250.0 N",
+      "D. F_inc = 300.0 N; F_mol = 500.0 N",
+      "E. F_inc = 500.0 N; F_mol = 300.0 N"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Biting is governed by rotational equilibrium about the TMJ: sum(tau) = 0. The muscle effort torque (tau_effort = F_m * d_m) is opposed by the reaction force of the food item on the teeth (tau_bite = F_bite * d_tooth). Because the incisors have a longer resistance arm than the molars, the biting force generated at the molars is substantially greater than at the incisors for the same muscular effort.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Muscle effort torque:<br>tau_m = F_m * d_m = (600.0 N) * (5.0 cm) = 3000.0 N·cm.<br>2. Incisor biting force:<br>F_inc * d_incisor = tau_m<br>F_inc * (10.0 cm) = 3000.0 N·cm => F_inc = 3000.0 / 10.0 = 300.0 N.<br>3. Molar biting force:<br>F_mol * d_molar = tau_m<br>F_mol * (6.0 cm) = 3000.0 N·cm => F_mol = 3000.0 / 6.0 = 500.0 N.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Assumes bite force is identical across all dental arches.<br>• Option B is false: Multiplies muscle force by distance rather than dividing by the resistance arm.<br>• Option C is false: Arbitrarily halves both calculated forces.<br>• Option D is CORRECT: Accurately derives F_inc = 300.0 N and F_mol = 500.0 N.<br>• Option E is false: Inverts the forces, erroneously claiming incisors bite harder than molars.",
+    "trapAlert": "Molars are much closer to the TMJ fulcrum than incisors (shorter load arm d_load), meaning the mechanical advantage for molars is much higher (5/6 vs 5/10), producing a 67% higher crushing force."
+  },
+  {
+    "id": "phys_2027_f10",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Anatomical Pulley: The Patella & Quadriceps Mechanical Advantage",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The patella acts as an anatomical pulley that displaces the quadriceps tendon anteriorly away from the tibiofemoral joint center. In an intact knee at 60° flexion, the patella maintains the effective perpendicular moment arm of the quadriceps tendon at r_intact = 4.5 cm. Following a total patellectomy (surgical excision of the patella), the tendon falls directly against the femoral condyles, reducing the effective moment arm to r_post = 3.0 cm. To produce an identical knee extension torque of tau = 90.0 N·m during stair climbing, what is the increase in contractile force Delta F_quad that the quadriceps muscle must exert after patellectomy?",
+    "options": [
+      "A. Delta F_quad = 500.0 N",
+      "B. Delta F_quad = 2000.0 N",
+      "C. Delta F_quad = 1500.0 N",
+      "D. Delta F_quad = 3000.0 N",
+      "E. Delta F_quad = 1000.0 N"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Torque is given by tau = F * r, where r is the perpendicular moment arm from the joint center of rotation to the tendon line of action. The primary biomechanical function of the patella (the largest sesamoid bone in the human body) is to lengthen the moment arm of the extensor apparatus, thereby increasing its mechanical advantage and reducing the quadriceps force required to produce a given extension torque.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Convert moment arms to meters:<br>r_intact = 4.5 cm = 0.045 m.<br>r_post = 3.0 cm = 0.030 m.<br>2. Calculate required muscle force with intact patella:<br>tau = F_intact * r_intact => 90.0 N·m = F_intact * 0.045 m<br>F_intact = 90.0 / 0.045 = 2000.0 N.<br>3. Calculate required muscle force after patellectomy:<br>tau = F_post * r_post => 90.0 N·m = F_post * 0.030 m<br>F_post = 90.0 / 0.030 = 3000.0 N.<br>4. Determine the increase in required quadriceps force:<br>Delta F_quad = F_post - F_intact = 3000.0 N - 2000.0 N = 1000.0 N.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Half of the correct increase.<br>• Option B is false: Reports the intact quadriceps force (2000 N) instead of the difference.<br>• Option C is false: Computes an incorrect difference.<br>• Option D is false: Reports the total post-patellectomy force (3000 N).<br>• Option E is CORRECT: Accurately determines Delta F_quad = 1000.0 N (a 50% increase in muscle demand!).",
+    "trapAlert": "A 33% reduction in moment arm (from 4.5 cm to 3.0 cm) requires a 50% increase in muscular effort (from 2000 N to 3000 N) because torque is inversely proportional to moment arm: F = tau / r."
+  },
+  {
+    "id": "phys_2027_f11",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Angle-Dependent Torque: Moment Arm Modulation with Joint Flexion Angle",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The perpendicular moment arm d_eff of the biceps brachii tendon changes dynamically as the elbow joint flexes, following the relationship d_eff(theta) = d_0 * sin(theta), where d_0 = 4.0 cm is the anatomical distance from the elbow pivot to the radial tuberosity, and theta is the angle between the long axis of the ulna/radius and the line of action of the biceps tendon. If the biceps muscle sustains a constant maximal contractile force of F_b = 500.0 N, what is the joint torque tau generated at theta = 30.0°, theta = 90.0°, and theta = 150.0°, and at what angle is joint torque maximized?",
+    "options": [
+      "A. tau(30°) = 10.0 N·m; tau(90°) = 20.0 N·m; tau(150°) = 10.0 N·m; Maximized at theta = 90.0°",
+      "B. tau(30°) = 20.0 N·m; tau(90°) = 10.0 N·m; tau(150°) = 20.0 N·m; Maximized at theta = 30.0°",
+      "C. tau(30°) = 10.0 N·m; tau(90°) = 20.0 N·m; tau(150°) = -10.0 N·m; Maximized at theta = 90.0°",
+      "D. tau(30°) = 5.0 N·m; tau(90°) = 10.0 N·m; tau(150°) = 5.0 N·m; Maximized at theta = 90.0°",
+      "E. tau(30°) = 10.0 N·m; tau(90°) = 20.0 N·m; tau(150°) = 17.3 N·m; Maximized at theta = 90.0°"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Torque is given by tau = F * d_0 * sin(theta). In musculoskeletal mechanics, as a joint articulates through its range of motion, the angle of tendon insertion theta changes continuously. Torque generation is maximized when the tendon pulls perpendicularly to the bone (theta = 90°, where sin(90°) = 1.0).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. At theta = 30.0°:<br>sin(30.0°) = 0.50.<br>tau(30°) = (500.0 N) * (0.040 m) * sin(30°) = 20.0 * 0.50 = 10.0 N·m.<br>2. At theta = 90.0°:<br>sin(90.0°) = 1.00.<br>tau(90°) = (500.0 N) * (0.040 m) * 1.00 = 20.0 N·m.<br>3. At theta = 150.0°:<br>By trigonometric identity, sin(150°) = sin(180° - 30°) = sin(30°) = 0.50.<br>tau(150°) = (500.0 N) * (0.040 m) * 0.50 = 10.0 N·m.<br>4. Conclusion: Torque is symmetrical about 90° and reaches its absolute maximum of 20.0 N·m at theta = 90.0°.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates tau(30°) = 10.0 N·m, tau(90°) = 20.0 N·m, tau(150°) = 10.0 N·m, maximized at 90°.<br>• Option B is false: Inverts the sine values, claiming maximum torque occurs at 30°.<br>• Option C is false: Claims negative torque at 150°, forgetting that sin(150°) is positive (+0.50).<br>• Option D is false: Halves all torque values by miscalculating d_0 as 2 cm.<br>• Option E is false: Uses cos(30°) = √3/2 for 150° (17.3 N·m).",
+    "trapAlert": "Students often confuse sin(theta) and cos(theta) in torque problems. Remember that sin(150°) = +0.5 (positive in Quadrant II of the unit circle), so torque remains positive and equal to tau(30°)."
+  },
+  {
+    "id": "phys_2027_f12",
+    "subject": "Physics",
+    "chapter": "Biomechanics & Musculoskeletal Mechanics",
+    "subtopic": "Impulse-Momentum Theorem & Ground Reaction Forces in Jump Landing",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A 70.0 kg athlete lands on the floor from a vertical leap with a downward velocity of v_0 = 4.0 m/s. In Trial 1, the athlete lands with stiff, locked knees, coming to a complete rest in a rapid deceleration time of Delta t_1 = 0.05 s. In Trial 2, the athlete flexes their knees and hips, extending the deceleration time to Delta t_2 = 0.25 s. Taking g = 10.0 m/s², what are the average normal ground reaction forces (F_N1 and F_N2) exerted on the athlete's musculoskeletal system in Trial 1 versus Trial 2?",
+    "options": [
+      "A. F_N1 = 5600.0 N; F_N2 = 1120.0 N",
+      "B. F_N1 = 6300.0 N; F_N2 = 1820.0 N",
+      "C. F_N1 = 5600.0 N; F_N2 = 1820.0 N",
+      "D. F_N1 = 7000.0 N; F_N2 = 1400.0 N",
+      "E. F_N1 = 6300.0 N; F_N2 = 1120.0 N"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By Newton's second law and the impulse-momentum theorem: J_net = F_net * Delta t = Delta p = m * (v_final - v_initial). The net vertical force acting on the body during landing is F_net = F_N - m*g (taking upward as positive). Therefore, the normal ground reaction force is F_N = m*g + m * (v_0 / Delta t). Prolonging deceleration time markedly attenuates impact forces.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Change in momentum:<br>Delta p = m * (0 - (-4.0 m/s)) = +280.0 kg·m/s (directed upward).<br>2. Trial 1 (stiff landing, Delta t_1 = 0.05 s):<br>F_net1 = Delta p / Delta t_1 = 280.0 / 0.05 = 5600.0 N.<br>F_N1 = F_net1 + m*g = 5600.0 N + (70.0 kg * 10.0 m/s²) = 5600.0 + 700.0 = 6300.0 N (9 times body weight!).<br>3. Trial 2 (bent knee landing, Delta t_2 = 0.25 s):<br>F_net2 = Delta p / Delta t_2 = 280.0 / 0.25 = 1120.0 N.<br>F_N2 = F_net2 + m*g = 1120.0 N + 700.0 N = 1820.0 N (2.6 times body weight).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Forgets to add body weight m*g (700 N) to the net deceleration force, reporting F_net instead of F_N.<br>• Option B is CORRECT: Accurately evaluates F_N1 = 6300.0 N and F_N2 = 1820.0 N.<br>• Option C is false: Combines the incomplete F_net1 with the complete F_N2.<br>• Option D is false: Arbitrary rounding.<br>• Option E is false: Omits body weight in Trial 2 while including it in Trial 1.",
+    "trapAlert": "A ubiquitous student trap in ground reaction force calculations is forgetting to add gravity! The floor must not only decelerate the downward momentum of the body (F_net = m*a), but also continuously support the static body weight (m*g): F_N = m*(a + g)."
+  },
+  {
+    "id": "phys_2027_f13",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Poiseuille's Law & 50% Luminal Diameter Coronary Stenosis",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A patient with coronary artery disease develops an atherosclerotic plaque that reduces the internal luminal radius of the left anterior descending (LAD) coronary artery by 50.0% (r_stenosis = 0.50 r_normal) over an arterial segment of length L. Assuming laminar flow of Newtonian blood with constant dynamic viscosity eta and an unchanged perfusion pressure gradient Delta P across the segment, by what factor does the vascular resistance R increase, and what fraction of the original volumetric blood flow rate Q passes through the stenosed segment?",
+    "options": [
+      "A. Vascular resistance increases 2-fold; flow rate drops to 50.0% of baseline",
+      "B. Vascular resistance increases 4-fold; flow rate drops to 25.0% of baseline",
+      "C. Vascular resistance increases 16-fold; flow rate drops to 6.25% (1/16) of baseline",
+      "D. Vascular resistance increases 8-fold; flow rate drops to 12.5% of baseline",
+      "E. Vascular resistance increases 32-fold; flow rate drops to 3.125% of baseline"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Hagen-Poiseuille's law governs steady, laminar flow of a viscous fluid through a rigid cylindrical tube: Q = (Delta P * pi * r^4) / (8 * eta * L). By analogy with Ohm's law (Delta P = Q * R), the hydraulic resistance of the vessel is R = (8 * eta * L) / (pi * r^4). Thus, vascular resistance is inversely proportional to the FOURTH power of the vessel radius: R proportional to 1 / r^4.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Radius reduction: r_stenosis = 0.50 * r_normal = r_normal / 2.<br>2. Resistance scaling:<br>R_stenosis / R_normal = (r_normal / r_stenosis)^4 = (1 / 0.50)^4 = 2^4 = 16.<br>Vascular resistance increases by a factor of 16.<br>3. Volumetric flow rate under constant Delta P:<br>Q_stenosis / Q_normal = (r_stenosis / r_normal)^4 = (0.50)^4 = 0.0625 = 1/16.<br>Expressed as a percentage: 0.0625 * 100% = 6.25% of baseline flow.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Assumes linear resistance scaling (R proportional to 1/r).<br>• Option B is false: Assumes area-dependent scaling (R proportional to 1/r^2).<br>• Option C is CORRECT: Accurately evaluates a 16-fold increase in resistance and a drop to 6.25% (1/16) of baseline flow.<br>• Option D is false: Uses cubic scaling (2^3 = 8).<br>• Option E is false: Uses 5th-power scaling (2^5 = 32).",
+    "trapAlert": "Poiseuille's law depends on the FOURTH power of the radius (r^4), not the cross-sectional area (r^2) or diameter (r). A 50% radius reduction drops flow by 93.75%, leaving only 6.25% of flow, which precipitates acute myocardial ischemia."
+  },
+  {
+    "id": "phys_2027_f14",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Arteriolar Vasodilation: Fourth-Power Flow Amplification by Nitric Oxide",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "During reactive hyperemia, vascular endothelial cells release nitric oxide (NO), causing vascular smooth muscle relaxation that dilates terminal skeletal muscle arterioles by 20.0% in luminal radius (r' = 1.20 r). Assuming the local perfusion pressure gradient Delta P and blood viscosity eta remain constant, what is the percentage increase in volumetric blood flow rate Q, and what is the new vascular resistance R' expressed as a percentage of the baseline resistance R?",
+    "options": [
+      "A. Flow rate increases by 20.0%; resistance drops to 80.0% of baseline",
+      "B. Flow rate increases by 44.0%; resistance drops to 69.4% of baseline",
+      "C. Flow rate increases by 72.8%; resistance drops to 57.9% of baseline",
+      "D. Flow rate increases by 107.4%; resistance drops to 48.2% of baseline",
+      "E. Flow rate increases by 207.4%; resistance drops to 32.6% of baseline"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By Poiseuille's law, volumetric flow rate Q scales with r^4 and hydraulic resistance R scales with 1/r^4. A fractional increase in radius by factor k = (1 + delta) results in flow scaling by k^4 = (1 + delta)^4 and resistance scaling by k^(-4).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Radius expansion factor: k = 1.20.<br>2. Flow rate ratio:<br>Q' / Q = (r' / r)^4 = (1.20)^4 = [(1.20)^2]^2 = (1.44)^2 = 2.0736.<br>3. Percentage increase in flow rate:<br>Delta Q / Q = (2.0736 - 1) * 100% = +107.36% ≈ +107.4%.<br>(The blood flow rate more than doubles!).<br>4. Resistance ratio:<br>R' / R = 1 / (1.20)^4 = 1 / 2.0736 ≈ 0.4823 = 48.2% of baseline resistance (a 51.8% drop).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Assumes a linear 1st-power relationship.<br>• Option B is false: Uses quadratic (area) scaling: (1.20)^2 = 1.44 (+44%).<br>• Option C is false: Uses cubic scaling: (1.20)^3 = 1.728 (+72.8%).<br>• Option D is CORRECT: Accurately evaluates Q' / Q = 2.074 (+107.4%) and R' / R = 48.2%.<br>• Option E is false: Confuses the scaling factor 2.074 with a 207.4% increase (which would mean 3.074 * Q).",
+    "trapAlert": "A 20% increase in radius does not produce a 20% or 40% change: because of the 4th power, (1.2)^4 = 2.0736, representing a 107.4% increase. In biological terms, small smooth muscle adjustments yield massive shifts in tissue perfusion."
+  },
+  {
+    "id": "phys_2027_f15",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Reynolds Number & Critical Velocity for Turbulence in the Aorta",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Whole human blood has a mass density of rho = 1050.0 kg/m³ and dynamic viscosity of eta = 3.50 * 10⁻³ Pa·s. The root of the ascending aorta has an internal diameter of d = 2.0 cm = 0.020 m. Taking the critical Reynolds number for the transition from laminar to turbulent flow in physiological pulsatile conduits to be Re_crit = 2000, what is the critical blood velocity v_crit at which turbulence initiates, and what is the Reynolds number during peak systole when flow velocity reaches v_peak = 1.0 m/s?",
+    "options": [
+      "A. v_crit = 0.067 m/s; Re_peak = 400",
+      "B. v_crit = 1.50 m/s; Re_peak = 1333",
+      "C. v_crit = 0.667 m/s; Re_peak = 3000",
+      "D. v_crit = 0.500 m/s; Re_peak = 4000",
+      "E. v_crit = 0.333 m/s (33.3 cm/s); Re_peak = 6000"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Reynolds number is a dimensionless quantity representing the ratio of inertial forces to viscous forces in a fluid: Re = (rho * v * d) / eta. When Re exceeds the critical threshold Re_crit ≈ 2000, orderly laminar flow breaks down into chaotic eddies, vortices, and turbulent flow, generating audible acoustic vibrations (cardiac murmurs, arterial bruits, and Korotkoff sounds).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Solve for critical velocity v_crit:<br>Re_crit = (rho * v_crit * d) / eta<br>2000 = (1050.0 * v_crit * 0.020) / (3.50 * 10⁻³)<br>2000 = (21.0 * v_crit) / (3.50 * 10⁻³)<br>2000 * (3.50 * 10⁻³) = 21.0 * v_crit<br>7.0 = 21.0 * v_crit => v_crit = 7.0 / 21.0 = 1/3 m/s ≈ 0.333 m/s = 33.3 cm/s.<br>2. Calculate Reynolds number at peak systole (v_peak = 1.0 m/s):<br>Re_peak = (rho * v_peak * d) / eta = (1050.0 * 1.0 * 0.020) / (3.50 * 10⁻³)<br>Re_peak = 21.0 / (3.50 * 10⁻³) = 6000.<br>Because Re_peak (6000) >> Re_crit (2000), peak systolic flow in the proximal aorta is transiently turbulent.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Uses radius instead of diameter and makes an order-of-magnitude error.<br>• Option B is false: Inverts the ratio of viscosity and density.<br>• Option C is false: Uses radius (0.01 m) instead of diameter (0.02 m).<br>• Option D is false: Arbitrary arithmetic approximations.<br>• Option E is CORRECT: Accurately evaluates v_crit = 0.333 m/s and Re_peak = 6000.",
+    "trapAlert": "In the Reynolds number formula Re = (rho * v * d) / eta, d represents DIAMETER, not radius! Using radius r = 1.0 cm yields v_crit = 0.667 m/s, underestimating turbulence by a factor of 2."
+  },
+  {
+    "id": "phys_2027_f16",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Continuity Equation & Capillary Bed Cross-Sectional Area",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The human aorta has an internal cross-sectional area of A_aorta = 4.0 cm² with a mean blood flow velocity of v_aorta = 30.0 cm/s. By the continuity equation for incompressible fluids, the volumetric cardiac output Q passes through the entire branching systemic circulation. If the mean blood velocity in systemic exchange capillaries drops to v_cap = 0.040 cm/s to facilitate nutrient and gas diffusion, what is the total effective cross-sectional area A_total of the systemic capillary bed, and how many capillaries are open in parallel assuming each individual capillary has a cross-sectional area of a_c = 5.0 * 10⁻⁷ cm² (diameter d ≈ 8.0 µm)?",
+    "options": [
+      "A. A_total = 3000.0 cm²; N = 6.0 * 10⁹ capillaries",
+      "B. A_total = 120.0 cm²; N = 2.4 * 10⁸ capillaries",
+      "C. A_total = 750.0 cm²; N = 1.5 * 10⁹ capillaries",
+      "D. A_total = 12000.0 cm²; N = 2.4 * 10¹⁰ capillaries",
+      "E. A_total = 300.0 cm²; N = 6.0 * 10⁸ capillaries"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Incompressible conservation of mass is expressed by the continuity equation: Q = A_1 * v_1 = A_2 * v_2 = sum(A_i * v_i). For a branching vascular network with N identical vessels in parallel: Q = A_aorta * v_aorta = A_total * v_cap = N * a_c * v_cap. Even though individual capillaries are microscopic, their immense collective number creates a massive total cross-sectional area, causing flow velocity to plummet according to v = Q / A_total.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Volumetric cardiac output:<br>Q = A_aorta * v_aorta = (4.0 cm²) * (30.0 cm/s) = 120.0 cm³/s (or 7.2 L/min).<br>2. Total capillary cross-sectional area:<br>A_total = Q / v_cap = 120.0 cm³/s / 0.040 cm/s = 3000.0 cm² = 0.30 m².<br>(Notice that A_total is 750 times larger than the aorta!).<br>3. Total number of functioning capillaries N:<br>N = A_total / a_c = 3000.0 cm² / (5.0 * 10⁻⁷ cm²) = 6.0 * 10⁹ capillaries (6 billion).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates A_total = 3000.0 cm² and N = 6.0 * 10⁹.<br>• Option B is false: Equates A_total to flow rate Q (120 cm²).<br>• Option C is false: Computes 30 / 0.04 = 750 cm², forgetting to multiply by A_aorta (4 cm²).<br>• Option D is false: Quadruples the area through arithmetic error.<br>• Option E is false: Off by an order of magnitude (300 cm²).",
+    "trapAlert": "Students often assume that because capillaries have the narrowest diameters, blood must flow fastest through them. The continuity equation applies to the SUM of all parallel cross-sectional areas: v_cap = Q / (N * a_c). High total area guarantees low velocity."
+  },
+  {
+    "id": "phys_2027_f17",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Bernoulli Effect & Lateral Pressure Drop in Severe Carotid Stenosis",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Whole blood of density rho = 1060.0 kg/m³ flows horizontally through an unstenosed common carotid artery at a velocity of v_1 = 0.50 m/s and a static lateral blood pressure of P_1 = 100.0 mmHg (13330.0 Pa). The artery passes into an atherosclerotic stenotic segment where the luminal cross-sectional area is reduced by a factor of 4 (A_2 = A_1 / 4). Neglecting viscous head loss over this short narrowing, what is the blood flow velocity v_2 inside the stenosis, what is the drop in static pressure Delta P = P_1 - P_2 in Pascals, and what is the resulting lateral pressure P_2 in mmHg (using 1.0 mmHg = 133.3 Pa)?",
+    "options": [
+      "A. v_2 = 1.00 m/s; Delta P = 397.5 Pa; P_2 = 97.0 mmHg",
+      "B. v_2 = 2.00 m/s; Delta P = 1987.5 Pa; P_2 = 85.1 mmHg",
+      "C. v_2 = 2.00 m/s; Delta P = 3975.0 Pa; P_2 = 70.2 mmHg",
+      "D. v_2 = 4.00 m/s; Delta P = 8480.0 Pa; P_2 = 36.4 mmHg",
+      "E. v_2 = 2.00 m/s; Delta P = 2120.0 Pa; P_2 = 84.1 mmHg"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By the continuity equation for incompressible flow, reducing area by a factor of 4 quadruples flow velocity: A_1 * v_1 = A_2 * v_2 => v_2 = 4 * v_1. By Bernoulli's equation for horizontal streamline flow: P_1 + (1/2)*rho*v_1^2 = P_2 + (1/2)*rho*v_2^2. As fluid accelerates into a constriction, kinetic energy density increases at the expense of internal static potential energy (lateral pressure drops).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Stenosis velocity:<br>v_2 = v_1 * (A_1 / A_2) = 0.50 m/s * 4 = 2.00 m/s.<br>2. Dynamic pressure increase and static pressure drop Delta P:<br>Delta P = P_1 - P_2 = (1/2) * rho * (v_2^2 - v_1^2)<br>Delta P = 0.50 * 1060.0 kg/m³ * [(2.00 m/s)² - (0.50 m/s)²]<br>Delta P = 530.0 * [4.00 - 0.25] = 530.0 * 3.75 = 1987.5 Pa.<br>3. Convert Delta P to mmHg:<br>Delta P_mmHg = 1987.5 Pa / (133.3 Pa/mmHg) ≈ 14.91 mmHg.<br>4. Resulting lateral pressure P_2:<br>P_2 = P_1 - Delta P_mmHg = 100.0 mmHg - 14.91 mmHg = 85.09 mmHg ≈ 85.1 mmHg.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Assumes velocity doubles rather than quadruples.<br>• Option B is CORRECT: Accurately computes v_2 = 2.00 m/s, Delta P = 1987.5 Pa, and P_2 = 85.1 mmHg.<br>• Option C is false: Doubles the density or omits the factor of 1/2 in (1/2)*rho*v^2.<br>• Option D is false: Claims velocity increases 8-fold (4.0 m/s).<br>• Option E is false: Uses rho = 1060 directly without the 3.75 multiplier correctly evaluated.",
+    "trapAlert": "A frequent misconception is that pressure is highest inside a constriction. In reality, Bernoulli's principle shows that LATERAL STATIC PRESSURE DROPS sharply inside the stenosis. If external extravascular tissue pressure exceeds this reduced lateral pressure, the vessel can dynamically collapse!"
+  },
+  {
+    "id": "phys_2027_f18",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Law of Laplace & Wall Stress in Abdominal Aortic Aneurysm (AAA)",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The circumferential mechanical wall stress (hoop stress) sigma in a cylindrical blood vessel of internal radius r and wall thickness w under internal transmural blood pressure P is described by the Law of Laplace: sigma = (P * r) / w. A patient with a progressive abdominal aortic aneurysm (AAA) experiences a 3-fold dilation of aortic radius from r_normal = 1.0 cm to r_aneurysm = 3.0 cm. Concurrently, degenerative proteolysis thins the aortic wall by 50.0% from w_normal = 2.0 mm to w_aneurysm = 1.0 mm. Assuming mean arterial blood pressure P remains constant at 100 mmHg, by what factor does the mechanical wall stress sigma increase in the aneurysmal wall compared to the healthy aorta?",
+    "options": [
+      "A. 1.5-fold increase",
+      "B. 3.0-fold increase",
+      "C. 6.0-fold increase",
+      "D. 9.0-fold increase",
+      "E. 12.0-fold increase"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Law of Laplace for a cylindrical membrane states that total tensile wall force per unit length is T = P * r. When distributed over the wall thickness w, the tensile hoop stress is sigma = T / w = (P * r) / w. Wall stress is directly proportional to internal radius and inversely proportional to wall thickness. Dilation and wall thinning act synergistically to escalate wall stress.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Establish baseline stress:<br>sigma_normal = (P * r_normal) / w_normal = (P * 1.0 cm) / 2.0 mm = P * (10 mm / 2 mm) = 5.0 * P.<br>2. Establish aneurysm stress:<br>sigma_aneurysm = (P * r_aneurysm) / w_aneurysm = (P * 3.0 cm) / 1.0 mm = P * (30 mm / 1 mm) = 30.0 * P.<br>3. Ratio of aneurysmal stress to normal stress:<br>sigma_aneurysm / sigma_normal = (30.0 * P) / (5.0 * P) = 6.0.<br>Alternatively: (r_aneurysm / r_normal) * (w_normal / w_aneurysm) = (3 / 1) * (2 / 1) = 6.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Divides 3 by 2 (1.5).<br>• Option B is false: Accounts only for radius dilation (3-fold) while ignoring wall thinning.<br>• Option C is CORRECT: Accurately evaluates a 6.0-fold increase in wall stress.<br>• Option D is false: Squares the radius ratio (3^2 = 9).<br>• Option E is false: Multiplies by an extra factor of 2.",
+    "trapAlert": "Aneurysms present a vicious biophysical cycle: as radius expands, wall tension T = P*r increases, stretching the wall thinner, which further escalates stress sigma = P*r/w until the ultimate tensile strength of collagen is exceeded, leading to fatal rupture."
+  },
+  {
+    "id": "phys_2027_f19",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Laplace's Law in Pulmonary Alveoli: Surfactant & Alveolar Stability",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "According to the Law of Laplace for a spherical air-liquid interface with two degrees of curvature, the collapsing pressure Delta P across the alveolar wall is Delta P = (2 * gamma) / r, where gamma is surface tension and r is alveolar radius. In a preterm neonate suffering from Neonatal Respiratory Distress Syndrome (NRDS), pulmonary surfactant is deficient, leaving surface tension constant at gamma = 0.070 N/m across all alveoli regardless of size. Consider two interconnected alveoli: a small alveolus with r_1 = 50.0 µm (5.0 * 10⁻⁵ m) and a large alveolus with r_2 = 150.0 µm (1.5 * 10⁻⁴ m). What are their respective internal collapsing pressures Delta P_1 and Delta P_2, and what physical event occurs when they are interconnected by common alveolar ducts?",
+    "options": [
+      "A. Delta P_1 = 1400.0 Pa; Delta P_2 = 466.7 Pa; Air flows from the large alveolus into the small alveolus until both equalize in volume",
+      "B. Delta P_1 = 2800.0 Pa; Delta P_2 = 2800.0 Pa; No air flows because surface tension is identical",
+      "C. Delta P_1 = 933.3 Pa; Delta P_2 = 2800.0 Pa; Air flows from the large alveolus into the small alveolus",
+      "D. Delta P_1 = 2800.0 Pa; Delta P_2 = 933.3 Pa; Air flows spontaneously from the small alveolus into the large alveolus, causing atelectasis (collapse) of the small alveolus",
+      "E. Delta P_1 = 5600.0 Pa; Delta P_2 = 1866.7 Pa; Both alveoli spontaneously rupture due to excess positive pressure"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> For a spherical fluid-lined bubble, Delta P = 2*gamma / r. Because collapsing pressure is inversely proportional to radius, smaller alveoli experience a substantially higher inward collapsing pressure than larger alveoli when surface tension gamma is constant. When connected in parallel, air flows down the pressure gradient from high pressure (small alveolus) to low pressure (large alveolus), driving small alveoli to collapse (atelectasis) and large alveoli to hyperinflate.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Small alveolus (r_1 = 5.0 * 10⁻⁵ m):<br>Delta P_1 = (2 * 0.070 N/m) / (5.0 * 10⁻⁵ m) = 0.140 / (5.0 * 10⁻⁵) = 2800.0 Pa (≈ 21.0 mmHg).<br>2. Large alveolus (r_2 = 1.5 * 10⁻⁴ m):<br>Delta P_2 = (2 * 0.070 N/m) / (1.5 * 10⁻⁴ m) = 0.140 / (1.5 * 10⁻⁴) = 933.33 Pa (≈ 7.0 mmHg).<br>3. Hemodynamic/respiratory consequence:<br>Delta P_1 (2800 Pa) >> Delta P_2 (933.3 Pa). Air flows from the higher-pressure small alveolus into the lower-pressure large alveolus, emptying the small alveolus completely. Pulmonary surfactant solves this by lowering gamma much more in smaller alveoli, equalizing Delta P across varied radii.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits the factor of 2 in Laplace's spherical equation and reverses air flow direction.<br>• Option B is false: Erroneously claims pressures are equal because surface tensions are equal.<br>• Option C is false: Inverts the radii in the pressure calculations.<br>• Option D is CORRECT: Accurately evaluates Delta P_1 = 2800.0 Pa, Delta P_2 = 933.3 Pa, and predicts atelectasis of the small alveolus.<br>• Option E is false: Double counts surface tension (using 4*gamma/r as if it were a two-sided soap bubble in air).",
+    "trapAlert": "An alveolus has ONE fluid-air interface (liquid lining inside, air in lumen), so Delta P = 2*gamma / r. A soap bubble in air has TWO interfaces (inner and outer), using 4*gamma / r. Don't confuse the two formulas!"
+  },
+  {
+    "id": "phys_2027_f20",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Hematocrit, Blood Viscosity & Total Peripheral Resistance in Polycythemia",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A patient with primary polycythemia vera presents with a pathologically elevated hematocrit of 65.0% (normal: 45.0%), which causes whole blood dynamic viscosity eta to increase by 80.0% (eta' = 1.80 eta). Assuming mean arterial perfusion pressure (MAP = Delta P) remains constant and systemic arteriolar luminal dimensions remain initially unchanged, what is the new total peripheral vascular resistance R' relative to baseline resistance R, and what is the new cardiac output Q' expressed as a fraction of baseline cardiac output Q?",
+    "options": [
+      "A. R' = 1.20 R; Q' = 0.833 Q",
+      "B. R' = 1.44 R; Q' = 0.694 Q",
+      "C. R' = 1.80 R; Q' = 1.80 Q",
+      "D. R' = 3.24 R; Q' = 0.309 Q",
+      "E. R' = 1.80 R; Q' = 0.556 Q (cardiac output drops to 55.6% of baseline)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By Poiseuille's equation, vascular resistance is directly proportional to dynamic viscosity: R = (8 * eta * L) / (pi * r^4) => R proportional to eta. By Darcy's/Ohm's hemodynamic law, volumetric flow (cardiac output) is Q = Delta P / R. An 80% increase in viscosity directly increases resistance by 80%, reducing cardiac output under constant perfusion pressure.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Viscosity scaling: eta' = 1.80 * eta.<br>2. Resistance scaling:<br>R' / R = eta' / eta = 1.80 => R' = 1.80 * R.<br>3. Cardiac output scaling under constant MAP (Delta P):<br>Q' = Delta P / R' = Delta P / (1.80 * R) = (1 / 1.80) * (Delta P / R) = (1 / 1.80) * Q.<br>Q' / Q = 1 / 1.80 = 10 / 18 = 5 / 9 ≈ 0.5556 = 55.6% of baseline cardiac output.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Uses an arbitrary 20% increase.<br>• Option B is false: Squares the 1.20 factor.<br>• Option C is false: Claims cardiac output increases in direct proportion to resistance.<br>• Option D is false: Squares the viscosity factor (1.80^2 = 3.24).<br>• Option E is CORRECT: Accurately evaluates R' = 1.80 R and Q' = 0.556 Q.",
+    "trapAlert": "Viscosity has a DIRECT linear relationship with vascular resistance (R proportional to eta^1), unlike radius which has an inverse fourth-power relationship (R proportional to 1/r^4). Don't square or exponentiate viscosity!"
+  },
+  {
+    "id": "phys_2027_f21",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Hydrostatic Pressure Column & Orthostatic Hemodynamics",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A healthy adult of height 1.80 m stands completely still in the upright posture. The mean arterial pressure at the level of the aortic root (heart level) is P_heart = 95.0 mmHg. The cerebral arterial circle (Circle of Willis) is located at a vertical distance of h_brain = 0.50 m above heart level, while the dorsalis pedis artery in the foot is located at h_foot = 1.30 m below heart level. Taking blood density to be rho = 1060.0 kg/m³, acceleration due to gravity g = 10.0 m/s², and 1.0 mmHg = 133.3 Pa, what are the absolute hydrostatic mean arterial pressures at the brain (P_brain) and at the foot (P_foot)?",
+    "options": [
+      "A. P_brain ≈ 55.2 mmHg; P_foot ≈ 198.4 mmHg",
+      "B. P_brain ≈ 95.0 mmHg; P_foot ≈ 95.0 mmHg",
+      "C. P_brain ≈ 134.8 mmHg; P_foot ≈ 55.2 mmHg",
+      "D. P_brain ≈ 75.0 mmHg; P_foot ≈ 150.0 mmHg",
+      "E. P_brain ≈ 42.0 mmHg; P_foot ≈ 220.0 mmHg"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In a continuous fluid column under gravity, absolute pressure varies with vertical height according to the hydrostatic equation: P = P_ref ± rho * g * h. At points located ABOVE the heart, hydrostatic pressure subtracts from aortic pressure: P_brain = P_heart - rho * g * h_brain. At points located BELOW the heart, the hydrostatic column adds to aortic pressure: P_foot = P_heart + rho * g * h_foot.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Hydrostatic pressure difference for brain (h_brain = 0.50 m above heart):<br>Delta P_brain = rho * g * h_brain = (1060.0 kg/m³) * (10.0 m/s²) * (0.50 m) = 5300.0 Pa.<br>Convert to mmHg: 5300.0 Pa / (133.3 Pa/mmHg) ≈ 39.76 mmHg.<br>P_brain = P_heart - Delta P_brain = 95.0 mmHg - 39.76 mmHg = 55.24 mmHg ≈ 55.2 mmHg.<br>2. Hydrostatic pressure difference for foot (h_foot = 1.30 m below heart):<br>Delta P_foot = rho * g * h_foot = (1060.0 kg/m³) * (10.0 m/s²) * (1.30 m) = 13780.0 Pa.<br>Convert to mmHg: 13780.0 Pa / (133.3 Pa/mmHg) ≈ 103.38 mmHg.<br>P_foot = P_heart + Delta P_foot = 95.0 mmHg + 103.38 mmHg = 198.38 mmHg ≈ 198.4 mmHg.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates P_brain ≈ 55.2 mmHg and P_foot ≈ 198.4 mmHg.<br>• Option B is false: Erroneously ignores the hydrostatic fluid column entirely.<br>• Option C is false: Reverses the signs, adding pressure at the head and subtracting at the foot.<br>• Option D is false: Arbitrary rounded estimates.<br>• Option E is false: Uses pure water density (1000 kg/m³) with arithmetic scaling errors.",
+    "trapAlert": "When moving upward against gravity, hydrostatic pressure DECREASES (-rho*g*h); when moving downward with gravity, it INCREASES (+rho*g*h). This massive hydrostatic pressure at the feet (~200 mmHg) causes venous pooling and dependent edema if venous valves or muscle pumps fail."
+  },
+  {
+    "id": "phys_2027_f22",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Series Hemodynamics in Renal Glomerular Filtration Microcirculation",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In the microcirculation of a single renal nephron, blood flows sequentially in series through the afferent arteriole (resistance R_aff = 0.80 mmHg·min/L), the glomerular capillary bed (resistance R_glom = 0.10 mmHg·min/L), and the efferent arteriole (resistance R_eff = 0.60 mmHg·min/L). Total baseline nephron resistance is R_total = 1.50 mmHg·min/L. Under the influence of Angiotensin II, the efferent arteriole selectively constricts, increasing R_eff from 0.60 to 1.10 mmHg·min/L, while afferent resistance R_aff remains constant. What is the new total nephron resistance R'_total, and how does this efferent constriction affect glomerular capillary hydrostatic pressure P_glom?",
+    "options": [
+      "A. R'_total = 1.50 mmHg·min/L; P_glom decreases, shutting down filtration",
+      "B. R'_total = 2.00 mmHg·min/L; P_glom increases, preserving or elevating Glomerular Filtration Rate (GFR)",
+      "C. R'_total = 2.50 mmHg·min/L; P_glom decreases, causing renal failure",
+      "D. R'_total = 1.80 mmHg·min/L; P_glom remains exactly unchanged",
+      "E. R'_total = 3.00 mmHg·min/L; P_glom increases by 10-fold, bursting capillaries"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In a series hydraulic circuit, total resistance is the algebraic sum of individual segmental resistances: R_total = R_aff + R_glom + R_eff. By the hydraulic voltage divider rule, pressure in an intermediate compartment (P_glom) depends on the ratio of upstream resistance to downstream resistance: P_glom = P_art - Q * R_aff. Increasing downstream resistance R_eff creates backpressure, elevating P_glom.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate new total series resistance:<br>R'_total = R_aff + R_glom + R'_eff = 0.80 + 0.10 + 1.10 = 2.00 mmHg·min/L.<br>2. Effect on renal blood flow Q:<br>Q' = Delta P / R'_total = Delta P / 2.00 = 0.75 * Q_baseline (blood flow drops by 25%).<br>3. Glomerular pressure P_glom:<br>P_glom = P_renal_artery - Q * R_aff.<br>Because flow Q drops, the pressure drop across the afferent arteriole (Delta P_aff = Q * R_aff) decreases, which means glomerular capillary hydrostatic pressure P_glom INCREASES.<br>This elevated P_glom maintains glomerular filtration rate (GFR) during states of hypoperfusion.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Claims resistance does not change and P_glom drops.<br>• Option B is CORRECT: Accurately evaluates R'_total = 2.00 mmHg·min/L and proves P_glom increases to preserve GFR.<br>• Option C is false: Incorrect summation and wrong physiological direction.<br>• Option D is false: Arithmetic error in resistance summation.<br>• Option E is false: Exaggerated catastrophic scenario.",
+    "trapAlert": "Constricting an outflow vessel (efferent arteriole) INCREASES the upstream pressure in the capillaries (P_glom) through backpressure, even though total organ blood flow decreases. This is a critical physiological mechanism of Angiotensin II."
+  },
+  {
+    "id": "phys_2027_f23",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Left Ventricular Stroke Work & Hydraulic Power Output",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A healthy resting human has a resting heart rate of HR = 75.0 beats/min, a stroke volume of SV = 80.0 mL (8.0 * 10⁻⁵ m³), and ejects blood against a mean aortic systolic pressure of Delta P = 100.0 mmHg (13330.0 Pa). Assuming laminar ejection and negligible kinetic acceleration terms, what is the mechanical stroke work W_stroke performed by the left ventricle during each single beat, and what is the mean mechanical hydraulic power output P_mech of the left ventricle?",
+    "options": [
+      "A. W_stroke = 0.533 J; P_mech = 0.667 W",
+      "B. W_stroke = 8.00 J; P_mech = 10.0 W",
+      "C. W_stroke = 1.07 J; P_mech = 1.33 W",
+      "D. W_stroke = 1.07 J; P_mech = 80.0 W",
+      "E. W_stroke = 2.13 J; P_mech = 2.67 W"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In fluid mechanics and thermodynamics, the mechanical work performed by a pump during fluid displacement is W = integral(P dV) ≈ Delta P * SV. Power is the rate of performing work: P_mech = W / Delta t = W_stroke * (HR / 60) = Q * Delta P, where Q is volumetric cardiac output in m³/s.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Stroke work W_stroke:<br>W_stroke = Delta P * SV = (13330.0 Pa) * (8.0 * 10⁻⁵ m³) = 1.0664 J ≈ 1.07 J/beat.<br>2. Cardiac output Q in m³/s:<br>HR = 75.0 beats/min => frequency f = 75.0 / 60.0 = 1.25 beats/s (Hz).<br>Q = SV * f = (8.0 * 10⁻⁵ m³) * (1.25 s⁻¹) = 1.00 * 10⁻⁴ m³/s (which equals 6.0 L/min).<br>3. Mean hydraulic power output P_mech:<br>P_mech = Q * Delta P = (1.00 * 10⁻⁴ m³/s) * (13330.0 Pa) = 1.333 W ≈ 1.33 W.<br>Alternatively: P_mech = W_stroke * f = 1.0664 J * 1.25 s⁻¹ = 1.333 W.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Halves the work and power calculations.<br>• Option B is false: Multiplies pressure by volume in mL directly without converting to m³.<br>• Option C is CORRECT: Accurately evaluates W_stroke = 1.07 J and P_mech = 1.33 W.<br>• Option D is false: Multiplies by HR in beats/min (75) without converting to beats/s, yielding 80 W.<br>• Option E is false: Doubles both values.",
+    "trapAlert": "Always convert volume to SI units (m³)! 80 mL = 80 * 10⁻⁶ m³ = 8.0 * 10⁻⁵ m³. Also, remember to convert heart rate from beats per minute to beats per second (divide by 60) when calculating power in Watts (J/s)."
+  },
+  {
+    "id": "phys_2027_f24",
+    "subject": "Physics",
+    "chapter": "Fluid Dynamics & Hemodynamics",
+    "subtopic": "Endothelial Wall Shear Stress & Adaptive Vascular Remodeling",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Fluid mechanical analysis of Poiseuille flow demonstrates that viscous drag exerted by moving blood against the vascular endothelial lining creates a wall shear stress given by tau_w = (4 * eta * Q) / (pi * r³). Vascular endothelial cells act as mechanotransducers that release nitric oxide or stimulate structural remodeling to maintain resting wall shear stress at a constant physiological setpoint (tau_w = constant). Following long-term endurance athletic training, resting blood flow through the femoral artery increases by 33.1% (Q' = 1.331 Q). To restore wall shear stress tau_w precisely to its baseline setpoint, by what percentage must the arterial luminal radius r expand?",
+    "options": [
+      "A. +3.31%",
+      "B. +33.1%",
+      "C. +5.00%",
+      "D. +10.0%",
+      "E. +20.0%"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Wall shear stress is defined as tau_w = eta * (dv/dr)_(r=R). In Hagen-Poiseuille parabolic flow, velocity is v(r) = v_max * (1 - r²/R²), yielding tau_w = (4 * eta * Q) / (pi * r³). For wall shear stress to remain constant (tau_w' = tau_w) when flow Q changes, the ratio Q / r³ must remain constant: Q proportional to r³ => r proportional to Q^(1/3).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Set up the constancy condition:<br>tau_w' = tau_w => (4 * eta * Q') / (pi * r'³) = (4 * eta * Q) / (pi * r³).<br>2. Cancel constants:<br>Q' / r'³ = Q / r³ => (r' / r)³ = Q' / Q.<br>3. Substitute flow increase Q' = 1.331 * Q:<br>(r' / r)³ = 1.331.<br>4. Take the cube root:<br>r' / r = (1.331)^(1/3).<br>Notice that 1.1³ = 1.1 * 1.1 * 1.1 = 1.21 * 1.1 = 1.331.<br>Therefore: r' / r = 1.10.<br>5. Percentage increase in radius:<br>Delta r / r = (1.10 - 1.00) * 100% = +10.0%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Divides the flow percentage by 10.<br>• Option B is false: Assumes a linear 1:1 relationship between radius and flow.<br>• Option C is false: Arbitrary fractional guess.<br>• Option D is CORRECT: Accurately evaluates (1.331)^(1/3) = 1.10, representing a +10.0% arterial expansion.<br>• Option E is false: Uses a square root approximation (1.44^(1/2) = 1.20).",
+    "trapAlert": "While total volumetric flow rate Q depends on the 4th power of radius (r^4) for a given pressure drop, WALL SHEAR STRESS depends on Q / r³. Do not confuse Poiseuille's r^4 flow dependence with the r³ dependence of endothelial shear stress!"
+  },
+  {
+    "id": "phys_2027_f25",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Membrane Time Constant & RC Circuit Charging Dynamics",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A neuronal dendrite has a specific membrane resistance of R_m = 5000.0 Ω·cm² and a specific membrane capacitance of C_m = 1.0 µF/cm² (1.0 * 10⁻⁶ F/cm²). What is the passive membrane time constant tau of this neuron? If a constant subthreshold intracellular current step is injected beginning at t = 0, what percentage of the maximal asymptotic steady-state membrane depolarization V_max is achieved at elapsed times t = tau (t = 5.0 ms) and t = 2 tau (t = 10.0 ms)? (Use e⁻¹ ≈ 0.3679 and e⁻² ≈ 0.1353).",
+    "options": [
+      "A. tau = 0.5 ms; at t = tau, V = 50.0%; at t = 2 tau, V = 75.0% of V_max",
+      "B. tau = 5.0 ms; at t = tau, V = 50.0%; at t = 2 tau, V = 100.0% of V_max",
+      "C. tau = 50.0 ms; at t = tau, V = 63.2%; at t = 2 tau, V = 86.5% of V_max",
+      "D. tau = 5.0 ms; at t = tau, V = 36.8%; at t = 2 tau, V = 13.5% of V_max",
+      "E. tau = 5.0 ms; at t = tau, V ≈ 63.2%; at t = 2 tau, V ≈ 86.5% of V_max"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The biological cell membrane functions electrically as a parallel resistor-capacitor (RC) circuit. The membrane time constant is tau = R_m * C_m, which represents the time required to charge the membrane capacitance through the membrane resistance. When charging under a constant current step: V(t) = V_max * (1 - e^(-t/tau)). At t = tau, V(tau) = V_max * (1 - e⁻¹) ≈ 0.6321 * V_max (63.2%). At t = 2 tau, V(2 tau) = V_max * (1 - e⁻²) ≈ 0.8647 * V_max (86.5%).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate membrane time constant tau:<br>tau = R_m * C_m = (5000.0 Ω·cm²) * (1.0 * 10⁻⁶ F/cm²) = 5.0 * 10⁻³ s = 5.0 ms.<br>(Notice that because both parameters are normalized per unit area, area cancels out completely: tau is an intrinsic property of the membrane bilayer and channel density).<br>2. Evaluate charging at t = tau = 5.0 ms:<br>V(tau) = V_max * (1 - e⁻¹) = V_max * (1 - 0.3679) = 0.6321 * V_max ≈ 63.2% of V_max.<br>3. Evaluate charging at t = 2 tau = 10.0 ms:<br>V(2 tau) = V_max * (1 - e⁻²) = V_max * (1 - 0.1353) = 0.8647 * V_max ≈ 86.5% of V_max.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Calculation error placing tau at 0.5 ms and using linear percentages.<br>• Option B is false: Erroneously adopts 50% and 100% as linear milestones.<br>• Option C is false: Factor-of-10 error in time constant (50 ms).<br>• Option D is false: Reports the remaining voltage to be charged (e^(-t/tau): 36.8% and 13.5%), confusing charging with discharging.<br>• Option E is CORRECT: Accurately evaluates tau = 5.0 ms, V(tau) ≈ 63.2%, and V(2 tau) ≈ 86.5%.",
+    "trapAlert": "Confusing RC charging with discharging: for charging, V(t) = V_max * (1 - e^(-t/tau)), giving 63.2% at t = tau. For discharging/decay, V(t) = V_0 * e^(-t/tau), giving 36.8% at t = tau."
+  },
+  {
+    "id": "phys_2027_f26",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Axonal Cable Theory: Length (Space) Constant & Diameter Scaling",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In classical linear cable theory, the axonal length (space) constant is defined as lambda = sqrt(r_m / r_i), where r_m is the membrane resistance of a unit length cylinder (r_m = R_m / [pi * d]) and r_i is the internal longitudinal axoplasmic resistance of a unit length cylinder (r_i = 4 * rho_i / [pi * d²]), yielding lambda = sqrt((R_m * d) / (4 * rho_i)). A squid giant axon with diameter d_1 = 500.0 µm has an experimentally measured space constant of lambda_1 = 2.0 mm. Assuming identical specific membrane resistivity R_m and axoplasmic resistivity rho_i, what is the space constant lambda_2 of a human unmyelinated C-type pain fiber with a diameter of d_2 = 0.80 µm?",
+    "options": [
+      "A. lambda_2 = 80.0 µm (0.080 mm)",
+      "B. lambda_2 = 3.2 µm (0.0032 mm)",
+      "C. lambda_2 = 400.0 µm (0.400 mm)",
+      "D. lambda_2 = 16.0 µm (0.016 mm)",
+      "E. lambda_2 = 1.25 µm (0.00125 mm)"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In an unmyelinated cylindrical cable, membrane resistance per unit length scales inversely with circumference (r_m proportional to 1/d), while internal axial resistance per unit length scales inversely with cross-sectional area (r_i proportional to 1/d²). Consequently, the space constant scales with the SQUARE ROOT of fiber diameter: lambda = sqrt(r_m / r_i) proportional to sqrt(d).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Establish the scaling ratio:<br>lambda_2 / lambda_1 = sqrt(d_2 / d_1).<br>2. Calculate diameter ratio:<br>d_2 / d_1 = 0.80 µm / 500.0 µm = 8.0 * 10⁻¹ / 5.0 * 10² = 1.6 * 10⁻³ = 0.0016.<br>3. Take the square root:<br>sqrt(0.0016) = 0.040 (or 4.0 * 10⁻²).<br>4. Calculate lambda_2:<br>lambda_2 = lambda_1 * 0.040 = (2.0 mm) * 0.040 = 0.080 mm = 80.0 µm.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates lambda_2 = 80.0 µm (0.080 mm).<br>• Option B is false: Uses linear diameter scaling: 2.0 * (0.8 / 500) = 0.0032 mm = 3.2 µm.<br>• Option C is false: Computes sqrt(d_1 / d_2) inverted.<br>• Option D is false: Arithmetic error taking sqrt(0.0016) as 0.008.<br>• Option E is false: Uses 1/d scaling.",
+    "trapAlert": "Space constant lambda scales with the SQUARE ROOT of diameter (sqrt(d)), not linearly with d. A 625-fold decrease in diameter (500 µm to 0.8 µm) results in a 25-fold decrease in space constant (sqrt(625) = 25; 2.0 mm / 25 = 0.080 mm = 80 µm)."
+  },
+  {
+    "id": "phys_2027_f27",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Biophysics of Myelination: Capacitance, Resistance & Space Constant",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "During neurodevelopment, a Schwann cell wraps 100 concentric compact myelin membrane lamellae around an internodal axonal segment. This effectively increases the total dielectric thickness of the membrane insulating layer by a factor of 100 (d' = 100 d) and places 100 membrane lipid bilayers in series. How do the internodal membrane capacitance per unit length c_m and membrane resistance per unit length r_m change, and by what factor does the axonal space constant lambda = sqrt(r_m / r_i) increase (assuming axoplasmic resistance r_i remains constant)?",
+    "options": [
+      "A. c_m increases 100-fold; r_m decreases 100-fold; lambda decreases 10-fold",
+      "B. c_m decreases 100-fold; r_m increases 100-fold; lambda increases 10-fold",
+      "C. c_m decreases 10-fold; r_m increases 10-fold; lambda increases 100-fold",
+      "D. Both c_m and r_m decrease 100-fold; lambda remains unchanged",
+      "E. c_m decreases 100-fold; r_m increases 10000-fold; lambda increases 100-fold"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In electrical circuit physics, a capacitor's capacitance is C = (epsilon * A) / d. Increasing dielectric barrier thickness 100-fold decreases membrane capacitance 100-fold: c_m' = c_m / 100. Conversely, placing 100 resistors in series increases total resistance 100-fold: r_m' = 100 * r_m. The space constant lambda = sqrt(r_m / r_i) therefore increases by sqrt(100) = 10.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Membrane capacitance:<br>Capacitance of N identical dielectric layers in series: 1/C_total = sum(1/C_i) = N / C_single => C_total = C_single / N.<br>For N = 100: c_m' = c_m / 100 (decreases 100-fold). This minimizes charge needed to depolarize the internode.<br>2. Membrane resistance:<br>Resistance of N identical membrane layers in series: R_total = sum(R_i) = N * R_single.<br>For N = 100: r_m' = 100 * r_m (increases 100-fold). This virtually eliminates trans-membrane current leakage.<br>3. Space constant lambda:<br>lambda' = sqrt(r_m' / r_i) = sqrt((100 * r_m) / r_i) = sqrt(100) * sqrt(r_m / r_i) = 10 * lambda.<br>The space constant increases by a factor of 10, enabling electrotonic current to travel 10 times farther along the axon with negligible attenuation.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts capacitance and resistance transformations.<br>• Option B is CORRECT: Accurately derives that c_m drops 100-fold, r_m increases 100-fold, and lambda increases 10-fold.<br>• Option C is false: Takes the square root of thickness for capacitance and resistance.<br>• Option D is false: Claims resistance decreases.<br>• Option E is false: Squares the resistance factor (100^2 = 10000).",
+    "trapAlert": "Myelin achieves two simultaneous feats: it massively reduces capacitance (lowering charging time) and massively increases membrane resistance (preventing leak). Together, they allow passive depolarization to propagate rapidly from one node to the next (saltatory conduction)."
+  },
+  {
+    "id": "phys_2027_f28",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Pathophysiology of Demyelination: Multiple Sclerosis & Conduction Block",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a healthy human myelinated axon, the distance between two consecutive Nodes of Ranvier is L = 1.0 mm, and the internodal length constant is lambda_healthy = 2.0 mm. An action potential generated at Node 0 delivers an initial electrotonic depolarization of V_0 = 100.0 mV into the internode. In a patient suffering from Multiple Sclerosis, inflammatory autoimmune demyelination exposes the bare axon across this internode, causing trans-membrane leak that collapses the space constant to lambda_demyel = 0.25 mm. Assuming passive decay follows V(x) = V_0 * e^(-x / lambda) and that the critical voltage threshold needed to trigger voltage-gated Na⁺ channels at Node 1 (located at x = 1.0 mm) is V_thresh = 15.0 mV, what is the membrane potential reaching Node 1 before versus after demyelination? (Use e^(-0.5) ≈ 0.6065 and e^(-4.0) ≈ 0.0183).",
+    "options": [
+      "A. Before: 100.0 mV; After: 50.0 mV; Conduction continues normally without clinical deficit",
+      "B. Before: 36.8 mV; After: 18.3 mV; Conduction continues with slight temporal delay",
+      "C. Before: ≈ 60.7 mV (suprathreshold); After: ≈ 1.83 mV (subthreshold, producing complete conduction block)",
+      "D. Before: ≈ 85.0 mV; After: ≈ 15.0 mV; Conduction is at the exact threshold boundary",
+      "E. Before: ≈ 60.7 mV; After: 0.0 mV; Node 1 hyperpolarizes to -90.0 mV"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In myelinated axons, saltatory conduction relies on passive electrotonic current spreading from one active node to the adjacent resting node. The voltage arriving at distance x is governed by the cable decay equation: V(x) = V_0 * e^(-x / lambda). If V(x) >= V_thresh, voltage-gated Na⁺ channels activate, regenerating the full action potential. If V(x) < V_thresh, propagation halts permanently (conduction block).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Healthy condition (lambda = 2.0 mm, x = 1.0 mm):<br>Exponent: -x / lambda = -1.0 / 2.0 = -0.50.<br>V_healthy(1.0 mm) = 100.0 mV * e^(-0.50) ≈ 100.0 * 0.6065 = 60.65 mV ≈ 60.7 mV.<br>Because 60.7 mV >> 15.0 mV threshold (safety factor ≈ 4.0), Node 1 fires robustly.<br>2. Demyelinated condition (lambda = 0.25 mm, x = 1.0 mm):<br>Exponent: -x / lambda = -1.0 / 0.25 = -4.0.<br>V_demyel(1.0 mm) = 100.0 mV * e^(-4.0) ≈ 100.0 * 0.0183 = 1.83 mV.<br>Because 1.83 mV << 15.0 mV, the depolarization is completely insufficient to trigger voltage-gated Na⁺ channels. Conduction fails (conduction block), explaining acute motor paralysis or sensory loss in MS.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Ignores exponential decay entirely.<br>• Option B is false: Uses x = lambda for healthy (e^-1 = 36.8%) and 18.3 mV for demyelinated.<br>• Option C is CORRECT: Accurately evaluates V_healthy ≈ 60.7 mV (suprathreshold) and V_demyel ≈ 1.83 mV (subthreshold, causing conduction block).<br>• Option D is false: Overestimates demyelinated voltage to force an exact threshold match.<br>• Option E is false: Claims voltage drops to absolute zero or hyperpolarizes.",
+    "trapAlert": "When demyelination occurs, voltage does not simply slow down—it decays EXPONENTIALLY over distance. Because the exponent increases from 0.5 to 4.0, the voltage arriving at Node 1 drops from 60.7 mV to 1.83 mV, well below the 15 mV threshold, completely abolishing signal transmission."
+  },
+  {
+    "id": "phys_2027_f29",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Capacitive Displacement Current During Action Potential Upstroke",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A spherical neuronal soma of radius r = 10.0 µm has a total membrane surface area of A = 4 * pi * r² ≈ 1.257 * 10⁻⁵ cm² and a specific membrane capacitance of C_m = 1.0 µF/cm² (total capacitance C_total ≈ 12.57 pF). During the rapid phase 0 depolarization upstroke of an action potential, opening of voltage-gated sodium channels causes the transmembrane potential to rise at a maximal rate of dV/dt = 400.0 V/s. By Maxwell's capacitor law I_c = C_total * (dV/dt), what is the total capacitive displacement current I_c crossing the lipid bilayer of the soma?",
+    "options": [
+      "A. I_c = 1.26 pA",
+      "B. I_c = 50.3 nA",
+      "C. I_c = 0.503 nA",
+      "D. I_c ≈ 5.03 nA",
+      "E. I_c ≈ 12.6 nA"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The lipid bilayer behaves as an electrical capacitor storing charge Q = C * V. When membrane potential changes rapidly over time, charges redistribute on the intracellular and extracellular surfaces, producing a capacitive displacement current: I_c = dQ/dt = C * (dV/dt). During an action potential upstroke, the inward ionic sodium current must first supply this capacitive current to discharge the membrane capacitance before the membrane potential can reverse.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate soma surface area A:<br>r = 10.0 µm = 10.0 * 10⁻⁴ cm = 1.0 * 10⁻³ cm.<br>A = 4 * pi * r² = 4 * pi * (1.0 * 10⁻³ cm)² = 4 * pi * 10⁻⁶ cm² ≈ 1.2566 * 10⁻⁵ cm².<br>2. Calculate total membrane capacitance C_total:<br>C_total = C_m * A = (1.0 * 10⁻⁶ F/cm²) * (1.2566 * 10⁻⁵ cm²) = 1.2566 * 10⁻¹¹ F = 12.566 pF.<br>3. Calculate capacitive displacement current I_c:<br>I_c = C_total * (dV/dt) = (1.2566 * 10⁻¹¹ F) * (400.0 V/s)<br>I_c = 5.0265 * 10⁻⁹ A ≈ 5.03 * 10⁻⁹ A = 5.03 nA.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Reports 1.26 pA due to an order-of-magnitude exponent error.<br>• Option B is false: Off by a factor of 10 (50.3 nA).<br>• Option C is false: Off by a factor of 10 (0.503 nA).<br>• Option D is CORRECT: Accurately evaluates I_c ≈ 5.03 nA.<br>• Option E is false: Uses 12.6 nA by ignoring the factor of 4 in 400 V/s.",
+    "trapAlert": "Capacitive current is proportional to the RATE OF VOLTAGE CHANGE (dV/dt), not the absolute voltage V! Even when membrane potential crosses 0 mV, capacitive current is at its absolute peak because dV/dt is maximized at that exact instant."
+  },
+  {
+    "id": "phys_2027_f30",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Nernst Equation & Acute Hyperkalemia Membrane Depolarization",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "At physiological core body temperature (T = 37.0°C = 310.15 K), the Nernst equilibrium potential for a monovalent cation (z = +1) is given by E_ion = (2.303 * R * T / F) * log10([ion]_out / [ion]_in) = 61.5 mV * log10([ion]_out / [ion]_in). In a human ventricular cardiac myocyte, the intracellular potassium concentration is [K⁺]_in = 140.0 mM, and baseline extracellular potassium is [K⁺]_out = 4.0 mM. A patient suffering from crush syndrome develops severe acute hyperkalemia, elevating extracellular [K⁺]_out to 8.0 mM (doubling). Taking log10(2) = 0.301, what is the shift in potassium equilibrium potential Delta E_K = E_K,new - E_K,baseline, and what is the primary electrophysiological danger to cardiac tissue?",
+    "options": [
+      "A. Delta E_K = -18.5 mV (hyperpolarization, preventing myocyte activation)",
+      "B. Delta E_K = +61.5 mV (depolarization, inducing instantaneous ventricular fibrillation)",
+      "C. Delta E_K = 0.0 mV (no change because intracellular potassium remains unchanged at 140 mM)",
+      "D. Delta E_K = +30.8 mV (depolarization, due to potassium divalent interaction)",
+      "E. Delta E_K = +18.5 mV (depolarization, causing steady-state inactivation of voltage-gated Na⁺ channels and cardiac arrest)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The resting membrane potential of cardiomyocytes is primarily governed by resting potassium leak conductance (Kir channels) and closely tracks the potassium Nernst potential E_K. A rise in extracellular [K⁺] reduces the concentration gradient driving K⁺ efflux, shifting E_K toward more positive (less negative) values. This chronic depolarization inactivates the voltage-sensitive h-gates of fast Na⁺ channels, reducing myocardial excitability and leading to diastolic cardiac arrest.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Apply Nernst equation difference:<br>Delta E_K = E_K,new - E_K,base = 61.5 mV * [log10([K⁺]_new / 140) - log10([K⁺]_base / 140)]<br>Delta E_K = 61.5 mV * log10([K⁺]_new / [K⁺]_base) = 61.5 mV * log10(8.0 / 4.0) = 61.5 mV * log10(2).<br>2. Calculate numerical shift:<br>Delta E_K = 61.5 mV * 0.30103 = +18.51 mV ≈ +18.5 mV.<br>(Baseline E_K was 61.5 * log10(4/140) = 61.5 * (-1.544) ≈ -95.0 mV. New E_K is 61.5 * log10(8/140) = 61.5 * (-1.243) ≈ -76.5 mV. The difference is -76.5 - (-95.0) = +18.5 mV).<br>3. Pathophysiological impact:<br>Shifting resting potential from -95 mV to -76.5 mV places the myocyte in the steady-state inactivation zone of voltage-gated Na⁺ channels, blunting phase 0 upstroke velocity and triggering asystole.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Claims hyperpolarization (-18.5 mV) instead of depolarization.<br>• Option B is false: Uses log10(10) = 1 instead of log10(2), yielding 61.5 mV.<br>• Option C is false: Fails to recognize that Nernst potential depends on the ratio of concentrations.<br>• Option D is false: Halves 61.5 mV (dividing by z = 2 as if potassium were divalent like Ca²⁺).<br>• Option E is CORRECT: Accurately evaluates Delta E_K = +18.5 mV and identifies steady-state Na⁺ channel inactivation.",
+    "trapAlert": "A common mistake is thinking hyperkalemia makes the heart hyper-excitable because it depolarizes the resting potential closer to threshold. In reality, persistent depolarization INACTIVATES voltage-gated Na⁺ channels (the gates cannot reset), completely paralyzing electrical conduction!"
+  },
+  {
+    "id": "phys_2027_f31",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Goldman-Hodgkin-Katz (GHK) Equation: Action Potential Peak Reversal",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The resting and active membrane potential V_m of a neuron is governed by the Goldman-Hodgkin-Katz (GHK) voltage equation: V_m = 61.5 mV * log10((P_K*[K⁺]_out + P_Na*[Na⁺]_out) / (P_K*[K⁺]_in + P_Na*[Na⁺]_in)), neglecting chloride. Given concentrations [K⁺]_in = 140.0 mM, [K⁺]_out = 4.0 mM, [Na⁺]_in = 14.0 mM, and [Na⁺]_out = 140.0 mM: At rest, the permeability ratio is P_Na / P_K = 0.010 (setting P_K = 1.0, P_Na = 0.010). At the peak overshoot of the action potential, opening of voltage-gated Na⁺ channels shifts the ratio to P_Na / P_K = 20.0 (setting P_K = 1.0, P_Na = 20.0). What are the calculated values of V_m at rest and at the overshoot peak? (Use log10(0.03853) ≈ -1.414 and log10(6.676) ≈ 0.8245).",
+    "options": [
+      "A. Rest: V_m ≈ -87.0 mV; Overshoot peak: V_m ≈ +50.7 mV",
+      "B. Rest: V_m ≈ -70.0 mV; Overshoot peak: V_m ≈ 0.0 mV",
+      "C. Rest: V_m ≈ -95.0 mV; Overshoot peak: V_m ≈ +140.0 mV",
+      "D. Rest: V_m ≈ -50.7 mV; Overshoot peak: V_m ≈ +87.0 mV",
+      "E. Rest: V_m ≈ -87.0 mV; Overshoot peak: V_m ≈ -50.7 mV"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The GHK equation accounts for the fact that membrane potential is a weighted average of the Nernst potentials of all permeant ions, weighted by their relative membrane permeabilities. At rest, P_K dominates (P_K >> P_Na), pulling V_m near E_K (-95 mV). During the action potential overshoot, P_Na increases 2000-fold to dominate the membrane (P_Na >> P_K), driving V_m toward E_Na (+61.5 mV).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Resting V_m (P_K = 1.0, P_Na = 0.010):<br>Numerator = 1.0 * (4.0) + 0.010 * (140.0) = 4.0 + 1.4 = 5.4 mM.<br>Denominator = 1.0 * (140.0) + 0.010 * (14.0) = 140.0 + 0.14 = 140.14 mM.<br>Ratio = 5.4 / 140.14 ≈ 0.03853.<br>V_m,rest = 61.5 mV * log10(0.03853) = 61.5 mV * (-1.414) ≈ -86.96 mV ≈ -87.0 mV.<br>2. Action potential peak V_m (P_K = 1.0, P_Na = 20.0):<br>Numerator = 1.0 * (4.0) + 20.0 * (140.0) = 4.0 + 2800.0 = 2804.0 mM.<br>Denominator = 1.0 * (140.0) + 20.0 * (14.0) = 140.0 + 280.0 = 420.0 mM.<br>Ratio = 2804.0 / 420.0 ≈ 6.6762.<br>V_m,peak = 61.5 mV * log10(6.6762) = 61.5 mV * (0.82453) ≈ +50.71 mV ≈ +50.7 mV.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates V_m,rest ≈ -87.0 mV and V_m,peak ≈ +50.7 mV.<br>• Option B is false: Standard textbook approximations that do not follow the exact numerical GHK concentrations.<br>• Option C is false: Equates peak voltage to the sodium concentration (140 mV).<br>• Option D is false: Swaps and inverts the sign of the calculations.<br>• Option E is false: Assumes peak potential remains negative.",
+    "trapAlert": "The action potential peak never quite reaches E_Na (+61.5 mV) because potassium permeability P_K remains non-zero (P_K = 1.0), exerting a continuous repolarizing pull that caps the peak at +50.7 mV."
+  },
+  {
+    "id": "phys_2027_f32",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Whole-Cell Patch Clamp: Input Resistance & Membrane Capacitance",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a whole-cell patch-clamp recording of an isolated cortical pyramidal neuron, the holding potential is set at V_hold = -70.0 mV. The experimenter delivers a square hyperpolarizing voltage command step of Delta V = -10.0 mV (stepping from -70.0 mV to -80.0 mV). The recorded steady-state membrane current shifts by Delta I_ss = -50.0 pA (-50.0 * 10⁻¹² A). The transient capacitive current spike observed immediately following the voltage transition has an integrated charge area of Q = integral(I_c dt) = 250.0 fC (250.0 * 10⁻¹⁵ C). What is the total input resistance R_in and the total whole-cell membrane capacitance C_cell of this neuron?",
+    "options": [
+      "A. R_in = 20.0 MΩ; C_cell = 2.5 pF",
+      "B. R_in = 200.0 MΩ; C_cell = 25.0 pF",
+      "C. R_in = 500.0 MΩ; C_cell = 25.0 pF",
+      "D. R_in = 200.0 kΩ; C_cell = 250.0 pF",
+      "E. R_in = 2.0 GΩ; C_cell = 25.0 nF"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By Ohm's law applied to electrophysiology, input resistance is R_in = |Delta V| / |Delta I_ss|. Input resistance reflects the total number of open ion channels at rest (R_in = 1 / sum(g_i)). By definition of electrical capacitance, C = Q / V, so total cell membrane capacitance is C_cell = Q_transient / |Delta V|. Because biological membranes have a fixed specific capacitance of ~1 µF/cm², C_cell directly measures total cell surface area.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Input resistance R_in:<br>Delta V = 10.0 mV = 10.0 * 10⁻³ V = 1.0 * 10⁻² V.<br>Delta I_ss = 50.0 pA = 50.0 * 10⁻¹² A = 5.0 * 10⁻¹¹ A.<br>R_in = Delta V / Delta I_ss = (1.0 * 10⁻² V) / (5.0 * 10⁻¹¹ A) = 0.20 * 10⁹ Ω = 200.0 * 10⁶ Ω = 200.0 MΩ.<br>2. Total membrane capacitance C_cell:<br>Q = 250.0 fC = 250.0 * 10⁻¹⁵ C = 2.50 * 10⁻¹³ C.<br>C_cell = Q / Delta V = (2.50 * 10⁻¹³ C) / (1.0 * 10⁻² V) = 2.50 * 10⁻¹¹ F = 25.0 * 10⁻¹² F = 25.0 pF.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Arithmetic division error yielding 20 MΩ and 2.5 pF.<br>• Option B is CORRECT: Accurately evaluates R_in = 200.0 MΩ and C_cell = 25.0 pF.<br>• Option C is false: Inverts the current calculation (10 / 0.02 = 500 MΩ).<br>• Option D is false: Confuses megaohms (MΩ) with kiloohms (kΩ).<br>• Option E is false: Uses gigohms (GΩ) and nanofarads (nF), confusing patch pipette seal resistance with cell input resistance.",
+    "trapAlert": "Be vigilant with SI metric prefixes: pA (picoamps = 10⁻¹² A), fC (femtocoulombs = 10⁻¹⁵ C), pF (picofarads = 10⁻¹² F), and MΩ (megaohms = 10⁶ Ω). A single misplaced decimal point turns a valid whole-cell input resistance into a pipette seal resistance."
+  },
+  {
+    "id": "phys_2027_f33",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Conduction Velocity Scaling Laws: Myelinated vs Unmyelinated Axons",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Theoretical cable analysis and empirical neurophysiology establish distinct scaling laws relating conduction velocity v to axonal outer diameter d:<br>• For unmyelinated axons: v_unmyel = k_u * sqrt(d), where k_u = 1.0 m/(s·µm^(1/2)).<br>• For myelinated axons: v_myel = k_m * d, where k_m = 6.0 m/(s·µm).<br>To achieve a high-speed conduction velocity of v = 60.0 m/s (essential for motor reflexes), what axon diameter is required if the axon is unmyelinated (d_unmyel) versus if the axon is myelinated (d_myel)?",
+    "options": [
+      "A. d_unmyel = 60.0 µm; d_myel = 10.0 µm",
+      "B. d_unmyel = 600.0 µm; d_myel = 36.0 µm",
+      "C. d_unmyel = 3600.0 µm (3.6 mm); d_myel = 10.0 µm (0.010 mm)",
+      "D. d_unmyel = 36.0 µm; d_myel = 6.0 µm",
+      "E. d_unmyel = 10.0 µm; d_myel = 3600.0 µm"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In unmyelinated fibers, conduction velocity scales with the square root of diameter (v proportional to sqrt(d)) because internal longitudinal resistance decreases with d² while membrane capacitance increases with d. In myelinated fibers, saltatory conduction decouples capacitance from diameter, producing a strictly linear velocity relationship: v proportional to d. This linear scaling allows vertebrates to pack millions of high-speed axons into compact nerves.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Unmyelinated axon diameter d_unmyel:<br>v = k_u * sqrt(d_unmyel)<br>60.0 m/s = (1.0 m/(s·µm^(1/2))) * sqrt(d_unmyel)<br>sqrt(d_unmyel) = 60.0 => d_unmyel = 60.0² = 3600.0 µm = 3.6 mm.<br>(An unmyelinated axon would need to be as thick as a drinking straw—impractically huge for a human spinal cord!).<br>2. Myelinated axon diameter d_myel:<br>v = k_m * d_myel<br>60.0 m/s = (6.0 m/(s·µm)) * d_myel<br>d_myel = 60.0 / 6.0 = 10.0 µm = 0.010 mm.<br>3. Ratio of diameters:<br>d_unmyel / d_myel = 3600.0 µm / 10.0 µm = 360. Myelination achieves the same conduction velocity in 1/360th the diameter and 1/130,000th the cross-sectional volume.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Forgets to square 60, setting d_unmyel = 60 µm.<br>• Option B is false: Uses an arbitrary 600 µm diameter.<br>• Option C is CORRECT: Accurately evaluates d_unmyel = 3600.0 µm (3.6 mm) and d_myel = 10.0 µm.<br>• Option D is false: Computes 6² = 36 µm.<br>• Option E is false: Swaps the diameters between myelinated and unmyelinated axons.",
+    "trapAlert": "Remember to SQUARE the velocity when solving for unmyelinated diameter: d = (v / k_u)². Squaring 60 yields 3600 µm (3.6 mm). This dramatic scaling difference explains why giant unmyelinated axons exist in squids, but vertebrates evolved myelination."
+  },
+  {
+    "id": "phys_2027_f34",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Electrostatic Charge Separation & Stored Bilayer Energy",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A spherical neuron of radius r = 15.0 µm has a membrane surface area of A = 4 * pi * r² ≈ 2.827 * 10⁻⁵ cm² and a specific capacitance of C_m = 1.0 µF/cm² (total capacitance C_total ≈ 28.27 pF). The neuron maintains a resting membrane potential of V_m = -70.0 mV (-0.070 V). Taking the elementary charge to be e = 1.602 * 10⁻¹⁹ C, what is the magnitude of the total net excess negative charge Q separated across the inner leaflet of the membrane, how many uncompensated monovalent ions N_ions does this charge represent, and what is the total electrostatic potential energy U stored in the membrane electric field?",
+    "options": [
+      "A. Q = 1.98 nC; N_ions = 1.24 * 10¹⁰ ions; U = 6.93 * 10⁻¹¹ J",
+      "B. Q = 0.99 pC; N_ions = 6.18 * 10⁶ ions; U = 3.46 * 10⁻¹⁴ J",
+      "C. Q = 2.83 pC; N_ions = 1.77 * 10⁷ ions; U = 1.39 * 10⁻¹³ J",
+      "D. Q ≈ 1.98 pC; N_ions ≈ 1.24 * 10⁷ ions; U ≈ 6.93 * 10⁻¹⁴ J",
+      "E. Q ≈ 1.98 fC; N_ions ≈ 1.24 * 10⁴ ions; U ≈ 6.93 * 10⁻¹⁷ J"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The lipid bilayer acts as a parallel-plate capacitor where excess cations line the extracellular surface and excess anions line the cytoplasmic leaflet. Separated charge is Q = C * V. The number of uncompensated elementary charges is N_ions = Q / e. The electrostatic energy stored in the electric field across the bilayer dielectric is U = (1/2) * C * V².<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Net separated charge Q:<br>C_total = (1.0 * 10⁻⁶ F/cm²) * (2.8274 * 10⁻⁵ cm²) = 2.8274 * 10⁻¹¹ F.<br>Q = C_total * |V_m| = (2.8274 * 10⁻¹¹ F) * (0.070 V) = 1.9792 * 10⁻¹² C ≈ 1.98 pC.<br>2. Number of excess uncompensated ions N_ions:<br>N_ions = Q / e = (1.9792 * 10⁻¹² C) / (1.6022 * 10⁻¹⁹ C/ion) ≈ 1.235 * 10⁷ ions ≈ 1.24 * 10⁷ ions (12.4 million ions).<br>(Remarkably, this represents less than 0.001% of the total ions in the cytoplasm; macroscopically, the bulk cytoplasm remains electrically neutral!).<br>3. Electrostatic energy U:<br>U = (1/2) * C_total * V_m² = 0.5 * (2.8274 * 10⁻¹¹ F) * (0.070 V)²<br>U = 1.4137 * 10⁻¹¹ * (4.90 * 10⁻³) = 6.927 * 10⁻¹⁴ J ≈ 6.93 * 10⁻¹⁴ J.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Off by three orders of magnitude (nC instead of pC).<br>• Option B is false: Halves the charge and ion count.<br>• Option C is false: Multiplies C by 1.0 V instead of 0.070 V.<br>• Option D is CORRECT: Accurately evaluates Q ≈ 1.98 pC, N_ions ≈ 1.24 * 10⁷ ions, and U ≈ 6.93 * 10⁻¹⁴ J.<br>• Option E is false: Uses femtocoulombs (10⁻¹⁵ C), underestimating ion count.",
+    "trapAlert": "A tiny fraction of intracellular ions (~12 million out of trillions) is sufficient to create the -70 mV resting potential. Don't assume bulk intracellular concentrations change dramatically during resting potential establishment!"
+  },
+  {
+    "id": "phys_2027_f35",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Cardiac Defibrillation: RC Pulse Discharge Kinetics & Energy Delivery",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A biphasic automated external defibrillator (AED) incorporates an internal storage capacitor of C = 32.0 µF (3.20 * 10⁻⁵ F) charged to an operating potential difference of V_0 = 2500.0 V. During emergency shock delivery, the capacitor discharges across the patient's thorax via gelled paddle electrodes presenting a total transthoracic series resistance of R = 50.0 Ω. Assuming an ideal series RC discharge circuit: What is the initial stored electrical energy E_0, what is the initial peak current I_0 at the instant of shock initiation (t = 0), what is the circuit time constant tau, and what is the remaining capacitor voltage V(t) at elapsed time t = 3.2 ms (t = 2 tau)? (Use e⁻² ≈ 0.1353).",
+    "options": [
+      "A. E_0 = 50.0 J; I_0 = 25.0 A; tau = 3.2 ms; V(3.2 ms) = 920.0 V",
+      "B. E_0 = 200.0 J; I_0 = 50.0 A; tau = 0.8 ms; V(3.2 ms) = 125.0 V",
+      "C. E_0 = 100.0 J; I_0 = 100.0 A; tau = 1.6 ms; V(3.2 ms) = 676.6 V",
+      "D. E_0 = 100.0 J; I_0 = 50.0 A; tau = 1.6 ms; V(3.2 ms) = 1250.0 V",
+      "E. E_0 = 100.0 J; I_0 = 50.0 A; tau = 1.6 ms; V(3.2 ms) ≈ 338.3 V"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> A defibrillator delivers an RC capacitive exponential discharge to depolarize the entire myocardium simultaneously, extinguishing chaotic re-entrant wavelets in ventricular fibrillation. Stored energy is E = (1/2)*C*V_0². Initial current is governed by Ohm's law: I_0 = V_0 / R. Voltage decays exponentially: V(t) = V_0 * e^(-t / tau), where tau = R * C.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Stored electrical energy E_0:<br>E_0 = (1/2) * C * V_0² = 0.5 * (32.0 * 10⁻⁶ F) * (2500.0 V)²<br>E_0 = (16.0 * 10⁻⁶) * (6.25 * 10⁶) = 100.0 J.<br>2. Initial peak current I_0 at t = 0:<br>I_0 = V_0 / R = 2500.0 V / 50.0 Ω = 50.0 A.<br>3. Circuit discharge time constant tau:<br>tau = R * C = (50.0 Ω) * (32.0 * 10⁻⁶ F) = 1600.0 * 10⁻⁶ s = 1.60 * 10⁻³ s = 1.6 ms.<br>4. Remaining voltage at t = 3.2 ms:<br>Elapsed time t = 3.2 ms = 2 * (1.6 ms) = 2 tau.<br>V(2 tau) = V_0 * e⁻² = 2500.0 V * 0.13533 ≈ 338.34 V ≈ 338.3 V.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Halves the stored energy (50 J) and doubles tau.<br>• Option B is false: Forgets the factor of 1/2 in energy (C*V² = 200 J).<br>• Option C is false: Doubles the peak current (100 A).<br>• Option D is false: Assumes a 50% linear voltage drop at 2 tau (1250 V).<br>• Option E is CORRECT: Accurately evaluates E_0 = 100.0 J, I_0 = 50.0 A, tau = 1.6 ms, and V(3.2 ms) ≈ 338.3 V.",
+    "trapAlert": "Do not forget the factor of 1/2 in capacitor energy E = (1/2)*C*V²! Omitting it doubles the calculated energy to 200 J. Also, remember that exponential decay at t = 2 tau leaves e⁻² ≈ 13.5% of initial voltage, NOT 0% or 50%."
+  },
+  {
+    "id": "phys_2027_f36",
+    "subject": "Physics",
+    "chapter": "Electrophysiology & Bioelectric Circuits",
+    "subtopic": "Dendritic Cable Attenuation & Shunting Inhibition Biophysics",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "An excitatory synapse on an apical dendrite generates a local peak EPSP of V_0 = 20.0 mV at distance x = 0. The dendrite has a baseline space constant of lambda_base = 250.0 µm. Assuming passive electrotonic decay V(x) = V_0 * e^(-x / lambda): What is the amplitude of the EPSP that reaches the soma located at x = 500.0 µm (x = 2.0 lambda_base)? If a GABAergic inhibitory interneuron fires simultaneously at an intermediate site, opening massive Cl⁻ conductances that decrease membrane resistance r_m by a factor of 4, what is the new space constant lambda', and what is the new attenuated EPSP amplitude V' reaching the soma? (Use e⁻² ≈ 0.1353 and e⁻⁴ ≈ 0.0183).",
+    "options": [
+      "A. Baseline: V ≈ 2.71 mV; Under inhibition: lambda' = 125.0 µm and V' ≈ 0.366 mV (shunting inhibition)",
+      "B. Baseline: V ≈ 7.36 mV; Under inhibition: lambda' = 62.5 µm and V' ≈ 0.007 mV",
+      "C. Baseline: V ≈ 2.71 mV; Under inhibition: lambda' = 500.0 µm and V' ≈ 7.36 mV",
+      "D. Baseline: V ≈ 10.0 mV; Under inhibition: lambda' = 125.0 µm and V' ≈ 1.25 mV",
+      "E. Baseline: V ≈ 2.71 mV; Under inhibition: lambda' = 125.0 µm and V' ≈ 2.71 mV"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Electrotonic subthreshold signals decay exponentially along dendrites: V(x) = V_0 * e^(-x / lambda). The space constant depends on membrane resistance: lambda = sqrt(r_m / r_i). When inhibitory GABA-A or glycine channels open, membrane resistance r_m plummets (conductance surges). This decreases lambda by the square root of the resistance drop, exponentially accelerating signal decay along the cable—a phenomenon termed 'shunting inhibition'.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Baseline EPSP reaching the soma (x = 500.0 µm, lambda_base = 250.0 µm):<br>x / lambda_base = 500.0 / 250.0 = 2.0.<br>V_soma = V_0 * e⁻² = 20.0 mV * 0.13533 ≈ 2.707 mV ≈ 2.71 mV.<br>2. Impact of inhibitory conductance on space constant lambda':<br>r_m' = r_m / 4.<br>lambda' = sqrt(r_m' / r_i) = sqrt((r_m / 4) / r_i) = (1/2) * sqrt(r_m / r_i) = lambda_base / 2.<br>lambda' = 250.0 µm / 2 = 125.0 µm.<br>3. Inhibited EPSP reaching the soma:<br>x / lambda' = 500.0 / 125.0 = 4.0.<br>V'_soma = V_0 * e⁻⁴ = 20.0 mV * 0.018316 ≈ 0.366 mV.<br>The excitatory signal is crushed from 2.71 mV down to 0.37 mV, completely preventing action potential initiation at the axon hillock.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates baseline V ≈ 2.71 mV, new lambda' = 125.0 µm, and inhibited V' ≈ 0.366 mV.<br>• Option B is false: Uses e⁻¹ for baseline (20 * 0.368 = 7.36 mV) and divides lambda by 4 instead of taking the square root.<br>• Option C is false: Claims inhibition increases space constant.<br>• Option D is false: Uses linear halving approximations.<br>• Option E is false: Claims voltage reaching the soma is unaffected by the drop in lambda.",
+    "trapAlert": "Because lambda = sqrt(r_m / r_i), reducing membrane resistance by a factor of 4 reduces lambda by a factor of sqrt(4) = 2, NOT 4! However, in the exponent of e^(-x/lambda), halving lambda DOUBLES the exponent from -2 to -4, squaring the attenuation factor."
+  },
+  {
+    "id": "phys_2027_f37",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "PET Imaging: Positron-Electron Annihilation Kinematics & 511 keV Photons",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In Positron Emission Tomography (PET), a positron (e⁺) emitted by Fluorine-18 decelerates in tissue and undergoes mutual annihilation with a molecular orbital electron (e⁻): e⁺ + e⁻ -> 2 gamma. The rest mass of both the electron and positron is m_e = 9.109 * 10⁻³¹ kg, the speed of light in vacuum is c = 3.00 * 10⁸ m/s, and 1.0 eV = 1.602 * 10⁻¹⁹ J. What is the rest mass energy equivalent E_0 of each particle in kiloelectronvolts (keV), and why does conservation of linear momentum strictly require the emission of TWO collinear gamma photons moving in opposite directions (180°) rather than a single energetic photon?",
+    "options": [
+      "A. Each photon has E = 1022.0 keV; single-photon emission is prohibited by conservation of lepton number",
+      "B. Each photon has E ≈ 511.0 keV; two photons emitted at 180° are required to conserve linear momentum because the initial center-of-mass momentum is approximately zero (p_total = 0)",
+      "C. Each photon has E ≈ 255.5 keV; energy is distributed equally among four annihilation photons",
+      "D. Each photon has E ≈ 511.0 keV; two photons are required strictly to conserve net electrical charge",
+      "E. Each photon has E ≈ 140.5 keV; annihilation photons are identical to Technetium-99m isomeric emissions"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By Einstein's mass-energy equivalence E_0 = m_e * c², the annihilation of an electron-positron pair converts their combined rest masses (2 * m_e) into electromagnetic radiant energy: E_total = 2 * m_e * c². In the center-of-mass frame of the thermalized electron-positron system, initial momentum is virtually zero (p_initial ≈ 0). A single emitted photon always possesses non-zero momentum p = E / c. Therefore, emitting a single photon would violate conservation of linear momentum. Conservation of momentum requires at least two photons emitted back-to-back: p_1 + p_2 = 0.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Rest mass energy of a single electron/positron:<br>E_0 = m_e * c² = (9.109 * 10⁻³¹ kg) * (3.00 * 10⁸ m/s)²<br>E_0 = (9.109 * 10⁻³¹) * (9.00 * 10¹⁶) = 8.1981 * 10⁻¹⁴ J.<br>2. Convert to keV:<br>E_0 (in eV) = (8.1981 * 10⁻¹⁴ J) / (1.6022 * 10⁻¹⁹ J/eV) ≈ 5.1168 * 10⁵ eV = 511.7 keV ≈ 511.0 keV.<br>3. Total available energy:<br>E_total = 2 * E_0 = 1022.0 keV.<br>Because the two identical photons are emitted back-to-back in opposite directions (180° collinearity) to conserve momentum, each photon receives exactly half the total energy: E_gamma = E_total / 2 = 511.0 keV.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Claims each photon has 1022 keV (double the actual energy) and misidentifies lepton conservation as the mechanism.<br>• Option B is CORRECT: Accurately evaluates E ≈ 511.0 keV and explains momentum conservation (p_total = 0).<br>• Option C is false: Claims 4 photons of 255.5 keV are emitted.<br>• Option D is false: Claims two photons are needed for charge conservation (photons are uncharged; e⁺ + e⁻ already sums to zero charge).<br>• Option E is false: Conflates PET annihilation photons with SPECT Tc-99m gamma emissions (140.5 keV).",
+    "trapAlert": "Charge conservation is ALREADY satisfied by the initial state (e⁺ + e⁻ = +1 - 1 = 0). The necessity of TWO photons emitted at 180° arises strictly from CONSERVATION OF LINEAR MOMENTUM (0 = p_1 + p_2 => p_1 = -p_2)."
+  },
+  {
+    "id": "phys_2027_f38",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Radioactive Decay Kinetics: Fluorine-18 FDG Activity & Half-Life",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Fluorine-18 (¹⁸F) is a positron-emitting radionuclide with a physical half-life of t_1/2 = 110.0 minutes. A hospital radiopharmacy synthesizes a unit dose of [¹⁸F]-2-fluoro-2-deoxy-D-glucose (¹⁸F-FDG) with an initial calibrated activity of A_0 = 740.0 MBq at 08:00 AM. Due to unexpected emergency trauma cases in the imaging department, the patient's injection is postponed until 11:40 AM on the same morning (an elapsed time of Delta t = 220.0 minutes). What is the remaining radioactive activity A(t) of the syringe at the moment of injection, and how many radioactive half-lives have elapsed?",
+    "options": [
+      "A. A = 370.0 MBq; 1.0 half-life elapsed",
+      "B. A = 246.7 MBq; 1.5 half-lives elapsed",
+      "C. A = 185.0 MBq; 2.0 half-lives elapsed",
+      "D. A = 92.5 MBq; 3.0 half-lives elapsed",
+      "E. A = 46.25 MBq; 4.0 half-lives elapsed"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Radioactive decay follows first-order exponential decay kinetics: A(t) = A_0 * e^(-lambda * t) = A_0 * (1/2)^(t / t_1/2). For integer multiples of the half-life n = t / t_1/2, the remaining activity is simply A(t) = A_0 / 2^n.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate elapsed time Delta t:<br>From 08:00 AM to 11:40 AM is 3 hours and 40 minutes = (3 * 60) + 40 = 180 + 40 = 220.0 minutes.<br>2. Calculate number of elapsed half-lives n:<br>n = Delta t / t_1/2 = 220.0 minutes / 110.0 minutes = 2.0 half-lives.<br>3. Calculate remaining activity A(t):<br>A(t) = A_0 * (1/2)² = A_0 / 4 = 740.0 MBq / 4 = 185.0 MBq.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Accounts for only 1 half-life (110 min), yielding 370 MBq.<br>• Option B is false: Assumes 1.5 half-lives.<br>• Option C is CORRECT: Accurately derives n = 2.0 and A = 185.0 MBq.<br>• Option D is false: Uses 3 half-lives (330 min), yielding 92.5 MBq.<br>• Option E is false: Uses 4 half-lives (440 min), yielding 46.25 MBq.",
+    "trapAlert": "Elapsed time problems often contain clock-time traps. Always convert hours and minutes to total minutes first: 3 hours and 40 minutes = 220 minutes, which is exactly 2.0 half-lives for ¹⁸F (110 min)."
+  },
+  {
+    "id": "phys_2027_f39",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "SPECT Imaging with Technetium-99m: Activity & Number of Radionuclide Atoms",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Technetium-99m (⁹⁹ᵐTc) decays by isomeric gamma transition (emitting a monoenergetic gamma photon of E_gamma = 140.5 keV) with a physical half-life of t_1/2 = 6.00 hours (21600.0 s). Decay constant lambda = ln(2) / t_1/2 ≈ 3.209 * 10⁻⁵ s⁻¹ (taking ln(2) ≈ 0.69315). A diagnostic SPECT myocardial perfusion imaging protocol calls for an intravenous injection with an activity of A = 370.0 MBq (3.70 * 10⁸ Bq = decays/s). By the fundamental activity equation A = lambda * N, how many radioactive ⁹⁹ᵐTc atoms N are present in the administered dose, and what is the mass of this technetium sample (using molar mass M = 99.0 g/mol and Avogadro's number N_A = 6.022 * 10²³ mol⁻¹)?",
+    "options": [
+      "A. N ≈ 5.76 * 10¹⁰ atoms; mass ≈ 9.5 pg",
+      "B. N ≈ 1.15 * 10¹⁵ atoms; mass ≈ 190.0 ng",
+      "C. N ≈ 2.31 * 10¹³ atoms; mass ≈ 3.80 ng",
+      "D. N ≈ 1.15 * 10¹³ atoms; mass ≈ 1.90 ng",
+      "E. N ≈ 3.70 * 10⁸ atoms; mass ≈ 6.08 fg"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Radioactivity A is the rate of nuclear disintegrations: A = -dN/dt = lambda * N, where lambda is the decay constant in s⁻¹ (lambda = ln(2) / t_1/2) and N is the total number of radioactive parent nuclei. The mass of the radioisotope is determined via stoichiometry: m = (N / N_A) * M.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate decay constant lambda in SI units (s⁻¹):<br>t_1/2 = 6.00 hours = 6.00 * 3600 s = 21600.0 s.<br>lambda = 0.69315 / 21600.0 s ≈ 3.2090 * 10⁻⁵ s⁻¹.<br>2. Calculate number of atoms N:<br>N = A / lambda = (3.70 * 10⁸ s⁻¹) / (3.2090 * 10⁻⁵ s⁻¹)<br>N = 1.1530 * 10¹³ atoms ≈ 1.15 * 10¹³ atoms.<br>3. Calculate mass m:<br>moles = N / N_A = (1.1530 * 10¹³ atoms) / (6.022 * 10²³ atoms/mol) ≈ 1.9146 * 10⁻¹¹ mol.<br>mass m = moles * M = (1.9146 * 10⁻¹¹ mol) * (99.0 g/mol) ≈ 1.8955 * 10⁻⁹ g ≈ 1.90 ng (nanograms!).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Uses half-life in hours instead of seconds (off by a factor of 3600).<br>• Option B is false: Off by two orders of magnitude (1.15 * 10¹⁵ atoms).<br>• Option C is false: Doubles the number of atoms.<br>• Option D is CORRECT: Accurately evaluates N ≈ 1.15 * 10¹³ atoms and mass ≈ 1.90 ng.<br>• Option E is false: Equates N directly to activity A (3.7 * 10⁸).",
+    "trapAlert": "When using A = lambda * N, the half-life t_1/2 MUST be converted to SECONDS, because 1 Becquerel (Bq) is defined as 1 disintegration per SECOND. Using hours directly yields an answer off by a factor of 3600."
+  },
+  {
+    "id": "phys_2027_f40",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Photon Attenuation: Linear Attenuation Coefficient & Half-Value Layer",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Narrow-beam attenuation of monoenergetic gamma photons through shielding material is governed by the Beer-Lambert exponential law: I(x) = I_0 * e^(-mu * x), where mu is the linear attenuation coefficient of the absorber and x is the barrier thickness. For the 140.5 keV gamma rays of Technetium-99m traversing lead shielding, the linear attenuation coefficient is mu = 23.1 cm⁻¹. What is the Half-Value Layer (HVL) of lead for these photons, and what minimum thickness x of lead is required to attenuate the incident beam intensity to less than 1.5625% (1/64) of its initial incident value? (Take ln(2) ≈ 0.693).",
+    "options": [
+      "A. HVL = 0.030 mm; x = 0.180 mm",
+      "B. HVL = 3.00 mm; x = 18.0 mm",
+      "C. HVL = 0.300 mm; x = 0.600 mm",
+      "D. HVL = 0.693 mm; x = 4.158 mm",
+      "E. HVL = 0.300 mm (0.030 cm); x = 1.80 mm (0.180 cm)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Half-Value Layer (HVL) is the thickness of an absorber required to attenuate the intensity of an ionizing radiation beam to exactly 50% (1/2) of its initial incident intensity: HVL = ln(2) / mu. After traversing n half-value layers (thickness x = n * HVL), the transmitted intensity fraction is I / I_0 = (1/2)^n.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate Half-Value Layer (HVL):<br>HVL = ln(2) / mu = 0.693 / (23.1 cm⁻¹) = 0.030 cm.<br>Convert cm to mm: 0.030 cm = 0.300 mm.<br>2. Determine the number of HVLs required to reach 1/64:<br>Notice that 64 = 2⁶ = 2 * 2 * 2 * 2 * 2 * 2.<br>Therefore, 1/64 = (1/2)⁶, which corresponds to exactly n = 6 half-value layers.<br>(Expressed as percentage: 1/64 = 0.015625 = 1.5625%).<br>3. Calculate total shielding thickness x:<br>x = n * HVL = 6 * (0.300 mm) = 1.800 mm = 0.180 cm.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Off by a factor of 10 in both HVL and thickness (0.030 mm instead of 0.300 mm).<br>• Option B is false: Off by a factor of 10 in the opposite direction (3.0 mm instead of 0.30 mm).<br>• Option C is false: Calculates thickness for only 2 HVLs (0.60 mm).<br>• Option D is false: Confuses HVL with ln(2) in mm (0.693 mm).<br>• Option E is CORRECT: Accurately evaluates HVL = 0.300 mm (0.030 cm) and x = 1.80 mm (0.180 cm).",
+    "trapAlert": "Watch units of length! The attenuation coefficient is given in cm⁻¹ (mu = 23.1 cm⁻¹), which yields HVL = 0.030 cm. Multiplying by 10 converts to 0.30 mm. Confusing cm and mm is an examiner trap."
+  },
+  {
+    "id": "phys_2027_f41",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Effective Half-Life of Radiopharmaceuticals in Vivo",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "When an unsealed radiopharmaceutical is administered into a patient's bloodstream, its clearance from an organ of interest occurs through two independent, simultaneous first-order decay processes: physical nuclear decay (with physical half-life t_p and decay constant lambda_p = ln(2)/t_p) and biological excretion (with biological half-life t_b and clearance constant lambda_b = ln(2)/t_b). The overall effective clearance constant is lambda_eff = lambda_p + lambda_b, yielding the harmonic relationship 1 / t_eff = (1 / t_p) + (1 / t_b) => t_eff = (t_p * t_b) / (t_p + t_b). A targeted therapeutic radiopharmaceutical has a physical half-life of t_p = 6.0 days and a biological clearance half-life of t_b = 3.0 days. What is the effective clearance half-life t_eff in the patient, and how does t_eff fundamentally compare to t_p and t_b?",
+    "options": [
+      "A. t_eff = 2.0 days; t_eff is strictly shorter than both the physical and biological half-lives",
+      "B. t_eff = 4.5 days; t_eff is the arithmetic mean of the two half-lives",
+      "C. t_eff = 9.0 days; t_eff is the sum of the physical and biological half-lives",
+      "D. t_eff = 1.5 days; t_eff is half of the biological clearance half-life",
+      "E. t_eff = 3.0 days; t_eff is limited strictly by the faster biological clearance rate"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Because physical nuclear decay and biological excretion remove radionuclide atoms concurrently via parallel first-order rate processes, their rate constants add: lambda_eff = lambda_p + lambda_b. By definition of half-life (t_1/2 = ln(2)/lambda), the effective half-life follows the parallel-resistor harmonic formula: 1 / t_eff = (1 / t_p) + (1 / t_b). The effective half-life is ALWAYS strictly shorter than both the physical half-life and the biological half-life.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Apply the effective half-life formula:<br>t_eff = (t_p * t_b) / (t_p + t_b).<br>2. Substitute values (t_p = 6.0 days, t_b = 3.0 days):<br>t_eff = (6.0 * 3.0) / (6.0 + 3.0) = 18.0 / 9.0 = 2.0 days.<br>3. Physical verification:<br>In 2.0 days: physical decay reduces activity by e^(-lambda_p * 2), while biological excretion removes molecules by e^(-lambda_b * 2). Together, they produce a total reduction of e^(-(lambda_p + lambda_b) * 2) = (1/2)^(2/6 + 2/3) = (1/2)^(1/3 + 2/3) = (1/2)¹ = 50%. Thus, exactly half remains after 2.0 days.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates t_eff = 2.0 days and states the universal theorem that t_eff < min(t_p, t_b).<br>• Option B is false: Computes arithmetic average (6 + 3) / 2 = 4.5 days.<br>• Option C is false: Adds the half-lives (6 + 3 = 9.0 days).<br>• Option D is false: Arbitrarily halves t_b (3 / 2 = 1.5 days).<br>• Option E is false: Equates t_eff to t_b (3.0 days).",
+    "trapAlert": "NEVER add half-lives directly (6 + 3 ≠ 9 days)! Because both processes work together to ELIMINATE the drug faster, the effective half-life MUST be shorter than either individual half-life (t_eff = 2.0 days < 3.0 days < 6.0 days)."
+  },
+  {
+    "id": "phys_2027_f42",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Radiation Dosimetry: Absorbed Dose (Gy) vs Equivalent Dose (Sv) & RBE",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a radiation incident, two workers are exposed to different ionizing radiation modalities:<br>• Worker A inhales an aerosolized alpha-emitting actinide (radiation weighting factor w_R = 20.0), resulting in E_A = 4.0 mJ (4.0 * 10⁻³ J) of energy absorbed locally in a m_A = 40.0 g (0.040 kg) bronchial tissue lobe.<br>• Worker B is exposed to whole-body external gamma rays (w_R = 1.0), absorbing E_B = 80.0 mJ (0.080 J) uniformly across their entire body mass of m_B = 80.0 kg.<br>By the standard dosimetric definitions of absorbed dose D = E / m (in Grays, 1 Gy = 1 J/kg) and equivalent dose H = D * w_R (in Sieverts, Sv), what are the absorbed doses (D_A and D_B in mGy) and equivalent doses (H_A and H_B in mSv) for Worker A versus Worker B?",
+    "options": [
+      "A. Worker A: D = 100.0 mGy, H = 100.0 mSv; Worker B: D = 1.0 mGy, H = 20.0 mSv",
+      "B. Worker A: D = 100.0 mGy, H = 2000.0 mSv (2.00 Sv); Worker B: D = 1.0 mGy, H = 1.0 mSv (0.001 Sv)",
+      "C. Worker A: D = 0.10 mGy, H = 2.0 mSv; Worker B: D = 80.0 mGy, H = 80.0 mSv",
+      "D. Worker A: D = 2000.0 mGy, H = 40000.0 mSv; Worker B: D = 1.0 mGy, H = 1.0 mSv",
+      "E. Worker A: D = 100.0 mGy, H = 5.0 mSv; Worker B: D = 1.0 mGy, H = 1.0 mSv"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Absorbed dose D is a purely physical quantity defined as ionizing energy imparted per unit mass: D = E / m (measured in Grays, Gy = J/kg). Equivalent dose H incorporates the relative biological effectiveness (RBE) of different radiation types via the radiation weighting factor w_R: H = D * w_R (measured in Sieverts, Sv). Alpha particles have high Linear Energy Transfer (LET) that creates dense, clustered double-strand DNA breaks, assigned w_R = 20.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Worker A (Alpha exposure, w_R = 20.0):<br>E_A = 4.0 * 10⁻³ J; m_A = 0.040 kg.<br>D_A = E_A / m_A = (4.0 * 10⁻³ J) / (0.040 kg) = 0.100 Gy = 100.0 mGy.<br>H_A = D_A * w_R = (0.100 Gy) * 20.0 = 2.00 Sv = 2000.0 mSv.<br>2. Worker B (Gamma exposure, w_R = 1.0):<br>E_B = 0.080 J; m_B = 80.0 kg.<br>D_B = E_B / m_B = (0.080 J) / (80.0 kg) = 0.001 Gy = 1.0 mGy.<br>H_B = D_B * w_R = (0.001 Gy) * 1.0 = 0.001 Sv = 1.0 mSv.<br>3. Conclusion:<br>Worker A absorbed 100.0 mGy yielding 2000.0 mSv (severe carcinogenic risk). Worker B absorbed 1.0 mGy yielding 1.0 mSv.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits the w_R = 20 factor for Worker A and inappropriately applies it to Worker B.<br>• Option B is CORRECT: Accurately evaluates D_A = 100.0 mGy, H_A = 2000.0 mSv and D_B = 1.0 mGy, H_B = 1.0 mSv.<br>• Option C is false: Units error converting J/kg to mGy.<br>• Option D is false: Multiplies energy by w_R before dividing by mass.<br>• Option E is false: Divides by w_R instead of multiplying.",
+    "trapAlert": "Mass normalization is crucial: 4 mJ in 40 g produces an absorbed dose 100 times greater than 80 mJ in an 80 kg whole body! Furthermore, alpha particles multiply that physical dose by w_R = 20, resulting in a biological equivalent dose 2000 times higher."
+  },
+  {
+    "id": "phys_2027_f43",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Inverse-Square Law & Radiation Protection (ALARA Principles)",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "An unshielded point-source vial containing Iodine-131 (¹³¹I) produces an equivalent dose rate of H_dot_1 = 400.0 µSv/h at a distance of d_1 = 0.50 m in air. In accordance with ALARA (As Low As Reasonably Achievable) radiation safety protocols, the nuclear medicine technician must ensure that their exposure rate does not exceed H_dot_2 = 25.0 µSv/h during source handling. Neglecting air absorption, what is the minimum safe working distance d_2 that the technician must maintain from the unshielded vial?",
+    "options": [
+      "A. d_2 = 1.00 m",
+      "B. d_2 = 8.00 m",
+      "C. d_2 = 2.00 m",
+      "D. d_2 = 4.00 m",
+      "E. d_2 = 0.71 m"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> For an isotropic point source emitting radiation in all directions, photon fluence and radiation dose rate obey the inverse-square law of distance: H_dot proportional to 1 / d². Therefore: H_dot_1 * d_1² = H_dot_2 * d_2² => d_2 = d_1 * sqrt(H_dot_1 / H_dot_2). Doubling distance quarters dose; quadrupling distance reduces dose 16-fold.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Set up the inverse-square proportion:<br>H_dot_1 * d_1² = H_dot_2 * d_2².<br>2. Solve for d_2:<br>d_2² = d_1² * (H_dot_1 / H_dot_2)<br>d_2² = (0.50 m)² * (400.0 µSv/h / 25.0 µSv/h)<br>d_2² = (0.25 m²) * 16.0 = 4.00 m².<br>3. Take the square root:<br>d_2 = sqrt(4.00 m²) = 2.00 m.<br>Alternatively: d_2 = d_1 * sqrt(16.0) = 0.50 m * 4.0 = 2.00 m.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Uses linear distance scaling (doubling distance to 1.0 m only reduces dose to 100 µSv/h).<br>• Option B is false: Multiplies 0.5 m by 16 directly (8.0 m).<br>• Option C is CORRECT: Accurately evaluates d_2 = 2.00 m.<br>• Option D is false: Forgets to multiply by d_1 (reporting sqrt(16) = 4.0 m).<br>• Option E is false: Uses sqrt(0.5) (0.71 m).",
+    "trapAlert": "A 16-fold reduction in radiation dose rate does NOT require 16 times the distance. Because of the inverse-square law (1/d²), distance must increase by only sqrt(16) = 4 times: 0.50 m * 4 = 2.00 m."
+  },
+  {
+    "id": "phys_2027_f44",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Beta-Minus Decay Energetics: Iodine-131 Thyroid Ablation",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In targeted radionuclide therapy for thyroid carcinoma, Iodine-131 (¹³¹₅₃I) undergoes beta-minus (beta⁻) decay to Xenon-131 (¹³¹₅₄Xe): ¹³¹₅₃I -> ¹³¹₅₄Xe + e⁻ + nu_bar_e + Q. The neutral atomic mass of ¹³¹₅₃I is m_I = 130.906124 u, and the neutral atomic mass of ¹³¹₅₄Xe is m_Xe = 130.905082 u. Using the nuclear mass-energy conversion factor 1.0 u = 931.5 MeV, what is the mass defect Delta m in atomic mass units, what is the total disintegration energy (Q-value) in keV, and what emitted particle is primarily responsible for the localized cytotoxic ablation of thyroid follicular epithelium?",
+    "options": [
+      "A. Delta m = 0.010420 u; Q ≈ 9706.0 keV; Antineutrino (nu_bar_e)",
+      "B. Delta m = 0.000511 u; Q ≈ 476.0 keV; Gamma photon (gamma)",
+      "C. Delta m = 0.001042 u; Q ≈ 971.0 keV; Positron (e⁺)",
+      "D. Delta m = 0.001042 u; Q ≈ 970.6 keV (≈ 971 keV); Beta-minus particle (high-energy electron e⁻)",
+      "E. Delta m = 0.002084 u; Q ≈ 1941.0 keV; Alpha particle (alpha)"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In beta-minus decay, a neutron converts into a proton, emitting an electron (beta⁻) and an electron antineutrino. In terms of neutral atomic masses, the daughter atom (Xe) has 54 orbital electrons, precisely accounting for the 53 original electrons plus the emitted beta⁻ particle. Thus, the mass defect is simply the difference between parent and daughter neutral atomic masses: Delta m = m_parent - m_daughter. The disintegration energy is Q = Delta m * 931.5 MeV. The cytotoxic therapeutic effect is delivered by the emitted beta⁻ particles, which have a short tissue path length (~1-2 mm) that destroys thyroid tissue locally.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate mass defect Delta m:<br>Delta m = 130.906124 u - 130.905082 u = 0.001042 u.<br>2. Calculate disintegration energy Q:<br>Q = 0.001042 u * 931.5 MeV/u = 0.970623 MeV = 970.62 keV ≈ 971.0 keV.<br>3. Cytotoxic particle mechanism:<br>The beta⁻ particles (fast electrons) have high linear energy transfer compared to gamma rays, depositing their kinetic energy within a radius of 1.0 to 2.0 mm of thyroid follicles, inducing lethal double-strand DNA breaks while sparing adjacent parathyroid glands.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Decimal point error in mass defect (0.01042 u) and attributes cytotoxicity to antineutrinos (which do not interact with tissue).<br>• Option B is false: Subtracts electron rest mass (0.000511 u) which is already accounted for in atomic masses.<br>• Option C is false: Incorrectly labels the emitted particle as a positron (e⁺).<br>• Option D is CORRECT: Accurately evaluates Delta m = 0.001042 u, Q ≈ 971 keV, and identifies beta-minus electrons as the cytotoxic agent.<br>• Option E is false: Doubles the mass defect.",
+    "trapAlert": "In beta-minus decay, you do NOT subtract the electron mass when using neutral atomic masses, because the daughter nucleus has Z+1 protons and its neutral atom naturally includes the extra electron! (Unlike beta-plus decay, where 2*m_e must be subtracted)."
+  },
+  {
+    "id": "phys_2027_f45",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Transient Radioactive Equilibrium: The Molybdenum-99 / Technetium-99m Generator",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The clinical supply of Technetium-99m (⁹⁹ᵐTc, daughter radionuclide, half-life t_2 = 6.00 hours, decay constant lambda_2) relies on an elution generator containing Molybdenum-99 (⁹⁹Mo, parent radionuclide, half-life t_1 = 66.00 hours, decay constant lambda_1). Because the parent half-life is longer than the daughter half-life by an order of magnitude (t_1 > t_2 => lambda_1 < lambda_2), the system establishes transient radioactive equilibrium after approximately 4 daughter half-lives (~24 hours). Under transient equilibrium, the activity ratio of daughter to parent is given by A_2 / A_1 = lambda_2 / (lambda_2 - lambda_1). Assuming 100% of ⁹⁹Mo decays into ⁹⁹ᵐTc, what is the exact numerical ratio A_2 / A_1 at transient equilibrium?",
+    "options": [
+      "A. A_2 / A_1 = 0.091",
+      "B. A_2 / A_1 = 0.909",
+      "C. A_2 / A_1 = 1.000 (secular equilibrium)",
+      "D. A_2 / A_1 = 11.00",
+      "E. A_2 / A_1 = 1.100 (daughter activity exceeds parent activity by 10.0%)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In radioactive series decay where parent half-life is moderately greater than daughter half-life (t_1 > t_2, but t_1 is not infinite), transient equilibrium is reached. In transient equilibrium, the daughter activity A_2 does not merely equal parent activity A_1 (as in secular equilibrium); rather, daughter activity actually EXCEEDS parent activity by a factor of lambda_2 / (lambda_2 - lambda_1).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Relate decay constants to half-lives:<br>lambda_1 = ln(2) / 66.00 h.<br>lambda_2 = ln(2) / 6.00 h.<br>2. Ratio of decay constants:<br>lambda_2 / lambda_1 = (ln(2) / 6.00) / (ln(2) / 66.00) = 66.00 / 6.00 = 11.0.<br>3. Calculate activity ratio A_2 / A_1:<br>A_2 / A_1 = lambda_2 / (lambda_2 - lambda_1) = (lambda_2 / lambda_1) / [(lambda_2 / lambda_1) - 1]<br>A_2 / A_1 = 11.0 / (11.0 - 1.0) = 11.0 / 10.0 = 1.100.<br>At transient equilibrium, the activity of Technetium-99m is exactly 1.10 times (110%) the activity of Molybdenum-99.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts 11 (1/11 = 0.091).<br>• Option B is false: Computes (11 - 1) / 11 = 10 / 11 ≈ 0.909.<br>• Option C is false: Assumes secular equilibrium (A_2 / A_1 = 1.000), which only occurs when parent half-life is thousands of years (e.g. Radium-226).<br>• Option D is false: Reports lambda_2 / lambda_1 = 11.00 without the equilibrium denominator.<br>• Option E is CORRECT: Accurately evaluates A_2 / A_1 = 1.100.",
+    "trapAlert": "Students instinctively believe that daughter activity can never exceed parent activity. In TRANSIENT equilibrium, daughter activity ALWAYS exceeds parent activity (A_2 / A_1 = 1.10) because the daughter is decaying slightly faster than it is being produced."
+  },
+  {
+    "id": "phys_2027_f46",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Hadrontherapy Biophysics: Proton Bragg Peak vs Photon Attenuation",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In modern oncological radiation therapy, conventional megavoltage X-ray photon beams deposit their maximal dose near the body surface and attenuate exponentially through healthy intervening and exit tissues according to I(x) = I_0 * e^(-mu * x). In contrast, proton beam hadrontherapy exploits the quantum mechanical Bethe-Bloch stopping power relationship, where linear energy transfer (LET) is inversely proportional to the square of charged particle velocity: -dE/dx proportional to 1 / v². What is the resulting physical depth-dose distribution profile of a monoenergetic clinical proton beam, and what clinical advantage does this afford?",
+    "options": [
+      "A. A low entry plateau dose in proximal healthy tissue, a sharp maximum ionization peak (the Bragg peak) precisely at the tumor depth, and virtually zero exit dose in distal tissues",
+      "B. Pure exponential dose attenuation identical to X-rays, but with a doubled half-value layer",
+      "C. Maximal energy deposition at the skin entrance that causes cutaneous burns while sparing deep structures",
+      "D. A perfectly flat, uniform dose distribution from skin surface to exit with no local variation",
+      "E. Spontaneous conversion into 511 keV annihilation photons that disperse radiation isotropically"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Heavy charged particles (such as protons and carbon ions) lose kinetic energy primarily via inelastic Coulomb collisions with atomic electrons. By the Bethe-Bloch equation, stopping power (-dE/dx) scales inversely with the square of velocity: -dE/dx proportional to 1/v². As a high-velocity proton enters tissue, its high speed results in minimal Coulomb interaction (low plateau entrance dose). As it slows down toward the end of its trajectory, v drops rapidly, causing -dE/dx to skyrocket into an intense, narrow energy deposition maximum known as the Bragg Peak. Once the proton captures an electron and comes to rest, ionization abruptly terminates (zero exit dose).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Physics of depth-dose profile:<br>• Entrance: High velocity v => small 1/v² => low linear energy transfer (LET) in healthy superficial tissues.<br>• Pre-stopping zone: As kinetic energy depletes, velocity drops sharply, causing 1/v² to surge asymptotically, creating the localized Bragg peak.<br>• Distal zone: The proton comes to a complete rest; radiation dose drops to zero immediately beyond the Bragg peak.<br>2. Clinical advantage:<br>By tuning proton accelerator energy (typically 70 - 250 MeV), the depth of the Bragg peak can be placed exactly inside a deep tumor (e.g., pediatric medulloblastoma or uveal melanoma), sparing critical adjacent organs (brainstem, spinal cord, optical nerve) with ZERO exit dose.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately characterizes the low entry plateau, sharp Bragg peak, and zero exit dose.<br>• Option B is false: Erroneously claims protons exhibit exponential attenuation.<br>• Option C is false: Describes low-energy electrons or superficial orthovoltage X-rays.<br>• Option D is false: Violates the Bethe-Bloch stopping power velocity dependence.<br>• Option E is false: Confuses proton therapy with positron emission.",
+    "trapAlert": "Photons have NO Bragg peak: their dose peaks near the surface and decays exponentially, delivering large exit doses behind the tumor. Protons deposit peak dose AT DEPTH and deliver ZERO exit dose beyond the Bragg peak."
+  },
+  {
+    "id": "phys_2027_f47",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Multiple Half-Value Layers & Transmitted Beam Intensity in Radiology",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A diagnostic collimated X-ray beam passes through a section of patient soft tissue possessing an effective Half-Value Layer of HVL = 3.0 cm for the given photon energy spectrum. What percentage of the initial beam intensity is transmitted through an anatomical tissue thickness of x = 12.0 cm, and what fraction of the incident photons have undergone physical interaction (photoelectric absorption or Compton scattering)?",
+    "options": [
+      "A. Transmitted: 12.5%; Interacted/Attenuated: 87.5%",
+      "B. Transmitted: 6.25% (1/16 of incident intensity); Interacted/Attenuated: 93.75% (15/16 of incident photons)",
+      "C. Transmitted: 25.0%; Interacted/Attenuated: 75.0%",
+      "D. Transmitted: 3.125%; Interacted/Attenuated: 96.875%",
+      "E. Transmitted: 0.39%; Interacted/Attenuated: 99.61%"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In narrow-beam radiological physics, each successive Half-Value Layer (HVL) halves the remaining transmitted photon intensity: I(x) = I_0 * (1/2)^n, where n = x / HVL is the number of half-value layers traversed. The fraction of photons attenuated by photoelectric effect and Compton scattering is the complement: Fraction_attenuated = 1 - (I / I_0).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate number of HVLs n:<br>n = x / HVL = 12.0 cm / 3.0 cm = 4.0 HVLs.<br>2. Calculate transmitted intensity fraction:<br>I / I_0 = (1/2)⁴ = 1 / 16 = 0.0625.<br>Expressed as a percentage: 0.0625 * 100% = 6.25% transmitted.<br>3. Calculate interacted/attenuated fraction:<br>Attenuated fraction = 1 - 0.0625 = 0.9375 = 93.75% (or 15/16).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Uses 3 HVLs ((1/2)³ = 1/8 = 12.5%).<br>• Option B is CORRECT: Accurately evaluates 4 HVLs yielding 6.25% transmitted and 93.75% attenuated.<br>• Option C is false: Uses 2 HVLs ((1/2)² = 25%).<br>• Option D is false: Uses 5 HVLs ((1/2)⁵ = 3.125%).<br>• Option E is false: Uses 8 HVLs ((1/2)⁸ = 0.39%).",
+    "trapAlert": "A tissue thickness of 12 cm with HVL = 3 cm corresponds to 4 HVLs: 12 / 3 = 4. Do not confuse (1/2)⁴ = 1/16 (6.25%) with 1/8 or 1/4."
+  },
+  {
+    "id": "phys_2027_f48",
+    "subject": "Physics",
+    "chapter": "Nuclear Physics & Medical Radiations",
+    "subtopic": "Physical Resolution Limits in PET: Positron Range & Acollinearity",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Despite state-of-the-art silicon photomultiplier (SiPM) scintillation detectors, the spatial resolution of clinical PET scanners is bounded by two fundamental quantum and kinematic physical phenomena: (1) Positron range (the finite distance the positron travels while thermalizing prior to annihilation) and (2) Photon non-collinearity (residual thermal momentum of the electron-positron pair causes the two 511 keV gamma photons to diverge from 180.00° by a small deviation angle of Delta theta ≈ 0.25°). In a clinical whole-body PET scanner with a detector ring diameter of D = 80.0 cm (ring radius R = D / 2 = 40.0 cm = 400.0 mm), what spatial localization error Delta x does this 0.25° angular acollinearity produce for an annihilation event occurring near the center of the scanner ring? (Use small angle approximation tan(Delta theta) ≈ Delta theta in radians, with 0.25° ≈ 0.004363 rad).",
+    "options": [
+      "A. Delta x ≈ 0.017 mm",
+      "B. Delta x ≈ 0.35 mm",
+      "C. Delta x ≈ 1.75 mm (imposing an irreducible physical spatial resolution limit of ~2 mm)",
+      "D. Delta x ≈ 8.72 mm",
+      "E. Delta x ≈ 17.5 mm"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> When a positron annihilates with an electron, the center of mass of the pair is rarely at absolute rest: residual Fermi momentum produces a slight angular deviation from antiparallel collinearity of approximately Delta theta ≈ 0.25° (4.36 * 10⁻³ rad). Because the PET coincidence algorithm reconstructs a straight line of response (LOR) between detector hits, this angular deviation creates a spatial positioning error that scales with ring radius: Delta x ≈ R * Delta theta / 2 (or R * tan(Delta theta / 2) ≈ (D/2) * (Delta theta / 2) for center events, giving Delta x ≈ 0.00436 * 400 mm ≈ 1.75 mm total broadening).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Convert angle to radians:<br>Delta theta = 0.25° * (pi / 180°) = 0.25 * 0.017453 ≈ 0.0043633 rad.<br>2. Calculate spatial error Delta x across ring radius R = 400.0 mm:<br>The lateral displacement of the coincidence line of response across the radius R is:<br>Delta x ≈ R * Delta theta = (400.0 mm) * (0.0043633 rad) ≈ 1.745 mm ≈ 1.75 mm.<br>3. Conclusion:<br>Combined with the finite positron range (~1.0 mm for ¹⁸F), this kinematic acollinearity sets an absolute physical floor of approximately 2.0 to 2.5 mm on PET image resolution, which cannot be overcome by making detector crystals smaller.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Off by two orders of magnitude (0.017 mm).<br>• Option B is false: Off by a factor of 5 (0.35 mm).<br>• Option C is CORRECT: Accurately evaluates Delta x ≈ 1.75 mm.<br>• Option D is false: Multiplies by ring diameter D and an extra factor of 2 (8.72 mm).<br>• Option E is false: Off by a factor of 10 (17.5 mm).",
+    "trapAlert": "Acollinearity is a fundamental physical limitation of quantum mechanics, NOT detector hardware! Even with infinitely small pixel detectors, the 0.25° angular spread produces an unavoidable ~1.7 mm blur across an 80 cm detector ring."
+  },
+  {
+    "id": "phys_2027_f49",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Continuous-Wave Doppler: The Factor of 2 & Blood Velocity Measurement",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A continuous-wave Doppler ultrasound probe operating at a transmitted carrier frequency of f_0 = 5.00 MHz (5.00 * 10⁶ Hz) interrogates laminar blood flow in the common femoral artery. The average speed of sound in human soft tissue and blood is c = 1540.0 m/s. The ultrasound beam intersects the longitudinal flow axis of the artery at an angle of insonation of theta = 60.0° (cos(60.0°) = 0.500). The receiver circuitry records an acoustic Doppler frequency shift of Delta f = 3250.0 Hz (3.25 kHz). By the fundamental Doppler ultrasound equation Delta f = (2 * f_0 * v * cos(theta)) / c: What is the calculated blood flow velocity v, and what physical mechanism necessitates the factor of 2 in this equation?",
+    "options": [
+      "A. v = 0.50 m/s; the factor of 2 accounts for reflection off both the anterior and posterior walls of the vessel",
+      "B. v = 2.00 m/s; the factor of 2 accounts for forward systolic and reverse diastolic flow cycles",
+      "C. v = 1.00 m/s; the factor of 2 is an empirical fudge factor for blood non-Newtonian viscosity",
+      "D. v ≈ 1.00 m/s (100.0 cm/s); the factor of 2 arises because the moving erythrocyte undergoes two successive Doppler shifts (first as a moving observer intercepting the wave, and second as a moving emitter reflecting sound back to the transducer)",
+      "E. v ≈ 4.00 m/s; the factor of 2 accounts for Nyquist-Shannon two-point waveform sampling"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Doppler ultrasound relies on the double Doppler effect. When an acoustic wave is transmitted toward moving red blood cells (RBCs), two distinct frequency shifts occur sequentially:<br>1. The moving RBC acts first as a moving receiver moving relative to a stationary source, intercepting wavefronts at shifted frequency f' = f_0 * (1 + (v/c)*cos(theta)).<br>2. The RBC then acts as a moving source, scattering and re-emitting the wave back to the stationary transducer, shifting the frequency a second time: f'' = f' / (1 - (v/c)*cos(theta)).<br>For biological velocities where v << c, combining both shifts yields Delta f = f'' - f_0 ≈ 2 * f_0 * v * cos(theta) / c.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Solve Doppler equation for velocity v:<br>v = (Delta f * c) / (2 * f_0 * cos(theta)).<br>2. Substitute numerical values:<br>Delta f = 3250.0 Hz.<br>c = 1540.0 m/s.<br>f_0 = 5.00 * 10⁶ Hz.<br>cos(60.0°) = 0.500.<br>3. Compute numerator and denominator:<br>Numerator = 3250.0 Hz * 1540.0 m/s = 5005000.0 m/s² = 5.005 * 10⁶ m/s².<br>Denominator = 2 * (5.00 * 10⁶ Hz) * 0.500 = 5.00 * 10⁶ Hz.<br>4. Calculate velocity:<br>v = (5.005 * 10⁶) / (5.00 * 10⁶) = 1.001 m/s ≈ 1.00 m/s = 100.0 cm/s.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Halves the velocity (0.50 m/s) and invents an anatomical artifact explanation.<br>• Option B is false: Doubles the velocity (2.00 m/s).<br>• Option C is false: Computes correct velocity but gives an incorrect pseudo-scientific explanation.<br>• Option D is CORRECT: Accurately evaluates v ≈ 1.00 m/s and correctly explains the two successive Doppler shifts.<br>• Option E is false: Multiplies by 4 (4.00 m/s) and confuses Doppler physics with Nyquist sampling.",
+    "trapAlert": "Never forget the factor of 2 in Doppler ultrasound! In standard astronomical or acoustic Doppler where there is only one moving object (e.g., a siren), Delta f = f_0 * v / c. In pulse-echo ultrasound, the reflector moves in both transmission and reception, DOUBLING the frequency shift."
+  },
+  {
+    "id": "phys_2027_f50",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Angle of Insonation Error & Cosine Sensitivity in Doppler Ultrasound",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In Doppler ultrasonography, blood flow velocity is computed by the scanner algorithm: v_calc = (Delta f * c) / (2 * f_0 * cos(theta_input)). During a vascular examination of the internal carotid artery, the true physical angle between the beam and blood flow is theta_true = 60.0° (cos(60.0°) = 0.500). If the sonographer carelessly aligns the angle-correction cursor to theta_input = 30.0° (cos(30.0°) = sqrt(3)/2 ≈ 0.866), what is the ratio of the calculated velocity to the true blood velocity (v_calc / v_true), what percentage error does this represent, and why are angles of insonation greater than 60° strictly avoided in clinical practice?",
+    "options": [
+      "A. v_calc / v_true = 1.732; overestimates velocity by +73.2%",
+      "B. v_calc / v_true = 1.000; zero error because modern machines automatically correct for angle errors",
+      "C. v_calc / v_true = 0.500; underestimates velocity by 50.0%",
+      "D. v_calc / v_true = 0.866; underestimates velocity by 13.4%",
+      "E. v_calc / v_true ≈ 0.577 (underestimates true velocity by 42.3%); angles > 60° are avoided because steep cosine slope (|d(cos theta)/d theta| = sin theta -> 1) amplifies minor angle errors exponentially"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In Doppler velocimetry, the measured frequency shift is proportional to the cosine of the true angle: Delta f = (2 * f_0 * v_true * cos(theta_true)) / c. The machine's algorithm calculates velocity using the user-entered angle theta_input: v_calc = (Delta f * c) / (2 * f_0 * cos(theta_input)). Substituting Delta f gives: v_calc / v_true = cos(theta_true) / cos(theta_input). Because d(cos theta)/d theta = -sin theta, the sensitivity of cos(theta) to angular error is proportional to sin(theta). Near 90°, sin(theta) ≈ 1, producing extreme, unstable velocity errors.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate velocity ratio:<br>v_calc / v_true = cos(60.0°) / cos(30.0°) = 0.500 / 0.866025 ≈ 0.57735 = 57.7%.<br>2. Calculate percentage error:<br>Percentage error = (v_calc - v_true) / v_true = 0.57735 - 1.000 = -0.42265 ≈ -42.3% (underestimation!).<br>3. Clinical rationale for avoiding theta > 60°:<br>As theta approaches 90°, cos(theta) approaches 0, and the slope |d(cos theta)/d theta| = sin(theta) reaches its maximum (sin(90°) = 1.0). A tiny 2° alignment error at 75° creates an enormous velocity error (>30%), whereas at 60°, errors remain manageable. Furthermore, at exactly 90°, cos(90°) = 0, so Delta f = 0 regardless of how fast blood is moving!<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts the cosine ratio (0.866 / 0.500 = 1.732).<br>• Option B is false: Erroneously claims the machine auto-corrects for manual misalignment.<br>• Option C is false: Assumes linear angle scaling (30/60 = 0.5).<br>• Option D is false: Reports cos(30°) as the ratio.<br>• Option E is CORRECT: Accurately evaluates v_calc / v_true ≈ 0.577 (a 42.3% underestimation) and explains the derivative slope rationale.",
+    "trapAlert": "Inputting a smaller angle (30° instead of 60°) makes cos(theta_input) LARGER (0.866 instead of 0.500). Because cos(theta_input) is in the DENOMINATOR of the velocity calculation, a larger cosine yields a SMALLER calculated velocity (underestimation by 42.3%)."
+  },
+  {
+    "id": "phys_2027_f51",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Pulse-Echo Ranging & The 13-Microsecond Rule in Medical Sonography",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Diagnostic medical ultrasound scanners reconstruct two-dimensional B-mode tomograms by pulse-echo ranging: the depth d of an anatomical acoustic reflector is determined from the round-trip transit time t of the reflected ultrasonic pulse: d = (c * t) / 2, where average acoustic velocity in human soft tissue is calibrated to c = 1540.0 m/s.<br>1. What is the round-trip travel time t_1cm required for an ultrasound echo to return from an anatomical structure located at a depth of d = 1.0 cm (the clinical '13-microsecond rule')?<br>2. If an echo reflected from the posterior wall of an abdominal aortic aneurysm is detected by the transducer at an elapsed time of t = 65.0 µs after pulse emission, what is the anatomical depth d of the aortic wall?",
+    "options": [
+      "A. t_1cm ≈ 13.0 µs; Aortic wall depth d ≈ 5.0 cm",
+      "B. t_1cm ≈ 6.5 µs; Aortic wall depth d ≈ 10.0 cm",
+      "C. t_1cm ≈ 26.0 µs; Aortic wall depth d ≈ 2.5 cm",
+      "D. t_1cm ≈ 13.0 µs; Aortic wall depth d ≈ 10.0 cm",
+      "E. t_1cm ≈ 1.54 µs; Aortic wall depth d ≈ 50.0 cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In pulse-echo ranging, the emitted acoustic pulse must travel to the target reflector (distance d) and back to the transducer (distance d), covering a total round-trip distance of 2 * d at speed c: 2 * d = c * t => t = (2 * d) / c. For every 1.0 cm of depth in soft tissue, sound requires approximately 13 microseconds of round-trip transit time.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate round-trip time for 1.0 cm (d = 0.010 m):<br>t_1cm = (2 * 0.010 m) / (1540.0 m/s) = 0.020 / 1540.0 ≈ 1.2987 * 10⁻⁵ s = 12.987 µs ≈ 13.0 µs.<br>(This is the foundational '13-microsecond rule' taught in medical ultrasonography).<br>2. Calculate depth for t = 65.0 µs (6.50 * 10⁻⁵ s):<br>Method 1 (Direct formula):<br>d = (c * t) / 2 = (1540.0 m/s * 6.50 * 10⁻⁵ s) / 2 = 0.1001 m / 2 = 0.05005 m ≈ 5.0 cm.<br>Method 2 (Using the 13-microsecond rule):<br>d = 65.0 µs / (13.0 µs/cm) = 5.0 cm.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates t_1cm ≈ 13.0 µs and aortic wall depth d ≈ 5.0 cm.<br>• Option B is false: Computes one-way time (6.5 µs) and forgets the factor of 1/2 in depth (yielding 10.0 cm).<br>• Option C is false: Doubles round-trip time to 26 µs and halves depth.<br>• Option D is false: Correct rule of thumb, but forgets the factor of 2 in depth calculation (d = c*t = 10 cm).<br>• Option E is false: Uses 1540 incorrectly with arithmetic disorder.",
+    "trapAlert": "A pervasive error in sonography calculations is forgetting to divide transit time by 2! Sound travels to the reflector AND BACK: if you calculate d = c*t, you get 10 cm (total round-trip path), not the actual anatomical depth of 5.0 cm."
+  },
+  {
+    "id": "phys_2027_f52",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Acoustic Impedance Mismatch & Intensity Reflection at Bone Interfaces",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The characteristic acoustic impedance of a medium is defined as Z = rho * c, where rho is mass density and c is acoustic propagation velocity, measured in Rayls (kg/(m²·s)). At a perpendicular boundary between two biological media of impedances Z_1 and Z_2, the acoustic intensity reflection coefficient is R = ((Z_2 - Z_1) / (Z_2 + Z_1))², and the intensity transmission coefficient is T = 1 - R = (4 * Z_1 * Z_2) / (Z_2 + Z_1)². For an ultrasound beam passing from muscle/soft tissue (Z_1 = 1.50 * 10⁶ Rayl) into cortical bone (Z_2 = 6.00 * 10⁶ Rayl): What percentage of the incident acoustic beam intensity is reflected at the interface (R), what percentage penetrates into the bone (T), and what diagnostic artifact does this severe impedance mismatch produce on the B-mode image?",
+    "options": [
+      "A. R = 60.0%; T = 40.0%; causes posterior acoustic enhancement",
+      "B. R = 36.0%; T = 64.0%; causes clean posterior acoustic shadowing (anechoic black region deep to bone)",
+      "C. R = 6.0%; T = 94.0%; causes mirror image duplication",
+      "D. R = 75.0%; T = 25.0%; causes side lobe artifact",
+      "E. R = 99.9%; T = 0.1%; causes total acoustic refraction"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> When an ultrasound wave encounters a boundary between two tissues of differing acoustic impedance, part of the wave energy is reflected back to the probe and part is transmitted across the interface. The intensity reflection coefficient is R = ((Z_2 - Z_1) / (Z_2 + Z_1))². Cortical bone has an exceptionally high impedance compared to soft tissue, producing a high reflection coefficient (36%). Because bone also possesses an enormous acoustic attenuation coefficient (~10-20 dB/(cm·MHz)), virtually no sound penetrates beyond bone, creating complete posterior acoustic shadowing.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate impedance difference and sum:<br>Z_2 - Z_1 = 6.00 * 10⁶ - 1.50 * 10⁶ = 4.50 * 10⁶ Rayl.<br>Z_2 + Z_1 = 6.00 * 10⁶ + 1.50 * 10⁶ = 7.50 * 10⁶ Rayl.<br>2. Calculate reflection coefficient R:<br>R = (4.50 * 10⁶ / 7.50 * 10⁶)² = (4.50 / 7.50)² = (3 / 5)² = (0.60)² = 0.36 = 36.0%.<br>36.0% of the ultrasound pulse energy is reflected back at the bone surface.<br>3. Calculate transmission coefficient T:<br>T = 1 - R = 1 - 0.36 = 0.64 = 64.0%.<br>4. Image artifact:<br>The intense reflection combined with heavy bone attenuation prevents ultrasound penetration into underlying tissues, creating an anechoic (black) 'posterior acoustic shadow' immediately deep to bone or calcified gallstones.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Forgets to square the ratio (0.60 = 60%) and claims acoustic enhancement (which occurs deep to fluid, not bone!).<br>• Option B is CORRECT: Accurately evaluates R = 36.0%, T = 64.0%, and identifies posterior acoustic shadowing.<br>• Option C is false: Computes 6.0% reflection.<br>• Option D is false: Arithmetic guess.<br>• Option E is false: Conflates the soft-tissue/bone interface with the soft-tissue/air interface (99.9%).",
+    "trapAlert": "Remember to SQUARE the amplitude ratio: (4.5 / 7.5) = 0.60, and 0.60² = 0.36 (36%). Forgetting to square the ratio yields 60%, a classic examiner distractor."
+  },
+  {
+    "id": "phys_2027_f53",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Acoustic Impedance of Air & Biophysical Mechanism of Ultrasound Gel",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A medical ultrasound transducer contains a piezoelectric ceramic element with acoustic impedance Z_crystal = 30.0 * 10⁶ Rayl, and human epidermal skin has an acoustic impedance of Z_skin = 1.60 * 10⁶ Rayl. If an un-gelled transducer is placed against dry skin, a microscopic trapped layer of air separates the probe from the skin. Dry air has mass density rho_air = 1.20 kg/m³ and speed of sound c_air = 340.0 m/s, giving Z_air = 408.0 Rayl (≈ 400.0 Rayl). What is the acoustic intensity reflection coefficient R at the skin-air interface, and why is aqueous coupling gel (Z_gel ≈ 1.55 * 10⁶ Rayl) clinically mandatory for all transcutaneous ultrasound examinations?",
+    "options": [
+      "A. R ≈ 1.0%; coupling gel is used purely to lubricate probe sliding and protect the patient's skin from friction burns",
+      "B. R ≈ 50.0%; coupling gel serves primarily as a thermal heatsink to cool the piezoelectric crystals during continuous pulsing",
+      "C. R ≈ 99.9% (virtually total reflection); aqueous gel eliminates microscopic air pockets by matching soft tissue acoustic impedance (Z_gel ≈ Z_skin), enabling sound transmission into the body",
+      "D. R ≈ 36.0%; coupling gel converts longitudinal ultrasound waves into transverse shear waves",
+      "E. R ≈ 0.001%; air is an excellent acoustic transmitter, but coupling gel is required to maintain aseptic sterile conditions"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> At any acoustic boundary, reflection intensity is R = ((Z_2 - Z_1) / (Z_2 + Z_1))². Air has an exceptionally low density (1.2 kg/m³) and low sound velocity (340 m/s), resulting in an acoustic impedance (Z_air ≈ 400 Rayl) that is nearly 4000 times lower than soft tissue (Z_tissue ≈ 1.6 * 10⁶ Rayl). This colossal impedance mismatch causes over 99.9% of incident ultrasound energy to be reflected back before ever penetrating the body. Aqueous acoustic gel has an impedance nearly identical to soft tissue (Z_gel ≈ 1.55 * 10⁶ Rayl), eliminating air pockets and allowing virtually 100% transmission.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate reflection coefficient at skin-air boundary:<br>Z_skin = 1.60 * 10⁶ Rayl.<br>Z_air = 408.0 Rayl.<br>Z_skin - Z_air = 1600000 - 408 = 1599592 Rayl.<br>Z_skin + Z_air = 1600000 + 408 = 1600408 Rayl.<br>2. Evaluate ratio and square:<br>(Z_skin - Z_air) / (Z_skin + Z_air) = 1599592 / 1600408 ≈ 0.99949.<br>R = (0.99949)² ≈ 0.99898 = 99.898% ≈ 99.9%.<br>3. Conclusion:<br>99.9% of the sound beam is reflected at the air interface; only 0.1% penetrates into the skin. Without coupling gel to displace air, medical ultrasound imaging is physically impossible.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Claims reflection is only 1.0% and treats gel as mere lubricant.<br>• Option B is false: Claims 50% reflection and treats gel as a heatsink.<br>• Option C is CORRECT: Accurately evaluates R ≈ 99.9% and proves gel's essential acoustic impedance matching role.<br>• Option D is false: Conflates with bone impedance and invents wave conversion.<br>• Option E is false: Grossly counterfactual claim that air transmits sound efficiently.",
+    "trapAlert": "Ultrasound gel is NOT just a lubricant! Its primary biophysical purpose is ACOUSTIC IMPEDANCE MATCHING to eliminate the air-skin boundary, which would otherwise reflect 99.9% of the sound beam."
+  },
+  {
+    "id": "phys_2027_f54",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Axial Resolution vs Penetration Depth: The Frequency Trade-off",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In diagnostic B-mode sonography, the axial resolution (the minimum distance between two reflectors along the beam axis that can be resolved as separate echoes) is determined by spatial pulse length (SPL): AR = SPL / 2 = (n * lambda) / 2 = (n * c) / (2 * f), where n is the number of cycles per pulse. Concurrently, acoustic attenuation in soft tissue increases linearly with frequency: Attenuation (dB) = alpha * f * x_roundtrip, where alpha = 0.50 dB/(cm·MHz). Consider two ultrasound probes emitting a 2-cycle pulse (n = 2) into soft tissue (c = 1540.0 m/s):<br>• Probe A: f_A = 3.00 MHz (deep abdominal curvilinear probe)<br>• Probe B: f_B = 12.00 MHz (superficial vascular linear probe)<br>What are the theoretical axial resolutions of Probe A versus Probe B, and why cannot the high-resolution 12.00 MHz probe be used to image a hepatic mass located at a depth of d = 15.0 cm?",
+    "options": [
+      "A. Probe A: AR = 1.02 mm; Probe B: AR = 0.26 mm; the 12 MHz probe triggers destructive inertial cavitation at deep depths",
+      "B. Probe A: AR = 0.25 mm; Probe B: AR = 1.00 mm; the 12 MHz probe exhibits excessive beam divergence",
+      "C. Probe A: AR = 0.51 mm; Probe B: AR = 0.51 mm; axial resolution is physically independent of frequency",
+      "D. Probe A: AR ≈ 0.51 mm; Probe B: AR ≈ 0.13 mm; the 12 MHz probe suffers catastrophic attenuation (a round-trip attenuation of 180.0 dB, reducing echo intensity by a factor of 10⁻¹⁸ at 15 cm depth)",
+      "E. Probe A: AR ≈ 0.13 mm; Probe B: AR ≈ 0.51 mm; low-frequency probes undergo total internal reflection"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In diagnostic ultrasound, there is a fundamental physical trade-off between spatial resolution and penetration depth. Higher frequency f yields shorter wavelength lambda = c / f and shorter spatial pulse length SPL = n * lambda, producing superior (smaller numerical) axial resolution AR = SPL / 2 = lambda (for n = 2). However, tissue attenuation coefficient scales directly with frequency: alpha proportional to f. High frequencies suffer massive exponential energy loss over depth, restricting them to superficial targets.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate axial resolution for n = 2 cycles:<br>AR = (2 * lambda) / 2 = lambda = c / f.<br>• Probe A (f_A = 3.00 MHz = 3.00 * 10⁶ Hz):<br>AR_A = 1540.0 m/s / (3.00 * 10⁶ s⁻¹) = 5.133 * 10⁻⁴ m ≈ 0.513 mm ≈ 0.51 mm.<br>• Probe B (f_B = 12.00 MHz = 12.00 * 10⁶ Hz):<br>AR_B = 1540.0 m/s / (12.00 * 10⁶ s⁻¹) = 1.283 * 10⁻⁴ m ≈ 0.128 mm ≈ 0.13 mm.<br>(Probe B resolves anatomical details 4 times finer than Probe A).<br>2. Calculate round-trip attenuation at d = 15.0 cm (x_roundtrip = 2 * 15.0 = 30.0 cm):<br>• For Probe B (12.00 MHz):<br>Attenuation = (0.50 dB/(cm·MHz)) * (12.00 MHz) * (30.0 cm) = 180.0 dB.<br>Intensity ratio = 10^(-180 / 10) = 10⁻¹⁸ (an eighteen-order-of-magnitude reduction, far below receiver noise floor!).<br>• For Probe A (3.00 MHz):<br>Attenuation = (0.50 dB/(cm·MHz)) * (3.00 MHz) * (30.0 cm) = 45.0 dB (intensity ratio 10^(-4.5) ≈ 3.16 * 10⁻⁵, easily detected and amplified).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Double counts axial resolution and invents a cavitation bioeffect reason.<br>• Option B is false: Inverts the resolutions, claiming higher frequency gives worse resolution.<br>• Option C is false: Claims axial resolution is independent of frequency.<br>• Option D is CORRECT: Accurately evaluates AR_A ≈ 0.51 mm, AR_B ≈ 0.13 mm, and calculates the 180 dB attenuation barrier.<br>• Option E is false: Swaps the probe resolutions.",
+    "trapAlert": "A 'better' axial resolution means a SMALLER numerical value (0.13 mm is superior to 0.51 mm because the probe can resolve smaller structures). However, higher frequencies pay the price with steep attenuation: 180 dB of round-trip loss completely extinguishes the 12 MHz signal at 15 cm depth."
+  },
+  {
+    "id": "phys_2027_f55",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Rayleigh Acoustic Scattering from Erythrocytes & Fourth-Power Frequency Law",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In medical Doppler ultrasound, individual erythrocytes (red blood cells, biconcave discs with mean diameter d ≈ 7.5 µm) act as acoustic scatterers. Because the erythrocyte diameter is much smaller than the ultrasound wavelength (e.g. lambda ≈ 308.0 µm at 5.0 MHz, satisfying d << lambda), scattering occurs in the Rayleigh scattering regime. By Lord Rayleigh's scattering law, the acoustic power scattered omnidirectionally by each red blood cell scales with the fourth power of ultrasound frequency: I_scattered proportional to f⁴. If a sonographer changes from an initial f_1 = 2.50 MHz probe to a higher-frequency f_2 = 5.00 MHz probe, by what factor does the backscattered acoustic power from circulating erythrocytes increase (assuming identical incident pulse power)?",
+    "options": [
+      "A. 2.0-fold increase",
+      "B. 4.0-fold increase",
+      "C. 8.0-fold increase",
+      "D. 32.0-fold increase",
+      "E. 16.0-fold increase (Rayleigh scattering intensity scales with the fourth power of frequency: I proportional to f⁴)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> When acoustic waves strike a boundary much larger than the wavelength (d >> lambda), specular reflection occurs (independent of frequency). However, when sound strikes targets much smaller than the wavelength (d << lambda, such as red blood cells), Rayleigh scattering occurs. The acoustic pressure scattered by a Rayleigh scatterer is proportional to f², and the backscattered intensity/power is proportional to the square of pressure, yielding Rayleigh's fourth-power law: I_scattered proportional to f⁴.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate the frequency ratio:<br>f_2 / f_1 = 5.00 MHz / 2.50 MHz = 2.00.<br>2. Apply the fourth-power Rayleigh scaling:<br>I_scattered_2 / I_scattered_1 = (f_2 / f_1)⁴ = (2.00)⁴.<br>3. Compute power:<br>(2.00)⁴ = 2.00 * 2.00 * 2.00 * 2.00 = 16.0.<br>The backscattered Doppler acoustic power from blood increases by a factor of 16.0 (a 1600% increase in scattered signal strength).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Assumes a linear 1st-power relationship (2¹ = 2).<br>• Option B is false: Assumes a quadratic 2nd-power relationship (2² = 4).<br>• Option C is false: Assumes a cubic 3rd-power relationship (2³ = 8).<br>• Option D is false: Uses 5th-power scaling (2⁵ = 32).<br>• Option E is CORRECT: Accurately evaluates 2⁴ = 16.0-fold increase based on Rayleigh's f⁴ law.",
+    "trapAlert": "Do not confuse specular reflection with Rayleigh scattering! Large smooth anatomical interfaces (e.g., the diaphragm or bladder wall) exhibit specular reflection, which does NOT follow f⁴. Only microscopic scatterers like red blood cells (d << lambda) obey Rayleigh's f⁴ law."
+  },
+  {
+    "id": "phys_2027_f56",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Nyquist Limit & Spectral Doppler Aliasing Artifact",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In pulsed-wave (PW) Doppler echocardiography, an ultrasound transducer transmits pulses at a Pulse Repetition Frequency of PRF = 6.00 kHz (6000.0 pulses/s). By the Nyquist-Shannon sampling theorem, the maximum unaliased Doppler frequency shift that can be faithfully resolved is the Nyquist limit: f_Nyquist = PRF / 2. A patient with severe mitral valve regurgitation generates a turbulent high-velocity systolic jet causing a true Doppler frequency shift of Delta f_true = 4.80 kHz. What is the Nyquist limit frequency f_Nyquist, does spectral aliasing occur, and what physical adjustment by the sonographer will eliminate the aliasing artifact without changing probe position?",
+    "options": [
+      "A. f_Nyquist = 3.00 kHz; Aliasing occurs because Delta f_true > f_Nyquist (peak velocity wraps around the baseline and appears in the reverse channel); eliminated by increasing the PRF scale, shifting the baseline downward, or switching to a lower carrier frequency f_0",
+      "B. f_Nyquist = 6.00 kHz; No aliasing occurs because 4.80 kHz < 6.00 kHz",
+      "C. f_Nyquist = 1.50 kHz; Aliasing occurs; eliminated by increasing carrier frequency to 10.0 MHz",
+      "D. f_Nyquist = 12.00 kHz; Aliasing is physically impossible in biological soft tissues",
+      "E. f_Nyquist = 3.00 kHz; Aliasing occurs; eliminated by decreasing the PRF scale to 2.0 kHz"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In pulsed Doppler systems, the Doppler signal is sampled periodically at discrete time intervals Delta t = 1 / PRF. The Nyquist sampling criterion mandates that at least two samples per cycle are required to reconstruct a wave without ambiguity. The maximum detectable Doppler frequency is therefore f_Nyquist = PRF / 2. When the true Doppler shift Delta f exceeds f_Nyquist, aliasing occurs: the high positive frequency wraps around the spectrum and is falsely rendered as negative velocity flowing in the opposite direction.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate the Nyquist limit:<br>f_Nyquist = PRF / 2 = 6.00 kHz / 2 = 3.00 kHz.<br>2. Assess aliasing condition:<br>Delta f_true = 4.80 kHz.<br>Because Delta f_true (4.80 kHz) > f_Nyquist (3.00 kHz), spectral aliasing occurs.<br>The recorded signal aliases across the Nyquist threshold: 4.80 - 6.00 = -1.20 kHz (appearing as retrograde flow).<br>3. Remediation strategies to eliminate aliasing:<br>• Increase PRF (velocity scale): elevates f_Nyquist.<br>• Shift spectral baseline downward: allocates the entire PRF range to positive forward flow.<br>• Use a lower carrier frequency f_0: since Delta f = (2*f_0*v*cos(theta))/c, lowering f_0 directly reduces Delta f below 3.0 kHz.<br>• Switch to Continuous-Wave (CW) Doppler: CW has PRF = infinity (no aliasing limit).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Accurately evaluates f_Nyquist = 3.00 kHz, identifies aliasing, and details valid clinical adjustments.<br>• Option B is false: Equates Nyquist limit directly to PRF (6.0 kHz).<br>• Option C is false: Halves Nyquist limit to 1.5 kHz and proposes increasing carrier frequency (which worsens aliasing!).<br>• Option D is false: Absurd claim that aliasing is impossible.<br>• Option E is false: Suggests decreasing PRF, which would lower Nyquist to 1.0 kHz and exacerbate aliasing.",
+    "trapAlert": "To eliminate aliasing, you must LOWER the Doppler shift (by using a lower carrier frequency f_0) or RAISE the Nyquist limit (by increasing PRF). Increasing carrier frequency f_0 or decreasing PRF makes aliasing much worse!"
+  },
+  {
+    "id": "phys_2027_f57",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Decibel Attenuation & Round-Trip Echo Intensity Loss in Soft Tissue",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Acoustic attenuation of diagnostic ultrasound through average human soft tissue is modeled by the linear decibel loss formula: Attenuation (dB) = alpha * f * x_total, where alpha = 0.50 dB/(cm·MHz) is the soft tissue attenuation coefficient, f is the transducer center frequency in MHz, and x_total is the total round-trip acoustic path length (x_total = 2 * d). A f = 4.00 MHz ultrasound probe images the posterior wall of a gallbladder located at an anatomical depth of d = 5.00 cm. What is the total round-trip attenuation in decibels (dB), and what fraction of the transmitted sound intensity remains in the received echo when it returns to the transducer surface?",
+    "options": [
+      "A. Round-trip loss = 10.0 dB; Remaining intensity fraction = 10.0% (1/10 of incident intensity)",
+      "B. Round-trip loss = 20.0 dB; Remaining intensity fraction = 1.0% (1/100 of incident intensity)",
+      "C. Round-trip loss = 40.0 dB; Remaining intensity fraction = 0.01% (1/10000 of incident intensity)",
+      "D. Round-trip loss = 20.0 dB; Remaining intensity fraction = 50.0% (1/2 of incident intensity)",
+      "E. Round-trip loss = 5.0 dB; Remaining intensity fraction = 31.6% of incident intensity"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In decibel notation, intensity loss is defined as dB_loss = 10 * log10(I_0 / I). For an ultrasound pulse propagating to depth d and reflecting back, total distance traversed is x_total = 2 * d. The decibel loss is dB_loss = alpha * f * (2 * d). The remaining intensity fraction is I / I_0 = 10^(-dB_loss / 10). Each 10 dB of attenuation reduces beam intensity by a factor of 10.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate total round-trip distance x_total:<br>x_total = 2 * d = 2 * 5.00 cm = 10.0 cm.<br>2. Calculate total round-trip decibel loss:<br>dB_loss = alpha * f * x_total = (0.50 dB/(cm·MHz)) * (4.00 MHz) * (10.0 cm)<br>dB_loss = 2.00 * 10.0 = 20.0 dB.<br>3. Calculate remaining intensity fraction I / I_0:<br>20.0 dB = 10 * log10(I_0 / I) => log10(I_0 / I) = 20.0 / 10 = 2.0.<br>I_0 / I = 10² = 100 => I / I_0 = 1 / 100 = 0.010 = 1.0% remaining.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Accounts for one-way distance only (x = 5.0 cm => 10 dB loss, 10% remaining).<br>• Option B is CORRECT: Accurately evaluates round-trip loss = 20.0 dB and remaining fraction = 1.0% (1/100).<br>• Option C is false: Doubles the decibel loss to 40 dB.<br>• Option D is false: Claims 20 dB corresponds to a 50% drop (confusing with 3 dB).<br>• Option E is false: Uses incorrect attenuation arithmetic.",
+    "trapAlert": "A 10 dB loss corresponds to 1/10 (10%) intensity remaining; a 20 dB loss corresponds to 1/100 (1%) intensity remaining; a 30 dB loss corresponds to 1/1000 (0.1%) remaining. Remember that decibels scale LOGARITHMICALLY (powers of 10), not linearly!"
+  },
+  {
+    "id": "phys_2027_f58",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Snell's Law & Refraction Ghost Artifacts in Ultrasound Imaging",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "When an acoustic wave crosses an interface between two biological tissues with differing acoustic propagation speeds at an oblique angle, the beam refracts according to Snell's Law: sin(theta_1) / c_1 = sin(theta_2) / c_2. An ultrasound beam traveling through subcutaneous adipose tissue (c_1 = 1450.0 m/s) encounters the rectus abdominis muscle boundary (c_2 = 1580.0 m/s) at an angle of incidence of theta_1 = 30.0° (sin(30.0°) = 0.500). What is the angle of refraction theta_2 inside the muscle, and what diagnostic image artifact is produced when the ultrasound scanner's beam-former assumes straight-line sound propagation?",
+    "options": [
+      "A. theta_2 ≈ 27.5°; the beam bends toward the normal, creating clean anechoic posterior shadowing",
+      "B. theta_2 ≈ 30.0°; no refraction occurs because propagation velocities differ by less than 10%",
+      "C. theta_2 ≈ 33.0°; the beam bends away from the normal, causing the machine to misregister returning echoes and display a duplicate 'ghost' structure laterally ('split image' artifact)",
+      "D. theta_2 ≈ 45.0°; total internal reflection occurs, preventing any sound from entering abdominal organs",
+      "E. theta_2 ≈ 60.0°; acoustic refraction converts ultrasonic longitudinal waves into electromagnetic radiation"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By Snell's Law of refraction, sin(theta_2) = sin(theta_1) * (c_2 / c_1). When sound travels from a slower medium (fat, 1450 m/s) into a faster medium (muscle, 1580 m/s), c_2 > c_1, so sin(theta_2) > sin(theta_1), causing the beam to bend AWAY from the surface normal (theta_2 > theta_1). Ultrasound scanners universally operate under the assumption that sound travels along a straight line. When a refracted beam reflects off a structure and returns, the machine maps the echo along its original unbent trajectory, generating a phantom duplicate image side-by-side with the true structure (refraction 'split-image' artifact).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Apply Snell's Law:<br>sin(theta_2) = sin(theta_1) * (c_2 / c_1) = sin(30.0°) * (1580.0 m/s / 1450.0 m/s)<br>sin(theta_2) = 0.500 * (1.08966) ≈ 0.54483.<br>2. Compute angle of refraction theta_2:<br>theta_2 = arcsin(0.54483) ≈ 33.01° ≈ 33.0°.<br>Because 33.0° > 30.0°, the refracted beam bends away from the normal.<br>3. Artifact origin:<br>As the refracted beam scans an object (such as an early gestational sac or abdominal aorta), the machine assumes straight-line propagation and incorrectly projects a second, duplicate 'ghost' structure laterally on the monitor, a notorious pitfall in pelvic ultrasonography.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Claims the beam bends toward the normal (theta_2 = 27.5°, which would only occur if c_2 < c_1).<br>• Option B is false: Erroneously claims no refraction occurs.<br>• Option C is CORRECT: Accurately evaluates theta_2 ≈ 33.0° and identifies the lateral duplication 'split-image' ghost artifact.<br>• Option D is false: Critical angle for total internal reflection is arcsin(1450/1580) ≈ 66.6° from the faster medium; at 30° from the slower medium, total internal reflection is physically impossible.<br>• Option E is false: Pseudoscience claim regarding wave conversion.",
+    "trapAlert": "When passing into a FASTER medium (c_2 > c_1), the wave bends AWAY from the normal (theta_2 > theta_1). Sound speeds up in muscle (1580 m/s vs 1450 m/s in fat), so the angle increases from 30° to 33°."
+  },
+  {
+    "id": "phys_2027_f59",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Medical Endoscopy: Total Internal Reflection & Numerical Aperture in Fiber Optics",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A flexible medical endoscope utilizes a coherent bundle of optical fibers to illuminate and inspect the gastrointestinal mucosa. Each optical fiber consists of a cylindrical high-index glass core (refractive index n_core = 1.60) encased in a lower-index glass cladding (refractive index n_cladding = 1.44).<br>1. What is the critical angle theta_c for total internal reflection at the core-cladding boundary?<br>2. What is the Numerical Aperture (NA = sqrt(n_core² - n_cladding²)) of the optical fiber in air (n_air = 1.00), and what optical property does NA govern?",
+    "options": [
+      "A. theta_c = 45.0°; NA = 0.16; NA determines the diameter of the fiber core",
+      "B. theta_c = 64.2°; NA = 0.16; NA determines the pulse repetition frequency of the light source",
+      "C. theta_c = 90.0°; NA = 1.00; NA determines optical magnification power",
+      "D. theta_c ≈ 64.2°; NA ≈ 0.697 (≈ 0.70); NA determines the maximum acceptance cone angle (alpha_max = arcsin(NA) ≈ 44.2°) within which incident light entering the fiber will undergo total internal reflection",
+      "E. theta_c ≈ 30.0°; NA ≈ 1.44; NA determines the maximum focal depth of the endoscopic lens"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Total internal reflection (TIR) occurs when light traveling in a denser medium (n_core) strikes an interface with a rarer medium (n_cladding) at an angle of incidence exceeding the critical angle theta_c = arcsin(n_cladding / n_core). The Numerical Aperture (NA) is a dimensionless measure of the fiber's light-gathering ability: NA = sqrt(n_core² - n_cladding²) = n_air * sin(alpha_max), defining the half-angle alpha_max of the acceptance cone for light entering the fiber.<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate critical angle theta_c:<br>sin(theta_c) = n_cladding / n_core = 1.44 / 1.60 = 9 / 10 = 0.900.<br>theta_c = arcsin(0.900) ≈ 64.158° ≈ 64.2°.<br>Light striking the core-cladding boundary at any angle theta >= 64.2° undergoes 100% total internal reflection with zero refractive leakage.<br>2. Calculate Numerical Aperture (NA):<br>NA = sqrt(n_core² - n_cladding²) = sqrt((1.60)² - (1.44)²)<br>NA = sqrt(2.560 - 2.0736) = sqrt(0.4864) ≈ 0.6974 ≈ 0.70.<br>3. Optical meaning of NA:<br>In air (n_air = 1.00), sin(alpha_max) = NA / n_air = 0.6974 => alpha_max = arcsin(0.6974) ≈ 44.2°.<br>Light entering the fiber face within an acceptance cone of half-angle 44.2° will successfully guide along the endoscope.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Claims theta_c = 45° and computes NA = 1.60 - 1.44 = 0.16 (simple subtraction).<br>• Option B is false: Computes correct theta_c but uses the invalid subtraction NA = 0.16.<br>• Option C is false: Arbitrary numbers.<br>• Option D is CORRECT: Accurately evaluates theta_c ≈ 64.2°, NA ≈ 0.697 (≈ 0.70), and correctly defines the acceptance cone angle.<br>• Option E is false: Uses 30° and misidentifies NA.",
+    "trapAlert": "Do NOT calculate Numerical Aperture by simple subtraction (1.60 - 1.44 ≠ 0.16)! NA is defined by the square root of the difference of squares: NA = sqrt(n_core² - n_cladding²) = sqrt(2.56 - 2.0736) = sqrt(0.4864) ≈ 0.70."
+  },
+  {
+    "id": "phys_2027_f60",
+    "subject": "Physics",
+    "chapter": "Acoustics & Diagnostic Wave Physics",
+    "subtopic": "Acoustic Bioeffects: Mechanical Index (MI) & Acoustic Cavitation",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "The US Food and Drug Administration (FDA) and International Electrotechnical Commission (IEC) regulate diagnostic medical ultrasound output using the dimensionless Mechanical Index (MI), defined as: MI = P_neg / sqrt(f), where P_neg is the peak rarefactional (negative) acoustic pressure derated for tissue attenuation (expressed in Megapascals, MPa) and f is the ultrasound transducer center frequency (expressed in Megahertz, MHz). A color Doppler ultrasound scanner operating at carrier frequency f = 4.00 MHz produces a peak rarefactional pressure of P_neg = 1.80 MPa in cardiac tissue.<br>1. What is the calculated Mechanical Index (MI)?<br>2. Given the mandatory international safety threshold of MI <= 1.90 for diagnostic imaging, is this examination compliant, and why does a LOWER ultrasound frequency physically INCREASE the risk of non-thermal acoustic cavitation (microbubble expansion and collapse)?",
+    "options": [
+      "A. MI = 0.45; Non-compliant; lower frequency increases thermal tissue heating",
+      "B. MI = 1.80; Compliant; lower frequency increases electrical dielectric breakdown",
+      "C. MI = 3.60; Non-compliant; lower frequency causes electromagnetic wave resonance",
+      "D. MI = 0.90; Non-compliant because any MI > 0.50 triggers immediate cellular microvascular rupture",
+      "E. MI = 0.90; Fully compliant (0.90 <= 1.90); lower frequency increases cavitation risk because the longer acoustic wave period (T = 1/f) provides a longer continuous duration of negative pressure during each cycle, granting dissolved microbubbles more time to expand to resonant, unstable collapse dimensions"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Mechanical Index (MI) is a standardized biophysical indicator of non-thermal acoustic bioeffects, specifically acoustic cavitation (the formation, oscillation, and violent collapse of microscopic gas bubbles in tissue fluid). MI is defined as MI = P_neg / sqrt(f). Higher rarefactional pressure increases the tensile force pulling fluid apart, while lower frequency prolongs the rarefactional half-cycle duration (T_neg = 1 / (2*f)), giving microbubbles greater time to expand to critical size before collapsing violently (inertial cavitation).<br><br><strong>2. Step-by-Step Proof:</strong><br>1. Calculate Mechanical Index MI:<br>P_neg = 1.80 MPa.<br>f = 4.00 MHz => sqrt(f) = sqrt(4.00) = 2.00.<br>MI = 1.80 / 2.00 = 0.90.<br>2. Assess safety compliance:<br>The calculated MI = 0.90 is well below the FDA regulatory maximum of MI_limit = 1.90 (0.90 <= 1.90), confirming full safety compliance.<br>3. Biophysical mechanism of frequency dependence:<br>Acoustic period is T = 1 / f. During the negative (rarefactional) half of the cycle, fluid is subjected to tensile stress that draws dissolved gas into microbubbles. At lower frequencies (e.g., 1 MHz vs 5 MHz), the negative pressure phase lasts 5 times longer, providing ample time for bubbles to reach resonant size and implode violently, generating localized shockwaves (>10,000 atm) and reactive free radicals.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Divides by 4 instead of sqrt(4), yielding 0.45, and confuses cavitation with thermal bioeffects (Thermal Index, TI).<br>• Option B is false: Forgets to divide by sqrt(f), reporting 1.80.<br>• Option C is false: Multiplies by 2 instead of dividing, yielding 3.60.<br>• Option D is false: Claims MI = 0.90 is non-compliant (FDA threshold is 1.90).<br>• Option E is CORRECT: Accurately evaluates MI = 0.90, confirms safety compliance (0.90 <= 1.90), and provides the rigorous biophysical explanation of rarefaction phase duration.",
+    "trapAlert": "In the Mechanical Index formula MI = P_neg / sqrt(f), remember to take the SQUARE ROOT of frequency! sqrt(4.0 MHz) = 2.0, so MI = 1.80 / 2.0 = 0.90. Also, lower frequency INCREASES cavitation risk because the negative pressure phase of the sound wave lasts longer."
+  }
+]
