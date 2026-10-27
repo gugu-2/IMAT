@@ -1,0 +1,845 @@
+{
+  "catalog_metadata": {
+    "title": "IMAT 2025/2026 Physics & Mathematics Master Prediction Catalog",
+    "target_exam": "Italian Medical Admissions Test (IMAT) - Ministero dell'Università e della Ricerca (MUR)",
+    "decree_alignment": "Official MUR Decree Syllabus Specification (Physics 7 questions, Mathematics 6 questions)",
+    "academic_year": "2025/2026",
+    "version": "1.0.0",
+    "total_questions": 26,
+    "physics_questions_count": 14,
+    "mathematics_questions_count": 12,
+    "calculator_allowed": false,
+    "scoring_system": {
+      "correct": 1.5,
+      "incorrect": -0.4,
+      "unanswered": 0.0
+    },
+    "topics_covered": {
+      "physics": [
+        "1. 1D & 2D Kinematics (projectile motion time of flight, maximum height, range)",
+        "2. Dynamics & Newton's Laws (inclined plane with kinetic friction mu_k, acceleration)",
+        "3. Work-Energy & Springs (conservation of mechanical energy, 1/2 k x^2, work-energy theorem)",
+        "4. Momentum & Collisions (conservation of momentum, perfectly inelastic collisions, kinetic energy dissipated)",
+        "5. Hydrostatics & Fluids (Archimedes buoyant force, submerged fraction, continuity A1 v1 = A2 v2)",
+        "6. DC Circuits (series-parallel resistors, battery internal resistance V = E - Ir, power I^2 R)",
+        "7. Optics & Waves (Snell's law, critical angle for total internal reflection, thin lens equation)"
+      ],
+      "mathematics": [
+        "1. Algebra & Polynomials (quadratic formula, Vieta's formulas for sum and product of roots, alpha^2 + beta^2)",
+        "2. Logarithms (log rules without calculator, log10(75) in terms of log10(2) and log10(3))",
+        "3. Analytic Geometry (perpendicular line slope m1 * m2 = -1, circle equations)",
+        "4. Trigonometry (unit circle quadrant signs, sin(2 theta) double angle formula)",
+        "5. Combinatorics (permutations without repetition, combinations nCr committee problems)",
+        "6. Probability & Statistics (Bayes' theorem, positive predictive value, independent events)"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "IMAT-2026-PHYS-001",
+      "subject": "Physics",
+      "topic_number": 1,
+      "topic": "1D & 2D Kinematics",
+      "subtopic": "Projectile Motion: Flight Time, Peak Altitude, and Horizontal Range",
+      "syllabus_ref": "MUR Physics A. Mechanics & Kinematics - Motion in two dimensions",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A high-velocity physiological saline jet is launched from ground level across a horizontal testing field at an initial velocity of v0 = 20.0 m/s angled at θ = 30.0° above the horizontal. Assuming the acceleration due to gravity is uniform at g = 10.0 m/s², flat terrain, and negligible air drag, which option correctly states the total time of flight (T), the maximum vertical height reached above ground level (H), and the total horizontal range (R)?",
+      "options": [
+        "A. T = 2.0 s; H = 5.0 m; R = 20√3 m (≈ 34.6 m)",
+        "B. T = 1.0 s; H = 10.0 m; R = 10√3 m (≈ 17.3 m)",
+        "C. T = 2.0 s; H = 10.0 m; R = 40.0 m",
+        "D. T = 4.0 s; H = 20.0 m; R = 40√3 m (≈ 69.3 m)",
+        "E. T = 1.5 s; H = 7.5 m; R = 15√3 m (≈ 26.0 m)"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "Galilean independence of orthogonal motions in two dimensions. The horizontal component of motion exhibits zero acceleration (ax = 0), yielding constant velocity vx(t) = v0·cos(θ). The vertical component undergoes uniform gravitational deceleration (ay = -g), governed by vy(t) = v0·sin(θ) - gt and y(t) = v0·sin(θ)·t - (1/2)gt².",
+        "proof": "1. Resolve initial velocity into components: v0x = v0·cos(30°) = 20.0·(√3/2) = 10√3 m/s; v0y = v0·sin(30°) = 20.0·(0.5) = 10.0 m/s.\n2. Apex condition: At peak height H, vertical velocity vy = 0 => 0 = v0y - g·t_apex => t_apex = 10.0 / 10.0 = 1.0 s.\n3. Total time of flight over level terrain: By parabolic symmetry, T = 2·t_apex = 2.0 s.\n4. Maximum altitude H: H = (v0y)² / (2g) = (10.0)² / (2 · 10.0) = 100 / 20 = 5.0 m.\n5. Total horizontal range R: R = v0x · T = (10√3 m/s) · (2.0 s) = 20√3 m ≈ 34.64 m (Or via R = [v0² · sin(2θ)] / g = [400 · sin(60°)] / 10 = 40 · (√3/2) = 20√3 m).",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately evaluates T = 2.0 s, H = 5.0 m, and R = 20√3 m.",
+          "B": "INCORRECT. Conflates total flight time T with apex time (t_apex = 1.0 s), and erroneously doubles H by forgetting the factor of 2 in the denominator (calculating v0y²/g instead of v0y²/(2g)).",
+          "C": "INCORRECT. Double counts H as 10.0 m and incorrectly assumes horizontal velocity is equal to full v0 = 20 m/s without applying the cos(30°) factor.",
+          "D": "INCORRECT. Calculated using full magnitude v0 = 20 m/s directly in vertical kinematics without resolving into v0·sin(30°), leading to four-fold inflated height (20 m) and doubled flight time (4 s).",
+          "E": "INCORRECT. Arithmetic hallucination based on arbitrary fractional averages."
+        }
+      },
+      "examiner_trap_alert": "Failure to resolve v0 into trigonometric components. A pervasive student error is using v0²/(2g) instead of (v0·sin θ)²/(2g) for maximum height, or confusing the apex ascent time (1.0 s) with total flight time (2.0 s)."
+    },
+    {
+      "id": "IMAT-2026-PHYS-002",
+      "subject": "Physics",
+      "topic_number": 1,
+      "topic": "1D & 2D Kinematics",
+      "subtopic": "Elevated Horizontal Launch: Time to Ground and Vector Impact Velocity",
+      "syllabus_ref": "MUR Physics A. Mechanics & Kinematics - Two-dimensional motion under gravity",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "An unmanned medical supply drone cruising horizontally at a constant speed of vx = 15.0 m/s at an altitude of h = 45.0 m above a level emergency landing zone releases an emergency blood package. Taking g = 10.0 m/s² and neglecting aerodynamic resistance, what is the elapsed time of descent t before impact, and what is the magnitude of the package's final velocity vector v immediately prior to striking the ground?",
+      "options": [
+        "A. t = 4.5 s; v = 45.0 m/s",
+        "B. t = 3.0 s; v = 30.0 m/s",
+        "C. t = 3.0 s; v = 15√5 m/s (≈ 33.5 m/s)",
+        "D. t = 9.0 s; v = 15√5 m/s (≈ 33.5 m/s)",
+        "E. t = 2.0 s; v = 25.0 m/s"
+      ],
+      "correct_index": 2,
+      "correct_letter": "C",
+      "explanation": {
+        "principle": "Independence of horizontal and vertical kinematic degrees of freedom. A horizontal launch has an initial vertical velocity component v0y = 0. The time to strike the ground is strictly determined by vertical free-fall: h = (1/2)gt². The final velocity vector is the orthogonal Pythagorean sum of the constant horizontal velocity vx and the acquired vertical velocity vy = gt.",
+        "proof": "1. Descent time: Initial vertical velocity v0y = 0. Thus, h = (1/2)·g·t² => 45.0 = (1/2) · 10.0 · t² = 5.0·t² => t² = 45.0 / 5.0 = 9.0 => t = √9.0 = 3.0 s.\n2. Final velocity components at impact (t = 3.0 s):\n   - Horizontal component: vx = 15.0 m/s (constant, zero horizontal acceleration).\n   - Vertical component: vy = v0y + g·t = 0 + 10.0 · 3.0 = 30.0 m/s (directed downward).\n3. Magnitude of final impact velocity vector: v = √(vx² + vy²) = √(15.0² + 30.0²) = √(225 + 900) = √1125 = √(225 · 5) = 15√5 m/s ≈ 33.54 m/s.",
+        "distractor_elimination": {
+          "A": "INCORRECT. Conflates altitude with velocity and assumes t = h/g = 4.5 s.",
+          "B": "INCORRECT. Computes the correct descent time (3.0 s) and correct vertical velocity component (30.0 m/s), but completely ignores the non-zero horizontal velocity vx = 15.0 m/s in the resultant vector.",
+          "C": "CORRECT. Accurately determines t = 3.0 s and v = √(15² + 30²) = 15√5 m/s ≈ 33.5 m/s.",
+          "D": "INCORRECT. Forgets to take the square root of t² = 9.0 s², adopting t = 9.0 s.",
+          "E": "INCORRECT. Incorrect kinematics formula h = vt and arbitrary 3-4-5 triangle substitution."
+        }
+      },
+      "examiner_trap_alert": "Reporting only the vertical velocity component vy (30 m/s) as the 'final velocity', ignoring the persistent horizontal component vx (15 m/s). The actual velocity is the vector sum √(vx² + vy²)."
+    },
+    {
+      "id": "IMAT-2026-PHYS-003",
+      "subject": "Physics",
+      "topic_number": 2,
+      "topic": "Dynamics & Newton's Laws",
+      "subtopic": "Inclined Plane with Kinetic Friction: Downward Acceleration",
+      "syllabus_ref": "MUR Physics A. Mechanics - Newton's laws of motion, friction, and incline statics/dynamics",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A medical centrifuge crate of mass m = 6.0 kg is placed on a loading ramp inclined at an angle of θ = 30.0° to the horizontal. The coefficient of kinetic friction between the crate and the ramp surface is μk = √3 / 6 (≈ 0.2887). Assuming g = 10.0 m/s², what is the linear acceleration of the crate as it slides down the incline?",
+      "options": [
+        "A. a = 5.0 m/s²",
+        "B. a = 2.5 m/s²",
+        "C. a = 1.25 m/s²",
+        "D. a = 3.75 m/s²",
+        "E. a = 0 m/s² (constant velocity)"
+      ],
+      "correct_index": 1,
+      "correct_letter": "B",
+      "explanation": {
+        "principle": "Newton's Second Law applied along rotated coordinate axes aligned parallel and perpendicular to the inclined plane. The gravitational force resolves into F_parallel = m·g·sin(θ) down the ramp and F_perpendicular = m·g·cos(θ) into the ramp. In the perpendicular direction, net force is zero, establishing the normal force N = m·g·cos(θ). Kinetic friction opposes motion down the ramp with magnitude fk = μk·N. The net accelerating force is F_net = m·g·sin(θ) - μk·m·g·cos(θ).",
+        "proof": "1. Parallel gravitational driving force: F_g,|| = m·g·sin(30°) = 6.0 · 10.0 · 0.5 = 30.0 N.\n2. Normal force perpendicular to incline: N = m·g·cos(30°) = 6.0 · 10.0 · (√3/2) = 30√3 N.\n3. Kinetic friction force opposing descent: fk = μk · N = (√3 / 6) · (30√3) = (3 · 30) / 6 = 90 / 6 = 15.0 N.\n4. Net resultant force down the ramp: F_net = F_g,|| - fk = 30.0 N - 15.0 N = 15.0 N.\n5. Acceleration: a = F_net / m = 15.0 N / 6.0 kg = 2.5 m/s².\n(Equivalently, mass cancels: a = g·[sin(30°) - μk·cos(30°)] = 10·[0.5 - (√3/6)·(√3/2)] = 10·[0.5 - 3/12] = 10·[0.5 - 0.25] = 10·[0.25] = 2.5 m/s²).",
+        "distractor_elimination": {
+          "A": "INCORRECT. Represents the frictionless acceleration: a = g·sin(30°) = 10·(0.5) = 5.0 m/s².",
+          "B": "CORRECT. Accurately accounts for normal force N = mg·cos(30°) and subtracts friction: a = 2.5 m/s².",
+          "C": "INCORRECT. Erroneously doubles the friction force or subtracts 3.75 m/s².",
+          "D": "INCORRECT. Arises from using μk = 0.5·(√3/6) or applying cos(30°) to the parallel driving force.",
+          "E": "INCORRECT. Assumes static equilibrium without verifying whether the parallel driving force exceeds static/kinetic friction."
+        }
+      },
+      "examiner_trap_alert": "Using N = mg instead of N = mg·cos(θ) for an inclined surface. On an incline, the normal contact force is reduced by cos(θ). Here, (√3/6) · mg·cos(30°) = (√3/6) · (√3/2) · mg = (3/12)·mg = 0.25·mg, cleanly yielding a = 2.5 m/s²."
+    },
+    {
+      "id": "IMAT-2026-PHYS-004",
+      "subject": "Physics",
+      "topic_number": 2,
+      "topic": "Dynamics & Newton's Laws",
+      "subtopic": "Deceleration on Incline: Opposing Friction and Stopping Distance",
+      "syllabus_ref": "MUR Physics A. Mechanics - Newton's second law and frictional forces",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A robotic surgical equipment module of mass m = 4.0 kg is projected UP a ramp inclined at θ = 30.0° to the horizontal with an initial velocity of v0 = 8.0 m/s. The coefficient of kinetic friction between the module and ramp is μk = √3 / 5 (≈ 0.3464). Taking g = 10.0 m/s², what is the magnitude of the module's deceleration a while sliding upward, and what total distance d does it travel along the incline before momentarily coming to rest?",
+      "options": [
+        "A. a = 8.0 m/s²; d = 4.0 m",
+        "B. a = 2.0 m/s²; d = 16.0 m",
+        "C. a = 5.0 m/s²; d = 6.4 m",
+        "D. a = 10.0 m/s²; d = 3.2 m",
+        "E. a = 3.0 m/s²; d = 10.7 m"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "Directional sign of kinetic friction in Newton's Second Law. While the object moves UP the ramp, kinetic friction acts DOWN the ramp, reinforcing the parallel gravitational component. Therefore, the total retarding force down the incline is F_retard = m·g·sin(θ) + fk = m·g·[sin(θ) + μk·cos(θ)]. Once deceleration a is found, the stopping distance is obtained from Torricelli's kinematic equation: v² = v0² - 2ad => d = v0² / (2a).",
+        "proof": "1. Parallel gravitational component down the ramp: F_g,|| = m·g·sin(30°) = 4.0 · 10.0 · 0.5 = 20.0 N.\n2. Normal force: N = m·g·cos(30°) = 4.0 · 10.0 · (√3/2) = 20√3 N.\n3. Kinetic friction force (opposes upward velocity, so directed DOWN): fk = μk·N = (√3 / 5) · (20√3) = (3 · 20) / 5 = 60 / 5 = 12.0 N.\n4. Total retarding force down the ramp: F_total = F_g,|| + fk = 20.0 N + 12.0 N = 32.0 N.\n5. Deceleration magnitude: a = F_total / m = 32.0 N / 4.0 kg = 8.0 m/s².\n   (Equivalently: a = g·[sin(30°) + μk·cos(30°)] = 10·[0.5 + (√3/5)·(√3/2)] = 10·[0.5 + 3/10] = 10·[0.8] = 8.0 m/s²).\n6. Stopping distance d: 0 = v0² - 2·a·d => d = v0² / (2a) = 8.0² / (2 · 8.0) = 64.0 / 16.0 = 4.0 m.",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately sums gravitational drag and friction: a = 8.0 m/s², d = 4.0 m.",
+          "B": "INCORRECT. Subtracts friction from gravity (treating upward motion as if it were downward motion): a = 5.0 - 3.0 = 2.0 m/s², yielding d = 64/4 = 16.0 m.",
+          "C": "INCORRECT. Frictionless incline: a = g·sin(30°) = 5.0 m/s², d = 64/10 = 6.4 m.",
+          "D": "INCORRECT. Omits incline angle θ and treats deceleration as free-fall g = 10.0 m/s².",
+          "E": "INCORRECT. Considers only friction: a = 3.0 m/s²."
+        }
+      },
+      "examiner_trap_alert": "Subtracting friction when going up the incline! When an object slides DOWN, gravity pulls down and friction pushes up (opposing signs: g·sin θ - μk·g·cos θ). But when sliding UP, both gravity and friction pull DOWN (reinforcing signs: g·sin θ + μk·g·cos θ)."
+    },
+    {
+      "id": "IMAT-2026-PHYS-005",
+      "subject": "Physics",
+      "topic_number": 3,
+      "topic": "Work-Energy & Springs",
+      "subtopic": "Conservation of Mechanical Energy: Elastic Potential Energy and Intermediate Speed",
+      "syllabus_ref": "MUR Physics A. Mechanics - Work, kinetic energy, elastic potential energy, conservation of mechanical energy",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "In an orthopedic crash-testing apparatus, a carriage of mass m = 3.0 kg glides across a frictionless horizontal air track at a velocity of v0 = 4.0 m/s. It strikes and compresses an ideal horizontal bumper spring of force constant k = 1200 N/m. What is the maximum compression of the spring (xmax), and what is the instantaneous speed of the carriage (v') at the moment the spring is compressed by exactly half of its maximum compression (x = xmax / 2 = 10.0 cm)?",
+      "options": [
+        "A. xmax = 0.40 m; v' = 2.0 m/s",
+        "B. xmax = 0.20 m; v' = 2.0 m/s",
+        "C. xmax = 0.10 m; v' = 3.0 m/s",
+        "D. xmax = 0.20 m; v' = 2√3 m/s (≈ 3.46 m/s)",
+        "E. xmax = 0.04 m; v' = √6 m/s (≈ 2.45 m/s)"
+      ],
+      "correct_index": 3,
+      "correct_letter": "D",
+      "explanation": {
+        "principle": "Law of Conservation of Mechanical Energy for conservative systems: E_total = Ek + Ep = constant. For a horizontal spring-mass system with zero friction, the initial kinetic energy of the mass is converted entirely into elastic potential energy of the spring: (1/2)m·v0² = (1/2)k·xmax². At any intermediate compression x, the total mechanical energy is partitioned between kinetic energy and elastic potential energy: (1/2)m·v0² = (1/2)m·(v')² + (1/2)k·x².",
+        "proof": "1. Initial total mechanical energy (pure kinetic): E0 = (1/2)·m·v0² = (1/2) · 3.0 · (4.0)² = 1.5 · 16.0 = 24.0 J.\n2. Maximum compression xmax: At xmax, carriage speed is momentarily zero (Ek = 0). Thus, E_elastic = (1/2)·k·xmax² = 24.0 J => (1/2) · 1200 · xmax² = 24.0 => 600 · xmax² = 24.0 => xmax² = 24.0 / 600 = 4 / 100 = 0.04 m² => xmax = √0.04 = 0.20 m = 20.0 cm.\n3. Velocity at half compression (x = xmax / 2 = 0.10 m):\n   - Elastic potential energy stored: Ep(0.10) = (1/2)·k·x² = (1/2) · 1200 · (0.10)² = 600 · 0.01 = 6.0 J.\n   - Remaining kinetic energy: Ek' = E0 - Ep(0.10) = 24.0 J - 6.0 J = 18.0 J.\n   - Calculate speed v': (1/2)·m·(v')² = 18.0 => 1.5 · (v')² = 18.0 => (v')² = 18.0 / 1.5 = 12.0 m²/s² => v' = √12 = 2√3 m/s ≈ 3.46 m/s.",
+        "distractor_elimination": {
+          "A": "INCORRECT. Forgets the 1/2 factor on one side of the energy conservation equation, doubling xmax to 0.40 m, and falsely assumes speed scales linearly to half.",
+          "B": "INCORRECT. Computes xmax = 0.20 m correctly, but commits the linear trap: assuming that at half-compression (x = xmax/2), the speed is halved (v = v0/2 = 2.0 m/s). Because energy depends on v² and x², 75% of kinetic energy remains!",
+          "C": "INCORRECT. Arbitrary guesses halving compression again.",
+          "D": "CORRECT. Accurately derives xmax = 0.20 m and v' = √(12) = 2√3 m/s.",
+          "E": "INCORRECT. Fails to take the square root of xmax² = 0.04, stating xmax = 0.04 m."
+        }
+      },
+      "examiner_trap_alert": "The 'Linearity Fallacy' of kinetic and potential energy. Because Ep ∝ x² and Ek ∝ v², when compression is at 50% (x = xmax / 2), the stored potential energy is only (1/2)² = 1/4 (25%) of the total energy! Therefore, 75% of the kinetic energy remains, yielding v' = √(3/4)·v0 = (√3/2)·4 = 2√3 m/s ≈ 3.46 m/s, NOT half speed (2.0 m/s)!"
+    },
+    {
+      "id": "IMAT-2026-PHYS-006",
+      "subject": "Physics",
+      "topic_number": 3,
+      "topic": "Work-Energy & Springs",
+      "subtopic": "Work-Energy Theorem: Non-Conservative Frictional Work and Spring Compression",
+      "syllabus_ref": "MUR Physics A. Mechanics - Work of conservative and non-conservative forces",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A diagnostic calibration cart of mass m = 2.0 kg is propelled across a flat track with an initial kinetic energy of Ek0 = 40.0 J. It enters a rough section of length L = 2.0 m where the coefficient of kinetic friction is μk = 0.20, before colliding with a stationary bumper spring of spring constant k = 1600 N/m anchored to a rigid wall. Taking g = 10.0 m/s², what is the work done by friction along the rough patch (W_friction), and what is the maximum compression of the spring (xmax)?",
+      "options": [
+        "A. W_friction = -8.0 J; xmax = 0.40 m",
+        "B. W_friction = -16.0 J; xmax = 0.15 m",
+        "C. W_friction = -8.0 J; xmax = 0.20 m",
+        "D. W_friction = -4.0 J; xmax = 0.30 m",
+        "E. W_friction = 0 J; xmax = 0.22 m"
+      ],
+      "correct_index": 2,
+      "correct_letter": "C",
+      "explanation": {
+        "principle": "The Work-Energy Theorem in the presence of non-conservative forces: W_nc = ΔE_mechanical = E_final - E_initial. Frictional force fk = μk·m·g does negative work W_friction = -fk·L, dissipating mechanical energy into thermal energy. The remaining mechanical energy is subsequently stored as elastic potential energy at maximum spring compression: Ek0 + W_friction = (1/2)k·xmax².",
+        "proof": "1. Normal force on flat track: N = m·g = 2.0 kg · 10.0 m/s² = 20.0 N.\n2. Kinetic friction force: fk = μk · N = 0.20 · 20.0 N = 4.0 N.\n3. Work done by friction across length L = 2.0 m: W_friction = -fk · L = -4.0 N · 2.0 m = -8.0 J.\n4. Mechanical energy remaining upon reaching the spring: E_remaining = Ek0 + W_friction = 40.0 J - 8.0 J = 32.0 J.\n5. Maximum spring compression xmax: At maximum compression, all remaining mechanical energy is converted into elastic potential energy:\n   (1/2)·k·xmax² = 32.0 J => (1/2) · 1600 · xmax² = 32.0 => 800 · xmax² = 32.0 => xmax² = 32.0 / 800 = 4 / 100 = 0.04 m² => xmax = √0.04 = 0.20 m = 20.0 cm.",
+        "distractor_elimination": {
+          "A": "INCORRECT. Computes friction work correctly (-8.0 J) but forgets the (1/2) factor in spring energy, setting k·xmax² = 32 => xmax² = 0.02 => xmax ≈ 0.14 m, or doubled to 0.40 m.",
+          "B": "INCORRECT. Doubled friction calculation W = -16.0 J.",
+          "C": "CORRECT. Accurately determines W_friction = -8.0 J and xmax = 0.20 m.",
+          "D": "INCORRECT. Fails to multiply friction force by distance, using W = -4.0 J.",
+          "E": "INCORRECT. Completely neglects frictional dissipation, setting (1/2)k·xmax² = 40.0 J."
+        }
+      },
+      "examiner_trap_alert": "Watch the algebraic sign of frictional work! Friction opposes displacement, so its work is strictly NEGATIVE (W = -8.0 J). It subtracts from initial kinetic energy, leaving 32.0 J for the spring, not 48.0 J."
+    },
+    {
+      "id": "IMAT-2026-PHYS-007",
+      "subject": "Physics",
+      "topic_number": 4,
+      "topic": "Momentum & Collisions",
+      "subtopic": "Perfectly Inelastic Collision: Velocity and Dissipated Kinetic Energy",
+      "syllabus_ref": "MUR Physics A. Mechanics - Linear momentum, impulse, elastic and inelastic collisions",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "On a horizontal low-friction laboratory track, automated cart A of mass m1 = 3.0 kg travels east at v1 = +8.0 m/s and collides head-on with automated cart B of mass m2 = 1.0 kg traveling west at v2 = -4.0 m/s. The two carts lock together upon impact due to an electromagnetic coupler, forming a single coalesced body (a perfectly inelastic collision). What is the velocity of the combined system immediately after collision (vf), and how much mechanical kinetic energy is dissipated into heat and deformation (ΔEk)?",
+      "options": [
+        "A. vf = +5.0 m/s (east); ΔEk = 54.0 J",
+        "B. vf = +5.0 m/s (east); ΔEk = 0 J",
+        "C. vf = +7.0 m/s (east); ΔEk = 36.0 J",
+        "D. vf = +4.0 m/s (east); ΔEk = 72.0 J",
+        "E. vf = +2.5 m/s (east); ΔEk = 54.0 J"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "Law of Conservation of Linear Momentum in an isolated system: Σp_initial = Σp_final. Momentum is a vector quantity, requiring strict adherence to directional signs. In a perfectly inelastic collision, kinetic energy is NOT conserved; a substantial portion is dissipated into internal heat, sound, and structural deformation: ΔEk = Ek,initial - Ek,final.",
+        "proof": "1. Vector momentum balance (defining East as positive +):\n   - Initial momentum of Cart A: p1 = m1·v1 = 3.0 kg · (+8.0 m/s) = +24.0 kg·m/s.\n   - Initial momentum of Cart B: p2 = m2·v2 = 1.0 kg · (-4.0 m/s) = -4.0 kg·m/s.\n   - Total initial momentum: p_total = +24.0 - 4.0 = +20.0 kg·m/s.\n2. Final velocity after coalescence (m1 + m2 = 4.0 kg):\n   (m1 + m2)·vf = p_total => 4.0 · vf = +20.0 => vf = +20.0 / 4.0 = +5.0 m/s (directed East).\n3. Initial kinetic energy:\n   Ek,initial = (1/2)·m1·v1² + (1/2)·m2·v2² = (1/2)·(3.0)·(8.0)² + (1/2)·(1.0)·(-4.0)²\n             = 1.5 · 64.0 + 0.5 · 16.0 = 96.0 J + 8.0 J = 104.0 J.\n4. Final kinetic energy:\n   Ek,final = (1/2)·(m1 + m2)·vf² = (1/2)·(4.0)·(5.0)² = 2.0 · 25.0 = 50.0 J.\n5. Kinetic energy dissipated:\n   ΔEk = Ek,initial - Ek,final = 104.0 J - 50.0 J = 54.0 J.",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately applies vector signs to find vf = +5.0 m/s and calculates ΔEk = 104.0 - 50.0 = 54.0 J.",
+          "B": "INCORRECT. Assumes kinetic energy is conserved in a perfectly inelastic collision (ΔEk = 0 J), violating the fundamental definition of inelastic collisions.",
+          "C": "INCORRECT. Scalar trap: adds speeds without regard to direction: p_initial = 3(8) + 1(4) = 28 => vf = 28/4 = 7.0 m/s.",
+          "D": "INCORRECT. Arithmetic confusion in momentum distribution.",
+          "E": "INCORRECT. Uses doubled mass denominator or halving of velocity."
+        }
+      },
+      "examiner_trap_alert": "The Scalar Momentum Trap! Cart B travels WEST, so its velocity is NEGATIVE (-4.0 m/s). If a student treats momentum as a scalar and writes 24 + 4 = 28 kg·m/s, they will calculate vf = 7.0 m/s, falling into option C."
+    },
+    {
+      "id": "IMAT-2026-PHYS-008",
+      "subject": "Physics",
+      "topic_number": 4,
+      "topic": "Momentum & Collisions",
+      "subtopic": "Recoil Dynamics in Isolated System and Muscular Mechanical Work",
+      "syllabus_ref": "MUR Physics A. Mechanics - Conservation of momentum and energy transformations",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A space medicine researcher of mass m1 = 60.0 kg is floating stationary (v0 = 0 m/s) relative to an orbital habitat in a zero-gravity simulation facility. She holds an emergency equipment container of mass m2 = 15.0 kg. She pushes and throws the container horizontally directly away from her body at a speed of v2 = 8.0 m/s relative to the station. What is the resulting recoil speed of the researcher (v1) relative to the station, and what was the total mechanical work (W_total) exerted by her muscles during the throw?",
+      "options": [
+        "A. v1 = 2.0 m/s; W_total = 480.0 J",
+        "B. v1 = 2.0 m/s; W_total = 600.0 J",
+        "C. v1 = 1.5 m/s; W_total = 540.0 J",
+        "D. v1 = 8.0 m/s; W_total = 120.0 J",
+        "E. v1 = 0.5 m/s; W_total = 300.0 J"
+      ],
+      "correct_index": 1,
+      "correct_letter": "B",
+      "explanation": {
+        "principle": "Conservation of linear momentum in an explosive/recoil separation from rest. Since external horizontal forces are zero, total momentum remains zero: m1·v1 + m2·v2 = 0. The mechanical work performed by the internal muscular forces equals the change in total kinetic energy of the system from its initial rest state: W_total = ΔEk = (1/2)m1·v1² + (1/2)m2·v2².",
+        "proof": "1. Momentum conservation:\n   p_initial = 0 => m1·v1 + m2·v2 = 0 => (60.0 kg)·v1 + (15.0 kg)·(+8.0 m/s) = 0\n   60.0·v1 = -120.0 => v1 = -2.0 m/s (recoil speed magnitude is 2.0 m/s in opposite direction).\n2. Kinetic energy imparted to the researcher:\n   Ek1 = (1/2)·m1·v1² = (1/2) · 60.0 · (2.0)² = 30.0 · 4.0 = 120.0 J.\n3. Kinetic energy imparted to the container:\n   Ek2 = (1/2)·m2·v2² = (1/2) · 15.0 · (8.0)² = 7.5 · 64.0 = 480.0 J.\n4. Total mechanical work exerted by muscles:\n   W_total = Ek1 + Ek2 = 120.0 J + 480.0 J = 600.0 J.",
+        "distractor_elimination": {
+          "A": "INCORRECT. Calculates only the kinetic energy of the container (480.0 J), completely omitting the kinetic energy of the researcher's own body (120.0 J).",
+          "B": "CORRECT. Accurately determines v1 = 2.0 m/s and sums both kinetic energies: 120 + 480 = 600.0 J.",
+          "C": "INCORRECT. Arises from using total mass (75 kg) in momentum recoil formula.",
+          "D": "INCORRECT. Assumes recoil speed equals projectile speed (v1 = 8.0 m/s).",
+          "E": "INCORRECT. Arbitrary calculation errors."
+        }
+      },
+      "examiner_trap_alert": "Forgetting to account for the researcher's kinetic energy when computing work done! Work equals total energy gained by BOTH separating bodies. The container gets 480 J, but her body also acquired 120 J, totaling 600 J."
+    },
+    {
+      "id": "IMAT-2026-PHYS-009",
+      "subject": "Physics",
+      "topic_number": 5,
+      "topic": "Hydrostatics & Fluids",
+      "subtopic": "Archimedes' Principle: Floating Equilibrium and Force for Complete Submersion",
+      "syllabus_ref": "MUR Physics B. Fluids - Density, pressure, Archimedes' principle and floating bodies",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A solid rectangular diagnostic buoy of total volume V = 5.0 × 10⁻³ m³ (5.0 liters) and mass m = 3.5 kg floats freely at rest in a calibration pool filled with pure water (density ρ_water = 1000 kg/m³). Taking g = 10.0 m/s², what fraction of the buoy's volume is submerged beneath the water surface, and what additional vertical downward force F_push must a technician apply to the top of the buoy to hold it completely submerged?",
+      "options": [
+        "A. Submerged fraction = 30.0%; F_push = 35.0 N",
+        "B. Submerged fraction = 70.0%; F_push = 50.0 N",
+        "C. Submerged fraction = 50.0%; F_push = 25.0 N",
+        "D. Submerged fraction = 85.0%; F_push = 10.0 N",
+        "E. Submerged fraction = 70.0%; F_push = 15.0 N"
+      ],
+      "correct_index": 4,
+      "correct_letter": "E",
+      "explanation": {
+        "principle": "Archimedes' Principle: A body immersed in a fluid experiences an upward buoyant force equal to the weight of the fluid it displaces: F_buoyant = ρ_fluid · V_sub · g. In floating equilibrium, buoyant force balances weight: ρ_fluid · V_sub · g = m·g => V_sub / V_total = ρ_body / ρ_fluid. When held completely submerged, the required external downward force F_push equals the difference between maximum buoyant force and the object's gravitational weight: F_push = F_buoyant,max - m·g.",
+        "proof": "1. Density of the buoy:\n   ρ_body = m / V = 3.5 kg / (5.0 × 10⁻³ m³) = 3500 / 5.0 = 700 kg/m³.\n2. Submerged fraction in floating equilibrium:\n   V_sub / V_total = ρ_body / ρ_fluid = 700 kg/m³ / 1000 kg/m³ = 0.70 = 70.0%.\n3. Buoy's downward weight:\n   W = m·g = 3.5 kg · 10.0 m/s² = 35.0 N.\n4. Maximum upward buoyant force when fully submerged (V_sub = V_total = 5.0 × 10⁻³ m³):\n   F_buoyant,max = ρ_fluid · V_total · g = 1000 kg/m³ · (5.0 × 10⁻³ m³) · 10.0 m/s² = 50.0 N.\n5. Required additional downward push:\n   In equilibrium when fully submerged: F_push + W = F_buoyant,max\n   F_push = F_buoyant,max - W = 50.0 N - 35.0 N = 15.0 N.",
+        "distractor_elimination": {
+          "A": "INCORRECT. Reports the EXPOSED fraction above the surface (100% - 70% = 30%) instead of the submerged fraction.",
+          "B": "INCORRECT. Confuses the additional force with the full buoyant force F_buoyant,max = 50.0 N.",
+          "C": "INCORRECT. Assumes equal halves submerged and arbitrary force values.",
+          "D": "INCORRECT. Arithmetic distortion of densities.",
+          "E": "CORRECT. Accurately determines V_sub/V = 70.0% and F_push = 50.0 - 35.0 = 15.0 N."
+        }
+      },
+      "examiner_trap_alert": "Submerged vs exposed fraction! 70% of the object is SUBMERGED, while 30% is EXPOSED above water. Also, the force to hold it down is F_buoyant - Weight (15 N), NOT the total buoyant force (50 N)."
+    },
+    {
+      "id": "IMAT-2026-PHYS-010",
+      "subject": "Physics",
+      "topic_number": 5,
+      "topic": "Hydrostatics & Fluids",
+      "subtopic": "Fluid Dynamics: Continuity Equation and Bernoulli Pressure Drop in Arterial Stenosis",
+      "syllabus_ref": "MUR Physics B. Fluids - Ideal fluid flow, equation of continuity, Bernoulli's equation",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "Blood (modeled as an ideal, incompressible, non-viscous fluid of density ρ = 1000 kg/m³) flows steadily through a horizontal artery. In the healthy unconstricted segment, the internal lumen diameter is d1 = 8.0 mm and the blood flows at v1 = 0.20 m/s. The artery then enters an atherosclerotic stenosis where the lumen diameter is narrowed by half to d2 = 4.0 mm. Assuming horizontal flow (Δh = 0), what is the flow velocity v2 inside the stenotic constriction, and what is the pressure change (P1 - P2) between the healthy artery and the constriction?",
+      "options": [
+        "A. v2 = 0.80 m/s; P1 - P2 = +300 Pa",
+        "B. v2 = 0.40 m/s; P1 - P2 = +60 Pa",
+        "C. v2 = 0.80 m/s; P1 - P2 = -300 Pa",
+        "D. v2 = 1.60 m/s; P1 - P2 = +1260 Pa",
+        "E. v2 = 0.20 m/s; P1 - P2 = 0 Pa"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "The Continuity Equation for incompressible fluid flow: A1·v1 = A2·v2, where cross-sectional area A = π(d/2)². Narrowing the diameter by a factor of 2 reduces the cross-sectional area by a factor of 2² = 4, compelling velocity to increase four-fold. Bernoulli's Equation for horizontal flow: P1 + (1/2)ρ·v1² = P2 + (1/2)ρ·v2². Higher velocity in the constriction creates a lower lateral pressure (Bernoulli's effect): P1 - P2 = (1/2)ρ·(v2² - v1²).",
+        "proof": "1. Area ratio from diameter ratio:\n   A1 / A2 = (d1 / d2)² = (8.0 mm / 4.0 mm)² = 2² = 4.\n2. Flow velocity in constriction:\n   By continuity: v2 = v1 · (A1 / A2) = 0.20 m/s · 4 = 0.80 m/s.\n3. Pressure difference from Bernoulli's equation:\n   P1 - P2 = (1/2)·ρ·(v2² - v1²)\n   v2² - v1² = (0.80)² - (0.20)² = 0.64 - 0.04 = 0.60 m²/s².\n   P1 - P2 = (1/2) · (1000 kg/m³) · (0.60 m²/s²) = 500 · 0.60 = +300 Pa.\n   (Thus, pressure inside the stenosis P2 is 300 Pa LOWER than in the healthy artery P1).",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately determines v2 = 0.80 m/s and pressure drop P1 - P2 = +300 Pa.",
+          "B": "INCORRECT. Linear area fallacy: assumes area is halved when diameter is halved (v2 = 2 · v1 = 0.40 m/s), yielding (1/2)·1000·(0.16 - 0.04) = 60 Pa.",
+          "C": "INCORRECT. Inverts pressure relationship (claims pressure increases in the constriction, violating Bernoulli's principle).",
+          "D": "INCORRECT. Assumes velocity scales with diameter to the fourth power.",
+          "E": "INCORRECT. Assumes rigid tube with zero velocity change."
+        }
+      },
+      "examiner_trap_alert": "The Diameter vs Area Scaling Trap! When pipe diameter is halved, the cross-sectional area is reduced to ONE-FOURTH (A ∝ d²). Therefore, velocity does NOT double—it QUADRUPLES (v2 = 4·v1 = 0.80 m/s)! Also, pressure DROPS where speed increases."
+    },
+    {
+      "id": "IMAT-2026-PHYS-011",
+      "subject": "Physics",
+      "topic_number": 6,
+      "topic": "DC Circuits",
+      "subtopic": "Real EMF, Battery Internal Resistance, and Series-Parallel Load Analysis",
+      "syllabus_ref": "MUR Physics C. Electromagnetism - Electric current, Ohm's law, series and parallel circuits, EMF and internal resistance",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A real DC battery has an electromotive force (EMF) of E = 24.0 V and an internal resistance of r = 1.0 Ω. It is connected across an external circuit consisting of a single 3.0 Ω resistor connected in series with a parallel combination of two identical 4.0 Ω resistors. What is the total electric current I drawn from the battery, and what is the terminal voltage V across the battery terminals under this load?",
+      "options": [
+        "A. I = 4.8 A; V = 24.0 V",
+        "B. I = 4.0 A; V = 24.0 V",
+        "C. I = 4.0 A; V = 20.0 V",
+        "D. I = 2.0 A; V = 16.0 V",
+        "E. I = 3.0 A; V = 18.0 V"
+      ],
+      "correct_index": 2,
+      "correct_letter": "C",
+      "explanation": {
+        "principle": "Analysis of combined resistive networks and real power sources. For two parallel resistors: 1/Rp = 1/R1 + 1/R2 => Rp = (R1·R2)/(R1 + R2). The total external load resistance is R_ext = R_series + Rp. Total circuit resistance includes the internal resistance of the battery: R_total = R_ext + r. Circuit current is governed by Ohm's Law: I = E / R_total. The terminal voltage available to the external circuit is diminished by the internal potential drop: V = E - I·r = I·R_ext.",
+        "proof": "1. Equivalent resistance of parallel pair of two 4.0 Ω resistors:\n   Rp = (4.0 · 4.0) / (4.0 + 4.0) = 16.0 / 8.0 = 2.0 Ω.\n2. Total external resistance of the load circuit:\n   R_ext = R_series + Rp = 3.0 Ω + 2.0 Ω = 5.0 Ω.\n3. Total resistance including battery internal resistance r = 1.0 Ω:\n   R_total = R_ext + r = 5.0 Ω + 1.0 Ω = 6.0 Ω.\n4. Total circuit current drawn from EMF:\n   I = E / R_total = 24.0 V / 6.0 Ω = 4.0 A.\n5. Terminal voltage across battery:\n   V = E - I·r = 24.0 V - (4.0 A · 1.0 Ω) = 24.0 V - 4.0 V = 20.0 V.\n   (Verification via load: V = I · R_ext = 4.0 A · 5.0 Ω = 20.0 V).",
+        "distractor_elimination": {
+          "A": "INCORRECT. Completely neglects internal resistance r, computing I = 24.0 / 5.0 = 4.8 A and assuming terminal voltage equals ideal EMF (24.0 V).",
+          "B": "INCORRECT. Computes current correctly (4.0 A) but assumes terminal voltage remains unattenuated at 24.0 V.",
+          "C": "CORRECT. Accurately determines I = 4.0 A and terminal voltage V = 24.0 - 4.0 = 20.0 V.",
+          "D": "INCORRECT. Treats the two 4.0 Ω resistors as series (8.0 Ω), yielding R_total = 12.0 Ω and I = 2.0 A.",
+          "E": "INCORRECT. Computation errors in parallel simplification."
+        }
+      },
+      "examiner_trap_alert": "Treating a real battery as an ideal battery! In a real battery, terminal voltage V is NEVER equal to EMF while current is flowing. The internal resistance consumes a voltage drop of I·r = 4.0 V, leaving only 20.0 V at the terminals."
+    },
+    {
+      "id": "IMAT-2026-PHYS-012",
+      "subject": "Physics",
+      "topic_number": 6,
+      "topic": "DC Circuits",
+      "subtopic": "Joule Heating: Electrical Power Dissipation and Source Efficiency",
+      "syllabus_ref": "MUR Physics C. Electromagnetism - Electric power, Joule's law, energy dissipation",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A specialized therapeutic heating element of fixed resistance R_load = 4.0 Ω is connected directly across the terminals of a DC power supply characterized by an EMF of E = 12.0 V and internal resistance r = 2.0 Ω. What is the current I in the circuit, the thermal power P_load dissipated by the heating element, and the electrical efficiency η of the power delivery (defined as the ratio of useful power dissipated in the load to the total power generated by the EMF)?",
+      "options": [
+        "A. I = 3.0 A; P_load = 36.0 W; η = 100%",
+        "B. I = 2.0 A; P_load = 16.0 W; η = 66.7% (2/3)",
+        "C. I = 2.0 A; P_load = 24.0 W; η = 75.0%",
+        "D. I = 6.0 A; P_load = 144.0 W; η = 50.0%",
+        "E. I = 1.5 A; P_load = 9.0 W; η = 50.0%"
+      ],
+      "correct_index": 1,
+      "correct_letter": "B",
+      "explanation": {
+        "principle": "Joule's Law of electric heating: P = I²·R = V·I = V²/R. For a circuit with total resistance R_total = R_load + r, current is I = E / (R_load + r). Total power delivered by the chemical EMF is P_total = E·I. Power dissipated internally is P_internal = I²·r, while useful power transferred to the load is P_load = I²·R_load. Electrical efficiency is η = P_load / P_total = R_load / (R_load + r).",
+        "proof": "1. Circuit current: I = E / (R_load + r) = 12.0 V / (4.0 Ω + 2.0 Ω) = 12.0 / 6.0 = 2.0 A.\n2. Power dissipated in the external load resistor: P_load = I² · R_load = (2.0 A)² · 4.0 Ω = 4.0 · 4.0 = 16.0 W.\n3. Total electrical power generated by the EMF: P_total = E · I = 12.0 V · 2.0 A = 24.0 W.\n   (Verification of internal loss: P_internal = I²·r = 2² · 2.0 = 8.0 W; note 16.0 + 8.0 = 24.0 W).\n4. Electrical efficiency: η = P_load / P_total = 16.0 W / 24.0 W = 2/3 ≈ 66.67% = 66.7%.\n   (Or directly: η = R_load / (R_load + r) = 4.0 / (4.0 + 2.0) = 4/6 = 2/3 ≈ 66.7%).",
+        "distractor_elimination": {
+          "A": "INCORRECT. Assumes r = 0, calculating I = 12/4 = 3 A, P = 3²·4 = 36 W, and efficiency 100%.",
+          "B": "CORRECT. Accurately determines I = 2.0 A, P_load = 16.0 W, and η = 2/3 ≈ 66.7%.",
+          "C": "INCORRECT. Falsely equates load power to total power (24.0 W).",
+          "D": "INCORRECT. Computes current using only internal resistance I = 12/2 = 6 A.",
+          "E": "INCORRECT. Computation errors in formula implementation."
+        }
+      },
+      "examiner_trap_alert": "Calculating power as E²/R_load! That formula is only valid if the full EMF appears across the load (i.e. zero internal resistance). With r = 2.0 Ω, the voltage across the load is terminal voltage V = E - Ir = 12 - 4 = 8.0 V, so P_load = V²/R = 8²/4 = 16.0 W."
+    },
+    {
+      "id": "IMAT-2026-PHYS-013",
+      "subject": "Physics",
+      "topic_number": 7,
+      "topic": "Optics & Waves",
+      "subtopic": "Snell's Law: Boundary Refraction and Critical Angle for Total Internal Reflection",
+      "syllabus_ref": "MUR Physics D. Waves & Optics - Reflection, refraction, Snell's law, total internal reflection",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A diagnostic medical endoscope utilizes an optical fiber consisting of a cylindrical high-purity glass core with refractive index n1 = 1.60 surrounded by an outer transparent cladding with refractive index n2 = 1.28. What is the sine of the critical angle (sin θc) for total internal reflection at the core-cladding boundary, and under what condition can total internal reflection occur?",
+      "options": [
+        "A. sin θc = 1.25; TIR can occur for light propagating in either medium",
+        "B. sin θc = 0.80; TIR can occur when light travels from the cladding (n2) into the core (n1)",
+        "C. sin θc = 0.64; TIR occurs only when incident angle is exactly zero",
+        "D. sin θc = 0.80; TIR can occur ONLY when light travels from the core (n1) toward the cladding (n2)",
+        "E. sin θc = 0.50; TIR occurs whenever light strikes at 30°"
+      ],
+      "correct_index": 3,
+      "correct_letter": "D",
+      "explanation": {
+        "principle": "Snell's Law of Refraction: n1·sin(θ1) = n2·sin(θ2). As light propagates from an optically denser medium (higher index n1) into an optically less dense medium (lower index n2), the refracted ray bends away from the normal (θ2 > θ1). The critical angle θc is defined as the angle of incidence in the denser medium for which the angle of refraction is exactly θ2 = 90.0°. Since sin(90°) = 1, Snell's law yields sin(θc) = n2 / n1. Total internal reflection (TIR) occurs if and only if two conditions are met: (1) light travels from higher index n to lower index n, and (2) angle of incidence satisfies θ1 ≥ θc.",
+        "proof": "1. Determine which medium is optically denser:\n   Core index n1 = 1.60; Cladding index n2 = 1.28. Since n1 > n2, light must travel FROM core TOWARD cladding.\n2. Snell's law at critical boundary (θ2 = 90°):\n   n1 · sin(θc) = n2 · sin(90°)\n   1.60 · sin(θc) = 1.28 · 1.0\n   sin(θc) = 1.28 / 1.60 = 128 / 160 = 4 / 5 = 0.80.\n3. Directional requirement:\n   Total internal reflection is physically impossible when light travels from a lower refractive index toward a higher refractive index (cladding into core), because the refracted ray bends toward the normal, meaning θ2 < θ1 and no critical angle exists (sin θc would be > 1).",
+        "distractor_elimination": {
+          "A": "INCORRECT. Inverts the ratio to n1 / n2 = 1.60 / 1.28 = 1.25, which is mathematically impossible since sine cannot exceed 1.",
+          "B": "INCORRECT. Computes sin θc = 0.80 correctly but claims TIR can occur when light travels from lower index to higher index.",
+          "C": "INCORRECT. Squaring the ratio (0.80² = 0.64).",
+          "D": "CORRECT. Accurately determines sin θc = 0.80 and specifies that light must originate in the denser core (n1 > n2).",
+          "E": "INCORRECT. Arbitrary choice."
+        }
+      },
+      "examiner_trap_alert": "Two traps in one question: (1) Inverting the ratio n_cladding / n_core (sine can never be 1.25), and (2) The directional requirement: Total Internal Reflection ONLY occurs when passing from MORE DENSE (higher n) to LESS DENSE (lower n) medium!"
+    },
+    {
+      "id": "IMAT-2026-PHYS-014",
+      "subject": "Physics",
+      "topic_number": 7,
+      "topic": "Optics & Waves",
+      "subtopic": "Geometric Optics: Thin Converging Lens Equation, Real Inverted Image, and Magnification",
+      "syllabus_ref": "MUR Physics D. Waves & Optics - Thin lenses, focal length, real and virtual images, magnification",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A converging (biconvex) thin lens used in an ophthalmic retinal imaging device has a positive focal length of f = +10.0 cm. An illuminated target crosshair of vertical height ho = 2.0 cm is placed upright on the optical axis at an object distance of do = 15.0 cm in front of the lens. What is the image distance (di), the linear magnification (M), and the physical height (hi) and orientation of the formed image?",
+      "options": [
+        "A. di = +30.0 cm; M = -2.0; Real, inverted image of height hi = 4.0 cm",
+        "B. di = -30.0 cm; M = +2.0; Virtual, upright image of height hi = 4.0 cm",
+        "C. di = +6.0 cm; M = -0.4; Real, inverted image of height hi = 0.8 cm",
+        "D. di = +30.0 cm; M = +2.0; Real, upright image of height hi = 2.0 cm",
+        "E. di = +15.0 cm; M = -1.0; Real, inverted image of height hi = 2.0 cm"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "The Thin Lens Equation (Gaussian lens formula): 1/f = 1/do + 1/di, where f is the focal length, do is object distance, and di is image distance. For a real object, do > 0. A converging lens has f > 0. If di > 0, the image is real and located on the transmission side of the lens. Linear magnification is given by M = -di / do = hi / ho. A negative magnification (M < 0) signifies an inverted image.",
+        "proof": "1. Apply thin lens equation:\n   1/di = 1/f - 1/do = 1/10.0 - 1/15.0\n   Common denominator is 30.0 cm:\n   1/di = 3/30.0 - 2/30.0 = 1/30.0 cm⁻¹ => di = +30.0 cm.\n2. Nature of image:\n   Because di is positive (+30.0 cm), light rays physically converge at that location; the image is REAL.\n3. Linear magnification:\n   M = -di / do = -(+30.0 cm) / (+15.0 cm) = -2.0.\n4. Image height and orientation:\n   M < 0 proves the image is INVERTED.\n   hi = M · ho = (-2.0) · (2.0 cm) = -4.0 cm (inverted orientation, absolute magnitude 4.0 cm).",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately evaluates di = +30.0 cm, M = -2.0, and identifies a real, inverted image enlarged to 4.0 cm.",
+          "B": "INCORRECT. Sign error in lens formula: 1/di = 1/15 - 1/10 = -1/30 => di = -30 cm (virtual), which occurs only when object is inside the focal point (do < f).",
+          "C": "INCORRECT. Erroneously adds reciprocal values: 1/10 + 1/15 = 5/30 = 1/6 => di = 6.0 cm.",
+          "D": "INCORRECT. Omits the negative sign in the magnification formula M = -di/do, calling the real image upright.",
+          "E": "INCORRECT. Assumes 1:1 image formation (which requires do = 2f = 20 cm)."
+        }
+      },
+      "examiner_trap_alert": "The sign convention of magnification! M = -di / do. Because di is positive (+30 cm) and do is positive (+15 cm), M MUST be negative (-2.0). A negative magnification always denotes an INVERTED image."
+    },
+    {
+      "id": "IMAT-2026-MATH-001",
+      "subject": "Mathematics",
+      "topic_number": 1,
+      "topic": "Algebra & Polynomials",
+      "subtopic": "Quadratic Equations: Vieta's Formulas and Symmetric Sums of Roots (α² + β²)",
+      "syllabus_ref": "MUR Mathematics A. Algebra & Numerical Sets - Polynomials, quadratic equations, Vieta's relations",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "Let α and β be the two distinct real roots of the quadratic equation 2x² - 8x + 3 = 0. Without solving for the explicit radical values of α and β individually, determine the exact numerical value of the symmetric algebraic expression (α² + β²).",
+      "options": [
+        "A. 13",
+        "B. 16",
+        "C. 19",
+        "D. 40",
+        "E. 14.5"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "Vieta's Formulas for second-degree polynomials: For any quadratic equation ax² + bx + c = 0 with roots α and β, the elementary symmetric polynomials are:\nSum of roots: α + β = -b / a\nProduct of roots: α·β = c / a\nAny symmetric polynomial in α and β can be rewritten in terms of these elementary sums using binomial identities, specifically: α² + β² = (α + β)² - 2αβ.",
+        "proof": "1. Identify coefficients from 2x² - 8x + 3 = 0: a = 2, b = -8, c = 3.\n2. Compute sum of roots via Vieta's formula:\n   α + β = -b / a = -(-8) / 2 = +8 / 2 = 4.\n3. Compute product of roots via Vieta's formula:\n   α·β = c / a = 3 / 2 = 1.5.\n4. Expand the square of the sum:\n   (α + β)² = α² + 2αβ + β²\n   Rearranging for α² + β²:\n   α² + β² = (α + β)² - 2αβ.\n5. Substitute the numerical values:\n   α² + β² = (4)² - 2·(3/2) = 16 - 3 = 13.",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately derives (α + β)² - 2αβ = 16 - 3 = 13.",
+          "B": "INCORRECT. The 'Freshman's Dream' algebraic error: assumes (α + β)² = α² + β² = 4² = 16, completely omitting the cross-term -2αβ.",
+          "C": "INCORRECT. Sign error on the cross-term: adds 2αβ instead of subtracting: 16 + 3 = 19.",
+          "D": "INCORRECT. Evaluates the discriminant Δ = b² - 4ac = (-8)² - 4(2)(3) = 64 - 24 = 40, confusing root sum-of-squares with the discriminant.",
+          "E": "INCORRECT. Forgets the factor of 2 in 2αβ, subtracting only αβ: 16 - 1.5 = 14.5."
+        }
+      },
+      "examiner_trap_alert": "Do NOT solve for x using the quadratic formula! That produces x = (8 ± √40)/4 = 2 ± √10/2, leading to tedious, error-prone manual squaring. Vieta's identity (α + β)² - 2αβ solves it in two mental arithmetic lines."
+    },
+    {
+      "id": "IMAT-2026-MATH-002",
+      "subject": "Mathematics",
+      "topic_number": 1,
+      "topic": "Algebra & Polynomials",
+      "subtopic": "Parametric Quadratics: Real Distinct Roots and Leading Coefficient Domain Constraint",
+      "syllabus_ref": "MUR Mathematics A. Algebra & Numerical Sets - Second-degree equations, discriminant analysis",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "For what complete set of real values of the parameter k does the algebraic equation (k - 1)x² + 2kx + (k + 3) = 0 possess EXACTLY TWO distinct real solutions for x?",
+      "options": [
+        "A. k < 3/2 (with k = 1 included)",
+        "B. k < 3/2 and k ≠ 1",
+        "C. k > 3/2",
+        "D. -1 < k < 3/2",
+        "E. k ≤ 3/2 and k ≠ 1"
+      ],
+      "correct_index": 1,
+      "correct_letter": "B",
+      "explanation": {
+        "principle": "Conditions for a second-degree polynomial equation Ax² + Bx + C = 0 to possess exactly two distinct real roots:\n1. Non-degeneracy of quadratic degree: The leading coefficient cannot be zero (A ≠ 0). If A = 0, the equation reduces to a first-degree linear equation, which has at most one real solution.\n2. Strictly positive discriminant: Δ = B² - 4AC > 0. (If Δ = 0, there is only one distinct double root; if Δ < 0, roots are complex conjugates).",
+        "proof": "1. Non-zero leading coefficient condition:\n   A = k - 1 ≠ 0 => k ≠ 1.\n   (Notice: if k = 1, the equation becomes 0·x² + 2(1)x + (1 + 3) = 0 => 2x + 4 = 0 => x = -2, which is a single linear root, NOT two distinct solutions).\n2. Strictly positive discriminant condition (Δ > 0):\n   Δ = B² - 4AC = (2k)² - 4(k - 1)(k + 3)\n   = 4k² - 4(k² + 2k - 3)\n   = 4k² - 4k² - 8k + 12\n   = -8k + 12.\n3. Set inequality:\n   -8k + 12 > 0 => 12 > 8k => 8k < 12 => k < 12 / 8 => k < 3/2.\n4. Combine both conditions:\n   k < 3/2 AND k ≠ 1 (in interval notation: k ∈ (-∞, 1) ∪ (1, 3/2)).",
+        "distractor_elimination": {
+          "A": "INCORRECT. The classic IMAT trap! Solves Δ > 0 correctly to get k < 3/2, but forgets that at k = 1 the equation ceases to be quadratic and has only one solution.",
+          "B": "CORRECT. Accurately enforces both Δ > 0 (k < 3/2) and leading coefficient A ≠ 0 (k ≠ 1).",
+          "C": "INCORRECT. Directional sign error in solving the inequality -8k > -12.",
+          "D": "INCORRECT. Invented lower bound from k - 1 > 0.",
+          "E": "INCORRECT. Includes equality (k ≤ 3/2), which at k = 3/2 gives Δ = 0 (yielding one repeated root, not two distinct roots)."
+        }
+      },
+      "examiner_trap_alert": "The Leading Coefficient Trap! Always check the coefficient of x² in a parametric equation. If it contains the parameter (k - 1), you MUST explicitly exclude the value that makes it zero (k ≠ 1). Cambridge and MUR test this exact trap frequently."
+    },
+    {
+      "id": "IMAT-2026-MATH-003",
+      "subject": "Mathematics",
+      "topic_number": 2,
+      "topic": "Logarithms",
+      "subtopic": "Logarithmic Laws without Calculator: Base-10 Decomposition of Non-Trivial Integers",
+      "syllabus_ref": "MUR Mathematics A. Algebra - Properties of logarithms, change of base, non-calculator arithmetic",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "Given that log10(2) = a and log10(3) = b, which of the following expressions represents the exact value of log10(75) in terms of a and b?",
+      "options": [
+        "A. 2 - 2a + b",
+        "B. 2 - a + b",
+        "C. 2 + 2a + b",
+        "D. 2a + b - 1",
+        "E. b - 2a"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "Fundamental properties of logarithms:\n1. Product rule: log(x·y) = log(x) + log(y)\n2. Quotient rule: log(x/y) = log(x) - log(y)\n3. Power rule: log(x^p) = p·log(x)\n4. Base identity: log10(10) = 1\nCrucial non-calculator trick: Decomposing factor 5 as (10 / 2), so that log10(5) = log10(10 / 2) = log10(10) - log10(2) = 1 - a.",
+        "proof": "Method 1 (Prime factorization):\n1. Factor 75 into prime factors: 75 = 3 · 25 = 3 · 5².\n2. Apply log product and power rules:\n   log10(75) = log10(3 · 5²) = log10(3) + log10(5²) = log10(3) + 2·log10(5).\n3. Express log10(5) using base-10 identity:\n   log10(5) = log10(10 / 2) = log10(10) - log10(2) = 1 - a.\n4. Substitute back:\n   log10(75) = b + 2·(1 - a) = b + 2 - 2a = 2 - 2a + b.\n\nMethod 2 (Direct fraction):\n75 = 300 / 4 = (3 · 10²) / 2².\nlog10(75) = log10(3) + log10(10²) - log10(2²)\n= log10(3) + 2·log10(10) - 2·log10(2)\n= b + 2(1) - 2a = 2 - 2a + b.",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately decomposes 75 = 3 · (10/2)² to yield 2 - 2a + b.",
+          "B": "INCORRECT. Fails to distribute the power of 2 to the term 'a', writing 2 - a + b instead of 2 - 2a + b.",
+          "C": "INCORRECT. Sign error in quotient rule: adds 2a instead of subtracting it (evaluating 3 · 100 · 4 = 1200).",
+          "D": "INCORRECT. Misidentifies factors of 75.",
+          "E": "INCORRECT. Omits the constant term log10(10²) = 2 entirely."
+        }
+      },
+      "examiner_trap_alert": "How to express '5' when given only log(2) and log(3)? Remember the golden base-10 identity: 5 = 10 / 2, so log10(5) = 1 - log10(2) = 1 - a. Because 75 contains 5² = 25, the subtraction of 2a is mandatory."
+    },
+    {
+      "id": "IMAT-2026-MATH-004",
+      "subject": "Mathematics",
+      "topic_number": 2,
+      "topic": "Logarithms",
+      "subtopic": "Logarithmic Equations: Multi-Base Change and Exact Real Root Extraction",
+      "syllabus_ref": "MUR Mathematics A. Algebra - Logarithmic equations, change of base formula",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "What is the unique real solution x to the logarithmic equation log2(x) + log4(x) + log16(x) = 7?",
+      "options": [
+        "A. x = 8",
+        "B. x = 4",
+        "C. x = 16",
+        "D. x = 32",
+        "E. x = 64"
+      ],
+      "correct_index": 2,
+      "correct_letter": "C",
+      "explanation": {
+        "principle": "Logarithmic Change of Base Formula: log_b(x) = log_c(x) / log_c(b). When bases are integer powers of a common prime (here, bases 2, 4 = 2², and 16 = 2⁴), converting all terms to base 2 allows factoring out log2(x). Domain of definition requires x > 0.",
+        "proof": "1. Change base of log4(x) to base 2:\n   log4(x) = log2(x) / log2(4) = log2(x) / log2(2²) = log2(x) / 2 = (1/2)·log2(x).\n2. Change base of log16(x) to base 2:\n   log16(x) = log2(x) / log2(16) = log2(x) / log2(2⁴) = log2(x) / 4 = (1/4)·log2(x).\n3. Substitute into the original equation:\n   log2(x) + (1/2)·log2(x) + (1/4)·log2(x) = 7.\n4. Factor out log2(x):\n   [1 + 1/2 + 1/4] · log2(x) = 7.\n   Find a common denominator: 1 + 1/2 + 1/4 = 4/4 + 2/4 + 1/4 = 7/4.\n5. Solve for log2(x):\n   (7/4) · log2(x) = 7 => log2(x) = 7 · (4 / 7) = 4.\n6. Exponentiate to find x:\n   x = 2⁴ = 16.\n   (Verification: log2(16) + log4(16) + log16(16) = 4 + 2 + 1 = 7. Verified!).",
+        "distractor_elimination": {
+          "A": "INCORRECT. If x = 8: log2(8) + log4(8) + log16(8) = 3 + 1.5 + 0.75 = 5.25 ≠ 7.",
+          "B": "INCORRECT. If x = 4: log2(4) + log4(4) + log16(4) = 2 + 1 + 0.5 = 3.5 ≠ 7.",
+          "C": "CORRECT. Accurately converts to base 2, finding log2(x) = 4, so x = 2⁴ = 16.",
+          "D": "INCORRECT. Evaluates log2(x) = 5 => x = 32.",
+          "E": "INCORRECT. Evaluates log2(x) = 6 => x = 64."
+        }
+      },
+      "examiner_trap_alert": "Adding logarithms with DIFFERENT bases as if their arguments could simply be multiplied (e.g. log(x·x·x) = 7). The product rule log(A) + log(B) = log(AB) ONLY applies when the bases are IDENTICAL. You must change bases first!"
+    },
+    {
+      "id": "IMAT-2026-MATH-005",
+      "subject": "Mathematics",
+      "topic_number": 3,
+      "topic": "Analytic Geometry",
+      "subtopic": "Perpendicular Lines: Negative Reciprocal Slope and Standard Linear Form",
+      "syllabus_ref": "MUR Mathematics B. Geometry - Cartesian coordinate plane, straight line equations, parallelism and perpendicularity",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "What is the standard Cartesian equation of the straight line L that passes through the point P(4, -1) and is strictly PERPENDICULAR to the line given by 3x - 5y + 10 = 0?",
+      "options": [
+        "A. 3x - 5y - 17 = 0",
+        "B. 5x - 3y - 23 = 0",
+        "C. 3x + 5y - 7 = 0",
+        "D. 5x + 3y - 17 = 0",
+        "E. 5x + 3y + 17 = 0"
+      ],
+      "correct_index": 3,
+      "correct_letter": "D",
+      "explanation": {
+        "principle": "Slope-intercept relationship and orthogonality condition in analytic geometry. Two non-vertical lines with slopes m1 and m2 are perpendicular if and only if their slopes are negative reciprocals: m1 · m2 = -1 => m2 = -1 / m1. The equation of a line with slope m2 passing through point (x0, y0) is given by the point-slope formula: y - y0 = m2·(x - x0).",
+        "proof": "1. Find slope m1 of the given reference line:\n   3x - 5y + 10 = 0 => 5y = 3x + 10 => y = (3/5)x + 2.\n   Slope m1 = +3/5.\n2. Determine perpendicular slope m2:\n   m1 · m2 = -1 => m2 = -1 / (3/5) = -5/3.\n3. Form line equation through point P(4, -1) with m2 = -5/3:\n   y - y0 = m2·(x - x0) => y - (-1) = (-5/3)·(x - 4)\n   y + 1 = (-5/3)x + 20/3.\n4. Eliminate fractions by multiplying all terms by 3:\n   3(y + 1) = -5x + 20\n   3y + 3 = -5x + 20.\n5. Convert to standard form (Ax + By + C = 0):\n   5x + 3y + 3 - 20 = 0 => 5x + 3y - 17 = 0.\n   (Verification with point P(4, -1): 5(4) + 3(-1) - 17 = 20 - 3 - 17 = 0. Slope: -A/B = -5/3. Verified!).",
+        "distractor_elimination": {
+          "A": "INCORRECT. Equation of the PARALLEL line through P(4, -1) having the same slope m = 3/5: 3(4) - 5(-1) - 17 = 12 + 5 - 17 = 0.",
+          "B": "INCORRECT. Inverts the fraction without changing the sign: m = +5/3 => 5x - 3y - 23 = 0.",
+          "C": "INCORRECT. Changes the sign without taking the reciprocal: m = -3/5 => 3x + 5y - 7 = 0.",
+          "D": "CORRECT. Accurately determines perpendicular slope m = -5/3 and line 5x + 3y - 17 = 0.",
+          "E": "INCORRECT. Sign error on the constant term (+17 instead of -17)."
+        }
+      },
+      "examiner_trap_alert": "The negative reciprocal requires BOTH: (1) flip the fraction, and (2) change the sign! The negative reciprocal of +3/5 is -5/3. Forgetting the minus sign produces Option B; forgetting to invert produces Option C."
+    },
+    {
+      "id": "IMAT-2026-MATH-006",
+      "subject": "Mathematics",
+      "topic_number": 3,
+      "topic": "Analytic Geometry",
+      "subtopic": "Conic Sections: Circle Center, Radius, and Exact Line Tangency Condition",
+      "syllabus_ref": "MUR Mathematics B. Geometry - Circle equations, center, radius, tangents to a curve",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A circle Γ in the Cartesian plane is defined by the general equation x² + y² - 6x + 4y - 12 = 0. What are the coordinates of its center C, the length of its radius R, and what is the geometric relationship between the circle Γ and the straight line L given by 4x + 3y - 31 = 0?",
+      "options": [
+        "A. Center C(3, -2); Radius R = 5; The line L is strictly tangent to the circle at exactly one point",
+        "B. Center C(-3, 2); Radius R = 5; The line L intersects the circle at two distinct points",
+        "C. Center C(3, -2); Radius R = 25; The line L is completely external to the circle",
+        "D. Center C(6, -4); Radius R = 5; The line L is strictly tangent to the circle at exactly one point",
+        "E. Center C(3, -2); Radius R = √12; The line L intersects the circle at two distinct points"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "1. Completing the square to convert general circle equation x² + y² + Dx + Ey + F = 0 into canonical form (x - h)² + (y - k)² = R², where center is (h, k) = (-D/2, -E/2) and radius R = √(h² + k² - F).\n2. Distance from a point to a line: The shortest perpendicular distance d from center C(x0, y0) to line Ax + By + C_line = 0 is d = |A·x0 + B·y0 + C_line| / √(A² + B²).\n3. Geometric classification:\n   - If d = R: The line is strictly tangent.\n   - If d < R: The line is secant (intersects at 2 distinct points).\n   - If d > R: The line is external (0 intersections).",
+        "proof": "1. Complete squares on x and y:\n   (x² - 6x) + (y² + 4y) = 12\n   (x² - 6x + 9) + (y² + 4y + 4) = 12 + 9 + 4\n   (x - 3)² + (y + 2)² = 25 = 5².\n   Center: C(3, -2); Radius: R = √25 = 5.\n2. Compute perpendicular distance d from C(3, -2) to line 4x + 3y - 31 = 0:\n   A = 4, B = 3, C_line = -31, x0 = 3, y0 = -2.\n   Numerator: |4(3) + 3(-2) - 31| = |12 - 6 - 31| = |6 - 31| = |-25| = 25.\n   Denominator: √(4² + 3²) = √(16 + 9) = √25 = 5.\n   Distance: d = 25 / 5 = 5.\n3. Comparison with radius:\n   d = 5 and R = 5 => d = R.\n   Because the perpendicular distance from the center to the line exactly equals the radius, the line is STRICTLY TANGENT to the circle at exactly one point.",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately finds C(3, -2), R = 5, and proves d = R = 5 (tangency).",
+          "B": "INCORRECT. Inverts signs of center coordinates to (-3, 2).",
+          "C": "INCORRECT. Forgets to take the square root of R² = 25, setting radius R = 25.",
+          "D": "INCORRECT. Omits dividing by 2 when extracting center coordinates from D and E.",
+          "E": "INCORRECT. Ignores completing the square constants, setting R = √12."
+        }
+      },
+      "examiner_trap_alert": "Remember the signs of the center when completing the square: (x - 3)² means h = +3, and (y + 2)² means k = -2. Also, R is the SQUARE ROOT of 25, so R = 5, NOT 25."
+    },
+    {
+      "id": "IMAT-2026-MATH-007",
+      "subject": "Mathematics",
+      "topic_number": 4,
+      "topic": "Trigonometry",
+      "subtopic": "Trigonometric Identities: Third-Quadrant Signs and Double Angle Formula sin(2θ)",
+      "syllabus_ref": "MUR Mathematics B. Trigonometry - Unit circle, trigonometric functions in all quadrants, addition and double angle formulas",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "An angle θ lies in the third quadrant (π < θ < 3π/2) such that cos(θ) = -12/13. What is the exact value of sin(2θ)?",
+      "options": [
+        "A. -120/169",
+        "B. +120/169",
+        "C. +60/169",
+        "D. -119/169",
+        "E. +119/169"
+      ],
+      "correct_index": 1,
+      "correct_letter": "B",
+      "explanation": {
+        "principle": "1. Fundamental Pythagorean Trigonometric Identity: sin²(θ) + cos²(θ) = 1 => sin(θ) = ±√(1 - cos²(θ)).\n2. Quadrant sign determination: In Quadrant III (π < θ < 3π/2), both x-coordinate (cosine) and y-coordinate (sine) are strictly NEGATIVE: cos(θ) < 0 and sin(θ) < 0.\n3. Double Angle Formula for Sine: sin(2θ) = 2·sin(θ)·cos(θ).\nThe product of two negative quantities [sin(θ) < 0 and cos(θ) < 0] is POSITIVE, making sin(2θ) POSITIVE.",
+        "proof": "1. Calculate magnitude of sin(θ):\n   sin²(θ) = 1 - cos²(θ) = 1 - (-12/13)² = 1 - 144/169 = 25/169.\n   sin(θ) = ±√(25/169) = ±5/13.\n2. Apply Quadrant III sign constraint:\n   Because θ is in Quadrant III, sine is strictly negative:\n   sin(θ) = -5/13.\n3. Apply double angle identity:\n   sin(2θ) = 2 · sin(θ) · cos(θ)\n   sin(2θ) = 2 · (-5/13) · (-12/13)\n   sin(2θ) = 2 · [(-5) · (-12)] / [13 · 13] = 2 · (+60) / 169 = +120 / 169.",
+        "distractor_elimination": {
+          "A": "INCORRECT. The classic 'Quadrant III Trap': assumes that because θ is in Quadrant III, sin(2θ) must also be negative, picking -120/169. However, the product of two negatives (-5/13)·(-12/13) is positive!",
+          "B": "CORRECT. Accurately determines sin(θ) = -5/13 and evaluates 2·(-5/13)·(-12/13) = +120/169.",
+          "C": "INCORRECT. Forgets the factor of 2 in the double angle formula: (-5/13)·(-12/13) = +60/169.",
+          "D": "INCORRECT. Evaluates cos(2θ) instead of sin(2θ): cos(2θ) = cos²(θ) - sin²(θ) = 144/169 - 25/169 = +119/169, with inverted sign.",
+          "E": "INCORRECT. Calculates cos(2θ) = +119/169."
+        }
+      },
+      "examiner_trap_alert": "The Sign Paradox of Double Angles! Students often reason: 'θ is in quadrant 3, so its sine is negative, therefore sin(2θ) must be negative.' FALSE! Double angle formula is 2·sin(θ)·cos(θ). Since both sin(θ) and cos(θ) are negative, their product is POSITIVE! (Indeed, if 180° < θ < 270°, then 360° < 2θ < 540°, which places 2θ in Quadrants I and II, where sine is strictly POSITIVE!)."
+    },
+    {
+      "id": "IMAT-2026-MATH-008",
+      "subject": "Mathematics",
+      "topic_number": 4,
+      "topic": "Trigonometry",
+      "subtopic": "Double Angle Formulas for Cosine: Exact Rational Form from Single Function Value",
+      "syllabus_ref": "MUR Mathematics B. Trigonometry - Double angle formulas for cosine, fundamental identities",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "If angle θ is an acute angle (0 < θ < π/2) satisfying sin(θ) = 1 / √5, what is the exact rational value of cos(2θ)?",
+      "options": [
+        "A. 4/5",
+        "B. 2/5",
+        "C. -3/5",
+        "D. 1/√5",
+        "E. 3/5"
+      ],
+      "correct_index": 4,
+      "correct_letter": "E",
+      "explanation": {
+        "principle": "The three equivalent formulations of the Double Angle Formula for Cosine:\n1. cos(2θ) = cos²(θ) - sin²(θ)\n2. cos(2θ) = 2·cos²(θ) - 1\n3. cos(2θ) = 1 - 2·sin²(θ)\nUsing form (3) allows immediate calculation directly from sin(θ) without needing to compute cos(θ).",
+        "proof": "1. Using cos(2θ) = 1 - 2·sin²(θ):\n   Given sin(θ) = 1 / √5 => sin²(θ) = (1 / √5)² = 1/5.\n2. Substitute into identity:\n   cos(2θ) = 1 - 2·(1/5) = 1 - 2/5 = 3/5.\n\nAlternative verification via cos²(θ) - sin²(θ):\ncos²(θ) = 1 - sin²(θ) = 1 - 1/5 = 4/5.\ncos(2θ) = cos²(θ) - sin²(θ) = 4/5 - 1/5 = 3/5 = 0.60.",
+        "distractor_elimination": {
+          "A": "INCORRECT. Computes cos²(θ) = 4/5 or evaluates sin(2θ) = 2·(1/√5)·(2/√5) = 4/5.",
+          "B": "INCORRECT. Evaluates only the second term 2·sin²(θ) = 2/5, forgetting to subtract it from 1.",
+          "C": "INCORRECT. Inverts sign of the result (-3/5).",
+          "D": "INCORRECT. Reports original sin(θ) value (1/√5).",
+          "E": "CORRECT. Accurately derives cos(2θ) = 1 - 2(1/5) = 3/5."
+        }
+      },
+      "examiner_trap_alert": "Confusing cos(2θ) with sin(2θ)! Note that sin(2θ) = 2·sin(θ)·cos(θ) = 2·(1/√5)·(2/√5) = 4/5 (Option A). The question specifically asks for cos(2θ), which equals 3/5."
+    },
+    {
+      "id": "IMAT-2026-MATH-009",
+      "subject": "Mathematics",
+      "topic_number": 5,
+      "topic": "Combinatorics",
+      "subtopic": "Combinations (nCr): Constrained Multi-Group Committee Selection",
+      "syllabus_ref": "MUR Mathematics C. Probability & Statistics - Combinatorics, permutations, combinations without repetition",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A hospital clinical ethics review board of 5 members is to be formed from a department consisting of 7 senior physicians and 5 biomedical research scientists. How many distinct 5-member committees can be established that contain EXACTLY 3 physicians and 2 biomedical research scientists?",
+      "options": [
+        "A. 350",
+        "B. 792",
+        "C. 45",
+        "D. 4200",
+        "E. 175"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "Combinations without repetition formula: C(n, r) = n! / [r! · (n - r)!], which counts the number of ways to choose r unordered items from a set of n distinct items. By the Fundamental Counting Principle (Multiplication Rule of independent stages), the total number of compound committee selections is the product of the combinations chosen from each independent subgroup: Total = C(n_physicians, 3) × C(n_scientists, 2).",
+        "proof": "1. Number of ways to choose 3 physicians from 7:\n   C(7, 3) = 7! / [3! · (7 - 3)!] = 7! / [3! · 4!]\n   = (7 · 6 · 5) / (3 · 2 · 1) = 210 / 6 = 35.\n2. Number of ways to choose 2 scientists from 5:\n   C(5, 2) = 5! / [2! · (5 - 2)!] = 5! / [2! · 3!]\n   = (5 · 4) / (2 · 1) = 20 / 2 = 10.\n3. Compound selection by multiplication rule:\n   Total unique committees = C(7, 3) · C(5, 2) = 35 · 10 = 350.",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately computes C(7, 3) · C(5, 2) = 35 · 10 = 350.",
+          "B": "INCORRECT. Computes total UNCONSTRAINED combinations of choosing 5 people from all 12 candidates: C(12, 5) = 12! / (5! · 7!) = (12 · 11 · 10 · 9 · 8) / 120 = 792.",
+          "C": "INCORRECT. Adds the combinations instead of multiplying: 35 + 10 = 45.",
+          "D": "INCORRECT. Uses permutations (where order matters): P(7, 3) · P(5, 2) = (7·6·5) · (5·4) = 210 · 20 = 4200.",
+          "E": "INCORRECT. Arithmetic halving error (350 / 2 = 175)."
+        }
+      },
+      "examiner_trap_alert": "Adding instead of multiplying! Sub-elections in a multi-stage committee are INDEPENDENT stages of a single compound event: you must MULTIPLY C(7,3) × C(5,2) = 35 × 10 = 350, not add them (35 + 10 = 45)."
+    },
+    {
+      "id": "IMAT-2026-MATH-010",
+      "subject": "Mathematics",
+      "topic_number": 5,
+      "topic": "Combinatorics",
+      "subtopic": "Permutations without Repetition: Restricted Adjacent Grouping (Block Method)",
+      "syllabus_ref": "MUR Mathematics C. Probability & Statistics - Permutations, factorial notation, arrangements with grouping constraints",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A symposium organizing committee must schedule 6 keynote speakers (3 geneticists and 3 immunologists) into 6 consecutive, non-overlapping presentation time slots. If all 3 geneticists insist on delivering their lectures in strictly consecutive speaking slots (i.e. grouped adjacent to one another without any immunologists speaking between them), how many distinct speaking schedules can be formed?",
+      "options": [
+        "A. 720",
+        "B. 24",
+        "C. 144",
+        "D. 36",
+        "E. 288"
+      ],
+      "correct_index": 2,
+      "correct_letter": "C",
+      "explanation": {
+        "principle": "The 'Block Method' (or 'Tie Method') for restricted linear permutations. When a subset of k specific individuals must always remain adjacent, treat that entire subset as a single compound entity (one 'super-element' or block). First, find the number of linear permutations of the (n - k + 1) distinct entities. Second, multiply by the internal permutations of the k elements within the block (k!).",
+        "proof": "1. Define the super-element block:\n   Treat the 3 geneticists {G1, G2, G3} as a single combined block [GGG].\n2. Count total entities to arrange:\n   We have the block [GGG] plus the 3 individual immunologists {I1, I2, I3}.\n   Total entities N = 1 (the block) + 3 (immunologists) = 4 entities.\n3. Arrange the 4 entities:\n   Number of ways to order 4 distinct items = 4! = 4 · 3 · 2 · 1 = 24.\n4. Internal arrangements within the geneticist block:\n   The 3 geneticists can be permuted among themselves in 3! ways:\n   3! = 3 · 2 · 1 = 6.\n5. Total distinct schedules:\n   Total = 4! · 3! = 24 · 6 = 144.",
+        "distractor_elimination": {
+          "A": "INCORRECT. Computes total unconstrained permutations of all 6 speakers: 6! = 720.",
+          "B": "INCORRECT. Computes only the arrangement of the 4 entities (4! = 24), completely forgetting that the 3 geneticists can change order among themselves (3! = 6).",
+          "C": "CORRECT. Accurately applies the block method: 4! · 3! = 24 · 6 = 144.",
+          "D": "INCORRECT. Evaluates 3! · 3! = 6 · 6 = 36.",
+          "E": "INCORRECT. Doubles the result arbitrarily (144 · 2 = 288)."
+        }
+      },
+      "examiner_trap_alert": "Forgetting internal permutations! Treating the 3 geneticists as 1 block gives 4 items (4! = 24). But inside that block, the 3 geneticists can speak in 3! = 6 different orders (G1-G2-G3, G2-G1-G3, etc.). You must multiply 24 × 6 = 144."
+    },
+    {
+      "id": "IMAT-2026-MATH-011",
+      "subject": "Mathematics",
+      "topic_number": 6,
+      "topic": "Probability & Statistics",
+      "subtopic": "Bayes' Theorem: Clinical Screening, Base Rate Fallacy, and Positive Predictive Value",
+      "syllabus_ref": "MUR Mathematics C. Probability & Statistics - Conditional probability, Bayes' theorem, screening metrics",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "A diagnostic screening test for a rare asymptomatic congenital enzyme deficiency is evaluated in a large neonatal population where the true disease prevalence is 1.0% (P(D) = 0.01). The test has a sensitivity of 98.0% (true positive rate) and a specificity of 95.0% (true negative rate, meaning a false positive rate of 5.0%). If a randomly chosen infant tests POSITIVE on this screen, what is the exact probability (Positive Predictive Value, PPV) that the infant actually has the enzyme deficiency?",
+      "options": [
+        "A. 98/593 (≈ 16.5%)",
+        "B. 98.0%",
+        "C. 95.0%",
+        "D. 50.0%",
+        "E. 1.0%"
+      ],
+      "correct_index": 0,
+      "correct_letter": "A",
+      "explanation": {
+        "principle": "Bayes' Theorem and the Law of Total Probability: P(D | +) = [P(+ | D) · P(D)] / P(+), where the total probability of a positive test P(+) is the sum of True Positives and False Positives:\nP(+) = P(+ | D)·P(D) + P(+ | D^c)·P(D^c).\nWhen a condition has low baseline prevalence, the sheer number of false positives from the large healthy majority often dwarfs true positives (the Base Rate Fallacy).",
+        "proof": "Method 1 (Formal Bayes' Theorem):\n1. Prior probabilities: P(D) = 0.01 (prevalence); P(D^c) = 1 - 0.01 = 0.99 (healthy).\n2. Conditional test probabilities:\n   - Sensitivity: P(+ | D) = 0.98\n   - False positive rate: P(+ | D^c) = 1 - Specificity = 1 - 0.95 = 0.05.\n3. Total probability of a positive test P(+):\n   P(+) = (0.01 · 0.98) + (0.99 · 0.05) = 0.0098 + 0.0495 = 0.0593.\n4. Positive Predictive Value P(D | +):\n   P(D | +) = (0.01 · 0.98) / 0.0593 = 0.0098 / 0.0593 = 98 / 593 ≈ 0.16526 = 16.5%.\n\nMethod 2 (Natural Frequency Cohort of 10,000 infants):\n- 1.0% have disease = 100 infants. 98% test positive = 98 TRUE POSITIVES.\n- 99.0% healthy = 9,900 infants. 5% test positive = 495 FALSE POSITIVES.\n- Total positive tests = 98 + 495 = 593 positive tests.\n- Fraction truly diseased among positive tests = 98 / 593 ≈ 16.5%.",
+        "distractor_elimination": {
+          "A": "CORRECT. Accurately evaluates PPV = 98 / 593 ≈ 16.5%.",
+          "B": "INCORRECT. The Base Rate Fallacy: equates PPV with Sensitivity P(+ | D) = 98.0%, ignoring the massive false positive cohort.",
+          "C": "INCORRECT. Confuses PPV with Specificity P(- | D^c) = 95.0%.",
+          "D": "INCORRECT. Arbitrary coin-flip guess.",
+          "E": "INCORRECT. Equates PPV with the unconditioned base rate prevalence (1.0%)."
+        }
+      },
+      "examiner_trap_alert": "The Base Rate Fallacy! Students almost universally confuse 'If you have the disease, test is 98% accurate' with 'If you test positive, you have a 98% chance of disease'. Because the disease is rare (1%), false positives (495) outnumber true positives (98) five to one! The real probability is only 98/593 ≈ 16.5%."
+    },
+    {
+      "id": "IMAT-2026-MATH-012",
+      "subject": "Mathematics",
+      "topic_number": 6,
+      "topic": "Probability & Statistics",
+      "subtopic": "Independent Events: Mendelian Inheritance and the 'At Least One' Complement Rule",
+      "syllabus_ref": "MUR Mathematics C. Probability & Statistics - Independent events, multiplication rule, complementary events",
+      "difficulty": "University-Level / Advanced Calibration",
+      "question": "Two parents are both confirmed heterozygous carriers (genotype Aa) for an autosomal recessive metabolic disorder. By Mendelian segregation, each conception independently has a probability of p = 1/4 (25.0%) of producing an affected child (genotype aa), and a probability of q = 3/4 (75.0%) of producing an unaffected child (genotypes AA or Aa). If this couple has exactly 3 children, what is the probability that AT LEAST ONE of their 3 children will be affected by the disorder?",
+      "options": [
+        "A. 3/4 (75.0%)",
+        "B. 37/64 (≈ 57.8%)",
+        "C. 27/64 (≈ 42.2%)",
+        "D. 1/64 (≈ 1.6%)",
+        "E. 1/2 (50.0%)"
+      ],
+      "correct_index": 1,
+      "correct_letter": "B",
+      "explanation": {
+        "principle": "The Complement Rule for independent repeated trials: P(at least one occurrence) = 1 - P(zero occurrences). When events are mutually independent, the joint probability that event E occurs zero times across n independent trials is [P(not E)]^n. Attempting to sum individual trial probabilities P(A) + P(B) + P(C) violates probability axioms because the events are not mutually exclusive.",
+        "proof": "1. Define trial probabilities for each independent birth:\n   - P(Child affected) = 1/4\n   - P(Child unaffected) = 1 - 1/4 = 3/4.\n2. Independent births assumption:\n   The health status of each child is statistically independent.\n3. Probability that NONE of the 3 children are affected (all 3 unaffected):\n   P(0 affected) = P(unaffected) · P(unaffected) · P(unaffected)\n   P(0 affected) = (3/4) · (3/4) · (3/4) = (3/4)³ = 27 / 64 ≈ 0.421875 = 42.2%.\n4. Apply complement rule for 'at least one affected':\n   P(at least 1 affected) = 1 - P(0 affected)\n   P(at least 1 affected) = 1 - 27/64 = (64 - 27) / 64 = 37 / 64 ≈ 0.578125 ≈ 57.8%.",
+        "distractor_elimination": {
+          "A": "INCORRECT. The Additive Fallacy: erroneously adds probabilities across independent trials: 1/4 + 1/4 + 1/4 = 3/4 = 75.0%. (If they had 5 children, this invalid method would produce 5/4 = 125%, proving its absurdity!).",
+          "B": "CORRECT. Accurately applies the complement rule: 1 - (3/4)³ = 1 - 27/64 = 37/64 ≈ 57.8%.",
+          "C": "INCORRECT. Reports the probability that NONE of the children are affected: (3/4)³ = 27/64 ≈ 42.2%.",
+          "D": "INCORRECT. Reports the probability that ALL THREE children are affected: (1/4)³ = 1/64 ≈ 1.56%.",
+          "E": "INCORRECT. Arbitrary guess."
+        }
+      },
+      "examiner_trap_alert": "The Additive Fallacy! Never add probabilities for independent events to find 'at least one' (1/4 + 1/4 + 1/4 ≠ 3/4). Always use the Complement Rule: 1 - P(none) = 1 - (3/4)³ = 37/64."
+    }
+  ]
+}
