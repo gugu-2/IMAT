@@ -1,0 +1,1130 @@
+{
+  "catalog_metadata": {
+    "title": "IMAT 2025/2026 Master Prediction Catalog: Logical Reasoning & Reading Comprehension",
+    "specification": "Italian Ministry of University and Research (MUR) Decree Syllabus",
+    "examination_cycle": "2025/2026 Academic Admissions",
+    "author": "Critical Thinking & Reading Comprehension Specialist for IMAT",
+    "total_questions": 36,
+    "target_difficulty": "University-Level / Cambridge Assessment / High-Tier IMAT & BMAT",
+    "syllabus_categories": [
+      {
+        "category_id": "CAT_1",
+        "title": "Formal Deductive Syllogisms with 3 Premises (Euler/Venn Validity)",
+        "count": 6,
+        "key_concepts": "Categorical Quantifiers (All, Some, No, None), Multi-class Venn Intersections, Subalternation, Figure Barbara/Darii/Ferio"
+      },
+      {
+        "category_id": "CAT_2",
+        "title": "Identifying Unstated Necessary Assumptions (The Negation Test)",
+        "count": 6,
+        "key_concepts": "The Negation Test, Surrogate vs Hard Endpoints, Confounding by Indication, Attrition Bias, Cumulative Exposure vs Acute Windows"
+      },
+      {
+        "category_id": "CAT_3",
+        "title": "Weakening Arguments & Detecting Reasoning Flaws",
+        "count": 6,
+        "key_concepts": "Correlation vs Causation, Post Hoc Ergo Propter Hoc, Survivorship/Immortal Time Bias, Affirming Consequent, Berkson's Paradox, Base Rate Fallacy"
+      },
+      {
+        "category_id": "CAT_4",
+        "title": "Strengthening Arguments",
+        "count": 6,
+        "key_concepts": "Challenge-Dechallenge-Rechallenge, Mendelian Randomization, Biological Dose-Response Gradients, Receptor Knockout/Specificity, Negative Control Outcomes"
+      },
+      {
+        "category_id": "CAT_5",
+        "title": "Formal Propositional Logic",
+        "count": 6,
+        "key_concepts": "Contrapositives, Modus Tollens, Conditional Chains, Disjunctive Syllogism, De Morgan's Laws, Necessary vs Sufficient Conditions, Denying Antecedent"
+      },
+      {
+        "category_id": "CAT_6",
+        "title": "Dense Scientific & Clinical Research Reading Passages",
+        "count": 6,
+        "key_concepts": "Phase III Oncology Trials (HR, CI, p-value), Amyloid vs Tau in AD, Plasmid Transfer & Fitness Costs, Epigenetic Aging Clocks, Molecular Mimicry in GBS, AAV9 Alternative Complement TMA"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "LR_SYLL_01",
+      "category": "Formal Deductive Syllogisms with 3 Premises",
+      "subtopic": "Categorical Quantifiers & Euler Intersections (All / Some / None)",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Formal Categorical Syllogism",
+      "passage": null,
+      "question_stem": "Consider the following three formal premises:\n• Premise 1: All board-certified intensive care physicians are licensed clinical pharmacotherapy specialists.\n• Premise 2: Some licensed clinical pharmacotherapy specialists are investigators in Phase III double-blind randomized trials.\n• Premise 3: No investigator in Phase III double-blind randomized trials is an adherent of unvalidated metaphysical healing modalities.\n\nAssuming that all three premises are strictly true, which of the following conclusions MUST logically be true?",
+      "options": [
+        "Some licensed clinical pharmacotherapy specialists are not adherents of unvalidated metaphysical healing modalities.",
+        "All board-certified intensive care physicians are investigators in Phase III double-blind randomized trials.",
+        "No board-certified intensive care physician is an adherent of unvalidated metaphysical healing modalities.",
+        "Some adherents of unvalidated metaphysical healing modalities are board-certified intensive care physicians.",
+        "Every individual who is not an adherent of unvalidated metaphysical healing modalities is a licensed clinical pharmacotherapy specialist."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "pedagogical_explanation": {
+        "underlying_principle": "In formal categorical deductive logic, when a particular existential overlap exists between two sets (Some B are C) and one of those sets is completely disjoint from a third set (No C is D), the subset of elements situated within the intersection (B ∩ C) cannot possess membership in D. Therefore, it is deductively guaranteed that there exist elements of B that are excluded from D (Some B are not D).",
+        "rigorous_proof": "Let I = Board-certified intensive care physicians.\nLet P = Licensed clinical pharmacotherapy specialists.\nLet R = Investigators in Phase III double-blind randomized trials.\nLet M = Adherents of unvalidated metaphysical healing modalities.\n\nFormal premises:\n1. I ⊆ P (All I are P)\n2. P ∩ R ≠ ∅ (There exists at least one element x such that x ∈ P and x ∈ R)\n3. R ∩ M = ∅ (No element of R belongs to M)\n\nDeduction:\nTake x ∈ P ∩ R (guaranteed by Premise 2). Since x ∈ R, and R ∩ M = ∅ (Premise 3), it follows that x ∉ M.\nBecause x ∈ P and x ∉ M, there exists an element of P that is not in M. Hence, ∃x(x ∈ P ∧ x ∉ M), which translates precisely to: 'Some licensed clinical pharmacotherapy specialists are not adherents of unvalidated metaphysical healing modalities.' (Option B).",
+        "distractor_elimination": {
+          "A": "CORRECT. Rigorously proven: the members of P who belong to R cannot belong to M because R and M are mutually exclusive.",
+          "B": "Invalid (Fallacy of Undistributed Middle / illicit subset inclusion). While I ⊆ P, R merely intersects P; there is zero guarantee that the intersection P ∩ R encompasses I or overlaps with I at all.",
+          "C": "Invalid (Illicit Universal Negative). The premises provide no direct relation between I and M. Set I could be entirely disjoint from R, and could theoretically overlap with M, be disjoint from M, or be a subset of M without violating any premise.",
+          "D": "Invalid (Unwarranted Existential Assertion). The premises do not provide sufficient information to establish that an intersection between M and I exists.",
+          "E": "Invalid (Illicit Conversion / Universe Exhaustion). The complement of M (individuals not adhering to metaphysical modalities) contains infinite entities outside of P."
+        }
+      },
+      "examiner_trap_alert": "Classic Fallacy of False Association: Candidates intuitively try to force a connection between the first subject (intensive care physicians) and the final predicate (metaphysical modalities). Notice that 'intensive care physicians' is an isolated sub-circle inside 'pharmacotherapy specialists'; the existential guarantee ('Some') operates strictly between pharmacotherapy specialists and randomized trial investigators."
+    },
+    {
+      "id": "LR_SYLL_02",
+      "category": "Formal Deductive Syllogisms with 3 Premises",
+      "subtopic": "Prion Pathology & Universal Disjoint Classes (Ferio-Derived 3-Premise Figure)",
+      "difficulty": "Challenging (IMAT/BMAT High-Tier)",
+      "stimulus_type": "Formal Categorical Syllogism",
+      "passage": null,
+      "question_stem": "Consider the following three formal premises:\n• Premise 1: No prion-associated transmissible neurodegenerative encephalopathy is treatable with standard bactericidal β-lactam antibiotics.\n• Premise 2: All fatal progressive spongiform cerebroneuropathies are prion-associated transmissible neurodegenerative encephalopathies.\n• Premise 3: Some familial neurogenetic conditions documented in epidemiological registries are fatal progressive spongiform cerebroneuropathies.\n\nWhich of the following conclusions MUST be true based strictly on these premises?",
+      "options": [
+        "All familial neurogenetic conditions documented in epidemiological registries are prion-associated transmissible neurodegenerative encephalopathies.",
+        "Some familial neurogenetic conditions documented in epidemiological registries are not treatable with standard bactericidal β-lactam antibiotics.",
+        "No condition treatable with standard bactericidal β-lactam antibiotics is a familial neurogenetic condition documented in epidemiological registries.",
+        "All conditions not treatable with standard bactericidal β-lactam antibiotics are fatal progressive spongiform cerebroneuropathies.",
+        "No fatal progressive spongiform cerebroneuropathy is a familial neurogenetic condition documented in epidemiological registries."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "pedagogical_explanation": {
+        "underlying_principle": "In categorical logic, an instantiation of a sub-class (Some F are S) nested within a universal class (All S are E) which in turn is completely excluded from an external class (No E is B) necessarily inherits the negative exclusion property. Thus, the specific elements of F that belong to S must be excluded from B (Some F are not B).",
+        "rigorous_proof": "Let E = Prion-associated transmissible neurodegenerative encephalopathies.\nLet B = Conditions treatable with standard bactericidal β-lactam antibiotics.\nLet S = Fatal progressive spongiform cerebroneuropathies.\nLet F = Familial neurogenetic conditions documented in epidemiological registries.\n\nPremises in set notation:\n1. E ∩ B = ∅\n2. S ⊆ E (which implies S ∩ B = ∅)\n3. F ∩ S ≠ ∅\n\nDeduction:\nFrom (3), there exists an element k such that k ∈ F and k ∈ S.\nFrom (2), since k ∈ S, then k ∈ E.\nFrom (1), since k ∈ E, k ∉ B.\nTherefore, k ∈ F and k ∉ B, which proves: ∃k(k ∈ F ∧ k ∉ B) ≡ 'Some F are not B'.\nHence: 'Some familial neurogenetic conditions documented in epidemiological registries are not treatable with standard bactericidal β-lactam antibiotics.' (Option C).",
+        "distractor_elimination": {
+          "A": "Invalid (Illicit Universal Generalization). Premise 3 only affirms that 'Some' familial neurogenetic conditions are S. Other familial neurogenetic conditions (e.g. Huntington's disease) may not be S or E.",
+          "B": "CORRECT. Strictly proven through Venn intersection: members in the non-empty intersection F ∩ S are inside E, and therefore completely disjoint from B.",
+          "C": "Invalid (Illicit Universal Negative / False Mutual Exclusion). Just because some F are in S and thus excluded from B does not mean that ALL F are excluded from B. Other familial conditions might theoretically be bacterial or treatable with antibiotics.",
+          "D": "Invalid (Illicit Affirmation of Consequent / Universe Exhaustion). Non-treatability with β-lactam antibiotics includes viral, fungal, and neoplastic diseases, not just spongiform encephalopathies.",
+          "E": "Invalid (Direct Contradiction of Premise 3). Premise 3 explicitly states that 'Some' F are S, so stating that 'No S is F' directly contradicts the given premise."
+        }
+      },
+      "examiner_trap_alert": "Quantifier Inflation Trap: Candidates frequently confuse 'Some are not' with 'None are'. A particular premise ('Some F are S') can NEVER yield a universal conclusion ('No F is B' or 'All F are E') when F is the subject of the conclusion."
+    },
+    {
+      "id": "LR_SYLL_03",
+      "category": "Formal Deductive Syllogisms with 3 Premises",
+      "subtopic": "Enzymatic Cofactor Inclusion & Disjoint Sets (EDTA Chelation)",
+      "difficulty": "Challenging (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Formal Categorical Syllogism",
+      "passage": null,
+      "question_stem": "Consider the following three formal premises:\n• Premise 1: All enzymes possessing catalytic divalent zinc ions coordinated to three histidine residues are matrix metalloproteinases.\n• Premise 2: No matrix metalloproteinase is resistant to chelation-induced inactivation by ethylenediaminetetraacetic acid (EDTA).\n• Premise 3: Some pathological extracellular matrix degrading proteases isolated from invasive breast carcinoma biopsies are enzymes possessing catalytic divalent zinc ions coordinated to three histidine residues.\n\nWhich of the following conclusions is STRICTLY WARRANTED by these premises?",
+      "options": [
+        "All pathological extracellular matrix degrading proteases isolated from invasive breast carcinoma biopsies are matrix metalloproteinases.",
+        "No enzyme resistant to chelation-induced inactivation by EDTA is isolated from invasive breast carcinoma biopsies.",
+        "Some pathological extracellular matrix degrading proteases isolated from invasive breast carcinoma biopsies are not resistant to chelation-induced inactivation by EDTA.",
+        "All enzymes resistant to chelation-induced inactivation by EDTA are enzymes possessing catalytic divalent zinc ions.",
+        "Every matrix metalloproteinase is a pathological extracellular matrix degrading protease isolated from invasive breast carcinoma biopsies."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "pedagogical_explanation": {
+        "underlying_principle": "A syllogism combining a universal affirmative inclusion (Z ⊆ M), a universal negative exclusion (M ∩ R = ∅), and an existential particular overlap (B ∩ Z ≠ ∅) guarantees that the elements residing in (B ∩ Z) are inside M and therefore outside R. Thus, Some B are not R.",
+        "rigorous_proof": "Let Z = Enzymes possessing catalytic divalent zinc ions coordinated to 3 histidines.\nLet M = Matrix metalloproteinases.\nLet R = Proteases resistant to chelation-induced inactivation by EDTA.\nLet B = Pathological extracellular matrix degrading proteases isolated from invasive breast carcinoma biopsies.\n\nPremises:\n1. Z ⊆ M\n2. M ∩ R = ∅ (which implies Z ∩ R = ∅)\n3. B ∩ Z ≠ ∅\n\nProof:\nFrom (3), there exists an element w such that w ∈ B and w ∈ Z.\nFrom (1), since w ∈ Z, w ∈ M.\nFrom (2), since w ∈ M, w ∉ R.\nTherefore, w ∈ B and w ∉ R, establishing that ∃w(w ∈ B ∧ w ∉ R).\nThis translates directly to: 'Some pathological extracellular matrix degrading proteases isolated from invasive breast carcinoma biopsies are not resistant to chelation-induced inactivation by EDTA.' (Option B).",
+        "distractor_elimination": {
+          "A": "Invalid (Illicit Universal Generalization). Premise 3 only establishes that 'Some' B are Z. Other proteases from breast cancer biopsies (e.g. cathepsins, serine proteases) might not be Z or M.",
+          "B": "Invalid (Illicit Universal Exclusion). Proteases resistant to EDTA (e.g. cysteine or serine endopeptidases) could very well be isolated from breast carcinoma biopsies without possessing catalytic zinc.",
+          "C": "CORRECT. Deductively sound and directly derived from the transitivity of set inclusion and mutual exclusion.",
+          "D": "Invalid (Direct Contradiction). Premise 1 & 2 state Z ⊆ M and M ∩ R = ∅, meaning no Z can be in R. Thus, NO enzyme in R can be in Z.",
+          "E": "Invalid (Illicit Conversion of A-Proposition). 'Z ⊆ M' does not imply 'M ⊆ B'; matrix metalloproteinases exist in numerous tissues and non-pathological states."
+        }
+      },
+      "examiner_trap_alert": "Double Negative Confusion: 'Not resistant to chelation-induced inactivation' means 'susceptible to chelation'. Ensure you do not get confused by negative phrasing in the predicate. The logic follows: x ∈ B and x ∉ R."
+    },
+    {
+      "id": "LR_SYLL_04",
+      "category": "Formal Deductive Syllogisms with 3 Premises",
+      "subtopic": "Immunotherapy & Cytotoxic Agents (Subalternation & Exclusion)",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Formal Categorical Syllogism",
+      "passage": null,
+      "question_stem": "Consider the following three formal premises:\n• Premise 1: All human therapeutic monoclonal antibodies directed against the programmed cell death-1 (PD-1) receptor are immune checkpoint inhibitors.\n• Premise 2: No immune checkpoint inhibitor is a direct covalent DNA interstrand cross-linking cytotoxic agent.\n• Premise 3: Some systemic oncological pharmacotherapies administered in metastatic malignant melanoma are direct covalent DNA interstrand cross-linking cytotoxic agents.\n\nWhich of the following deductions MUST logically follow?",
+      "options": [
+        "No systemic oncological pharmacotherapy administered in metastatic malignant melanoma is a human therapeutic monoclonal antibody directed against the PD-1 receptor.",
+        "Some immune checkpoint inhibitors are direct covalent DNA interstrand cross-linking cytotoxic agents.",
+        "All direct covalent DNA interstrand cross-linking cytotoxic agents are systemic oncological pharmacotherapies administered in metastatic malignant melanoma.",
+        "Some systemic oncological pharmacotherapies administered in metastatic malignant melanoma are not human therapeutic monoclonal antibodies directed against the PD-1 receptor.",
+        "Every systemic oncological pharmacotherapy administered in metastatic malignant melanoma is an immune checkpoint inhibitor."
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "pedagogical_explanation": {
+        "underlying_principle": "If set P is a subset of set I (P ⊆ I), and set I is disjoint from set D (I ∩ D = ∅), then set P is also disjoint from set D (P ∩ D = ∅). If another set M intersects set D (M ∩ D ≠ ∅), then the elements in that intersection belong to M and D, and therefore cannot belong to P. Hence, Some M are not P.",
+        "rigorous_proof": "Let P = Human therapeutic monoclonal antibodies directed against PD-1.\nLet I = Immune checkpoint inhibitors.\nLet D = Direct covalent DNA interstrand cross-linking cytotoxic agents.\nLet M = Systemic oncological pharmacotherapies administered in metastatic malignant melanoma.\n\nPremises:\n1. P ⊆ I\n2. I ∩ D = ∅ (which implies P ∩ D = ∅)\n3. M ∩ D ≠ ∅\n\nDeduction:\nFrom Premise 3, there exists an agent y such that y ∈ M and y ∈ D.\nFrom Premise 1 and 2, P ∩ D = ∅. Since y ∈ D, it is impossible for y to belong to P (y ∉ P).\nBecause y ∈ M and y ∉ P, we have proven: ∃y(y ∈ M ∧ y ∉ P).\nIn plain categorical English: 'Some systemic oncological pharmacotherapies administered in metastatic malignant melanoma are not human therapeutic monoclonal antibodies directed against the PD-1 receptor.' (Option B).",
+        "distractor_elimination": {
+          "A": "Invalid (Illicit Universal Negative / Real-world Contradiction). Just because those melanoma therapies that cross-link DNA are not anti-PD-1 antibodies does NOT mean that NO melanoma therapy is an anti-PD-1 antibody. Pembrolizumab and nivolumab are anti-PD-1 antibodies used in melanoma. The premises allow M and P to overlap.",
+          "B": "Invalid (Direct Contradiction of Premise 2). Premise 2 explicitly states No I is D.",
+          "C": "Invalid (Illicit Conversion of Particular Affirmative). Premise 3 states Some M are D, which implies Some D are M, NOT that All D are M.",
+          "D": "CORRECT. Airtight deduction from the non-empty intersection M ∩ D, which cannot intersect P.",
+          "E": "Invalid (False Universal Affirmative). Contradicts the combination of Premise 2 and 3, which proves that the members in M ∩ D are NOT checkpoint inhibitors."
+        }
+      },
+      "examiner_trap_alert": "The Total Exclusion Trap (Option A): Do not jump from 'the DNA cross-linkers used in melanoma cannot be anti-PD-1 antibodies' to 'no melanoma therapy can be an anti-PD-1 antibody'. The quantifier remains strictly particular: 'Some... are not'."
+    },
+    {
+      "id": "LR_SYLL_05",
+      "category": "Formal Deductive Syllogisms with 3 Premises",
+      "subtopic": "Cellular Bioenergetics & Transitive Chain Syllogism (Barbara + Darii)",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Formal Categorical Syllogism",
+      "passage": null,
+      "question_stem": "Consider the following three formal premises:\n• Premise 1: All respiratory chain poisons that selectively inhibit mitochondrial Complex I (NADH:ubiquinone oxidoreductase) induce an acute surge in the hepatocyte cytosolic NADH/NAD+ ratio.\n• Premise 2: Any cellular metabolic perturbation that induces an acute surge in the hepatocyte cytosolic NADH/NAD+ ratio causes net suppression of hepatic gluconeogenic substrate flux.\n• Premise 3: Some lipophilic secondary metabolites isolated from herbal extracts are respiratory chain poisons that selectively inhibit mitochondrial Complex I.\n\nAssuming the truth of these premises, which conclusion is NECESSARILY TRUE?",
+      "options": [
+        "All lipophilic secondary metabolites isolated from herbal extracts cause net suppression of hepatic gluconeogenic substrate flux.",
+        "Some lipophilic secondary metabolites isolated from herbal extracts do not induce an acute surge in the hepatocyte cytosolic NADH/NAD+ ratio.",
+        "No cellular metabolic perturbation that causes net suppression of hepatic gluconeogenic substrate flux is a respiratory chain poison.",
+        "Every agent that causes net suppression of hepatic gluconeogenic substrate flux is a selective inhibitor of mitochondrial Complex I.",
+        "Some lipophilic secondary metabolites isolated from herbal extracts cause net suppression of hepatic gluconeogenic substrate flux."
+      ],
+      "correct_index": 4,
+      "correct_option": "E",
+      "pedagogical_explanation": {
+        "underlying_principle": "This argument forms a classic composite Barbara-Darii polysyllogism: two universal affirmative premises create a transitive inclusion chain (A ⊆ B and B ⊆ C implies A ⊆ C). Introducing a particular affirmative premise (Some D are A) transfers the ultimate predicate C to that non-empty intersection (Some D are C).",
+        "rigorous_proof": "Let C1 = Respiratory chain poisons that selectively inhibit Complex I.\nLet N = Perturbations inducing an acute surge in cytosolic NADH/NAD+ ratio.\nLet G = Agents causing net suppression of hepatic gluconeogenic substrate flux.\nLet H = Lipophilic secondary metabolites isolated from herbal extracts.\n\nPremises:\n1. C1 ⊆ N (All C1 are N)\n2. N ⊆ G (All N are G)\n3. H ∩ C1 ≠ ∅ (Some H are C1)\n\nDeduction:\nFrom (1) and (2), by transitivity of subsets: C1 ⊆ G.\nFrom (3), there exists an entity m such that m ∈ H and m ∈ C1.\nSince C1 ⊆ G, it follows that m ∈ G.\nTherefore, m ∈ H and m ∈ G, which formally proves: ∃m(m ∈ H ∧ m ∈ G) ≡ 'Some H are G'.\nIn verbal form: 'Some lipophilic secondary metabolites isolated from herbal extracts cause net suppression of hepatic gluconeogenic substrate flux.' (Option B).",
+        "distractor_elimination": {
+          "A": "Invalid (Illicit Universal Generalization). Premise 3 only specifies that 'Some' herbal metabolites inhibit Complex I. Many herbal metabolites have entirely different pharmacological targets or no bioactivity.",
+          "B": "Invalid (Unwarranted Particular Negative). The premises guarantee that the herbal metabolites in H ∩ C1 DO induce an acute surge in NADH/NAD+. Whether other herbal metabolites outside C1 do or do not is left undetermined by the premises.",
+          "C": "Invalid (Direct Contradiction). The chain proves that all Complex I poisons cause suppression of gluconeogenesis; stating that none do contradicts Premise 1 and 2.",
+          "D": "Invalid (Illicit Conversion of Universal Affirmative / Affirming the Consequent). Gluconeogenesis can be suppressed by numerous other mechanisms (e.g. insulin signaling, fructose-2,6-bisphosphate elevation, pyruvate carboxylase inhibition) without Complex I inhibition.",
+          "E": "CORRECT. Formally deduced through the transitive subset inclusion chain C1 ⊆ N ⊆ G and the particular premise H ∩ C1 ≠ ∅."
+        }
+      },
+      "examiner_trap_alert": "Over-generalization vs Existential Nuance: Watch out for Option A versus Option B. Just because an herbal extract contains a compound with this effect does not mean 'All' herbal compounds share this effect."
+    },
+    {
+      "id": "LR_SYLL_06",
+      "category": "Formal Deductive Syllogisms with 3 Premises",
+      "subtopic": "Microbial Bioenergetics & Obligate Intracellular Parasitism",
+      "difficulty": "Challenging (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Formal Categorical Syllogism",
+      "passage": null,
+      "question_stem": "Consider the following three formal premises:\n• Premise 1: No obligate intracellular bacterial pathogen is capable of autonomous ATP generation in cell-free synthetic axenic broth.\n• Premise 2: All pathogenic strains of Chlamydia trachomatis are obligate intracellular bacterial pathogens.\n• Premise 3: Some microbial isolates recovered from clinical swab specimens of acute pelvic inflammatory disease are pathogenic strains of Chlamydia trachomatis.\n\nWhich of the following statements MUST logically be true?",
+      "options": [
+        "Some microbial isolates recovered from clinical swab specimens of acute pelvic inflammatory disease are not capable of autonomous ATP generation in cell-free synthetic axenic broth.",
+        "No microbial isolate recovered from clinical swab specimens of acute pelvic inflammatory disease is capable of autonomous ATP generation in cell-free synthetic axenic broth.",
+        "All obligate intracellular bacterial pathogens are pathogenic strains of Chlamydia trachomatis.",
+        "Every microorganism incapable of autonomous ATP generation in cell-free synthetic axenic broth is recovered from clinical swab specimens of acute pelvic inflammatory disease.",
+        "All pathogenic strains of Chlamydia trachomatis are capable of autonomous ATP generation in cell-free synthetic axenic broth."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "pedagogical_explanation": {
+        "underlying_principle": "When a category C is entirely contained in category O (C ⊆ O), and O has no intersection with category A (O ∩ A = ∅), then C has no intersection with A (C ∩ A = ∅). Any group P that has a non-empty intersection with C must contain elements that are completely excluded from A (Some P are not A).",
+        "rigorous_proof": "Let O = Obligate intracellular bacterial pathogens.\nLet A = Organisms capable of autonomous ATP generation in cell-free synthetic axenic broth.\nLet C = Pathogenic strains of Chlamydia trachomatis.\nLet P = Microbial isolates recovered from clinical swab specimens of acute pelvic inflammatory disease.\n\nPremises in set theory:\n1. O ∩ A = ∅\n2. C ⊆ O (which implies C ∩ A = ∅)\n3. P ∩ C ≠ ∅\n\nDeduction:\nFrom (3), there exists an isolate q such that q ∈ P and q ∈ C.\nFrom (2), since q ∈ C, q ∈ O.\nFrom (1), since q ∈ O, q ∉ A.\nTherefore, q ∈ P and q ∉ A, establishing that: ∃q(q ∈ P ∧ q ∉ A).\nIn plain words: 'Some microbial isolates recovered from clinical swab specimens of acute pelvic inflammatory disease are not capable of autonomous ATP generation in cell-free synthetic axenic broth.' (Option B).",
+        "distractor_elimination": {
+          "A": "CORRECT. Derived by valid instantiation of the intersection P ∩ C.",
+          "B": "Invalid (Illicit Universal Negative). Pelvic inflammatory disease can also be caused by facultative anaerobes like Neisseria gonorrhoeae, which ARE capable of autonomous ATP generation on chocolate agar. The premises do not state that all PID isolates are Chlamydia.",
+          "C": "Invalid (Illicit Conversion of Universal Affirmative). Rickettsia, Coxiella, and Mycobacterium leprae are also obligate intracellular bacteria; C is a subset of O, not vice-versa.",
+          "D": "Invalid (Fallacy of Universe Exhaustion). Host of viruses and environmental organisms incapable of independent ATP synthesis have nothing to do with PID swab specimens.",
+          "E": "Invalid (Direct Contradiction of Premise 1 & 2). C ⊆ O and O ∩ A = ∅ guarantees that NO pathogenic strain of C. trachomatis is capable of autonomous ATP generation in axenic broth."
+        }
+      },
+      "examiner_trap_alert": "Polymicrobial Infection Trap: In clinical medicine, PID is polymicrobial. In logic, 'Some P are C' prevents you from concluding 'All P are C' or 'No P is A'. Keep the quantifier strictly particular ('Some... are not')."
+    },
+    {
+      "id": "LR_ASSUMP_01",
+      "category": "Identifying Unstated Necessary Assumptions",
+      "subtopic": "Surrogate Biomarker Validity vs True Clinical Endpoint (Negation Test)",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Scientific Argument Analysis",
+      "passage": "Medical Oncology Research Team Report:\n\"In a Phase II clinical investigation of metastatic pancreatic ductal adenocarcinoma, administration of the novel small-molecule KRAS inhibitor PX-77 resulted in a rapid 65% reduction in circulating tumor DNA (ctDNA) mutant KRAS allele fraction within 28 days of treatment. Because circulating tumor DNA accurately mirrors tumor burden in the bloodstream, we conclude that PX-77 pharmacotherapy will significantly prolong median overall survival in patients with advanced pancreatic ductal adenocarcinoma.\"",
+      "question_stem": "Which of the following is an UNSTATED ASSUMPTION on which the research team's conclusion strictly depends?",
+      "options": [
+        "Patients receiving PX-77 experience zero off-target cytotoxic side effects or hematological toxicities.",
+        "A rapid reduction in the circulating mutant KRAS ctDNA allele fraction reliably translates to an extension of overall survival rather than merely reflecting transient clonal lysis while resistant metastatic subclones continue to progress.",
+        "Mutant KRAS is the sole driver oncogene involved in the pathogenesis and metastatic dissemination of pancreatic ductal adenocarcinoma.",
+        "PX-77 achieves a higher objective radiological response rate on contrast-enhanced CT scans than standard gemcitabine-nab-paclitaxel regimens.",
+        "Measurement of circulating tumor DNA is technically easier and less expensive than obtaining serial tissue core biopsies."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "pedagogical_explanation": {
+        "underlying_principle": "An unstated necessary assumption is an implicit premise that bridges the logical gap between the stated empirical evidence (a biomarker surrogate endpoint: 65% drop in ctDNA) and the ultimate conclusion (a clinical outcome endpoint: prolonged overall survival). Under the Negation Test, if the negated proposition fatally undermines the author's deductive claim, that proposition is a necessary assumption.",
+        "rigorous_proof": "Argument Structure:\n• Premise: PX-77 induces a 65% reduction in ctDNA mutant KRAS allele fraction.\n• Unstated Bridge: ctDNA reduction guarantees or correlates directly with extended overall survival.\n• Conclusion: PX-77 will prolong median overall survival.\n\nApplication of the Negation Test to Option B:\nNegation: 'A rapid reduction in circulating mutant KRAS ctDNA allele fraction DOES NOT reliably translate to an extension of overall survival, and instead merely reflects transient clonal lysis while resistant subclones continue to progress.'\n\nImpact of Negation: If the reduction in ctDNA is merely transient cell lysis of a sensitive clone while resistant clones kill the patient just as quickly, the 65% drop in ctDNA provides zero evidence that patients will live longer. The conclusion collapses entirely. Thus, Option B is mandatory.",
+        "distractor_elimination": {
+          "A": "Incorrect (Excessive / Non-essential). An oncology drug can prolong overall survival despite having significant off-target toxicities (e.g. standard chemotherapy prolongs survival while causing neutropenia).",
+          "B": "CORRECT. Passes the Negation Test cleanly: without this surrogate-to-clinical bridge, the entire causal prediction fails.",
+          "C": "Incorrect (Extreme Scope). The author does not need to assume KRAS is the SOLE driver (TP53, CDKN2A, SMAD4 are well-known co-drivers); they only need PX-77's inhibition of KRAS to yield a survival benefit.",
+          "D": "Incorrect (Comparative Scope Extrapolation). The argument makes an absolute claim about PX-77 prolonging survival, not a comparative claim against gemcitabine-nab-paclitaxel.",
+          "E": "Incorrect (Irrelevant Practicality). Practical ease or financial cost of ctDNA versus core biopsies has no bearing on the biological and statistical validity of the survival conclusion."
+        }
+      },
+      "examiner_trap_alert": "Surrogate Endpoint Fallacy: In clinical trials, never confuse a surrogate laboratory biomarker (ctDNA, tumor shrinkage, cholesterol level) with a hard clinical endpoint (overall survival, mortality). The necessary assumption is ALWAYS the unstated validity of that surrogate-to-endpoint link."
+    },
+    {
+      "id": "LR_ASSUMP_02",
+      "category": "Identifying Unstated Necessary Assumptions",
+      "subtopic": "Confounding by Indication & Patient Selection Bias (Negation Test)",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Clinical Audit Analysis",
+      "passage": "Surgical Department Audit Statement:\n\"Over the past calendar year, our hospital performed 120 elective cholecystectomies using a newly acquired high-precision robotic surgical platform, recording a 30-day surgical site infection (SSI) rate of only 0.8%. In contrast, our historical cohort of 500 standard laparoscopic cholecystectomies exhibited an SSI rate of 4.2%. Therefore, adopting robotic assistance in place of standard laparoscopy directly reduces surgical tissue trauma and the incidence of post-operative surgical site infections.\"",
+      "question_stem": "Which of the following is an underlying UNSTATED ASSUMPTION essential to the audit's conclusion?",
+      "options": [
+        "Robotic surgical platforms have a lower capital acquisition and maintenance cost per procedure than standard laparoscopic towers.",
+        "Standard laparoscopic surgery will be completely phased out of all surgical training programs within the next decade.",
+        "Surgeons performing the robotic procedures did not selectively assign younger, healthier patients with fewer comorbidities to the robotic group while assigning higher-risk patients to standard laparoscopy.",
+        "The bacterial pathogens responsible for surgical site infections are universally resistant to first-generation cephalosporin prophylaxis.",
+        "Robotic instruments possess automated artificial intelligence capabilities that eliminate all human surgical error."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "pedagogical_explanation": {
+        "underlying_principle": "When comparing an outcome between two clinical cohorts (robotic vs laparoscopic), attributing an observed difference to the technological intervention requires the unstated assumption that baseline clinical confounders (patient selection bias) did not account for the discrepancy.",
+        "rigorous_proof": "Argument Structure:\n• Premise: Robotic cohort had 0.8% SSI; historical laparoscopic cohort had 4.2% SSI.\n• Conclusion: The robotic platform itself directly reduces tissue trauma and SSI incidence.\n\nApplication of the Negation Test to Option B:\nNegation: 'Surgeons DID selectively assign younger, healthier patients with fewer comorbidities (e.g. non-diabetic, normal BMI) to the robotic platform, while higher-risk, morbidly obese, or diabetic patients were relegated to standard laparoscopy.'\n\nImpact of Negation: If the robotic group consisted of low-risk patients who rarely develop infections regardless of surgical technique, the difference in infection rates is explained by baseline patient characteristics (confounding by indication), not the robotic machine. The conclusion is refuted.",
+        "distractor_elimination": {
+          "A": "Incorrect (Irrelevant Financial Metric). Economic costs do not impact the physiological or surgical causality of tissue infection.",
+          "B": "Incorrect (Future Predictive Overreach). The long-term obsolescence of laparoscopy is completely immaterial to the retrospective validity of the audited infection data.",
+          "C": "CORRECT. The assumption rules out selection bias / confounding by indication, fulfilling the Negation Test.",
+          "D": "Incorrect (Extreme Microbiology). Pathogen resistance profiles are an external factual detail unnecessary for comparing infection rates.",
+          "E": "Incorrect (Absurd Hyperbole). The audit claims reduced tissue trauma, not flawless AI omniscience."
+        }
+      },
+      "examiner_trap_alert": "Selection Bias in Clinical Audits: Whenever an observational study or clinical audit compares a new technique to a historical control, the dominant threat is patient selection. The author MUST assume that the two patient groups were comparable at baseline."
+    },
+    {
+      "id": "LR_ASSUMP_03",
+      "category": "Identifying Unstated Necessary Assumptions",
+      "subtopic": "Reverse Causation & Residual Confounding in Nutritional Epidemiology",
+      "difficulty": "Challenging (IMAT/BMAT High-Tier)",
+      "stimulus_type": "Epidemiological Argument Evaluation",
+      "passage": "Preventive Cardiology Editorial:\n\"A prospective cohort study tracking 30,000 middle-aged adults over 14 years demonstrated that participants in the highest quintile of circulating serum 25-hydroxyvitamin D [25(OH)D] had a 35% lower incidence of fatal myocardial infarction compared to those in the lowest quintile. Consequently, introducing mandatory nationwide public health fortification of staple food products with vitamin D will directly reduce the population-wide incidence of fatal myocardial infarctions.\"",
+      "question_stem": "Which of the following constitutes an unstated assumption required for the author's preventive policy recommendation to hold?",
+      "options": [
+        "Dietary vitamin D is completely non-toxic even when consumed in amounts exceeding ten times the recommended dietary allowance.",
+        "Every individual in the general population consumes identical daily quantities of fortified staple foods.",
+        "Myocardial infarction is the primary cause of death in more than 80% of individuals in the lowest vitamin D quintile.",
+        "Low circulating 25(OH)D levels are not merely an incidental biomarker of sedentary indoor lifestyles, chronic low-grade systemic inflammation, or socio-economic deprivation that independently drive myocardial infarction risk.",
+        "Cutaneous synthesis of vitamin D upon ultraviolet B radiation exposure is physiologically impossible in adult humans."
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "pedagogical_explanation": {
+        "underlying_principle": "Observational epidemiology frequently identifies statistical correlations that are epiphenomena of residual confounding. To argue that an exogenous intervention (fortification) will reduce disease incidence, the author must assume that the exposure is an active causal factor rather than a passive marker of a healthy lifestyle or a negative acute-phase reactant.",
+        "rigorous_proof": "Argument Structure:\n• Premise: Higher serum 25(OH)D correlates with 35% fewer fatal myocardial infarctions.\n• Conclusion: Food fortification with vitamin D will directly reduce fatal myocardial infarctions.\n\nApplication of the Negation Test to Option B:\nNegation: 'Low circulating 25(OH)D levels ARE merely an incidental biomarker of sedentary indoor lifestyles, systemic inflammation, or poverty that independently cause myocardial infarctions.'\n\nImpact of Negation: If low vitamin D is just a passive consequence of being sick, sedentary, or poor (an epiphenomenon), then artificially dumping vitamin D into flour or milk will have zero impact on cardiovascular events. The argument collapses.",
+        "distractor_elimination": {
+          "A": "Incorrect (Irrelevant Extreme Safety). The author only needs fortification at physiological doses to be effective and safe, not that massive ten-fold overdoses are non-toxic.",
+          "B": "Incorrect (Extreme Homogeneity). Population health measures rely on aggregate averages, not identical consumption across every single citizen.",
+          "C": "Incorrect (Excessive Statistical Threshold). The proportion of deaths does not need to be 80%; the 35% relative risk reduction applies regardless of the absolute fraction.",
+          "D": "CORRECT. Essential requirement: rules out residual confounding and reverse causation.",
+          "E": "Incorrect (Factually Absurd / Unnecessary). Sunlight synthesis is a known biological fact, and its impossibility is certainly not assumed."
+        }
+      },
+      "examiner_trap_alert": "Correlation-to-Intervention Leap: Just because A correlates with B in an observational cohort does not mean administering A will alter B. The author MUST assume that A is the causal driver, not a bystander biomarker."
+    },
+    {
+      "id": "LR_ASSUMP_04",
+      "category": "Identifying Unstated Necessary Assumptions",
+      "subtopic": "Confounding by Medical Indication in Translational Oncology",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Oncology Research Analysis",
+      "passage": "Translational Immunotherapy Research Brief:\n\"In a cohort of 180 patients with metastatic renal cell carcinoma initiating therapy with the immune checkpoint inhibitor nivolumab, patients who had received broad-spectrum oral antibiotics within 30 days prior to initiation had a median progression-free survival of only 3.8 months, compared to 10.4 months in antibiotic-naive patients. Stool metagenomic sequencing confirmed that antibiotic-treated patients had marked reductions in intestinal microbial alpha-diversity. Therefore, antibiotic-mediated disruption of the gut microbiome directly suppresses the host anti-tumor T-cell response to checkpoint blockade.\"",
+      "question_stem": "Which of the following is an UNSTATED ASSUMPTION necessary for the researchers' causal deduction to be logically sound?",
+      "options": [
+        "Antibiotic administration never produces beneficial clinical effects in cancer patients suffering from acute bacterial sepsis.",
+        "All species of intestinal bacteria contribute equally to the priming and activation of CD8+ cytotoxic T lymphocytes.",
+        "Nivolumab is pharmacologically incapable of binding to PD-1 receptors in the absence of bacterial peptidoglycan fragments in the systemic circulation.",
+        "Broad-spectrum antibiotics completely sterilize the human gastrointestinal tract, leaving zero viable bacteria or archaea.",
+        "Patients who required antibiotics were not suffering from more aggressive, ulcerated tumors, severe concurrent infections, or systemic immunodeficiency that independently worsened their oncological prognosis."
+      ],
+      "correct_index": 4,
+      "correct_option": "E",
+      "pedagogical_explanation": {
+        "underlying_principle": "Confounding by indication occurs when the clinical reason a medication was prescribed (e.g. an aggressive, necrotic tumor causing infection) is itself the true driver of the poor outcome. A researcher claiming the drug itself (the antibiotic) caused the poor response must assume that the medical indication for the antibiotic was not the true causal agent.",
+        "rigorous_proof": "Argument Structure:\n• Premise: Patients receiving antibiotics prior to nivolumab had shorter survival (3.8 vs 10.4 months) and reduced gut diversity.\n• Conclusion: Gut microbiome disruption by antibiotics directly impairs host anti-tumor T-cell response.\n\nApplication of the Negation Test to Option A:\nNegation: 'Patients who required antibiotics WERE suffering from more aggressive, ulcerated tumors, severe infections, or profound immunodeficiency that independently caused both the antibiotic prescription and the early death.'\n\nImpact of Negation: If the patients who took antibiotics were already sicker, frailer, and had more aggressive cancer, their rapid progression was caused by their advanced disease state, NOT by their disrupted microbiome. The causal inference is completely invalidated.",
+        "distractor_elimination": {
+          "A": "Incorrect (Irrelevant Scope). Sepsis survival does not alter the reasoning regarding tumor progression.",
+          "B": "Incorrect (Excessive Biological Claim). Microbiome research highlights specific taxa (e.g. Akkermansia, Bifidobacterium), not that all species are identical.",
+          "C": "Incorrect (Extreme Unwarranted Mechanism). Nivolumab binds PD-1 directly; bacterial peptidoglycan is not required for molecular antibody-antigen binding.",
+          "D": "Incorrect (Absurd Sterilization Claim). Antibiotics deplete diversity, but total gastrointestinal sterilization is impossible in vivo.",
+          "E": "CORRECT. Directly eliminates confounding by medical indication via the Negation Test."
+        }
+      },
+      "examiner_trap_alert": "Confounding by Indication: A classic IMAT/BMAT trap. Sick patients take drugs because they are sick. Attributing their poor outcome to the drug rather than the underlying sickness requires assuming that the sickness wasn't the confounding driver."
+    },
+    {
+      "id": "LR_ASSUMP_05",
+      "category": "Identifying Unstated Necessary Assumptions",
+      "subtopic": "Attrition / Adherence Bias in Health Technology Trials",
+      "difficulty": "Challenging (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Health Technology Efficacy Analysis",
+      "passage": "Digital Health Clinical Trial Evaluation:\n\"An automated smartphone application delivering digital Cognitive Behavioral Therapy for Insomnia (dCBT-I) was tested in a 12-week clinical intervention. Of the 400 chronic insomnia sufferers who enrolled and downloaded the application, the 160 participants who completed all 12 weekly interactive modules demonstrated an average 52% reduction in their Insomnia Severity Index (ISI) scores and clinically significant improvements in sleep efficiency. This trial proves that the dCBT-I application is a highly potent therapeutic modality for the broader population of chronic insomnia sufferers.\"",
+      "question_stem": "Which of the following is an UNSTATED ASSUMPTION that the researchers must make to validate their conclusion?",
+      "options": [
+        "The 160 participants who completed all 12 modules were not systematically more motivated, less severely afflicted, or possessed of greater psychological resilience than the 240 participants who discontinued the app.",
+        "Pharmacological sleep aids such as zolpidem and benzodiazepines are completely ineffective in treating chronic insomnia.",
+        "Every person suffering from insomnia in the broader population owns a modern smartphone capable of downloading the app.",
+        "Cognitive behavioral therapy is the only evidence-based psychological treatment that can alter sleep architecture.",
+        "The 240 participants who dropped out of the trial experienced catastrophic worsening of their insomnia symptoms."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "pedagogical_explanation": {
+        "underlying_principle": "Completer-only (per-protocol) analyses in clinical trials suffer from severe attrition bias. To extrapolate results from the subset of participants who adhered to the entire intervention to the broader target population, the researchers must assume that the completers are representative of the whole, rather than an uncharacteristically responsive or compliant sub-population.",
+        "rigorous_proof": "Argument Structure:\n• Premise: 160 out of 400 participants completed the app and had a 52% improvement in ISI.\n• Conclusion: The app is highly potent for the broader population of chronic insomnia sufferers.\n\nApplication of the Negation Test to Option B:\nNegation: 'The 160 completers WERE systematically more motivated, had milder symptoms, or had greater psychological resilience than the 240 who dropped out.'\n\nImpact of Negation: If the app only works for an exceptionally motivated or mild 40% of patients while failing 60% of the target group who dropped out due to frustration or lack of benefit, the claim of general population potency is completely false. The study reflects adherence/attrition bias, destroying the conclusion.",
+        "distractor_elimination": {
+          "A": "CORRECT. Essential assumption neutralizing attrition bias, verified by the Negation Test.",
+          "B": "Incorrect (Irrelevant Comparison). The app's efficacy does not depend on the total failure of pharmacological drugs.",
+          "C": "Incorrect (Excessive Generalization). Theoretical population efficacy does not require universal 100% smartphone ownership.",
+          "D": "Incorrect (Unnecessary Exclusivity). CBT does not need to be the sole psychological therapy.",
+          "E": "Incorrect (Extreme Unwarranted Assumption). Dropouts could have experienced minor frustration, boredom, or no change; catastrophic worsening is not assumed."
+        }
+      },
+      "examiner_trap_alert": "Per-Protocol / Attrition Bias: Whenever a study claims success based ONLY on the people who finished the program (ignoring the majority who quit), the unstated assumption is that the completers are not systematically different from the dropouts."
+    },
+    {
+      "id": "LR_ASSUMP_06",
+      "category": "Identifying Unstated Necessary Assumptions",
+      "subtopic": "Cumulative Lifelong Exposure vs Short-Term Late-Life Intervention",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Pharmacogenomic Drug Development Argument",
+      "passage": "Biotechnology Venture Investment Proposal:\n\"Epidemiological genomic sequencing proves that human individuals heterozygous for loss-of-function nonsense mutations in the PCSK9 gene maintain approximately 38% lower plasma low-density lipoprotein cholesterol (LDL-C) levels and experience an 88% reduction in the lifetime risk of coronary heart disease. We are developing an injectable synthetic small interfering RNA (siRNA) that selectively silences PCSK9 hepatic translation. We conclude that administering this siRNA to 65-year-old patients with established coronary artery disease over a 3-year clinical trial will achieve an 88% reduction in recurrent cardiovascular events.\"",
+      "question_stem": "Which of the following is an UNSTATED ASSUMPTION required for the proposal's therapeutic efficacy projection to be valid?",
+      "options": [
+        "PCSK9 loss-of-function mutations are present in more than 50% of the global human population.",
+        "The dramatic 88% cardiovascular risk reduction observed in genetic carriers does not depend upon the cumulative, lifelong absence of atherogenic apolipoprotein B-containing particles from conception, but can be replicated by a brief 3-year intervention in older patients with decades of pre-existing atherosclerotic plaque burden.",
+        "Injectable siRNAs are completely incapable of producing off-target mRNA cleavage in extra-hepatic tissues.",
+        "Dietary cholesterol intake has a greater impact on serum LDL-C concentrations than the rate of hepatic LDL receptor recycling.",
+        "All patients over 65 years of age suffer from complete resistance to HMG-CoA reductase inhibitors (statins)."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "pedagogical_explanation": {
+        "underlying_principle": "A critical logical fallacy in translational medicine is equating lifelong genetic exposure (Mendelian randomization) with late-life, short-duration pharmacological therapy. To project that a 3-year treatment will deliver the exact 88% risk reduction seen across 60+ years of genetic deficiency, the author MUST assume that the benefit is not dependent on cumulative lifetime exposure.",
+        "rigorous_proof": "Argument Structure:\n• Premise: Lifelong genetic PCSK9 deficiency yields 38% lower LDL-C and 88% lower lifetime coronary heart disease.\n• Conclusion: A 3-year siRNA intervention in 65-year-olds with existing disease will yield an 88% reduction in events.\n\nApplication of the Negation Test to Option B:\nNegation: 'The 88% risk reduction observed in genetic carriers DOES depend upon the cumulative, lifelong absence of atherogenic particles preventing plaque formation from youth, and CANNOT be replicated by a brief 3-year intervention in elderly patients with advanced, established plaque.'\n\nImpact of Negation: If plaque biology requires decades of low LDL to prevent disease, then lowering LDL for just 3 years late in life in heavily calcified, diseased arteries cannot achieve the genetic 88% reduction (clinical trials like FOURIER/ODYSSEY show ~15-20% reduction). The venture's 88% projection is demolished.",
+        "distractor_elimination": {
+          "A": "Incorrect (Factually and Logically False). Loss-of-function PCSK9 mutations are rare (<3%); high prevalence is neither assumed nor true.",
+          "B": "CORRECT. The linchpin assumption bridging lifelong genetic prevention to acute geriatric intervention.",
+          "C": "Incorrect (Excessive Perfectionism). The drug could have minor off-target mRNA interactions without invalidating its cardiovascular efficacy.",
+          "D": "Incorrect (Irrelevant Mechanism). Dietary vs receptor recycling dynamics do not validate the time-horizon extrapolation.",
+          "E": "Incorrect (Extreme Generalization). The proposal does not assume universal statin resistance in the elderly."
+        }
+      },
+      "examiner_trap_alert": "The Mendelian Exposure Trap: Mendelian genetics measures the effect of 60 to 80 years of exposure from embryo to old age. Assuming that a 2-to-3-year drug trial will reproduce the exact same quantitative risk reduction assumes that time and cumulative arterial exposure are irrelevant."
+    },
+    {
+      "id": "LR_FLAW_01",
+      "category": "Weakening Arguments & Detecting Reasoning Flaws",
+      "subtopic": "Confounding by Indication & Reverse Causality (Renal Disease)",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Epidemiological Reasoning Evaluation",
+      "passage": "Nephrology Journal Letter:\n\"An observational study tracking 4,500 patients with moderate chronic kidney disease (CKD stage 3) revealed that patients who regularly consumed acetaminophen (paracetamol) experienced a significantly steeper annual decline in estimated glomerular filtration rate (eGFR) and reached end-stage renal failure faster than patients who did not report regular acetaminophen use. The study authors concluded that acetaminophen is directly nephrotoxic in patients with pre-existing renal impairment and recommended that clinicians immediately prohibit its use in this population.\"",
+      "question_stem": "Which of the following, if true, identifies the most fundamental FLAW in the researchers' reasoning?",
+      "options": [
+        "Acetaminophen is metabolized predominantly via hepatic glucuronidation and sulfation pathways rather than by glomerular filtration.",
+        "Patients who consume acetaminophen frequently report mild, transient nausea that resolves without medical intervention.",
+        "Because non-steroidal anti-inflammatory drugs (NSAIDs) are strictly contraindicated in CKD, clinicians systematically prescribe acetaminophen to patients whose renal disease is advancing more rapidly and who experience higher levels of chronic pain.",
+        "The monetary retail cost of acetaminophen has risen moderately over the multi-year study period.",
+        "The study population included individuals aged 45 to 80 years from both urban and rural residential zones."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "pedagogical_explanation": {
+        "underlying_principle": "The reasoning commits the classic epidemiological flaw of confounding by indication (a specific variant of correlation vs causation). When the severity of a patient's underlying illness determines whether a drug is prescribed, the drug correlates with poor disease outcome not because it is harmful, but because sicker patients are more likely to receive it.",
+        "rigorous_proof": "Argument Breakdown:\n• Stated Observation: CKD patients taking acetaminophen show faster eGFR decline.\n• Causal Claim: Acetaminophen causes the accelerated eGFR decline.\n\nFlaw Identification:\nOption B exposes that patients with worse, faster-declining kidney disease are preferentially guided to take acetaminophen because safer alternatives (NSAIDs) are banned for them. Therefore, worsening disease is the common cause of BOTH the acetaminophen prescription and the rapid decline in eGFR. The apparent nephrotoxicity is an artifact of medical indication confounding.",
+        "distractor_elimination": {
+          "A": "Incorrect (Weak Mechanistic Detail). Hepatic metabolism does not rule out toxic downstream renal metabolites or hemodynamic effects; it does not dismantle the epidemiological causal fallacy.",
+          "B": "Incorrect (Minor Side Effect Distraction). Mild nausea does not affect the logical relationship between acetaminophen and renal filtration rate.",
+          "C": "CORRECT. Decisively weakens the causal argument by exposing confounding by medical indication.",
+          "D": "Incorrect (Irrelevant Financial Metric). Drug pricing has zero logical connection to nephrotoxic causality.",
+          "E": "Incorrect (Demographic Neutrality). Having a diverse age and geographic distribution generally strengthens study generalizability, rather than exposing a logical flaw."
+        }
+      },
+      "examiner_trap_alert": "Confounding by Indication in IMAT: Always ask yourself: 'Why did the patient take the pill?' If doctors give the drug specifically to the highest-risk, most symptomatic patients, correlating the drug with bad outcomes is a textbook confounder."
+    },
+    {
+      "id": "LR_FLAW_02",
+      "category": "Weakening Arguments & Detecting Reasoning Flaws",
+      "subtopic": "Post Hoc Ergo Propter Hoc & Spontaneous Remission (Bell's Palsy)",
+      "difficulty": "Challenging (IMAT/BMAT High-Tier)",
+      "stimulus_type": "Clinical Efficacy Claim Analysis",
+      "passage": "Private Neurological Clinic Brochure:\n\"Our clinic offers high-pressure hyperbaric oxygen therapy (HBOT) for acute Bell's palsy (idiopathic unilateral facial nerve paralysis). In our most recent patient cohort, 50 consecutive patients presenting within 72 hours of sudden facial weakness underwent a series of 10 HBOT sessions. By six months, 86% of these patients achieved complete recovery of facial nerve motor function (House-Brackmann Grade I). This striking outcome proves that HBOT is a highly effective, restorative medical intervention that reverses facial nerve axonopathy.\"",
+      "question_stem": "Which of the following, if true, most seriously WEAKENS the clinic's promotional claim?",
+      "options": [
+        "Hyperbaric oxygen chambers require specialized high-pressure steel vessels and trained respiratory technicians.",
+        "Acute Bell's palsy affects approximately 20 to 30 individuals per 100,000 person-years worldwide.",
+        "Some patients experienced mild tympanic membrane barotrauma during hyperbaric chamber compression.",
+        "Large-scale natural history studies show that between 70% and 85% of untreated acute Bell's palsy patients achieve spontaneous, complete recovery within six months.",
+        "Corticosteroid therapy is frequently prescribed by emergency physicians for acute neuro-inflammatory conditions."
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "pedagogical_explanation": {
+        "underlying_principle": "The argument commits the 'post hoc ergo propter hoc' (after this, therefore because of this) fallacy and ignores the natural history and spontaneous remission rate of the pathology. Attributing recovery to an intervention requires showing that the recovery rate exceeds the background natural recovery rate without intervention.",
+        "rigorous_proof": "Argument Structure:\n• Premise: Patients received HBOT after Bell's palsy onset; 86% recovered by 6 months.\n• Conclusion: HBOT caused the recovery.\n\nRefutation:\nOption B provides baseline natural history data: 70% to 85% of untreated Bell's palsy patients recover on their own with ZERO treatment. An 86% recovery rate in a small, uncontrolled sample of 50 patients is virtually indistinguishable from the spontaneous remission rate. Thus, the recovery cannot be attributed to HBOT.",
+        "distractor_elimination": {
+          "A": "Incorrect (Logistical / Equipment Detail). Equipment complexity does not evaluate therapeutic efficacy.",
+          "B": "Incorrect (General Epidemiological Incidence). Disease incidence has no bearing on whether HBOT caused the observed recovery.",
+          "C": "Incorrect (Minor Adverse Effect). Barotrauma is a side effect; it does not disprove facial nerve recovery.",
+          "D": "CORRECT. Demonstrates that the outcome matches spontaneous natural recovery, devastating the causal claim.",
+          "E": "Incorrect (External Treatment Fact). Mentions corticosteroids in the abstract, but does not provide evidence about this specific cohort's outcomes."
+        }
+      },
+      "examiner_trap_alert": "The Spontaneous Remission Trap: Never credit a medical therapy for an outcome if the human body naturally achieves that exact outcome on its own without intervention. An uncontrolled trial of a self-limiting condition proves nothing."
+    },
+    {
+      "id": "LR_FLAW_03",
+      "category": "Weakening Arguments & Detecting Reasoning Flaws",
+      "subtopic": "Survivorship Bias & Immortal Time Bias in ICU Protocols",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Intensive Care Trial Evaluation",
+      "passage": "Intensive Care Unit Audit Report:\n\"We evaluated a multi-drug metabolic resuscitation protocol (high-dose intravenous ascorbic acid, thiamine, and hydrocortisone) in 120 patients admitted with refractory septic shock. Among the 70 patients who survived long enough to complete the entire prescribed 7-day intravenous infusion regimen, 28-day all-cause mortality was only 14.3%, compared to a historical ICU mortality rate of 38.0%. The intensive care director concluded that completing this metabolic resuscitation protocol dramatically improves survival in septic shock.\"",
+      "question_stem": "Which of the following identifies the most critical methodological FLAW in the ICU director's deduction?",
+      "options": [
+        "Hydrocortisone can induce transient hyperglycemia in critically ill diabetic patients.",
+        "Ascorbic acid and thiamine are water-soluble vitamins that are excreted rapidly through the urinary tract.",
+        "Septic shock is defined by the international Sepsis-3 consensus as persistent hypotension requiring vasopressors to maintain MAP ≥ 65 mmHg.",
+        "The historical control cohort was treated in the same hospital five years prior to the current study.",
+        "The audit commits survivorship (immortal time) bias by restricting the analysis exclusively to patients who survived the first 7 days, ignoring those who died during days 1 to 6."
+      ],
+      "correct_index": 4,
+      "correct_option": "E",
+      "pedagogical_explanation": {
+        "underlying_principle": "Immortal time bias / survivorship bias occurs when patients must survive a certain period of time (e.g. 7 days of treatment) to be counted in the intervention group. Because patients who die early are excluded from the denominator of the 'completed regimen' group, the mortality of that group is artificially suppressed, creating a fraudulent appearance of survival benefit.",
+        "rigorous_proof": "Flaw Analysis:\n• 120 patients started the trial; 70 completed 7 days; 50 dropped out / died early.\n• In septic shock, the vast majority of deaths occur within the first 48 to 96 hours.\n• By evaluating only the 70 patients who survived at least 7 days, the author guaranteed that any patient dying on days 1-6 was deleted from the analysis.\n• Even if the protocol were lethal, patients who survived 7 days would naturally show low subsequent mortality because they were the strongest, most stable subgroup to begin with.\n• Option A precisely names and describes this fatal methodological flaw.",
+        "distractor_elimination": {
+          "A": "Incorrect (Minor Clinical Side Effect). Transient hyperglycemia is manageable and does not explain the statistical survival artifact.",
+          "B": "Incorrect (Basic Pharmacokinetics). Water solubility does not address the statistical distortion of excluding early deaths.",
+          "C": "Incorrect (Definitional Distraction). The consensus definition of septic shock does not resolve or excuse the analytical bias.",
+          "D": "Incorrect (Secondary Confounder). While historical controls have limitations, the exclusion of 50 non-completers within the active cohort is a far more fundamental flaw.",
+          "E": "CORRECT. Flawlessly identifies immortal time / survivorship bias."
+        }
+      },
+      "examiner_trap_alert": "Immortal Time Bias: If an investigator says 'among those who survived long enough to complete the treatment...', STOP right there. That group is literally defined by being immortal during the treatment window. It is a classic Cambridge/IMAT trap."
+    },
+    {
+      "id": "LR_FLAW_04",
+      "category": "Weakening Arguments & Detecting Reasoning Flaws",
+      "subtopic": "Affirming the Consequent & Deductive Diagnostic Inversion",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Clinical Diagnostic Logic Evaluation",
+      "passage": "Endocrinology Teaching Rounds:\n\"Attending Physician: 'If a patient possesses an autonomous cortisol-secreting adrenocortical adenoma (Cushing's syndrome), their hypothalamic-pituitary-adrenal axis will be suppressed, and they will fail to suppress serum cortisol concentrations below 1.8 µg/dL following an overnight 1 mg dexamethasone suppression test.'\nMedical Student: 'Patient B presented with obesity and hypertension, and their serum cortisol was 4.2 µg/dL after the overnight 1 mg dexamethasone suppression test. Therefore, Patient B definitely has an autonomous cortisol-secreting adrenocortical adenoma.'\"",
+      "question_stem": "Which of the following best describes the logical error in the medical student's reasoning?",
+      "options": [
+        "The student commits the formal fallacy of Affirming the Consequent by treating a necessary diagnostic sign of the disease as if it were a unique and sufficient condition for establishing that specific etiology.",
+        "The student commits the fallacy of Denying the Antecedent by concluding that the absence of symptoms guarantees the absence of disease.",
+        "The student uses an ad hominem argument to attack the clinical competence of the attending physician.",
+        "The student conflates a continuous physiological variable with an immutable qualitative genetic trait.",
+        "The student assumes that Cushing's syndrome is exclusively caused by ectopic adrenocorticotropic hormone (ACTH) secretion."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "pedagogical_explanation": {
+        "underlying_principle": "The argument exhibits the formal propositional fallacy of Affirming the Consequent: from the premise (P implies Q) and the observation (Q is true), it is invalid to deduce that P is true. In medicine, many distinct etiologies (pituitary adenomas, pseudo-Cushing states from chronic depression or alcoholism, CYP3A4-inducing medications) can cause a positive dexamethasone non-suppression test.",
+        "rigorous_proof": "Formal Logic Analysis:\n• Rule: Adenoma (P) → Non-suppression (Q)\n• Observation: Patient has Non-suppression (Q)\n• Deduction by student: Patient has Adenoma (P)\n\nTruth Table / Venn Proof:\nP is a subset of Q (P ⊆ Q). Knowing that an element lies inside Q does NOT prove it lies inside subset P. Q contains pseudo-Cushing's, pituitary Cushing's disease, ectopic ACTH tumors, and pharmacokinetic failure. Option A precisely articulates this formal deductive failure.",
+        "distractor_elimination": {
+          "A": "CORRECT. Perfectly characterizes Affirming the Consequent (confusing necessary consequence with sufficient cause).",
+          "B": "Incorrect (Wrong Fallacy). Denying the Antecedent would be: 'Patient does not have an adenoma, therefore they will suppress cortisol.' That is not what the student did.",
+          "C": "Incorrect (Absurd Rhetorical Category). No personal insult or ad hominem attack occurred.",
+          "D": "Incorrect (Irrelevant Categorical Philosophy). The student did not confuse continuous variables with genetics; they committed a standard conditional logic error.",
+          "E": "Incorrect (Inverted Etiology). The student assumed an adrenal adenoma, not ectopic ACTH."
+        }
+      },
+      "examiner_trap_alert": "Affirming the Consequent in Medicine: If Disease X causes Symptom Y, having Symptom Y DOES NOT prove Disease X. A test can be highly sensitive (All X have Y) without being specific (Only X have Y)."
+    },
+    {
+      "id": "LR_FLAW_05",
+      "category": "Weakening Arguments & Detecting Reasoning Flaws",
+      "subtopic": "Berkson's Fallacy & Collider Stratification in Hospital Sampling",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Epidemiological Research Study Critique",
+      "passage": "Cross-Sectional Hospital Registry Study:\n\"An epidemiological audit evaluated 4,000 adult patients consecutively admitted to a metropolitan university hospital inpatient service. The investigators observed a strong and statistically significant inverse correlation between severe chronic obstructive pulmonary disease (COPD) and osteoarthritis (Odds Ratio = 0.48; 95% CI, 0.38-0.61; p < 0.001). The authors concluded that the chronic systemic inflammatory response and altered cytokine milieu in COPD patients exert a biological protective effect that shields articular cartilage from degenerative osteoarthritis.\"",
+      "question_stem": "Which of the following, if true, identifies the most profound REASONING FLAW in the researchers' biological conclusion?",
+      "options": [
+        "Osteoarthritis is characterized by chondrocyte senescence and loss of type II collagen in weight-bearing synovial joints.",
+        "Patients admitted to the hospital are not representative of the general population because individuals who have neither COPD nor osteoarthritis are rarely hospitalized, creating a spurious negative statistical association within the inpatient cohort (Berkson's fallacy).",
+        "COPD is diagnosed spirometrically by an irreversible post-bronchodilator FEV1/FVC ratio of less than 0.70.",
+        "Inhaled corticosteroid inhalers used by COPD patients can be absorbed systemically in trace amounts.",
+        "Radiographic severity of osteoarthritis does not always correlate linearly with patient-reported pain scores."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "pedagogical_explanation": {
+        "underlying_principle": "Berkson's fallacy (Berkson's bias or collider stratification bias) occurs when hospital inpatients are sampled. Because hospitalization depends on having disease A, disease B, or both, conditioning on hospitalization creates an artificial negative dependency between two completely independent diseases. If you are hospitalized with COPD, you don't need osteoarthritis to be admitted; if you don't have COPD, you likely need severe osteoarthritis to be admitted. This creates a spurious negative correlation.",
+        "rigorous_proof": "Statistical Collider Proof:\n• Let C = COPD, O = Osteoarthritis, H = Hospitalization.\n• P(H | C = 1) is high; P(H | O = 1) is high; P(H | C = 0 and O = 0) is near zero.\n• When conditioning on H = 1 (hospitalized cohort), knowing that a patient does NOT have C drastically increases the probability that they have O (to explain their hospitalization).\n• Conversely, if they have severe C, they are admitted regardless of O.\n• In the general population, C and O are completely uncorrelated, but within the hospital, OR < 1.0. Attributing this to biological cartilage protection is a catastrophic reasoning flaw. Option A identifies this directly.",
+        "distractor_elimination": {
+          "A": "Incorrect (Irrelevant Pathophysiology). Chondrocyte senescence describes disease pathology, but does not address the epidemiological sampling flaw.",
+          "B": "CORRECT. Accurately defines Berkson's fallacy and collider stratification bias.",
+          "C": "Incorrect (Diagnostic Spirometry Fact). True medical fact, but entirely irrelevant to the statistical distortion.",
+          "D": "Incorrect (Pharmacological Trivia). Systemic absorption of steroids does not explain the mathematical sampling artifact.",
+          "E": "Incorrect (Clinical Symptomatology). Discordance between X-rays and pain does not explain why the hospital sample produced a false inverse odds ratio."
+        }
+      },
+      "examiner_trap_alert": "Berkson's Paradox: When a study shows that two completely unrelated diseases 'protect' against each other IN HOSPITALIZED PATIENTS, it is almost always Berkson's bias. Never generalize hospital associations to general biology."
+    },
+    {
+      "id": "LR_FLAW_06",
+      "category": "Weakening Arguments & Detecting Reasoning Flaws",
+      "subtopic": "Base Rate Fallacy & Positive Predictive Value (Bayesian Reasoning)",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Diagnostic Screening Policy Critique",
+      "passage": "Public Health Screening Press Release:\n\"A newly engineered multi-analyte blood assay for early-stage ovarian carcinoma demonstrates an exceptional analytical sensitivity of 99.0% and a specificity of 98.0%. The foundation's chief medical officer proclaimed: 'Because this test has a 98% specificity and 99% sensitivity, any asymptomatic woman in the general population who tests positive can be virtually certain—with a 98% to 99% probability—that she is actively harboring early-stage ovarian carcinoma.'\"",
+      "question_stem": "Which of the following identifies the fundamental ERROR in the chief medical officer's statistical claim?",
+      "options": [
+        "The officer fails to recognize that sensitivity is defined as the false-negative rate divided by the true-negative rate.",
+        "The officer assumes that ovarian carcinoma is exclusively composed of high-grade serous epithelial tumors.",
+        "The officer commits the base rate fallacy by conflating test sensitivity and specificity with Positive Predictive Value (PPV), completely ignoring that in a low-prevalence population, the vast majority of positive test results are false positives.",
+        "The officer does not account for the financial cost of performing confirmatory transvaginal ultrasonography.",
+        "The officer assumes that human blood contains cell-free DNA fragments."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "pedagogical_explanation": {
+        "underlying_principle": "The argument commits the base rate neglect fallacy (prosecutor's fallacy). Sensitivity (P(Positive | Disease)) and specificity (P(Negative | No Disease)) are intrinsic test properties. The probability that a patient has the disease given a positive result (Positive Predictive Value = P(Disease | Positive)) depends critically on the disease prevalence (base rate) in the screened population.",
+        "rigorous_proof": "Bayesian Mathematical Proof:\n• Assume an asymptomatic population of 100,000 women.\n• Background prevalence of early ovarian cancer in asymptomatic women is roughly 1 in 2,500 (40 cases per 100,000).\n• True Positives: 40 × 0.99 = 39.6 (approx. 40 true positives).\n• Healthy individuals: 100,000 - 40 = 99,960.\n• False Positives: 99,960 × (1 - 0.98) = 99,960 × 0.02 = 1,999.2 (approx. 2,000 false positives).\n• Positive Predictive Value (PPV) = True Positives / (True Positives + False Positives) = 40 / (40 + 2,000) = 40 / 2,040 ≈ 1.96%.\n• A woman testing positive has only a ~2% chance of actually having cancer, NOT 98-99%! Over 98% of positive tests are FALSE positives. Option A exposes this classic base rate neglect.",
+        "distractor_elimination": {
+          "A": "Incorrect (Erroneous Definition). Sensitivity is True Positives / (True Positives + False Negatives); the officer did not commit this specific algebra error, but ignored prevalence.",
+          "B": "Incorrect (Histopathological Detail). Histological subtypes do not alter the mathematical inversion of Bayesian probabilities.",
+          "C": "CORRECT. Perfect description of the base rate fallacy / PPV inversion.",
+          "D": "Incorrect (Financial / Practical Issue). Financial considerations do not explain the mathematical reasoning flaw.",
+          "E": "Incorrect (Biological Reality). Cell-free DNA is a real biological phenomenon, and assuming its presence is not an error."
+        }
+      },
+      "examiner_trap_alert": "Sensitivity/Specificity vs PPV: A test with 99% sensitivity and 99% specificity sounds infallible, but when screening a rare disease (1 in 10,000), false positives massively outnumber true positives. PPV is low when prevalence is low!"
+    },
+    {
+      "id": "LR_STR_01",
+      "category": "Strengthening Arguments",
+      "subtopic": "Reversibility & Challenge-Dechallenge-Rechallenge Protocol",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Pharmacovigilance Hypothesis Evaluation",
+      "passage": "Pharmacovigilance Investigative Report:\n\"During post-marketing surveillance of the newly approved selective oral tyrosine kinase inhibitor Tyr-88, the regulatory agency received 16 reports of acute hepatocellular injury (alanine aminotransferase [ALT] > 8 times the upper limit of normal) developing within four weeks of initiation. Sceptics from the manufacturing company asserted that these hepatic flare-ups were coincidental episodes of viral hepatitis, biliary obstruction, or concomitant alcohol consumption, rather than drug-induced liver injury (DILI).\"",
+      "question_stem": "Which of the following clinical observations, if established, provides the STRONGEST EMPIRICAL SUPPORT for the hypothesis that Tyr-88 is the direct causal agent of the hepatocellular injury?",
+      "options": [
+        "Tyr-88 is packaged in blister packs containing 30 film-coated tablets intended for oral administration.",
+        "Physicians across four different tertiary medical centers submitted the spontaneous adverse event reports.",
+        "The chemical synthesis of Tyr-88 involves high-temperature catalytic hydrogenation in an organic solvent.",
+        "In all 16 patients, serum ALT levels normalized completely upon drug cessation (dechallenge), and in 4 patients who were subsequently re-exposed to low-dose Tyr-88, ALT levels spiked again within 48 hours in the absence of any other medication changes (positive rechallenge).",
+        "Viral hepatitis serologies (HBsAg and anti-HCV) are performed using automated chemiluminescent microparticle immunoassays."
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "pedagogical_explanation": {
+        "underlying_principle": "In clinical pharmacology and Bradford Hill's criteria for causality, the challenge-dechallenge-rechallenge paradigm provides virtually incontrovertible evidence of direct biological causality. Showing that withdrawal of the suspect agent resolves the injury (dechallenge) and controlled re-introduction reproduces the injury (rechallenge) eliminates coincidental viral or lifestyle causes.",
+        "rigorous_proof": "Hypothesis: Tyr-88 directly causes hepatocellular injury.\nRival Hypothesis: Concomitant viral infection, alcohol, or background noise caused the ALT spikes.\n\nAnalysis of Option B:\n• Dechallenge: 16/16 patients normalized ALT when the drug stopped. This satisfies temporality and reversibility.\n• Rechallenge: 4 patients re-exposed experienced rapid recurrence within 48 hours without any other medication changes.\n• The probability that an unrelated viral flare or random event coincidentally occurred on initial exposure, vanished upon drug cessation, and precisely recurred upon re-exposure in multiple independent patients is astronomically low. Option B decisively proves causality.",
+        "distractor_elimination": {
+          "A": "Incorrect (Irrelevant Packaging Fact). Blister packaging has zero bearing on biological hepatotoxicity.",
+          "B": "Incorrect (Geographic Diversity). Reporting from multiple centers suggests the reports aren't a local artifact, but does not rule out viral or alcohol confounders as powerfully as positive rechallenge.",
+          "C": "Incorrect (Chemical Synthesis Trivia). Industrial synthesis pathways do not prove in vivo human hepatotoxicity.",
+          "D": "CORRECT. The gold-standard clinical pharmacology evidence (dechallenge/rechallenge) that directly proves causality.",
+          "E": "Incorrect (Assay Methodology). The type of assay used to test for hepatitis does not provide evidence of drug causality."
+        }
+      },
+      "examiner_trap_alert": "Dechallenge-Rechallenge in DILI: Whenever an IMAT question asks you to prove a drug caused an adverse effect, look for 'reversibility upon withdrawal and recurrence upon re-exposure' (Bradford Hill reversibility criterion)."
+    },
+    {
+      "id": "LR_STR_02",
+      "category": "Strengthening Arguments",
+      "subtopic": "Mendelian Randomization & Genetic Instrumental Variables",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Epidemiological Causal Inference Analysis",
+      "passage": "Cardiovascular Research Working Group Statement:\n\"Numerous prospective observational cohorts have demonstrated that individuals with elevated plasma concentrations of lipoprotein(a) [Lp(a)] have a two- to three-fold higher incidence of calcific aortic valve stenosis (CAVS). However, critics argue that Lp(a) is an acute-phase reactant whose elevation is merely a consequence of pre-existing subclinical valvular inflammation (reverse causation) or is confounded by unmeasured atherogenic lipid fractions.\"",
+      "question_stem": "Which of the following research findings would provide the most decisive STRENGTHENING EVIDENCE that elevated Lp(a) is an etiologic, causal driver of calcific aortic valve stenosis?",
+      "options": [
+        "Aortic valve stenosis is more common in elderly males than in pre-menopausal females.",
+        "Surgical bioprosthetic aortic valve replacement restores normal transvalvular hemodynamic pressure gradients in patients with end-stage aortic stenosis.",
+        "Lp(a) particles consist of an LDL-like particle covalently bound to the highly polymorphic glycoprotein apolipoprotein(a).",
+        "Statins are highly effective at lowering circulating apolipoprotein B-100 levels but do not significantly lower Lp(a) levels.",
+        "Patients who carry lifelong, genetically determined single-nucleotide polymorphisms in the LPA gene that constitutively elevate plasma Lp(a) exhibit a proportional, dose-dependent 2.5-fold increase in calcific aortic valve stenosis, independent of age, smoking, and LDL-cholesterol levels."
+      ],
+      "correct_index": 4,
+      "correct_option": "E",
+      "pedagogical_explanation": {
+        "underlying_principle": "Mendelian Randomization acts as nature's randomized clinical trial. Because genetic variants (alleles in the LPA gene) are randomly assorted at gametogenesis (Mendel's Law of Independent Assortment) and fixed for life, they cannot be caused by later disease (ruling out reverse causation) and are largely independent of postnatal lifestyle confounders.",
+        "rigorous_proof": "Causal Challenge:\n• Claim: Elevated Lp(a) causes CAVS.\n• Rival hypothesis 1: CAVS inflammation causes elevated Lp(a) (reverse causality).\n• Rival hypothesis 2: Lifestyle, age, or LDL-C confound the relationship.\n\nAnalysis of Option A (Mendelian Randomization):\n• Genetically fixed high Lp(a) variants exist prior to disease onset from birth, making reverse causation impossible.\n• The genetic variants correlate with CAVS incidence in a dose-dependent manner and independent of LDL or smoking.\n• This establishes a clean instrumental variable proof that circulating Lp(a) is an independent etiologic driver.",
+        "distractor_elimination": {
+          "A": "Incorrect (Demographic Incidence). Male/elderly predominance is a known epidemiological distribution, not a causal proof for Lp(a).",
+          "B": "Incorrect (Surgical Valve Replacement). Surgical intervention demonstrates anatomical hemodynamic correction, not the biochemical etiology of the disease.",
+          "C": "Incorrect (Biochemical Structure). Describing the molecular structure of Lp(a) does not prove that it causes aortic valve calcification.",
+          "D": "Incorrect (Statin Limitation). Statin insensitivity is a pharmacological property that does not prove Lp(a) is the causal driver of valve calcification.",
+          "E": "CORRECT. Uses Mendelian randomization to demolish both reverse causation and confounding, providing the ultimate causal proof."
+        }
+      },
+      "examiner_trap_alert": "Mendelian Randomization: In modern IMAT critical thinking, Mendelian randomization is the premier method to rule out reverse causality. Genes are fixed at conception; the disease cannot reach back in time to alter your DNA."
+    },
+    {
+      "id": "LR_STR_03",
+      "category": "Strengthening Arguments",
+      "subtopic": "Biological Dose-Response Gradient & Subgroup Analysis",
+      "difficulty": "Challenging (IMAT/BMAT High-Tier)",
+      "stimulus_type": "Occupational Toxicology Hypothesis Evaluation",
+      "passage": "Occupational Health Epidemiology Team:\n\"Our team observed a markedly elevated rate of pulmonary interstitial fibrosis among workers in an abrasive sandblasting and foundry plant. An industrial trade association contested our finding, arguing that the pulmonary fibrosis observed in these workers was entirely caused by heavy cigarette smoking and urban air pollution, rather than occupational crystalline silica dust inhalation.\"",
+      "question_stem": "Which of the following findings would most decisively STRENGTHEN the researchers' claim that occupational silica inhalation is the primary causal agent of the pulmonary fibrosis?",
+      "options": [
+        "Among a sub-cohort of foundry workers who are verified lifelong non-smokers and reside in clean rural zones, there is a strict, monotonic increase in fibrotic lung changes across ascending deciles of cumulative lifetime respirable silica dust exposure.",
+        "Silicon is the second most abundant element by mass in the Earth's crust after oxygen.",
+        "Workers who develop severe pulmonary fibrosis report progressive exertional dyspnea and a dry, persistent cough.",
+        "Foundry workers wear cotton face masks that filter coarse particles greater than 50 micrometers in aerodynamic diameter.",
+        "Chest radiographs of foundry workers are interpreted according to the International Labour Office (ILO) classification."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "pedagogical_explanation": {
+        "underlying_principle": "Under Bradford Hill's criteria for causation, establishing a biological gradient (monotonic dose-response relationship) within a strictly controlled subgroup that completely lacks the rival confounder (lifelong non-smokers in clean rural areas) provides definitive evidence of an independent causal relationship.",
+        "rigorous_proof": "Rival Claim: Cigarette smoking and urban air pollution cause the fibrosis.\nStrengthening Mechanism (Option A):\n1. Elimination of Rival Confounders: The sub-cohort consists entirely of lifelong non-smokers living in clean rural areas. Therefore, smoking and urban pollution cannot explain the fibrosis in this group.\n2. Dose-Response Gradient: Higher cumulative silica exposure directly produces more severe fibrotic changes across every ascending decile.\nTogether, these two elements completely dismantle the industry's rival hypothesis and firmly establish silica causality.",
+        "distractor_elimination": {
+          "A": "CORRECT. Isolates the exposure by eliminating smoking/pollution and demonstrates a clear dose-response gradient.",
+          "B": "Incorrect (Geological Fact). The natural abundance of silicon in the Earth's crust is completely irrelevant to inhalational lung pathology.",
+          "C": "Incorrect (Symptom Description). Dyspnea and cough describe the clinical presentation, not its etiology.",
+          "D": "Incorrect (Inadequate Protective Gear). Coarse cotton masks fail to filter respirable silica (< 5 µm), which explains why workers get sick, but does not provide causal proof against smoking.",
+          "E": "Incorrect (Radiological Standard). The ILO classification is a scoring tool, not evidence of causality."
+        }
+      },
+      "examiner_trap_alert": "Subgroup Isolation + Dose-Response: To kill a rival hypothesis (like smoking), show that the effect still occurs with a dose-dependent gradient in a group that NEVER smoked."
+    },
+    {
+      "id": "LR_STR_04",
+      "category": "Strengthening Arguments",
+      "subtopic": "Molecular Specificity & Genetic Knockout Validation",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Neuropharmacology Experimental Analysis",
+      "passage": "Neuropharmacology Laboratory Abstract:\n\"We synthesized the novel lipophilic molecule KPA-9 and demonstrated that systemic administration significantly suppresses mechanical allodynia and thermal hyperalgesia in a rodent model of neuropathic nerve constriction injury. We hypothesize that KPA-9 exerts its analgesic effect specifically and selectively via agonism at peripheral kappa-opioid receptors (KOR), rather than through non-specific central sedation or cyclooxygenase inhibition.\"",
+      "question_stem": "Which of the following experimental findings provides the STRONGEST EMPIRICAL CONFIRMATION of the researchers' specific mechanistic hypothesis?",
+      "options": [
+        "KPA-9 has a molecular weight of 428 Daltons and is soluble in physiological saline with 5% ethanol.",
+        "The anti-allodynic analgesic effect of KPA-9 is completely abolished in kappa-opioid receptor knockout mice and in wild-type mice pre-treated with the selective KOR antagonist nor-binaltorphimine, but is completely unaffected by selective mu- or delta-opioid receptor antagonists.",
+        "Rats subjected to chronic constriction injury exhibit reduced locomotor activity inside open-field behavioral chambers.",
+        "Opioid receptors are seven-transmembrane G-protein coupled receptors coupled to inhibitory G_i/o proteins.",
+        "Morphine is an established clinical opioid that predominantly activates mu-opioid receptors to produce analgesia."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "pedagogical_explanation": {
+        "underlying_principle": "In pharmacology, demonstrating target specificity requires showing that the biological effect is selectively blocked by genetic ablation (knockout) of the target or by a selective antagonist of that target, while remaining unperturbed by antagonists of closely related receptors (mu and delta).",
+        "rigorous_proof": "Hypothesis: KPA-9 works selectively via kappa-opioid receptors (KOR).\nExperimental Validation in Option B:\n1. Target Necessity: In KOR-knockout mice, KPA-9 has zero analgesic effect. This proves KOR is strictly necessary.\n2. Pharmacological Blockade: Selective KOR antagonist (nor-BNI) abolishes the effect in wild-type mice.\n3. Negative Controls for Related Targets: Antagonists for mu and delta receptors have no effect, ruling out non-specific opioid cross-reactivity.\nThis tri-fold experimental control proves the specific receptor mechanism beyond reasonable doubt.",
+        "distractor_elimination": {
+          "A": "Incorrect (Physicochemical Properties). Molecular weight and solubility do not prove receptor-mediated pharmacological specificity.",
+          "B": "CORRECT. Provides definitive proof of mechanism via selective knockout, selective antagonist blockade, and negative receptor controls.",
+          "C": "Incorrect (Behavioral Baseline). Decreased locomotor activity in injured rats is a baseline symptom of pain, not evidence of drug mechanism.",
+          "D": "Incorrect (General Receptor Biology). Describing G-protein coupling does not prove that KPA-9 selectively binds KOR.",
+          "E": "Incorrect (External Reference Compound). Morphine's mechanism of action has no bearing on KPA-9's selectivity."
+        }
+      },
+      "examiner_trap_alert": "Specificity through Double Disruption: In experimental science, the gold standard for proving a mechanism is: (1) delete the target (effect disappears); (2) block the target with a specific antagonist (effect disappears); (3) block unrelated targets (effect remains)."
+    },
+    {
+      "id": "LR_STR_05",
+      "category": "Strengthening Arguments",
+      "subtopic": "Negative Control Outcomes & Ruling Out Systemic Confounders",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Health Informatics Quality Improvement Evaluation",
+      "passage": "Hospital Quality Improvement Committee Report:\n\"Following the implementation of an automated electronic health record (EHR) machine-learning sepsis early-warning algorithm, in-hospital mortality among patients diagnosed with sepsis dropped from 22.0% to 15.5% over the subsequent 12 months. Sceptical administrators claimed that this mortality drop was merely an incidental reflection of a concurrent hospital-wide initiative that improved overall nurse-to-patient staffing ratios and intensive care nursing quality across the entire institution.\"",
+      "question_stem": "Which of the following empirical findings most effectively COUNTERS the administrators' objection and STRENGTHENS the claim that the sepsis algorithm itself was the cause of the reduced sepsis mortality?",
+      "options": [
+        "The sepsis machine-learning algorithm runs on a secure cloud server and triggers automated pager alerts to rapid response teams.",
+        "The total number of patients admitted to the hospital increased by 3.5% compared to the prior calendar year.",
+        "During the exact same 12-month period in the same hospital, in-hospital mortality rates for acute clinical conditions that are NOT triggered by the sepsis algorithm (such as ST-elevation myocardial infarction, hemorrhagic stroke, and polytrauma) remained completely unchanged.",
+        "Clinical nurses underwent a mandatory 30-minute online orientation module explaining the user interface of the algorithm.",
+        "Sepsis is defined as organ dysfunction caused by a dysregulated host response to infection."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "pedagogical_explanation": {
+        "underlying_principle": "A 'negative control outcome' is a clinical endpoint that should be equally influenced by the hypothesized confounder (improved hospital-wide nursing ratios), but should NOT be influenced by the specific intervention (the sepsis algorithm). If non-sepsis acute conditions show zero change in mortality, the general nursing improvement hypothesis cannot explain the sepsis-specific mortality drop.",
+        "rigorous_proof": "Administrators' Objection: Improved nurse-to-patient ratios across the entire hospital caused the drop in mortality.\nStrengthening Analysis via Option B:\n• If improved general nursing was the true cause of lower mortality, it would have reduced mortality across ALL acute life-threatening conditions (STEMI, stroke, trauma).\n• However, STEMI, stroke, and trauma mortality remained completely flat.\n• The mortality reduction was strictly confined to sepsis—the exact disease targeted by the algorithm.\n• This negative control outcome decisively refutes the administrators' confounder and establishes that the algorithm drove the benefit.",
+        "distractor_elimination": {
+          "A": "Incorrect (Technical Architecture). Server specs and pager delivery mechanisms do not rule out staffing confounders.",
+          "B": "Incorrect (Volume Fluctuation). A minor increase in admissions does not explain the differential survival benefit in sepsis.",
+          "C": "CORRECT. Flawless use of negative control outcomes to rule out hospital-wide institutional confounding.",
+          "D": "Incorrect (Compliance / Training). A brief orientation module does not rule out the administrators' staffing counter-hypothesis.",
+          "E": "Incorrect (Consensus Definition). Re-stating the definition of sepsis does not evaluate causality."
+        }
+      },
+      "examiner_trap_alert": "Negative Control Outcomes: When someone argues: 'A hospital-wide improvement caused your specific success', show that OTHER hospital conditions showed zero improvement. If only the treated condition improved, the specific intervention worked!"
+    },
+    {
+      "id": "LR_STR_06",
+      "category": "Strengthening Arguments",
+      "subtopic": "Temporality, Causality & Heat-Inactivated Controls in Microbiome Studies",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Metabolic Physiology Hypothesis Testing",
+      "passage": "Metabolic Disease Laboratory Proposal:\n\"Epidemiological surveys show that lean human volunteers possess significantly higher fecal abundances of the mucin-degrading bacterium Akkermansia muciniphila than morbidly obese, insulin-resistant individuals. We hypothesize that viable A. muciniphila colonization actively preserves the gut mucosal barrier and directly protects against high-fat diet-induced metabolic endotoxemia and insulin resistance, rather than being an inconsequential passenger that merely thrives in lean digestive environments.\"",
+      "question_stem": "Which of the following experimental findings provides the STRONGEST CONFIRMATION of this causal hypothesis?",
+      "options": [
+        "Akkermansia muciniphila is an oval-shaped, non-motile, strictly anaerobic Gram-negative bacterium.",
+        "Mice fed a high-fat diet consume more calories per gram of body weight than mice fed standard chow.",
+        "Adipose tissue in obese mice contains elevated levels of pro-inflammatory tumor necrosis factor-alpha (TNF-alpha).",
+        "Inoculating germ-free mice with live A. muciniphila prior to initiating a high-fat diet prevents mucosal barrier degradation, circulating LPS leakage, and insulin resistance, whereas mice inoculated with an isogenic autoclaved (heat-killed) strain develop severe metabolic dysfunction under identical caloric intake.",
+        "The genome of Akkermansia muciniphila has been fully sequenced using third-generation long-read sequencing technology."
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "pedagogical_explanation": {
+        "underlying_principle": "Proving biological causality for a microbiome member requires fulfilling Koch's postulates in gnotobiotic models: introducing the viable organism prior to disease induction (temporality) prevents or alters pathology, while an identical heat-inactivated control fails to protect under identical caloric intake (proving active biological viability is required).",
+        "rigorous_proof": "Hypothesis: Viable A. muciniphila directly protects against diet-induced endotoxemia and insulin resistance.\nRival Hypothesis: A. muciniphila is merely a passive passenger that prefers the digestive environment of lean mice.\n\nOption B Proof:\n1. Prospective Colonization (Temporality): Inoculation occurred BEFORE the high-fat diet, proving bacteria precede the metabolic state.\n2. Specific Biological Protection: Live bacteria prevented the damage.\n3. Inactivated Negative Control: Autoclaved (heat-killed) bacteria under identical caloric intake failed to protect, proving that passive bacterial cell debris is insufficient and that active physiological functioning of live bacteria is required.\nThis conclusively establishes direct causality.",
+        "distractor_elimination": {
+          "A": "Incorrect (Bacterial Morphological Features). Gram status and shape do not prove protective metabolic causality.",
+          "B": "Incorrect (Dietary Caloric Intake). Acknowledging that high-fat food is calorically dense does not evaluate bacterial mechanism.",
+          "C": "Incorrect (General Obesity Pathology). Adipose inflammation in obesity is a known symptom, not proof of bacterial protection.",
+          "D": "CORRECT. Combines prospective gnotobiotic colonization, identical caloric controls, and heat-inactivated controls to prove active causality.",
+          "E": "Incorrect (Genomic Sequencing Trivia). Having a sequenced genome does not prove functional in vivo protection."
+        }
+      },
+      "examiner_trap_alert": "Gnotobiotic Controls in Biology: Whenever evaluating whether a gut bug is a cause or an effect, look for germ-free (gnotobiotic) mouse transfer. If transferring the bug transfer the phenotype, it is a true cause, not an effect."
+    },
+    {
+      "id": "LR_PROP_01",
+      "category": "Formal Propositional Logic",
+      "subtopic": "Conditional Chains, Disjunctive Syllogism & Modus Tollens",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Formal Propositional Rule Set",
+      "passage": "Consider the following four formal cellular biology rules:\n1. If a primary somatic cell undergoes unrepairable telomeric DNA exhaustion (T), it activates the p53 tumor suppressor cascade (P).\n2. If the p53 tumor suppressor cascade is activated (P), then the cell either enters irreversible replicative senescence (S) OR initiates caspase-mediated apoptosis (A).\n3. If a cell enters irreversible replicative senescence (S), it secretes senescence-associated secretory phenotype cytokines (F).\n4. If senescence-associated secretory phenotype cytokines are secreted (F), surrounding stromal fibroblasts undergo paracrine senescence (E).\n\nExperimental Observation: A primary somatic cell in culture has undergone unrepairable telomeric DNA exhaustion (T), but surrounding stromal fibroblasts definitively DO NOT undergo paracrine senescence (not E).",
+      "question_stem": "Which of the following conclusions MUST be true regarding this primary somatic cell?",
+      "options": [
+        "Surrounding stromal fibroblasts will undergo apoptosis within 48 hours.",
+        "The cell enters irreversible replicative senescence.",
+        "The p53 tumor suppressor cascade was never activated in the cell.",
+        "Unrepairable telomeric DNA exhaustion did not actually occur in the cell.",
+        "The cell initiates caspase-mediated apoptosis."
+      ],
+      "correct_index": 4,
+      "correct_option": "E",
+      "pedagogical_explanation": {
+        "underlying_principle": "Formal deduction using Modus Ponens, Modus Tollens, and the Disjunctive Syllogism rule (P ∨ Q, ¬P ⊢ Q). Tracing truth values across conditional chains allows airtight deductive certainty without speculation.",
+        "rigorous_proof": "Symbolic Notation:\n• Rule 1: T → P\n• Rule 2: P → (S ∨ A)\n• Rule 3: S → F\n• Rule 4: F → E\n\nGiven Facts: T is TRUE; E is FALSE (¬E).\n\nStep-by-step Deduction:\n1. From T and Rule 1 (Modus Ponens): P is TRUE.\n2. From P and Rule 2 (Modus Ponens): (S ∨ A) is TRUE.\n3. From ¬E and Rule 4 (Modus Tollens: (F → E) ≡ (¬E → ¬F)): F is FALSE (¬F).\n4. From ¬F and Rule 3 (Modus Tollens: (S → F) ≡ (¬F → ¬S)): S is FALSE (¬S).\n5. We established in Step 2 that (S ∨ A) is TRUE. Since S is FALSE (Step 4), by Disjunctive Syllogism, A MUST BE TRUE.\nTherefore: 'The cell initiates caspase-mediated apoptosis.' (Option A).",
+        "distractor_elimination": {
+          "A": "Invalid (Unwarranted Speculation). No rule states that stromal fibroblasts undergo apoptosis.",
+          "B": "Invalid (Direct Contradiction). Proven false in Step 4 (¬S): if it entered senescence, surrounding fibroblasts would show paracrine senescence (violating ¬E).",
+          "C": "Invalid (Direct Contradiction). Proven true in Step 1 (T → P): since T occurred, P must have activated.",
+          "D": "Invalid (Contradicts Given Premise). The prompt explicitly states as a fact that T occurred.",
+          "E": "CORRECT. Formally deduced through the conjunction of Modus Ponens, double Modus Tollens, and Disjunctive Syllogism."
+        }
+      },
+      "examiner_trap_alert": "Disjunctive Branching in Logic Chains: When an intermediate step splits into an 'OR' (P → S ∨ A), look for the subsequent chain that eliminates one of the branches via Modus Tollens. Eliminating branch S forces branch A to be true."
+    },
+    {
+      "id": "LR_PROP_02",
+      "category": "Formal Propositional Logic",
+      "subtopic": "Necessary vs Sufficient Conditions & Modus Tollens",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Clinical Triage Protocol Deduction",
+      "passage": "Cardiovascular Intensive Care Unit Guidelines:\n• Rule 1: A patient is eligible for emergency veno-arterial extracorporeal membrane oxygenation (VA-ECMO) ONLY IF refractory cardiogenic shock is present AND an underlying reversible myocardial etiology is documented.\n• Rule 2: If refractory cardiogenic shock is present, high-dose intravenous inotropic infusions will fail to maintain a mean arterial pressure (MAP) above 65 mmHg.\n• Rule 3: If high-dose intravenous inotropic infusions fail to maintain a MAP above 65 mmHg, acute metabolic lactic acidosis will inevitably develop within 6 hours.\n\nClinical Case: Patient K is admitted to the ICU. Continuous blood gas monitoring demonstrates that Patient K DOES NOT develop acute metabolic lactic acidosis within 6 hours of admission.",
+      "question_stem": "Which of the following conclusions MUST logically be true based strictly on the ICU guidelines?",
+      "options": [
+        "Patient K is not eligible for emergency veno-arterial extracorporeal membrane oxygenation (VA-ECMO).",
+        "Patient K has an underlying reversible myocardial etiology documented.",
+        "High-dose intravenous inotropic infusions failed to maintain Patient K's MAP above 65 mmHg.",
+        "Patient K will require veno-venous ECMO instead of veno-arterial ECMO.",
+        "Patient K has refractory cardiogenic shock."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "pedagogical_explanation": {
+        "underlying_principle": "The phrase 'X only if Y' signifies that Y is a NECESSARY condition for X (X → Y). If Y is proven false through a chain of Modus Tollens deductions, then X cannot occur (¬Y → ¬X).",
+        "rigorous_proof": "Symbolic Notation:\n• Let E = Eligible for VA-ECMO.\n• Let R = Refractory cardiogenic shock.\n• Let M = Reversible myocardial etiology.\n• Let F = Inotropes fail to maintain MAP > 65 mmHg.\n• Let L = Acute metabolic lactic acidosis develops within 6 hours.\n\nRules:\n1. E → (R ∧ M)  ['Only if' introduces the necessary condition as the consequent]\n2. R → F\n3. F → L\n\nGiven Fact: ¬L (Patient K does NOT develop lactic acidosis).\n\nDeduction:\n1. From ¬L and Rule 3 (F → L), by Modus Tollens: ¬F (Inotropes did NOT fail).\n2. From ¬F and Rule 2 (R → F), by Modus Tollens: ¬R (Refractory cardiogenic shock is NOT present).\n3. Rule 1 states: E → (R ∧ M). The contrapositive is: ¬(R ∧ M) → ¬E.\nBy De Morgan's Law, ¬(R ∧ M) ≡ (¬R ∨ ¬M).\nSince ¬R is true (from Step 2), (¬R ∨ ¬M) is true.\nTherefore, by Modus Ponens on the contrapositive: ¬E is TRUE.\nConclusion: 'Patient K is not eligible for emergency veno-arterial ECMO.' (Option A).",
+        "distractor_elimination": {
+          "A": "CORRECT. Flawlessly deduced via double Modus Tollens and contrapositive expansion of the necessary condition.",
+          "B": "Invalid (Undetermined). The status of M is unknown; all we know is that R is false.",
+          "C": "Invalid (Direct Contradiction). Step 1 proves ¬F (inotropes succeeded in maintaining MAP).",
+          "D": "Invalid (Unwarranted Clinical Extrapolation). Veno-venous ECMO (for respiratory failure) is never mentioned in the premises.",
+          "E": "Invalid (Direct Contradiction). Step 2 strictly proves ¬R (refractory cardiogenic shock is NOT present)."
+        }
+      },
+      "examiner_trap_alert": "The 'Only If' Trap: 'A only if B' means A → B (B is necessary). It DOES NOT mean B → A. If B fails (¬B), then A must fail (¬A). Here, B requires (R and M); since R is false, B is false, so ECMO is ruled out."
+    },
+    {
+      "id": "LR_PROP_03",
+      "category": "Formal Propositional Logic",
+      "subtopic": "Biconditionals, De Morgan's Laws & TKI Resistance",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Molecular Pharmacology Rule Deduction",
+      "passage": "Consider the following two biochemical principles governing an oncogenic receptor tyrosine kinase:\n• Principle 1: A targeted tyrosine kinase inhibitor (TKI) achieves complete pharmacological inhibition of downstream signaling IF AND ONLY IF the catalytic ATP-binding pocket lacks the gatekeeper T790M resistance mutation AND the tumor suppressor phosphatase PTEN is functionally active.\n• Principle 2: If a targeted TKI achieves complete pharmacological inhibition of downstream signaling, then downstream phosphorylation of the effector protein AKT is completely abolished.\n\nExperimental Finding: In a patient-derived tumor biopsy treated with the targeted TKI, downstream phosphorylation of AKT is NOT completely abolished.",
+      "question_stem": "Which of the following deductions MUST logically be true regarding the tumor biopsy?",
+      "options": [
+        "The catalytic ATP-binding pocket possesses the gatekeeper T790M resistance mutation, AND the tumor suppressor phosphatase PTEN is functionally inactive.",
+        "The catalytic ATP-binding pocket possesses the gatekeeper T790M resistance mutation, OR the tumor suppressor phosphatase PTEN is functionally inactive (or both).",
+        "The targeted TKI achieved complete pharmacological inhibition of downstream signaling.",
+        "The patient was not administered the targeted tyrosine kinase inhibitor.",
+        "Downstream phosphorylation of AKT is independent of the PTEN phosphatase pathway."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "pedagogical_explanation": {
+        "underlying_principle": "The negation of a conjunction (A ∧ B) is a disjunction of negations (¬A ∨ ¬B), as formalized by De Morgan's Law: ¬(A ∧ B) ≡ (¬A ∨ ¬B). Conflating 'OR' with 'AND' in the negated conclusion is a classic formal logic fallacy.",
+        "rigorous_proof": "Symbolic Notation:\n• Let I = Complete pharmacological inhibition of downstream signaling.\n• Let L = Lacks T790M mutation (¬L = possesses T790M mutation).\n• Let P = PTEN is functionally active (¬P = PTEN is functionally inactive).\n• Let A = Phosphorylation of AKT is abolished (¬A = Phosphorylation of AKT is NOT abolished).\n\nFormal Statements:\n1. I ↔ (L ∧ P)\n2. I → A\n\nGiven Fact: ¬A (AKT phosphorylation is NOT abolished).\n\nDeduction:\n1. From ¬A and (I → A), by Modus Tollens: ¬I (Inhibition was NOT achieved).\n2. Since I ↔ (L ∧ P), its negation is ¬I ↔ ¬(L ∧ P).\n3. Applying De Morgan's Law to the right-hand side:\n¬(L ∧ P) ≡ (¬L ∨ ¬P).\n4. Translating (¬L ∨ ¬P) into English:\nThe catalytic pocket possesses the T790M mutation (¬L), OR the PTEN phosphatase is functionally inactive (¬P), or both.\nThis corresponds exactly to Option A.",
+        "distractor_elimination": {
+          "A": "Invalid (Fallacy of Conjunction Overextension). Asserts that BOTH must occur. Only one failure is needed to prevent complete inhibition.",
+          "B": "CORRECT. Flawless application of Modus Tollens and De Morgan's Law yielding an inclusive disjunction.",
+          "C": "Invalid (Direct Contradiction). Modus Tollens on Principle 2 proves that complete inhibition was NOT achieved.",
+          "D": "Invalid (Contradicts Premise). The premise explicitly states that the biopsy was treated with the TKI.",
+          "E": "Invalid (Unwarranted Independence Claim). Contradicts the biological pathway outlined in the principles."
+        }
+      },
+      "examiner_trap_alert": "De Morgan's Conjunction Trap: When you negate 'X AND Y are true', the result is 'X is false OR Y is false'. Never pick Option B ('AND'); in logic, breaking one requirement is enough to ruin the outcome!"
+    },
+    {
+      "id": "LR_PROP_04",
+      "category": "Formal Propositional Logic",
+      "subtopic": "Disjunctive Antecedent, De Morgan's Laws & Clinical Guidelines",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Emergency Diagnostic Algorithm Deduction",
+      "passage": "Emergency Department Clinical Decision Guideline:\n\"If a patient presenting with acute pleuritic chest pain exhibits either a plasma D-dimer concentration greater than 500 ng/mL OR a Wells clinical probability score greater than 4.0, then computed tomography pulmonary angiography (CTPA) is strictly indicated, UNLESS bedside compression ultrasonography reveals an unequivocal proximal lower-extremity deep vein thrombosis (DVT).\"\n\nClinical Case: Patient M presents to the emergency department with acute pleuritic chest pain. Bedside compression ultrasonography reveals NO deep vein thrombosis, and under the guideline, CTPA is determined to be NOT strictly indicated.",
+      "question_stem": "Which of the following statements regarding Patient M MUST be true?",
+      "options": [
+        "Patient M's Wells score is greater than 4.0, but D-dimer is below 500 ng/mL.",
+        "Patient M's plasma D-dimer is not greater than 500 ng/mL, OR Patient M's Wells score is not greater than 4.0.",
+        "Patient M's plasma D-dimer is not greater than 500 ng/mL, AND Patient M's Wells score is not greater than 4.0.",
+        "Patient M has an unequivocal proximal lower-extremity deep vein thrombosis.",
+        "Patient M should immediately be discharged home without further medical evaluation."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "pedagogical_explanation": {
+        "underlying_principle": "An exception clause 'unless X' functions as 'if not X'. The conditional proposition has the structure: ((P ∨ Q) ∧ ¬X) → R. By Modus Tollens, if ¬R is observed while ¬X holds, the antecedent (P ∨ Q) must be false. By De Morgan's Law, ¬(P ∨ Q) ≡ (¬P ∧ ¬Q).",
+        "rigorous_proof": "Symbolic Notation:\n• Let D = D-dimer > 500 ng/mL.\n• Let W = Wells score > 4.0.\n• Let U = Compression ultrasound reveals DVT (¬U = Ultrasound reveals NO DVT).\n• Let C = CTPA is strictly indicated (¬C = CTPA is NOT strictly indicated).\n\nRule: ((D ∨ W) ∧ ¬U) → C\n\nGiven Clinical Facts: ¬U is TRUE; ¬C is TRUE.\n\nDeduction:\n1. From ¬C and the rule, by Modus Tollens:\n¬((D ∨ W) ∧ ¬U) must be TRUE.\n2. Using De Morgan's equivalence for ¬(A ∧ B) ≡ (¬A ∨ ¬B):\n¬(D ∨ W) ∨ ¬(¬U) ≡ ¬(D ∨ W) ∨ U.\n3. Since we know U is FALSE (¬U is true), for the disjunction (¬(D ∨ W) ∨ U) to be true, the first term ¬(D ∨ W) MUST BE TRUE.\n4. Applying De Morgan's Law to ¬(D ∨ W):\n¬(D ∨ W) ≡ (¬D ∧ ¬W).\n5. In plain English: D-dimer is NOT > 500 ng/mL AND Wells score is NOT > 4.0.\nThis matches Option A with absolute mathematical certainty.",
+        "distractor_elimination": {
+          "A": "Invalid (Direct Contradiction). Wells score cannot be > 4.0 (proven ¬W in Step 4).",
+          "B": "Invalid (Under-determined Disjunction). Stating 'OR' is too weak; the logic proves that BOTH are strictly not elevated.",
+          "C": "CORRECT. Rigorously proven by applying Modus Tollens and De Morgan's Law: both conditions must be absent.",
+          "D": "Invalid (Contradicts Given Premise). The prompt states that ultrasound revealed NO DVT.",
+          "E": "Invalid (Unwarranted Clinical Disposition). Discharge decisions depend on other clinical factors not provided in the premises."
+        }
+      },
+      "examiner_trap_alert": "The 'Unless' Conditional Trap: 'A unless B' means 'If not B, then A'. When the outcome doesn't happen (¬CTA) and the exception didn't happen (¬DVT), neither trigger (D-dimer or Wells) could have occurred: BOTH must be false."
+    },
+    {
+      "id": "LR_PROP_05",
+      "category": "Formal Propositional Logic",
+      "subtopic": "Fallacy of Denying the Antecedent & Alternative Resistance Mechanisms",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Microbiological Diagnostic Logic Evaluation",
+      "passage": "Clinical Microbiology Laboratory Protocol:\n• Rule 1: If an isolate of Staphylococcus aureus carries the mecA resistance cassette (M), it expresses penicillin-binding protein 2a (PBP2a).\n• Rule 2: If an isolate expresses PBP2a, it is resistant to oxacillin and cefoxitin.\n• Rule 3: If an isolate is resistant to oxacillin and cefoxitin, standard first-generation cephalosporin monotherapy will result in clinical failure.\n\nLaboratory Case: A clinical wound isolate of S. aureus is tested via PCR and definitively DOES NOT carry the mecA resistance cassette (not M).\nResident Physician's Claim: 'Because the isolate lacks mecA, standard first-generation cephalosporin monotherapy is guaranteed to succeed.'",
+      "question_stem": "Which of the following best evaluates the logical validity of the resident physician's claim?",
+      "options": [
+        "The claim is VALID because PCR amplification has a 100% negative predictive value for all bacterial resistance genes.",
+        "The claim is VALID because it follows the direct contrapositive chain of the microbiology protocol rules.",
+        "The claim is INVALID because it commits the fallacy of Affirming the Consequent by assuming that clinical success guarantees the absence of mecA.",
+        "The claim is INVALID because it commits the formal fallacy of Denying the Antecedent; having mecA is a sufficient condition for treatment failure, not a necessary one, meaning alternative mechanisms (e.g. mecC or beta-lactamase hyperproduction) could still cause failure.",
+        "The claim is INVALID because S. aureus is an obligate intracellular anaerobic organism."
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "pedagogical_explanation": {
+        "underlying_principle": "The argument commits the formal deductive fallacy of Denying the Antecedent (the inverse fallacy): from P → Q, observing ¬P does NOT allow one to conclude ¬Q. In medicine, many distinct resistance mechanisms can yield treatment failure; the absence of one specific mechanism does not guarantee therapeutic success.",
+        "rigorous_proof": "Formal Logic Chain:\n• Rule: M → PBP2a → Resistance → Failure\n• Consolidated: M → Failure (carrying mecA is a SUFFICIENT condition for treatment failure).\n\nResident's Argument:\n• Premise: ¬M (Isolate lacks mecA)\n• Conclusion: ¬Failure (Treatment will succeed)\n\nFallacy Identification:\nThis is the textbook form of Denying the Antecedent (P → Q, ¬P ⊢ ¬Q is invalid). Other mechanisms (e.g. mecC, hyper-beta-lactamase production, borderline oxacillin resistance) can cause cephalosporin failure. Option A correctly identifies the fallacy and explains why sufficient conditions cannot be inverted.",
+        "distractor_elimination": {
+          "A": "Incorrect (Falsely Validates and Asserts Impossible 100% PCR Metric). PCR cannot detect unknown alternative genes.",
+          "B": "Incorrect (Falsely Validates an Invalid Argument). A contrapositive requires negating the consequent (¬Failure → ¬M), not negating the antecedent.",
+          "C": "Incorrect (Misidentified Fallacy). Affirming the consequent would be: 'Treatment failed, therefore it must have mecA.' The resident denied the antecedent.",
+          "D": "CORRECT. Accurately diagnoses the fallacy of Denying the Antecedent and the distinction between sufficiency and necessity.",
+          "E": "Incorrect (Absurd Biological Error). S. aureus is a facultative anaerobe, not an obligate intracellular anaerobe."
+        }
+      },
+      "examiner_trap_alert": "Denying the Antecedent in Pharmacology: If Drug Toxicity (T) occurs when Mutation (M) is present (M → T), lacking Mutation M DOES NOT guarantee zero toxicity (¬M does NOT imply ¬T). Never invert conditional arrows!"
+    },
+    {
+      "id": "LR_PROP_06",
+      "category": "Formal Propositional Logic",
+      "subtopic": "Dual Necessary Conditions, Biosafety Protocols & Modus Ponens",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Biosafety Regulatory Protocol Deduction",
+      "passage": "High-Containment Laboratory Regulatory Framework:\n• Rule 1: A biomedical facility is certified for Biosafety Level 4 (BSL-4) operations ONLY IF it maintains continuous negative differential air pressure relative to surrounding corridors AND all personnel wear positive-pressure encapsulated suits.\n• Rule 2: If a facility conducts experimental aerosol transmission studies with live Filoviruses (e.g. Marburg or Ebola virus), it must be certified for BSL-4 operations.\n• Rule 3: If a facility maintains continuous negative differential air pressure relative to surrounding corridors, its automated directional airflow interlock damper system is fully functional.\n\nOperational Fact: The National Virology Institute conducts experimental aerosol transmission studies with live Ebola virus.",
+      "question_stem": "Which of the following MUST logically be true regarding the National Virology Institute?",
+      "options": [
+        "All biomedical research facilities in the country maintain Biosafety Level 4 certification.",
+        "Its automated directional airflow interlock damper system is non-functional, but personnel wear positive-pressure encapsulated suits.",
+        "It conducts aerosol studies exclusively with attenuated vaccine strains.",
+        "It does not maintain continuous negative differential air pressure relative to surrounding corridors.",
+        "Its automated directional airflow interlock damper system is fully functional, AND all personnel wear positive-pressure encapsulated suits."
+      ],
+      "correct_index": 4,
+      "correct_option": "E",
+      "pedagogical_explanation": {
+        "underlying_principle": "Deductive propagation across a transitive chain: A → B, B → (C ∧ D), and C → E. From the fact that A is true, Modus Ponens guarantees that B, (C ∧ D), C, D, and E are all strictly true.",
+        "rigorous_proof": "Symbolic Notation:\n• Let A = Conducts aerosol studies with live Filoviruses (Ebola).\n• Let B = Certified for BSL-4 operations.\n• Let C = Maintains continuous negative differential air pressure.\n• Let D = Personnel wear positive-pressure encapsulated suits.\n• Let E = Automated directional airflow interlock dampers are fully functional.\n\nRules:\n1. B → (C ∧ D)  ['Only if' introduces C and D as necessary conditions for B]\n2. A → B\n3. C → E\n\nGiven Fact: A is TRUE (Institute conducts aerosol transmission studies with live Ebola).\n\nStep-by-step Deduction:\n1. From A and Rule 2 (A → B), by Modus Ponens: B is TRUE (Facility is certified for BSL-4).\n2. From B and Rule 1 (B → (C ∧ D)), by Modus Ponens: (C ∧ D) is TRUE.\n3. Since (C ∧ D) is true, both C is TRUE and D is TRUE.\n4. From C and Rule 3 (C → E), by Modus Ponens: E is TRUE.\n5. Combining E is TRUE and D is TRUE gives: (E ∧ D) is TRUE.\nIn plain words: 'Its automated directional airflow interlock damper system is fully functional (E), AND all personnel wear positive-pressure encapsulated suits (D).' (Option A).",
+        "distractor_elimination": {
+          "A": "Invalid (Absurd Universal Generalization). The rules apply to this facility, not to every facility nationwide.",
+          "B": "Invalid (Direct Contradiction). Step 4 strictly proves E (damper system IS fully functional).",
+          "C": "Invalid (Contradicts Fact). The fact explicitly states they work with live Ebola virus, not attenuated strains.",
+          "D": "Invalid (Direct Contradiction). Step 3 strictly proves C (continuous negative air pressure IS maintained).",
+          "E": "CORRECT. Formally derived through successive applications of Modus Ponens across the multi-rule chain."
+        }
+      },
+      "examiner_trap_alert": "Multi-Step Conjunction Aggregation: Notice how Rule 1 provides two requirements (C and D), and C then triggers Rule 3 (E). The valid answer merges the consequence of C (which is E) with the other required condition (D)."
+    },
+    {
+      "id": "RC_PASS_01",
+      "category": "Dense Scientific & Clinical Research Reading Passages",
+      "subtopic": "Phase III Trial Endpoints, Hazard Ratios & Safety Profiles (Oncology)",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Dense Clinical Trial Report",
+      "passage": "In a randomized, multicenter, open-label Phase III clinical trial, investigators evaluated the efficacy and safety of the antibody-drug conjugate trastuzumab-deruxtecan (T-DXd) versus standard physician's choice chemotherapy (irinotecan or paclitaxel) in 187 patients with HER2-positive locally advanced or metastatic gastric or gastroesophageal junction adenocarcinoma who had progressed on at least two prior therapeutic regimens, including trastuzumab. At the median follow-up of 18.5 months, the median progression-free survival (PFS) was 5.6 months in the T-DXd cohort compared to 3.5 months in the chemotherapy cohort (Hazard Ratio [HR] = 0.47; 95% Confidence Interval [CI], 0.38 to 0.57; p < 0.001). The median overall survival (OS) reached 12.5 months with T-DXd versus 8.4 months with chemotherapy (HR = 0.59; 95% CI, 0.49 to 0.71; p = 0.003). However, drug-related interstitial lung disease (ILD) or pneumonitis occurred in 10.2% (19/187) of patients in the T-DXd group (with 1.8% experiencing Grade 3 or 4 events, and 0.6% experiencing a fatal Grade 5 event), whereas the chemotherapy cohort recorded a 1.1% incidence of pneumonitis with zero fatalities. Left ventricular ejection fraction (LVEF) reductions occurred in 2.1% of T-DXd recipients without overt congestive heart failure.",
+      "question_stem": "Which of the following statements is STRICTLY WARRANTED based exclusively on the empirical clinical data presented in the passage?",
+      "options": [
+        "Trastuzumab-deruxtecan statistically significantly improves median progression-free and overall survival compared to standard chemotherapy in this refractory cohort, but its therapeutic administration is associated with a higher risk of interstitial lung disease, including rare fatal outcomes.",
+        "Trastuzumab-deruxtecan achieves complete permanent histological eradication of all malignant gastric carcinoma cells in the majority of treated patients.",
+        "Standard chemotherapy with irinotecan or paclitaxel is clinically superior to trastuzumab-deruxtecan because it produces fewer instances of left ventricular ejection fraction reductions.",
+        "All antibody-drug conjugate clinical trials should be immediately terminated worldwide due to an unacceptable incidence of drug-induced fatal congestive heart failure.",
+        "The European Medicines Agency and US FDA have already issued unconditional, first-line market approvals for trastuzumab-deruxtecan in non-metastatic gastric adenocarcinoma."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "pedagogical_explanation": {
+        "underlying_principle": "In scientific reading comprehension for medical admissions, deductive statements must be calibrated with absolute fidelity to the empirical boundaries of the text: recognizing statistically significant efficacy (HR < 1.0, p < 0.05) alongside documented toxicities without exaggerating into absolute cures, unmentioned regulatory statuses, or emotional mandates.",
+        "rigorous_proof": "Empirical Text Verification:\n1. Efficacy: Median PFS improved from 3.5 to 5.6 months (HR = 0.47, p < 0.001); OS improved from 8.4 to 12.5 months (HR = 0.59, p = 0.003). Both endpoints are statistically significant.\n2. Toxicity: ILD/pneumonitis occurred in 10.2% of T-DXd patients vs 1.1% in chemotherapy, with Grade 5 (fatal) events in 0.6%.\n3. Option A integrates these exact empirical findings: proven significant PFS/OS survival improvement coupled with elevated risk of ILD, including rare fatal outcomes. Every element of Option A is 100% warranted by the text.",
+        "distractor_elimination": {
+          "A": "CORRECT. Strictly substantiated by the text without extrapolation or omission.",
+          "B": "Invalid (Extreme Hyperbole / Unwarranted). Median PFS was 5.6 months; this is disease control in refractory cancer, not permanent histological eradication in the majority.",
+          "C": "Invalid (Inverted Clinical Superiority). T-DXd had superior survival; isolated lower cardiotoxicity does not establish overall clinical superiority for chemotherapy.",
+          "D": "Invalid (False Policy Extrapolation). The text reports zero cases of fatal congestive heart failure (explicitly noting LVEF reductions occurred 'without overt congestive heart failure').",
+          "E": "Invalid (Importation of Outside / Fictional Fact). Regulatory agency decisions and first-line non-metastatic use are never mentioned in the trial text."
+        }
+      },
+      "examiner_trap_alert": "The Regulatory / Cure Trap: Never choose options that invent regulatory approvals (FDA/EMA) or proclaim 'miraculous cures' when a Phase III trial merely reports incremental months of progression-free survival."
+    },
+    {
+      "id": "RC_PASS_02",
+      "category": "Dense Scientific & Clinical Research Reading Passages",
+      "subtopic": "Amyloid Cascade Hypothesis, Tau Biomarkers & ARIA-E (Alzheimer's Disease)",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Dense Neurobiology Research Summary",
+      "passage": "In an 18-month Phase III investigation of the humanized IgG1 monoclonal antibody lecanemab in patients with early Alzheimer's disease, treatment produced a robust 84% reduction in cortical fibrillar amyloid-beta (Aβ) plaque burden as quantified by florbetapir positron emission tomography (PET). Concurrently, lecanemab slowed the rate of clinical cognitive decline on the 18-point Clinical Dementia Rating-Sum of Boxes (CDR-SB) scale by 27% (a difference of 1.21 points compared to placebo; p < 0.001). However, longitudinal pathophysiological sub-analyses revealed that the 18-month rate of cognitive decline correlated weakly with baseline florbetapir PET amyloid plaque burden (Pearson r = 0.18, p = 0.14), but exhibited a powerful, statistically significant correlation with baseline neocortical tau tracer binding in the entorhinal cortex and inferior temporal gyrus measured via flortaucipir PET (r = 0.74, p < 0.001). Furthermore, amyloid-related imaging abnormalities with vasogenic cerebral edema (ARIA-E) occurred in 12.6% of lecanemab-treated participants, with the highest risk observed in APOE ε4 homozygotes (21.4%) compared to APOE ε4 non-carriers (5.4%).",
+      "question_stem": "Which of the following deductions is most rigorously supported by the passage?",
+      "options": [
+        "Lecanemab therapy completely reverses all neurodegenerative changes in the human brain, returning patients to pre-morbid baseline cognition.",
+        "Extensive clearance of cortical fibrillar amyloid plaques is insufficient by itself to halt clinical cognitive decline completely, and baseline regional tau tangle burden is a markedly stronger predictive correlate of cognitive decline than baseline amyloid burden.",
+        "Tau neurofibrillary tangles are entirely benign cellular inclusions that play zero role in the downstream clinical progression of Alzheimer's dementia.",
+        "Individuals who are homozygous for the APOE ε4 allele are completely protected against developing amyloid-related imaging abnormalities with edema.",
+        "Amyloid-beta oligomers are synthesized exclusively in the astrocytes of the primary motor cortex."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "pedagogical_explanation": {
+        "underlying_principle": "Scientific reading demands exact quantitative synthesis: noting that an 84% reduction in amyloid resulted in only a 27% slowing of decline proves that amyloid plaque removal alone does not halt the disease. Furthermore, the correlation coefficients (r = 0.74 for tau vs r = 0.18 for amyloid) directly substantiate the comparative predictive power of tau over amyloid.",
+        "rigorous_proof": "Passage Metrics:\n• Plaque reduction: 84%.\n• Clinical decline slowing: 27% (cognitive decline still progressed in both groups, just 27% slower). Hence, plaque clearance does NOT halt decline completely.\n• Correlation with cognitive decline: Tau flortaucipir PET (r = 0.74, p < 0.001) vs Amyloid florbetapir PET (r = 0.18, p = 0.14). 0.74 is vastly stronger and statistically significant, whereas 0.18 is weak and non-significant.\n• Option A integrates both deductions with precision.",
+        "distractor_elimination": {
+          "A": "Invalid (Extreme False Claim). The drug slowed decline by 27%, meaning 73% of decline still occurred; it did not reverse neurodegeneration to pre-morbid baseline.",
+          "B": "CORRECT. Directly verified by comparing the 84% plaque clearance / 27% clinical slowing and the r = 0.74 vs r = 0.18 correlation coefficients.",
+          "C": "Invalid (Direct Contradiction). Tau showed a strong positive correlation (r = 0.74) with cognitive decline, proving it is deeply linked to progression.",
+          "D": "Invalid (Direct Contradiction). APOE ε4 homozygotes had the HIGHEST risk of ARIA-E (21.4%), not complete protection.",
+          "E": "Invalid (Unwarranted Anatomical Fiction). Astrocytic synthesis in motor cortex is nowhere stated in the text."
+        }
+      },
+      "examiner_trap_alert": "Correlation Magnitude Trap: Pay close attention to statistical figures (Pearson r). An r of 0.74 indicates a strong association, while r = 0.18 is weak and non-significant. Never assume that a heavily advertised drug 'cures' a disease when the text reports only modest slowing."
+    },
+    {
+      "id": "RC_PASS_03",
+      "category": "Dense Scientific & Clinical Research Reading Passages",
+      "subtopic": "Conjugative Plasmid Kinetics, Fitness Cost & Selective Pressure",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Dense Molecular Microbiology Report",
+      "passage": "Molecular epidemiology investigations of nosocomial carbapenem-resistant Klebsiella pneumoniae (CRKP) isolates identified an epidemic multi-drug resistance conjugative plasmid designated pKP-X3, belonging to the IncX3 incompatibility group. Sequencing confirmed that pKP-X3 co-harbors the metallo-β-lactamase gene blaNDM-5 (conferring resistance to all β-lactams except aztreonam) and the phosphoethanolamine transferase gene mcr-1 (conferring resistance to the cationic lipopeptide colistin). In liquid broth filter-mating assays, pKP-X3 exhibited high-frequency inter-species conjugative transfer into recipient Escherichia coli J53 at a transfer rate of 3.4 × 10^-3 transconjugants per donor cell. In head-to-head competitive co-culture assays conducted in rich nutrient broth WITHOUT antimicrobial selective pressure, transconjugant E. coli harboring pKP-X3 demonstrated an 11.5% reduction in relative growth rate (fitness cost = 0.115 ± 0.02) compared to the isogenic plasmid-free parental strain, resulting in gradual plasmid dilution over 80 serial generations. However, when the competitive co-culture medium was supplemented with sub-minimum inhibitory concentrations (sub-MIC) of meropenem (0.25 mg/L), the plasmid-bearing transconjugant completely displaced the plasmid-free strain within 25 generations.",
+      "question_stem": "What deduction is STRICTLY WARRANTED by the experimental microbiological data presented in the text?",
+      "options": [
+        "Liquid broth filter-mating assays are incapable of detecting horizontal gene transfer between Gram-negative enteric bacilli.",
+        "All bacterial strains belonging to the species Escherichia coli are innately resistant to all cationic lipopeptide antibiotics.",
+        "Carriage of the pKP-X3 plasmid confers a decisive competitive advantage in environments containing sub-inhibitory concentrations of meropenem, but imposes a measurable biological fitness cost on host bacteria in the absence of antibiotic selective pressure.",
+        "Discontinuing carbapenem usage in intensive care units will permanently eradicate all IncX3 plasmids from the global biosphere within 24 hours.",
+        "The mcr-1 gene encodes an enzyme that hydrolyzes the β-lactam ring of carbapenems."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "pedagogical_explanation": {
+        "underlying_principle": "Evolutionary microbiology balances the metabolic energetic burden (fitness cost) of carrying large multi-resistance plasmids against the selective survival advantage they confer in environments containing antimicrobial selective pressure.",
+        "rigorous_proof": "Direct Text Alignment:\n1. Fitness Cost without Antibiotics: In broth WITHOUT antibiotics, transconjugants showed an 11.5% reduction in growth rate (fitness cost = 0.115), leading to dilution over 80 generations.\n2. Selective Advantage with Antibiotics: When sub-MIC meropenem (0.25 mg/L) was added, the plasmid-bearing strain completely displaced the plasmid-free strain within 25 generations.\n3. Option A is an exact, unembellished synthesis of these two experimental findings.",
+        "distractor_elimination": {
+          "A": "Invalid (Direct Contradiction). Filter-mating successfully measured high-frequency transfer (3.4 × 10^-3).",
+          "B": "Invalid (Universal False Generalization). E. coli is not innately colistin-resistant; resistance was acquired via mcr-1 on pKP-X3.",
+          "C": "CORRECT. Directly captures the dual empirical findings of plasmid biology under selective vs unselective environments.",
+          "D": "Invalid (Absurd Temporal Hyperbole). Global eradication of plasmids in 24 hours is a wild, unscientific exaggeration.",
+          "E": "Invalid (Biochemical Inversion). The text explicitly notes that blaNDM-5 confers carbapenem resistance (metallo-β-lactamase), while mcr-1 encodes phosphoethanolamine transferase (colistin resistance)."
+        }
+      },
+      "examiner_trap_alert": "Biochemical Target Inversion: In dense texts with two genes and two drugs (blaNDM-5 / meropenem vs mcr-1 / colistin), examiners love swapping the mechanisms (Distractor E). Always match the gene to its exact stated function."
+    },
+    {
+      "id": "RC_PASS_04",
+      "category": "Dense Scientific & Clinical Research Reading Passages",
+      "subtopic": "DNA Methylation Clocks, Multivariable Adjustment & Confounding",
+      "difficulty": "High Depth (IMAT/Cambridge Tier 4)",
+      "stimulus_type": "Dense Molecular Epidemiology Analysis",
+      "passage": "In a prospective multi-cohort study tracking 14,200 initially healthy adult participants over a 16-year follow-up period, investigators analyzed the predictive utility of epigenetic age acceleration (EAA) using the GrimAge DNA methylation clock, which models mortality risk by incorporating surrogate methylation biomarkers of plasma proteins and smoking pack-years. In unadjusted univariate Cox proportional hazards regression models, each 5-year increase in GrimAge acceleration was associated with a 38% increase in all-cause cardiovascular mortality (Hazard Ratio [HR] = 1.38; 95% CI, 1.25 to 1.52; p < 0.001). However, in a fully adjusted multivariable Cox model that controlled simultaneously for chronological age, cumulative smoking pack-years, waist-to-hip ratio, educational attainment, baseline systolic blood pressure, and circulating high-density lipoprotein cholesterol, the estimated hazard ratio attenuated to 1.05 (95% CI, 0.96 to 1.15; p = 0.28). In contrast, persistent current tobacco smoking retained an independent adjusted hazard ratio of 2.14 (95% CI, 1.82 to 2.51; p < 0.001) within the exact same multivariable model.",
+      "question_stem": "Which of the following conclusions is STRICTLY WARRANTED regarding the GrimAge epigenetic clock based on the statistical results reported?",
+      "options": [
+        "DNA methylation patterns are permanent epigenetic marks that remain completely unmodifiable from embryogenesis to death.",
+        "GrimAge acceleration is a clinically infallible biological test that should replace blood pressure and lipid screening in primary care cardiology.",
+        "Tobacco smoking is an entirely harmless behavioral variable that does not contribute to all-cause cardiovascular mortality.",
+        "The initial univariate association between GrimAge acceleration and cardiovascular mortality is largely confounded by shared lifestyle, behavioral, and clinical covariates, such that GrimAge acceleration does not exhibit statistically significant independent predictive power after full multivariable adjustment.",
+        "The attenuation of the hazard ratio from 1.38 to 1.05 proves that the laboratory technicians made calculation errors during microarray hybridization."
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "pedagogical_explanation": {
+        "underlying_principle": "Multivariable regression models exist to isolate the independent effect of an exposure after controlling for confounders. When a hazard ratio attenuates toward the null (1.00) and its 95% confidence interval crosses 1.00 (p >= 0.05), the association is statistically non-significant, demonstrating that the initial correlation was driven by the confounding covariates.",
+        "rigorous_proof": "Statistical Trajectory in the Text:\n• Univariate Model: HR = 1.38 (95% CI, 1.25-1.52; p < 0.001) → Significant.\n• Fully Adjusted Multivariable Model: HR = 1.05 (95% CI, 0.96-1.15; p = 0.28) → Non-significant (CI encompasses 1.00; p > 0.05).\n• In the same model, smoking retained an HR of 2.14 (p < 0.001).\n• Deduction: GrimAge's apparent prediction was confounded by smoking, BMI, blood pressure, etc. Once those were held constant, GrimAge provided no independent statistical power. Option A states this with complete epidemiological fidelity.",
+        "distractor_elimination": {
+          "A": "Invalid (Epigenetic Biological Error). Methylation is dynamic; the text notes it models environmental factors like smoking.",
+          "B": "Invalid (Extreme Inversion). The text shows GrimAge lost predictive significance, so it certainly cannot replace established risk factors.",
+          "C": "Invalid (Direct Contradiction). Smoking retained an independent HR of 2.14 (p < 0.001), proving it is a strong risk factor.",
+          "D": "CORRECT. Accurately interprets the loss of statistical significance following multivariable adjustment.",
+          "E": "Invalid (Unwarranted Attribution of Error). Attenuation upon multivariable adjustment is standard epidemiological confounding, not technician error."
+        }
+      },
+      "examiner_trap_alert": "Confidence Intervals Crossing 1.0: In hazard ratios, a 95% CI of 0.96 to 1.15 crosses 1.00, meaning NO statistically significant difference exists (p = 0.28). Candidates who ignore the confidence interval miss the loss of statistical significance!"
+    },
+    {
+      "id": "RC_PASS_05",
+      "category": "Dense Scientific & Clinical Research Reading Passages",
+      "subtopic": "Molecular Mimicry, Sialylated Lipooligosaccharides & Nodal Conduction Block",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Dense Neuroimmunology Experimental Report",
+      "passage": "Pathophysiological investigation of post-infectious acute motor axonal neuropathy (AMAN), a severe paralytic subtype of Guillain-Barré syndrome, established that antecedent Campylobacter jejuni enteritis initiates autoimmune axolemmal destruction through molecular mimicry. Specific clinical isolates of C. jejuni express outer core lipooligosaccharides (LOS) whose terminal tetrasaccharide moieties are structurally identical to GM1 and GD1a gangliosides abundantly expressed on human motor axolemma at the nodes of Ranvier. Biosynthesis of this mimic requires the phase-variable bacterial sialyltransferase gene cst-II. In an ex vivo murine phrenic nerve-hemidiaphragm preparation, bath application of affinity-purified anti-GM1 IgG autoantibodies from AMAN patients, in the presence of active human complement, induced rapid deposition of the membrane attack complex (MAC / C5b-9) specifically at nodal axolemma, accompanied by detachment of periaxonal paranodal myelin loops and saltatory action potential conduction block within 120 minutes. Pre-incubation with the monoclonal terminal complement inhibitor eculizumab (anti-C5) or heat-inactivation of complement proteins completely prevented MAC deposition and preserved electrophysiological nerve conduction. Conversely, isogenic mutant C. jejuni strains lacking a functional cst-II gene failed to induce anti-ganglioside IgG in inoculated animal models and induced zero electrophysiological impairment.",
+      "question_stem": "Which of the following statements is STRICTLY SUPPORTED by the experimental evidence described?",
+      "options": [
+        "Saltatory action potential conduction occurs exclusively in non-myelinated post-ganglionic autonomic C-fibers.",
+        "All human cases of Campylobacter jejuni enteritis inevitably culminate in permanent bilateral motor paralysis.",
+        "Guillain-Barré syndrome is an X-linked recessive genetic mutation of the human peripheral myelin protein 22 (PMP22) gene.",
+        "Administration of eculizumab damages gangliosides directly, accelerating the destruction of paranodal myelin loops.",
+        "Terminal complement complex (MAC) assembly is an essential mediator of anti-GM1-induced nodal conduction block in this ex vivo model, and the bacterial cst-II gene is required for synthesizing the sialylated lipooligosaccharide mimic that elicits the pathogenic autoantibodies."
+      ],
+      "correct_index": 4,
+      "correct_option": "E",
+      "pedagogical_explanation": {
+        "underlying_principle": "Valid scientific deduction requires synthesizing dual mechanistic arms: (1) bacterial genetics (cst-II gene is necessary for the mimic and antibody generation); and (2) immunopathology (MAC deposition causes conduction block, which is abolished when C5 is inhibited by eculizumab).",
+        "rigorous_proof": "Mechanistic Synthesis from Passage:\n1. Bacterial Gene Requirement: cst-II mutant strains failed to induce anti-ganglioside antibodies and caused zero nerve damage. Thus, cst-II is required for the mimic.\n2. Complement Requirement: Blocking terminal complement with eculizumab (anti-C5) or heat-inactivation completely prevented MAC deposition and preserved electrophysiological conduction. Thus, MAC assembly is essential for the conduction block.\nOption A flawlessly captures both experimental proofs without unwarranted extension.",
+        "distractor_elimination": {
+          "A": "Invalid (Gross Neuroanatomical Error). Saltatory conduction occurs in myelinated fibers (at nodes of Ranvier), never in unmyelinated C-fibers.",
+          "B": "Invalid (Extreme Generalization). The passage specifies 'specific clinical isolates' and describes an experimental model; GBS is a rare complication, not an inevitable outcome of all Campylobacter infections.",
+          "C": "Invalid (Genetic Fact Distortion). PMP22 duplications cause Charcot-Marie-Tooth disease type 1A; the text clearly explains that GBS here is post-infectious autoimmune mimicry.",
+          "D": "Invalid (Direct Contradiction). Eculizumab PREVENTED MAC deposition and PRESERVED nerve conduction.",
+          "E": "CORRECT. Fully backed by the cst-II mutant and eculizumab complement blockade experiments."
+        }
+      },
+      "examiner_trap_alert": "Double Rescue Experiments: Notice how the text tests both sides of the pathway: deleting the bacterial gene (cst-II) stops the disease from starting, and blocking the host complement (eculizumab) stops the disease from executing. The correct answer always unites both experimental controls."
+    },
+    {
+      "id": "RC_PASS_06",
+      "category": "Dense Scientific & Clinical Research Reading Passages",
+      "subtopic": "AAV9 Vector Immunogenicity, Alternative Complement & TMA",
+      "difficulty": "Extreme (Cambridge/IMAT High-Tier)",
+      "stimulus_type": "Dense Clinical Trial Safety Audit",
+      "passage": "In an open-label clinical registry evaluating the safety of high-dose intravenous gene replacement therapy with onasemnogene abeparvovec (adeno-associated virus serotype 9 [AAV9] delivery vector at a dose of 2.0 × 10^14 vector genomes per kilogram of body weight) in 40 infants with spinal muscular atrophy (SMA) type 1, all patients demonstrated substantial gains in motor milestones measured by the CHOP-INTEND scale. However, 3 of the 40 infants (7.5%) developed acute, life-threatening thrombotic microangiopathy (TMA) between post-infusion days 6 and 10. The clinical syndrome was characterized by abrupt thrombocytopenia (platelet nadir < 25 × 10^9/L), microangiopathic hemolytic anemia with prominent erythrocyte fragmentation (schistocytes on peripheral blood smear), and acute oliguric renal failure with marked serum creatinine elevation. Serological profiling during the acute hemolytic crisis demonstrated profound activation of the alternative complement pathway, evidenced by markedly elevated plasma concentrations of soluble terminal complement complex (sC5b-9) and factor Bb fragments, while classical complement pathway component C4d concentrations remained within normal reference ranges. All three infants had pre-infusion anti-AAV9 neutralizing antibody titers below the protocol exclusion threshold (< 1:50). Emergency intervention with plasma exchange and the terminal complement inhibitor eculizumab resulted in platelet recovery and normalization of renal function across all three cases.",
+      "question_stem": "Which of the following deductions is STRICTLY WARRANTED based on the clinical trial safety data provided?",
+      "options": [
+        "High-dose systemic AAV9 gene therapy can precipitate acute thrombotic microangiopathy driven by alternative complement pathway activation even in patients with low pre-existing neutralizing antibody titers (< 1:50), and this complication is amenable to targeted terminal complement blockade.",
+        "High-dose intravenous AAV9 therapy is clinically ineffective at improving motor functional scores in infants suffering from spinal muscular atrophy type 1.",
+        "Classical pathway complement activation mediated by C4d is the primary molecular driver of endothelial damage in viral vector-induced thrombotic microangiopathy.",
+        "Pre-existing anti-AAV9 neutralizing antibody titers below 1:50 provide absolute immunity against any form of post-infusion systemic organ toxicity.",
+        "All infants treated with onasemnogene abeparvovec experienced irreversible, fatal renal failure."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "pedagogical_explanation": {
+        "underlying_principle": "Translational clinical safety comprehension requires integrating pathway biomarkers (Bb and sC5b-9 elevated vs normal C4d = alternative pathway), risk factors (occurred despite low neutralizing antibody titers < 1:50), and therapeutic responsiveness (eculizumab resolved the TMA).",
+        "rigorous_proof": "Textual Verification:\n1. Clinical presentation: 3/40 infants developed TMA (thrombocytopenia, schistocytes, renal failure).\n2. Pathway biomarker: Marked elevation of sC5b-9 and factor Bb (alternative pathway markers), while C4d (classical pathway) was normal.\n3. Antibody status: Occurred in patients with pre-infusion titers < 1:50 (low titers did not protect against this complication).\n4. Resolution: Prompt treatment with eculizumab (terminal complement inhibitor) and plasma exchange led to platelet recovery and renal normalization.\nOption A synthesizes all four explicit factual findings with rigorous fidelity.",
+        "distractor_elimination": {
+          "A": "CORRECT. Fully substantiated by the clinical narrative, biomarker profiles, and therapeutic rescue response.",
+          "B": "Invalid (Direct Contradiction). Text states 'all patients demonstrated substantial gains in motor milestones measured by the CHOP-INTEND scale'.",
+          "C": "Invalid (Direct Contradiction). C4d remained normal; the text explicitly attributes activation to the alternative pathway (factor Bb).",
+          "D": "Invalid (Direct Contradiction). Low titers (< 1:50) did NOT provide immunity; all three affected infants had titers below 1:50.",
+          "E": "Invalid (Direct Contradiction). Zero infants died; eculizumab and plasma exchange resolved the renal failure in all three cases."
+        }
+      },
+      "examiner_trap_alert": "Complement Pathway Discrimination: Distinguish Classical (C4d) from Alternative (Factor Bb, Factor D). Notice how the text specifically states C4d was normal while Bb was elevated. Examiners use this to craft deceptive distractors (Option C)."
+    }
+  ]
+}
