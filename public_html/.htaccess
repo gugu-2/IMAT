@@ -1,0 +1,8 @@
+# Protect database files and raw SQL from direct browser download
+<FilesMatch "\.(sqlite|sql|log)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Enable index.html as directory index
+DirectoryIndex index.html index.php
