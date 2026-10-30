@@ -1,0 +1,34 @@
+# Node / Temp files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+_temp*
+temp*
+*.tmp
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Draft notes & Archives
+New Text Document.txt
+*.zip
+clean_*.js
+process_*.js
+generate_*.js
+fix_*.py
+temp_*
+build_clean_testas.js
+test_no_undefined.js
+update_imat.js
+build_detailed_solutions.js
+analyze_bank.js
+unique_stems.json
