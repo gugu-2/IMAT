@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "imat_2026_q01",
+    "year": 2026,
+    "qNumber": "Q01",
+    "subject": "General Knowledge",
+    "chapter": "History of Medicine & Science",
+    "subtopic": "Epidemiology & Sanitary Reform",
+    "tier": "Standard MUR",
+    "question": "During the Crimean War (1853–1856), which pioneering figure revolutionized hospital sanitation, reduced military hospital mortality rates through systematic hygiene, and invented polar area diagrams (also known as coxcomb charts) to represent medical statistical data visually?",
+    "options": [
+      "Florence Nightingale",
+      "Elizabeth Garrett Anderson",
+      "Joseph Lister",
+      "Ignaz Semmelweis",
+      "Marie Curie"
+    ],
+    "correctIndex": 0,
+    "explanation": "Florence Nightingale is celebrated as the founder of modern nursing. During the Crimean War at the British military hospital in Scutari, she instituted rigorous sanitary reforms that dramatically dropped mortality rates. Furthermore, she was a pioneering statistician who invented the polar area diagram (coxcomb chart) to illustrate to government officials that the majority of soldier deaths resulted from preventable hospital-acquired infections rather than combat wounds.<br><br><b>Distractor Analysis:</b><br>• Elizabeth Garrett Anderson was the first Englishwoman to qualify as a physician and surgeon.<br>• Joseph Lister pioneered antiseptic surgical techniques using carbolic acid.<br>• Ignaz Semmelweis championed hand hygiene in obstetrics to prevent puerperal fever in Vienna.<br>• Marie Curie discovered radium and polonium and pioneered mobile X-ray units during World War I.",
+    "trapAlert": "Confusing Nightingale's mathematical contributions with Semmelweis (handwashing) or Lister (carbolic acid antisepsis)."
+  },
+  {
+    "id": "imat_2026_q02",
+    "year": 2026,
+    "qNumber": "Q02",
+    "subject": "General Knowledge",
+    "chapter": "Nobel Prizes & Molecular Medicine",
+    "subtopic": "mRNA Vaccine Technologies",
+    "tier": "High-Yield MUR",
+    "question": "Which crucial molecular modification discovered by Katalin Karikó and Drew Weissman—rewarded with the Nobel Prize in Physiology or Medicine—prevented in vitro transcribed mRNA from triggering harmful inflammatory responses and enabled its efficient translation in therapeutic vaccines?",
+    "options": [
+      "Incorporation of base-modified nucleosides, specifically pseudouridine, in place of uridine",
+      "Addition of an unmethylated CpG dinucleotide motif to the 5' untranslated region",
+      "Removal of the polyadenylated tail from the 3' terminus of the synthetic transcript",
+      "Substitution of ribose sugars with 2'-deoxyribose throughout the nucleic acid backbone",
+      "Enzymatic deletion of the 7-methylguanosine cap structure from the 5' end"
+    ],
+    "correctIndex": 0,
+    "explanation": "Katalin Karikó and Drew Weissman discovered that unmodified in vitro transcribed mRNA activates mammalian toll-like receptors (TLR3, TLR7, TLR8), provoking severe dendritic cell inflammation and rapid RNA degradation. Replacing standard uridine with base-modified nucleosides, notably pseudouridine (and N1-methylpseudouridine), abolished TLR activation, silenced unwanted innate immune triggers, and substantially elevated translation efficiency.<br><br><b>Distractor Analysis:</b><br>• Unmethylated CpG motifs actually stimulate TLR9, exacerbating inflammatory immune alarms.<br>• Deleting the poly(A) tail or the 5' 7-methylguanosine cap destabilizes mRNA and halts ribosomal translation initiation.<br>• Replacing ribose with 2'-deoxyribose converts RNA into DNA.",
+    "trapAlert": "Assuming mRNA was modified by altering its codons or removing caps, rather than biochemical nucleoside base modification (pseudouridine)."
+  },
+  {
+    "id": "imat_2026_q03",
+    "year": 2026,
+    "qNumber": "Q03",
+    "subject": "Reading Skills",
+    "chapter": "Scientific Text Analysis",
+    "subtopic": "Antimicrobial Resistance & Plasmid Transfer",
+    "tier": "Advanced Inference",
+    "question": "Consider the following passage:\n\n'Hospital-acquired infections driven by extensively drug-resistant Acinetobacter baumannii represent a formidable clinical challenge. Although point mutations in chromosomal genes confer resistance to specific fluoroquinolones, the rapid dissemination of carbapenem resistance across disparate clinical lineages is predominantly mediated by conjugative plasmids carrying blaOXA carbapenemase genes. These plasmids encode type IV secretion systems that assemble specialized pili, facilitating direct horizontal transfer of resistance cassettes between bacterial cells even under sub-inhibitory antibiotic pressures.'\n\nWhich of the following statements is best supported by the passage?",
+    "options": [
+      "Horizontal gene transfer via plasmid conjugation plays a primary role in spreading carbapenem resistance among clinical isolates.",
+      "Chromosomal point mutations are the principal driver for the transfer of carbapenem resistance between different bacterial cells.",
+      "Sub-inhibitory antibiotic concentrations completely prevent bacterial cells from expressing type IV secretion pili.",
+      "Fluoroquinolone resistance in Acinetobacter baumannii is primarily spread across lineages by conjugative plasmids.",
+      "Conjugative plasmids can only transfer genetic material if carbapenem antibiotics are present at lethal concentrations."
+    ],
+    "correctIndex": 0,
+    "explanation": "The text explicitly states: 'the rapid dissemination of carbapenem resistance across disparate clinical lineages is predominantly mediated by conjugative plasmids carrying blaOXA carbapenemase genes' via horizontal gene transfer through type IV secretion pili.<br><br><b>Distractor Analysis:</b><br>• Chromosomal point mutations are associated with fluoroquinolones, not horizontal transfer of carbapenem resistance.<br>• The passage explicitly notes conjugation occurs 'even under sub-inhibitory antibiotic pressures', directly refuting that sub-inhibitory doses prevent pili formation.<br>• Fluoroquinolone resistance is linked to chromosomal point mutations, not conjugative plasmids.<br>• Conjugation does not require lethal antibiotic concentrations.",
+    "trapAlert": "Confusing the mechanism behind fluoroquinolone resistance (chromosomal point mutations) with carbapenem resistance (conjugative plasmids)."
+  },
+  {
+    "id": "imat_2026_q04",
+    "year": 2026,
+    "qNumber": "Q04",
+    "subject": "Reading Skills",
+    "chapter": "Epigenetics & Aging",
+    "subtopic": "DNA Methylation Clocks",
+    "tier": "Critical Inference",
+    "question": "Consider the following passage:\n\n'Biological aging does not always progress in lockstep with chronological time. Epigenetic clocks, constructed by measuring cytosine methylation levels across hundreds of specific CpG dinucleotides throughout the genome, have emerged as robust molecular biomarkers of tissue age. Accelerated epigenetic aging—where predicted biological age surpasses chronological age—correlates strongly with all-cause mortality, cardiovascular morbidity, and metabolic dysfunction. Intriguingly, recent clinical trials demonstrate that targeted lifestyle, pharmacological, and dietary interventions can partially reverse aberrant hyper- and hypomethylation patterns, suggesting that epigenetic age is a plastic, modifiable physiological metric.'\n\nWhich deduction can be logically inferred from the passage?",
+    "options": [
+      "An individual's biological age as assessed by CpG methylation patterns can diverge from the number of calendar years they have lived.",
+      "Epigenetic clocks measure irreversible genetic mutations within the coding exons of human DNA.",
+      "Chronological age is malleable and can be decreased through targeted pharmacological and dietary interventions.",
+      "Hypermethylation of CpG dinucleotides is exclusively beneficial and prevents all cardiovascular morbidity.",
+      "All-cause mortality is entirely independent of tissue biological age and epigenetic modifications."
+    ],
+    "correctIndex": 0,
+    "explanation": "The passage establishes in its opening sentence that 'Biological aging does not always progress in lockstep with chronological time' and explains that accelerated epigenetic aging occurs when predicted biological age surpasses chronological age, confirming divergence between biological and calendar age.<br><br><b>Distractor Analysis:</b><br>• Epigenetic clocks track DNA methylation (chemical modifications to bases), not irreversible genetic mutations in exon coding sequences.<br>• Chronological age is calendar time, which cannot be reversed.<br>• Both hyper- and hypomethylation patterns can be aberrant and are linked to pathology.<br>• The passage states that accelerated epigenetic aging correlates strongly with all-cause mortality, directly contradicting independence.",
+    "trapAlert": "Failing to distinguish between chronological age (calendar years, fixed) and biological/epigenetic age (tissue methylation profile, plastic)."
+  },
+  {
+    "id": "imat_2026_q05",
+    "year": 2026,
+    "qNumber": "Q05",
+    "subject": "Logical Reasoning",
+    "chapter": "Critical Thinking",
+    "subtopic": "Identifying Assumptions",
+    "tier": "Advanced Logic",
+    "question": "Examine the following argument:\n\n'Hospitals in rural districts face persistent shortages of specialist cardiologists, leading to delays in diagnosing acute coronary syndromes. To eliminate these delays, health authorities plan to deploy AI-powered telecardiology triage algorithms in all rural emergency departments. Because the algorithm interprets 12-lead electrocardiograms in under three seconds with an accuracy matching expert panels, diagnostic delays in rural cardiology triage will be eradicated.'\n\nWhich of the following is an unstated assumption essential to the author's conclusion?",
+    "options": [
+      "The primary cause of diagnostic delays is the time required to interpret electrocardiograms rather than bottlenecks in patient transfer or equipment availability.",
+      "Every rural emergency department has higher patient volumes than large metropolitan teaching hospitals.",
+      "Specialist cardiologists are unable to interpret 12-lead electrocardiograms accurately.",
+      "Cardiovascular diseases are the only medical emergencies treated in rural healthcare facilities.",
+      "Patients in rural regions will always refuse to be examined in person by human medical doctors."
+    ],
+    "correctIndex": 0,
+    "explanation": "The author concludes that implementing an instant ECG interpretation algorithm will eradicate diagnostic delays in rural emergency departments. This conclusion holds only if the bottleneck causing the delay is indeed the time taken to interpret the ECG. If the delay is caused by ambulance transport times, lack of nursing staff, or availability of ECG machines, the algorithm will not eradicate the overall diagnostic delay. Therefore, assumption (A) is strictly necessary.<br><br><b>Distractor Analysis:</b><br>• Relative patient volume between rural and metropolitan hospitals is irrelevant to solving the rural delay.<br>• The author states the AI matches expert panels, not that human cardiologists are inaccurate.<br>• Whether non-cardiovascular emergencies exist does not impact the specific argument on cardiology triage.<br>• Patient willingness to see human doctors does not bear on the validity of automated triage speed.",
+    "trapAlert": "Confusing an essential prerequisite assumption with an extreme or irrelevant generalization."
+  },
+  {
+    "id": "imat_2026_q06",
+    "year": 2026,
+    "qNumber": "Q06",
+    "subject": "Logical Reasoning",
+    "chapter": "Critical Thinking",
+    "subtopic": "Detecting Reasoning Flaws",
+    "tier": "Advanced Logic",
+    "question": "A medical wellness report argues:\n\n'An epidemiological study tracking 10,000 adults over fifteen years revealed that participants who consumed at least three cups of polyphenol-rich green tea daily had a 25% lower incidence of cognitive impairment than non-tea drinkers. Therefore, to safeguard our senior population against cognitive decline, municipal health boards must immediately distribute polyphenol supplements to all elderly residents.'\n\nWhich of the following identifies the fundamental flaw in the reasoning above?",
+    "options": [
+      "It conflates a statistical association between green tea consumption and lower cognitive impairment with a direct causal relationship, ignoring confounding lifestyle factors.",
+      "It assumes that 10,000 participants is too small a statistical sample size to calculate meaningful epidemiological percentages.",
+      "It relies on circular reasoning by defining cognitive impairment solely in terms of green tea intake.",
+      "It attacks the character and motives of the researchers who conducted the 15-year study.",
+      "It treats a condition that is sufficient to prevent disease as though it were strictly necessary."
+    ],
+    "correctIndex": 0,
+    "explanation": "The flaw is the classic *correlation versus causation* fallacy (cum hoc ergo propter hoc). An observational association between habitual tea drinking and reduced cognitive impairment does not prove that polyphenols directly cause the neuroprotection. Green tea drinkers may also adhere to healthier overall diets, exercise more frequently, or enjoy higher socioeconomic status—confounding variables that the author completely overlooks before prescribing mass supplementation.<br><br><b>Distractor Analysis:</b><br>• A sample size of 10,000 tracked over 15 years is statistically substantial, not inherently defective.<br>• The argument is not circular; it presents evidence and leaps to an unearned causal conclusion.<br>• There is no ad hominem attack on the researchers.<br>• The argument does not claim tea is necessary (it recommends supplements based on assumed efficacy).",
+    "trapAlert": "Selecting answer choices that sound formal (circular reasoning, ad hominem) when the true flaw is causal overreach from observational data."
+  },
+  {
+    "id": "imat_2026_q07",
+    "year": 2026,
+    "qNumber": "Q07",
+    "subject": "Logical Reasoning",
+    "chapter": "Formal Logic",
+    "subtopic": "Conditional Statements & Deductions",
+    "tier": "Formal Deductive",
+    "question": "In a hospital research protocol, the following rules govern clinical trial eligibility:\n\n1. If a patient is diagnosed with refractory autoimmune nephritis, they are enrolled in the biologics arm unless they test positive for latent tuberculosis.\n2. No patient who tests positive for latent tuberculosis is permitted to receive immunosuppressive biologics.\n3. Patient K has been diagnosed with refractory autoimmune nephritis and is permitted to receive immunosuppressive biologics.\n\nWhich of the following conclusions must be strictly true regarding Patient K?",
+    "options": [
+      "Patient K does not test positive for latent tuberculosis and is enrolled in the biologics arm.",
+      "Patient K must be suffering from a bacterial kidney infection rather than autoimmune nephritis.",
+      "Patient K tests positive for latent tuberculosis but receives antimicrobial prophylaxis.",
+      "Patient K cannot be enrolled in the biologics arm under any circumstances.",
+      "Patient K's tuberculosis status cannot be determined from the premises provided."
+    ],
+    "correctIndex": 0,
+    "explanation": "Let N = diagnosed with refractory nephritis, B = enrolled/receives biologics, T = tests positive for latent TB.<br>Rule 1: If N and not T → B.<br>Rule 2: If T → not B (contrapositive: if B → not T).<br>Premise 3 tells us Patient K is diagnosed with N and is permitted to receive B. By Rule 2's contrapositive, since K receives B, K cannot test positive for latent TB (not T). With N = True and T = False, Rule 1 dictates that Patient K is enrolled in the biologics arm. Thus, Patient K does not test positive for latent TB and is enrolled in the biologics arm.<br><br><b>Distractor Analysis:</b><br>• Patient K has confirmed autoimmune nephritis, not bacterial infection.<br>• K cannot test positive for TB, as Rule 2 categorically prohibits biologics for TB-positive patients.<br>• K is permitted to receive biologics, so claiming K cannot be enrolled contradicts the premise.<br>• TB status is conclusively deduced via the contrapositive of Rule 2.",
+    "trapAlert": "Failing to apply the contrapositive of 'No T receives B' (If B, then not T)."
+  },
+  {
+    "id": "imat_2026_q08",
+    "year": 2026,
+    "qNumber": "Q08",
+    "subject": "Logical Reasoning",
+    "chapter": "Problem Solving",
+    "subtopic": "Combinatorial Constraints & Scheduling",
+    "tier": "Analytical Puzzle",
+    "question": "A hospital ICU requires exactly two physicians on duty for each of three consecutive shifts: Morning, Evening, and Night. Five physicians—Dr. A, Dr. B, Dr. C, Dr. D, and Dr. E—are available. The roster must satisfy the following constraints:\n\n• Each physician works at most two shifts during the day.\n• Dr. A and Dr. B cannot work together on the same shift.\n• If Dr. C works the Morning shift, Dr. D must work the Night shift.\n• Dr. E works both the Morning and Evening shifts.\n• Dr. B is scheduled for the Morning shift.\n\nWhich physician must be paired with Dr. E on the Evening shift if Dr. C is on duty during the Night shift?",
+    "options": [
+      "Dr. A",
+      "Dr. B",
+      "Dr. C",
+      "Dr. D",
+      "No valid schedule is possible"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let us systematically determine the roster:<br>1. Morning shift: Dr. E is scheduled (given). Dr. B is scheduled (given). Since Dr. B is on duty, Dr. A cannot work Morning (constraint 2). Dr. C does not work Morning (as Morning is fully staffed by E and B).<br>2. Evening shift: Dr. E is scheduled (given). Exactly one other physician must join Dr. E.<br>3. Night shift: We are given that Dr. C is on duty during the Night shift.<br>4. Condition check: 'If Dr. C works Morning, Dr. D must work Night.' Since Dr. C worked Night (not Morning), this conditional rule is satisfied without imposing constraints on D.<br>5. Constraints on remaining doctors for Evening: Can Dr. B work Evening? Dr. B worked Morning. Can Dr. C work Evening? Dr. C is on Night. If Dr. D or Dr. A works Evening:<br>If Dr. B works Evening, then Night needs two physicians from {A, D} (since B and E already worked 2 shifts, C is on Night). But Dr. A and Dr. B cannot work together—not an issue on separate shifts. However, look at Dr. A: Dr. A worked 0 shifts in Morning. If Dr. A works Evening with Dr. E, Night can be staffed by Dr. C and Dr. D. That uses: E (M, Ev), B (M), A (Ev), C (N), D (N). Every doctor works ≤ 2 shifts, Morning has {B, E}, Evening has {A, E}, Night has {C, D}. All constraints are satisfied!<br>Therefore, Dr. A is paired with Dr. E on the Evening shift.",
+    "trapAlert": "Misreading 'If C works Morning' as bidirectional, incorrectly forcing D into Night even when C works Night."
+  },
+  {
+    "id": "imat_2026_q09",
+    "year": 2026,
+    "qNumber": "Q09",
+    "subject": "Logical Reasoning",
+    "chapter": "Problem Solving",
+    "subtopic": "Quantitative Rates & Infusion Dilution",
+    "tier": "Numerical Logic",
+    "question": "A pediatric patient weighing 20 kg requires a continuous intravenous infusion of dopamine at a dosage of 5 µg/kg/min. The hospital pharmacy prepares an infusion bag containing 200 mg of dopamine dissolved in 250 mL of 5% dextrose solution.\n\nAt what infusion pump rate, in milliliters per hour (mL/h), must the IV pump be set to deliver the exact prescribed dose?",
+    "options": [
+      "7.5 mL/h",
+      "6.0 mL/h",
+      "12.0 mL/h",
+      "15.0 mL/h",
+      "3.75 mL/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Step 1: Calculate the required dose rate per minute:<br>\\(\\text{Dose rate} = 5\\,\\mu\\text{g/kg/min} \\times 20\\,\\text{kg} = 100\\,\\mu\\text{g/min}\\).<br><br>Step 2: Convert to dose per hour:<br>\\(\\text{Hourly dose} = 100\\,\\mu\\text{g/min} \\times 60\\,\\text{min/h} = 6,000\\,\\mu\\text{g/h} = 6\\,\\text{mg/h}\\).<br><br>Step 3: Determine drug concentration in the IV bag:<br>\\(\\text{Concentration} = \\frac{200\\,\\text{mg}}{250\\,\\text{mL}} = 0.8\\,\\text{mg/mL}\\).<br><br>Step 4: Compute pump infusion rate in mL/h:<br>\\(\\text{Pump rate} = \\frac{6\\,\\text{mg/h}}{0.8\\,\\text{mg/mL}} = \\frac{60}{8} = 7.5\\,\\text{mL/h}\\).",
+    "trapAlert": "Forgetting to multiply the per-minute dose by 60 to obtain the hourly rate (which would yield 0.125 mL/h or lead to guessing 6.0/12.0)."
+  },
+  {
+    "id": "imat_2026_q10",
+    "year": 2026,
+    "qNumber": "Q10",
+    "subject": "Biology",
+    "chapter": "Cell Membrane & Transport",
+    "subtopic": "Sodium-Potassium ATPase Stoichiometry",
+    "tier": "Core Biology",
+    "question": "The plasma membrane \\(\\text{Na}^+/\\text{K}^+\\)-ATPase is a vital primary active transporter in human cells. For each single molecule of ATP hydrolyzed, what is the exact transport stoichiometry and direction of ion movement across the membrane?",
+    "options": [
+      "3 \\(\\text{Na}^+\\) ions pumped out of the cell and 2 \\(\\text{K}^+\\) ions pumped into the cell",
+      "2 \\(\\text{Na}^+\\) ions pumped out of the cell and 3 \\(\\text{K}^+\\) ions pumped into the cell",
+      "3 \\(\\text{Na}^+\\) ions pumped into the cell and 2 \\(\\text{K}^+\\) ions pumped out of the cell",
+      "1 \\(\\text{Na}^+\\) ion pumped out of the cell and 1 \\(\\text{K}^+\\) ion pumped into the cell",
+      "3 \\(\\text{Na}^+\\) ions pumped out of the cell and 3 \\(\\text{K}^+\\) ions pumped into the cell"
+    ],
+    "correctIndex": 0,
+    "explanation": "The \\(\\text{Na}^+/\\text{K}^+\\)-ATPase exports 3 \\(\\text{Na}^+\\) ions out of the cytoplasm into the extracellular fluid and imports 2 \\(\\text{K}^+\\) ions into the cytoplasm against their respective electrochemical gradients, consuming 1 ATP molecule. This 3:2 stoichiometry renders the pump electrogenic, contributing to the negative resting membrane potential of animal cells.",
+    "trapAlert": "Inverting the numbers (thinking 2 Na out, 3 K in) or reversing the intracellular vs. extracellular direction."
+  },
+  {
+    "id": "imat_2026_q11",
+    "year": 2026,
+    "qNumber": "Q11",
+    "subject": "Biology",
+    "chapter": "Biomolecules & Protein Chemistry",
+    "subtopic": "Protein Structure & Denaturation",
+    "tier": "Core Biology",
+    "question": "Which level of protein structural organization is stabilized by covalent disulfide bonds between cysteine residues, and which specific reducing agent is classically used in laboratory electrophoresis to cleave these bonds?",
+    "options": [
+      "Tertiary and quaternary structure; 2-mercaptoethanol (β-mercaptoethanol)",
+      "Primary structure; sodium dodecyl sulfate (SDS)",
+      "Secondary structure (α-helices); urea",
+      "Primary structure; guanidinium chloride",
+      "Secondary structure (β-pleated sheets); cyanogen bromide"
+    ],
+    "correctIndex": 0,
+    "explanation": "Disulfide bridges (–S–S–) form covalently between the thiol (–SH) groups of two cysteine side chains, stabilizing both the tertiary folding of a single polypeptide chain and the quaternary assembly of multimeric subunits. Reducing agents such as 2-mercaptoethanol (β-ME) or dithiothreitol (DTT) reduce disulfide bridges back to free sulfhydryl groups.<br><br><b>Distractor Analysis:</b><br>• Primary structure consists of peptide bonds (amide linkages), not disulfide bridges.<br>• Secondary structures (α-helices and β-sheets) are stabilized by hydrogen bonds between backbone carbonyl and amino groups.<br>• SDS is an anionic detergent that disrupts non-covalent hydrophobic interactions, not a reducing agent.",
+    "trapAlert": "Believing disulfide bonds belong to primary structure because they are covalent, or confusing reducing agents (β-ME) with detergents (SDS)."
+  },
+  {
+    "id": "imat_2026_q12",
+    "year": 2026,
+    "qNumber": "Q12",
+    "subject": "Biology",
+    "chapter": "Cell Organelles",
+    "subtopic": "Lysosomal Targeting & Storage Diseases",
+    "tier": "High-Yield Medical",
+    "question": "Newly synthesized acid hydrolases destined for lysosomes are recognized and sorted in the Golgi complex by the addition of which specific molecular recognition marker?",
+    "options": [
+      "Mannose-6-phosphate",
+      "Ubiquitin polypeptide chain",
+      "Glycosylphosphatidylinositol (GPI) anchor",
+      "Fucose-α-1,2-galactose",
+      "Sialic acid (N-acetylneuraminic acid)"
+    ],
+    "correctIndex": 0,
+    "explanation": "In the cis-Golgi network, lysosomal enzymes are tagged with mannose-6-phosphate (M6P) residues. Trans-Golgi M6P receptors bind these proteins and package them into clathrin-coated vesicles destined for late endosomes and lysosomes. Failure of this phosphotransferase reaction leads to I-cell disease (mucolipidosis II), where lysosomal enzymes are mistakenly secreted into the extracellular space.<br><br><b>Distractor Analysis:</b><br>• Ubiquitination targets cytosolic proteins for proteasomal degradation.<br>• GPI anchors attach peripheral proteins to the outer leaflet of the plasma membrane.<br>• Fucose and sialic acid are common terminal sugars on cell-surface glycoproteins, not lysosomal sorting signals.",
+    "trapAlert": "Confusing the lysosomal targeting signal (Mannose-6-phosphate) with the proteasome degradation signal (Ubiquitin)."
+  },
+  {
+    "id": "imat_2026_q13",
+    "year": 2026,
+    "qNumber": "Q13",
+    "subject": "Biology",
+    "chapter": "Bioenergetics & Cellular Respiration",
+    "subtopic": "Glycolysis Allosteric Regulation",
+    "tier": "Advanced Biochemistry",
+    "question": "Which enzyme catalyzes the committed, rate-limiting step of glycolysis, and what molecule serves as its most potent positive allosteric activator in hepatic tissue?",
+    "options": [
+      "Phosphofructokinase-1 (PFK-1); Fructose 2,6-bisphosphate",
+      "Hexokinase; Glucose 6-phosphate",
+      "Pyruvate kinase; Alanine",
+      "Phosphofructokinase-1 (PFK-1); Citrate",
+      "Aldolase; Phosphoenolpyruvate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phosphofructokinase-1 (PFK-1) catalyzes the phosphorylation of fructose 6-phosphate to fructose 1,6-bisphosphate, which is the committed and rate-limiting step of glycolysis. Fructose 2,6-bisphosphate (synthesized by PFK-2 in response to insulin) is its most potent positive allosteric activator, overriding ATP-mediated allosteric inhibition.<br><br><b>Distractor Analysis:</b><br>• Glucose 6-phosphate is a negative feedback inhibitor of hexokinase, not an activator of the committed step.<br>• Alanine and ATP are allosteric inhibitors of pyruvate kinase.<br>• Citrate is a potent allosteric inhibitor of PFK-1, signaling ample biosynthetic precursors from the Krebs cycle.",
+    "trapAlert": "Confusing citrate (an inhibitor of PFK-1) with fructose 2,6-bisphosphate (the primary activator)."
+  },
+  {
+    "id": "imat_2026_q14",
+    "year": 2026,
+    "qNumber": "Q14",
+    "subject": "Biology",
+    "chapter": "Mitochondria & Oxidative Phosphorylation",
+    "subtopic": "Uncouplers & Proton Gradient",
+    "tier": "Advanced Biochemistry",
+    "question": "The addition of 2,4-dinitrophenol (DNP) to actively respiring isolated mitochondria immediately results in which combination of physiological effects?",
+    "options": [
+      "Dissipation of the inner mitochondrial proton gradient, cessation of ATP synthesis, and continuous high oxygen consumption with heat generation",
+      "Inhibition of complex IV, immediate arrest of electron transport, and cessation of oxygen consumption",
+      "Hyperpolarization of the inner mitochondrial membrane and dramatic acceleration of ATP synthase activity",
+      "Blockade of ATP/ADP translocase, leading to mitochondrial swelling and cytochrome c release",
+      "Complete inhibition of NADH dehydrogenase (complex I) with zero heat production"
+    ],
+    "correctIndex": 0,
+    "explanation": "2,4-dinitrophenol (DNP) is a lipophilic weak acid that acts as a chemical uncoupling agent. It shuttles protons across the inner mitochondrial membrane, dissipating the transmembrane proton electrochemical gradient (\\(\\Delta\\mu_{\\text{H}^+}\\)). As a result, ATP synthase lacks the proton motive force to synthesize ATP. However, electron transport continues uninhibited (and even accelerates in an attempt to restore the gradient), consuming oxygen at high rates while the released free energy is dissipated purely as heat (thermogenesis).",
+    "trapAlert": "Assuming uncouplers halt oxygen consumption; in reality, oxygen consumption continues or accelerates while only ATP synthesis stops."
+  },
+  {
+    "id": "imat_2026_q15",
+    "year": 2026,
+    "qNumber": "Q15",
+    "subject": "Biology",
+    "chapter": "Photosynthesis",
+    "subtopic": "Photolysis & Electron Transport",
+    "tier": "Core Biology",
+    "question": "During the light-dependent reactions of oxygenic photosynthesis in higher plant chloroplasts, where does the photolysis of water occur, and what is the ultimate electron acceptor in linear electron flow?",
+    "options": [
+      "Thylakoid lumen by the oxygen-evolving complex of Photosystem II; \\(\\text{NADP}^+\\)",
+      "Chloroplast stroma by Photosystem I; \\(\\text{FAD}\\)",
+      "Thylakoid membrane by cytochrome \\(b_6f\\); ATP synthase",
+      "Intermembrane space by plastocyanin; Carbon dioxide",
+      "Inner chloroplast membrane by RuBisCO; Phosphoglycerate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Water photolysis (\\(2\\text{H}_2\\text{O} \\to 4\\text{H}^+ + 4e^- + \\text{O}_2\\)) is catalyzed by the manganese-containing oxygen-evolving complex associated with Photosystem II (P680) located on the luminal side of the thylakoid membrane. This releases protons directly into the thylakoid lumen, generating the proton gradient. Electrons travel through plastoquinone, cytochrome \\(b_6f\\), and plastocyanin to Photosystem I (P700), eventually reducing ferredoxin-NADP+ reductase to produce NADPH in the stroma. Thus, \\(\\text{NADP}^+\\) is the ultimate electron acceptor.",
+    "trapAlert": "Confusing the location of water oxidation (lumen) with the site of NADPH and ATP generation (stroma)."
+  },
+  {
+    "id": "imat_2026_q16",
+    "year": 2026,
+    "qNumber": "Q16",
+    "subject": "Biology",
+    "chapter": "Cell Division & Cell Cycle",
+    "subtopic": "G1/S Checkpoint & Tumor Suppressors",
+    "tier": "Core Genetics",
+    "question": "In the mammalian cell cycle, passage through the G1 restriction point (R point) into S phase is driven by cyclin D-CDK4/6 phosphorylation of which critical tumor suppressor protein, thereby releasing E2F transcription factors?",
+    "options": [
+      "Retinoblastoma protein (pRb)",
+      "p53 transcription factor",
+      "BRCA1 repair protein",
+      "Adenomatous polyposis coli (APC) protein",
+      "PTEN phosphatase"
+    ],
+    "correctIndex": 0,
+    "explanation": "In unphosphorylated or hypophosphorylated form, the retinoblastoma protein (pRb) binds and represses E2F transcription factors. Mitogenic signaling upregulates Cyclin D, activating CDK4 and CDK6. These complexes phosphorylate pRb, inducing a conformational change that releases active E2F. Free E2F transcribes genes essential for S-phase entry, including Cyclin E, Cyclin A, and DNA polymerase.",
+    "trapAlert": "Picking p53 because it is famous in cell cycle arrest, without recognizing that p53 induces p21, which *inhibits* CDK, preventing pRb phosphorylation."
+  },
+  {
+    "id": "imat_2026_q17",
+    "year": 2026,
+    "qNumber": "Q17",
+    "subject": "Biology",
+    "chapter": "Meiosis & Chromosomal Abnormalities",
+    "subtopic": "Nondisjunction & Aneuploidy",
+    "tier": "Core Genetics",
+    "question": "If nondisjunction of a single chromosome pair occurs during Meiosis I during oogenesis, what will be the chromosome content of the four resulting gametes upon completion of Meiosis II (where \\(n\\) is the haploid number)?",
+    "options": [
+      "Two gametes with \\(n + 1\\) and two gametes with \\(n - 1\\)",
+      "One gamete with \\(n + 1\\), one with \\(n - 1\\), and two normal gametes with \\(n\\)",
+      "All four gametes will have \\(n + 1\\)",
+      "Two gametes with \\(n\\) and two gametes with \\(n - 1\\)",
+      "All four gametes will be completely diploid (\\(2n\\))"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nondisjunction in Meiosis I involves the failure of homologous chromosomes to separate. Consequently, one daughter cell receives both homologs (yielding two \\(n + 1\\) gametes after normal sister chromatid separation in Meiosis II), while the other daughter cell receives neither homolog (yielding two \\(n - 1\\) gametes after Meiosis II). Hence, 100% of the gametes are aneuploid: 50% are \\(n + 1\\) and 50% are \\(n - 1\\).<br><br><i>Note:</i> Nondisjunction in Meiosis II produces 50% normal gametes (\\(n, n\\)), 25% \\(n + 1\\), and 25% \\(n - 1\\).",
+    "trapAlert": "Confusing Meiosis I nondisjunction (0% normal gametes: two n+1, two n-1) with Meiosis II nondisjunction (50% normal n, one n+1, one n-1)."
+  },
+  {
+    "id": "imat_2026_q18",
+    "year": 2026,
+    "qNumber": "Q18",
+    "subject": "Biology",
+    "chapter": "Molecular Genetics",
+    "subtopic": "DNA Replication Fidelity & Exonuclease",
+    "tier": "Core Genetics",
+    "question": "The high fidelity of eukaryotic DNA replication is maintained by the proofreading activity of replicative DNA polymerases (such as DNA Polymerase δ and ε). What enzymatic activity performs this immediate proofreading excision of mismatched nucleotides?",
+    "options": [
+      "\\(3' \\to 5'\\) exonuclease activity",
+      "\\(5' \\to 3'\\) exonuclease activity",
+      "\\(5' \\to 3'\\) endonuclease activity",
+      "DNA ligase activity",
+      "Topoisomerase I isomerase activity"
+    ],
+    "correctIndex": 0,
+    "explanation": "DNA polymerases synthesize DNA in the \\(5' \\to 3'\\) direction. When an incorrect nucleotide is incorporated, the mismatched base distorts the enzyme's active site, shifting the \\(3'\\)-OH terminus to the exonuclease catalytic domain. The enzyme hydrolyzes the erroneous nucleotide in the backward \\(3' \\to 5'\\) direction (\\(3' \\to 5'\\) exonuclease proofreading) before resuming forward synthesis.<br><br><b>Distractor Analysis:</b><br>• \\(5' \\to 3'\\) exonuclease activity (seen in bacterial Pol I) removes RNA primers from the 5' end of Okazaki fragments.<br>• Endonucleases cleave internal phosphodiester bonds, as in nucleotide excision repair.",
+    "trapAlert": "Confusing the direction of synthesis (\\(5' \\to 3'\\)) with the direction of proofreading excision (\\(3' \\to 5'\\))."
+  },
+  {
+    "id": "imat_2026_q19",
+    "year": 2026,
+    "qNumber": "Q19",
+    "subject": "Biology",
+    "chapter": "Molecular Genetics",
+    "subtopic": "Post-Transcriptional Modification",
+    "tier": "Core Genetics",
+    "question": "Which set of modifications correctly represents the processing events undergone by primary pre-mRNA transcripts in the eukaryotic nucleus prior to nuclear export?",
+    "options": [
+      "Addition of a 7-methylguanosine cap at the 5' end, excision of introns by the spliceosome, and addition of a polyadenylated [poly(A)] tail at the 3' end",
+      "Removal of 5' exons, addition of a poly(A) tail at the 5' end, and insertion of a 7-methylguanosine cap at the 3' end",
+      "Phosphorylation of the 3' end, removal of introns, and attachment of formylmethionine at the 5' end",
+      "Excision of exons by topoisomerases, circularization of the transcript, and translation in the nucleolus",
+      "Addition of a thymine cap at the 3' end and removal of promoter sequences by RNA polymerase III"
+    ],
+    "correctIndex": 0,
+    "explanation": "Eukaryotic pre-mRNA processing requires three canonical nuclear events:<br>1. Addition of a 7-methylguanosine (\\(m^7G\\)) cap to the 5' end via an unusual \\(5'\\text{--}5'\\) triphosphate bridge (protects against degradation and aids ribosome binding).<br>2. Splicing: excision of non-coding introns and ligation of coding exons by the snRNP-dependent spliceosome.<br>3. Cleavage and 3' polyadenylation: addition of a string of adenine residues [poly(A) tail] to enhance mRNA stability and nuclear export.",
+    "trapAlert": "Mixing up the orientation (placing the cap at the 3' end or the poly(A) tail at the 5' end)."
+  },
+  {
+    "id": "imat_2026_q20",
+    "year": 2026,
+    "qNumber": "Q20",
+    "subject": "Biology",
+    "chapter": "Molecular Genetics",
+    "subtopic": "Translation & Wobble Hypothesis",
+    "tier": "Advanced Molecular",
+    "question": "According to Francis Crick's Wobble Hypothesis, non-Watson-Crick base pairing can occur during translation between which specific positions of the mRNA codon and the tRNA anticodon?",
+    "options": [
+      "The 3' base of the mRNA codon and the 5' base of the tRNA anticodon",
+      "The 5' base of the mRNA codon and the 3' base of the tRNA anticodon",
+      "The middle (second) base of both the mRNA codon and the tRNA anticodon",
+      "The 3' base of the tRNA anticodon and the 3' base of the mRNA codon",
+      "Exclusively between cytosine in the codon and adenine in the anticodon at any position"
+    ],
+    "correctIndex": 0,
+    "explanation": "In codon-anticodon pairing, the strands run antiparallel. The first two bases of the mRNA codon (positions 1 and 2, reading \\(5' \\to 3'\\)) pair strictly via standard Watson-Crick rules with positions 3 and 2 of the tRNA anticodon (reading \\(3' \\to 5'\\)). The 'wobble' position corresponds to the 3' base of the mRNA codon and the 5' base of the tRNA anticodon (e.g., where inosine in the tRNA can pair with U, C, or A).",
+    "trapAlert": "Inverting the 5' and 3' relationship between mRNA codon and tRNA anticodon in the wobble position."
+  },
+  {
+    "id": "imat_2026_q21",
+    "year": 2026,
+    "qNumber": "Q21",
+    "subject": "Biology",
+    "chapter": "Classical & Human Genetics",
+    "subtopic": "X-Linked Recessive Pedigrees",
+    "tier": "Core Genetics",
+    "question": "A phenotypically unaffected woman whose father had hemophilia A (an X-linked recessive disorder) marries a phenotypically normal man. What is the probability that their first child will be a son with hemophilia A?",
+    "options": [
+      "0.25 (25%)",
+      "0.50 (50%)",
+      "0.00 (0%)",
+      "0.125 (12.5%)",
+      "0.75 (75%)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hemophilia A is X-linked recessive (\\(X^h\\)).<br>• The woman's father was affected (\\(X^h Y\\)), so he transmitted his single \\(X^h\\) chromosome to his daughter. Because she is phenotypically normal, her genotype is obligate carrier: \\(X^H X^h\\).<br>• Her husband is phenotypically normal, so his genotype is \\(X^H Y\\).<br>• Possible offspring genotypes:<br>  - \\(X^H X^H\\) (normal daughter, probability 0.25)<br>  - \\(X^H X^h\\) (carrier daughter, probability 0.25)<br>  - \\(X^H Y\\) (normal son, probability 0.25)<br>  - \\(X^h Y\\) (affected son, probability 0.25)<br>The probability that the first child is an affected son is \\(0.25\\) (or 25%).<br><i>Trap Note:</i> If asked 'Given that the child is a boy, what is the probability he has hemophilia?', the answer would be 50%. But for an unconditioned first child, it is 25%.",
+    "trapAlert": "Confusing 'probability of having an affected son' (25%) with 'probability a son is affected' (50%)."
+  },
+  {
+    "id": "imat_2026_q22",
+    "year": 2026,
+    "qNumber": "Q22",
+    "subject": "Biology",
+    "chapter": "Mendelian Genetics",
+    "subtopic": "Epistasis & Phenotypic Ratios",
+    "tier": "Advanced Genetics",
+    "question": "In a dihybrid cross between two heterozygous organisms (\\(AaBb \\times AaBb\\)), what classic phenotypic ratio is observed in the \\(F_2\\) generation if duplicate recessive epistasis (complementary gene action) governs the trait, where homozygous recessiveness at either locus produces the same mutant phenotype?",
+    "options": [
+      "9 : 7",
+      "9 : 3 : 4",
+      "12 : 3 : 1",
+      "15 : 1",
+      "9 : 6 : 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a standard Mendelian dihybrid cross, the \\(F_2\\) genotypes segregate as \\(9\\, A\\text{–}B\\text{–} : 3\\, A\\text{–}bb : 3\\, aaB\\text{–} : 1\\, aabb\\).<br>In duplicate recessive epistasis (complementary gene interaction, as observed in flower color in sweet peas studied by Bateson and Punnett), at least one dominant allele at both loci (\\(A\\text{–}B\\text{–}\\)) is required for the dominant phenotype. If either locus is homozygous recessive (\\(A\\text{–}bb\\), \\(aaB\\text{–}\\), or \\(aabb\\)), the mutant/colorless phenotype results.<br>Summing the recessive classes: \\(3 + 3 + 1 = 7\\). Thus, the phenotypic ratio is 9 : 7.<br><br><b>Distractor Summary:</b><br>• 9:3:4 = Recessive epistasis (e.g., coat color in Labrador retrievers).<br>• 12:3:1 = Dominant epistasis.<br>• 15:1 = Duplicate dominant genes.",
+    "trapAlert": "Confusing duplicate recessive epistasis (9:7) with recessive epistasis (9:3:4)."
+  },
+  {
+    "id": "imat_2026_q23",
+    "year": 2026,
+    "qNumber": "Q23",
+    "subject": "Biology",
+    "chapter": "Population Genetics",
+    "subtopic": "Hardy-Weinberg Equilibrium",
+    "tier": "Core Genetics",
+    "question": "In a large, randomly mating human population in Hardy-Weinberg equilibrium, the incidence of an autosomal recessive disease is 1 in 10,000 live births (\\(q^2 = 0.0001\\)). What is the approximate frequency of healthy heterozygous carriers in this population?",
+    "options": [
+      "Approximately 0.0198 (about 1 in 50 individuals)",
+      "Approximately 0.0001 (1 in 10,000 individuals)",
+      "Approximately 0.0099 (about 1 in 100 individuals)",
+      "Approximately 0.0400 (about 1 in 25 individuals)",
+      "Approximately 0.1000 (1 in 10 individuals)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Given: \\(q^2 = 1/10,000 = 0.0001\\).<br>• Recessive allele frequency: \\(q = \\sqrt{0.0001} = 0.01\\).<br>• Dominant allele frequency: \\(p = 1 - q = 1 - 0.01 = 0.99\\).<br>• Frequency of heterozygous carriers: \\(2pq = 2 \\times 0.99 \\times 0.01 = 0.0198\\).<br>Converting to a ratio: \\(1 / 0.0198 \\approx 50.5\\), which is approximately 1 in 50 individuals (or ~2%).",
+    "trapAlert": "Equating the carrier frequency directly to \\(q\\) (0.01 or 1 in 100) instead of \\(2pq\\) (0.0198 or ~1 in 50)."
+  },
+  {
+    "id": "imat_2026_q24",
+    "year": 2026,
+    "qNumber": "Q24",
+    "subject": "Biology",
+    "chapter": "Human Physiology: Nervous System",
+    "subtopic": "Neuronal Action Potential",
+    "tier": "Core Physiology",
+    "question": "During the repolarization phase of a standard neuronal action potential, which ionic events occur across the axonal membrane?",
+    "options": [
+      "Inactivation of voltage-gated \\(\\text{Na}^+\\) channels and opening of voltage-gated \\(\\text{K}^+\\) channels, leading to \\(\\text{K}^+\\) efflux",
+      "Opening of voltage-gated \\(\\text{Na}^+\\) channels and rapid influx of \\(\\text{Na}^+\\)",
+      "Opening of ligand-gated \\(\\text{Cl}^-\\) channels and active extrusion of \\(\\text{Ca}^{2+}\\)",
+      "Activation of the \\(\\text{Na}^+/\\text{K}^+\\) pump to export 3 \\(\\text{K}^+\\) ions in exchange for 2 \\(\\text{Na}^+\\)",
+      "Closure of all \\(\\text{K}^+\\) channels and sustained high permeability to calcium ions"
+    ],
+    "correctIndex": 0,
+    "explanation": "At the peak of the action potential (+30 to +40 mV), the inactivation gates (h-gates) of voltage-gated \\(\\text{Na}^+\\) channels close, halting sodium influx. Concurrently, delayed-rectifier voltage-gated \\(\\text{K}^+\\) channels open fully, allowing potassium ions to rush down their electrochemical gradient out of the cell (\\(\\text{K}^+\\) efflux). This outflow of positive charge repolarizes the membrane back toward negative potential.",
+    "trapAlert": "Thinking that repolarization is actively driven by the \\(\\text{Na}^+/\\text{K}^+\\) pump rather than passive \\(\\text{K}^+\\) efflux through voltage-gated channels."
+  },
+  {
+    "id": "imat_2026_q25",
+    "year": 2026,
+    "qNumber": "Q25",
+    "subject": "Biology",
+    "chapter": "Human Physiology: Nervous System",
+    "subtopic": "Synaptic Transmission & Neurotransmitters",
+    "tier": "Core Physiology",
+    "question": "What is the immediate direct consequence of action potential arrival at the presynaptic axon terminal that triggers neurotransmitter exocytosis into the synaptic cleft?",
+    "options": [
+      "Opening of voltage-gated \\(\\text{Ca}^{2+}\\) channels, causing \\(\\text{Ca}^{2+}\\) influx that binds to synaptotagmin",
+      "Opening of ligand-gated \\(\\text{Na}^+\\) channels, triggering active endocytosis of neurotransmitters",
+      "Efflux of \\(\\text{Mg}^{2+}\\) ions through NMDA receptors, causing vesicle fusion",
+      "Hydrolysis of acetylcholine by acetylcholinesterase within the synaptic vesicle lumen",
+      "Hyperpolarization of the presynaptic membrane by opening chloride channels"
+    ],
+    "correctIndex": 0,
+    "explanation": "Depolarization of the presynaptic terminal activates P/Q- and N-type voltage-gated calcium channels. Calcium ions rush into the terminal down their steep concentration gradient. Intracellular \\(\\text{Ca}^{2+}\\) binds to synaptotagmin on synaptic vesicles, which interacts with SNARE complex proteins (syntaxin, SNAP-25, synaptobrevin) to catalyze membrane fusion and exocytosis of neurotransmitters into the synaptic cleft.",
+    "trapAlert": "Confusing calcium influx (presynaptic trigger for release) with sodium influx (postsynaptic depolarization)."
+  },
+  {
+    "id": "imat_2026_q26",
+    "year": 2026,
+    "qNumber": "Q26",
+    "subject": "Biology",
+    "chapter": "Human Physiology: Endocrine System",
+    "subtopic": "HPA Axis & Negative Feedback",
+    "tier": "High-Yield Medical",
+    "question": "In a patient suffering from a primary adrenal cortex insufficiency (Addison's disease), what pattern of circulating hormone concentrations in peripheral blood is characteristically observed?",
+    "options": [
+      "Low cortisol, high ACTH, and high CRH",
+      "High cortisol, low ACTH, and low CRH",
+      "Low cortisol, low ACTH, and low CRH",
+      "High cortisol, high ACTH, and low CRH",
+      "Normal cortisol, zero ACTH, and high aldosterone"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Addison's disease (primary adrenal insufficiency), autoimmune or infectious destruction of the adrenal cortex directly prevents the synthesis of cortisol (and aldosterone). Because cortisol is deficient, negative feedback on the anterior pituitary gland and hypothalamus is lost. Consequently, the anterior pituitary secretes high levels of Adrenocorticotropic Hormone (ACTH), and the hypothalamus secretes high levels of Corticotropin-Releasing Hormone (CRH) in an unavailing effort to stimulate adrenal output.",
+    "trapAlert": "Confusing primary adrenal failure (low cortisol, high ACTH due to loss of negative feedback) with secondary failure from pituitary damage (low cortisol, low ACTH)."
+  },
+  {
+    "id": "imat_2026_q27",
+    "year": 2026,
+    "qNumber": "Q27",
+    "subject": "Biology",
+    "chapter": "Human Physiology: Cardiovascular System",
+    "subtopic": "Cardiac Cycle & Valve Dynamics",
+    "tier": "Core Physiology",
+    "question": "During the isovolumetric contraction phase of the left ventricular cardiac cycle, what is the exact operational status of the heart valves?",
+    "options": [
+      "Both the atrioventricular (mitral) valve and the aortic semilunar valve are completely closed",
+      "The mitral valve is open and the aortic valve is closed",
+      "The mitral valve is closed and the aortic valve is open",
+      "Both the mitral valve and the aortic valve are fully open",
+      "The tricuspid valve is open and the pulmonary valve is open"
+    ],
+    "correctIndex": 0,
+    "explanation": "'Isovolumetric' means the ventricular blood volume remains completely constant. Ventricular pressure rises steeply as the myocardium contracts, which snaps the mitral (AV) valve shut (producing the \\(S_1\\) heart sound). However, intraventricular pressure has not yet exceeded diastolic aortic pressure (typically ~80 mmHg), so the aortic semilunar valve remains closed. With all valves closed, pressure spikes without change in volume.",
+    "trapAlert": "Assuming blood is already ejecting through the aortic valve during isovolumetric contraction."
+  },
+  {
+    "id": "imat_2026_q28",
+    "year": 2026,
+    "qNumber": "Q28",
+    "subject": "Biology",
+    "chapter": "Human Physiology: Renal System",
+    "subtopic": "Loop of Henle & Countercurrent Mechanism",
+    "tier": "Core Physiology",
+    "question": "Which of the following statements correctly describes the functional permeability properties of the thin descending and thick ascending limbs of the loop of Henle in the mammalian nephron?",
+    "options": [
+      "The descending limb is highly permeable to water but impermeable to solutes; the thick ascending limb is impermeable to water and actively transports \\(\\text{Na}^+\\), \\(\\text{K}^+\\), and \\(\\text{Cl}^-\\) out into the medullary interstitium",
+      "The descending limb actively pumps \\(\\text{NaCl}\\) into the medullary interstitium and is impermeable to water; the ascending limb is freely permeable to water",
+      "Both limbs are equally permeable to water and impermeable to all electrolytes",
+      "The descending limb is impermeable to both water and sodium; the ascending limb reabsorbs glucose via secondary active transport",
+      "The ascending limb allows passive water reabsorption under the direct regulation of aldosterone"
+    ],
+    "correctIndex": 0,
+    "explanation": "The countercurrent multiplier system relies on differing permeabilities:<br>• The thin descending limb possesses high water permeability (via constitutive aquaporin-1 channels) and low solute permeability; water leaves the tubular fluid by osmosis into the hypertonic medullary interstitium.<br>• The thick ascending limb is completely impermeable to water, but its luminal \\(\\text{Na}^+/\\text{K}^+/2\\text{Cl}^-\\) cotransporter (NKCC2) actively pumps ions into the medullary interstitium, creating the hyperosmotic medullary gradient without water following.",
+    "trapAlert": "Reversing the limb characteristics (saying descending transports salt and ascending transports water)."
+  },
+  {
+    "id": "imat_2026_q29",
+    "year": 2026,
+    "qNumber": "Q29",
+    "subject": "Biology",
+    "chapter": "Human Physiology: Respiratory System",
+    "subtopic": "Bohr Effect & Hemoglobin Affinity",
+    "tier": "Core Physiology",
+    "question": "Which combination of physiological conditions in exercising skeletal muscle shifts the oxygen-hemoglobin dissociation curve to the right (the Bohr effect), promoting enhanced oxygen unloading to tissues?",
+    "options": [
+      "Decreased pH (increased \\([\\text{H}^+]\\)), increased \\(p\\text{CO}_2\\), increased temperature, and elevated 2,3-bisphosphoglycerate (2,3-BPG)",
+      "Increased pH, decreased \\(p\\text{CO}_2\\), decreased temperature, and decreased 2,3-BPG",
+      "Increased pH, increased \\(p\\text{CO}_2\\), decreased temperature, and elevated fetal hemoglobin",
+      "Decreased \\(p\\text{CO}_2\\), increased oxygen saturation, and decreased hydrogen ion concentration",
+      "Neutral pH, zero carbon dioxide, and hypothermia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A rightward shift of the oxygen-hemoglobin dissociation curve signifies decreased hemoglobin oxygen affinity, facilitating \\(\\text{O}_2\\) release in metabolically demanding tissues. Factors causing a right shift (CADET face right):<br>• \\(\\text{C}\\) - \\(\\text{CO}_2\\) increased<br>• \\(\\text{A}\\) - Acidity increased (lower pH, higher \\([\\text{H}^+]\\))<br>• \\(\\text{D}\\) - 2,3-DPG (2,3-BPG) elevated<br>• \\(\\text{E}\\) - Exercise<br>• \\(\\text{T}\\) - Temperature increased",
+    "trapAlert": "Associating increased acidity (lower pH) with a left shift rather than a right shift."
+  },
+  {
+    "id": "imat_2026_q30",
+    "year": 2026,
+    "qNumber": "Q30",
+    "subject": "Biology",
+    "chapter": "Human Physiology: Digestive System",
+    "subtopic": "Gastric Secretion & Parietal Cells",
+    "tier": "Core Physiology",
+    "question": "Parietal cells of the gastric mucosa secrete hydrochloric acid (\\(\\text{HCl}\\)) and which essential glycoprotein required for the receptor-mediated endocytosis of vitamin \\(\\text{B}_{12}\\) in the terminal ileum?",
+    "options": [
+      "Intrinsic factor",
+      "Pepsinogen",
+      "Gastrin",
+      "Secretin",
+      "Cholecystokinin (CCK)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gastric parietal (oxyntic) cells secrete two substances: hydrochloric acid (via apical \\(\\text{H}^+/\\text{K}^+\\)-ATPase pumps) and intrinsic factor. Intrinsic factor binds dietary vitamin \\(\\text{B}_{12}\\) (cobalamin) in the duodenum after cleavage from haptocorrin. The intrinsic factor-\\(\\text{B}_{12}\\) complex is recognized by cubam receptors in the terminal ileum, facilitating absorption. Autoimmune destruction of parietal cells causes intrinsic factor deficiency, leading to pernicious anemia.<br><br><b>Distractor Summary:</b><br>• Chief cells secrete pepsinogen.<br>• G cells secrete gastrin.<br>• S cells of the duodenum secrete secretin; I cells secrete CCK.",
+    "trapAlert": "Confusing parietal cells (secrete HCl and intrinsic factor) with chief cells (pepsinogen) or G cells (gastrin)."
+  },
+  {
+    "id": "imat_2026_q31",
+    "year": 2026,
+    "qNumber": "Q31",
+    "subject": "Biology",
+    "chapter": "Immunology",
+    "subtopic": "MHC Restriction & T Cell Subsets",
+    "tier": "Core Immunology",
+    "question": "Which class of Major Histocompatibility Complex (MHC) molecules presents endogenous cytosolic peptide antigens to \\(\\text{CD8}^+\\) cytotoxic T lymphocytes, and on which cells are these MHC complexes expressed?",
+    "options": [
+      "MHC Class I; expressed on virtually all nucleated cells in the human body",
+      "MHC Class II; expressed exclusively on mature erythrocytes and platelets",
+      "MHC Class II; expressed on professional antigen-presenting cells (dendritic cells, macrophages, B cells)",
+      "MHC Class I; expressed exclusively on naive \\(\\text{CD4}^+\\) helper T lymphocytes",
+      "MHC Class III; expressed only on hepatocyte microvilli"
+    ],
+    "correctIndex": 0,
+    "explanation": "MHC Class I molecules present endogenous antigens (e.g., viral proteins synthesized in the cytosol or tumor neoantigens) to \\(\\text{CD8}^+\\) cytotoxic T cells. Because any nucleated cell can become infected by a virus or turn malignant, MHC Class I is expressed on all nucleated cells (erythrocytes lack nuclei and do not express MHC I).<br><br><i>Rule of 8:</i><br>• MHC I \\(\\times\\) CD8 = 8<br>• MHC II \\(\\times\\) CD4 = 8 (MHC II presents exogenous antigens on professional APCs).",
+    "trapAlert": "Confusing MHC I (all nucleated cells, CD8+ cytotoxic T cells) with MHC II (professional APCs, CD4+ helper T cells)."
+  },
+  {
+    "id": "imat_2026_q32",
+    "year": 2026,
+    "qNumber": "Q32",
+    "subject": "Biology",
+    "chapter": "Evolution & Speciation",
+    "subtopic": "Reproductive Isolation & Homology",
+    "tier": "Core Biology",
+    "question": "Which of the following pairs of anatomical structures provides an authentic example of homologous structures resulting from divergent evolution from a common ancestor?",
+    "options": [
+      "The wing of a bat and the flipper of a whale",
+      "The wing of a butterfly and the wing of a bird",
+      "The camera eye of an octopus and the camera eye of a human",
+      "The dorsal fin of a shark and the flipper of a dolphin",
+      "The streamlined hydrodynamic body of an ichthyosaur and a tuna"
+    ],
+    "correctIndex": 0,
+    "explanation": "Homologous structures share an identical anatomical origin and underlying skeletal architecture derived from a recent common ancestor, even though they may serve divergent functions. The bat wing and whale flipper share the pentadactyl mammalian limb pattern (humerus, radius, ulna, carpals, metacarpals, phalanges).<br><br><b>Distractor Analysis:</b><br>All other options represent *analogous* structures arising through *convergent evolution* under similar environmental pressures without shared ancestry (e.g., butterfly vs. bird wing, octopus vs. human eye, shark vs. dolphin fin).",
+    "trapAlert": "Confusing homologous structures (shared evolutionary origin, different functions) with analogous structures (different evolutionary origins, same function)."
+  },
+  {
+    "id": "imat_2026_q33",
+    "year": 2026,
+    "qNumber": "Q33",
+    "subject": "Chemistry",
+    "chapter": "Atomic Structure",
+    "subtopic": "Electronic Configuration of Transition Metals",
+    "tier": "Core Chemistry",
+    "question": "What is the correct ground-state electronic configuration of the neutral chromium atom (\\(Z = 24\\)) in accordance with Hund's rule and subshell stability?",
+    "options": [
+      "\\([\\text{Ar}]\\, 3d^5 4s^1\\)",
+      "\\([\\text{Ar}]\\, 3d^4 4s^2\\)",
+      "\\([\\text{Ar}]\\, 3d^6 4s^0\\)",
+      "\\([\\text{Ar}]\\, 3d^3 4s^2 4p^1\\)",
+      "\\([\\text{Ne}]\\, 3s^2 3p^6 3d^4 4s^2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chromium (\\(Z = 24\\)) is a classic exception to the standard Aufbau building-up principle. Instead of the anticipated \\([\\text{Ar}]\\, 3d^4 4s^2\\), an electron from the \\(4s\\) subshell promotes to the \\(3d\\) subshell to produce a completely half-filled \\(3d^5\\) subshell alongside a half-filled \\(4s^1\\) subshell (\\([\\text{Ar}]\\, 3d^5 4s^1\\)). This configuration maximizes exchange energy and minimizes electron-electron repulsion.",
+    "trapAlert": "Applying the naive Aufbau rule to pick \\([\\text{Ar}]\\, 3d^4 4s^2\\), forgetting the stability of half-filled d-subshells in Cr."
+  },
+  {
+    "id": "imat_2026_q34",
+    "year": 2026,
+    "qNumber": "Q34",
+    "subject": "Chemistry",
+    "chapter": "Periodic Trends",
+    "subtopic": "First Ionization Energy Anomaly",
+    "tier": "Core Chemistry",
+    "question": "Although first ionization energy generally increases from left to right across Period 2 of the Periodic Table, the first ionization energy of oxygen (\\(Z = 8\\)) is lower than that of nitrogen (\\(Z = 7\\)). What is the physical basis for this anomaly?",
+    "options": [
+      "The fourth \\(2p\\) electron in oxygen is paired with another electron in a \\(2p\\) orbital, causing inter-electronic repulsion that facilitates its removal",
+      "Nitrogen has a higher nuclear charge than oxygen, attracting valence electrons more strongly",
+      "The valence electrons of oxygen experience greater core shielding than those of nitrogen",
+      "Oxygen has electrons in the \\(3s\\) subshell that are further from the nucleus",
+      "Nitrogen has a completely empty \\(2p\\) subshell that offers zero screening"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nitrogen has electronic configuration \\(1s^2 2s^2 2p_x^1 2p_y^1 2p_z^1\\) with a stable, half-filled \\(2p\\) subshell where each electron occupies its own orbital with parallel spins. Oxygen has configuration \\(1s^2 2s^2 2p_x^2 2p_y^1 2p_z^1\\). The presence of two electrons paired in the same \\(2p_x\\) orbital generates significant electrostatic repulsion, making it energetically easier to remove that fourth \\(2p\\) electron compared to removing an electron from nitrogen's half-filled subshell.",
+    "trapAlert": "Assuming oxygen must have a higher ionization energy simply because its atomic number is higher."
+  },
+  {
+    "id": "imat_2026_q35",
+    "year": 2026,
+    "qNumber": "Q35",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "subtopic": "VSEPR Theory & Polarity",
+    "tier": "Core Chemistry",
+    "question": "According to Valence Shell Electron Pair Repulsion (VSEPR) theory, what is the molecular geometry and net dipole moment of xenon tetrafluoride (\\(\\text{XeF}_4\\))?",
+    "options": [
+      "Square planar; zero net dipole moment (non-polar)",
+      "Tetrahedral; zero net dipole moment (non-polar)",
+      "Seesaw; non-zero net dipole moment (polar)",
+      "Square pyramidal; non-zero net dipole moment (polar)",
+      "Trigonal bipyramidal; zero net dipole moment (non-polar)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Xenon (noble gas) possesses 8 valence electrons. In \\(\\text{XeF}_4\\), xenon forms 4 single covalent bonds with fluorine atoms and retains 2 lone pairs: Steric Number \\(= 4 + 2 = 6\\). The electron geometry is octahedral. To minimize repulsive interactions, the two lone pairs occupy opposite axial positions (\\(180^\\circ\\) apart), while the four fluorine atoms lie in an equatorial plane (\\(90^\\circ\\) apart). This produces a square planar molecular geometry. Because the four polar \\(\\text{Xe–F}\\) bond dipoles cancel out symmetrically, \\(\\text{XeF}_4\\) has zero net dipole moment (non-polar).",
+    "trapAlert": "Seeing 4 bonded atoms and reflexively selecting tetrahedral geometry, forgetting the two lone pairs on xenon."
+  },
+  {
+    "id": "imat_2026_q36",
+    "year": 2026,
+    "qNumber": "Q36",
+    "subject": "Chemistry",
+    "chapter": "Intermolecular Forces & States of Matter",
+    "subtopic": "Boiling Point Trends",
+    "tier": "Core Chemistry",
+    "question": "Which of the following organic structural isomers of pentane (\\(\\text{C}_5\\text{H}_{12}\\)) has the lowest boiling point, and what is the underlying molecular explanation?",
+    "options": [
+      "2,2-dimethylpropane (neopentane); highly spherical compact geometry minimizes surface contact area, weakening London dispersion forces",
+      "n-pentane; linear structure prevents efficient packing into the crystal lattice",
+      "2-methylbutane (isopentane); branched structure creates permanent dipole-dipole attractions",
+      "2,2-dimethylpropane (neopentane); presence of quaternary carbon atoms eliminates all electron clouds",
+      "n-pentane; elongated surface area weakens all intermolecular interactions"
+    ],
+    "correctIndex": 0,
+    "explanation": "All three isomers of pentane are non-polar hydrocarbons that interact solely via London dispersion forces. The magnitude of dispersion forces is directly proportional to the molecular surface area accessible for contact. Linear n-pentane has an extended rod-like shape with high surface contact area (boiling point \\(36.1^\\circ\\text{C}\\)). 2,2-dimethylpropane (neopentane) is highly branched and nearly spherical, giving it the lowest surface area and weakest dispersion forces, resulting in the lowest boiling point (\\(9.5^\\circ\\text{C}\\)).",
+    "trapAlert": "Assuming more branching increases boiling points (it increases melting points due to crystal packing symmetry, but *decreases* boiling points due to reduced surface area)."
+  },
+  {
+    "id": "imat_2026_q37",
+    "year": 2026,
+    "qNumber": "Q37",
+    "subject": "Chemistry",
+    "chapter": "Stoichiometry & Quantitative Calculations",
+    "subtopic": "Limiting Reagents & Molar Yield",
+    "tier": "Quantitative Chemistry",
+    "question": "Consider the synthesis of titanium metal via the Kroll process:\n\n\\[\\text{TiCl}_4(g) + 2\\,\\text{Mg}(l) \\longrightarrow \\text{Ti}(s) + 2\\,\\text{MgCl}_2(l)\\]\n\nIf \\(190\\,\\text{g}\\) of \\(\\text{TiCl}_4\\) is reacted with \\(72\\,\\text{g}\\) of \\(\\text{Mg}\\), what is the maximum theoretical mass of pure titanium metal that can be produced? (Molar masses: \\(\\text{Ti} = 48\\,\\text{g/mol}\\), \\(\\text{Cl} = 35.5\\,\\text{g/mol}\\), \\(\\text{TiCl}_4 = 190\\,\\text{g/mol}\\), \\(\\text{Mg} = 24\\,\\text{g/mol}\\))",
+    "options": [
+      "48 g",
+      "96 g",
+      "72 g",
+      "24 g",
+      "144 g"
+    ],
+    "correctIndex": 0,
+    "explanation": "Step 1: Calculate moles of reactants available:<br>• \\(n(\\text{TiCl}_4) = \\frac{190\\,\\text{g}}{190\\,\\text{g/mol}} = 1.0\\,\\text{mol}\\).<br>• \\(n(\\text{Mg}) = \\frac{72\\,\\text{g}}{24\\,\\text{g/mol}} = 3.0\\,\\text{mol}\\).<br><br>Step 2: Determine the limiting reagent:<br>The stoichiometric ratio is \\(1\\,\\text{mol}\\;\\text{TiCl}_4 : 2\\,\\text{mol}\\;\\text{Mg}\\).<br>To react 1.0 mol of \\(\\text{TiCl}_4\\), exactly \\(2.0\\,\\text{mol}\\) of \\(\\text{Mg}\\) is required. We have \\(3.0\\,\\text{mol}\\) of \\(\\text{Mg}\\), so magnesium is in excess (1.0 mol left unreacted), and \\(\\text{TiCl}_4\\) is the limiting reagent.<br><br>Step 3: Calculate theoretical yield of Ti:<br>\\(1.0\\,\\text{mol}\\;\\text{TiCl}_4\\) produces \\(1.0\\,\\text{mol}\\) of \\(\\text{Ti}\\).<br>\\(\\text{Mass of Ti} = 1.0\\,\\text{mol} \\times 48\\,\\text{g/mol} = 48\\,\\text{g}\\).",
+    "trapAlert": "Calculating the yield based on magnesium without checking which reactant is limiting, which would erroneously yield 72 g."
+  },
+  {
+    "id": "imat_2026_q38",
+    "year": 2026,
+    "qNumber": "Q38",
+    "subject": "Chemistry",
+    "chapter": "Gases & Kinetic Theory",
+    "subtopic": "Graham's Law of Effusion",
+    "tier": "Core Chemistry",
+    "question": "Under identical conditions of temperature and pressure, what is the ratio of the rate of effusion of methane gas (\\(\\text{CH}_4\\)) compared to sulfur dioxide gas (\\(\\text{SO}_2\\)) through a pinhole aperture? (Molar masses: \\(\\text{CH}_4 = 16\\,\\text{g/mol}\\), \\(\\text{SO}_2 = 64\\,\\text{g/mol}\\))",
+    "options": [
+      "2 : 1 (methane effuses twice as fast as sulfur dioxide)",
+      "4 : 1 (methane effuses four times as fast as sulfur dioxide)",
+      "1 : 2 (sulfur dioxide effuses twice as fast as methane)",
+      "1 : 4 (sulfur dioxide effuses four times as fast as methane)",
+      "1 : 1 (both gases effuse at identical rates)"
+    ],
+    "correctIndex": 0,
+    "explanation": "According to Graham's Law of Effusion, the rate of effusion (\\(r\\)) of a gas is inversely proportional to the square root of its molar mass (\\(M\\)):<br>\\[\\frac{r_{\\text{CH}_4}}{r_{\\text{SO}_2}} = \\sqrt{\\frac{M_{\\text{SO}_2}}{M_{\\text{CH}_4}}} = \\sqrt{\\frac{64\\,\\text{g/mol}}{16\\,\\text{g/mol}}} = \\sqrt{4} = 2\\]<br>Thus, methane gas effuses at twice the rate of sulfur dioxide gas (ratio 2 : 1).",
+    "trapAlert": "Forgetting to take the square root of the mass ratio (\\(64/16 = 4\\)) and choosing 4 : 1."
+  },
+  {
+    "id": "imat_2026_q39",
+    "year": 2026,
+    "qNumber": "Q39",
+    "subject": "Chemistry",
+    "chapter": "Thermodynamics & Thermochemistry",
+    "subtopic": "Gibbs Free Energy & Spontaneity",
+    "tier": "Core Chemistry",
+    "question": "For a chemical reaction with \\(\\Delta H^\\circ = +60\\,\\text{kJ}\\cdot\\text{mol}^{-1}\\) and \\(\\Delta S^\\circ = +200\\,\\text{J}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}\\), at what minimum temperature does the reaction become thermodynamically spontaneous under standard pressure?",
+    "options": [
+      "\\(T > 300\\,\\text{K}\\; (27^\\circ\\text{C})\\)",
+      "\\(T > 0.3\\,\\text{K}\\)",
+      "\\(T < 300\\,\\text{K}\\)",
+      "\\(T > 12,000\\,\\text{K}\\)",
+      "The reaction can never be spontaneous at any temperature"
+    ],
+    "correctIndex": 0,
+    "explanation": "A reaction is thermodynamically spontaneous when Gibbs free energy change \\(\\Delta G^\\circ < 0\\).<br>\\[\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ\\]<br>Setting \\(\\Delta G^\\circ = 0\\) to find the threshold temperature:<br>\\[T = \\frac{\\Delta H^\\circ}{\\Delta S^\\circ}\\]<br>Crucial unit conversion: \\(\\Delta H^\\circ = +60\\,\\text{kJ}\\cdot\\text{mol}^{-1} = +60,000\\,\\text{J}\\cdot\\text{mol}^{-1}\\).<br>\\[T = \\frac{60,000\\,\\text{J}\\cdot\\text{mol}^{-1}}{200\\,\\text{J}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}} = 300\\,\\text{K}\\]<br>Since \\(\\Delta H > 0\\) and \\(\\Delta S > 0\\), the \\(-T\\Delta S\\) term becomes increasingly negative as temperature increases. Hence, the reaction is spontaneous when \\(T > 300\\,\\text{K}\\) (which corresponds to \\(300 - 273.15 \\approx 27^\\circ\\text{C}\\)).",
+    "trapAlert": "Failing to convert kilojoules to joules (dividing 60 by 200 to get 0.3 K)."
+  },
+  {
+    "id": "imat_2026_q40",
+    "year": 2026,
+    "qNumber": "Q40",
+    "subject": "Chemistry",
+    "chapter": "Chemical Kinetics",
+    "subtopic": "Reaction Order & Rate Constant Units",
+    "tier": "Core Chemistry",
+    "question": "An experimental reaction \\(2\\text{A} + \\text{B} \\to \\text{C}\\) has the rate law \\(\\text{Rate} = k[\\text{A}][\\text{B}]\\). What are the overall order of the reaction and the SI derived units of the rate constant \\(k\\)?",
+    "options": [
+      "Second order overall; \\(\\text{mol}^{-1}\\cdot\\text{L}\\cdot\\text{s}^{-1}\\) (or \\(\\text{M}^{-1}\\cdot\\text{s}^{-1}\\))",
+      "Third order overall; \\(\\text{mol}^{-2}\\cdot\\text{L}^2\\cdot\\text{s}^{-1}\\)",
+      "First order overall; \\(\\text{s}^{-1}\\)",
+      "Zero order overall; \\(\\text{mol}\\cdot\\text{L}^{-1}\\cdot\\text{s}^{-1}\\)",
+      "Second order overall; \\(\\text{mol}^2\\cdot\\text{L}^{-2}\\cdot\\text{s}^{-1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The rate law is \\(\\text{Rate} = k[\\text{A}]^1 [\\text{B}]^1\\).<br>• Overall reaction order \\(= 1 + 1 = 2\\) (second order overall).<br>• The units of Rate are \\(\\text{mol}\\cdot\\text{L}^{-1}\\cdot\\text{s}^{-1}\\).<br>• Rearranging for \\(k\\):<br>\\[k = \\frac{\\text{Rate}}{[\\text{A}][\\text{B}]} = \\frac{\\text{mol}\\cdot\\text{L}^{-1}\\cdot\\text{s}^{-1}}{(\\text{mol}\\cdot\\text{L}^{-1})^2} = \\text{mol}^{-1}\\cdot\\text{L}\\cdot\\text{s}^{-1} = \\text{L}\\cdot\\text{mol}^{-1}\\cdot\\text{s}^{-1}\\]",
+    "trapAlert": "Taking the stoichiometric coefficient 2 of A from the balanced equation to assume third-order kinetics, rather than reading the given rate law."
+  },
+  {
+    "id": "imat_2026_q41",
+    "year": 2026,
+    "qNumber": "Q41",
+    "subject": "Chemistry",
+    "chapter": "Chemical Equilibrium",
+    "subtopic": "Le Chatelier's Principle in Haber Process",
+    "tier": "Core Chemistry",
+    "question": "For the exothermic industrial synthesis of ammonia at equilibrium:\n\n\\[\\text{N}_2(g) + 3\\,\\text{H}_2(g) \\rightleftharpoons 2\\,\\text{NH}_3(g) \\quad \\Delta H^\\circ = -92\\,\\text{kJ}\\cdot\\text{mol}^{-1}\\]\n\nWhich change will increase both the equilibrium constant (\\(K_c\\)) and the equilibrium yield of ammonia?",
+    "options": [
+      "Decreasing the reaction temperature",
+      "Increasing the total pressure by reducing reaction vessel volume",
+      "Adding a finely divided iron-iron oxide catalyst",
+      "Increasing the reaction temperature",
+      "Adding an inert gas (argon) at constant volume"
+    ],
+    "correctIndex": 0,
+    "explanation": "According to Le Chatelier's principle and the van 't Hoff equation, the equilibrium constant \\(K_c\\) is dependent *solely* on temperature.<br>Because the forward reaction is exothermic (\\(\\Delta H < 0\\)), heat is a product. Lowering the temperature causes the equilibrium to shift forward (to the right) to release heat, thereby increasing the equilibrium yield of \\(\\text{NH}_3\\) and genuinely increasing the numerical value of \\(K_c\\).<br><br><b>Distractor Analysis:</b><br>• Increasing pressure shifts equilibrium right, but does NOT alter the value of \\(K_c\\).<br>• Catalysts accelerate the rate of reaching equilibrium but have zero effect on equilibrium position or \\(K_c\\).<br>• Adding an inert gas at constant volume leaves partial pressures and equilibrium unchanged.",
+    "trapAlert": "Confusing factors that shift the position of equilibrium (pressure, volume) with the only factor that changes the value of K (temperature)."
+  },
+  {
+    "id": "imat_2026_q42",
+    "year": 2026,
+    "qNumber": "Q42",
+    "subject": "Chemistry",
+    "chapter": "Acids, Bases & Aqueous Solutions",
+    "subtopic": "pH Calculation for Weak Acids",
+    "tier": "Quantitative Chemistry",
+    "question": "What is the pH of a \\(0.10\\,\\text{mol}\\cdot\\text{L}^{-1}\\) aqueous solution of a monoprotic weak acid \\(\\text{HA}\\) with an acid dissociation constant \\(K_a = 1.0 \\times 10^{-5}\\)?",
+    "options": [
+      "3.0",
+      "1.0",
+      "5.0",
+      "2.5",
+      "6.0"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a weak monoprotic acid where dissociation is small (\\(C_a / K_a = 0.10 / 10^{-5} = 10^4 \\gg 100\\)), we use the approximation:<br>\\[[\\text{H}^+] = \\sqrt{K_a \\cdot C_a} = \\sqrt{(1.0 \\times 10^{-5}) \\times (0.10)} = \\sqrt{1.0 \\times 10^{-6}} = 1.0 \\times 10^{-3}\\,\\text{M}\\]<br>\\[\\text{pH} = -\\log_{10}[\\text{H}^+] = -\\log_{10}(1.0 \\times 10^{-3}) = 3.0\\]",
+    "trapAlert": "Treating the weak acid as strong (yielding pH 1.0) or taking \\(\\text{p}K_a\\) as the pH without square-root calculation (yielding pH 5.0)."
+  },
+  {
+    "id": "imat_2026_q43",
+    "year": 2026,
+    "qNumber": "Q43",
+    "subject": "Chemistry",
+    "chapter": "Acids, Bases & Aqueous Solutions",
+    "subtopic": "Buffer Solutions & Henderson-Hasselbalch",
+    "tier": "Core Chemistry",
+    "question": "A buffer solution is prepared by mixing \\(0.20\\,\\text{mol}\\) of sodium acetate (\\(\\text{CH}_3\\text{COONa}\\)) and \\(0.10\\,\\text{mol}\\) of acetic acid (\\(\\text{CH}_3\\text{COOH}\\)) in \\(1.0\\,\\text{L}\\) of distilled water. What is the pH of the resulting buffer if the \\(\\text{p}K_a\\) of acetic acid is \\(4.74\\)? [Use \\(\\log_{10}(2) \\approx 0.30\\)]",
+    "options": [
+      "5.04",
+      "4.44",
+      "4.74",
+      "5.34",
+      "3.74"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply the Henderson-Hasselbalch equation:<br>\\[\\text{pH} = \\text{p}K_a + \\log_{10}\\left(\\frac{[\\text{Conjugate Base}]}{[\\text{Weak Acid}]}\\right)\\]<br>Here, \\([\\text{CH}_3\\text{COO}^-] = 0.20\\,\\text{M}\\) and \\([\\text{CH}_3\\text{COOH}] = 0.10\\,\\text{M}\\).<br>\\[\\text{pH} = 4.74 + \\log_{10}\\left(\\frac{0.20}{0.10}\\right) = 4.74 + \\log_{10}(2) = 4.74 + 0.30 = 5.04\\]",
+    "trapAlert": "Inverting the ratio (placing acid in the numerator: \\(4.74 - 0.30 = 4.44\\))."
+  },
+  {
+    "id": "imat_2026_q44",
+    "year": 2026,
+    "qNumber": "Q44",
+    "subject": "Chemistry",
+    "chapter": "Solubility & Precipitation",
+    "subtopic": "Common Ion Effect on Ksp",
+    "tier": "Core Chemistry",
+    "question": "What is the molar solubility (in \\(\\text{mol}\\cdot\\text{L}^{-1}\\)) of silver chloride, \\(\\text{AgCl}\\) (\\(K_{sp} = 1.8 \\times 10^{-10}\\)), in a \\(0.10\\,\\text{mol}\\cdot\\text{L}^{-1}\\) aqueous solution of sodium chloride (\\(\\text{NaCl}\\))?",
+    "options": [
+      "\\(1.8 \\times 10^{-9}\\,\\text{mol}\\cdot\\text{L}^{-1}\\)",
+      "\\(1.34 \\times 10^{-5}\\,\\text{mol}\\cdot\\text{L}^{-1}\\)",
+      "\\(1.8 \\times 10^{-10}\\,\\text{mol}\\cdot\\text{L}^{-1}\\)",
+      "\\(1.8 \\times 10^{-11}\\,\\text{mol}\\cdot\\text{L}^{-1}\\)",
+      "\\(3.6 \\times 10^{-5}\\,\\text{mol}\\cdot\\text{L}^{-1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dissolution equilibrium: \\(\\text{AgCl}(s) \\rightleftharpoons \\text{Ag}^+(aq) + \\text{Cl}^-(aq)\\).<br>In \\(0.10\\,\\text{M}\\;\\text{NaCl}\\), the solution already contains \\([\\text{Cl}^-] = 0.10\\,\\text{M}\\) from complete dissociation of the strong electrolyte. Let \\(s\\) be the molar solubility of \\(\\text{AgCl}\\).<br>At equilibrium: \\([\\text{Ag}^+] = s\\), and \\([\\text{Cl}^-] = 0.10 + s \\approx 0.10\\,\\text{M}\\) (since \\(s \\ll 0.10\\)).<br>\\[K_{sp} = [\\text{Ag}^+][\\text{Cl}^-] = s \\times (0.10) = 1.8 \\times 10^{-10}\\]<br>\\[s = \\frac{1.8 \\times 10^{-10}}{0.10} = 1.8 \\times 10^{-9}\\,\\text{mol}\\cdot\\text{L}^{-1}\\]<br>Notice that in pure water, \\(s = \\sqrt{K_{sp}} = 1.34 \\times 10^{-5}\\,\\text{M}\\); the common chloride ion dramatically suppresses solubility.",
+    "trapAlert": "Calculating solubility in pure water (\\(\\sqrt{K_{sp}} = 1.34 \\times 10^{-5}\\)) rather than accounting for the common ion \\(\\text{Cl}^-\\)."
+  },
+  {
+    "id": "imat_2026_q45",
+    "year": 2026,
+    "qNumber": "Q45",
+    "subject": "Chemistry",
+    "chapter": "Redox Reactions",
+    "subtopic": "Balancing in Acidic Medium",
+    "tier": "Core Chemistry",
+    "question": "Consider the redox titration of iron(II) with potassium permanganate in acidic solution:\n\n\\[a\\,\\text{MnO}_4^- + b\\,\\text{Fe}^{2+} + c\\,\\text{H}^+ \\longrightarrow d\\,\\text{Mn}^{2+} + e\\,\\text{Fe}^{3+} + f\\,\\text{H}_2\\text{O}\\]\n\nWhen this equation is balanced with the lowest whole-number integers, what is the stoichiometric coefficient \\(c\\) for \\(\\text{H}^+\\)?",
+    "options": [
+      "8",
+      "5",
+      "16",
+      "4",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Balance the half-reactions by the ion-electron method:<br>• Reduction half-reaction:<br>\\[\\text{MnO}_4^- + 8\\,\\text{H}^+ + 5e^- \\longrightarrow \\text{Mn}^{2+} + 4\\,\\text{H}_2\\text{O}\\]<br>• Oxidation half-reaction:<br>\\[\\text{Fe}^{2+} \\longrightarrow \\text{Fe}^{3+} + e^-\\]<br>Multiply oxidation half-reaction by 5 to equalize electrons transferred:<br>\\[5\\,\\text{Fe}^{2+} \\longrightarrow 5\\,\\text{Fe}^{3+} + 5e^-\\]<br>Summing the half-reactions:<br>\\[\\text{MnO}_4^- + 5\\,\\text{Fe}^{2+} + 8\\,\\text{H}^+ \\longrightarrow \\text{Mn}^{2+} + 5\\,\\text{Fe}^{3+} + 4\\,\\text{H}_2\\text{O}\\]<br>The stoichiometric coefficients are: \\(a=1, b=5, c=8, d=1, e=5, f=4\\). Hence, coefficient \\(c = 8\\).",
+    "trapAlert": "Confusing permanganate with dichromate (\\(\\text{Cr}_2\\text{O}_7^{2-}\\)), which requires 14 \\(\\text{H}^+\\), or selecting 5 (the coefficient of iron)."
+  },
+  {
+    "id": "imat_2026_q46",
+    "year": 2026,
+    "qNumber": "Q46",
+    "subject": "Chemistry",
+    "chapter": "Electrochemistry",
+    "subtopic": "Galvanic Cells & Standard Potential",
+    "tier": "Core Chemistry",
+    "question": "A standard galvanic cell is constructed with zinc and copper half-cells at \\(25^\\circ\\text{C}\\):\n\n• \\(\\text{Zn}^{2+}(aq) + 2e^- \\to \\text{Zn}(s) \\quad E^\\circ = -0.76\\,\\text{V}\\)\n• \\(\\text{Cu}^{2+}(aq) + 2e^- \\to \\text{Cu}(s) \\quad E^\\circ = +0.34\\,\\text{V}\\)\n\nWhat is the standard cell potential (\\(E^\\circ_{\\text{cell}}\\)) and which electrode serves as the anode where oxidation occurs?",
+    "options": [
+      "\\(E^\\circ_{\\text{cell}} = +1.10\\,\\text{V}\\); Zinc electrode is the anode",
+      "\\(E^\\circ_{\\text{cell}} = +0.42\\,\\text{V}\\); Copper electrode is the anode",
+      "\\(E^\\circ_{\\text{cell}} = -1.10\\,\\text{V}\\); Zinc electrode is the cathode",
+      "\\(E^\\circ_{\\text{cell}} = +1.10\\,\\text{V}\\); Copper electrode is the anode",
+      "\\(E^\\circ_{\\text{cell}} = +0.76\\,\\text{V}\\); Zinc electrode is the cathode"
+    ],
+    "correctIndex": 0,
+    "explanation": "The half-cell with the higher (more positive) reduction potential undergoes reduction at the cathode: \\(\\text{Cu}^{2+} + 2e^- \\to \\text{Cu}\\) (\\(E^\\circ_{\\text{cathode}} = +0.34\\,\\text{V}\\)).<br>The half-cell with the lower reduction potential undergoes oxidation at the anode: \\(\\text{Zn} \\to \\text{Zn}^{2+} + 2e^-\\) (\\(E^\\circ_{\\text{anode}} = -0.76\\,\\text{V}\\)).<br>\\[E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = (+0.34\\,\\text{V}) - (-0.76\\,\\text{V}) = +1.10\\,\\text{V}\\]<br>Remember: Oxidation occurs at the Anode (An Ox), and Reduction occurs at the Cathode (Red Cat). Therefore, Zinc is the anode.",
+    "trapAlert": "Subtracting without double-negatives (0.34 - 0.76 = -0.42 V) or confusing cathode with anode."
+  },
+  {
+    "id": "imat_2026_q47",
+    "year": 2026,
+    "qNumber": "Q47",
+    "subject": "Chemistry",
+    "chapter": "Organic Chemistry",
+    "subtopic": "Stereochemistry & Chiral Centers",
+    "tier": "Core Chemistry",
+    "question": "How many stereocenters (chiral carbon atoms) and total stereoisomers are present in 2,3,4-trihydroxybutanal (threose/erythrose aldotetrose derivative)?",
+    "options": [
+      "2 stereocenters; 4 stereoisomers (\\(2^n = 2^2 = 4\\))",
+      "3 stereocenters; 8 stereoisomers",
+      "1 stereocenter; 2 stereoisomers",
+      "4 stereocenters; 16 stereoisomers",
+      "0 stereocenters; 1 optically inactive structure"
+    ],
+    "correctIndex": 0,
+    "explanation": "Structure: \\(\\text{CHO} - \\text{C}^*\\text{H(OH)} - \\text{C}^*\\text{H(OH)} - \\text{CH}_2\\text{OH}\\).<br>• C1 (aldehyde carbon \\(\\text{CHO}\\)) is \\(sp^2\\) hybridized and bonded to only three groups: achiral.<br>• C2 is bonded to: \\(-\\text{H}\\), \\(-\\text{OH}\\), \\(-\\text{CHO}\\), and \\(-\\text{CH(OH)CH}_2\\text{OH}\\) (4 distinct groups: chiral center).<br>• C3 is bonded to: \\(-\\text{H}\\), \\(-\\text{OH}\\), \\(-\\text{CH}_2\\text{OH}\\), and \\(-\\text{CH(OH)CHO}\\) (4 distinct groups: chiral center).<br>• C4 (\\(-\\text{CH}_2\\text{OH}\\)) has two identical hydrogen atoms: achiral.<br>There are \\(n = 2\\) chiral centers. Because the ends of the molecule are different (\\(\\text{CHO}\\) vs. \\(\\text{CH}_2\\text{OH}\\)), no meso compound is possible. By the \\(2^n\\) rule, there are \\(2^2 = 4\\) stereoisomers (D-erythrose, L-erythrose, D-threose, L-threose).",
+    "trapAlert": "Counting the terminal alcohol C4 or the aldehyde C1 as chiral centers."
+  },
+  {
+    "id": "imat_2026_q48",
+    "year": 2026,
+    "qNumber": "Q48",
+    "subject": "Mathematics",
+    "chapter": "Algebra & Polynomials",
+    "subtopic": "Viète's Formulas & Symmetric Sums",
+    "tier": "Core Math",
+    "question": "If \\(\\alpha\\) and \\(\\beta\\) are the real roots of the quadratic equation \\(2x^2 - 6x + 3 = 0\\), what is the exact numerical value of \\(\\alpha^2 + \\beta^2\\)?",
+    "options": [
+      "6",
+      "9",
+      "3",
+      "12",
+      "4.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a quadratic equation \\(ax^2 + bx + c = 0\\), by Viète's formulas:<br>• Sum of roots: \\(\\alpha + \\beta = -\\frac{b}{a} = -\\frac{-6}{2} = 3\\).<br>• Product of roots: \\(\\alpha\\beta = \\frac{c}{a} = \\frac{3}{2}\\).<br><br>Using the algebraic identity \\(\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta\\):<br>\\[\\alpha^2 + \\beta^2 = (3)^2 - 2\\left(\\frac{3}{2}\\right) = 9 - 3 = 6\\]",
+    "trapAlert": "Squaring the sum without subtracting \\(2\\alpha\\beta\\), incorrectly obtaining 9."
+  },
+  {
+    "id": "imat_2026_q49",
+    "year": 2026,
+    "qNumber": "Q49",
+    "subject": "Mathematics",
+    "chapter": "Logarithms & Exponentials",
+    "subtopic": "Logarithmic Equations & Domain Restrictions",
+    "tier": "Core Math",
+    "question": "What is the real solution to the logarithmic equation:\n\n\\[\\log_2(x + 3) + \\log_2(x - 1) = 5\\]",
+    "options": [
+      "\\(x = 5\\)",
+      "\\(x = 5\\) and \\(x = -7\\)",
+      "\\(x = 7\\)",
+      "\\(x = 3\\)",
+      "No real solution exists"
+    ],
+    "correctIndex": 0,
+    "explanation": "Step 1: Domain restriction:<br>Arguments of real logarithms must be strictly positive:<br>\\(x + 3 > 0 \\implies x > -3\\)<br>\\(x - 1 > 0 \\implies x > 1\\)<br>The common valid domain is \\(x > 1\\).<br><br>Step 2: Combine using logarithmic product rule:<br>\\[\\log_2[(x + 3)(x - 1)] = 5\\]<br>Exponentiate base 2:<br>\\[(x + 3)(x - 1) = 2^5 = 32\\]<br>\\[x^2 + 2x - 3 = 32 \\implies x^2 + 2x - 35 = 0\\]<br>Factor the quadratic:<br>\\[(x + 7)(x - 5) = 0 \\implies x = 5 \\quad \\text{or} \\quad x = -7\\]<br>Step 3: Check against domain constraint (\\(x > 1\\)):<br>\\(x = -7\\) is extraneous (\\(\\log_2(-8)\\) is undefined in real numbers). Therefore, the unique valid solution is \\(x = 5\\).",
+    "trapAlert": "Failing to discard the extraneous root \\(x = -7\\) caused by the domain restriction \\(x > 1\\)."
+  },
+  {
+    "id": "imat_2026_q50",
+    "year": 2026,
+    "qNumber": "Q50",
+    "subject": "Mathematics",
+    "chapter": "Trigonometry",
+    "subtopic": "Double-Angle Identities & Equations",
+    "tier": "Core Math",
+    "question": "For angles in the interval \\(0 \\le \\theta < 2\\pi\\), how many distinct solutions satisfy the equation:\n\n\\[\\cos(2\\theta) = \\frac{1}{2}\\]",
+    "options": [
+      "4 solutions",
+      "2 solutions",
+      "1 solution",
+      "6 solutions",
+      "8 solutions"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since \\(0 \\le \\theta < 2\\pi\\), the angle argument \\(2\\theta\\) satisfies the interval \\(0 \\le 2\\theta < 4\\pi\\) (two full rotations).<br>Cosine equals \\(+1/2\\) in Quadrants I and IV at:<br>• In \\([0, 2\\pi)\\): \\(2\\theta = \\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)<br>• In \\([2\\pi, 4\\pi)\\): \\(2\\theta = \\frac{\\pi}{3} + 2\\pi = \\frac{7\\pi}{3}\\), and \\(2\\theta = \\frac{5\\pi}{3} + 2\\pi = \\frac{11\\pi}{3}\\)<br>Dividing each by 2 yields \\(\\theta\\):<br>\\[\\theta = \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}\\]<br>All 4 values lie cleanly within \\([0, 2\\pi)\\). Thus, there are exactly 4 distinct solutions.",
+    "trapAlert": "Forgetting that doubling the frequency doubles the number of solutions in the standard interval, mistakenly choosing 2 solutions."
+  },
+  {
+    "id": "imat_2026_q51",
+    "year": 2026,
+    "qNumber": "Q51",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry",
+    "subtopic": "Distance from Point to Line",
+    "tier": "Core Math",
+    "question": "What is the perpendicular distance from the center of the circle \\((x - 3)^2 + (y + 2)^2 = 25\\) to the line \\(3x + 4y - 16 = 0\\)?",
+    "options": [
+      "3 units",
+      "5 units",
+      "2.5 units",
+      "15 units",
+      "1 unit"
+    ],
+    "correctIndex": 0,
+    "explanation": "Step 1: Identify center coordinates of the circle:<br>From the standard equation \\((x - h)^2 + (y - k)^2 = R^2\\), the center is \\((h, k) = (3, -2)\\).<br><br>Step 2: Apply the perpendicular distance formula from point \\((x_0, y_0)\\) to line \\(Ax + By + C = 0\\):<br>\\[d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}\\]<br>Here \\(A = 3, B = 4, C = -16, x_0 = 3, y_0 = -2\\):<br>\\[d = \\frac{|3(3) + 4(-2) - 16|}{\\sqrt{3^2 + 4^2}} = \\frac{|9 - 8 - 16|}{\\sqrt{25}} = \\frac{|-15|}{5} = \\frac{15}{5} = 3\\]",
+    "trapAlert": "Confusing the distance to the line with the radius of the circle (5 units)."
+  },
+  {
+    "id": "imat_2026_q52",
+    "year": 2026,
+    "qNumber": "Q52",
+    "subject": "Mathematics",
+    "chapter": "Probability & Combinatorics",
+    "subtopic": "Combinations & Committee Selection",
+    "tier": "Core Math",
+    "question": "A clinical research committee of 5 members is to be formed from a department consisting of 6 surgeons and 4 internists. What is the probability that the chosen committee contains exactly 3 surgeons and 2 internists?",
+    "options": [
+      "\\(\\frac{10}{21}\\; (\\approx 0.476)\\)",
+      "\\(\\frac{5}{14}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{20}{126}\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total number of physicians: \\(6 + 4 = 10\\).<br>• Total ways to choose any 5 members out of 10:<br>\\[\\binom{10}{5} = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6}{5 \\times 4 \\times 3 \\times 2 \\times 1} = 252\\]<br>• Favorable ways to choose 3 surgeons out of 6 AND 2 internists out of 4:<br>\\[\\binom{6}{3} \\times \\binom{4}{2} = \\left(\\frac{6 \\times 5 \\times 4}{3 \\times 2 \\times 1}\\right) \\times \\left(\\frac{4 \\times 3}{2 \\times 1}\\right) = 20 \\times 6 = 120\\]<br>• Probability:<br>\\[P = \\frac{120}{252} = \\frac{10}{21}\\]",
+    "trapAlert": "Adding the combinations (20 + 6 = 26) instead of multiplying independent selections (20 * 6 = 120)."
+  },
+  {
+    "id": "imat_2026_q53",
+    "year": 2026,
+    "qNumber": "Q53",
+    "subject": "Mathematics",
+    "chapter": "Sequences & Series",
+    "subtopic": "Infinite Geometric Series",
+    "tier": "Core Math",
+    "question": "What is the sum of the convergent infinite geometric series:\n\n\\[S = 12 - 4 + \\frac{4}{3} - \\frac{4}{9} + \\dots\\]",
+    "options": [
+      "9",
+      "8",
+      "16",
+      "18",
+      "\\(\\frac{27}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First term \\(a = 12\\).<br>Common ratio \\(r = \\frac{-4}{12} = -\\frac{1}{3}\\).<br>Since \\(|r| = |-\\frac{1}{3}| = \\frac{1}{3} < 1\\), the series converges.<br>The sum of an infinite geometric series is given by:<br>\\[S = \\frac{a}{1 - r} = \\frac{12}{1 - (-\\frac{1}{3})} = \\frac{12}{1 + \\frac{1}{3}} = \\frac{12}{\\frac{4}{3}} = 12 \\times \\frac{3}{4} = 9\\]",
+    "trapAlert": "Subtracting a negative as positive in the denominator (using 1 - 1/3 = 2/3, yielding 18)."
+  },
+  {
+    "id": "imat_2026_q54",
+    "year": 2026,
+    "qNumber": "Q54",
+    "subject": "Physics",
+    "chapter": "Kinematics & Two-Dimensional Motion",
+    "subtopic": "Horizontal Projectile Motion",
+    "tier": "Core Physics",
+    "question": "A small ball is projected horizontally from the edge of a flat cliff with an initial speed of \\(15\\,\\text{m/s}\\). If the cliff is \\(20\\,\\text{m}\\) above horizontal ground, what is the magnitude of the ball's velocity just before impact? (Take \\(g = 10\\,\\text{m/s}^2\\) and ignore air resistance)",
+    "options": [
+      "\\(25\\,\\text{m/s}\\)",
+      "\\(20\\,\\text{m/s}\\)",
+      "\\(35\\,\\text{m/s}\\)",
+      "\\(15\\,\\text{m/s}\\)",
+      "\\(22.4\\,\\text{m/s}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Method 1: Conservation of mechanical energy:<br>\\[E_{\\text{initial}} = \\frac{1}{2}m v_0^2 + m g h = E_{\\text{final}} = \\frac{1}{2}m v^2\\]<br>\\[v = \\sqrt{v_0^2 + 2gh} = \\sqrt{15^2 + 2(10)(20)} = \\sqrt{225 + 400} = \\sqrt{625} = 25\\,\\text{m/s}\\]<br><br>Method 2: Kinematic components:<br>• Horizontal velocity remains constant: \\(v_x = 15\\,\\text{m/s}\\).<br>• Vertical velocity: \\(v_y^2 = 2gh = 2(10)(20) = 400 \\implies v_y = 20\\,\\text{m/s}\\).<br>• Total velocity magnitude: \\(v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{15^2 + 20^2} = \\sqrt{225 + 400} = 25\\,\\text{m/s}\\).",
+    "trapAlert": "Reporting only the vertical component \\(v_y = 20\\,\\text{m/s}\\), forgetting the horizontal velocity \\(v_x = 15\\,\\text{m/s}\\)."
+  },
+  {
+    "id": "imat_2026_q55",
+    "year": 2026,
+    "qNumber": "Q55",
+    "subject": "Physics",
+    "chapter": "Dynamics & Newton's Laws",
+    "subtopic": "Friction on an Inclined Plane",
+    "tier": "Core Physics",
+    "question": "A crate of mass \\(10\\,\\text{kg}\\) rests in static equilibrium on a ramp inclined at \\(30^\\circ\\) to the horizontal. What is the magnitude of the static friction force acting on the crate? (Take \\(g = 10\\,\\text{m/s}^2\\))",
+    "options": [
+      "\\(50\\,\\text{N}\\)",
+      "\\(86.6\\,\\text{N}\\)",
+      "\\(100\\,\\text{N}\\)",
+      "\\(57.7\\,\\text{N}\\)",
+      "\\(0\\,\\text{N}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Because the crate is in static equilibrium, the net force parallel to the ramp must be zero:<br>\\[\\sum F_{\\parallel} = m g \\sin(\\theta) - F_{\\text{friction}} = 0\\]<br>\\[F_{\\text{friction}} = m g \\sin(30^\\circ) = 10\\,\\text{kg} \\times 10\\,\\text{m/s}^2 \\times 0.5 = 50\\,\\text{N}\\]<br>Notice that static friction exactly balances the component of gravity pulling the object downslope.",
+    "trapAlert": "Confusing \\(mg\\sin\\theta\\) (50 N, parallel) with the normal force \\(mg\\cos\\theta\\) (86.6 N, perpendicular)."
+  },
+  {
+    "id": "imat_2026_q56",
+    "year": 2026,
+    "qNumber": "Q56",
+    "subject": "Physics",
+    "chapter": "Work, Energy & Power",
+    "subtopic": "Work-Energy Theorem with Friction",
+    "tier": "Core Physics",
+    "question": "A \\(2.0\\,\\text{kg}\\) block sliding on a horizontal surface has an initial velocity of \\(6.0\\,\\text{m/s}\\). A constant kinetic friction force of \\(4.0\\,\\text{N}\\) opposes its motion. Over what distance does the block slide before coming completely to rest?",
+    "options": [
+      "\\(9.0\\,\\text{m}\\)",
+      "\\(4.5\\,\\text{m}\\)",
+      "\\(18.0\\,\\text{m}\\)",
+      "\\(3.0\\,\\text{m}\\)",
+      "\\(12.0\\,\\text{m}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply the Work-Energy Theorem:<br>\\[W_{\\text{net}} = \\Delta K = K_{\\text{final}} - K_{\\text{initial}}\\]<br>Here \\(K_{\\text{final}} = 0\\), and \\(K_{\\text{initial}} = \\frac{1}{2}m v_0^2 = \\frac{1}{2}(2.0\\,\\text{kg})(6.0\\,\\text{m/s})^2 = 36\\,\\text{J}\\).<br>The work done by the friction force over distance \\(d\\) is \\(W = -F_k \\cdot d\\):<br>\\[-F_k \\cdot d = -36\\,\\text{J} \\implies d = \\frac{36\\,\\text{J}}{4.0\\,\\text{N}} = 9.0\\,\\text{m}\\]",
+    "trapAlert": "Dividing \\(v^2\\) directly by friction force without accounting for the mass term \\(m/2\\)."
+  },
+  {
+    "id": "imat_2026_q57",
+    "year": 2026,
+    "qNumber": "Q57",
+    "subject": "Physics",
+    "chapter": "Fluid Mechanics",
+    "subtopic": "Bernoulli's Principle & Continuity",
+    "tier": "Core Physics",
+    "question": "An ideal, incompressible fluid flows through a horizontal pipe. At section 1, the cross-sectional area is \\(A_1 = 40\\,\\text{cm}^2\\) and fluid speed is \\(v_1 = 2.0\\,\\text{m/s}\\). At a constriction (section 2), the cross-sectional area narrows to \\(A_2 = 10\\,\\text{cm}^2\\). What is the fluid speed at section 2, and how does the static fluid pressure \\(P_2\\) compare to \\(P_1\\)?",
+    "options": [
+      "\\(v_2 = 8.0\\,\\text{m/s}\\); static pressure \\(P_2\\) is lower than \\(P_1\\)",
+      "\\(v_2 = 0.5\\,\\text{m/s}\\); static pressure \\(P_2\\) is higher than \\(P_1\\)",
+      "\\(v_2 = 8.0\\,\\text{m/s}\\); static pressure \\(P_2\\) is higher than \\(P_1\\)",
+      "\\(v_2 = 4.0\\,\\text{m/s}\\); static pressure \\(P_2\\) is equal to \\(P_1\\)",
+      "\\(v_2 = 16.0\\,\\text{m/s}\\); static pressure \\(P_2\\) is lower than \\(P_1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Step 1: Apply the continuity equation for incompressible flow:<br>\\[A_1 v_1 = A_2 v_2 \\implies v_2 = v_1 \\left(\\frac{A_1}{A_2}\\right) = 2.0\\,\\text{m/s} \\times \\left(\\frac{40\\,\\text{cm}^2}{10\\,\\text{cm}^2}\\right) = 2.0 \\times 4 = 8.0\\,\\text{m/s}\\]<br>Step 2: Apply Bernoulli's equation along a horizontal streamline (\\(h_1 = h_2\\)):<br>\\[P_1 + \\frac{1}{2}\\rho v_1^2 = P_2 + \\frac{1}{2}\\rho v_2^2\\]<br>Because the velocity increases (\\(v_2 > v_1\\)), the kinetic energy density \\(\\frac{1}{2}\\rho v^2\\) increases. By conservation of energy, the static pressure must decrease: \\(P_2 < P_1\\) (Venturi effect).",
+    "trapAlert": "Intuitive misconception that fluid pressure increases in a constriction (pressure actually *drops* as speed increases)."
+  },
+  {
+    "id": "imat_2026_q58",
+    "year": 2026,
+    "qNumber": "Q58",
+    "subject": "Physics",
+    "chapter": "Thermodynamics",
+    "subtopic": "Carnot Engine Maximum Efficiency",
+    "tier": "Core Physics",
+    "question": "A hypothetical heat engine operates on a reversible Carnot cycle between a hot reservoir at \\(327^\\circ\\text{C}\\) and a cold reservoir at \\(27^\\circ\\text{C}\\). If the engine absorbs \\(1000\\,\\text{J}\\) of heat from the hot reservoir during each cycle, what is its maximum theoretical efficiency and the net mechanical work performed per cycle?",
+    "options": [
+      "Efficiency \\(= 50\\%\\); Work \\(= 500\\,\\text{J}\\)",
+      "Efficiency \\(= 91.7\\%\\); Work \\(= 917\\,\\text{J}\\)",
+      "Efficiency \\(= 30\\%\\); Work \\(= 300\\,\\text{J}\\)",
+      "Efficiency \\(= 25\\%\\); Work \\(= 250\\,\\text{J}\\)",
+      "Efficiency \\(= 75\\%\\); Work \\(= 750\\,\\text{J}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Step 1: Convert temperatures strictly to Kelvin (absolute scale):<br>• \\(T_H = 327 + 273 = 600\\,\\text{K}\\)<br>• \\(T_C = 27 + 273 = 300\\,\\text{K}\\)<br><br>Step 2: Calculate maximum Carnot efficiency:<br>\\[\\eta = 1 - \\frac{T_C}{T_H} = 1 - \\frac{300}{600} = 1 - 0.5 = 0.50 \\quad (50\\%)\\]<br>Step 3: Calculate work performed:<br>\\[W = \\eta \\times Q_H = 0.50 \\times 1000\\,\\text{J} = 500\\,\\text{J}\\]",
+    "trapAlert": "Using Celsius temperatures directly in the efficiency formula: \\(1 - 27/327 = 91.7\\%\\), which is completely erroneous."
+  },
+  {
+    "id": "imat_2026_q59",
+    "year": 2026,
+    "qNumber": "Q59",
+    "subject": "Physics",
+    "chapter": "Electrostatics & Capacitors",
+    "subtopic": "Dielectrics & Stored Energy",
+    "tier": "Core Physics",
+    "question": "A parallel-plate air capacitor of capacitance \\(C_0\\) is charged by connecting it to a battery of voltage \\(V_0\\). While the capacitor remains continuously connected to the battery, a dielectric slab with dielectric constant \\(\\kappa = 3\\) is inserted between the plates. How do the stored electric charge (\\(Q\\)) and stored electrostatic potential energy (\\(U\\)) change compared to their initial values \\(Q_0\\) and \\(U_0\\)?",
+    "options": [
+      "Both charge and stored energy triple (\\(Q = 3Q_0\\), \\(U = 3U_0\\))",
+      "Charge triples (\\(Q = 3Q_0\\)), but stored energy is reduced to one-third (\\(U = U_0 / 3\\))",
+      "Charge remains constant (\\(Q = Q_0\\)), and stored energy triples (\\(U = 3U_0\\))",
+      "Both charge and stored energy remain completely unchanged",
+      "Stored energy increases by a factor of 9 (\\(U = 9U_0\\)), while charge triples"
+    ],
+    "correctIndex": 0,
+    "explanation": "Because the capacitor remains connected to the battery, the potential difference is held strictly constant at \\(V = V_0\\).<br>1. Insertion of the dielectric increases capacitance: \\(C = \\kappa C_0 = 3C_0\\).<br>2. Charge is given by \\(Q = CV = (3C_0)V_0 = 3(C_0 V_0) = 3Q_0\\) (charge triples).<br>3. Stored electrostatic energy is \\(U = \\frac{1}{2} C V^2 = \\frac{1}{2}(3C_0)V_0^2 = 3\\left(\\frac{1}{2}C_0 V_0^2\\right) = 3U_0\\) (energy triples).<br><i>Contrast:</i> If the battery had been disconnected before dielectric insertion, charge \\(Q\\) would remain constant and energy \\(U\\) would decrease by a factor of \\(\\kappa\\).",
+    "trapAlert": "Confusing a connected battery (constant V, energy increases) with a disconnected battery (constant Q, energy decreases)."
+  },
+  {
+    "id": "imat_2026_q60",
+    "year": 2026,
+    "qNumber": "Q60",
+    "subject": "Physics",
+    "chapter": "DC Circuits & Electricity",
+    "subtopic": "Ohm's Law & Resistors in Parallel",
+    "tier": "Core Physics",
+    "question": "Three identical resistors, each with resistance \\(R = 12\\,\\Omega\\), are connected in parallel across an ideal \\(24\\,\\text{V}\\) DC power supply. What is the equivalent resistance of the circuit and the total electric power dissipated as heat?",
+    "options": [
+      "\\(R_{\\text{eq}} = 4\\,\\Omega\\); Power \\(= 144\\,\\text{W}\\)",
+      "\\(R_{\\text{eq}} = 36\\,\\Omega\\); Power \\(= 16\\,\\text{W}\\)",
+      "\\(R_{\\text{eq}} = 4\\,\\Omega\\); Power \\(= 48\\,\\text{W}\\)",
+      "\\(R_{\\text{eq}} = 6\\,\\Omega\\); Power \\(= 96\\,\\text{W}\\)",
+      "\\(R_{\\text{eq}} = 12\\,\\Omega\\); Power \\(= 72\\,\\text{W}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Step 1: Equivalent resistance of identical resistors in parallel:<br>\\[\\frac{1}{R_{\\text{eq}}} = \\frac{1}{R} + \\frac{1}{R} + \\frac{1}{R} = \\frac{3}{12} = \\frac{1}{4} \\implies R_{\\text{eq}} = \\frac{12}{3} = 4\\,\\Omega\\]<br>Step 2: Total power dissipated across the circuit:<br>\\[P = \\frac{V^2}{R_{\\text{eq}}} = \\frac{(24\\,\\text{V})^2}{4\\,\\Omega} = \\frac{576}{4} = 144\\,\\text{W}\\]<br>(Alternatively: each branch carries current \\(I_1 = 24/12 = 2\\,\\text{A}\\), dissipating \\(P_1 = (2)^2 \\times 12 = 48\\,\\text{W}\\); total power for three branches \\(= 3 \\times 48 = 144\\,\\text{W}\\)).",
+    "trapAlert": "Treating the parallel combination as series (12 + 12 + 12 = 36 ohms, yielding 16 W)."
+  }
+]
