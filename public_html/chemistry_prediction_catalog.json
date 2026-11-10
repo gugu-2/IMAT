@@ -1,0 +1,1103 @@
+{
+  "catalog_title": "IMAT 2025/2026 Chemistry Prediction Master Question Catalog",
+  "examination": "IMAT (Italian Medical Admissions Test)",
+  "official_authority": "MUR (Ministero dell'Università e della Ricerca)",
+  "target_academic_year": "2025/2026",
+  "version": "1.0.0",
+  "total_questions": 40,
+  "questions_per_domain": 4,
+  "domains_covered": [
+    "1. Atomic Structure & Quantum Numbers",
+    "2. Periodic Properties & Ionization Energy",
+    "3. Chemical Bonding & VSEPR Geometry",
+    "4. Intermolecular Forces",
+    "5. Stoichiometry & Colligative Properties",
+    "6. Chemical Thermodynamics & Kinetics",
+    "7. Equilibrium & Le Chatelier",
+    "8. Acids, Bases & Non-Calculator Buffers",
+    "9. Electrochemistry",
+    "10. Organic Chemistry"
+  ],
+  "questions": [
+    {
+      "id": "chem_pred_2025_01",
+      "domain_id": 1,
+      "domain_title": "Atomic Structure & Quantum Numbers",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Electronic Configuration & Transition Metal Cation Ionization",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.2% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Structure of the atom; electronic configurations; Hund's rule and Pauli exclusion principle; transition elements",
+      "question": "What is the ground-state condensed electron configuration and the total number of unpaired electrons for the iron(III) cation, Fe3+ (atomic number Z = 26)?",
+      "options": [
+        "[Ar] 4s2 3d3 with 3 unpaired electrons",
+        "[Ar] 4s1 3d4 with 5 unpaired electrons",
+        "[Ar] 3d5 with 5 unpaired electrons",
+        "[Ar] 3d5 with 1 unpaired electron",
+        "[Ar] 4s0 3d6 with 4 unpaired electrons"
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "explanation": {
+        "principle": "Ionization hierarchy of transition metals: When d-block transition metals form cations, electrons are removed first from the outermost principal quantum shell (the 4s subshell, n = 4) before removing any inner 3d electrons (n = 3), because the 3d orbitals drop lower in energy once occupied. Hund's rule of maximum multiplicity governs degenerate orbital filling.",
+        "proof": "1. Neutral Iron (Z = 26) ground-state configuration: 1s2 2s2 2p6 3s2 3p6 4s2 3d6, or [Ar] 4s2 3d6.\n2. Ionization to Fe3+ requires removal of 3 electrons:\n   - First 2 electrons are removed from the outermost 4s subshell: [Ar] 3d6 (forming Fe2+).\n   - The 3rd electron is removed from the 3d subshell: 3d6 - 1e- = 3d5 (forming Fe3+).\n3. By Hund's rule, the 5 degenerate d orbitals (dxy, dyz, dxz, dx2-y2, dz2) each receive one electron with parallel spins (+1/2), resulting in a stable half-filled d-subshell with exactly 5 unpaired electrons.",
+        "distractor_elimination": "• Option A is FALSE: It erroneously removes 3 electrons from the 3d subshell while retaining the 4s2 electrons.\n• Option B is FALSE: It retains an electron in 4s and assumes 4s1 3d4.\n• Option D is FALSE: It misapplies Hund's rule by assuming electrons pair up into two pairs with one unpaired electron, violating maximum spin multiplicity.\n• Option E is FALSE: [Ar] 3d6 corresponds to the iron(II) cation, Fe2+, not Fe3+."
+      },
+      "trap_alert": "Transition metals lose 4s electrons BEFORE 3d electrons upon ionization! Do not remove electrons from 3d first.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Ionization hierarchy of transition metals: When d-block transition metals form cations, electrons are removed first from the outermost principal quantum shell (the 4s subshell, n = 4) before removing any inner 3d electrons (n = 3), because the 3d orbitals drop lower in energy once occupied. Hund's rule of maximum multiplicity governs degenerate orbital filling.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Neutral Iron (Z = 26) ground-state configuration: 1s2 2s2 2p6 3s2 3p6 4s2 3d6, or [Ar] 4s2 3d6.<br>2. Ionization to Fe3+ requires removal of 3 electrons:<br>   - First 2 electrons are removed from the outermost 4s subshell: [Ar] 3d6 (forming Fe2+).<br>   - The 3rd electron is removed from the 3d subshell: 3d6 - 1e- = 3d5 (forming Fe3+).<br>3. By Hund's rule, the 5 degenerate d orbitals (dxy, dyz, dxz, dx2-y2, dz2) each receive one electron with parallel spins (+1/2), resulting in a stable half-filled d-subshell with exactly 5 unpaired electrons.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It erroneously removes 3 electrons from the 3d subshell while retaining the 4s2 electrons.<br>• Option B is FALSE: It retains an electron in 4s and assumes 4s1 3d4.<br>• Option D is FALSE: It misapplies Hund's rule by assuming electrons pair up into two pairs with one unpaired electron, violating maximum spin multiplicity.<br>• Option E is FALSE: [Ar] 3d6 corresponds to the iron(II) cation, Fe2+, not Fe3+."
+    },
+    {
+      "id": "chem_pred_2025_02",
+      "domain_id": 1,
+      "domain_title": "Atomic Structure & Quantum Numbers",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Aufbau Exceptions & Transition Metal Cations (Cu+ vs Cu2+)",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.8% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Electron configuration anomalies; d-block exchange stability; oxidation states of copper",
+      "question": "Copper (atomic number Z = 29) exhibits an anomalous ground-state electron configuration in its neutral atomic state. Which of the following correctly pairs the ground-state electron configuration of the neutral copper atom with that of the cuprous cation (Cu+) and the cupric cation (Cu2+)?",
+      "options": [
+        "Cu: [Ar] 4s2 3d9; Cu+: [Ar] 4s1 3d9; Cu2+: [Ar] 3d9",
+        "Cu: [Ar] 4s1 3d10; Cu+: [Ar] 3d10; Cu2+: [Ar] 3d9",
+        "Cu: [Ar] 4s1 3d10; Cu+: [Ar] 4s1 3d9; Cu2+: [Ar] 4s0 3d9",
+        "Cu: [Ar] 4s2 3d9; Cu+: [Ar] 3d10; Cu2+: [Ar] 4s1 3d8",
+        "Cu: [Ar] 3d11; Cu+: [Ar] 3d10; Cu2+: [Ar] 3d9"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Orbital exchange energy and subshell stability: Completely filled (d10) and half-filled (d5) subshells possess heightened quantum-mechanical exchange stabilization. Ionization always removes electrons with the highest principal quantum number (4s) before (n-1)d electrons.",
+        "proof": "1. Neutral Copper (Z = 29): Rather than adopting [Ar] 4s2 3d9, an electron shifts from 4s to 3d to achieve a completely filled, spherically symmetric 3d10 subshell. Thus, neutral Cu is [Ar] 4s1 3d10.\n2. Formation of Cu+ (loss of 1 electron): The outermost 4s1 valence electron is lost first: Cu+ = [Ar] 3d10 (diamagnetic, closed subshell).\n3. Formation of Cu2+ (loss of 2 electrons): Loss of the 4s1 electron plus one 3d electron gives Cu2+ = [Ar] 3d9 (paramagnetic, 1 unpaired electron).",
+        "distractor_elimination": "• Option A is FALSE: It assigns neutral Cu the un-promoted configuration [Ar] 4s2 3d9, ignoring exchange stabilization.\n• Option C is FALSE: It removes a 3d electron to form Cu+ instead of the outermost 4s electron.\n• Option D is FALSE: It mixes regular and anomalous configurations incorrectly.\n• Option E is FALSE: The d-subshell has only 5 orbitals and can hold at most 10 electrons; a 3d11 configuration is physically impossible."
+      },
+      "trap_alert": "Neutral copper is [Ar] 4s1 3d10 (NOT 4s2 3d9). In Cu+, the 4s1 electron is lost, leaving [Ar] 3d10.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Orbital exchange energy and subshell stability: Completely filled (d10) and half-filled (d5) subshells possess heightened quantum-mechanical exchange stabilization. Ionization always removes electrons with the highest principal quantum number (4s) before (n-1)d electrons.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Neutral Copper (Z = 29): Rather than adopting [Ar] 4s2 3d9, an electron shifts from 4s to 3d to achieve a completely filled, spherically symmetric 3d10 subshell. Thus, neutral Cu is [Ar] 4s1 3d10.<br>2. Formation of Cu+ (loss of 1 electron): The outermost 4s1 valence electron is lost first: Cu+ = [Ar] 3d10 (diamagnetic, closed subshell).<br>3. Formation of Cu2+ (loss of 2 electrons): Loss of the 4s1 electron plus one 3d electron gives Cu2+ = [Ar] 3d9 (paramagnetic, 1 unpaired electron).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It assigns neutral Cu the un-promoted configuration [Ar] 4s2 3d9, ignoring exchange stabilization.<br>• Option C is FALSE: It removes a 3d electron to form Cu+ instead of the outermost 4s electron.<br>• Option D is FALSE: It mixes regular and anomalous configurations incorrectly.<br>• Option E is FALSE: The d-subshell has only 5 orbitals and can hold at most 10 electrons; a 3d11 configuration is physically impossible."
+    },
+    {
+      "id": "chem_pred_2025_03",
+      "domain_id": 1,
+      "domain_title": "Atomic Structure & Quantum Numbers",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Chromium Ground State & Cr3+ Ionization",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.1% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Quantum numbers; Aufbau exceptions; transition metal paramagnetism",
+      "question": "Neutral Chromium (Z = 24) has an anomalous ground-state electron configuration. When chromium is oxidized to form the chromium(III) ion (Cr3+), which subshells lose electrons, and what is the final ground-state configuration and magnetic property of Cr3+?",
+      "options": [
+        "It loses three 3d electrons; configuration is [Ar] 4s1 3d2; paramagnetic with 3 unpaired electrons",
+        "It loses two 4s electrons and one 3d electron; configuration is [Ar] 3d3; diamagnetic with 0 unpaired electrons",
+        "It loses one 4s electron and two 3d electrons; configuration is [Ar] 3d3; paramagnetic with 3 unpaired electrons",
+        "It loses three 4s electrons; configuration is [Ar] 3d3; ferromagnetic with 6 unpaired electrons",
+        "It loses one 4s electron and two 3d electrons; configuration is [Ar] 4s1 3d2; diamagnetic with 0 unpaired electrons"
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "explanation": {
+        "principle": "Exchange stabilization of half-filled subshells: Neutral Cr has 6 valence electrons configured as [Ar] 4s1 3d5. Sequential ionization removes the n=4 electron before n=3 electrons.",
+        "proof": "1. Neutral Cr (Z = 24) is [Ar] 4s1 3d5 (due to half-filled subshell stability, 6 unpaired electrons).\n2. Ionization to Cr3+ removes 3 electrons total:\n   - 1 electron from 4s: removes the single 4s1 electron.\n   - 2 electrons from 3d: 5 - 2 = 3 electrons remaining in 3d.\n3. Ground-state configuration of Cr3+ is [Ar] 3d3.\n4. In the three degenerate 3d orbitals, each electron singly occupies an orbital with parallel spins by Hund's rule: 3 unpaired electrons, conferring strong paramagnetism.",
+        "distractor_elimination": "• Option A is FALSE: The 4s electron is removed before 3d electrons.\n• Option B is FALSE: Neutral Cr has only one 4s electron (4s1), not two; furthermore, 3 unpaired electrons are paramagnetic, not diamagnetic.\n• Option D is FALSE: The 4s subshell holds at most 2 electrons; it cannot lose 3 electrons from 4s.\n• Option E is FALSE: It leaves an electron in 4s and states diamagnetic, which is completely incorrect."
+      },
+      "trap_alert": "Cr has only ONE 4s electron in its neutral state ([Ar] 4s1 3d5). Do not assume it loses two 4s electrons!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Exchange stabilization of half-filled subshells: Neutral Cr has 6 valence electrons configured as [Ar] 4s1 3d5. Sequential ionization removes the n=4 electron before n=3 electrons.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Neutral Cr (Z = 24) is [Ar] 4s1 3d5 (due to half-filled subshell stability, 6 unpaired electrons).<br>2. Ionization to Cr3+ removes 3 electrons total:<br>   - 1 electron from 4s: removes the single 4s1 electron.<br>   - 2 electrons from 3d: 5 - 2 = 3 electrons remaining in 3d.<br>3. Ground-state configuration of Cr3+ is [Ar] 3d3.<br>4. In the three degenerate 3d orbitals, each electron singly occupies an orbital with parallel spins by Hund's rule: 3 unpaired electrons, conferring strong paramagnetism.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: The 4s electron is removed before 3d electrons.<br>• Option B is FALSE: Neutral Cr has only one 4s electron (4s1), not two; furthermore, 3 unpaired electrons are paramagnetic, not diamagnetic.<br>• Option D is FALSE: The 4s subshell holds at most 2 electrons; it cannot lose 3 electrons from 4s.<br>• Option E is FALSE: It leaves an electron in 4s and states diamagnetic, which is completely incorrect."
+    },
+    {
+      "id": "chem_pred_2025_04",
+      "domain_id": 1,
+      "domain_title": "Atomic Structure & Quantum Numbers",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Quantum Numbers, Radial/Angular Nodes & Pauli Principle",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "97.9% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Quantum numbers (n, l, m_l, m_s); atomic orbitals and boundary surfaces; nodal planes",
+      "question": "According to the quantum mechanical model of the atom, which set of four quantum numbers (n, l, ml, ms) represents a permissible quantum state for an electron residing in a 4d atomic orbital, and how many radial and angular nodes are associated with this orbital?",
+      "options": [
+        "(n = 4, l = 1, ml = +1, ms = +1/2); 2 radial nodes, 1 angular node",
+        "(n = 4, l = 2, ml = -2, ms = -1/2); 1 radial node, 2 angular nodes",
+        "(n = 4, l = 2, ml = +3, ms = +1/2); 1 radial node, 2 angular nodes",
+        "(n = 4, l = 3, ml = 0, ms = -1/2); 0 radial nodes, 3 angular nodes",
+        "(n = 4, l = 2, ml = 0, ms = 0); 2 radial nodes, 1 angular node"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Quantum number boundary conditions: Principal n >= 1; Azimuthal/angular momentum l in {0, 1, ..., n-1}; Magnetic ml in {-l, ..., +l}; Spin ms in {+1/2, -1/2}. Node equations: Angular nodes = l; Radial nodes = n - l - 1; Total nodes = n - 1.",
+        "proof": "1. For a 4d orbital:\n   - Principal quantum number n = 4.\n   - Azimuthal quantum number l = 2 (since s=0, p=1, d=2, f=3).\n   - Magnetic quantum number ml can take any integer from -l to +l: ml in {-2, -1, 0, +1, +2}.\n   - Spin quantum number ms = +1/2 or -1/2.\n2. Calculation of nodes:\n   - Angular nodes = l = 2.\n   - Radial nodes = n - l - 1 = 4 - 2 - 1 = 1.\n   - Total nodes = (n - 1) = 3 (1 radial + 2 angular).\n3. Set B has n=4, l=2, ml=-2, ms=-1/2: all values satisfy boundary rules, and node counts (1 radial, 2 angular) are exact.",
+        "distractor_elimination": "• Option A is FALSE: l = 1 designates a 4p orbital, not a 4d orbital.\n• Option C is FALSE: ml = +3 is forbidden because |ml| cannot exceed l (here l = 2).\n• Option D is FALSE: l = 3 designates a 4f orbital, not a 4d orbital.\n• Option E is FALSE: ms = 0 is strictly forbidden; electron spin is quantized as either +1/2 or -1/2."
+      },
+      "trap_alert": "Angular nodes equal l. Radial nodes equal n - l - 1. For a 4d orbital: angular = 2, radial = 4 - 2 - 1 = 1.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Quantum number boundary conditions: Principal n >= 1; Azimuthal/angular momentum l in {0, 1, ..., n-1}; Magnetic ml in {-l, ..., +l}; Spin ms in {+1/2, -1/2}. Node equations: Angular nodes = l; Radial nodes = n - l - 1; Total nodes = n - 1.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. For a 4d orbital:<br>   - Principal quantum number n = 4.<br>   - Azimuthal quantum number l = 2 (since s=0, p=1, d=2, f=3).<br>   - Magnetic quantum number ml can take any integer from -l to +l: ml in {-2, -1, 0, +1, +2}.<br>   - Spin quantum number ms = +1/2 or -1/2.<br>2. Calculation of nodes:<br>   - Angular nodes = l = 2.<br>   - Radial nodes = n - l - 1 = 4 - 2 - 1 = 1.<br>   - Total nodes = (n - 1) = 3 (1 radial + 2 angular).<br>3. Set B has n=4, l=2, ml=-2, ms=-1/2: all values satisfy boundary rules, and node counts (1 radial, 2 angular) are exact.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: l = 1 designates a 4p orbital, not a 4d orbital.<br>• Option C is FALSE: ml = +3 is forbidden because |ml| cannot exceed l (here l = 2).<br>• Option D is FALSE: l = 3 designates a 4f orbital, not a 4d orbital.<br>• Option E is FALSE: ms = 0 is strictly forbidden; electron spin is quantized as either +1/2 or -1/2."
+    },
+    {
+      "id": "chem_pred_2025_05",
+      "domain_id": 2,
+      "domain_title": "Periodic Properties & Ionization Energy",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Successive Ionization Energies & Valence Shell Discontinuities",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.0% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Periodic system of elements; ionization energy trends and shell structure determination",
+      "question": "The first six successive ionization energies (in kJ/mol) for a third-period main-group element X are: IE1 = 786, IE2 = 1577, IE3 = 3232, IE4 = 4356, IE5 = 16091, IE6 = 19785. Based on this data, what is the empirical formula of the stable oxide formed by element X?",
+      "options": [
+        "X2O",
+        "XO",
+        "X2O3",
+        "XO2",
+        "X2O5"
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "explanation": {
+        "principle": "Ionization energy discontinuities mark principal shell boundaries. A dramatic jump between IEn and IEn+1 indicates that the (n+1)th electron is removed from a noble-gas core rather than the valence shell, proving the element possesses n valence electrons.",
+        "proof": "1. Analyze IE ratios and absolute jumps:\n   - IE2 / IE1 = 1577 / 786 = 2.0x\n   - IE3 / IE2 = 3232 / 1577 = 2.1x\n   - IE4 / IE3 = 4356 / 3232 = 1.35x\n   - IE5 / IE4 = 16091 / 4356 = 3.69x (massive discontinuity: +11,735 kJ/mol increase!)\n2. The colossal jump between IE4 and IE5 indicates that removing the first 4 electrons exhausts the valence shell, and the 5th electron must be extracted from the inert n=2 core (2p6).\n3. Element X has 4 valence electrons (Group 14, Silicon in Period 3).\n4. In Group 14, the stable oxidation state with oxygen is +4. Combining X4+ with oxide anions (O2-) yields XO2 (SiO2).",
+        "distractor_elimination": "• Option A is FALSE: X2O corresponds to a Group 1 alkali metal with 1 valence electron (huge jump after IE1).\n• Option B is FALSE: XO corresponds to a Group 2 alkaline earth metal (huge jump after IE2).\n• Option C is FALSE: X2O3 corresponds to a Group 13 metal like Al (huge jump after IE3).\n• Option E is FALSE: X2O5 corresponds to a Group 15 pnictogen like P (huge jump after IE5)."
+      },
+      "trap_alert": "Count the number of relatively low ionization steps before the massive gap: 4 steps = 4 valence electrons = Group 14 = XO2.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Ionization energy discontinuities mark principal shell boundaries. A dramatic jump between IEn and IEn+1 indicates that the (n+1)th electron is removed from a noble-gas core rather than the valence shell, proving the element possesses n valence electrons.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Analyze IE ratios and absolute jumps:<br>   - IE2 / IE1 = 1577 / 786 = 2.0x<br>   - IE3 / IE2 = 3232 / 1577 = 2.1x<br>   - IE4 / IE3 = 4356 / 3232 = 1.35x<br>   - IE5 / IE4 = 16091 / 4356 = 3.69x (massive discontinuity: +11,735 kJ/mol increase!)<br>2. The colossal jump between IE4 and IE5 indicates that removing the first 4 electrons exhausts the valence shell, and the 5th electron must be extracted from the inert n=2 core (2p6).<br>3. Element X has 4 valence electrons (Group 14, Silicon in Period 3).<br>4. In Group 14, the stable oxidation state with oxygen is +4. Combining X4+ with oxide anions (O2-) yields XO2 (SiO2).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: X2O corresponds to a Group 1 alkali metal with 1 valence electron (huge jump after IE1).<br>• Option B is FALSE: XO corresponds to a Group 2 alkaline earth metal (huge jump after IE2).<br>• Option C is FALSE: X2O3 corresponds to a Group 13 metal like Al (huge jump after IE3).<br>• Option E is FALSE: X2O5 corresponds to a Group 15 pnictogen like P (huge jump after IE5)."
+    },
+    {
+      "id": "chem_pred_2025_06",
+      "domain_id": 2,
+      "domain_title": "Periodic Properties & Ionization Energy",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Effective Nuclear Charge & Isoelectronic Ionic Radii",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.7% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Periodic trends; atomic and ionic radii; effective nuclear charge (Zeff)",
+      "question": "Consider the isoelectronic series of ions: S2-, Cl-, K+, and Ca2+ (each possessing 18 electrons). Which of the following lists these species in order of STRICTLY DECREASING ionic radius, and what fundamental physical principle accounts for this trend?",
+      "options": [
+        "Ca2+ > K+ > Cl- > S2-; ionic radius increases with atomic number because heavier nuclei occupy larger spatial volumes.",
+        "S2- > Cl- > K+ > Ca2+; effective nuclear charge (Zeff) increases as nuclear proton count rises from 16 to 20, pulling the identical electron cloud inward.",
+        "Cl- > S2- > Ca2+ > K+; anions are always smaller than cations due to increased electron-electron pairing forces.",
+        "S2- > Cl- > Ca2+ > K+; divalent ions always possess larger radii than monovalent ions regardless of charge sign.",
+        "Ca2+ > S2- > K+ > Cl-; core shielding overrides nuclear charge for all closed-shell configurations."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Coulomb's Law and Effective Nuclear Charge (Zeff) in isoelectronic series: In species with identical numbers of electrons and identical electron configurations, electron shielding (S) is approximately constant. Thus, Zeff = Z - S increases directly with atomic number Z. Greater Zeff exerts a stronger electrostatic pull on valence electrons, contracting ionic radius.",
+        "proof": "1. All four ions have 18 electrons: 1s2 2s2 2p6 3s2 3p6 (argon core).\n2. Count protons (nuclear charge Z):\n   - S2-: Z = 16 protons\n   - Cl-: Z = 17 protons\n   - K+: Z = 19 protons\n   - Ca2+: Z = 20 protons\n3. Calculate proton-to-electron ratio (Z/e):\n   - S2-: 16 / 18 = 0.89\n   - Cl-: 17 / 18 = 0.94\n   - K+: 19 / 18 = 1.06\n   - Ca2+: 20 / 18 = 1.11\n4. Ca2+ has the highest Zeff and exerts the strongest inward attraction on the n=3 shell (radius = 100 pm). S2- has the lowest Zeff and the weakest nuclear hold, plus high electron-electron repulsion, resulting in the largest radius (184 pm).\n5. Decreasing radius order: S2- (184 pm) > Cl- (181 pm) > K+ (138 pm) > Ca2+ (100 pm).",
+        "distractor_elimination": "• Option A is FALSE: It states the exact inverse order; more protons shrink isoelectronic species.\n• Option C is FALSE: Cl- has more protons than S2- (17 vs 16), so Cl- is smaller than S2-.\n• Option D is FALSE: Ca2+ is divalent but possesses 20 protons, making it the smallest, not larger than K+.\n• Option E is FALSE: Core shielding is constant across an isoelectronic series; nuclear charge dominates."
+      },
+      "trap_alert": "In an isoelectronic series, more protons = smaller radius! Anions with fewest protons are the largest; cations with most protons are the smallest.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Coulomb's Law and Effective Nuclear Charge (Zeff) in isoelectronic series: In species with identical numbers of electrons and identical electron configurations, electron shielding (S) is approximately constant. Thus, Zeff = Z - S increases directly with atomic number Z. Greater Zeff exerts a stronger electrostatic pull on valence electrons, contracting ionic radius.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. All four ions have 18 electrons: 1s2 2s2 2p6 3s2 3p6 (argon core).<br>2. Count protons (nuclear charge Z):<br>   - S2-: Z = 16 protons<br>   - Cl-: Z = 17 protons<br>   - K+: Z = 19 protons<br>   - Ca2+: Z = 20 protons<br>3. Calculate proton-to-electron ratio (Z/e):<br>   - S2-: 16 / 18 = 0.89<br>   - Cl-: 17 / 18 = 0.94<br>   - K+: 19 / 18 = 1.06<br>   - Ca2+: 20 / 18 = 1.11<br>4. Ca2+ has the highest Zeff and exerts the strongest inward attraction on the n=3 shell (radius = 100 pm). S2- has the lowest Zeff and the weakest nuclear hold, plus high electron-electron repulsion, resulting in the largest radius (184 pm).<br>5. Decreasing radius order: S2- (184 pm) > Cl- (181 pm) > K+ (138 pm) > Ca2+ (100 pm).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It states the exact inverse order; more protons shrink isoelectronic species.<br>• Option C is FALSE: Cl- has more protons than S2- (17 vs 16), so Cl- is smaller than S2-.<br>• Option D is FALSE: Ca2+ is divalent but possesses 20 protons, making it the smallest, not larger than K+.<br>• Option E is FALSE: Core shielding is constant across an isoelectronic series; nuclear charge dominates."
+    },
+    {
+      "id": "chem_pred_2025_07",
+      "domain_id": 2,
+      "domain_title": "Periodic Properties & Ionization Energy",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "First Ionization Energy Anomalies (N vs O & Be vs B)",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.5% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Periodic trends; first ionization energy exceptions; Hund's rule and subshell repulsion",
+      "question": "Across Period 2, the general periodic trend is an increase in first ionization energy from left to right. However, the first ionization energy of Nitrogen (1402 kJ/mol) is unexpectedly HIGHER than that of Oxygen (1314 kJ/mol). What is the precise quantum mechanical explanation for this anomaly?",
+      "options": [
+        "Oxygen has a lower effective nuclear charge than Nitrogen, decreasing Coulombic attraction for valence electrons.",
+        "The valence electron removed from Nitrogen resides in a lower principal quantum level (n = 1) than that of Oxygen (n = 2).",
+        "Nitrogen possesses a half-filled 2p3 subshell with three unpaired parallel spins, whereas Oxygen possesses a 2p4 subshell where electron pairing in one orbital causes inter-electronic repulsion.",
+        "Nitrogen exhibits significant relativistic contraction of its 2s subshell, whereas Oxygen exhibits lanthanide contraction.",
+        "Oxygen has a greater atomic radius than Nitrogen, placing its outermost electrons further from the nucleus."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "explanation": {
+        "principle": "Inter-electronic Coulombic pairing repulsion vs Exchange energy of half-filled subshells: An electron in a doubly occupied orbital experiences greater electrostatic repulsion than an electron in a singly occupied degenerate orbital.",
+        "proof": "1. Write valence configurations:\n   - Nitrogen (Z = 7): 1s2 2s2 2px1 2py1 2pz1 (half-filled 2p3 subshell).\n   - Oxygen (Z = 8): 1s2 2s2 2px2 2py1 2pz1 (four 2p electrons).\n2. In Nitrogen, all three 2p electrons occupy separate orbitals with parallel spins, maximizing exchange stabilization and minimizing electron-electron Coulombic repulsion.\n3. In Oxygen, the fourth 2p electron is forced to pair up in the 2px orbital. Two electrons occupying the same spatial orbital experience substantial electrostatic repulsion, which raises the orbital energy level and facilitates the removal of one electron.\n4. Therefore, less energy is required to remove an electron from Oxygen (1314 kJ/mol) than from Nitrogen (1402 kJ/mol), despite Oxygen having a higher nuclear charge (Z = 8 vs Z = 7).",
+        "distractor_elimination": "• Option A is FALSE: Oxygen has Z = 8 and Nitrogen has Z = 7; Oxygen has a higher Zeff, not lower.\n• Option B is FALSE: Both N and O lose valence electrons from the n = 2 principal shell.\n• Option D is FALSE: Relativistic effects are negligible in Period 2; lanthanide contraction applies only to Period 6.\n• Option E is FALSE: Atomic radius decreases across Period 2; Oxygen (66 pm) is smaller than Nitrogen (71 pm)."
+      },
+      "trap_alert": "Oxygen's 2p4 configuration has two paired electrons in one orbital: inter-electronic pairing repulsion makes ionization easier than Nitrogen's stable half-filled 2p3.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Inter-electronic Coulombic pairing repulsion vs Exchange energy of half-filled subshells: An electron in a doubly occupied orbital experiences greater electrostatic repulsion than an electron in a singly occupied degenerate orbital.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Write valence configurations:<br>   - Nitrogen (Z = 7): 1s2 2s2 2px1 2py1 2pz1 (half-filled 2p3 subshell).<br>   - Oxygen (Z = 8): 1s2 2s2 2px2 2py1 2pz1 (four 2p electrons).<br>2. In Nitrogen, all three 2p electrons occupy separate orbitals with parallel spins, maximizing exchange stabilization and minimizing electron-electron Coulombic repulsion.<br>3. In Oxygen, the fourth 2p electron is forced to pair up in the 2px orbital. Two electrons occupying the same spatial orbital experience substantial electrostatic repulsion, which raises the orbital energy level and facilitates the removal of one electron.<br>4. Therefore, less energy is required to remove an electron from Oxygen (1314 kJ/mol) than from Nitrogen (1402 kJ/mol), despite Oxygen having a higher nuclear charge (Z = 8 vs Z = 7).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Oxygen has Z = 8 and Nitrogen has Z = 7; Oxygen has a higher Zeff, not lower.<br>• Option B is FALSE: Both N and O lose valence electrons from the n = 2 principal shell.<br>• Option D is FALSE: Relativistic effects are negligible in Period 2; lanthanide contraction applies only to Period 6.<br>• Option E is FALSE: Atomic radius decreases across Period 2; Oxygen (66 pm) is smaller than Nitrogen (71 pm)."
+    },
+    {
+      "id": "chem_pred_2025_08",
+      "domain_id": 2,
+      "domain_title": "Periodic Properties & Ionization Energy",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Electron Affinity Anomaly (Fluorine vs Chlorine)",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.2% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Periodic properties; electron affinity; halogen group trends and charge density",
+      "question": "Halogens possess highly exothermic electron affinities because adding an electron completes a stable octet. However, the first electron affinity of Chlorine (-349 kJ/mol) is MORE exothermic than that of Fluorine (-328 kJ/mol). Which factor is responsible for this deviation from the standard periodic group trend?",
+      "options": [
+        "Chlorine has a smaller atomic volume than Fluorine, increasing electrostatic attraction for the added electron.",
+        "The compact volume of Fluorine's 2p subshell results in exceptionally high electron-electron repulsion that destabilizes the incoming electron.",
+        "Fluorine's effective nuclear charge is substantially lower than that of Chlorine due to complete d-subshell shielding.",
+        "Chlorine's valence electrons experience zero shielding from core electrons.",
+        "The addition of an electron to Fluorine requires promotion of an electron into an empty 3d orbital."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Spatial charge density and inter-electronic repulsion: When an incoming electron is added to a very small, compact orbital, repulsion from existing valence electrons partially offsets the electrostatic attraction of the nucleus.",
+        "proof": "1. In Fluorine (n = 2), the 2p orbitals are extremely compact with a tiny spatial radius (~42 pm).\n2. Crowding 7 valence electrons into this small volume creates high electron charge density. When an 8th electron enters to form F-, it experiences intense Coulombic repulsion from the other 7 electrons.\n3. In Chlorine (n = 3), the 3p orbitals are much larger and more diffuse (~79 pm). The incoming electron enters with significantly less inter-electronic repulsion.\n4. Consequently, the net energy released upon electron capture (electron affinity) is greater for Chlorine (-349 kJ/mol) than for Fluorine (-328 kJ/mol).",
+        "distractor_elimination": "• Option A is FALSE: Chlorine has a larger atomic volume than Fluorine (n = 3 vs n = 2).\n• Option C is FALSE: Neither element has d-electrons in its core; Fluorine's Zeff is high, not lower than Boron/Carbon.\n• Option D is FALSE: Chlorine's valence electrons are shielded by 10 core electrons (1s2 2s2 2p6).\n• Option E is FALSE: Fluorine's 2p subshell has an open vacancy (2p5 -> 2p6); no promotion to 3d is required or possible."
+      },
+      "trap_alert": "Fluorine's tiny 2p orbital creates extreme electron-electron repulsion, making Chlorine's electron affinity more exothermic.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Spatial charge density and inter-electronic repulsion: When an incoming electron is added to a very small, compact orbital, repulsion from existing valence electrons partially offsets the electrostatic attraction of the nucleus.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. In Fluorine (n = 2), the 2p orbitals are extremely compact with a tiny spatial radius (~42 pm).<br>2. Crowding 7 valence electrons into this small volume creates high electron charge density. When an 8th electron enters to form F-, it experiences intense Coulombic repulsion from the other 7 electrons.<br>3. In Chlorine (n = 3), the 3p orbitals are much larger and more diffuse (~79 pm). The incoming electron enters with significantly less inter-electronic repulsion.<br>4. Consequently, the net energy released upon electron capture (electron affinity) is greater for Chlorine (-349 kJ/mol) than for Fluorine (-328 kJ/mol).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Chlorine has a larger atomic volume than Fluorine (n = 3 vs n = 2).<br>• Option C is FALSE: Neither element has d-electrons in its core; Fluorine's Zeff is high, not lower than Boron/Carbon.<br>• Option D is FALSE: Chlorine's valence electrons are shielded by 10 core electrons (1s2 2s2 2p6).<br>• Option E is FALSE: Fluorine's 2p subshell has an open vacancy (2p5 -> 2p6); no promotion to 3d is required or possible."
+    },
+    {
+      "id": "chem_pred_2025_09",
+      "domain_id": 3,
+      "domain_title": "Chemical Bonding & VSEPR Geometry",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "VSEPR Geometry of SF4 (Steric Number 5, Seesaw)",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.1% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Chemical bonding; VSEPR theory; molecular geometry and lone pair repulsion",
+      "question": "According to Valence Shell Electron Pair Repulsion (VSEPR) theory, what are the steric number, molecular geometry, and approximate bond angles for the sulfur tetrafluoride molecule (SF4)?",
+      "options": [
+        "Steric number 4; Tetrahedral geometry; bond angles equal to 109.5°",
+        "Steric number 5; Seesaw geometry; axial-equatorial bond angle < 90° and equatorial-equatorial bond angle < 120°",
+        "Steric number 5; Square planar geometry; all bond angles equal to 90°",
+        "Steric number 6; Octahedral geometry; all bond angles equal to 90°",
+        "Steric number 5; Trigonal bipyramidal geometry; bond angles of exactly 120° and 180°"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "VSEPR steric number 5 and minimization of 90° lone-pair repulsions: In a trigonal bipyramidal electron domain geometry (sp3d), non-bonding lone pairs exclusively occupy EQUATORIAL positions to minimize 90° lone-pair/bonding-pair interactions (an equatorial lone pair has only two 90° interactions, whereas an axial lone pair would have three 90° interactions).",
+        "proof": "1. Sulfur (Group 16) has 6 valence electrons; each Fluorine contributes 1 electron for a single bond (4 bonds = 4 electrons). Non-bonding electrons = 6 - 4 = 2 (1 lone pair).\n2. Steric number (SN) = 4 bonding pairs + 1 lone pair = 5.\n3. Electron-domain geometry is trigonal bipyramidal.\n4. Placement of the lone pair: Placing the lone pair in an equatorial position leaves 4 bonding pairs in a 'seesaw' (disphenoidal) molecular shape.\n5. Bond angle distortion: The bulky equatorial lone pair repels the bonding pairs:\n   - Equatorial-equatorial angle is compressed from 120° to ~102°.\n   - Axial-equatorial angle is compressed from 90° to ~86.5° (axial F-S-F angle is ~173° instead of 180°).",
+        "distractor_elimination": "• Option A is FALSE: SF4 has 5 electron domains, not 4; tetrahedral is for SN = 4 (e.g. CH4, CF4).\n• Option C is FALSE: Square planar is the molecular geometry for SN = 6 with 2 lone pairs (e.g. XeF4).\n• Option D is FALSE: SF4 has 5 electron pairs, not 6 (SF6 has 6).\n• Option E is FALSE: Trigonal bipyramidal is the electron-domain geometry, not the molecular geometry; lone pairs distort the angles away from 120° and 180°."
+      },
+      "trap_alert": "In steric number 5, lone pairs ALWAYS occupy EQUATORIAL positions! 1 equatorial lone pair + 4 bonding pairs = SEESAW geometry.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> VSEPR steric number 5 and minimization of 90° lone-pair repulsions: In a trigonal bipyramidal electron domain geometry (sp3d), non-bonding lone pairs exclusively occupy EQUATORIAL positions to minimize 90° lone-pair/bonding-pair interactions (an equatorial lone pair has only two 90° interactions, whereas an axial lone pair would have three 90° interactions).<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Sulfur (Group 16) has 6 valence electrons; each Fluorine contributes 1 electron for a single bond (4 bonds = 4 electrons). Non-bonding electrons = 6 - 4 = 2 (1 lone pair).<br>2. Steric number (SN) = 4 bonding pairs + 1 lone pair = 5.<br>3. Electron-domain geometry is trigonal bipyramidal.<br>4. Placement of the lone pair: Placing the lone pair in an equatorial position leaves 4 bonding pairs in a 'seesaw' (disphenoidal) molecular shape.<br>5. Bond angle distortion: The bulky equatorial lone pair repels the bonding pairs:<br>   - Equatorial-equatorial angle is compressed from 120° to ~102°.<br>   - Axial-equatorial angle is compressed from 90° to ~86.5° (axial F-S-F angle is ~173° instead of 180°).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: SF4 has 5 electron domains, not 4; tetrahedral is for SN = 4 (e.g. CH4, CF4).<br>• Option C is FALSE: Square planar is the molecular geometry for SN = 6 with 2 lone pairs (e.g. XeF4).<br>• Option D is FALSE: SF4 has 5 electron pairs, not 6 (SF6 has 6).<br>• Option E is FALSE: Trigonal bipyramidal is the electron-domain geometry, not the molecular geometry; lone pairs distort the angles away from 120° and 180°."
+    },
+    {
+      "id": "chem_pred_2025_10",
+      "domain_id": 3,
+      "domain_title": "Chemical Bonding & VSEPR Geometry",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Formal Charge, Resonance & Octet Constraints in Nitrate (NO3-)",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.9% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Lewis structures; formal charges; resonance and octet rule limitations for Period 2 elements",
+      "question": "In the optimal Lewis resonance structure of the nitrate anion (NO3-) that strictly obeys the octet rule for all atoms, what are the formal charges on the central nitrogen atom and each of the three oxygen atoms, and why can nitrogen NOT form five covalent bonds?",
+      "options": [
+        "Central N = 0; all three O = -1/3; nitrogen has 5 valence electrons so it forms 5 single bonds.",
+        "Central N = +1; one double-bonded O = 0; two single-bonded O = -1 each; nitrogen cannot expand its valence shell because it lacks accessible d-orbitals in the n = 2 shell.",
+        "Central N = -1; one O = +1; two O = -1; nitrogen cannot expand because its electronegativity is lower than oxygen.",
+        "Central N = +2; all three O = -1; nitrogen is limited to 3 bonds by Hund's rule.",
+        "Central N = +5; all three O = -2; nitrogen completely transfers its 5 valence electrons via ionic bonding."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Formal Charge calculation: FC = V - N - (B / 2), where V = valence electrons, N = non-bonding electrons, B = bonding electrons. Octet rule constraint: Period 2 elements (C, N, O, F) possess only 2s and 2p orbitals (maximum 4 orbitals, 8 electrons) and lack energetically accessible d-orbitals; thus they CANNOT expand their octet beyond 8 electrons.",
+        "proof": "1. Valence electron count for NO3-: 5 (from N) + 3 x 6 (from O) + 1 (anionic charge) = 24 valence electrons (12 pairs).\n2. Central Nitrogen forms 1 double bond (N=O) and 2 single bonds (N-O-) to satisfy its octet (4 pairs = 8 electrons around N, 0 lone pairs).\n3. Calculate Formal Charges:\n   - Central N: FC = 5 - 0 - (8 / 2) = +1.\n   - Double-bonded Oxygen (2 lone pairs, 2 bonds): FC = 6 - 4 - (4 / 2) = 0.\n   - Each single-bonded Oxygen (3 lone pairs, 1 bond): FC = 6 - 6 - (2 / 2) = -1.\n4. Net molecular charge: (+1) + 0 + (-1) + (-1) = -1 (matches nitrate charge).\n5. Nitrogen is in Period 2 (valence shell n=2). The n=2 shell contains only 2s and three 2p orbitals. It has zero 2d orbitals. Forming 5 covalent bonds would require 10 valence electrons, which is quantum-mechanically forbidden for Period 2.",
+        "distractor_elimination": "• Option A is FALSE: Nitrogen with 5 bonds violates the octet rule; -1/3 is the resonance average partial charge, not the formal charge of an individual resonance contributor.\n• Option C is FALSE: Formal charge on N is +1, not -1.\n• Option D is FALSE: If N had +2 and three O had -1, net charge would be -1, but N would only have 3 bonds (6 valence electrons, violating the octet rule).\n• Option E is FALSE: Nitrate is a covalent polyatomic ion, not an ionic lattice of N5+ and O2-."
+      },
+      "trap_alert": "Nitrogen CANNOT form 5 bonds! Nitrogen is in Period 2 and has no d-orbitals. Central N has a formal charge of +1, one O is 0, and two O's are -1.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Formal Charge calculation: FC = V - N - (B / 2), where V = valence electrons, N = non-bonding electrons, B = bonding electrons. Octet rule constraint: Period 2 elements (C, N, O, F) possess only 2s and 2p orbitals (maximum 4 orbitals, 8 electrons) and lack energetically accessible d-orbitals; thus they CANNOT expand their octet beyond 8 electrons.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Valence electron count for NO3-: 5 (from N) + 3 x 6 (from O) + 1 (anionic charge) = 24 valence electrons (12 pairs).<br>2. Central Nitrogen forms 1 double bond (N=O) and 2 single bonds (N-O-) to satisfy its octet (4 pairs = 8 electrons around N, 0 lone pairs).<br>3. Calculate Formal Charges:<br>   - Central N: FC = 5 - 0 - (8 / 2) = +1.<br>   - Double-bonded Oxygen (2 lone pairs, 2 bonds): FC = 6 - 4 - (4 / 2) = 0.<br>   - Each single-bonded Oxygen (3 lone pairs, 1 bond): FC = 6 - 6 - (2 / 2) = -1.<br>4. Net molecular charge: (+1) + 0 + (-1) + (-1) = -1 (matches nitrate charge).<br>5. Nitrogen is in Period 2 (valence shell n=2). The n=2 shell contains only 2s and three 2p orbitals. It has zero 2d orbitals. Forming 5 covalent bonds would require 10 valence electrons, which is quantum-mechanically forbidden for Period 2.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Nitrogen with 5 bonds violates the octet rule; -1/3 is the resonance average partial charge, not the formal charge of an individual resonance contributor.<br>• Option C is FALSE: Formal charge on N is +1, not -1.<br>• Option D is FALSE: If N had +2 and three O had -1, net charge would be -1, but N would only have 3 bonds (6 valence electrons, violating the octet rule).<br>• Option E is FALSE: Nitrate is a covalent polyatomic ion, not an ionic lattice of N5+ and O2-."
+    },
+    {
+      "id": "chem_pred_2025_11",
+      "domain_id": 3,
+      "domain_title": "Chemical Bonding & VSEPR Geometry",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Steric Number 6 with Lone Pairs (XeF4 vs BrF5)",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.4% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: VSEPR theory; expanded octet geometry; molecular polarity and dipole moments",
+      "question": "Xenon tetrafluoride (XeF4) is a noble gas compound. According to VSEPR theory, what is its electron-domain geometry, molecular geometry, and net molecular dipole moment?",
+      "options": [
+        "Electron geometry: Tetrahedral; Molecular geometry: Tetrahedral; Dipole moment: Nonpolar (mu = 0)",
+        "Electron geometry: Trigonal bipyramidal; Molecular geometry: Seesaw; Dipole moment: Polar (mu > 0)",
+        "Electron geometry: Octahedral; Molecular geometry: Square planar; Dipole moment: Nonpolar (mu = 0)",
+        "Electron geometry: Octahedral; Molecular geometry: Square pyramidal; Dipole moment: Polar (mu > 0)",
+        "Electron geometry: Square planar; Molecular geometry: Tetrahedral; Dipole moment: Polar (mu > 0)"
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "explanation": {
+        "principle": "Steric number 6 with two non-bonding electron pairs: In an octahedral electron domain (sp3d2), two lone pairs position themselves 180° apart at opposite axial positions to minimize lone-pair/lone-pair electrostatic repulsion, producing a square planar molecular geometry.",
+        "proof": "1. Xenon (Group 18) has 8 valence electrons. In XeF4, it forms 4 single covalent bonds with Fluorine atoms, consuming 4 electrons.\n2. Non-bonding electrons = 8 - 4 = 4 electrons = 2 lone pairs.\n3. Steric Number = 4 bonding pairs + 2 lone pairs = 6 (Octahedral electron-domain geometry).\n4. To minimize repulsion, the two bulky lone pairs occupy opposite axial vertices (180° apart).\n5. The four Fluorine atoms lie in the equatorial plane at 90° bond angles, yielding a Square Planar molecular geometry.\n6. Molecular polarity: The four equatorial Xe-F bond dipoles point toward the corners of a square and cancel pairwise. The two axial lone-pair dipoles also cancel. Thus, the net molecular dipole moment is exactly zero (mu = 0, completely nonpolar).",
+        "distractor_elimination": "• Option A is FALSE: Tetrahedral corresponds to SN = 4 (e.g. CF4), whereas XeF4 has 6 electron domains.\n• Option B is FALSE: Seesaw is SN = 5 with 1 lone pair (e.g. SF4).\n• Option D is FALSE: Square pyramidal is SN = 6 with 1 lone pair (e.g. BrF5), which is polar.\n• Option E is FALSE: Square planar is the molecular geometry, not the electron-domain geometry."
+      },
+      "trap_alert": "XeF4 has 4 bonds + 2 lone pairs = Steric Number 6 (Octahedral electron geometry, Square Planar molecular shape). It is NONPOLAR because dipoles cancel!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Steric number 6 with two non-bonding electron pairs: In an octahedral electron domain (sp3d2), two lone pairs position themselves 180° apart at opposite axial positions to minimize lone-pair/lone-pair electrostatic repulsion, producing a square planar molecular geometry.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Xenon (Group 18) has 8 valence electrons. In XeF4, it forms 4 single covalent bonds with Fluorine atoms, consuming 4 electrons.<br>2. Non-bonding electrons = 8 - 4 = 4 electrons = 2 lone pairs.<br>3. Steric Number = 4 bonding pairs + 2 lone pairs = 6 (Octahedral electron-domain geometry).<br>4. To minimize repulsion, the two bulky lone pairs occupy opposite axial vertices (180° apart).<br>5. The four Fluorine atoms lie in the equatorial plane at 90° bond angles, yielding a Square Planar molecular geometry.<br>6. Molecular polarity: The four equatorial Xe-F bond dipoles point toward the corners of a square and cancel pairwise. The two axial lone-pair dipoles also cancel. Thus, the net molecular dipole moment is exactly zero (mu = 0, completely nonpolar).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Tetrahedral corresponds to SN = 4 (e.g. CF4), whereas XeF4 has 6 electron domains.<br>• Option B is FALSE: Seesaw is SN = 5 with 1 lone pair (e.g. SF4).<br>• Option D is FALSE: Square pyramidal is SN = 6 with 1 lone pair (e.g. BrF5), which is polar.<br>• Option E is FALSE: Square planar is the molecular geometry, not the electron-domain geometry."
+    },
+    {
+      "id": "chem_pred_2025_12",
+      "domain_id": 3,
+      "domain_title": "Chemical Bonding & VSEPR Geometry",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Lone Pair Distortion & Bond Angle Hierarchy in Hydrides",
+      "difficulty": "Moderate",
+      "prediction_score": "98.6% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: VSEPR bond angle distortions; lone pair-lone pair and lone pair-bond pair repulsions",
+      "question": "Methane (CH4), ammonia (NH3), and water (H2O) all possess central atoms with steric number 4. Which of the following correctly lists their bond angles in order of INCREASING angle and provides the legitimate VSEPR justification?",
+      "options": [
+        "CH4 (104.5°) < NH3 (107.3°) < H2O (109.5°); bond angles increase as central atom electronegativity increases.",
+        "H2O (104.5°) < NH3 (107.3°) < CH4 (109.5°); non-bonding lone pairs exert greater electrostatic repulsion than bonding pairs (lp-lp > lp-bp > bp-bp), progressively compressing the bonding angles.",
+        "NH3 (104.5°) < H2O (107.3°) < CH4 (109.5°); hydrogen atoms repel each other more strongly in ammonia than in water.",
+        "H2O = NH3 = CH4 = 109.5°; all sp3-hybridized species maintain identical tetrahedral bond angles regardless of lone pairs.",
+        "CH4 (90°) < NH3 (107.3°) < H2O (180°); water is linear, ammonia is pyramidal, and methane is square planar."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "VSEPR Repulsion Order: Lone pair - Lone pair (lp-lp) > Lone pair - Bonding pair (lp-bp) > Bonding pair - Bonding pair (bp-bp). Non-bonding lone pairs are held by only one atomic nucleus and therefore occupy a larger spatial volume, exerting stronger repulsive forces that squeeze adjacent bonding pairs closer together.",
+        "proof": "1. All three central atoms have 4 electron domains (sp3 hybridization, steric number 4):\n   - CH4: 4 bonding pairs, 0 lone pairs. Repulsions between all four pairs are identical: ideal tetrahedral angle = 109.5°.\n   - NH3: 3 bonding pairs, 1 lone pair. The lp-bp repulsion exceeds bp-bp repulsion, squeezing the H-N-H bond angles to 107.3°.\n   - H2O: 2 bonding pairs, 2 lone pairs. Strong lp-lp repulsion combined with two lp-bp repulsions compresses the H-O-H bond angle down to 104.5°.\n2. Strictly increasing order: H2O (104.5°) < NH3 (107.3°) < CH4 (109.5°).",
+        "distractor_elimination": "• Option A is FALSE: It states the reverse order; water has the smallest angle, not the largest.\n• Option C is FALSE: Water has 2 lone pairs and experiences greater compression than ammonia (1 lone pair).\n• Option D is FALSE: Lone pairs significantly distort bond angles away from the ideal 109.5°.\n• Option E is FALSE: Water is bent (104.5°), not linear (180°); methane is tetrahedral (109.5°), not square planar (90°)."
+      },
+      "trap_alert": "More lone pairs = smaller bond angle! Water has 2 lone pairs (104.5°), ammonia has 1 lone pair (107.3°), methane has 0 lone pairs (109.5°).",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> VSEPR Repulsion Order: Lone pair - Lone pair (lp-lp) > Lone pair - Bonding pair (lp-bp) > Bonding pair - Bonding pair (bp-bp). Non-bonding lone pairs are held by only one atomic nucleus and therefore occupy a larger spatial volume, exerting stronger repulsive forces that squeeze adjacent bonding pairs closer together.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. All three central atoms have 4 electron domains (sp3 hybridization, steric number 4):<br>   - CH4: 4 bonding pairs, 0 lone pairs. Repulsions between all four pairs are identical: ideal tetrahedral angle = 109.5°.<br>   - NH3: 3 bonding pairs, 1 lone pair. The lp-bp repulsion exceeds bp-bp repulsion, squeezing the H-N-H bond angles to 107.3°.<br>   - H2O: 2 bonding pairs, 2 lone pairs. Strong lp-lp repulsion combined with two lp-bp repulsions compresses the H-O-H bond angle down to 104.5°.<br>2. Strictly increasing order: H2O (104.5°) < NH3 (107.3°) < CH4 (109.5°).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It states the reverse order; water has the smallest angle, not the largest.<br>• Option C is FALSE: Water has 2 lone pairs and experiences greater compression than ammonia (1 lone pair).<br>• Option D is FALSE: Lone pairs significantly distort bond angles away from the ideal 109.5°.<br>• Option E is FALSE: Water is bent (104.5°), not linear (180°); methane is tetrahedral (109.5°), not square planar (90°)."
+    },
+    {
+      "id": "chem_pred_2025_13",
+      "domain_id": 4,
+      "domain_title": "Intermolecular Forces",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Carboxylic Acid Hydrogen-Bonded Cyclic Dimers",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.3% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Intermolecular forces; hydrogen bonding in organic functional groups; boiling point anomalies",
+      "question": "Ethanoic acid (CH3COOH, molar mass 60.05 g/mol) has a normal boiling point of 118°C, whereas 1-propanol (CH3CH2CH2OH, molar mass 60.10 g/mol) boils at 97°C, despite having virtually identical molecular mass. What structural intermolecular phenomenon explains this significant difference?",
+      "options": [
+        "Ethanoic acid molecules form stable cyclic dimers held together by two complementary intermolecular hydrogen bonds between carbonyl and hydroxyl groups.",
+        "Ethanoic acid exhibits ionic lattice bonding in the liquid state, whereas 1-propanol is non-polar.",
+        "1-Propanol is incapable of forming hydrogen bonds because its hydroxyl group is attached to a primary carbon.",
+        "Ethanoic acid has greater London dispersion forces due to having fewer carbon atoms.",
+        "Ethanoic acid undergoes spontaneous decarboxylation upon heating, increasing vapor pressure."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "explanation": {
+        "principle": "Carboxylic acid dimerization via double hydrogen bonds: Carboxylic acids possess both a strong hydrogen-bond donor (-OH) and a strong hydrogen-bond acceptor (C=O) on the same planar carboxyl group. In liquid and gas phases, two carboxylic acid molecules pair to form a stable 8-membered centrosymmetric cyclic dimer containing two hydrogen bonds.",
+        "proof": "1. Both compounds have molar masses of ~60 g/mol and participate in hydrogen bonding.\n2. In 1-propanol, molecules form linear chains of single hydrogen bonds (-O-H...O-).\n3. In ethanoic acid, pairs of molecules associate into cyclic dimers:\n   CH3-C(=O...H-O)C-CH3\n   CH3-C(O-H...O=)C-CH3\n4. This cyclic dimer structure is stabilized by two hydrogen bonds per dimer pair (~50 kJ/mol dimerization enthalpy). This effectively doubles the kinetic molecular mass of the vaporizing unit to ~120 g/mol, requiring substantially higher thermal energy to break the bonds and vaporize, raising the boiling point to 118°C (vs 97°C for 1-propanol).",
+        "distractor_elimination": "• Option B is FALSE: Pure ethanoic acid is a covalent molecular liquid, not an ionic lattice; 1-propanol is polar and forms hydrogen bonds.\n• Option C is FALSE: Primary alcohols form strong intermolecular hydrogen bonds.\n• Option D is FALSE: Ethanoic acid has 2 carbons while 1-propanol has 3 carbons; London dispersion forces are slightly larger in 1-propanol, not ethanoic acid.\n• Option E is FALSE: Decarboxylation of ethanoic acid requires extreme conditions (>400°C with catalysts) and would lower boiling point, not explain a higher one."
+      },
+      "trap_alert": "Carboxylic acids boil higher than alcohols of identical molar mass because they form stable cyclic DIMERS with TWO hydrogen bonds per pair!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Carboxylic acid dimerization via double hydrogen bonds: Carboxylic acids possess both a strong hydrogen-bond donor (-OH) and a strong hydrogen-bond acceptor (C=O) on the same planar carboxyl group. In liquid and gas phases, two carboxylic acid molecules pair to form a stable 8-membered centrosymmetric cyclic dimer containing two hydrogen bonds.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Both compounds have molar masses of ~60 g/mol and participate in hydrogen bonding.<br>2. In 1-propanol, molecules form linear chains of single hydrogen bonds (-O-H...O-).<br>3. In ethanoic acid, pairs of molecules associate into cyclic dimers:<br>   CH3-C(=O...H-O)C-CH3<br>   CH3-C(O-H...O=)C-CH3<br>4. This cyclic dimer structure is stabilized by two hydrogen bonds per dimer pair (~50 kJ/mol dimerization enthalpy). This effectively doubles the kinetic molecular mass of the vaporizing unit to ~120 g/mol, requiring substantially higher thermal energy to break the bonds and vaporize, raising the boiling point to 118°C (vs 97°C for 1-propanol).<br><br><strong>3. Distractor Elimination:</strong><br>• Option B is FALSE: Pure ethanoic acid is a covalent molecular liquid, not an ionic lattice; 1-propanol is polar and forms hydrogen bonds.<br>• Option C is FALSE: Primary alcohols form strong intermolecular hydrogen bonds.<br>• Option D is FALSE: Ethanoic acid has 2 carbons while 1-propanol has 3 carbons; London dispersion forces are slightly larger in 1-propanol, not ethanoic acid.<br>• Option E is FALSE: Decarboxylation of ethanoic acid requires extreme conditions (>400°C with catalysts) and would lower boiling point, not explain a higher one."
+    },
+    {
+      "id": "chem_pred_2025_14",
+      "domain_id": 4,
+      "domain_title": "Intermolecular Forces",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Molecular Branching & London Dispersion Forces (Pentane Isomers)",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.5% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Van der Waals forces; London dispersion; steric effects and alkane isomer boiling points",
+      "question": "The three constitutional isomers of molecular formula C5H12 have the following normal boiling points: n-pentane (36.1°C), 2-methylbutane / isopentane (27.8°C), and 2,2-dimethylpropane / neopentane (9.5°C). Which principle explains this substantial decrease in boiling point with increased branching?",
+      "options": [
+        "Increased branching introduces permanent dipole moments that cancel out intermolecular attractions.",
+        "Increased branching makes the molecule more compact and spherical, decreasing surface area of contact and weakening London dispersion forces.",
+        "Highly branched alkanes undergo intramolecular hydrogen bonding that prevents intermolecular association.",
+        "Neopentane contains weaker covalent C-C bonds that break during phase transition.",
+        "The molar mass of neopentane is significantly lower than that of n-pentane due to steric hindrance."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "London dispersion forces and molecular surface area: London dispersion forces depend on instantaneous induced dipoles, which scale directly with polarizability and the accessible surface area of molecular contact. Spherical shapes minimize surface area for a given volume.",
+        "proof": "1. All three compounds are non-polar hydrocarbons of identical formula (C5H12) and identical molar mass (72.15 g/mol). The only intermolecular forces present are London dispersion forces.\n2. n-Pentane has an extended, linear zigzag chain that allows adjacent molecules to pack closely along their full lengths, maximizing contact area and London dispersion forces (BP = 36.1°C).\n3. 2-Methylbutane has one branch, reducing contact area (BP = 27.8°C).\n4. 2,2-Dimethylpropane (neopentane) has a central carbon bonded to 4 methyl groups, adopting an almost spherical geometry. A sphere possesses the minimum surface-area-to-volume ratio, severely restricting intermolecular contact with neighboring molecules.\n5. Weaker dispersion forces require less thermal energy to overcome, resulting in a much lower boiling point (9.5°C).",
+        "distractor_elimination": "• Option A is FALSE: All three alkanes are non-polar with zero permanent dipole moments.\n• Option C is FALSE: Alkanes have no electronegative atoms (N, O, F) and cannot form hydrogen bonds.\n• Option D is FALSE: Boiling is a physical phase change involving the disruption of intermolecular forces, NOT the breaking of covalent C-C bonds.\n• Option E is FALSE: Constitutional isomers have identical molecular formulas and identical molar mass (72.15 g/mol)."
+      },
+      "trap_alert": "More branching = more spherical shape = less surface area = weaker London dispersion forces = LOWER boiling point!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> London dispersion forces and molecular surface area: London dispersion forces depend on instantaneous induced dipoles, which scale directly with polarizability and the accessible surface area of molecular contact. Spherical shapes minimize surface area for a given volume.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. All three compounds are non-polar hydrocarbons of identical formula (C5H12) and identical molar mass (72.15 g/mol). The only intermolecular forces present are London dispersion forces.<br>2. n-Pentane has an extended, linear zigzag chain that allows adjacent molecules to pack closely along their full lengths, maximizing contact area and London dispersion forces (BP = 36.1°C).<br>3. 2-Methylbutane has one branch, reducing contact area (BP = 27.8°C).<br>4. 2,2-Dimethylpropane (neopentane) has a central carbon bonded to 4 methyl groups, adopting an almost spherical geometry. A sphere possesses the minimum surface-area-to-volume ratio, severely restricting intermolecular contact with neighboring molecules.<br>5. Weaker dispersion forces require less thermal energy to overcome, resulting in a much lower boiling point (9.5°C).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: All three alkanes are non-polar with zero permanent dipole moments.<br>• Option C is FALSE: Alkanes have no electronegative atoms (N, O, F) and cannot form hydrogen bonds.<br>• Option D is FALSE: Boiling is a physical phase change involving the disruption of intermolecular forces, NOT the breaking of covalent C-C bonds.<br>• Option E is FALSE: Constitutional isomers have identical molecular formulas and identical molar mass (72.15 g/mol)."
+    },
+    {
+      "id": "chem_pred_2025_15",
+      "domain_id": 4,
+      "domain_title": "Intermolecular Forces",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Relative Boiling Points Across Organic Functional Groups",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.9% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Functional groups; comparative intermolecular forces (dipole-dipole, H-bonding, London)",
+      "question": "Arrange the following five organic compounds of comparable carbon chain length in order of STRICTLY INCREASING normal boiling point: (1) Propane, (2) Ethanoic acid, (3) 1-Propanol, (4) Propanone (acetone), (5) Methoxyethane (ethyl methyl ether).",
+      "options": [
+        "(1) Propane < (5) Methoxyethane < (4) Propanone < (3) 1-Propanol < (2) Ethanoic acid",
+        "(2) Ethanoic acid < (3) 1-Propanol < (4) Propanone < (5) Methoxyethane < (1) Propane",
+        "(1) Propane < (4) Propanone < (5) Methoxyethane < (3) 1-Propanol < (2) Ethanoic acid",
+        "(5) Methoxyethane < (1) Propane < (4) Propanone < (2) Ethanoic acid < (3) 1-Propanol",
+        "(1) Propane < (5) Methoxyethane < (3) 1-Propanol < (4) Propanone < (2) Ethanoic acid"
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "explanation": {
+        "principle": "Hierarchy of Intermolecular Forces: Non-polar dispersion < Weak dipole-dipole (ethers) < Strong dipole-dipole (carbonyls) < Single hydrogen bonding (alcohols) < Dimeric hydrogen bonding (carboxylic acids).",
+        "proof": "1. Propane (CH3CH2CH3, MM=44): Non-polar, weak London dispersion forces only. BP = -42°C.\n2. Methoxyethane (CH3-O-CH2CH3, MM=60): Weakly polar ether, dipole-dipole forces, no H-bonding donors. BP = +7.4°C.\n3. Propanone (CH3-CO-CH3, MM=58): Polar carbonyl group with strong dipole-dipole attractions, no H-bonding donors. BP = +56.1°C.\n4. 1-Propanol (CH3CH2CH2OH, MM=60): Extensive intermolecular hydrogen bonding via -OH. BP = +97.2°C.\n5. Ethanoic acid (CH3COOH, MM=60): Cyclic dimers formed by two complementary hydrogen bonds. BP = +118.0°C.\nOrder: (1) < (5) < (4) < (3) < (2).",
+        "distractor_elimination": "• Option B is FALSE: It states the exact reverse order (decreasing instead of increasing).\n• Option C is FALSE: It places propanone below methoxyethane; carbonyl dipole-dipole forces are much stronger than ether dipole forces.\n• Option D is FALSE: It places methoxyethane below propane; non-polar propane boils much lower (-42°C vs +7°C).\n• Option E is FALSE: It places 1-propanol below propanone; hydrogen bonding in alcohols confers a much higher BP than dipole-dipole forces in ketones."
+      },
+      "trap_alert": "Ketones boil higher than ethers (stronger dipole), alcohols boil higher than ketones (hydrogen bonding), and carboxylic acids boil highest (dimeric H-bonding).",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Hierarchy of Intermolecular Forces: Non-polar dispersion < Weak dipole-dipole (ethers) < Strong dipole-dipole (carbonyls) < Single hydrogen bonding (alcohols) < Dimeric hydrogen bonding (carboxylic acids).<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Propane (CH3CH2CH3, MM=44): Non-polar, weak London dispersion forces only. BP = -42°C.<br>2. Methoxyethane (CH3-O-CH2CH3, MM=60): Weakly polar ether, dipole-dipole forces, no H-bonding donors. BP = +7.4°C.<br>3. Propanone (CH3-CO-CH3, MM=58): Polar carbonyl group with strong dipole-dipole attractions, no H-bonding donors. BP = +56.1°C.<br>4. 1-Propanol (CH3CH2CH2OH, MM=60): Extensive intermolecular hydrogen bonding via -OH. BP = +97.2°C.<br>5. Ethanoic acid (CH3COOH, MM=60): Cyclic dimers formed by two complementary hydrogen bonds. BP = +118.0°C.<br>Order: (1) < (5) < (4) < (3) < (2).<br><br><strong>3. Distractor Elimination:</strong><br>• Option B is FALSE: It states the exact reverse order (decreasing instead of increasing).<br>• Option C is FALSE: It places propanone below methoxyethane; carbonyl dipole-dipole forces are much stronger than ether dipole forces.<br>• Option D is FALSE: It places methoxyethane below propane; non-polar propane boils much lower (-42°C vs +7°C).<br>• Option E is FALSE: It places 1-propanol below propanone; hydrogen bonding in alcohols confers a much higher BP than dipole-dipole forces in ketones."
+    },
+    {
+      "id": "chem_pred_2025_16",
+      "domain_id": 4,
+      "domain_title": "Intermolecular Forces",
+      "chapter": "A. General & Inorganic Chemistry",
+      "subtopic": "Intramolecular vs Intermolecular Hydrogen Bonding (Nitrophenols)",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.0% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Intramolecular vs intermolecular interactions; chelation and steam volatility",
+      "question": "2-Nitrophenol (ortho-nitrophenol) has a normal boiling point of 216°C and is steam-volatile, whereas 4-nitrophenol (para-nitrophenol) has a higher boiling point of 279°C and is not steam-volatile. What accounts for this physical disparity?",
+      "options": [
+        "2-Nitrophenol forms an intramolecular hydrogen bond between the adjacent hydroxyl and nitro groups, reducing its intermolecular attractions; 4-nitrophenol forms extensive intermolecular hydrogen bonds with neighboring molecules.",
+        "4-Nitrophenol has a higher molar mass than 2-nitrophenol due to isotopic substitution.",
+        "2-Nitrophenol forms an ionic salt in aqueous steam, whereas 4-nitrophenol is a covalent network solid.",
+        "The nitro group in 4-nitrophenol is unable to accept hydrogen bonds due to steric hindrance.",
+        "2-Nitrophenol is a non-polar gas at room temperature."
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "explanation": {
+        "principle": "Intramolecular vs Intermolecular Hydrogen Bonding: When functional groups on the same molecule are positioned closely in space (ortho position), an INTRAmolecular hydrogen bond can form, satisfying the hydrogen-bonding capacity internally. This prevents the molecule from associating with neighboring molecules, lowering melting/boiling points and increasing volatility. In meta and para isomers, groups are too distant, forcing INTERmolecular hydrogen bonding.",
+        "proof": "1. In 2-nitrophenol (ortho), the -OH and -NO2 groups are on adjacent carbons (C1 and C2). The phenolic hydrogen forms a stable 6-membered planar ring via an intramolecular H-bond with an oxygen of the nitro group (O-H...O-N).\n2. Because the -OH hydrogen is tied up internally, 2-nitrophenol cannot readily form intermolecular hydrogen bonds with adjacent molecules or with bulk water, making it lower boiling (216°C) and steam-distillable.\n3. In 4-nitrophenol (para), the -OH and -NO2 groups are at opposite ends of the benzene ring (~180° apart). Intramolecular bonding is geometrically impossible.\n4. 4-Nitrophenol forms extensive intermolecular hydrogen-bonded polymeric networks with adjacent molecules, resulting in strong intermolecular cohesion, high boiling point (279°C), and non-volatility with steam.",
+        "distractor_elimination": "• Option B is FALSE: Constitutional isomers have identical molecular formula (C6H5NO3) and identical molar mass (139.11 g/mol).\n• Option C is FALSE: Both are molecular covalent compounds; neither is an ionic salt or network solid.\n• Option D is FALSE: The para nitro group is completely unhindered and is an excellent hydrogen bond acceptor.\n• Option E is FALSE: Both compounds are solids at room temperature (ortho MP ~45°C, para MP ~114°C)."
+      },
+      "trap_alert": "Intramolecular H-bonding (ortho) LOWERS boiling point and makes the compound steam-volatile because it prevents intermolecular bonding!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Intramolecular vs Intermolecular Hydrogen Bonding: When functional groups on the same molecule are positioned closely in space (ortho position), an INTRAmolecular hydrogen bond can form, satisfying the hydrogen-bonding capacity internally. This prevents the molecule from associating with neighboring molecules, lowering melting/boiling points and increasing volatility. In meta and para isomers, groups are too distant, forcing INTERmolecular hydrogen bonding.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. In 2-nitrophenol (ortho), the -OH and -NO2 groups are on adjacent carbons (C1 and C2). The phenolic hydrogen forms a stable 6-membered planar ring via an intramolecular H-bond with an oxygen of the nitro group (O-H...O-N).<br>2. Because the -OH hydrogen is tied up internally, 2-nitrophenol cannot readily form intermolecular hydrogen bonds with adjacent molecules or with bulk water, making it lower boiling (216°C) and steam-distillable.<br>3. In 4-nitrophenol (para), the -OH and -NO2 groups are at opposite ends of the benzene ring (~180° apart). Intramolecular bonding is geometrically impossible.<br>4. 4-Nitrophenol forms extensive intermolecular hydrogen-bonded polymeric networks with adjacent molecules, resulting in strong intermolecular cohesion, high boiling point (279°C), and non-volatility with steam.<br><br><strong>3. Distractor Elimination:</strong><br>• Option B is FALSE: Constitutional isomers have identical molecular formula (C6H5NO3) and identical molar mass (139.11 g/mol).<br>• Option C is FALSE: Both are molecular covalent compounds; neither is an ionic salt or network solid.<br>• Option D is FALSE: The para nitro group is completely unhindered and is an excellent hydrogen bond acceptor.<br>• Option E is FALSE: Both compounds are solids at room temperature (ortho MP ~45°C, para MP ~114°C)."
+    },
+    {
+      "id": "chem_pred_2025_17",
+      "domain_id": 5,
+      "domain_title": "Stoichiometry & Colligative Properties",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Limiting Reactant & Theoretical Yield in Blast Furnace Reduction",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.4% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Stoichiometry; limiting reactant calculations; molar mass conversions and reaction yields",
+      "question": "In the reduction of iron(III) oxide: Fe2O3(s) + 3 CO(g) -> 2 Fe(s) + 3 CO2(g). If 160.0 g of Fe2O3 (molar mass = 160.0 g/mol) is reacted with 56.0 g of CO (molar mass = 28.0 g/mol), which substance is the limiting reactant, and what is the maximum theoretical mass of metallic iron (Fe, molar mass = 56.0 g/mol) that can be produced?",
+      "options": [
+        "Fe2O3 is limiting; theoretical yield of Fe is 112.0 g",
+        "CO is limiting; theoretical yield of Fe is 74.7 g",
+        "Both reactants are in exact stoichiometric equivalence; theoretical yield is 112.0 g",
+        "CO is limiting; theoretical yield of Fe is 37.3 g",
+        "Fe2O3 is limiting; theoretical yield of Fe is 56.0 g"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Limiting Reactant Determination: Convert masses to moles, divide available moles by stoichiometric coefficients; the reactant with the smallest mole-to-coefficient ratio is strictly limiting. Theoretical yield is calculated solely from the limiting reactant.",
+        "proof": "1. Convert given masses to moles:\n   - Moles of Fe2O3 = 160.0 g / 160.0 g/mol = 1.00 mol.\n   - Moles of CO = 56.0 g / 28.0 g/mol = 2.00 mol.\n2. Compare stoichiometric requirements:\n   - Reaction ratio: 1 mol Fe2O3 requires 3 mol CO.\n   - For 1.00 mol Fe2O3, we need: 1.00 x 3 = 3.00 mol CO.\n   - We only have 2.00 mol CO available (2.00 < 3.00).\n   - Therefore, CO is strictly the LIMITING REACTANT (Fe2O3 is in excess by 1.00 - 2.00/3 = 0.33 mol).\n3. Calculate theoretical yield of Fe based on CO:\n   - Stoichiometric ratio: 3 mol CO produces 2 mol Fe.\n   - Moles of Fe produced = 2.00 mol CO x (2 mol Fe / 3 mol CO) = 4/3 mol Fe (~1.333 mol Fe).\n   - Mass of Fe = (4/3 mol) x 56.0 g/mol = 224.0 / 3 g = 74.67 g ~ 74.7 g.",
+        "distractor_elimination": "• Option A is FALSE: It erroneously assumes Fe2O3 is limiting (1.0 mol Fe2O3 -> 2.0 mol Fe = 112.0 g), ignoring that CO runs out first.\n• Option C is FALSE: 160 g Fe2O3 and 56 g CO are not stoichiometric (ratio is 1.0 mol : 2.0 mol, but equation requires 1 : 3).\n• Option D is FALSE: Calculation error using 1 Fe instead of 2 Fe.\n• Option E is FALSE: Fe2O3 is not limiting and mass is incorrect."
+      },
+      "trap_alert": "Never compare masses directly! Convert to moles first: 56 g CO is 2 moles, which can only react with 0.67 moles of Fe2O3. CO is limiting, giving 74.7 g Fe.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Limiting Reactant Determination: Convert masses to moles, divide available moles by stoichiometric coefficients; the reactant with the smallest mole-to-coefficient ratio is strictly limiting. Theoretical yield is calculated solely from the limiting reactant.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Convert given masses to moles:<br>   - Moles of Fe2O3 = 160.0 g / 160.0 g/mol = 1.00 mol.<br>   - Moles of CO = 56.0 g / 28.0 g/mol = 2.00 mol.<br>2. Compare stoichiometric requirements:<br>   - Reaction ratio: 1 mol Fe2O3 requires 3 mol CO.<br>   - For 1.00 mol Fe2O3, we need: 1.00 x 3 = 3.00 mol CO.<br>   - We only have 2.00 mol CO available (2.00 < 3.00).<br>   - Therefore, CO is strictly the LIMITING REACTANT (Fe2O3 is in excess by 1.00 - 2.00/3 = 0.33 mol).<br>3. Calculate theoretical yield of Fe based on CO:<br>   - Stoichiometric ratio: 3 mol CO produces 2 mol Fe.<br>   - Moles of Fe produced = 2.00 mol CO x (2 mol Fe / 3 mol CO) = 4/3 mol Fe (~1.333 mol Fe).<br>   - Mass of Fe = (4/3 mol) x 56.0 g/mol = 224.0 / 3 g = 74.67 g ~ 74.7 g.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It erroneously assumes Fe2O3 is limiting (1.0 mol Fe2O3 -> 2.0 mol Fe = 112.0 g), ignoring that CO runs out first.<br>• Option C is FALSE: 160 g Fe2O3 and 56 g CO are not stoichiometric (ratio is 1.0 mol : 2.0 mol, but equation requires 1 : 3).<br>• Option D is FALSE: Calculation error using 1 Fe instead of 2 Fe.<br>• Option E is FALSE: Fe2O3 is not limiting and mass is incorrect."
+    },
+    {
+      "id": "chem_pred_2025_18",
+      "domain_id": 5,
+      "domain_title": "Stoichiometry & Colligative Properties",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Empirical and Molecular Formula from Combustion Analysis",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.9% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Stoichiometric laws; empirical and molecular formula determination from combustion data",
+      "question": "Complete combustion of 0.440 g of a pure organic compound containing only Carbon, Hydrogen, and Oxygen produces 0.880 g of CO2 (molar mass = 44.0 g/mol) and 0.360 g of H2O (molar mass = 18.0 g/mol). If the experimentally determined molar mass of the compound is 88.0 g/mol, what are its empirical formula and molecular formula?",
+      "options": [
+        "Empirical: CH2O; Molecular: C3H6O3",
+        "Empirical: C2H4O; Molecular: C4H8O2",
+        "Empirical: C2H6O; Molecular: C4H12O2",
+        "Empirical: C4H8O2; Molecular: C4H8O2",
+        "Empirical: C3H4O; Molecular: C6H8O2"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Combustion Analysis Principles: All Carbon in the sample forms CO2; all Hydrogen forms H2O. Oxygen in the sample is determined by subtracting the combined masses of Carbon and Hydrogen from the total initial sample mass. Empirical formula is the lowest whole-number molar ratio.",
+        "proof": "1. Find moles and mass of Carbon:\n   - Moles of CO2 = 0.880 g / 44.0 g/mol = 0.0200 mol.\n   - Moles of C = 0.0200 mol.\n   - Mass of C = 0.0200 mol x 12.0 g/mol = 0.240 g.\n2. Find moles and mass of Hydrogen:\n   - Moles of H2O = 0.360 g / 18.0 g/mol = 0.0200 mol.\n   - Moles of H = 2 x 0.0200 mol = 0.0400 mol.\n   - Mass of H = 0.0400 mol x 1.0 g/mol = 0.040 g.\n3. Find mass and moles of Oxygen by difference:\n   - Mass of O = Total mass - (mass C + mass H) = 0.440 g - (0.240 g + 0.040 g) = 0.440 - 0.280 = 0.160 g.\n   - Moles of O = 0.160 g / 16.0 g/mol = 0.0100 mol.\n4. Determine empirical molar ratio:\n   - C : H : O = 0.0200 / 0.0100 : 0.0400 / 0.0100 : 0.0100 / 0.0100 = 2 : 4 : 1.\n   - Empirical Formula = C2H4O (Empirical formula mass = 2(12) + 4(1) + 16 = 44.0 g/mol).\n5. Determine molecular formula:\n   - Multiple n = Molecular Mass / Empirical Mass = 88.0 / 44.0 = 2.\n   - Molecular Formula = (C2H4O) x 2 = C4H8O2 (e.g. ethyl ethanoate or butanoic acid).",
+        "distractor_elimination": "• Option A is FALSE: CH2O has empirical mass 30 g/mol; 88 is not a multiple of 30.\n• Option C is FALSE: 0.040 mol H corresponds to H4, not H6.\n• Option D is FALSE: C4H8O2 is the molecular formula, but its empirical formula must be reduced to simplest whole numbers (C2H4O).\n• Option E is FALSE: C3H4O has mass 56 g/mol; not matching data."
+      },
+      "trap_alert": "Remember that each H2O molecule contains TWO Hydrogen atoms (0.02 mol H2O = 0.04 mol H)! Don't forget to calculate Oxygen by subtracting (mass C + mass H) from the sample mass.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Combustion Analysis Principles: All Carbon in the sample forms CO2; all Hydrogen forms H2O. Oxygen in the sample is determined by subtracting the combined masses of Carbon and Hydrogen from the total initial sample mass. Empirical formula is the lowest whole-number molar ratio.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Find moles and mass of Carbon:<br>   - Moles of CO2 = 0.880 g / 44.0 g/mol = 0.0200 mol.<br>   - Moles of C = 0.0200 mol.<br>   - Mass of C = 0.0200 mol x 12.0 g/mol = 0.240 g.<br>2. Find moles and mass of Hydrogen:<br>   - Moles of H2O = 0.360 g / 18.0 g/mol = 0.0200 mol.<br>   - Moles of H = 2 x 0.0200 mol = 0.0400 mol.<br>   - Mass of H = 0.0400 mol x 1.0 g/mol = 0.040 g.<br>3. Find mass and moles of Oxygen by difference:<br>   - Mass of O = Total mass - (mass C + mass H) = 0.440 g - (0.240 g + 0.040 g) = 0.440 - 0.280 = 0.160 g.<br>   - Moles of O = 0.160 g / 16.0 g/mol = 0.0100 mol.<br>4. Determine empirical molar ratio:<br>   - C : H : O = 0.0200 / 0.0100 : 0.0400 / 0.0100 : 0.0100 / 0.0100 = 2 : 4 : 1.<br>   - Empirical Formula = C2H4O (Empirical formula mass = 2(12) + 4(1) + 16 = 44.0 g/mol).<br>5. Determine molecular formula:<br>   - Multiple n = Molecular Mass / Empirical Mass = 88.0 / 44.0 = 2.<br>   - Molecular Formula = (C2H4O) x 2 = C4H8O2 (e.g. ethyl ethanoate or butanoic acid).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: CH2O has empirical mass 30 g/mol; 88 is not a multiple of 30.<br>• Option C is FALSE: 0.040 mol H corresponds to H4, not H6.<br>• Option D is FALSE: C4H8O2 is the molecular formula, but its empirical formula must be reduced to simplest whole numbers (C2H4O).<br>• Option E is FALSE: C3H4O has mass 56 g/mol; not matching data."
+    },
+    {
+      "id": "chem_pred_2025_19",
+      "domain_id": 5,
+      "domain_title": "Stoichiometry & Colligative Properties",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Colligative Properties & Van 't Hoff Factor (Freezing Point Depression)",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "99.1% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Solutions and colligative properties; Raoult's law; Van 't Hoff factor i; freezing point depression",
+      "question": "Assuming complete electrolytic dissociation into ideal ions, which of the following aqueous solutions exhibits the LOWEST freezing point (i.e., the greatest freezing point depression)?",
+      "options": [
+        "0.20 m NaCl",
+        "0.15 m CaCl2",
+        "0.10 m Al2(SO4)3",
+        "0.40 m Glucose (C6H12O6)",
+        "0.12 m K3PO4"
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "explanation": {
+        "principle": "Freezing Point Depression equation: Delta_Tf = i * Kf * m. For a given solvent (water, Kf is constant), freezing point depression is directly proportional to the effective particle molality (i * m). The solution with the largest (i * m) value exhibits the greatest freezing point depression and therefore the lowest freezing point.",
+        "proof": "1. Calculate the Van 't Hoff factor i and effective particle molality (i * m) for each solute:\n   - NaCl -> Na+ + Cl- : i = 2 -> i * m = 2 * 0.20 = 0.40 m.\n   - CaCl2 -> Ca2+ + 2 Cl- : i = 3 -> i * m = 3 * 0.15 = 0.45 m.\n   - Al2(SO4)3 -> 2 Al3+ + 3 SO4(2-) : i = 2 + 3 = 5 -> i * m = 5 * 0.10 = 0.50 m.\n   - Glucose -> non-electrolyte : i = 1 -> i * m = 1 * 0.40 = 0.40 m.\n   - K3PO4 -> 3 K+ + PO4(3-) : i = 4 -> i * m = 4 * 0.12 = 0.48 m.\n2. Rank effective particle molalities:\n   Al2(SO4)3 (0.50 m) > K3PO4 (0.48 m) > CaCl2 (0.45 m) > NaCl (0.40 m) = Glucose (0.40 m).\n3. Al2(SO4)3 produces the largest effective particle molality (0.50 m), generating the greatest depression and therefore the strictly lowest freezing point (Tf = -0.50 * 1.86 = -0.93°C).",
+        "distractor_elimination": "• Option A is FALSE: NaCl gives i*m = 0.40 m.\n• Option B is FALSE: CaCl2 gives i*m = 0.45 m.\n• Option D is FALSE: Glucose does not dissociate (i = 1), giving i*m = 0.40 m.\n• Option E is FALSE: K3PO4 gives i*m = 0.48 m, which is close but less than Al2(SO4)3 (0.50 m)."
+      },
+      "trap_alert": "Al2(SO4)3 dissociates into 5 ions (2 Al3+ and 3 SO4 2-), so i = 5! 5 * 0.10 m = 0.50 m, beating 0.40 m glucose and 0.12 m K3PO4 (4 * 0.12 = 0.48 m).",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Freezing Point Depression equation: Delta_Tf = i * Kf * m. For a given solvent (water, Kf is constant), freezing point depression is directly proportional to the effective particle molality (i * m). The solution with the largest (i * m) value exhibits the greatest freezing point depression and therefore the lowest freezing point.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Calculate the Van 't Hoff factor i and effective particle molality (i * m) for each solute:<br>   - NaCl -> Na+ + Cl- : i = 2 -> i * m = 2 * 0.20 = 0.40 m.<br>   - CaCl2 -> Ca2+ + 2 Cl- : i = 3 -> i * m = 3 * 0.15 = 0.45 m.<br>   - Al2(SO4)3 -> 2 Al3+ + 3 SO4(2-) : i = 2 + 3 = 5 -> i * m = 5 * 0.10 = 0.50 m.<br>   - Glucose -> non-electrolyte : i = 1 -> i * m = 1 * 0.40 = 0.40 m.<br>   - K3PO4 -> 3 K+ + PO4(3-) : i = 4 -> i * m = 4 * 0.12 = 0.48 m.<br>2. Rank effective particle molalities:<br>   Al2(SO4)3 (0.50 m) > K3PO4 (0.48 m) > CaCl2 (0.45 m) > NaCl (0.40 m) = Glucose (0.40 m).<br>3. Al2(SO4)3 produces the largest effective particle molality (0.50 m), generating the greatest depression and therefore the strictly lowest freezing point (Tf = -0.50 * 1.86 = -0.93°C).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: NaCl gives i*m = 0.40 m.<br>• Option B is FALSE: CaCl2 gives i*m = 0.45 m.<br>• Option D is FALSE: Glucose does not dissociate (i = 1), giving i*m = 0.40 m.<br>• Option E is FALSE: K3PO4 gives i*m = 0.48 m, which is close but less than Al2(SO4)3 (0.50 m)."
+    },
+    {
+      "id": "chem_pred_2025_20",
+      "domain_id": 5,
+      "domain_title": "Stoichiometry & Colligative Properties",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Degree of Dissociation (alpha) & Van 't Hoff Factor",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.3% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Electrolyte solutions; degree of dissociation alpha; Van 't Hoff factor derivation",
+      "question": "A 0.100 m aqueous solution of a weak monoprotic acid HA freezes at -0.2046°C. Given that the cryoscopic constant of water is Kf = 1.86°C kg/mol, what is the apparent Van 't Hoff factor i and the percent degree of dissociation (alpha) of the acid in this solution?",
+      "options": [
+        "i = 1.00; alpha = 0%",
+        "i = 1.10; alpha = 10%",
+        "i = 1.20; alpha = 20%",
+        "i = 2.00; alpha = 100%",
+        "i = 0.90; alpha = 5%"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Relationship between Van 't Hoff factor i and degree of electrolytic dissociation alpha: i = 1 + alpha*(n - 1), where n is the number of ions produced per formula unit. For a monoprotic acid HA <-> H+ + A-, n = 2, so i = 1 + alpha.",
+        "proof": "1. Determine freezing point depression Delta_Tf:\n   Delta_Tf = 0.000°C - (-0.2046°C) = 0.2046°C.\n2. Apply cryoscopic formula Delta_Tf = i * Kf * m:\n   i = Delta_Tf / (Kf * m) = 0.2046 / (1.86 * 0.100) = 0.2046 / 0.186 = 1.10.\n3. Solve for degree of dissociation alpha:\n   HA <-> H+ + A- (n = 2 ions).\n   Initial moles: 1\n   At equilibrium: (1 - alpha) + alpha + alpha = 1 + alpha.\n   i = 1 + alpha\n   1.10 = 1 + alpha => alpha = 0.10 = 10%.\n4. Thus, the acid is 10% dissociated and the Van 't Hoff factor is 1.10.",
+        "distractor_elimination": "• Option A is FALSE: i = 1.00 would mean zero dissociation (Tf would be -0.186°C).\n• Option C is FALSE: i = 1.20 would yield Delta_Tf = 1.20 * 0.186 = 0.2232°C.\n• Option D is FALSE: i = 2.00 corresponds to complete 100% dissociation (strong acid, Tf = -0.372°C).\n• Option E is FALSE: An electrolyte cannot have i < 1 in water unless extensive association/dimerization occurs."
+      },
+      "trap_alert": "For HA <-> H+ + A-, n = 2. Therefore i = 1 + alpha(2 - 1) = 1 + alpha. alpha = i - 1 = 1.10 - 1.00 = 0.10 = 10%.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Relationship between Van 't Hoff factor i and degree of electrolytic dissociation alpha: i = 1 + alpha*(n - 1), where n is the number of ions produced per formula unit. For a monoprotic acid HA <-> H+ + A-, n = 2, so i = 1 + alpha.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Determine freezing point depression Delta_Tf:<br>   Delta_Tf = 0.000°C - (-0.2046°C) = 0.2046°C.<br>2. Apply cryoscopic formula Delta_Tf = i * Kf * m:<br>   i = Delta_Tf / (Kf * m) = 0.2046 / (1.86 * 0.100) = 0.2046 / 0.186 = 1.10.<br>3. Solve for degree of dissociation alpha:<br>   HA <-> H+ + A- (n = 2 ions).<br>   Initial moles: 1<br>   At equilibrium: (1 - alpha) + alpha + alpha = 1 + alpha.<br>   i = 1 + alpha<br>   1.10 = 1 + alpha => alpha = 0.10 = 10%.<br>4. Thus, the acid is 10% dissociated and the Van 't Hoff factor is 1.10.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: i = 1.00 would mean zero dissociation (Tf would be -0.186°C).<br>• Option C is FALSE: i = 1.20 would yield Delta_Tf = 1.20 * 0.186 = 0.2232°C.<br>• Option D is FALSE: i = 2.00 corresponds to complete 100% dissociation (strong acid, Tf = -0.372°C).<br>• Option E is FALSE: An electrolyte cannot have i < 1 in water unless extensive association/dimerization occurs."
+    },
+    {
+      "id": "chem_pred_2025_21",
+      "domain_id": 6,
+      "domain_title": "Chemical Thermodynamics & Kinetics",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Gibbs Free Energy & Temperature Threshold for Spontaneity",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.2% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Thermodynamics; enthalpy, entropy and Gibbs free energy (Delta G = Delta H - T Delta S); criteria for spontaneity",
+      "question": "A metallurgical decomposition reaction has standard enthalpy Delta_H° = +88.0 kJ/mol and standard entropy Delta_S° = +200.0 J/(mol K). Assuming Delta_H° and Delta_S° remain constant with temperature, at what temperatures is the reaction thermodynamically spontaneous in the forward direction at standard pressure?",
+      "options": [
+        "Spontaneous at all temperatures",
+        "Non-spontaneous at all temperatures",
+        "Spontaneous only at temperatures strictly below 440 K (T < 440 K)",
+        "Spontaneous only at temperatures strictly above 440 K (T > 440 K)",
+        "Spontaneous only at absolute zero (T = 0 K)"
+      ],
+      "correct_index": 3,
+      "correct_option": "D",
+      "explanation": {
+        "principle": "Gibbs-Helmholtz Spontaneity Criterion: Delta_G° = Delta_H° - T*Delta_S°. A reaction is spontaneous when Delta_G° < 0. When Delta_H° > 0 (endothermic) and Delta_S° > 0 (entropy-favored), the reaction is non-spontaneous at low temperatures and becomes spontaneous at high temperatures above the equilibrium temperature Teq = Delta_H° / Delta_S°.",
+        "proof": "1. Ensure consistent SI energy units:\n   - Delta_H° = +88.0 kJ/mol = +88,000 J/mol.\n   - Delta_S° = +200.0 J/(mol K).\n2. Set Delta_G° = 0 to find the crossover equilibrium temperature Teq:\n   Delta_H° - T*Delta_S° = 0\n   Teq = Delta_H° / Delta_S° = 88,000 J/mol / 200.0 J/(mol K) = 440 K (167°C).\n3. For Delta_G° to be negative (Delta_G° < 0):\n   Delta_H° < T*Delta_S°\n   88,000 < T * 200 => T > 440 K.\n4. When T > 440 K, the favorable -T*Delta_S° term outweighs the unfavorable +Delta_H° term, driving Delta_G° < 0.",
+        "distractor_elimination": "• Option A is FALSE: Spontaneous at all temperatures requires Delta_H < 0 and Delta_S > 0.\n• Option B is FALSE: Non-spontaneous at all temperatures requires Delta_H > 0 and Delta_S < 0.\n• Option C is FALSE: It inverts the inequality; below 440 K, Delta_H dominates and Delta_G > 0 (non-spontaneous).\n• Option E is FALSE: At T = 0 K, Delta_G = Delta_H = +88 kJ/mol > 0 (completely non-spontaneous)."
+      },
+      "trap_alert": "WATCH UNIT CONSISTENCY! Convert kJ to J (88.0 kJ = 88,000 J) before dividing by Delta_S (in J/K). 88,000 / 200 = 440 K.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Gibbs-Helmholtz Spontaneity Criterion: Delta_G° = Delta_H° - T*Delta_S°. A reaction is spontaneous when Delta_G° < 0. When Delta_H° > 0 (endothermic) and Delta_S° > 0 (entropy-favored), the reaction is non-spontaneous at low temperatures and becomes spontaneous at high temperatures above the equilibrium temperature Teq = Delta_H° / Delta_S°.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Ensure consistent SI energy units:<br>   - Delta_H° = +88.0 kJ/mol = +88,000 J/mol.<br>   - Delta_S° = +200.0 J/(mol K).<br>2. Set Delta_G° = 0 to find the crossover equilibrium temperature Teq:<br>   Delta_H° - T*Delta_S° = 0<br>   Teq = Delta_H° / Delta_S° = 88,000 J/mol / 200.0 J/(mol K) = 440 K (167°C).<br>3. For Delta_G° to be negative (Delta_G° < 0):<br>   Delta_H° < T*Delta_S°<br>   88,000 < T * 200 => T > 440 K.<br>4. When T > 440 K, the favorable -T*Delta_S° term outweighs the unfavorable +Delta_H° term, driving Delta_G° < 0.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Spontaneous at all temperatures requires Delta_H < 0 and Delta_S > 0.<br>• Option B is FALSE: Non-spontaneous at all temperatures requires Delta_H > 0 and Delta_S < 0.<br>• Option C is FALSE: It inverts the inequality; below 440 K, Delta_H dominates and Delta_G > 0 (non-spontaneous).<br>• Option E is FALSE: At T = 0 K, Delta_G = Delta_H = +88 kJ/mol > 0 (completely non-spontaneous)."
+    },
+    {
+      "id": "chem_pred_2025_22",
+      "domain_id": 6,
+      "domain_title": "Chemical Thermodynamics & Kinetics",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Method of Initial Rates, Reaction Order & Units of k",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.9% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Reaction kinetics; rate laws and reaction orders; rate constants and experimental determination",
+      "question": "For the gas-phase reaction 2 NO(g) + Br2(g) -> 2 NOBr(g), initial rate experiments at 273 K produced the following data:\n• Exp 1: [NO] = 0.10 M, [Br2] = 0.10 M, Initial Rate = 1.30 x 10^-3 M/s\n• Exp 2: [NO] = 0.20 M, [Br2] = 0.10 M, Initial Rate = 5.20 x 10^-3 M/s\n• Exp 3: [NO] = 0.20 M, [Br2] = 0.30 M, Initial Rate = 1.56 x 10^-2 M/s\nWhat is the rate law, overall reaction order, and numerical value and units of the rate constant k?",
+      "options": [
+        "Rate = k[NO][Br2]; Order 2; k = 0.13 M^-1 s^-1",
+        "Rate = k[NO]^2[Br2]; Order 3; k = 1.30 M^-2 s^-1",
+        "Rate = k[NO][Br2]^2; Order 3; k = 1.30 M^-2 s^-1",
+        "Rate = k[NO]^2[Br2]^2; Order 4; k = 13.0 M^-3 s^-1",
+        "Rate = k[NO]^2; Order 2; k = 0.13 s^-1"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Initial Rates Method: Rate = k[A]^m [B]^n. The reaction order with respect to each reactant is determined by observing how changing one concentration affects initial rate while keeping other concentrations constant. The overall order is (m + n), and the unit of k is M^(1 - (m+n)) s^-1.",
+        "proof": "1. Determine order with respect to [NO]:\n   - Compare Exp 1 and Exp 2 ([Br2] is constant at 0.10 M):\n   - [NO] doubles: 0.20 / 0.10 = 2.0.\n   - Rate changes from 1.30 x 10^-3 to 5.20 x 10^-3: (5.20 x 10^-3) / (1.30 x 10^-3) = 4.0 = 2^2.\n   - Therefore, the reaction is SECOND ORDER in [NO] (m = 2).\n2. Determine order with respect to [Br2]:\n   - Compare Exp 2 and Exp 3 ([NO] is constant at 0.20 M):\n   - [Br2] triples: 0.30 / 0.10 = 3.0.\n   - Rate changes from 5.20 x 10^-3 to 1.56 x 10^-2 (15.6 x 10^-3): (1.56 x 10^-2) / (5.20 x 10^-3) = 3.0 = 3^1.\n   - Therefore, the reaction is FIRST ORDER in [Br2] (n = 1).\n3. Rate Law & Overall Order:\n   - Rate = k[NO]^2[Br2]. Overall order = 2 + 1 = 3.\n4. Calculate rate constant k using Exp 1:\n   - k = Rate / ([NO]^2 * [Br2]) = (1.30 x 10^-3 M/s) / [(0.10 M)^2 * (0.10 M)] = (1.30 x 10^-3) / (1.0 x 10^-3 M^3) = 1.30 M^-2 s^-1 (or L^2 mol^-2 s^-1).",
+        "distractor_elimination": "• Option A is FALSE: It assumes first-order in NO, ignoring that doubling [NO] quadrupled the rate.\n• Option C is FALSE: It assigns second-order to Br2 and first-order to NO.\n• Option D is FALSE: It assumes order 4; tripling [Br2] tripled the rate, so Br2 cannot be second-order.\n• Option E is FALSE: It ignores Br2 completely (zero order), which contradicts Exp 2 vs Exp 3."
+      },
+      "trap_alert": "Units of k depend on the overall order! For overall order 3, units are M^(1-3) s^-1 = M^-2 s^-1 (L^2 mol^-2 s^-1).",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Initial Rates Method: Rate = k[A]^m [B]^n. The reaction order with respect to each reactant is determined by observing how changing one concentration affects initial rate while keeping other concentrations constant. The overall order is (m + n), and the unit of k is M^(1 - (m+n)) s^-1.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Determine order with respect to [NO]:<br>   - Compare Exp 1 and Exp 2 ([Br2] is constant at 0.10 M):<br>   - [NO] doubles: 0.20 / 0.10 = 2.0.<br>   - Rate changes from 1.30 x 10^-3 to 5.20 x 10^-3: (5.20 x 10^-3) / (1.30 x 10^-3) = 4.0 = 2^2.<br>   - Therefore, the reaction is SECOND ORDER in [NO] (m = 2).<br>2. Determine order with respect to [Br2]:<br>   - Compare Exp 2 and Exp 3 ([NO] is constant at 0.20 M):<br>   - [Br2] triples: 0.30 / 0.10 = 3.0.<br>   - Rate changes from 5.20 x 10^-3 to 1.56 x 10^-2 (15.6 x 10^-3): (1.56 x 10^-2) / (5.20 x 10^-3) = 3.0 = 3^1.<br>   - Therefore, the reaction is FIRST ORDER in [Br2] (n = 1).<br>3. Rate Law & Overall Order:<br>   - Rate = k[NO]^2[Br2]. Overall order = 2 + 1 = 3.<br>4. Calculate rate constant k using Exp 1:<br>   - k = Rate / ([NO]^2 * [Br2]) = (1.30 x 10^-3 M/s) / [(0.10 M)^2 * (0.10 M)] = (1.30 x 10^-3) / (1.0 x 10^-3 M^3) = 1.30 M^-2 s^-1 (or L^2 mol^-2 s^-1).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It assumes first-order in NO, ignoring that doubling [NO] quadrupled the rate.<br>• Option C is FALSE: It assigns second-order to Br2 and first-order to NO.<br>• Option D is FALSE: It assumes order 4; tripling [Br2] tripled the rate, so Br2 cannot be second-order.<br>• Option E is FALSE: It ignores Br2 completely (zero order), which contradicts Exp 2 vs Exp 3."
+    },
+    {
+      "id": "chem_pred_2025_23",
+      "domain_id": 6,
+      "domain_title": "Chemical Thermodynamics & Kinetics",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Arrhenius Equation, Catalysis & Dynamic Equilibrium",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.7% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Arrhenius equation; activation energy; action mechanism of catalysts in chemical equilibrium",
+      "question": "According to the Arrhenius equation (k = A * e^(-Ea / RT)), which of the following statements is strictly correct regarding the addition of a positive catalyst to a reversible exothermic gas-phase chemical reaction at constant temperature?",
+      "options": [
+        "It lowers the activation energy of the forward reaction while increasing the activation energy of the reverse reaction, thereby shifting equilibrium toward products.",
+        "It provides an alternative reaction pathway with lower activation energy for BOTH the forward and reverse reactions by the exact same amount, increasing both rate constants equally without changing the equilibrium constant (Keq).",
+        "It decreases the standard enthalpy change of the reaction (Delta_H°), making the reaction more exothermic.",
+        "It increases the pre-exponential frequency factor (A) without affecting the activation energy (Ea).",
+        "It increases the forward rate constant while decreasing the reverse rate constant, causing Kc to increase."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Catalytic mechanism in reversible equilibria: A catalyst speeds up reactions by providing an alternative pathway with a lower transition state energy (lower Ea). Because the chemical state of reactants and products is unchanged (Delta_H and Delta_G are state functions), the catalyst lowers the activation energy of the forward reaction (Ea,f) and reverse reaction (Ea,r) by the EXACT SAME amount (Delta_Ea).",
+        "proof": "1. Forward rate constant kf = Af * e^(-Ea,f / RT).\n2. Reverse rate constant kr = Ar * e^(-Ea,r / RT).\n3. When a catalyst lowers transition state energy by Delta_Ea:\n   - kf' = kf * e^(Delta_Ea / RT)\n   - kr' = kr * e^(Delta_Ea / RT)\n4. The equilibrium constant Keq = kf / kr. Substituting the new values:\n   Keq' = kf' / kr' = [kf * e^(Delta_Ea / RT)] / [kr * e^(Delta_Ea / RT)] = kf / kr = Keq.\n5. Therefore, a catalyst accelerates the approach to equilibrium but NEVER alters the equilibrium concentrations, yield, Keq, Delta_H°, or Delta_G°.",
+        "distractor_elimination": "• Option A is FALSE: Catalysts lower the barrier for BOTH forward and reverse reactions, never raising one.\n• Option C is FALSE: Delta_H° is a thermodynamic state function (H_products - H_reactants) and is completely unaffected by catalysts.\n• Option D is FALSE: The primary catalytic effect is lowering Ea, not changing A.\n• Option E is FALSE: Both rate constants increase; Kc remains unchanged."
+      },
+      "trap_alert": "A catalyst NEVER changes the equilibrium position, yield, or Kc! It lowers Ea for BOTH forward and reverse directions equally.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Catalytic mechanism in reversible equilibria: A catalyst speeds up reactions by providing an alternative pathway with a lower transition state energy (lower Ea). Because the chemical state of reactants and products is unchanged (Delta_H and Delta_G are state functions), the catalyst lowers the activation energy of the forward reaction (Ea,f) and reverse reaction (Ea,r) by the EXACT SAME amount (Delta_Ea).<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Forward rate constant kf = Af * e^(-Ea,f / RT).<br>2. Reverse rate constant kr = Ar * e^(-Ea,r / RT).<br>3. When a catalyst lowers transition state energy by Delta_Ea:<br>   - kf' = kf * e^(Delta_Ea / RT)<br>   - kr' = kr * e^(Delta_Ea / RT)<br>4. The equilibrium constant Keq = kf / kr. Substituting the new values:<br>   Keq' = kf' / kr' = [kf * e^(Delta_Ea / RT)] / [kr * e^(Delta_Ea / RT)] = kf / kr = Keq.<br>5. Therefore, a catalyst accelerates the approach to equilibrium but NEVER alters the equilibrium concentrations, yield, Keq, Delta_H°, or Delta_G°.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Catalysts lower the barrier for BOTH forward and reverse reactions, never raising one.<br>• Option C is FALSE: Delta_H° is a thermodynamic state function (H_products - H_reactants) and is completely unaffected by catalysts.<br>• Option D is FALSE: The primary catalytic effect is lowering Ea, not changing A.<br>• Option E is FALSE: Both rate constants increase; Kc remains unchanged."
+    },
+    {
+      "id": "chem_pred_2025_24",
+      "domain_id": 6,
+      "domain_title": "Chemical Thermodynamics & Kinetics",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Reaction Coordinate Profiles & Multi-Step Mechanisms",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.1% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Reaction energy profiles; transition states vs intermediates; rate-determining steps",
+      "question": "A reaction proceeds via a two-step mechanism: Step 1 (slow): A + B -> I (Ea1 = 75 kJ/mol); Step 2 (fast): I + B -> C (Ea2 = 25 kJ/mol). The overall reaction A + 2B -> C is exothermic with Delta_H° = -40 kJ/mol. Which of the following statements correctly characterizes this reaction coordinate energy profile?",
+      "options": [
+        "The first transition state is lower in energy than the second transition state; intermediate I is at an energy maximum.",
+        "The rate-determining step is Step 1; the reaction profile features two local potential energy maxima (transition states) separated by a local potential energy minimum (intermediate I), and the activation energy for the overall reverse reaction is +115 kJ/mol.",
+        "Step 2 is the rate-determining step because it produces the final stable product.",
+        "The activation energy for the overall reverse reaction is +40 kJ/mol.",
+        "Intermediate I can never be isolated or detected because transition states and intermediates are identical quantum states."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Reaction Coordinate Topology: Transition states are local potential energy maxima (peaks, fleeting bond-breaking/forming complexes). Intermediates are local potential energy minima (valleys, discrete chemical species with finite lifetimes). The step with the highest forward activation barrier is rate-determining. Reverse activation energy = Forward activation energy + |Delta_H°| for an exothermic reaction.",
+        "proof": "1. Step 1 has Ea1 = 75 kJ/mol (slow, highest barrier), making it the rate-determining step (RDS).\n2. The profile features two peaks (TS1 at +75 kJ/mol above reactants; TS2 at +25 kJ/mol above intermediate I) separated by a potential energy valley (intermediate I).\n3. Overall thermodynamics: The reaction is exothermic with Delta_H° = -40 kJ/mol, meaning final products C lie 40 kJ/mol below initial reactants (A + 2B).\n4. Reverse activation energy: To return from products C to reactants via the highest peak (TS1):\n   Ea,reverse = Ea,forward + |Delta_H°| = 75 kJ/mol + 40 kJ/mol = 115 kJ/mol.",
+        "distractor_elimination": "• Option A is FALSE: The first transition state is higher in energy (+75 kJ/mol), and intermediate I is at an energy minimum, not maximum.\n• Option C is FALSE: The slowest step with the highest barrier (Step 1) is rate-determining, not Step 2.\n• Option D is FALSE: +40 kJ/mol is the magnitude of Delta_H, not the reverse activation energy.\n• Option E is FALSE: Intermediates occupy energy minima and have finite lifetimes; transition states cannot be isolated."
+      },
+      "trap_alert": "Reverse activation energy for an exothermic reaction is Forward Ea PLUS |Delta H|: 75 + 40 = 115 kJ/mol!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Reaction Coordinate Topology: Transition states are local potential energy maxima (peaks, fleeting bond-breaking/forming complexes). Intermediates are local potential energy minima (valleys, discrete chemical species with finite lifetimes). The step with the highest forward activation barrier is rate-determining. Reverse activation energy = Forward activation energy + |Delta_H°| for an exothermic reaction.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Step 1 has Ea1 = 75 kJ/mol (slow, highest barrier), making it the rate-determining step (RDS).<br>2. The profile features two peaks (TS1 at +75 kJ/mol above reactants; TS2 at +25 kJ/mol above intermediate I) separated by a potential energy valley (intermediate I).<br>3. Overall thermodynamics: The reaction is exothermic with Delta_H° = -40 kJ/mol, meaning final products C lie 40 kJ/mol below initial reactants (A + 2B).<br>4. Reverse activation energy: To return from products C to reactants via the highest peak (TS1):<br>   Ea,reverse = Ea,forward + |Delta_H°| = 75 kJ/mol + 40 kJ/mol = 115 kJ/mol.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: The first transition state is higher in energy (+75 kJ/mol), and intermediate I is at an energy minimum, not maximum.<br>• Option C is FALSE: The slowest step with the highest barrier (Step 1) is rate-determining, not Step 2.<br>• Option D is FALSE: +40 kJ/mol is the magnitude of Delta_H, not the reverse activation energy.<br>• Option E is FALSE: Intermediates occupy energy minima and have finite lifetimes; transition states cannot be isolated."
+    },
+    {
+      "id": "chem_pred_2025_25",
+      "domain_id": 7,
+      "domain_title": "Equilibrium & Le Chatelier",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Gas-Phase Volume Compression & Reaction Quotient Qc",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.0% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Chemical equilibrium; Le Chatelier's principle; reaction quotient Qc vs Kc; volume/pressure shifts",
+      "question": "Consider the reversible gas-phase equilibrium: 2 SO2(g) + O2(g) <=> 2 SO3(g) (Delta_H° = -198 kJ/mol). The system is at equilibrium in a closed cylinder. The piston is suddenly pushed inwards so that the volume of the container is halved at constant temperature. What is the immediate effect on the reaction quotient Qc, the direction of shift to re-establish equilibrium, and the final value of Kc?",
+      "options": [
+        "Qc becomes greater than Kc; shifts toward reactants (left); Kc increases",
+        "Qc becomes less than Kc; shifts toward products (right); Kc remains unchanged",
+        "Qc remains equal to Kc; no shift occurs; Kc doubles",
+        "Qc becomes less than Kc; shifts toward products (right); Kc doubles",
+        "Qc becomes greater than Kc; shifts toward products (right); Kc remains unchanged"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Thermodynamics of volume perturbation and constancy of Kc: Halving volume doubles all molar concentrations. If Delta_ngas != 0, Qc departs from Kc. According to Le Chatelier, the system shifts toward the side with fewer moles of gas. ONLY a change in temperature can alter the numerical value of Kc.",
+        "proof": "1. Expression for Qc: Qc = [SO3]^2 / ([SO2]^2 * [O2]).\n2. When volume is halved (V' = V / 2), each concentration doubles ([C]' = 2[C]):\n   Qc' = (2[SO3])^2 / [(2[SO2])^2 * (2[O2])] = (4[SO3]^2) / (4[SO2]^2 * 2[O2]) = (1/2) * ([SO3]^2 / ([SO2]^2 * [O2])) = (1/2) * Kc.\n3. Because Qc' = (1/2)Kc < Kc, the system must shift FORWARD (to the right, toward SO3) to increase the numerator and restore Qc = Kc.\n4. This matches Le Chatelier's principle: compressing the mixture drives it toward fewer gas moles (3 moles of gas on left -> 2 moles on right).\n5. Equilibrium constant Kc depends EXCLUSIVELY on temperature. Since temperature is constant, Kc remains strictly UNCHANGED.",
+        "distractor_elimination": "• Option A is FALSE: Qc decreases to (1/2)Kc, not increases, and shifts right, not left; Kc does not change.\n• Option C is FALSE: Qc does not stay equal because Delta_ngas = -1 != 0; Kc does not double.\n• Option D is FALSE: Kc does NOT double; pressure and volume changes never alter the numerical value of Kc.\n• Option E is FALSE: Qc is less than Kc, not greater."
+      },
+      "trap_alert": "PRESSURE AND VOLUME CHANGES NEVER CHANGE Kc! Only temperature changes Kc. Halving volume makes Qc = 0.5 Kc < Kc, shifting RIGHT.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Thermodynamics of volume perturbation and constancy of Kc: Halving volume doubles all molar concentrations. If Delta_ngas != 0, Qc departs from Kc. According to Le Chatelier, the system shifts toward the side with fewer moles of gas. ONLY a change in temperature can alter the numerical value of Kc.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Expression for Qc: Qc = [SO3]^2 / ([SO2]^2 * [O2]).<br>2. When volume is halved (V' = V / 2), each concentration doubles ([C]' = 2[C]):<br>   Qc' = (2[SO3])^2 / [(2[SO2])^2 * (2[O2])] = (4[SO3]^2) / (4[SO2]^2 * 2[O2]) = (1/2) * ([SO3]^2 / ([SO2]^2 * [O2])) = (1/2) * Kc.<br>3. Because Qc' = (1/2)Kc < Kc, the system must shift FORWARD (to the right, toward SO3) to increase the numerator and restore Qc = Kc.<br>4. This matches Le Chatelier's principle: compressing the mixture drives it toward fewer gas moles (3 moles of gas on left -> 2 moles on right).<br>5. Equilibrium constant Kc depends EXCLUSIVELY on temperature. Since temperature is constant, Kc remains strictly UNCHANGED.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Qc decreases to (1/2)Kc, not increases, and shifts right, not left; Kc does not change.<br>• Option C is FALSE: Qc does not stay equal because Delta_ngas = -1 != 0; Kc does not double.<br>• Option D is FALSE: Kc does NOT double; pressure and volume changes never alter the numerical value of Kc.<br>• Option E is FALSE: Qc is less than Kc, not greater."
+    },
+    {
+      "id": "chem_pred_2025_26",
+      "domain_id": 7,
+      "domain_title": "Equilibrium & Le Chatelier",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Temperature Dependence of Kc (Van 't Hoff Equation)",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.8% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Temperature dependence of equilibrium constants; Van 't Hoff equation; exothermic equilibria",
+      "question": "For the Haber-Bosch ammonia synthesis: N2(g) + 3 H2(g) <=> 2 NH3(g) (Delta_H° = -92.2 kJ/mol). Which single experimental manipulation will SIMULTANEOUSLY increase both the equilibrium mole fraction of NH3 and the numerical value of the equilibrium constant Kp?",
+      "options": [
+        "Increasing the total pressure by decreasing container volume",
+        "Adding an active finely divided iron catalyst",
+        "Decreasing the temperature of the reaction system",
+        "Increasing the temperature of the reaction system",
+        "Injecting an equimolar mixture of N2 and H2 at constant volume"
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "explanation": {
+        "principle": "Van 't Hoff Equation: d(ln Kp)/dT = Delta_H° / (R*T^2). For an exothermic reaction (Delta_H° < 0), Kp decreases with increasing temperature and INCREASES with decreasing temperature. Temperature is the ONLY variable that changes the numerical value of Kp.",
+        "proof": "1. The reaction is exothermic: N2(g) + 3 H2(g) <=> 2 NH3(g) + Heat (Delta_H° = -92.2 kJ/mol).\n2. By Le Chatelier's principle, cooling the system (removing heat) causes the equilibrium to shift forward in the exothermic direction to produce heat, increasing the equilibrium yield and mole fraction of NH3.\n3. By the Van 't Hoff relation, when Delta_H° < 0, a decrease in temperature causes an increase in Kp (and Kc).\n4. Pressure changes shift the equilibrium position but do NOT alter the value of Kp. Catalysts accelerate the rate but do NOT alter Kp or yields.",
+        "distractor_elimination": "• Option A is FALSE: Increasing pressure increases NH3 yield, but does NOT change Kp.\n• Option B is FALSE: Catalysts change neither equilibrium yield nor Kp.\n• Option D is FALSE: Heating an exothermic reaction shifts it left, decreasing both NH3 yield and Kp.\n• Option E is FALSE: Adding reactants shifts equilibrium right by Le Chatelier, but does NOT change Kp."
+      },
+      "trap_alert": "Increasing pressure increases the yield of NH3, but DOES NOT CHANGE Kp! ONLY decreasing temperature increases both yield AND Kp for an exothermic reaction.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Van 't Hoff Equation: d(ln Kp)/dT = Delta_H° / (R*T^2). For an exothermic reaction (Delta_H° < 0), Kp decreases with increasing temperature and INCREASES with decreasing temperature. Temperature is the ONLY variable that changes the numerical value of Kp.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. The reaction is exothermic: N2(g) + 3 H2(g) <=> 2 NH3(g) + Heat (Delta_H° = -92.2 kJ/mol).<br>2. By Le Chatelier's principle, cooling the system (removing heat) causes the equilibrium to shift forward in the exothermic direction to produce heat, increasing the equilibrium yield and mole fraction of NH3.<br>3. By the Van 't Hoff relation, when Delta_H° < 0, a decrease in temperature causes an increase in Kp (and Kc).<br>4. Pressure changes shift the equilibrium position but do NOT alter the value of Kp. Catalysts accelerate the rate but do NOT alter Kp or yields.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Increasing pressure increases NH3 yield, but does NOT change Kp.<br>• Option B is FALSE: Catalysts change neither equilibrium yield nor Kp.<br>• Option D is FALSE: Heating an exothermic reaction shifts it left, decreasing both NH3 yield and Kp.<br>• Option E is FALSE: Adding reactants shifts equilibrium right by Le Chatelier, but does NOT change Kp."
+    },
+    {
+      "id": "chem_pred_2025_27",
+      "domain_id": 7,
+      "domain_title": "Equilibrium & Le Chatelier",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Addition of Inert Gas: Constant Volume vs Constant Pressure",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.4% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Equilibrium shifts under inert gas addition; partial pressure vs total pressure constraints",
+      "question": "A mixture of PCl5(g), PCl3(g), and Cl2(g) is in dynamic equilibrium inside a cylinder fitted with a movable piston: PCl5(g) <=> PCl3(g) + Cl2(g). If Argon gas (Ar, an unreactive inert gas) is introduced into the system at CONSTANT TOTAL PRESSURE, what is the effect on the position of the chemical equilibrium?",
+      "options": [
+        "The equilibrium shifts toward the left (reactants), because total pressure has increased.",
+        "The equilibrium does not shift at all, because argon does not react chemically with any component.",
+        "The equilibrium shifts toward the right (products), because the container volume must expand to keep total pressure constant, reducing the partial pressures of all reactive gases.",
+        "Kp increases exponentially because argon participates in transient collision complexes.",
+        "PCl5 completely precipitates out of the gas phase."
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "explanation": {
+        "principle": "Inert Gas Addition Rules: (1) At constant volume, partial pressures of reactants and products are unchanged (P_i = n_i*R*T / V); hence NO shift occurs. (2) At constant total pressure, adding gas forces the container volume to expand. Expansion reduces the partial pressures of all reacting gases, causing the equilibrium to shift toward the side with MORE moles of gas (Delta_ngas > 0).",
+        "proof": "1. Equilibrium reaction: PCl5(g) <=> PCl3(g) + Cl2(g). Delta_ngas = (1 + 1) - 1 = +1 (1 mole gas -> 2 moles gas).\n2. When Argon is injected at constant total pressure, the piston must move outward and volume V must increase to accommodate the additional moles of gas (V = n_total*R*T / P_total).\n3. Because V increases, the partial pressure of each reacting gas (P_i = n_i*R*T / V) decreases.\n4. Expression for Qp: Qp = (P_PCl3 * P_Cl2) / P_PCl5. Since each partial pressure drops by a factor of (V_initial / V_final) = f < 1:\n   Qp' = (f*P_PCl3 * f*P_Cl2) / (f*P_PCl5) = f * Kp < Kp.\n5. Because Qp' < Kp, the reaction shifts to the right (toward products PCl3 and Cl2) to re-establish equilibrium.",
+        "distractor_elimination": "• Option A is FALSE: Total pressure is held constant (by definition), not increased.\n• Option B is FALSE: 'No shift' is true ONLY at constant volume, NOT at constant pressure.\n• Option D is FALSE: Kp depends only on temperature; argon does not change Kp.\n• Option E is FALSE: PCl5 remains gaseous and dissociates further."
+      },
+      "trap_alert": "At constant VOLUME, adding inert gas causes NO shift. But at constant PRESSURE, volume expands, shifting toward MORE moles of gas (to the right)!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Inert Gas Addition Rules: (1) At constant volume, partial pressures of reactants and products are unchanged (P_i = n_i*R*T / V); hence NO shift occurs. (2) At constant total pressure, adding gas forces the container volume to expand. Expansion reduces the partial pressures of all reacting gases, causing the equilibrium to shift toward the side with MORE moles of gas (Delta_ngas > 0).<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Equilibrium reaction: PCl5(g) <=> PCl3(g) + Cl2(g). Delta_ngas = (1 + 1) - 1 = +1 (1 mole gas -> 2 moles gas).<br>2. When Argon is injected at constant total pressure, the piston must move outward and volume V must increase to accommodate the additional moles of gas (V = n_total*R*T / P_total).<br>3. Because V increases, the partial pressure of each reacting gas (P_i = n_i*R*T / V) decreases.<br>4. Expression for Qp: Qp = (P_PCl3 * P_Cl2) / P_PCl5. Since each partial pressure drops by a factor of (V_initial / V_final) = f < 1:<br>   Qp' = (f*P_PCl3 * f*P_Cl2) / (f*P_PCl5) = f * Kp < Kp.<br>5. Because Qp' < Kp, the reaction shifts to the right (toward products PCl3 and Cl2) to re-establish equilibrium.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Total pressure is held constant (by definition), not increased.<br>• Option B is FALSE: 'No shift' is true ONLY at constant volume, NOT at constant pressure.<br>• Option D is FALSE: Kp depends only on temperature; argon does not change Kp.<br>• Option E is FALSE: PCl5 remains gaseous and dissociates further."
+    },
+    {
+      "id": "chem_pred_2025_28",
+      "domain_id": 7,
+      "domain_title": "Equilibrium & Le Chatelier",
+      "chapter": "B. Physical Chemistry",
+      "subtopic": "Heterogeneous Equilibria & Pure Solid Activity",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.2% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Heterogeneous chemical equilibria; activities of pure solids; Kp calculation from total pressure",
+      "question": "Solid ammonium hydrogen sulfide decomposes according to the heterogeneous equilibrium: NH4HS(s) <=> NH3(g) + H2S(g). When excess NH4HS(s) is placed into an evacuated rigid container at 25°C, the total gas pressure at equilibrium is measured to be 0.80 atm. What is the value of the equilibrium constant Kp, and what happens if an additional 10.0 g of pure solid NH4HS(s) is added to the equilibrium mixture?",
+      "options": [
+        "Kp = 0.64 atm^2; the equilibrium shifts to the right to produce more gas.",
+        "Kp = 0.16 atm^2; adding more solid has zero effect on the equilibrium state or gas pressures.",
+        "Kp = 0.80 atm^2; the equilibrium shifts to the left because solid increases reactant pressure.",
+        "Kp = 0.40 atm^2; the total pressure doubles to 1.60 atm.",
+        "Kp = 0.04 atm^2; the equilibrium collapses completely."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Heterogeneous Equilibrium Rule: The thermodynamic activity of a pure solid phase is unity (a = 1). Pure solids do NOT appear in the equilibrium constant expression. Adding or removing pure solid (provided some remains) does not change concentrations or partial pressures of gases.",
+        "proof": "1. Equilibrium expression: NH4HS(s) <=> NH3(g) + H2S(g).\n   Kp = P_NH3 * P_H2S (solid NH4HS does not appear).\n2. Decomposition stoichiometry yields equimolar amounts of NH3 and H2S (1:1 ratio):\n   P_NH3 = P_H2S = P_total / 2 = 0.80 atm / 2 = 0.40 atm.\n3. Calculate Kp:\n   Kp = (0.40 atm) * (0.40 atm) = 0.16 atm^2.\n4. Effect of adding solid NH4HS: The concentration/density of a pure solid is constant. Its activity remains 1. Therefore, adding more solid does NOT perturb the equilibrium quotient Qp and causes ZERO shift. Gas pressures remain 0.40 atm each.",
+        "distractor_elimination": "• Option A is FALSE: 0.64 is (0.80)^2, squaring total pressure instead of partial pressures; solid does not shift equilibrium.\n• Option C is FALSE: Kp is not equal to total pressure; solids exert no partial vapor pressure in this context.\n• Option D is FALSE: Adding solid does not increase gas pressure.\n• Option E is FALSE: Arithmetic error."
+      },
+      "trap_alert": "Pure solids DO NOT appear in Kp! Partial pressures are each 0.40 atm, so Kp = 0.40 * 0.40 = 0.16 atm^2. Adding more solid causes NO CHANGE.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Heterogeneous Equilibrium Rule: The thermodynamic activity of a pure solid phase is unity (a = 1). Pure solids do NOT appear in the equilibrium constant expression. Adding or removing pure solid (provided some remains) does not change concentrations or partial pressures of gases.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Equilibrium expression: NH4HS(s) <=> NH3(g) + H2S(g).<br>   Kp = P_NH3 * P_H2S (solid NH4HS does not appear).<br>2. Decomposition stoichiometry yields equimolar amounts of NH3 and H2S (1:1 ratio):<br>   P_NH3 = P_H2S = P_total / 2 = 0.80 atm / 2 = 0.40 atm.<br>3. Calculate Kp:<br>   Kp = (0.40 atm) * (0.40 atm) = 0.16 atm^2.<br>4. Effect of adding solid NH4HS: The concentration/density of a pure solid is constant. Its activity remains 1. Therefore, adding more solid does NOT perturb the equilibrium quotient Qp and causes ZERO shift. Gas pressures remain 0.40 atm each.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: 0.64 is (0.80)^2, squaring total pressure instead of partial pressures; solid does not shift equilibrium.<br>• Option C is FALSE: Kp is not equal to total pressure; solids exert no partial vapor pressure in this context.<br>• Option D is FALSE: Adding solid does not increase gas pressure.<br>• Option E is FALSE: Arithmetic error."
+    },
+    {
+      "id": "chem_pred_2025_29",
+      "domain_id": 8,
+      "domain_title": "Acids, Bases & Non-Calculator Buffers",
+      "chapter": "C. Acids, Bases & Solutions",
+      "subtopic": "Diprotic Strong Acid pH Calculations (H2SO4)",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "99.5% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Acids and bases; definition of pH; strong polyprotic acid ionization and non-calculator arithmetic",
+      "question": "What is the exact pH of a 0.0050 M aqueous solution of sulfuric acid (H2SO4) at 25°C, assuming complete electrolytic ionization of both protons?",
+      "options": [
+        "pH = 1.00",
+        "pH = 2.00",
+        "pH = 2.30",
+        "pH = 2.60",
+        "pH = 3.00"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Polyprotic Acid Stoichiometry: Sulfuric acid is diprotic (H2SO4 -> 2 H+ + SO4 2-). At dilute concentrations, assuming complete dissociation of both protons yields a hydrogen ion concentration [H+] that is EXACTLY TWICE the molarity of the parent acid.",
+        "proof": "1. Stoichiometry of full ionization:\n   H2SO4(aq) -> 2 H+(aq) + SO4(2-)(aq)\n2. Calculate [H+]:\n   [H+] = 2 * [H2SO4] = 2 * 0.0050 M = 0.010 M = 1.0 x 10^-2 M.\n3. Calculate pH:\n   pH = -log10[H+] = -log10(1.0 x 10^-2) = -(-2.00) = 2.00.",
+        "distractor_elimination": "• Option A is FALSE: pH = 1.00 corresponds to [H+] = 0.10 M.\n• Option C is FALSE: 2.30 is -log10(0.0050) = -log10(5 x 10^-3) = 3 - 0.70 = 2.30, which forgets to multiply by 2 for the diprotic acid!\n• Option D is FALSE: Miscalculation of logs.\n• Option E is FALSE: pH = 3.00 corresponds to [H+] = 10^-3 M."
+      },
+      "trap_alert": "Sulfuric acid is DIPROTIC! Multiply molarity by 2: 2 * 0.0050 M = 0.010 M = 10^-2 M, so pH = 2.00, NOT 2.30.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Polyprotic Acid Stoichiometry: Sulfuric acid is diprotic (H2SO4 -> 2 H+ + SO4 2-). At dilute concentrations, assuming complete dissociation of both protons yields a hydrogen ion concentration [H+] that is EXACTLY TWICE the molarity of the parent acid.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Stoichiometry of full ionization:<br>   H2SO4(aq) -> 2 H+(aq) + SO4(2-)(aq)<br>2. Calculate [H+]:<br>   [H+] = 2 * [H2SO4] = 2 * 0.0050 M = 0.010 M = 1.0 x 10^-2 M.<br>3. Calculate pH:<br>   pH = -log10[H+] = -log10(1.0 x 10^-2) = -(-2.00) = 2.00.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: pH = 1.00 corresponds to [H+] = 0.10 M.<br>• Option C is FALSE: 2.30 is -log10(0.0050) = -log10(5 x 10^-3) = 3 - 0.70 = 2.30, which forgets to multiply by 2 for the diprotic acid!<br>• Option D is FALSE: Miscalculation of logs.<br>• Option E is FALSE: pH = 3.00 corresponds to [H+] = 10^-3 M."
+    },
+    {
+      "id": "chem_pred_2025_30",
+      "domain_id": 8,
+      "domain_title": "Acids, Bases & Non-Calculator Buffers",
+      "chapter": "C. Acids, Bases & Solutions",
+      "subtopic": "Henderson-Hasselbalch Equation & Buffer Dilution Invariance",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.1% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Buffer solutions; Henderson-Hasselbalch equation; buffer capacity and dilution effects",
+      "question": "A buffer solution is prepared by mixing 200 mL of 0.10 M ethanoic acid (CH3COOH, pKa = 4.76) with 100 mL of 0.20 M sodium ethanoate (CH3COONa). What is the initial pH of this buffer, and what will be the pH if 100 mL of pure distilled water is subsequently added to dilute the solution?",
+      "options": [
+        "Initial pH = 4.76; dilution with water changes pH to 5.76",
+        "Initial pH = 4.76; dilution with water leaves pH unchanged at 4.76",
+        "Initial pH = 3.76; dilution with water increases pH to 7.00",
+        "Initial pH = 5.06; dilution with water leaves pH unchanged at 5.06",
+        "Initial pH = 4.76; dilution with water causes the buffer to become completely unbuffered at pH = 2.00"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Henderson-Hasselbalch Equation: pH = pKa + log10([A-] / [HA]) = pKa + log10(n_A- / n_HA). When moles of conjugate base equal moles of conjugate acid, [A-]/[HA] = 1, so log10(1) = 0 and pH = pKa. Dilution changes total volume equally for both species, leaving the molar ratio n_A- / n_HA constant; hence buffer pH is invariant to moderate dilution.",
+        "proof": "1. Calculate initial moles of acid and base:\n   - Moles of CH3COOH (HA) = 0.200 L * 0.10 mol/L = 0.020 mol.\n   - Moles of CH3COO- (A-) = 0.100 L * 0.20 mol/L = 0.020 mol.\n2. Apply Henderson-Hasselbalch equation:\n   pH = pKa + log10(n_A- / n_HA) = 4.76 + log10(0.020 / 0.020) = 4.76 + log10(1) = 4.76 + 0 = 4.76.\n3. Effect of adding 100 mL water:\n   Total volume changes from 300 mL to 400 mL.\n   - [HA] = 0.020 mol / 0.400 L = 0.050 M.\n   - [A-] = 0.020 mol / 0.400 L = 0.050 M.\n   - Ratio [A-]/[HA] = 0.050 / 0.050 = 1.0.\n   - pH = 4.76 + log10(1.0) = 4.76.\n4. Therefore, the pH remains exactly 4.76.",
+        "distractor_elimination": "• Option A is FALSE: Diluting a buffer with water does not increase pH by 1; the acid-to-base ratio is preserved.\n• Option C is FALSE: Initial pH is 4.76, not 3.76; dilution does not shift a buffer to 7.00.\n• Option D is FALSE: The ratio of moles is exactly 1:1, so pH = pKa = 4.76, not 5.06.\n• Option E is FALSE: Dilution does not destroy the buffer or drop pH to 2."
+      },
+      "trap_alert": "Watch the volumes and molarities! 200 mL * 0.10 M = 0.02 mol HA; 100 mL * 0.20 M = 0.02 mol A-. Moles are EQUAL, so pH = pKa = 4.76, and dilution NEVER changes buffer pH!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Henderson-Hasselbalch Equation: pH = pKa + log10([A-] / [HA]) = pKa + log10(n_A- / n_HA). When moles of conjugate base equal moles of conjugate acid, [A-]/[HA] = 1, so log10(1) = 0 and pH = pKa. Dilution changes total volume equally for both species, leaving the molar ratio n_A- / n_HA constant; hence buffer pH is invariant to moderate dilution.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Calculate initial moles of acid and base:<br>   - Moles of CH3COOH (HA) = 0.200 L * 0.10 mol/L = 0.020 mol.<br>   - Moles of CH3COO- (A-) = 0.100 L * 0.20 mol/L = 0.020 mol.<br>2. Apply Henderson-Hasselbalch equation:<br>   pH = pKa + log10(n_A- / n_HA) = 4.76 + log10(0.020 / 0.020) = 4.76 + log10(1) = 4.76 + 0 = 4.76.<br>3. Effect of adding 100 mL water:<br>   Total volume changes from 300 mL to 400 mL.<br>   - [HA] = 0.020 mol / 0.400 L = 0.050 M.<br>   - [A-] = 0.020 mol / 0.400 L = 0.050 M.<br>   - Ratio [A-]/[HA] = 0.050 / 0.050 = 1.0.<br>   - pH = 4.76 + log10(1.0) = 4.76.<br>4. Therefore, the pH remains exactly 4.76.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Diluting a buffer with water does not increase pH by 1; the acid-to-base ratio is preserved.<br>• Option C is FALSE: Initial pH is 4.76, not 3.76; dilution does not shift a buffer to 7.00.<br>• Option D is FALSE: The ratio of moles is exactly 1:1, so pH = pKa = 4.76, not 5.06.<br>• Option E is FALSE: Dilution does not destroy the buffer or drop pH to 2."
+    },
+    {
+      "id": "chem_pred_2025_31",
+      "domain_id": 8,
+      "domain_title": "Acids, Bases & Non-Calculator Buffers",
+      "chapter": "C. Acids, Bases & Solutions",
+      "subtopic": "Buffer Capacity & Optimal Physiological Buffering",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.6% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Buffer capacity; physiological buffer systems; phosphate and bicarbonate buffers",
+      "question": "A biochemist needs to prepare an aqueous buffer to maintain a physiological enzymatic assay at pH = 7.40. Which of the following conjugate acid-base pairs at the specified concentrations provides the HIGHEST buffer capacity against both added strong acid and added strong base?",
+      "options": [
+        "0.05 M CH3COOH / 0.05 M CH3COONa (pKa = 4.76)",
+        "0.50 M H2PO4- / 0.50 M HPO4(2-) (pKa = 7.21)",
+        "0.02 M H2PO4- / 0.02 M HPO4(2-) (pKa = 7.21)",
+        "0.50 M NH4+ / 0.50 M NH3 (pKa = 9.25)",
+        "1.0 M HCl / 1.0 M NaCl"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Buffer Capacity Optimization: Buffer capacity is maximized when two conditions are met: (1) The pKa of the weak acid is as close to the target pH as possible (|pH - pKa| <= 1, ideally pH = pKa); (2) The absolute molar concentrations of both conjugate acid and base components are as high as possible.",
+        "proof": "1. Target pH = 7.40.\n2. Evaluate pKa proximity:\n   - CH3COOH (pKa = 4.76): |7.40 - 4.76| = 2.64 units away (useless at pH 7.4, outside buffer range).\n   - NH4+ (pKa = 9.25): |7.40 - 9.25| = 1.85 units away (outside optimal buffer range).\n   - H2PO4- / HPO4(2-) (pKa = 7.21): |7.40 - 7.21| = 0.19 units away (ideal buffer range pKa +/- 1).\n3. Compare concentration:\n   - Pair B has 0.50 M of each component.\n   - Pair C has 0.02 M of each component.\n   - Buffer capacity is directly proportional to concentration. Pair B has 25 times the capacity of Pair C to absorb H+ and OH-.\n4. HCl/NaCl is a mixture of a strong acid and neutral salt, not a buffer.\n5. Therefore, 0.50 M H2PO4- / 0.50 M HPO4(2-) provides the highest buffer capacity.",
+        "distractor_elimination": "• Option A is FALSE: Acetate buffer buffers effectively around pH 3.8-5.8; at pH 7.4 it has zero buffer capacity.\n• Option C is FALSE: Same pKa as B, but 25-fold lower concentration means vastly lower buffer capacity.\n• Option D is FALSE: Ammonium buffer buffers around pH 8.3-10.3, poorly suited for pH 7.4.\n• Option E is FALSE: HCl/NaCl is not a buffer system."
+      },
+      "trap_alert": "Highest buffer capacity requires BOTH pKa close to target pH (7.21 ~ 7.40) AND the HIGHEST concentration of conjugate components (0.50 M > 0.02 M).",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Buffer Capacity Optimization: Buffer capacity is maximized when two conditions are met: (1) The pKa of the weak acid is as close to the target pH as possible (|pH - pKa| <= 1, ideally pH = pKa); (2) The absolute molar concentrations of both conjugate acid and base components are as high as possible.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Target pH = 7.40.<br>2. Evaluate pKa proximity:<br>   - CH3COOH (pKa = 4.76): |7.40 - 4.76| = 2.64 units away (useless at pH 7.4, outside buffer range).<br>   - NH4+ (pKa = 9.25): |7.40 - 9.25| = 1.85 units away (outside optimal buffer range).<br>   - H2PO4- / HPO4(2-) (pKa = 7.21): |7.40 - 7.21| = 0.19 units away (ideal buffer range pKa +/- 1).<br>3. Compare concentration:<br>   - Pair B has 0.50 M of each component.<br>   - Pair C has 0.02 M of each component.<br>   - Buffer capacity is directly proportional to concentration. Pair B has 25 times the capacity of Pair C to absorb H+ and OH-.<br>4. HCl/NaCl is a mixture of a strong acid and neutral salt, not a buffer.<br>5. Therefore, 0.50 M H2PO4- / 0.50 M HPO4(2-) provides the highest buffer capacity.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Acetate buffer buffers effectively around pH 3.8-5.8; at pH 7.4 it has zero buffer capacity.<br>• Option C is FALSE: Same pKa as B, but 25-fold lower concentration means vastly lower buffer capacity.<br>• Option D is FALSE: Ammonium buffer buffers around pH 8.3-10.3, poorly suited for pH 7.4.<br>• Option E is FALSE: HCl/NaCl is not a buffer system."
+    },
+    {
+      "id": "chem_pred_2025_32",
+      "domain_id": 8,
+      "domain_title": "Acids, Bases & Non-Calculator Buffers",
+      "chapter": "C. Acids, Bases & Solutions",
+      "subtopic": "Salt Hydrolysis & Aqueous pH Ranking",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.7% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Salt hydrolysis; acidity of hydrated metal cations; ranking pH of aqueous salt solutions",
+      "question": "Equal volumes of 0.10 M aqueous solutions of the following five salts are prepared at 25°C: (1) NH4Cl, (2) CH3COONa, (3) NaCl, (4) Na2CO3, (5) FeCl3. Which list correctly arranges these solutions in order of STRICTLY INCREASING pH (from most acidic to most basic)?",
+      "options": [
+        "(5) FeCl3 < (1) NH4Cl < (3) NaCl < (2) CH3COONa < (4) Na2CO3",
+        "(4) Na2CO3 < (2) CH3COONa < (3) NaCl < (1) NH4Cl < (5) FeCl3",
+        "(3) NaCl < (1) NH4Cl < (5) FeCl3 < (2) CH3COONa < (4) Na2CO3",
+        "(1) NH4Cl < (5) FeCl3 < (3) NaCl < (4) Na2CO3 < (2) CH3COONa",
+        "(5) FeCl3 < (3) NaCl < (1) NH4Cl < (2) CH3COONa < (4) Na2CO3"
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "explanation": {
+        "principle": "Salt Hydrolysis and Cation Charge Density: (1) Small, highly charged transition metal cations (e.g. Fe3+) form hexaaqua complexes [Fe(H2O)6]3+ that strongly polarize O-H bonds, acting as moderately strong Brønsted acids (Ka ~ 6 x 10^-3, pH ~ 1.6-2.0). (2) Ammonium NH4+ hydrolyzes weakly (Ka ~ 5.6 x 10^-10, pH ~ 5.1). (3) Neutral salts of strong acids/bases (NaCl) do not hydrolyze (pH = 7.0). (4) Acetate CH3COO- hydrolyzes weakly basic (Kb ~ 5.6 x 10^-10, pH ~ 8.9). (5) Carbonate CO3(2-) is a strong conjugate base (Kb1 ~ 2.1 x 10^-4, pH ~ 11.6).",
+        "proof": "1. Analyze each 0.10 M solution:\n   - (5) FeCl3: [Fe(H2O)6]3+ + H2O <=> [Fe(H2O)5(OH)]2+ + H3O+ (Ka = 6 x 10^-3). pH ~ 1.6 (Strongly Acidic).\n   - (1) NH4Cl: NH4+ + H2O <=> NH3 + H3O+ (Ka = 5.6 x 10^-10). pH = 5.1 (Mildly Acidic).\n   - (3) NaCl: Na+ and Cl- are spectator ions. Neither hydrolyzes. pH = 7.0 (Neutral).\n   - (2) CH3COONa: CH3COO- + H2O <=> CH3COOH + OH- (Kb = 5.6 x 10^-10). pH = 8.9 (Mildly Basic).\n   - (4) Na2CO3: CO3(2-) + H2O <=> HCO3- + OH- (Kb1 = Kw / Ka2 = 10^-14 / 4.7 x 10^-11 = 2.1 x 10^-4). pH ~ 11.6 (Moderately Strong Base).\n2. Order of strictly increasing pH: (5) < (1) < (3) < (2) < (4).",
+        "distractor_elimination": "• Option B is FALSE: It lists the order from most basic to most acidic (decreasing pH).\n• Option C is FALSE: It places neutral NaCl as the most acidic, which is completely wrong.\n• Option D is FALSE: NH4Cl is less acidic than FeCl3 (Ka 10^-10 vs 10^-3).\n• Option E is FALSE: It places neutral NaCl between FeCl3 and NH4Cl."
+      },
+      "trap_alert": "FeCl3 is STRONGLY acidic (pH ~ 2) due to the high charge density of Fe3+ polarising water! Order: FeCl3 (pH ~2) < NH4Cl (pH ~5) < NaCl (pH 7) < CH3COONa (pH ~9) < Na2CO3 (pH ~11.6).",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Salt Hydrolysis and Cation Charge Density: (1) Small, highly charged transition metal cations (e.g. Fe3+) form hexaaqua complexes [Fe(H2O)6]3+ that strongly polarize O-H bonds, acting as moderately strong Brønsted acids (Ka ~ 6 x 10^-3, pH ~ 1.6-2.0). (2) Ammonium NH4+ hydrolyzes weakly (Ka ~ 5.6 x 10^-10, pH ~ 5.1). (3) Neutral salts of strong acids/bases (NaCl) do not hydrolyze (pH = 7.0). (4) Acetate CH3COO- hydrolyzes weakly basic (Kb ~ 5.6 x 10^-10, pH ~ 8.9). (5) Carbonate CO3(2-) is a strong conjugate base (Kb1 ~ 2.1 x 10^-4, pH ~ 11.6).<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Analyze each 0.10 M solution:<br>   - (5) FeCl3: [Fe(H2O)6]3+ + H2O <=> [Fe(H2O)5(OH)]2+ + H3O+ (Ka = 6 x 10^-3). pH ~ 1.6 (Strongly Acidic).<br>   - (1) NH4Cl: NH4+ + H2O <=> NH3 + H3O+ (Ka = 5.6 x 10^-10). pH = 5.1 (Mildly Acidic).<br>   - (3) NaCl: Na+ and Cl- are spectator ions. Neither hydrolyzes. pH = 7.0 (Neutral).<br>   - (2) CH3COONa: CH3COO- + H2O <=> CH3COOH + OH- (Kb = 5.6 x 10^-10). pH = 8.9 (Mildly Basic).<br>   - (4) Na2CO3: CO3(2-) + H2O <=> HCO3- + OH- (Kb1 = Kw / Ka2 = 10^-14 / 4.7 x 10^-11 = 2.1 x 10^-4). pH ~ 11.6 (Moderately Strong Base).<br>2. Order of strictly increasing pH: (5) < (1) < (3) < (2) < (4).<br><br><strong>3. Distractor Elimination:</strong><br>• Option B is FALSE: It lists the order from most basic to most acidic (decreasing pH).<br>• Option C is FALSE: It places neutral NaCl as the most acidic, which is completely wrong.<br>• Option D is FALSE: NH4Cl is less acidic than FeCl3 (Ka 10^-10 vs 10^-3).<br>• Option E is FALSE: It places neutral NaCl between FeCl3 and NH4Cl."
+    },
+    {
+      "id": "chem_pred_2025_33",
+      "domain_id": 9,
+      "domain_title": "Electrochemistry",
+      "chapter": "D. Electrochemistry",
+      "subtopic": "Galvanic Cells, Standard Potentials & Electron Flow",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.3% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Electrochemistry; standard reduction potentials; cell EMF calculation; direction of electron and ion flow",
+      "question": "A standard galvanic cell is assembled using a Silver half-cell and a Nickel half-cell at 25°C with the following standard reduction potentials:\n• Ag+(aq) + e- -> Ag(s)    E° = +0.80 V\n• Ni2+(aq) + 2e- -> Ni(s)   E° = -0.25 V\nWhat are the standard electromotive force of the cell (E°cell), the overall balanced spontaneous cell reaction, and the direction of electron flow through the external circuit?",
+      "options": [
+        "E°cell = +0.55 V; Ni(s) + Ag+(aq) -> Ni2+(aq) + Ag(s); electrons flow from Silver to Nickel",
+        "E°cell = +1.05 V; Ni(s) + 2 Ag+(aq) -> Ni2+(aq) + 2 Ag(s); electrons flow from Nickel anode to Silver cathode",
+        "E°cell = +1.35 V; 2 Ag(s) + Ni2+(aq) -> 2 Ag+(aq) + Ni(s); electrons flow from Nickel to Silver",
+        "E°cell = -1.05 V; Ni(s) + 2 Ag+(aq) -> Ni2+(aq) + 2 Ag(s); non-spontaneous electrolytic cell",
+        "E°cell = +1.05 V; Ni2+(aq) + 2 Ag(s) -> Ni(s) + 2 Ag+(aq); electrons flow from Silver anode to Nickel cathode"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Galvanic Cell Rules: The half-reaction with the more positive standard reduction potential undergoes reduction at the CATHODE. The half-reaction with the more negative potential undergoes oxidation at the ANODE. Standard cell potential E°cell = E°cathode - E°anode. In the external circuit, electrons flow from ANODE to CATHODE.",
+        "proof": "1. Compare reduction potentials:\n   - E°(Ag+/Ag) = +0.80 V (more positive -> Cathode, reduction).\n   - E°(Ni2+/Ni) = -0.25 V (more negative -> Anode, oxidation).\n2. Write half-reactions:\n   - Cathode (Reduction): 2 Ag+(aq) + 2e- -> 2 Ag(s)   (E° = +0.80 V)\n   - Anode (Oxidation):   Ni(s) -> Ni2+(aq) + 2e-     (E° = -0.25 V)\n3. Calculate standard cell potential:\n   E°cell = E°cathode - E°anode = (+0.80 V) - (-0.25 V) = +0.80 + 0.25 = +1.05 V.\n   (Note: E° is an intensive property; do NOT multiply +0.80 V by 2!)\n4. Overall balanced equation:\n   Ni(s) + 2 Ag+(aq) -> Ni2+(aq) + 2 Ag(s).\n5. Electron flow: Oxidation produces electrons at the Nickel anode; they travel through the external conductive wire to the Silver cathode where Ag+ ions are reduced.",
+        "distractor_elimination": "• Option A is FALSE: 0.80 - 0.25 = 0.55 V is an error of subtracting magnitudes instead of subtracting negative potential (+0.80 - (-0.25) = 1.05 V); equation is also unbalanced.\n• Option C is FALSE: It doubles the Ag potential (2 * 0.80 = 1.60 - 0.25 = 1.35 V); standard potentials are intensive and cannot be multiplied.\n• Option D is FALSE: Galvanic cells have positive E°cell (+1.05 V) and are spontaneous.\n• Option E is FALSE: It writes the non-spontaneous reverse equation."
+      },
+      "trap_alert": "E°cell = E°cathode - E°anode = (+0.80) - (-0.25) = +1.05 V. NEVER multiply E° values by stoichiometric coefficients (they are intensive)! Electrons flow Anode (Ni) -> Cathode (Ag).",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Galvanic Cell Rules: The half-reaction with the more positive standard reduction potential undergoes reduction at the CATHODE. The half-reaction with the more negative potential undergoes oxidation at the ANODE. Standard cell potential E°cell = E°cathode - E°anode. In the external circuit, electrons flow from ANODE to CATHODE.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Compare reduction potentials:<br>   - E°(Ag+/Ag) = +0.80 V (more positive -> Cathode, reduction).<br>   - E°(Ni2+/Ni) = -0.25 V (more negative -> Anode, oxidation).<br>2. Write half-reactions:<br>   - Cathode (Reduction): 2 Ag+(aq) + 2e- -> 2 Ag(s)   (E° = +0.80 V)<br>   - Anode (Oxidation):   Ni(s) -> Ni2+(aq) + 2e-     (E° = -0.25 V)<br>3. Calculate standard cell potential:<br>   E°cell = E°cathode - E°anode = (+0.80 V) - (-0.25 V) = +0.80 + 0.25 = +1.05 V.<br>   (Note: E° is an intensive property; do NOT multiply +0.80 V by 2!)<br>4. Overall balanced equation:<br>   Ni(s) + 2 Ag+(aq) -> Ni2+(aq) + 2 Ag(s).<br>5. Electron flow: Oxidation produces electrons at the Nickel anode; they travel through the external conductive wire to the Silver cathode where Ag+ ions are reduced.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: 0.80 - 0.25 = 0.55 V is an error of subtracting magnitudes instead of subtracting negative potential (+0.80 - (-0.25) = 1.05 V); equation is also unbalanced.<br>• Option C is FALSE: It doubles the Ag potential (2 * 0.80 = 1.60 - 0.25 = 1.35 V); standard potentials are intensive and cannot be multiplied.<br>• Option D is FALSE: Galvanic cells have positive E°cell (+1.05 V) and are spontaneous.<br>• Option E is FALSE: It writes the non-spontaneous reverse equation."
+    },
+    {
+      "id": "chem_pred_2025_34",
+      "domain_id": 9,
+      "domain_title": "Electrochemistry",
+      "chapter": "D. Electrochemistry",
+      "subtopic": "Salt Bridge Ion Migration & Electrical Neutrality",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.8% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Galvanic cells; salt bridge function and electrolytic conduction",
+      "question": "In an operating galvanic Daniell cell: Zn(s) | Zn2+(aq) || Cu2+(aq) | Cu(s), the two half-cells are connected by a salt bridge containing an aqueous solution of potassium nitrate (KNO3). As the spontaneous cell reaction proceeds, what happens at the electrodes and how do the ions of the salt bridge migrate to maintain electrical neutrality?",
+      "options": [
+        "Zn is oxidized at the anode; K+ cations migrate into the anode beaker, while NO3- anions migrate into the cathode beaker.",
+        "Zn is oxidized at the anode; NO3- anions migrate into the anode beaker to balance excess Zn2+, while K+ cations migrate into the cathode beaker to replace consumed Cu2+.",
+        "Cu is oxidized at the anode; electrons travel through the salt bridge rather than the external wire.",
+        "Both K+ and NO3- ions precipitate out onto the zinc electrode, stopping electron flow.",
+        "NO3- anions migrate exclusively into the cathode half-cell to neutralize consumed copper ions."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Salt Bridge Mechanics: The salt bridge maintains electrical neutrality without allowing the bulk solutions to mix. At the anode, oxidation generates cations into solution (positive charge accumulation); ANIONS from the salt bridge migrate to the ANODE. At the cathode, reduction consumes cations from solution (negative charge accumulation); CATIONS from the salt bridge migrate to the CATHODE.",
+        "proof": "1. Half-cell reactions:\n   - Anode (Oxidation): Zn(s) -> Zn2+(aq) + 2e-. Zn2+ ions accumulate in the anode compartment.\n   - Cathode (Reduction): Cu2+(aq) + 2e- -> Cu(s). Cu2+ ions are depleted from the cathode compartment, leaving excess SO4(2-) spectator anions.\n2. Ion migration from KNO3 salt bridge:\n   - Nitrate anions (NO3-) migrate into the anode beaker to neutralize the accumulating Zn2+ cations.\n   - Potassium cations (K+) migrate into the cathode beaker to replace the consumed Cu2+ cations and balance SO4(2-).\n3. Mnemonic: Anions to Anode, Cations to Cathode.",
+        "distractor_elimination": "• Option A is FALSE: It inverts ion migration; K+ migrating to anode would increase the positive charge imbalance.\n• Option C is FALSE: Zn is oxidized, not Cu; electrons travel ONLY through the external metallic wire, NEVER through the salt bridge.\n• Option D is FALSE: KNO3 is highly soluble; no precipitation occurs.\n• Option E is FALSE: NO3- anions migrate to the anode, not cathode."
+      },
+      "trap_alert": "ANIONS to ANODE, CATIONS to CATHODE! Electrons flow through the wire; ions migrate through the salt bridge.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Salt Bridge Mechanics: The salt bridge maintains electrical neutrality without allowing the bulk solutions to mix. At the anode, oxidation generates cations into solution (positive charge accumulation); ANIONS from the salt bridge migrate to the ANODE. At the cathode, reduction consumes cations from solution (negative charge accumulation); CATIONS from the salt bridge migrate to the CATHODE.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Half-cell reactions:<br>   - Anode (Oxidation): Zn(s) -> Zn2+(aq) + 2e-. Zn2+ ions accumulate in the anode compartment.<br>   - Cathode (Reduction): Cu2+(aq) + 2e- -> Cu(s). Cu2+ ions are depleted from the cathode compartment, leaving excess SO4(2-) spectator anions.<br>2. Ion migration from KNO3 salt bridge:<br>   - Nitrate anions (NO3-) migrate into the anode beaker to neutralize the accumulating Zn2+ cations.<br>   - Potassium cations (K+) migrate into the cathode beaker to replace the consumed Cu2+ cations and balance SO4(2-).<br>3. Mnemonic: Anions to Anode, Cations to Cathode.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It inverts ion migration; K+ migrating to anode would increase the positive charge imbalance.<br>• Option C is FALSE: Zn is oxidized, not Cu; electrons travel ONLY through the external metallic wire, NEVER through the salt bridge.<br>• Option D is FALSE: KNO3 is highly soluble; no precipitation occurs.<br>• Option E is FALSE: NO3- anions migrate to the anode, not cathode."
+    },
+    {
+      "id": "chem_pred_2025_35",
+      "domain_id": 9,
+      "domain_title": "Electrochemistry",
+      "chapter": "D. Electrochemistry",
+      "subtopic": "Thermodynamics of Cells: Delta G°, E°cell & Equilibrium Constant K",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "98.5% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Electrochemical thermodynamics; Delta G° = -nFE°cell; relationship between cell potential and equilibrium constant K",
+      "question": "A standard galvanic cell has a standard cell potential E°cell = +1.10 V and involves the transfer of n = 2 moles of electrons per mole of reaction. Given the Faraday constant F = 96,500 C/mol, what is the standard Gibbs free energy change (Delta_G°) of the cell reaction at 298 K, and what does this value indicate regarding the equilibrium constant Keq?",
+      "options": [
+        "Delta_G° = +212.3 kJ/mol; Keq < 1 (reactants favored at equilibrium)",
+        "Delta_G° = -106.1 kJ/mol; Keq = 1",
+        "Delta_G° = -212.3 kJ/mol; Keq >> 1 (products strongly favored at equilibrium)",
+        "Delta_G° = -212.3 J/mol; Keq ~ 0",
+        "Delta_G° = +106.1 kJ/mol; Keq >> 1"
+      ],
+      "correct_index": 2,
+      "correct_option": "C",
+      "explanation": {
+        "principle": "Fundamental Electrochemical Thermodynamic Relation: Delta_G° = -n * F * E°cell. A positive cell potential (E°cell > 0) results in a negative Gibbs free energy change (Delta_G° < 0), which by Delta_G° = -R*T*ln(Keq) corresponds to an equilibrium constant Keq >> 1.",
+        "proof": "1. Substitute into Delta_G° = -n * F * E°cell:\n   - n = 2 mol e-\n   - F = 96,500 C/mol e- = 96,500 J/(V mol)\n   - E°cell = +1.10 V\n2. Calculate:\n   Delta_G° = -(2) * (96,500 C/mol) * (1.10 J/C) = -212,300 J/mol = -212.3 kJ/mol.\n3. Relationship with Keq:\n   Delta_G° = -R*T*ln(Keq) => ln(Keq) = -Delta_G° / (R*T) = (+212,300) / (8.314 * 298) = +85.7.\n   Keq = e^(85.7) ~ 1.7 x 10^37 >> 1.\n4. A large negative Delta_G° means the spontaneous forward reaction proceeds virtually to completion.",
+        "distractor_elimination": "• Option A is FALSE: Delta_G° has a negative sign (-nFE°); +212.3 kJ/mol would indicate non-spontaneity.\n• Option B is FALSE: It forgets to multiply by n = 2 (divides by 2).\n• Option D is FALSE: The unit is kJ/mol, not J/mol (it is 212,300 J/mol).\n• Option E is FALSE: Incorrect sign and wrong magnitude."
+      },
+      "trap_alert": "Remember the NEGATIVE sign in Delta G° = -nFE°cell! E° > 0 means Delta G° < 0 (spontaneous) and Keq >> 1.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Fundamental Electrochemical Thermodynamic Relation: Delta_G° = -n * F * E°cell. A positive cell potential (E°cell > 0) results in a negative Gibbs free energy change (Delta_G° < 0), which by Delta_G° = -R*T*ln(Keq) corresponds to an equilibrium constant Keq >> 1.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Substitute into Delta_G° = -n * F * E°cell:<br>   - n = 2 mol e-<br>   - F = 96,500 C/mol e- = 96,500 J/(V mol)<br>   - E°cell = +1.10 V<br>2. Calculate:<br>   Delta_G° = -(2) * (96,500 C/mol) * (1.10 J/C) = -212,300 J/mol = -212.3 kJ/mol.<br>3. Relationship with Keq:<br>   Delta_G° = -R*T*ln(Keq) => ln(Keq) = -Delta_G° / (R*T) = (+212,300) / (8.314 * 298) = +85.7.<br>   Keq = e^(85.7) ~ 1.7 x 10^37 >> 1.<br>4. A large negative Delta_G° means the spontaneous forward reaction proceeds virtually to completion.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: Delta_G° has a negative sign (-nFE°); +212.3 kJ/mol would indicate non-spontaneity.<br>• Option B is FALSE: It forgets to multiply by n = 2 (divides by 2).<br>• Option D is FALSE: The unit is kJ/mol, not J/mol (it is 212,300 J/mol).<br>• Option E is FALSE: Incorrect sign and wrong magnitude."
+    },
+    {
+      "id": "chem_pred_2025_36",
+      "domain_id": 9,
+      "domain_title": "Electrochemistry",
+      "chapter": "D. Electrochemistry",
+      "subtopic": "Quantitative Electrolysis (Faraday's Law)",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "98.7% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Electrolysis; Faraday's laws of electrolysis; quantitative electrodeposition calculations",
+      "question": "A constant electric current of 9.65 A is passed through an electrolytic cell containing an aqueous solution of copper(II) sulfate (CuSO4) for exactly 1,000 seconds. Given that the Faraday constant is F = 96,500 C/mol and the relative atomic mass of Copper is Ar(Cu) = 63.5 g/mol, what mass of pure metallic copper will be electrodeposited onto the cathode?",
+      "options": [
+        "1.59 g",
+        "3.18 g",
+        "6.35 g",
+        "12.70 g",
+        "0.635 g"
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Faraday's Law of Electrolysis: Q = I * t, where Q is charge in Coulombs, I is current in Amperes, and t is time in seconds. Moles of electrons = Q / F. Mass deposited m = (n_e / z) * M, where z is the number of electrons transferred per metal ion reduced (for Cu2+, z = 2).",
+        "proof": "1. Calculate total charge passed:\n   Q = I * t = 9.65 A * 1,000 s = 9,650 C.\n2. Calculate moles of electrons transferred:\n   n_e = Q / F = 9,650 C / 96,500 C/mol = 0.100 mol e-.\n3. Reduction stoichiometry at cathode:\n   Cu2+(aq) + 2e- -> Cu(s) (z = 2 electrons per atom Cu).\n   Moles of Cu deposited = n_e / 2 = 0.100 mol / 2 = 0.050 mol Cu.\n4. Calculate mass of Cu deposited:\n   mass = moles * molar mass = 0.050 mol * 63.5 g/mol = 63.5 / 20 = 3.175 g ~ 3.18 g.",
+        "distractor_elimination": "• Option A is FALSE: It divides by 4 instead of 2 (1.59 g).\n• Option C is FALSE: 6.35 g corresponds to 0.100 mol Cu, forgetting that Cu2+ requires TWO electrons per atom (z = 2).\n• Option D is FALSE: Multiplies by 2 instead of dividing by 2.\n• Option E is FALSE: Decimal place error by factor of 5."
+      },
+      "trap_alert": "Cu2+ requires TWO electrons per copper atom: moles of Cu = moles of electrons / 2 = 0.10 / 2 = 0.05 mol. Mass = 0.05 * 63.5 = 3.18 g, NOT 6.35 g!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Faraday's Law of Electrolysis: Q = I * t, where Q is charge in Coulombs, I is current in Amperes, and t is time in seconds. Moles of electrons = Q / F. Mass deposited m = (n_e / z) * M, where z is the number of electrons transferred per metal ion reduced (for Cu2+, z = 2).<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Calculate total charge passed:<br>   Q = I * t = 9.65 A * 1,000 s = 9,650 C.<br>2. Calculate moles of electrons transferred:<br>   n_e = Q / F = 9,650 C / 96,500 C/mol = 0.100 mol e-.<br>3. Reduction stoichiometry at cathode:<br>   Cu2+(aq) + 2e- -> Cu(s) (z = 2 electrons per atom Cu).<br>   Moles of Cu deposited = n_e / 2 = 0.100 mol / 2 = 0.050 mol Cu.<br>4. Calculate mass of Cu deposited:<br>   mass = moles * molar mass = 0.050 mol * 63.5 g/mol = 63.5 / 20 = 3.175 g ~ 3.18 g.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It divides by 4 instead of 2 (1.59 g).<br>• Option C is FALSE: 6.35 g corresponds to 0.100 mol Cu, forgetting that Cu2+ requires TWO electrons per atom (z = 2).<br>• Option D is FALSE: Multiplies by 2 instead of dividing by 2.<br>• Option E is FALSE: Decimal place error by factor of 5."
+    },
+    {
+      "id": "chem_pred_2025_37",
+      "domain_id": 10,
+      "domain_title": "Organic Chemistry",
+      "chapter": "E. Organic Chemistry",
+      "subtopic": "Cahn-Ingold-Prelog (CIP) Priorities & Absolute Stereochemistry (R/S)",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.4% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Organic stereochemistry; chiral carbons; Cahn-Ingold-Prelog (CIP) priority rules; (R) and (S) nomenclature",
+      "question": "Consider 2-chlorobutanoic acid, CH3-CH2-CH(Cl)-COOH. According to the Cahn-Ingold-Prelog (CIP) priority rules, what is the priority order of the four substituents attached to the stereocenter, and which absolute configuration is depicted when the lowest-priority substituent is oriented away from the observer in a clockwise priority sequence 1 -> 2 -> 3?",
+      "options": [
+        "Priority: -Cl > -COOH > -CH2CH3 > -H; Configuration is (R)",
+        "Priority: -COOH > -Cl > -CH2CH3 > -H; Configuration is (S)",
+        "Priority: -Cl > -CH2CH3 > -COOH > -H; Configuration is (R)",
+        "Priority: -Cl > -COOH > -CH2CH3 > -H; Configuration is (S)",
+        "Priority: -H > -CH2CH3 > -COOH > -Cl; Configuration is (E)"
+      ],
+      "correct_index": 0,
+      "correct_option": "A",
+      "explanation": {
+        "principle": "Cahn-Ingold-Prelog (CIP) Priority Rules: (1) Higher atomic number takes precedence. (2) If attached atoms are identical, compare atoms attached to them at the first point of difference. Multiple bonds are duplicated/triplicated (e.g. -COOH carbon is treated as bonded to (O, O, O)). (3) With the lowest priority group (4) pointing away, clockwise sequence 1 -> 2 -> 3 is (R) (rectus), counter-clockwise is (S) (sinister).",
+        "proof": "1. Stereocenter is Carbon-2: bonded to -Cl, -COOH, -CH2CH3, and -H.\n2. Rank substituents by CIP rules:\n   - Priority 1: -Cl (Atomic number Z = 17, highest of all directly attached atoms: Cl vs C vs C vs H).\n   - Compare -COOH and -CH2CH3: Both attach via Carbon (Z = 6).\n     * In -COOH, the carbonyl carbon has bonds to (O, O, O) (doubly bonded oxygen counts twice + single bonded OH = three O's, Z = 8).\n     * In -CH2CH3, the ethyl carbon is bonded to (C, H, H) (one carbon Z = 6, two hydrogens Z = 1).\n     * Comparing lists at first point of difference: Oxygen (Z = 8) beats Carbon (Z = 6).\n     * Therefore, -COOH is Priority 2, and -CH2CH3 is Priority 3.\n   - Priority 4: -H (Atomic number Z = 1, lowest).\n   Priority order: -Cl (1) > -COOH (2) > -CH2CH3 (3) > -H (4).\n3. Absolute configuration:\n   With -H (group 4) pointing away into the page, tracing 1 -> 2 -> 3 (-Cl -> -COOH -> -CH2CH3) proceeds CLOCKWISE.\n   Clockwise = (R) configuration.",
+        "distractor_elimination": "• Option B is FALSE: Chlorine (Z=17) has higher priority than Carbon (Z=6); -COOH cannot be priority 1.\n• Option C is FALSE: -COOH has higher priority than -CH2CH3 because (O,O,O) beats (C,H,H).\n• Option D is FALSE: Clockwise with group 4 away is (R), not (S).\n• Option E is FALSE: (E)/(Z) applies to alkenes with restricted rotation, not chiral tetrahedral stereocenters."
+      },
+      "trap_alert": "Cl (Z=17) is #1. Between -COOH and -CH2CH3, -COOH is #2 because oxygen (Z=8) beats carbon (Z=6). Clockwise with H away is (R)!",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Cahn-Ingold-Prelog (CIP) Priority Rules: (1) Higher atomic number takes precedence. (2) If attached atoms are identical, compare atoms attached to them at the first point of difference. Multiple bonds are duplicated/triplicated (e.g. -COOH carbon is treated as bonded to (O, O, O)). (3) With the lowest priority group (4) pointing away, clockwise sequence 1 -> 2 -> 3 is (R) (rectus), counter-clockwise is (S) (sinister).<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Stereocenter is Carbon-2: bonded to -Cl, -COOH, -CH2CH3, and -H.<br>2. Rank substituents by CIP rules:<br>   - Priority 1: -Cl (Atomic number Z = 17, highest of all directly attached atoms: Cl vs C vs C vs H).<br>   - Compare -COOH and -CH2CH3: Both attach via Carbon (Z = 6).<br>     * In -COOH, the carbonyl carbon has bonds to (O, O, O) (doubly bonded oxygen counts twice + single bonded OH = three O's, Z = 8).<br>     * In -CH2CH3, the ethyl carbon is bonded to (C, H, H) (one carbon Z = 6, two hydrogens Z = 1).<br>     * Comparing lists at first point of difference: Oxygen (Z = 8) beats Carbon (Z = 6).<br>     * Therefore, -COOH is Priority 2, and -CH2CH3 is Priority 3.<br>   - Priority 4: -H (Atomic number Z = 1, lowest).<br>   Priority order: -Cl (1) > -COOH (2) > -CH2CH3 (3) > -H (4).<br>3. Absolute configuration:<br>   With -H (group 4) pointing away into the page, tracing 1 -> 2 -> 3 (-Cl -> -COOH -> -CH2CH3) proceeds CLOCKWISE.<br>   Clockwise = (R) configuration.<br><br><strong>3. Distractor Elimination:</strong><br>• Option B is FALSE: Chlorine (Z=17) has higher priority than Carbon (Z=6); -COOH cannot be priority 1.<br>• Option C is FALSE: -COOH has higher priority than -CH2CH3 because (O,O,O) beats (C,H,H).<br>• Option D is FALSE: Clockwise with group 4 away is (R), not (S).<br>• Option E is FALSE: (E)/(Z) applies to alkenes with restricted rotation, not chiral tetrahedral stereocenters."
+    },
+    {
+      "id": "chem_pred_2025_38",
+      "domain_id": 10,
+      "domain_title": "Organic Chemistry",
+      "chapter": "E. Organic Chemistry",
+      "subtopic": "Meso Compounds, Stereoisomer Counts & Optical Inactivity",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.1% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Stereoisomerism; enantiomers, diastereomers, and meso forms; optical activity and plane of symmetry",
+      "question": "Tartaric acid, HOOC-CH(OH)-CH(OH)-COOH, possesses two chiral stereocenters. How many total stereoisomers exist for tartaric acid, and which specific stereoisomer is completely optically inactive despite containing asymmetric carbon atoms?",
+      "options": [
+        "4 stereoisomers; (2R, 3R)-tartaric acid is optically inactive due to external racemization.",
+        "3 stereoisomers; the (2R, 3S) meso form is optically inactive due to an internal plane of symmetry.",
+        "2 stereoisomers; only enantiomers exist because meso forms are constitutional isomers.",
+        "4 stereoisomers; all stereoisomers rotate plane-polarized light.",
+        "1 stereoisomer; tartaric acid is completely planar and achiral."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Meso Compounds and Internal Symmetry: A molecule with n chiral centers has a theoretical maximum of 2^n stereoisomers. However, when the molecule possesses identical sets of substituents on symmetric chiral centers, internal planes of symmetry (sigma) or inversion centers (i) can arise. The (2R, 3S) stereoisomer is superimposable on its mirror image (2S, 3R); it is an achiral MESO compound that exhibits zero optical rotation ([alpha] = 0°).",
+        "proof": "1. Stereocenters: Carbon-2 and Carbon-3 each have identical substituents: -H, -OH, -COOH, and -CH(OH)COOH.\n2. Possible configurations:\n   - (2R, 3R): Chiral, optically active (dextrorotatory, +12.7°).\n   - (2S, 3S): Chiral, optically active (levorotatory, -12.7°).\n   - (2R, 3S) and (2S, 3R): These are not separate molecules! Reflecting (2R, 3S) across its internal horizontal mirror plane produces (2S, 3R). Rotating by 180° in the plane proves they are superimposable identical molecules.\n3. Because of this internal plane of symmetry, optical rotation from the (2R) center is internally canceled by the equal and opposite rotation of the (3S) center.\n4. Total stereoisomers = 3 (one pair of enantiomers + one meso compound).",
+        "distractor_elimination": "• Option A is FALSE: 2^2 = 4 is reduced to 3 by symmetry; (2R,3R) is chiral and optically active.\n• Option C is FALSE: There are 3 stereoisomers, not 2; meso forms are stereoisomers (diastereomers of the enantiomers), not constitutional isomers.\n• Option D is FALSE: The meso compound does not rotate plane-polarized light.\n• Option E is FALSE: Tartaric acid is an sp3 tetrahedral organic acid, not a planar molecule."
+      },
+      "trap_alert": "Look for internal symmetry! Tartaric acid has identical ends (-COOH), so (2R,3S) is a MESO compound. Total stereoisomers = 3 (NOT 4), and the meso form is optically INACTIVE.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Meso Compounds and Internal Symmetry: A molecule with n chiral centers has a theoretical maximum of 2^n stereoisomers. However, when the molecule possesses identical sets of substituents on symmetric chiral centers, internal planes of symmetry (sigma) or inversion centers (i) can arise. The (2R, 3S) stereoisomer is superimposable on its mirror image (2S, 3R); it is an achiral MESO compound that exhibits zero optical rotation ([alpha] = 0°).<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Stereocenters: Carbon-2 and Carbon-3 each have identical substituents: -H, -OH, -COOH, and -CH(OH)COOH.<br>2. Possible configurations:<br>   - (2R, 3R): Chiral, optically active (dextrorotatory, +12.7°).<br>   - (2S, 3S): Chiral, optically active (levorotatory, -12.7°).<br>   - (2R, 3S) and (2S, 3R): These are not separate molecules! Reflecting (2R, 3S) across its internal horizontal mirror plane produces (2S, 3R). Rotating by 180° in the plane proves they are superimposable identical molecules.<br>3. Because of this internal plane of symmetry, optical rotation from the (2R) center is internally canceled by the equal and opposite rotation of the (3S) center.<br>4. Total stereoisomers = 3 (one pair of enantiomers + one meso compound).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: 2^2 = 4 is reduced to 3 by symmetry; (2R,3R) is chiral and optically active.<br>• Option C is FALSE: There are 3 stereoisomers, not 2; meso forms are stereoisomers (diastereomers of the enantiomers), not constitutional isomers.<br>• Option D is FALSE: The meso compound does not rotate plane-polarized light.<br>• Option E is FALSE: Tartaric acid is an sp3 tetrahedral organic acid, not a planar molecule."
+    },
+    {
+      "id": "chem_pred_2025_39",
+      "domain_id": 10,
+      "domain_title": "Organic Chemistry",
+      "chapter": "E. Organic Chemistry",
+      "subtopic": "Nucleophilic Substitution Mechanisms (SN1 vs SN2 & Walden Inversion)",
+      "difficulty": "Challenging (University-Level)",
+      "prediction_score": "99.5% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Nucleophilic substitution reactions; SN1 vs SN2 mechanisms; stereochemical inversion vs racemization; solvent effects",
+      "question": "An optically pure sample of (2R)-2-bromobutane is reacted under two separate reaction conditions:\n• Condition 1: Treated with Sodium cyanide (NaCN) in polar aprotic dimethyl sulfoxide (DMSO).\n• Condition 2: Heated in water/ethanol mixture (H2O/EtOH, polar protic solvent).\nWhat are the predominant mechanisms and stereochemical outcomes of these two reactions?",
+      "options": [
+        "Condition 1 proceeds via SN1 with complete retention of configuration; Condition 2 proceeds via SN2 with racemization.",
+        "Condition 1 proceeds via SN2 with complete inversion of configuration (Walden inversion) yielding (2S)-2-methylbutanenitrile; Condition 2 proceeds via SN1 with racemization yielding a racemic mixture of 2-butanol.",
+        "Both conditions proceed via SN2 producing 100% retention of (2R) configuration.",
+        "Both conditions proceed via SN1 yielding identical racemic mixtures.",
+        "Condition 1 produces an alkene via E2; Condition 2 produces an alkyl halide via halogen exchange."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "SN1 vs SN2 Mechanistic Determinants: (1) SN2 is concerted, bimolecular, favored by strong nucleophiles (:CN-) and polar aprotic solvents (DMSO), requiring backside attack on the C-Br sigma* orbital, causing 100% WALDEN INVERSION. (2) SN1 is stepwise, unimolecular, favored by weak nucleophiles (H2O) and polar protic solvents, proceeding through an achiral planar sp2 carbocation intermediate that is attacked from either face with equal probability, yielding RACEMIZATION.",
+        "proof": "1. Condition 1: (2R)-2-bromobutane + NaCN in DMSO:\n   - Secondary alkyl halide + strong nucleophile (:CN-) + polar aprotic solvent (DMSO).\n   - Polar aprotic solvents solvate Na+ cations but leave :CN- anions naked and highly reactive, strongly accelerating the concerted SN2 pathway.\n   - Nucleophilic attack occurs exclusively from the backside opposite the Br- leaving group.\n   - This 180° backside displacement produces 100% inversion of stereochemical configuration (Walden inversion), converting (2R)-2-bromobutane into (2S)-2-methylbutanenitrile.\n2. Condition 2: (2R)-2-bromobutane + H2O/EtOH:\n   - Polar protic solvent stabilizes the departing halide anion (Br-) via hydrogen bonding, facilitating rate-determining heterolytic dissociation.\n   - Generates a planar, achiral sec-butyl carbocation intermediate (CH3-CH(+)-CH2CH3).\n   - Water attacks the empty p-orbital with equal probability from the top face (retention) or bottom face (inversion).\n   - Subsequent deprotonation yields a 50:50 racemic mixture of (2R)-2-butanol and (2S)-2-butanol (optically inactive).",
+        "distractor_elimination": "• Option A is FALSE: It inverts the mechanisms; SN2 gives inversion, not retention; SN1 gives racemization.\n• Option C is FALSE: SN2 never produces retention; backside attack always inverts configuration.\n• Option D is FALSE: Strong nucleophiles in polar aprotic solvents do not undergo SN1 solvolysis.\n• Option E is FALSE: NaCN is a good nucleophile and weak base, favoring substitution over elimination."
+      },
+      "trap_alert": "SN2 in polar aprotic DMSO = 100% BACKSIDE WALDEN INVERSION ((2R) -> (2S))! SN1 in polar protic H2O = RACEMIZATION via planar carbocation.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> SN1 vs SN2 Mechanistic Determinants: (1) SN2 is concerted, bimolecular, favored by strong nucleophiles (:CN-) and polar aprotic solvents (DMSO), requiring backside attack on the C-Br sigma* orbital, causing 100% WALDEN INVERSION. (2) SN1 is stepwise, unimolecular, favored by weak nucleophiles (H2O) and polar protic solvents, proceeding through an achiral planar sp2 carbocation intermediate that is attacked from either face with equal probability, yielding RACEMIZATION.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Condition 1: (2R)-2-bromobutane + NaCN in DMSO:<br>   - Secondary alkyl halide + strong nucleophile (:CN-) + polar aprotic solvent (DMSO).<br>   - Polar aprotic solvents solvate Na+ cations but leave :CN- anions naked and highly reactive, strongly accelerating the concerted SN2 pathway.<br>   - Nucleophilic attack occurs exclusively from the backside opposite the Br- leaving group.<br>   - This 180° backside displacement produces 100% inversion of stereochemical configuration (Walden inversion), converting (2R)-2-bromobutane into (2S)-2-methylbutanenitrile.<br>2. Condition 2: (2R)-2-bromobutane + H2O/EtOH:<br>   - Polar protic solvent stabilizes the departing halide anion (Br-) via hydrogen bonding, facilitating rate-determining heterolytic dissociation.<br>   - Generates a planar, achiral sec-butyl carbocation intermediate (CH3-CH(+)-CH2CH3).<br>   - Water attacks the empty p-orbital with equal probability from the top face (retention) or bottom face (inversion).<br>   - Subsequent deprotonation yields a 50:50 racemic mixture of (2R)-2-butanol and (2S)-2-butanol (optically inactive).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: It inverts the mechanisms; SN2 gives inversion, not retention; SN1 gives racemization.<br>• Option C is FALSE: SN2 never produces retention; backside attack always inverts configuration.<br>• Option D is FALSE: Strong nucleophiles in polar aprotic solvents do not undergo SN1 solvolysis.<br>• Option E is FALSE: NaCN is a good nucleophile and weak base, favoring substitution over elimination."
+    },
+    {
+      "id": "chem_pred_2025_40",
+      "domain_id": 10,
+      "domain_title": "Organic Chemistry",
+      "chapter": "E. Organic Chemistry",
+      "subtopic": "Electrophilic Addition to Alkenes & Markovnikov's Rule",
+      "difficulty": "Moderate-Challenging",
+      "prediction_score": "99.2% Predicted",
+      "mur_syllabus_reference": "MUR Decree Annex A: Reactions of alkenes; electrophilic addition; Markovnikov's rule and carbocation stability",
+      "question": "When 2-methylbut-2-ene, CH3-C(CH3)=CH-CH3, reacts with anhydrous hydrogen bromide (HBr) in the absence of peroxides, what is the major organic product, and what fundamental electronic factor dictates this regiochemical preference?",
+      "options": [
+        "2-bromo-3-methylbutane; the electrophile adds to form the least substituted carbocation intermediate.",
+        "2-bromo-2-methylbutane; addition of H+ to C3 generates a tertiary (3°) carbocation at C2, which is more stable than a secondary (2°) carbocation due to hyperconjugation and inductive electron donation.",
+        "1-bromo-2-methylbutane; steric hindrance forces bromine onto the terminal methyl group.",
+        "2,3-dibromo-2-methylbutane; HBr oxidizes the double bond via anti-addition.",
+        "2-methylbutane; the alkene undergoes catalytic hydrogenation by HBr."
+      ],
+      "correct_index": 1,
+      "correct_option": "B",
+      "explanation": {
+        "principle": "Markovnikov's Rule and Carbocation Stability: Electrophilic addition of hydrogen halides (HX) to unsymmetrical alkenes proceeds via the more stable carbocation intermediate. Carbocation stability hierarchy: 3° (tertiary) > 2° (secondary) > 1° (primary) > methyl. Tertiary carbocations are stabilized by hyperconjugation (overlap of adjacent C-H and C-C sigma bonds with the empty p-orbital) and inductive electron donation from alkyl groups.",
+        "proof": "1. Electrophilic attack: The pi-electron pair of the double bond attacks the electrophilic proton (H+) of HBr.\n2. Two possible carbocation intermediates:\n   - Pathway A: H+ adds to Carbon-3 (the carbon with one hydrogen). This places the positive charge on Carbon-2, forming a TERTIARY (3°) carbocation: (CH3)2C(+) - CH2 - CH3. This carbocation is stabilized by 8 hyperconjugative hydrogens and the +I inductive effect of three alkyl groups.\n   - Pathway B: H+ adds to Carbon-2 (the carbon with no hydrogens). This places the positive charge on Carbon-3, forming a SECONDARY (2°) carbocation: (CH3)2CH - CH(+) - CH3, stabilized by only 4 hyperconjugative hydrogens.\n3. The reaction proceeds through the much lower-energy Pathway A.\n4. Nucleophilic capture: Bromide ion (:Br-) rapidly attacks the 3° carbocation at Carbon-2, forming 2-bromo-2-methylbutane as the exclusive major product.",
+        "distractor_elimination": "• Option A is FALSE: 2-bromo-3-methylbutane would arise from the less stable 2° carbocation (minor product).\n• Option C is FALSE: 1-bromo-2-methylbutane requires terminal addition, which does not occur on 2-methylbut-2-ene.\n• Option D is FALSE: Dibromo addition requires molecular Br2, not HBr; HBr is not an oxidizing agent.\n• Option E is FALSE: Reaction with HBr is a hydrohalogenation, not a reduction/hydrogenation."
+      },
+      "trap_alert": "H+ adds to the carbon with MORE hydrogens (C3 has 1 H, C2 has 0 H) to form the more stable TERTIARY (3°) carbocation! Br- then attacks C2 -> 2-bromo-2-methylbutane.",
+      "explanation_html": "<strong>1. Legitimizing Principle:</strong> Markovnikov's Rule and Carbocation Stability: Electrophilic addition of hydrogen halides (HX) to unsymmetrical alkenes proceeds via the more stable carbocation intermediate. Carbocation stability hierarchy: 3° (tertiary) > 2° (secondary) > 1° (primary) > methyl. Tertiary carbocations are stabilized by hyperconjugation (overlap of adjacent C-H and C-C sigma bonds with the empty p-orbital) and inductive electron donation from alkyl groups.<br><br><strong>2. Step-by-Step Chemical Proof:</strong><br>1. Electrophilic attack: The pi-electron pair of the double bond attacks the electrophilic proton (H+) of HBr.<br>2. Two possible carbocation intermediates:<br>   - Pathway A: H+ adds to Carbon-3 (the carbon with one hydrogen). This places the positive charge on Carbon-2, forming a TERTIARY (3°) carbocation: (CH3)2C(+) - CH2 - CH3. This carbocation is stabilized by 8 hyperconjugative hydrogens and the +I inductive effect of three alkyl groups.<br>   - Pathway B: H+ adds to Carbon-2 (the carbon with no hydrogens). This places the positive charge on Carbon-3, forming a SECONDARY (2°) carbocation: (CH3)2CH - CH(+) - CH3, stabilized by only 4 hyperconjugative hydrogens.<br>3. The reaction proceeds through the much lower-energy Pathway A.<br>4. Nucleophilic capture: Bromide ion (:Br-) rapidly attacks the 3° carbocation at Carbon-2, forming 2-bromo-2-methylbutane as the exclusive major product.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is FALSE: 2-bromo-3-methylbutane would arise from the less stable 2° carbocation (minor product).<br>• Option C is FALSE: 1-bromo-2-methylbutane requires terminal addition, which does not occur on 2-methylbut-2-ene.<br>• Option D is FALSE: Dibromo addition requires molecular Br2, not HBr; HBr is not an oxidizing agent.<br>• Option E is FALSE: Reaction with HBr is a hydrohalogenation, not a reduction/hydrogenation."
+    }
+  ]
+}

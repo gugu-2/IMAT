@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "math_2027_f01",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Relative Risk (RR) vs. Odds Ratio (OR) in Clinical Cohort Studies",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A multicenter prospective cohort study follows 1,000 heart failure patients over 12 months to evaluate an SGLT2 inhibitor against placebo. In the SGLT2 inhibitor group (n = 500), 20 patients suffer primary cardiovascular death or hospitalization (4.0%). In the placebo cohort (n = 500), 50 patients suffer cardiovascular death or hospitalization (10.0%). Which option correctly states the Relative Risk (RR) of the primary outcome in the treated cohort, the Odds Ratio (OR), and the mathematical relationship between OR and RR for common outcomes?",
+    "options": [
+      "A. RR = 0.40; OR = 0.375 (3/8); because the outcome is not rare (prevalence > 1%), OR diverges from RR and overstates the protective magnitude relative to 1.0.",
+      "B. RR = 0.375; OR = 0.40; OR is universally closer to the null value (1.0) than RR across all clinical trials.",
+      "C. RR = 0.40; OR = 0.40; in prospective cohort designs, OR and RR are algebraically identical regardless of disease incidence.",
+      "D. RR = 2.50; OR = 2.67; the risk ratio is defined as control event rate divided by experimental event rate.",
+      "E. RR = 0.60; OR = 0.625; representing the relative risk reduction instead of relative risk."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In cohort studies, Relative Risk is the ratio of cumulative incidences: RR = [a / (a + b)] / [c / (c + d)] = EER / CER. The Odds Ratio is the ratio of odds: OR = [a / b] / [c / d] = (a · d) / (b · c). Under the 'rare disease assumption' (when outcome incidence p << 1), (1 - p) ≈ 1, meaning OR ≈ RR. When the outcome is relatively frequent (e.g. 5–10%), the denominator of the odds diverges from the total sample size, causing OR to diverge from RR and exaggerate effect size away from the null value 1.0.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Experimental Event Rate (EER): 20 / 500 = 0.04 (4.0%).<br>• Control Event Rate (CER): 50 / 500 = 0.10 (10.0%).<br>• Relative Risk (RR): EER / CER = 0.04 / 0.10 = 0.40 (Relative Risk Reduction RRR = 1 - 0.40 = 60.0%).<br>• Experimental Odds: 20 / (500 - 20) = 20 / 480 = 1 / 24.<br>• Control Odds: 50 / (500 - 50) = 50 / 450 = 1 / 9.<br>• Odds Ratio (OR): (1 / 24) / (1 / 9) = 9 / 24 = 3 / 8 = 0.375.<br>• Since 0.375 < 0.40, OR is farther from 1.0 than RR, reflecting an exaggerated apparent protective efficacy.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Precisely evaluates RR = 0.40, OR = 0.375, and explains OR magnification away from null.<br>• Option B is false: Transposes RR and OR values, and falsely claims OR is closer to 1.0.<br>• Option C is false: Equating OR and RR ignores the distinction between odds [p/(1-p)] and probability [p].<br>• Option D is false: Calculates inverted ratios (CER/EER = 0.10/0.04 = 2.50).<br>• Option E is false: Conflates Relative Risk Reduction (RRR = 1 - RR = 0.60) with Relative Risk.",
+    "trapAlert": "Never assume OR = RR unless disease incidence is negligible (< 1%). OR always lies further from 1.0 than RR (more extreme in both protective and harmful directions)."
+  },
+  {
+    "id": "math_2027_f02",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Absolute Risk Reduction (ARR) and Number Needed to Treat (NNT)",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a double-blind randomized clinical trial evaluating mepolizumab (an anti-IL-5 monoclonal antibody) in severe eosinophilic asthma: the placebo control group experiences 120 severe asthma exacerbations among 600 patients over 1 year (CER = 20.0%), whereas the mepolizumab treatment group experiences 45 severe exacerbations among 600 patients over the same period (EER = 7.5%). What is the Absolute Risk Reduction (ARR) and the corresponding Number Needed to Treat (NNT) to prevent one severe exacerbation over 1 year?",
+    "options": [
+      "A. ARR = 62.5% (0.625); NNT = 2 (rounded from 1.6)",
+      "B. ARR = 12.5% (0.125); NNT = 8",
+      "C. ARR = 7.5% (0.075); NNT = 13 (rounded from 13.3)",
+      "D. ARR = 12.5% (0.125); NNT = 13",
+      "E. ARR = 20.0% (0.20); NNT = 5"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Absolute Risk Reduction (ARR) quantifies the arithmetic difference between the control event rate (CER) and experimental event rate (EER): ARR = CER - EER. The Number Needed to Treat (NNT) is the exact mathematical reciprocal of ARR: NNT = 1 / ARR. NNT represents the number of patients who must receive the active intervention for the specified duration to avert one adverse target event.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Control Event Rate: CER = 120 / 600 = 0.20 = 20.0%.<br>• Experimental Event Rate: EER = 45 / 600 = 0.075 = 7.5%.<br>• Absolute Risk Reduction: ARR = CER - EER = 0.20 - 0.075 = 0.125 = 12.5% (or 1/8).<br>• Number Needed to Treat: NNT = 1 / ARR = 1 / 0.125 = 1 / (1/8) = 8 patients.<br>• (Note: Relative Risk Reduction RRR = ARR / CER = 0.125 / 0.20 = 0.625 = 62.5%).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Uses Relative Risk Reduction (RRR = 62.5%) instead of ARR, deriving NNT = 1/0.625 = 1.6.<br>• Option B is CORRECT: Exactly calculates ARR = 0.125 (12.5%) and NNT = 8.<br>• Option C is false: Takes EER (7.5%) as ARR, yielding NNT = 1 / 0.075 ≈ 13.3.<br>• Option D is false: Retains correct ARR (12.5%) but pairs it with an incorrect NNT (13) derived from EER.<br>• Option E is false: Uses baseline risk CER (20.0%) directly, deriving NNT = 1 / 0.20 = 5.",
+    "trapAlert": "NNT is ALWAYS calculated from the Absolute Risk Reduction (ARR), NEVER from Relative Risk Reduction (RRR) or raw event rates."
+  },
+  {
+    "id": "math_2027_f03",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Number Needed to Harm (NNH) and Absolute Risk Increase (ARI)",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A phase III safety trial compares a novel direct oral anticoagulant (DOAC) against low-molecular-weight heparin (LMWH) for thromboprophylaxis. In the DOAC group, 28 major gastrointestinal hemorrhages occur among 700 patients (4.0%). In the LMWH group, 10 major gastrointestinal hemorrhages occur among 1,000 patients (1.0%). What is the Absolute Risk Increase (ARI) of major hemorrhage associated with the DOAC, and what is the exact Number Needed to Harm (NNH)?",
+    "options": [
+      "A. ARI = 0.04 (4.0%); NNH = 25",
+      "B. ARI = 0.01 (1.0%); NNH = 100",
+      "C. ARI = 0.03 (3.0%); NNH = 33.3 (or 100/3, clinically rounded to 34)",
+      "D. ARI = 3.0 (300%); NNH = 333",
+      "E. ARI = 0.03 (3.0%); NNH = 4 (calculated as RR = 4.0)"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> When an intervention increases an adverse event, the Absolute Risk Increase (ARI, or Attributable Risk) is ARI = EER - CER. The Number Needed to Harm (NNH) is the reciprocal of ARI: NNH = 1 / ARI. In clinical ethics, NNH reflects how many patients need to be exposed to the risk factor or drug for one additional adverse event to occur.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Experimental (DOAC) Event Rate: EER = 28 / 700 = 4 / 100 = 0.04 = 4.0%.<br>• Control (LMWH) Event Rate: CER = 10 / 1,000 = 0.01 = 1.0%.<br>• Absolute Risk Increase: ARI = EER - CER = 0.04 - 0.01 = 0.03 = 3.0% (3/100).<br>• Number Needed to Harm: NNH = 1 / ARI = 1 / 0.03 = 100 / 3 = 33.33... (clinically reported as 33.3 or rounded to 34).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits control risk, calculating NNH = 1 / 0.04 = 25 directly from EER.<br>• Option B is false: Uses control baseline incidence CER (1.0%), calculating NNH = 1 / 0.01 = 100.<br>• Option C is CORRECT: Accurately identifies ARI = 0.03 (3.0%) and NNH = 100/3 ≈ 33.3.<br>• Option D is false: Percentage conversion error (using 3.0 instead of 0.03 in decimal arithmetic).<br>• Option E is false: Conflates NNH with the Relative Risk (RR = 0.04 / 0.01 = 4.0).",
+    "trapAlert": "ARI must subtract the background baseline control rate (CER); never divide 1 by EER alone. When computing reciprocals, ensure percentages are converted to decimals (3% = 0.03, so 1/0.03 = 100/3)."
+  },
+  {
+    "id": "math_2027_f04",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Case-Control Studies and the Rare Disease Assumption for the Odds Ratio",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a hospital epidemiology investigation of post-operative surgical site infection (a common event), an investigator analyzes two groups: Surgical Unit A (high exposure, n = 100) records 60 infections (60%), while Surgical Unit B (standard exposure, n = 100) records 40 infections (40%). Which option correctly provides the exact Relative Risk (RR) and Odds Ratio (OR), and explains why the Odds Ratio cannot be used as a proxy for Relative Risk in this scenario?",
+    "options": [
+      "A. RR = 2.25; OR = 1.50; OR underestimates RR because infected patients represent the majority.",
+      "B. RR = 1.50; OR = 1.50; the rare disease assumption holds whenever the total group sample sizes are equal.",
+      "C. RR = 0.67; OR = 0.44; calculated using infection-free patients as the primary numerator.",
+      "D. RR = 1.50; OR = 2.25; because the event is frequent (40%–60%), the non-event terms (1 - p) drop significantly below 1, causing the Odds Ratio to markedly inflate the apparent relative risk.",
+      "E. RR = 1.25; OR = 3.00; caused by residual confounding between surgical techniques."
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In epidemiology, the 'rare disease assumption' states that when disease risk p is very small (p < 0.05, ideally < 0.01), 1 - p ≈ 1, and consequently Odds = p / (1 - p) ≈ p. Under this condition, Odds Ratio OR = [p1/(1 - p1)] / [p2/(1 - p2)] ≈ p1 / p2 = Relative Risk. However, if the outcome is common, 1 - p diverges significantly from 1, and OR substantially exaggerates the Relative Risk (if RR > 1, OR > RR; if RR < 1, OR < RR).<br><br><strong>2. Step-by-Step Proof:</strong><br>• High-exposure group: a = 60 infected, b = 40 non-infected (total n1 = 100). EER = 60 / 100 = 0.60.<br>• Standard group: c = 40 infected, d = 60 non-infected (total n2 = 100). CER = 40 / 100 = 0.40.<br>• Relative Risk: RR = EER / CER = 0.60 / 0.40 = 6/4 = 1.50.<br>• Odds in high-exposure: a / b = 60 / 40 = 1.50.<br>• Odds in standard group: c / d = 40 / 60 = 2/3 ≈ 0.667.<br>• Odds Ratio: OR = (a · d) / (b · c) = (60 · 60) / (40 · 40) = 3600 / 1600 = 9/4 = 2.25.<br>• Here, OR = 2.25 is 50% larger than RR = 1.50, demonstrating severe distortion.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts the values of RR and OR.<br>• Option B is false: Claims OR equals RR; sample size equality has no bearing on the rare disease assumption.<br>• Option C is false: Calculates inverse metrics for the uninfected outcome.<br>• Option D is CORRECT: Exactly computes RR = 1.50, OR = 2.25, and provides the rigorous mathematical justification.<br>• Option E is false: Fabricated values without mathematical basis.",
+    "trapAlert": "When an outcome is frequent (> 10%), the Odds Ratio cannot substitute for Relative Risk. OR always lies further away from 1.0 (null) than RR."
+  },
+  {
+    "id": "math_2027_f05",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Attributable Risk (AR) and Population Attributable Risk Fraction (PARF)",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a 10-year prospective cardiovascular cohort of 20,000 individuals, 25% of the population are active cigarette smokers (prevalence P = 0.25). The 10-year cumulative incidence of coronary artery disease is 16.0% among smokers (I_e = 0.16) and 4.0% among non-smokers (I_u = 0.04). What is the Attributable Risk in the exposed (AR = I_e - I_u), the Relative Risk (RR), and the Population Attributable Risk Fraction (PARF) calculated via Levin's formula: PARF = [P · (RR - 1)] / [P · (RR - 1) + 1]?",
+    "options": [
+      "A. AR = 4.0%; RR = 4.0; PARF = 25.0%",
+      "B. AR = 12.0%; RR = 0.25; PARF = 50.0%",
+      "C. AR = 20.0%; RR = 4.0; PARF = 60.0%",
+      "D. AR = 12.0%; RR = 12.0; PARF = 75.0%",
+      "E. AR = 12.0% (0.12); RR = 4.0; PARF = 3/7 (≈ 42.9%)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Attributable Risk among the exposed (AR, or Risk Difference) represents the excess disease incidence solely attributable to the risk factor: AR = I_e - I_u. The Relative Risk is RR = I_e / I_u. The Population Attributable Risk Fraction (PARF, or Levin's formula) quantifies the proportion of all disease cases in the total population that would be eliminated if the exposure were completely removed: PARF = [P · (RR - 1)] / [P · (RR - 1) + 1].<br><br><strong>2. Step-by-Step Proof:</strong><br>• Attributable Risk in exposed: AR = I_e - I_u = 0.16 - 0.04 = 0.12 = 12.0% (12 excess cases per 100 smokers).<br>• Relative Risk: RR = I_e / I_u = 0.16 / 0.04 = 4.0.<br>• Excess relative risk: RR - 1 = 4.0 - 1.0 = 3.0.<br>• Levin's numerator: P · (RR - 1) = 0.25 · 3.0 = 0.75.<br>• Levin's denominator: 0.75 + 1.0 = 1.75.<br>• PARF = 0.75 / 1.75 = 75 / 175 = 3 / 7 ≈ 42.86% (≈ 42.9%).<br>• (Verification via total population incidence: I_pop = 0.25·0.16 + 0.75·0.04 = 0.04 + 0.03 = 0.07. PARF = (I_pop - I_u) / I_pop = (0.07 - 0.04) / 0.07 = 0.03 / 0.07 = 3/7).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Mistakenly sets AR equal to non-smoker baseline rate (4.0%).<br>• Option B is false: Inverts Relative Risk (0.04 / 0.16 = 0.25).<br>• Option C is false: Adds rates (0.16 + 0.04 = 0.20) rather than subtracting them.<br>• Option D is false: Conflates AR (12.0%) with Relative Risk.<br>• Option E is CORRECT: Exactly derives AR = 12.0%, RR = 4.0, and PARF = 3/7 ≈ 42.9%.",
+    "trapAlert": "PARF depends on BOTH relative risk (RR) and exposure prevalence (P). A high RR with negligible prevalence yields low population impact, whereas a modest RR with high prevalence yields enormous PARF."
+  },
+  {
+    "id": "math_2027_f06",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Net Clinical Benefit: Harmonic Balancing of NNT vs NNH",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A dual antiplatelet regimen for secondary prevention of transient ischemic attack (TIA) provides an Absolute Risk Reduction of ARR = 0.04 (4.0%) for ischemic stroke, but incurs an Absolute Risk Increase of ARI = 0.01 (1.0%) for major life-threatening gastrointestinal hemorrhage. If a national health authority treats a cohort of 2,000 post-TIA patients with this dual regimen over 1 year, how many strokes are prevented, how many major hemorrhages are caused, and what is the exact ratio of strokes prevented per hemorrhage caused?",
+    "options": [
+      "A. 80 strokes prevented; 20 hemorrhages caused; ratio = 4.0 strokes prevented per hemorrhage caused",
+      "B. 25 strokes prevented; 100 hemorrhages caused; ratio = 0.25 strokes prevented per hemorrhage caused",
+      "C. 40 strokes prevented; 10 hemorrhages caused; ratio = 4.0 strokes prevented per hemorrhage caused",
+      "D. 80 strokes prevented; 40 hemorrhages caused; ratio = 2.0 strokes prevented per hemorrhage caused",
+      "E. 160 strokes prevented; 20 hemorrhages caused; ratio = 8.0 strokes prevented per hemorrhage caused"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Net clinical benefit balances therapeutic efficacy against iatrogenic harm. For a cohort of size N, the expected number of prevented primary events is E_prevented = N · ARR, and the expected number of adverse events caused is E_harm = N · ARI. The ratio of benefits to harms is E_prevented / E_harm = (N · ARR) / (N · ARI) = ARR / ARI = (1 / NNT) / (1 / NNH) = NNH / NNT.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Cohort size: N = 2,000 patients.<br>• Strokes prevented: E_prevented = 2,000 · ARR = 2,000 · 0.04 = 80 strokes prevented.<br>• Hemorrhages caused: E_harm = 2,000 · ARI = 2,000 · 0.01 = 20 major hemorrhages caused.<br>• Ratio: 80 / 20 = 4.0 strokes prevented per hemorrhage caused.<br>• Notice: NNT = 1 / 0.04 = 25 patients; NNH = 1 / 0.01 = 100 patients. The ratio NNH / NNT = 100 / 25 = 4.0.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly calculates 80 prevented, 20 caused, and ratio = 4.0.<br>• Option B is false: Confuses NNT (25) and NNH (100) with the absolute event counts in the 2,000-patient cohort.<br>• Option C is false: Halves the true event counts by applying a 1,000-patient divisor.<br>• Option D is false: Doubles the hemorrhage rate to 0.02 (40 events).<br>• Option E is false: Doubles the stroke efficacy to 8.0% (160 strokes).",
+    "trapAlert": "Do not confuse the NNT and NNH values (25 and 100) with the actual number of events in a specified population of size N. Events = N · ARR and N · ARI."
+  },
+  {
+    "id": "math_2027_f07",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Confounding and Simpson's Paradox in Stratified Clinical Risk",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A clinical trial compares Drug A and Drug B for septic shock across two stratified ICU sub-populations (Severe Shock vs. Moderate Shock):\n• Severe Shock Stratum: Drug A achieves 40 survivors out of 100 patients (40.0%); Drug B achieves 9 survivors out of 30 patients (30.0%).\n• Moderate Shock Stratum: Drug A achieves 27 survivors out of 30 patients (90.0%); Drug B achieves 80 survivors out of 100 patients (80.0%).\nWhen the investigator pools the unadjusted raw data, Drug A shows 67 survivors out of 130 patients (≈ 51.5%), while Drug B shows 89 survivors out of 130 patients (≈ 68.5%). What mathematical phenomenon explains why Drug B appears superior in aggregate despite Drug A having higher survival in BOTH individual strata?",
+    "options": [
+      "A. Berkson's selection bias due to differential hospital admission rates.",
+      "B. Simpson's Paradox caused by confounding by indication: treatment allocation was severely unbalanced across strata, with Drug A predominantly assigned to the severe cohort (100/130 ≈ 76.9%) with poor prognosis, while Drug B was assigned predominantly to the moderate cohort (100/130 ≈ 76.9%) with high baseline survival.",
+      "C. Failure of the Central Limit Theorem because the sub-sample of 30 patients violates normality.",
+      "D. Type II beta-error caused by power dissipation under stratified Chi-square testing.",
+      "E. Measurement attrition bias caused by loss to follow-up in the moderate stratum."
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Simpson's Paradox occurs when a trend or association observed within multiple individual subgroups is reversed when the data are aggregated. Mathematically, if a/b > e/f and c/d > g/h, it is NOT generally true that (a+c)/(b+d) > (e+g)/(f+h) when the weighting denominators (sample allocations) are disproportionate. In medicine, this arises through 'confounding by indication', where disease severity dictates drug choice.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Stratum 1 (Severe): Drug A survival = 40/100 = 40.0% > Drug B survival = 9/30 = 30.0% (Drug A wins by +10.0%).<br>• Stratum 2 (Moderate): Drug A survival = 27/30 = 90.0% > Drug B survival = 80/100 = 80.0% (Drug A wins by +10.0%).<br>• Pooled aggregate:<br>  - Drug A: (40 + 27) / (100 + 30) = 67 / 130 ≈ 51.54%.<br>  - Drug B: (9 + 80) / (30 + 100) = 89 / 130 ≈ 68.46%.<br>• Because Drug A's sample is weighted 76.9% by the poor-prognosis severe stratum (baseline ~30-40%), its aggregate average is dragged down. Drug B's sample is weighted 76.9% by the high-survival moderate stratum (baseline ~80-90%), lifting its aggregate average.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Berkson's bias refers to hospital inpatient selection distortion, not aggregated categorical probability reversal.<br>• Option B is CORRECT: Precisely diagnoses Simpson's Paradox and details the exact mathematical weighting mechanism.<br>• Option C is false: The Central Limit Theorem governs the distribution of sample means, not deterministic contingency table arithmetic.<br>• Option D is false: Type II error is a statistical test power issue, not an algebraic trend inversion.<br>• Option E is false: Attrition bias involves patient dropouts, which did not occur here.",
+    "trapAlert": "Whenever an intervention performs superiorly in EVERY stratum but appears worse in total aggregate, recognize Simpson's Paradox resulting from confounding by indication."
+  },
+  {
+    "id": "math_2027_f08",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Hazard Ratio (HR) and Median Survival Time in Oncology",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In an oncology phase III trial evaluating a tyrosine kinase inhibitor under an exponential survival model (where hazard rate lambda is constant over time, and median survival is T_med = ln(2) / lambda), the control group has a constant mortality hazard rate of lambda_ctrl = 0.05 month^-1, yielding a control median survival of T_med,ctrl = 20 · ln(2) months (≈ 13.86 months). The experimental therapy achieves a constant Hazard Ratio of HR = 0.625 (5/8). What is the experimental group hazard rate (lambda_exp) and its exact median survival time (T_med,exp)?",
+    "options": [
+      "A. lambda_exp = 0.08 month^-1; T_med,exp = 12.5 · ln(2) months (≈ 8.66 months)",
+      "B. lambda_exp = 0.05 month^-1; T_med,exp = 20.0 · ln(2) months (≈ 13.86 months)",
+      "C. lambda_exp = 0.03125 month^-1 (1/32 month^-1); T_med,exp = 32 · ln(2) months (≈ 22.18 months, prolonged by a factor of 1/HR = 1.6)",
+      "D. lambda_exp = 0.03125 month^-1; T_med,exp = 12.5 · ln(2) months",
+      "E. lambda_exp = 0.020 month^-1; T_med,exp = 50 · ln(2) months (≈ 34.65 months)"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In parametric exponential survival models, survival probability is S(t) = e^(-lambda · t). Setting S(T_med) = 0.5 yields e^(-lambda · T_med) = 1/2 => -lambda · T_med = -ln(2) => T_med = ln(2) / lambda. The Hazard Ratio is defined as HR = lambda_exp / lambda_ctrl. Therefore, lambda_exp = HR · lambda_ctrl, and the experimental median survival is T_med,exp = ln(2) / lambda_exp = ln(2) / (HR · lambda_ctrl) = T_med,ctrl / HR.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Control hazard: lambda_ctrl = 0.05 month^-1 = 1/20 month^-1.<br>• Control median: T_med,ctrl = ln(2) / (1/20) = 20 · ln(2) months ≈ 13.86 months.<br>• Experimental hazard: lambda_exp = HR · lambda_ctrl = (5/8) · (1/20) = 5 / 160 = 1 / 32 = 0.03125 month^-1.<br>• Experimental median: T_med,exp = ln(2) / lambda_exp = ln(2) / (1/32) = 32 · ln(2) months.<br>• Since ln(2) ≈ 0.69315: T_med,exp = 32 · 0.69315 ≈ 22.18 months.<br>• Verification of ratio: T_med,exp / T_med,ctrl = 32 / 20 = 1.60 = 1 / 0.625 = 1 / HR.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Divides hazard by HR instead of multiplying (0.05 / 0.625 = 0.08), falsely shortening median survival.<br>• Option B is false: Assumes HR = 1.0 (no therapeutic benefit).<br>• Option C is CORRECT: Accurately evaluates lambda_exp = 1/32 month^-1 and T_med,exp = 32 · ln(2) months.<br>• Option D is false: Matches correct hazard rate but applies inverted formula to median survival.<br>• Option E is false: Uses arbitrary hazard rate 0.02 month^-1.",
+    "trapAlert": "Hazard is a rate of failure (death). An effective drug with HR < 1 REDUCES the hazard rate (multiplies lambda by HR), which in turn INCREASES median survival time by the reciprocal factor (1 / HR)."
+  },
+  {
+    "id": "math_2027_f09",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Sensitivity, Specificity, Positive Predictive Value (PPV), and Negative Predictive Value (NPV)",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A cohort of 1,000 patients presenting to an emergency department with acute retrosternal chest pain is screened for acute myocardial infarction (AMI). The true prevalence of AMI in this cohort is 15.0% (150 patients). A novel high-sensitivity cardiac troponin assay has a Sensitivity of 96.0% and a Specificity of 90.0%. What are the exact Positive Predictive Value (PPV) and Negative Predictive Value (NPV) of this assay in this clinical cohort?",
+    "options": [
+      "A. PPV = 96.0%; NPV = 90.0%",
+      "B. PPV = 90.0%; NPV = 96.0%",
+      "C. PPV = 144 / 150 (96.0%); NPV = 765 / 850 (90.0%)",
+      "D. PPV = 144 / 229 (≈ 62.9%); NPV = 765 / 771 (≈ 99.2%)",
+      "E. PPV = 85 / 229 (≈ 37.1%); NPV = 6 / 771 (≈ 0.8%)"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In diagnostic testing, Sensitivity = TP / (TP + FN) and Specificity = TN / (TN + FP) are intrinsic test properties. In contrast, Positive Predictive Value PPV = TP / (TP + FP) and Negative Predictive Value NPV = TN / (TN + FN) depend inherently upon disease prevalence in the tested population.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Total population: N = 1,000.<br>• Diseased cohort (AMI+): 1,000 · 0.15 = 150 patients.<br>• Non-diseased cohort (AMI-): 1,000 - 150 = 850 patients.<br>• True Positives (TP): 150 · 0.96 = 144.<br>• False Negatives (FN): 150 - 144 = 6.<br>• True Negatives (TN): 850 · 0.90 = 765.<br>• False Positives (FP): 850 - 765 = 85.<br>• Total Positive Tests = TP + FP = 144 + 85 = 229.<br>• PPV = TP / (TP + FP) = 144 / 229 ≈ 0.6288 = 62.88% (≈ 62.9%).<br>• Total Negative Tests = TN + FN = 765 + 6 = 771.<br>• NPV = TN / (TN + FN) = 765 / 771 = 255 / 257 ≈ 0.9922 = 99.22% (≈ 99.2%).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Confuses PPV and NPV with Sensitivity and Specificity.<br>• Option B is false: Transposes Sensitivity and Specificity into PPV and NPV.<br>• Option C is false: Calculates Sensitivity (144/150) and Specificity (765/850) and labels them as predictive values.<br>• Option D is CORRECT: Exactly calculates PPV = 144/229 (≈ 62.9%) and NPV = 765/771 (≈ 99.2%).<br>• Option E is false: Calculates False Discovery Rate (FP / total positive = 85/229) and False Omission Rate.",
+    "trapAlert": "Never equate Sensitivity with PPV or Specificity with NPV. Predictive values always require constructing the 2x2 contingency matrix using disease prevalence."
+  },
+  {
+    "id": "math_2027_f10",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Diagnostic Likelihood Ratios (LR+, LR-) and Pre-test to Post-test Odds",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A diagnostic serum biomarker for pancreatic ductal adenocarcinoma has a Sensitivity of 80.0% (0.80) and a Specificity of 90.0% (0.90). An elderly patient presenting with painless obstructive jaundice and weight loss is clinically evaluated by a surgeon, who estimates the pre-test probability of malignancy to be P = 20.0% (0.20). If the biomarker test returns POSITIVE, which option correctly states the Positive Likelihood Ratio (LR+), the pre-test odds, the post-test odds, and the final post-test probability of pancreatic cancer?",
+    "options": [
+      "A. LR+ = 0.89; Pre-test odds = 0.25; Post-test odds = 0.22; Post-test probability = 18.2%",
+      "B. LR+ = 8.0; Pre-test odds = 0.20; Post-test odds = 1.60; Post-test probability = 61.5%",
+      "C. LR+ = 4.0; Pre-test odds = 0.25; Post-test odds = 1.00; Post-test probability = 50.0%",
+      "D. LR+ = 8.0; Pre-test odds = 0.25; Post-test odds = 2.00; Post-test probability = 80.0%",
+      "E. LR+ = 8.0; Pre-test odds = 1/4 (0.25); Post-test odds = 2.0; Post-test probability = 2/3 (≈ 66.7%)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Positive Likelihood Ratio is LR+ = Sensitivity / (1 - Specificity). Likelihood ratios operate on odds, not probabilities. Pre-test odds = P / (1 - P). According to Bayes' rule in odds-likelihood form: Post-test odds = Pre-test odds · LR+. Finally, probability is recovered via P_post = Post-test odds / (1 + Post-test odds).<br><br><strong>2. Step-by-Step Proof:</strong><br>• LR+ = Sensitivity / (1 - Specificity) = 0.80 / (1 - 0.90) = 0.80 / 0.10 = 8.0.<br>• Pre-test probability P = 0.20.<br>• Pre-test odds = 0.20 / (1 - 0.20) = 0.20 / 0.80 = 1 / 4 = 0.25.<br>• Post-test odds = Pre-test odds · LR+ = 0.25 · 8.0 = 2.0.<br>• Post-test probability = Post-test odds / (1 + Post-test odds) = 2.0 / (1 + 2.0) = 2 / 3 ≈ 0.6667 = 66.67% (≈ 66.7%).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts the LR+ formula (calculating 0.80 / 0.90 = 0.89).<br>• Option B is false: Confuses probability (0.20) with odds (0.25), computing 0.20 · 8.0 = 1.60.<br>• Option C is false: Falsely takes false positive rate as 0.20, halving LR+ to 4.0.<br>• Option D is false: Reaches post-test odds = 2.0, but equates post-test probability to test sensitivity (80.0%).<br>• Option E is CORRECT: Exactly calculates LR+ = 8.0, Pre-test odds = 1/4, Post-test odds = 2.0, and Post-test probability = 2/3 (66.7%).",
+    "trapAlert": "Never multiply pre-test PROBABILITY directly by a Likelihood Ratio. You must convert probability to odds [p / (1 - p)], multiply by LR, and convert back [odds / (1 + odds)]."
+  },
+  {
+    "id": "math_2027_f11",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Relative Risk Reduction (RRR) vs Absolute Risk Reduction (ARR) in Medical Framing",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A pharmaceutical brochure prominently advertises that a lipid-lowering medication achieves a '50% reduction in fatal myocardial infarction risk'. Detailed examination of the underlying 5-year randomized trial data reveals that the 5-year fatal myocardial infarction rate was 4 per 1,000 patients in the placebo group (CER = 0.004) and 2 per 1,000 patients in the active medication group (EER = 0.002). What are the exact Relative Risk Reduction (RRR), Absolute Risk Reduction (ARR), and Number Needed to Treat (NNT) over 5 years?",
+    "options": [
+      "A. RRR = 50.0%; ARR = 0.2% (0.002); NNT = 500 patients treated for 5 years to prevent 1 death",
+      "B. RRR = 50.0%; ARR = 50.0% (0.50); NNT = 2 patients treated for 5 years to prevent 1 death",
+      "C. RRR = 0.2%; ARR = 50.0%; NNT = 500 patients treated for 5 years to prevent 1 death",
+      "D. RRR = 50.0%; ARR = 0.4% (0.004); NNT = 250 patients treated for 5 years to prevent 1 death",
+      "E. RRR = 25.0%; ARR = 0.1% (0.001); NNT = 1,000 patients treated for 5 years to prevent 1 death"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In clinical trial reporting, framing bias occurs when relative measures are emphasized without absolute context. Relative Risk Reduction is RRR = (CER - EER) / CER = 1 - RR. Absolute Risk Reduction is ARR = CER - EER. The Number Needed to Treat is NNT = 1 / ARR. When baseline risk CER is small, RRR can appear massive (e.g. 50%) while the absolute benefit ARR is modest (e.g. 0.2%), requiring a large NNT.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Control Event Rate: CER = 4 / 1,000 = 0.004 = 0.4%.<br>• Experimental Event Rate: EER = 2 / 1,000 = 0.002 = 0.2%.<br>• Relative Risk: RR = EER / CER = 0.002 / 0.004 = 0.50.<br>• Relative Risk Reduction: RRR = 1 - RR = 1 - 0.50 = 0.50 = 50.0%.<br>• Absolute Risk Reduction: ARR = CER - EER = 0.004 - 0.002 = 0.002 = 0.2% (2 per 1,000).<br>• Number Needed to Treat: NNT = 1 / ARR = 1 / 0.002 = 1,000 / 2 = 500 patients treated for 5 years to avert 1 event.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly identifies RRR = 50.0%, ARR = 0.002 (0.2%), and NNT = 500.<br>• Option B is false: Confuses relative reduction with absolute reduction, asserting ARR = 50%, which would imply NNT = 2.<br>• Option C is false: Swaps the values of RRR and ARR.<br>• Option D is false: Calculates ARR as CER alone (0.004), deriving NNT = 250.<br>• Option E is false: Arbitrary fractional halving.",
+    "trapAlert": "A dramatic relative risk reduction (e.g. '50% cut in mortality!') can mask a tiny absolute effect (e.g. 0.2%) if the disease baseline rate is low. Always calculate ARR and NNT."
+  },
+  {
+    "id": "math_2027_f12",
+    "subject": "Mathematics",
+    "chapter": "Biostatistics & Epidemiological Risk",
+    "subtopic": "Receiver Operating Characteristic (ROC) Optimization and Youden's J Statistic",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A clinical pathologist evaluates three candidate diagnostic cutoff thresholds for a serum procalcitonin immunoassay used to identify severe bacterial sepsis in emergency admissions:\n• Cutoff Threshold 1 (0.5 ng/mL): Sensitivity = 95.0% (0.95); Specificity = 70.0% (0.70)\n• Cutoff Threshold 2 (1.5 ng/mL): Sensitivity = 88.0% (0.88); Specificity = 86.0% (0.86)\n• Cutoff Threshold 3 (3.0 ng/mL): Sensitivity = 72.0% (0.72); Specificity = 96.0% (0.96)\nYouden's Index J is defined as J = Sensitivity + Specificity - 1, representing the maximum vertical distance of the ROC curve above the chance diagonal. Which threshold maximizes Youden's J, and what is its exact value?",
+    "options": [
+      "A. Cutoff Threshold 1 with J = 0.65",
+      "B. Cutoff Threshold 2 with J = 0.74",
+      "C. Cutoff Threshold 3 with J = 0.68",
+      "D. Cutoff Threshold 1 with J = 1.65",
+      "E. Cutoff Threshold 2 with J = 0.87"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In Receiver Operating Characteristic (ROC) analysis, Youden's J statistic (informedness) summarizes diagnostic biomarker discriminatory power: J = Sensitivity + Specificity - 1. Geometrically, J represents the vertical distance between the point on the ROC curve (Sensitivity vs 1 - Specificity) and the 45-degree chance diagonal. A perfect test has J = 1.0 (Sens=1, Spec=1), while an uninformative test has J = 0.<br><br><strong>2. Step-by-Step Proof:</strong><br>• For Cutoff Threshold 1 (0.5 ng/mL):<br>  J1 = 0.95 + 0.70 - 1 = 1.65 - 1 = 0.65.<br>• For Cutoff Threshold 2 (1.5 ng/mL):<br>  J2 = 0.88 + 0.86 - 1 = 1.74 - 1 = 0.74.<br>• For Cutoff Threshold 3 (3.0 ng/mL):<br>  J3 = 0.72 + 0.96 - 1 = 1.68 - 1 = 0.68.<br>• Comparing the three values: J2 (0.74) > J3 (0.68) > J1 (0.65).<br>• Therefore, Cutoff Threshold 2 uniquely maximizes Youden's J statistic at J = 0.74.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Threshold 1 yields J = 0.65, which is lower than Threshold 2.<br>• Option B is CORRECT: Exactly calculates J2 = 0.74 and identifies it as the maximum.<br>• Option C is false: Threshold 3 yields J = 0.68, which is lower than Threshold 2.<br>• Option D is false: Forgets to subtract 1 in the definition (Sensitivity + Specificity = 1.65).<br>• Option E is false: Computes the arithmetic mean of Sensitivity and Specificity [(0.88 + 0.86)/2 = 0.87] instead of Youden's J.",
+    "trapAlert": "Remember to subtract 1 in Youden's index: J = Sens + Spec - 1. Simply adding Sensitivity and Specificity gives a value between 1 and 2, not Youden's J."
+  },
+  {
+    "id": "math_2027_f13",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "First-Order Elimination Kinetics and Half-Life Determination",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A hospitalized patient receives a rapid intravenous injection of a synthetic third-generation cephalosporin that follows one-compartment first-order elimination kinetics: C(t) = C0 · e^(-k_e · t). Plasma concentration monitored at t = 2.0 hours post-injection is C(2) = 48.0 mg/L, and at t = 8.0 hours post-injection it is C(8) = 6.0 mg/L. Which option correctly gives the drug's elimination half-life (t_1/2), elimination rate constant (k_e), and extrapolated initial concentration at time zero (C0)?",
+    "options": [
+      "A. t_1/2 = 3.0 h; k_e = ln(2)/3 h^-1; C0 = 72.0 mg/L",
+      "B. t_1/2 = 2.0 h; k_e = 0.5 h^-1; C0 = 48.0 mg/L",
+      "C. t_1/2 = 2.0 h; k_e = 0.5 · ln(2) h^-1 (≈ 0.347 h^-1); C0 = 96.0 mg/L",
+      "D. t_1/2 = 4.0 h; k_e = ln(2)/4 h^-1; C0 = 192.0 mg/L",
+      "E. t_1/2 = 1.5 h; k_e = ln(2)/1.5 h^-1; C0 = 144.0 mg/L"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In first-order elimination, the rate of drug elimination is directly proportional to plasma concentration: dC/dt = -k_e · C, leading to exponential decline C(t) = C0 · e^(-k_e · t) = C0 · (1/2)^(t / t_1/2). Half-life t_1/2 is the time required for concentration to halve, related to the rate constant by k_e = ln(2) / t_1/2.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Elapsed time between measurements: Delta_t = 8.0 - 2.0 = 6.0 hours.<br>• Ratio of concentrations: C(2) / C(8) = 48.0 / 6.0 = 8.0 = 2^3.<br>• Since concentration decreased by a factor of 8 (three consecutive halvings), exactly 3 half-lives elapsed in 6.0 hours:<br>  3 · t_1/2 = 6.0 h => t_1/2 = 2.0 hours.<br>• Elimination rate constant: k_e = ln(2) / t_1/2 = ln(2) / 2.0 = 0.5 · ln(2) h^-1 ≈ 0.3466 h^-1.<br>• Back-extrapolation to t = 0: Since t = 2.0 h is exactly one half-life from t = 0, C0 = C(2) · 2^1 = 48.0 · 2 = 96.0 mg/L.<br>  (Verification: C(0)=96; C(2)=48; C(4)=24; C(6)=12; C(8)=6. Perfect match!).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Divides 6 hours by 2 instead of 3, finding t_1/2 = 3.0 h.<br>• Option B is false: Omits the natural logarithm factor ln(2) in the elimination rate constant, setting k_e = 1/2 = 0.5 h^-1.<br>• Option C is CORRECT: Accurately deduces t_1/2 = 2.0 h, k_e = 0.5 · ln(2) h^-1, and C0 = 96.0 mg/L.<br>• Option D is false: Incorrect arithmetic assuming only two halvings (factor of 4).<br>• Option E is false: Uses incorrect fractional division of elapsed time.",
+    "trapAlert": "Remember that k_e = ln(2) / t_1/2 ≈ 0.693 / t_1/2, NOT 1 / t_1/2. An exponential decay by factor 8 means 2^3, which represents 3 half-lives, not 8 hours."
+  },
+  {
+    "id": "math_2027_f14",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Apparent Volume of Distribution (V_d) and Body Water Compartments",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A 70 kg patient receives an intravenous bolus injection of 420 mg of an experimental hydrophilic cardiovascular peptide. Plasma samples extrapolated back to time zero yield an initial peak concentration C0 = 14.0 mg/L. Which option correctly states the apparent volume of distribution (V_d), its weight-normalized value, and its physiological distribution across fluid compartments?",
+    "options": [
+      "A. V_d = 14.0 L; 0.20 L/kg; strictly restricted to intravascular plasma volume.",
+      "B. V_d = 42.0 L; 0.60 L/kg; complete and uniform distribution throughout total body water.",
+      "C. V_d = 58.8 L; 0.84 L/kg; sequestered extensively in peripheral adipose tissues.",
+      "D. V_d = 30.0 L; 3/7 L/kg (≈ 0.43 L/kg); intermediate between extracellular fluid volume (~14 L) and total body water (~42 L), reflecting extracellular distribution with partial intracellular entry.",
+      "E. V_d = 3.0 L; 0.043 L/kg; confined exclusively to the central hepatic sinusoids."
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The apparent volume of distribution is the theoretical volume that would be necessary to contain the total amount of administered drug at the same concentration as that observed in the blood plasma: V_d = Dose / C0. For a typical 70 kg individual, plasma volume is ~3–4 L (~0.05 L/kg), extracellular fluid (ECF) volume is ~14 L (~0.20 L/kg), and total body water (TBW) is ~42 L (~0.60 L/kg).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Administered IV dose: D = 420 mg.<br>• Initial plasma concentration: C0 = 14.0 mg/L.<br>• Apparent volume of distribution: V_d = Dose / C0 = 420 mg / 14.0 mg/L = 30.0 L.<br>• Weight-normalized V_d: 30.0 L / 70 kg = 3 / 7 L/kg ≈ 0.4286 L/kg (≈ 0.43 L/kg).<br>• Physiological interpretation: Because 14 L < 30 L < 42 L (0.20 L/kg < 0.43 L/kg < 0.60 L/kg), the drug distributes throughout extracellular fluid and partially penetrates intracellular compartments, but does not exhibit extensive tissue sequestration (which would produce V_d > TBW).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Sets V_d equal to normal extracellular fluid volume (14 L) rather than the calculated 30 L.<br>• Option B is false: Equates V_d directly to total body water (42 L).<br>• Option C is false: Overestimates V_d to 58.8 L based on arbitrary multiplication.<br>• Option D is CORRECT: Exactly calculates V_d = 30.0 L, 3/7 L/kg, and gives the accurate physiological interpretation.<br>• Option E is false: Decimal misplacement error (dividing 420 by 140 instead of 14).",
+    "trapAlert": "V_d is an apparent mathematical volume, not a true anatomical space. However, comparing V_d to 4 L (plasma), 14 L (ECF), and 42 L (total body water) reveals tissue distribution patterns."
+  },
+  {
+    "id": "math_2027_f15",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Systemic Clearance (Cl) and Half-Life Relationship",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A recombinant monoclonal fusion protein has an apparent volume of distribution V_d = 50.0 L and a total systemic clearance Cl = 2.5 L/h. Assuming first-order elimination kinetics, what is the elimination rate constant (k_e) and the exact elimination half-life (t_1/2) without a calculator, given the standard approximation ln(2) ≈ 0.693?",
+    "options": [
+      "A. k_e = 0.50 h^-1; t_1/2 = 2 · ln(2) h (≈ 1.39 h)",
+      "B. k_e = 20.0 h^-1; t_1/2 = ln(2) / 20 h (≈ 0.035 h)",
+      "C. k_e = 0.02 h^-1; t_1/2 = 50 · ln(2) h (≈ 34.65 h)",
+      "D. k_e = 0.05 h^-1; t_1/2 = 10 · ln(2) h (≈ 6.93 h)",
+      "E. k_e = 0.05 h^-1 (1/20 h^-1); t_1/2 = 20 · ln(2) h (≈ 13.86 h)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In pharmacokinetics, clearance is the volume of plasma completely cleared of drug per unit time: Cl = k_e · V_d. Solving for the first-order elimination rate constant yields k_e = Cl / V_d. Substituting k_e into the half-life equation gives t_1/2 = ln(2) / k_e = [ln(2) · V_d] / Cl.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Clearance: Cl = 2.5 L/h.<br>• Volume of distribution: V_d = 50.0 L.<br>• Elimination rate constant: k_e = Cl / V_d = 2.5 / 50.0 = 1 / 20 = 0.05 h^-1.<br>• Half-life: t_1/2 = ln(2) / k_e = ln(2) / (1/20) = 20 · ln(2) hours.<br>• Numerical evaluation: Using ln(2) ≈ 0.69315:<br>  t_1/2 = 20 · 0.69315 = 13.863 ≈ 13.86 hours.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Arithmetic error in k_e = 2.5 / 5 = 0.5 h^-1.<br>• Option B is false: Inverts the clearance equation to k_e = V_d / Cl = 50 / 2.5 = 20 h^-1.<br>• Option C is false: Computes k_e = 1/50 = 0.02 h^-1.<br>• Option D is false: Correct k_e = 0.05 h^-1, but calculates t_1/2 as 10 · ln(2) instead of 20 · ln(2).<br>• Option E is CORRECT: Exactly calculates k_e = 0.05 h^-1 and t_1/2 = 20 · ln(2) h ≈ 13.86 h.",
+    "trapAlert": "Be careful with reciprocal units: clearance is volume/time (L/h), V_d is volume (L), so k_e = Cl / V_d has units of 1/time (h^-1). Then t_1/2 = ln(2) / k_e."
+  },
+  {
+    "id": "math_2027_f16",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Continuous IV Infusion and Asymptotic Approach to Steady State",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A patient in refractory ventricular arrhythmia receives a continuous zero-order intravenous infusion of an antiarrhythmic drug at infusion rate R0 = 120.0 mg/h. The patient's systemic clearance is Cl = 6.0 L/h, establishing a target steady-state concentration of Css = R0 / Cl = 20.0 mg/L. The drug's elimination half-life is t_1/2 = 4.0 hours. Concentration rises according to C(t) = Css · (1 - e^(-k_e · t)). What are the exact plasma drug concentrations after 12.0 hours (3 half-lives) and after 16.0 hours (4 half-lives)?",
+    "options": [
+      "A. C(12 h) = 17.50 mg/L (87.5% of Css); C(16 h) = 18.75 mg/L (93.75% of Css)",
+      "B. C(12 h) = 15.00 mg/L (75.0% of Css); C(16 h) = 20.00 mg/L (100.0% of Css)",
+      "C. C(12 h) = 10.00 mg/L (50.0% of Css); C(16 h) = 15.00 mg/L (75.0% of Css)",
+      "D. C(12 h) = 18.00 mg/L (90.0% of Css); C(16 h) = 19.50 mg/L (97.5% of Css)",
+      "E. C(12 h) = 17.50 mg/L; C(16 h) = 17.50 mg/L (steady state reached at 3 half-lives)"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> During a constant zero-order infusion with first-order elimination, plasma concentration accumulates asymptotically toward steady state Css = R0 / Cl according to C(t) = Css · (1 - (1/2)^(t / t_1/2)). The fraction of steady state achieved after n half-lives is 1 - (1/2)^n: 1 half-life = 50%; 2 half-lives = 75%; 3 half-lives = 87.5%; 4 half-lives = 93.75%; 5 half-lives = 96.875%.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Steady-state concentration: Css = R0 / Cl = 120.0 mg/h / 6.0 L/h = 20.0 mg/L.<br>• Half-life: t_1/2 = 4.0 hours.<br>• At t = 12.0 hours, n = 12.0 / 4.0 = 3 half-lives have elapsed:<br>  Fraction = 1 - (1/2)^3 = 1 - 1/8 = 7/8 = 0.875 (87.5%).<br>  C(12 h) = 20.0 · (7/8) = 140.0 / 8 = 17.50 mg/L.<br>• At t = 16.0 hours, n = 16.0 / 4.0 = 4 half-lives have elapsed:<br>  Fraction = 1 - (1/2)^4 = 1 - 1/16 = 15/16 = 0.9375 (93.75%).<br>  C(16 h) = 20.0 · (15/16) = 300.0 / 16 = 18.75 mg/L.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Precisely evaluates C(12 h) = 17.50 mg/L (87.5%) and C(16 h) = 18.75 mg/L (93.75%).<br>• Option B is false: Erroneously applies linear 25% increments and claims 100% steady state is reached at 4 half-lives (true steady state is reached only at t = infinity).<br>• Option C is false: Shifts half-life powers by one, calculating values for 1 and 2 half-lives.<br>• Option D is false: Approximations not adhering to the powers of (1/2).<br>• Option E is false: Falsely assumes accumulation terminates completely at 3 half-lives.",
+    "trapAlert": "Steady state is an asymptote: it is NEVER reached 100% in finite time. At 4 to 5 half-lives, the drug reaches > 93-97% of steady state, which is considered 'clinical steady state'."
+  },
+  {
+    "id": "math_2027_f17",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Oral Maintenance Dosing with Bioavailability and Dosing Interval",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A clinical pharmacologist designs an oral maintenance dosing regimen for an antiepileptic drug:\n• Target average steady-state plasma concentration: C_avg,ss = 12.0 mg/L\n• Patient systemic clearance: Cl = 4.0 L/h\n• Dosing interval: tau = 8.0 hours\n• Oral bioavailability: F = 0.60 (60.0%)\nWhat is the required oral Maintenance Dose (MD) to be administered every 8 hours, calculated using the standard formula MD = (C_avg,ss · Cl · tau) / F?",
+    "options": [
+      "A. MD = 384 mg",
+      "B. MD = 640 mg",
+      "C. MD = 230.4 mg",
+      "D. MD = 960 mg",
+      "E. MD = 1,280 mg"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> At steady state, the rate of drug administration must equal the rate of drug elimination. Over dosing interval tau, the amount absorbed into systemic circulation is F · MD, and the amount eliminated is C_avg,ss · Cl · tau. Equating input to output gives F · MD = C_avg,ss · Cl · tau, leading to MD = (C_avg,ss · Cl · tau) / F.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Target concentration: C_avg,ss = 12.0 mg/L.<br>• Systemic clearance: Cl = 4.0 L/h.<br>• Dosing interval: tau = 8.0 h.<br>• Bioavailability: F = 0.60 = 3/5.<br>• Total drug eliminated per dosing interval: C_avg,ss · Cl · tau = 12.0 · 4.0 · 8.0 = 48.0 · 8.0 = 384.0 mg.<br>• Required oral dose: MD = 384.0 / 0.60 = 3840 / 6 = 640 mg.<br>• (Sanity check: If 640 mg is given orally and 60% is absorbed, bioavailable dose = 640 · 0.60 = 384 mg, exactly matching the 384 mg eliminated over 8 hours).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Fails to correct for incomplete bioavailability, using F = 1.0 (yielding MD = 384 mg).<br>• Option B is CORRECT: Exactly calculates MD = 640 mg.<br>• Option C is false: Multiplies by F instead of dividing: 384 · 0.60 = 230.4 mg.<br>• Option D is false: Arithmetic division error (dividing 384 by 0.40 = 960 mg).<br>• Option E is false: Doubles the correct dose.",
+    "trapAlert": "When bioavailability F < 1, the oral dose MUST be larger than the IV dose. Therefore, you must DIVIDE by F, never multiply by F."
+  },
+  {
+    "id": "math_2027_f18",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Intravenous Loading Dose with Target Peak Concentration",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A critically ill 80 kg patient in septic shock requires an immediate intravenous loading dose of an antibiotic to rapidly achieve an effective peak plasma concentration C_target = 25.0 mg/L. The patient's apparent volume of distribution is V_d = 0.35 L/kg. The antibiotic is formulated as an intravenous salt with a salt fraction of S = 0.80 (active drug fraction = 80.0%, with bioavailability F = 1.0). What is the exact Loading Dose (LD) required, calculated from LD = (C_target · V_d) / S?",
+    "options": [
+      "A. LD = 700 mg",
+      "B. LD = 560 mg",
+      "C. LD = 875 mg",
+      "D. LD = 1,000 mg",
+      "E. LD = 1,120 mg"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> A loading dose (LD) is administered to achieve the target plasma concentration rapidly without waiting for steady state to be reached (which requires 4–5 half-lives). The amount of active drug required in the body is Amount = C_target · V_d. When the medication is provided as a salt or prodrug (salt factor S), the total administered dose of the salt must be increased: LD = (C_target · V_d) / S.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Patient body weight: W = 80 kg.<br>• Normalized V_d = 0.35 L/kg.<br>• Total absolute volume of distribution: V_d = 80 kg · 0.35 L/kg = 28.0 L.<br>• Amount of pure active drug required: C_target · V_d = 25.0 mg/L · 28.0 L = 700.0 mg.<br>• Salt fraction: S = 0.80 = 4/5.<br>• Total loading dose of salt required: LD = 700.0 / 0.80 = 7000 / 8 = 875.0 mg.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits the salt fraction correction (S = 1.0), yielding 700 mg, which delivers only 560 mg of active drug.<br>• Option B is false: Multiplies by the salt fraction instead of dividing: 700 · 0.80 = 560 mg.<br>• Option C is CORRECT: Exactly calculates V_d = 28 L and LD = 875 mg.<br>• Option D is false: Arbitrary rounded estimate.<br>• Option E is false: Divides by S squared or misapplies clearance.",
+    "trapAlert": "Always calculate total V_d = weight · (V_d per kg) first. Then, since salt fraction S < 1, you must DIVIDE by S to administer enough total salt mass to deliver the active drug amount."
+  },
+  {
+    "id": "math_2027_f19",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Multi-Dose Accumulation Ratio (R) and Peak-to-Trough Fluctuations",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A cardiac patient receives an oral antiarrhythmic drug administered every tau = 12.0 hours. The elimination half-life of the drug is t_1/2 = 12.0 hours. The first-order fraction remaining at the end of each dosing interval is f = (1/2)^(tau / t_1/2) = 0.50. The multi-dose accumulation factor is R = 1 / (1 - f). If the peak plasma concentration following the first dose is C_max,1 = 18.0 mg/L and the trough concentration before the second dose is C_min,1 = 9.0 mg/L, what are the peak concentration (C_max,ss) and trough concentration (C_min,ss) once steady state is attained?",
+    "options": [
+      "A. C_max,ss = 18.0 mg/L; C_min,ss = 9.0 mg/L (no accumulation occurs)",
+      "B. C_max,ss = 27.0 mg/L; C_min,ss = 13.5 mg/L (accumulation factor R = 1.5)",
+      "C. C_max,ss = 72.0 mg/L; C_min,ss = 36.0 mg/L (accumulation factor R = 4.0)",
+      "D. C_max,ss = 36.0 mg/L; C_min,ss = 18.0 mg/L (accumulation factor R = 2.0)",
+      "E. C_max,ss = 54.0 mg/L; C_min,ss = 27.0 mg/L (accumulation factor R = 3.0)"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> When a drug is administered repeatedly at constant dosing intervals tau, drug from previous doses has not been fully eliminated before each subsequent dose. The steady-state accumulation ratio R represents the sum of the infinite geometric series of remaining drug fractions: R = 1 + f + f^2 + f^3 + ... = 1 / (1 - f), where f = e^(-k_e · tau) = (1/2)^(tau / t_1/2). At steady state: C_max,ss = C_max,1 · R, and C_min,ss = C_min,1 · R = C_max,ss · f.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Dosing interval: tau = 12.0 hours.<br>• Half-life: t_1/2 = 12.0 hours.<br>• Remaining fraction per interval: f = (1/2)^(12.0 / 12.0) = (1/2)^1 = 0.50.<br>• Accumulation factor: R = 1 / (1 - 0.50) = 1 / 0.50 = 2.0.<br>• Peak after dose 1: C_max,1 = 18.0 mg/L.<br>• Peak at steady state: C_max,ss = C_max,1 · R = 18.0 · 2.0 = 36.0 mg/L.<br>• Trough at steady state: C_min,ss = C_min,1 · R = 9.0 · 2.0 = 18.0 mg/L.<br>  (Notice that C_min,ss = C_max,ss · 0.50 = 18.0 mg/L, which exactly equals C_max,1).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Assumes zero accumulation (R = 1.0), which only occurs if tau >> t_1/2 (tau > 5 half-lives).<br>• Option B is false: Computes R = 1 + f = 1.5, truncating the geometric series after one term.<br>• Option C is false: Quadruples concentrations (R = 4.0).<br>• Option D is CORRECT: Exactly calculates R = 2.0, C_max,ss = 36.0 mg/L, and C_min,ss = 18.0 mg/L.<br>• Option E is false: Uses R = 3.0.",
+    "trapAlert": "When the dosing interval tau exactly equals the elimination half-life t_1/2, exactly 50% is eliminated per interval, yielding accumulation factor R = 1 / (1 - 0.5) = 2.0. The steady-state peak doubles the first peak."
+  },
+  {
+    "id": "math_2027_f20",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Logarithmic Decay and Time to Reach a Sub-Therapeutic Washout Threshold",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A patient presents to the emergency department following an acute overdose of theophylline. The initial plasma concentration on admission is C0 = 128.0 mg/L. The patient displays severe sinus tachycardia and tremor. The clinical toxicologist determines that the safe discharge threshold is C_safe = 4.0 mg/L. Assuming theophylline elimination follows first-order kinetics with an elimination half-life of t_1/2 = 6.0 hours, exactly how many half-lives and how many total elapsed hours are required for the plasma concentration to decline to C_safe?",
+    "options": [
+      "A. 3 half-lives; 18.0 hours",
+      "B. 4 half-lives; 24.0 hours",
+      "C. 6 half-lives; 36.0 hours",
+      "D. 7 half-lives; 42.0 hours",
+      "E. 5 half-lives; 30.0 hours"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In first-order pharmacokinetic elimination, drug concentration follows exponential decay: C(t) = C0 / 2^n, where n = t / t_1/2 is the number of elapsed half-lives. Solving for n yields 2^n = C0 / C(t), or n = log2(C0 / C(t)) = [ln(C0 / C(t))] / ln(2).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Initial concentration: C0 = 128.0 mg/L.<br>• Target safe threshold: C_safe = 4.0 mg/L.<br>• Required reduction ratio: C0 / C_safe = 128.0 / 4.0 = 32.0.<br>• Express 32 as a power of 2: 32 = 2^5.<br>• Therefore, exactly n = 5 half-lives are required for the drug concentration to fall to 4.0 mg/L.<br>• Total elapsed time: t = n · t_1/2 = 5 · 6.0 hours = 30.0 hours.<br>• (Step-by-step verification: 128 -> 64 [6h] -> 32 [12h] -> 16 [18h] -> 8 [24h] -> 4 mg/L [30h]).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: 3 half-lives (18 h) leaves 16.0 mg/L (toxic range).<br>• Option B is false: 4 half-lives (24 h) leaves 8.0 mg/L.<br>• Option C is false: 6 half-lives (36 h) overshoots to 2.0 mg/L.<br>• Option D is false: 7 half-lives (42 h) overshoots to 1.0 mg/L.<br>• Option E is CORRECT: Exactly calculates n = 5 half-lives and total time = 30.0 hours.",
+    "trapAlert": "Powers of 2 in pharmacology: 2^1=2, 2^2=4, 2^3=8, 2^4=16, 2^5=32, 2^6=64, 2^7=128. Here 128/4 = 32 = 2^5, so exactly 5 half-lives."
+  },
+  {
+    "id": "math_2027_f21",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Michaelis-Menten Non-Linear Clearance Kinetics at Saturation",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Phenytoin elimination follows capacity-limited Michaelis-Menten enzyme kinetics described by: -dC/dt = (V_max · C) / (K_m + C). For an adult patient, the metabolic parameters are K_m = 5.0 mg/L and maximum elimination capacity V_max = 10.0 mg/(L·day). The patient's plasma phenytoin concentration is acutely elevated at C = 45.0 mg/L. Which option correctly states the instantaneous elimination rate at this elevated concentration (C = 45.0 mg/L), compares it to the rate when concentration drops to C = 5.0 mg/L (where C = K_m), and identifies the kinetic regime operating at C = 45.0 mg/L?",
+    "options": [
+      "A. Rate(45 mg/L) = 9.0 mg/(L·day); Rate(5 mg/L) = 5.0 mg/(L·day) (exactly V_max / 2); at 45 mg/L enzyme saturation is 90%, exhibiting pseudo-zero-order kinetics.",
+      "B. Rate(45 mg/L) = 10.0 mg/(L·day); Rate(5 mg/L) = 10.0 mg/(L·day); zero-order elimination operates at all concentrations.",
+      "C. Rate(45 mg/L) = 45.0 mg/(L·day); Rate(5 mg/L) = 5.0 mg/(L·day); first-order linear clearance operates throughout.",
+      "D. Rate(45 mg/L) = 8.0 mg/(L·day); Rate(5 mg/L) = 2.5 mg/(L·day); competitive non-linear inhibition regime.",
+      "E. Rate(45 mg/L) = 9.5 mg/(L·day); Rate(5 mg/L) = 1.0 mg/(L·day); sub-therapeutic clearance regime."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In Michaelis-Menten elimination kinetics, when drug concentration C is much greater than K_m (C >> K_m), the denominator K_m + C ≈ C, simplifying the rate to -dC/dt ≈ V_max (zero-order kinetics: a constant amount is eliminated per unit time). When C = K_m, -dC/dt = (V_max · K_m) / (2 · K_m) = V_max / 2 (half-maximal rate). When C << K_m, -dC/dt ≈ (V_max / K_m) · C (first-order kinetics).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Given: V_max = 10.0 mg/(L·day), K_m = 5.0 mg/L.<br>• At C = 45.0 mg/L:<br>  Rate = (V_max · C) / (K_m + C) = (10.0 · 45.0) / (5.0 + 45.0) = 450.0 / 50.0 = 9.0 mg/(L·day).<br>  This represents 9.0 / 10.0 = 90.0% of maximum metabolic capacity V_max.<br>• At C = 5.0 mg/L (where C = K_m):<br>  Rate = (10.0 · 5.0) / (5.0 + 5.0) = 50.0 / 10.0 = 5.0 mg/(L·day) = V_max / 2.<br>• At C = 45 mg/L, the system is 90% saturated, behaving in a pseudo-zero-order regime where small dose increments cause disproportionately massive serum concentration spikes.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly calculates 9.0 mg/(L·day) and 5.0 mg/(L·day), and correctly identifies the pseudo-zero-order kinetic regime.<br>• Option B is false: Assumes elimination is strictly 10.0 mg/(L·day) regardless of concentration.<br>• Option C is false: Assumes linear first-order kinetics where rate is proportional to concentration.<br>• Option D is false: Arithmetic errors in Michaelis-Menten evaluation.<br>• Option E is false: Arbitrary fractional values.",
+    "trapAlert": "Michaelis-Menten elimination shifts from zero-order (at high concentration C >> Km) to first-order (at low concentration C << Km). When C = Km, the rate is exactly half of Vmax."
+  },
+  {
+    "id": "math_2027_f22",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Half-Life Alteration in Renal Impairment and Dosage Adjustment",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Vancomycin is eliminated almost 100% unchanged via renal glomerular filtration with negligible hepatic metabolism. In a 65 kg patient with normal renal function (Creatinine Clearance CrCl = 100 mL/min), vancomycin exhibits an elimination half-life of t_1/2 = 6.0 hours. Following severe septic shock, the patient develops acute kidney injury, causing CrCl to plummet to 25 mL/min (a 4-fold reduction). Assuming the volume of distribution V_d remains constant, what is the patient's new elimination half-life (t'_1/2), and how must the daily maintenance dose be altered to maintain the identical target steady-state concentration Css?",
+    "options": [
+      "A. t'_1/2 = 12.0 hours; maintenance dose maintained at 50% of baseline",
+      "B. t'_1/2 = 24.0 hours (4-fold prolongation); maintenance dose reduced to 25% of baseline (a 4-fold dose reduction or 4-fold dosing interval extension)",
+      "C. t'_1/2 = 24.0 hours; maintenance dose increased to 400% of baseline to compensate for loss of renal filtration",
+      "D. t'_1/2 = 1.5 hours; maintenance dose reduced to 25% of baseline",
+      "E. t'_1/2 = 18.0 hours; maintenance dose reduced to 33.3% of baseline"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> For renally eliminated drugs, systemic clearance is directly proportional to renal creatinine clearance: Cl ∝ CrCl. Half-life is inversely proportional to clearance: t_1/2 = [ln(2) · V_d] / Cl. If CrCl decreases by factor k, clearance decreases by factor k, and half-life is prolonged by factor k. To keep Css = (Dose / tau) / Cl constant, the dosing rate (Dose / tau) must be scaled down in direct proportion to clearance.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Initial renal clearance: CrCl_1 = 100 mL/min.<br>• Impaired renal clearance: CrCl_2 = 25 mL/min.<br>• Clearance ratio: Cl_2 / Cl_1 = 25 / 100 = 1 / 4 (a 4-fold reduction).<br>• Half-life relation: t'_1/2 = t_1/2 · (Cl_1 / Cl_2) = 6.0 h · 4 = 24.0 hours.<br>• Target average steady state: Css = Dosing Rate / Cl.<br>• Since Cl dropped to 1/4 of baseline, the daily dosing rate must be multiplied by 1/4 (25% of original baseline dose) to avoid severe vancomycin nephrotoxicity and ototoxicity.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Only doubles half-life (12 h) and halves dose, underestimating a 4-fold drop in GFR.<br>• Option B is CORRECT: Exactly calculates t'_1/2 = 24.0 hours and a dose reduction to 25% of baseline.<br>• Option C is false: Catastrophic clinical distractor: increasing the dose 400% when renal clearance fails will cause fatal toxicity.<br>• Option D is false: Inverts the relationship, dividing half-life by 4 (1.5 h).<br>• Option E is false: Assumes a 3-fold reduction rather than 4-fold.",
+    "trapAlert": "When renal clearance drops by a factor of 4, clearance drops to 1/4, so half-life is MULTIPLIED by 4 (prolonged). The daily maintenance dose must be DIVIDED by 4."
+  },
+  {
+    "id": "math_2027_f23",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Area Under the Curve (AUC) and Absolute Bioavailability Calculation",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a phase I crossover pharmacokinetic trial in healthy human volunteers:\n• An intravenous bolus dose of 100 mg yields an Area Under the plasma concentration-time Curve extrapolated to infinity of AUC_IV = 40.0 (mg·h)/L.\n• An oral tablet dose of 200 mg of the same drug administered to the same subjects yields an AUC_oral = 60.0 (mg·h)/L.\nWhat is the total systemic clearance (Cl) of the drug, and what is its absolute oral bioavailability (F)?",
+    "options": [
+      "A. Cl = 4.0 L/h; F = 50.0%",
+      "B. Cl = 2.5 L/h; F = 150.0%",
+      "C. Cl = 2.5 L/h; F = 75.0% (0.75)",
+      "D. Cl = 5.0 L/h; F = 66.7%",
+      "E. Cl = 1.25 L/h; F = 75.0%"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Total systemic clearance is calculated from intravenous dose and intravenous AUC: Cl = Dose_IV / AUC_IV. Absolute oral bioavailability (F) is the fraction of an orally administered dose that reaches systemic circulation intact, calculated by dose-normalized comparison with intravenous administration: F = (AUC_oral / Dose_oral) / (AUC_IV / Dose_IV).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Intravenous dose: Dose_IV = 100 mg.<br>• Intravenous AUC: AUC_IV = 40.0 (mg·h)/L.<br>• Systemic clearance: Cl = Dose_IV / AUC_IV = 100 mg / 40.0 (mg·h)/L = 2.5 L/h.<br>• Oral dose: Dose_oral = 200 mg.<br>• Oral AUC: AUC_oral = 60.0 (mg·h)/L.<br>• Dose-normalized oral exposure: AUC_oral / Dose_oral = 60.0 / 200 = 0.30 (h/L).<br>• Dose-normalized IV exposure: AUC_IV / Dose_IV = 40.0 / 100 = 0.40 (h/L).<br>• Absolute bioavailability: F = 0.30 / 0.40 = 3 / 4 = 0.75 = 75.0%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts clearance calculation (40 / 100 = 0.4 L/h or 4.0 L/h) and computes raw AUC ratio without dose normalization (F = 60/120).<br>• Option B is false: Fails to normalize by dose, calculating F = AUC_oral / AUC_IV = 60 / 40 = 1.50 (150%, which is biologically impossible).<br>• Option C is CORRECT: Exactly calculates Cl = 2.5 L/h and F = 75.0% (0.75).<br>• Option D is false: Calculates clearance as 200 / 40 = 5.0 L/h.<br>• Option E is false: Halves clearance to 1.25 L/h.",
+    "trapAlert": "Never calculate oral bioavailability simply as AUC_oral / AUC_IV without dividing each by its respective dose! F = (AUC_oral / Dose_oral) / (AUC_IV / Dose_IV)."
+  },
+  {
+    "id": "math_2027_f24",
+    "subject": "Mathematics",
+    "chapter": "Functions & Exponential/Logarithmic Models",
+    "subtopic": "Logarithmic Base Conversion in Exponential Clearance Models",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A pharmacometrician models the elimination curve of an investigational antiviral compound using a base-10 exponential function: C(t) = C0 · 10^(-0.06 · t), where t is measured in hours. Which option correctly identifies the exact elimination rate constant (k_e) in the standard natural exponential form C(t) = C0 · e^(-k_e · t), and provides the drug's half-life (t_1/2) in terms of common logarithm log10(2)?",
+    "options": [
+      "A. k_e = 0.06 h^-1; t_1/2 = ln(2) / 0.06 h (≈ 11.55 h)",
+      "B. k_e = 0.06 / ln(10) h^-1; t_1/2 = 10 · ln(2) h (≈ 6.93 h)",
+      "C. k_e = 0.06 · log10(e) h^-1; t_1/2 = 50 / log10(2) h",
+      "D. k_e = 0.06 · ln(10) h^-1 (≈ 0.138 h^-1); t_1/2 = (50/3) · log10(2) hours (≈ 5.02 h)",
+      "E. k_e = 0.60 · ln(10) h^-1; t_1/2 = 5.02 minutes"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By logarithmic identity, any exponential base b can be transformed to natural base e: b^u = e^(u · ln(b)). Therefore, 10^(-k · t) = e^(-k · ln(10) · t). Equating C0 · 10^(-0.06 · t) to C0 · e^(-k_e · t) yields k_e = 0.06 · ln(10) h^-1. The elimination half-life is t_1/2 = ln(2) / k_e. Using the change of base formula ln(2) / ln(10) = log10(2), the expression simplifies directly.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Equate exponents: e^(-k_e · t) = 10^(-0.06 · t) = e^(-0.06 · ln(10) · t).<br>• Rate constant: k_e = 0.06 · ln(10) h^-1.<br>• Half-life: t_1/2 = ln(2) / k_e = ln(2) / [0.06 · ln(10)].<br>• Note that 1 / 0.06 = 100 / 6 = 50 / 3.<br>• By change of base rule: ln(2) / ln(10) = log10(2).<br>• Therefore: t_1/2 = (50 / 3) · log10(2) hours.<br>• Numerical evaluation: Since log10(2) ≈ 0.30103:<br>  t_1/2 = (50 / 3) · 0.30103 = 15.0515 / 3 ≈ 5.017 hours (≈ 5.02 h).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Confuses base 10 with natural base e, equating k_e directly to 0.06 h^-1.<br>• Option B is false: Divides by ln(10) instead of multiplying.<br>• Option C is false: Multiplies by log10(e) = 1/ln(10), inverting the natural base conversion.<br>• Option D is CORRECT: Exactly calculates k_e = 0.06 · ln(10) h^-1 and t_1/2 = (50/3) · log10(2) h ≈ 5.02 h.<br>• Option E is false: Decimal point error by a factor of 10 and incorrect time units.",
+    "trapAlert": "When converting 10^(-a·t) to e^(-k·t), remember that 10 = e^(ln 10), so k = a · ln(10). Also remember ln(2) / ln(10) = log10(2) ≈ 0.301."
+  },
+  {
+    "id": "math_2027_f25",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Sequential Testing with Two Independent Positive Results",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A newborn screening initiative evaluates a rare inborn error of metabolism with a population prevalence of P(D) = 1.0% (0.01). A rapid initial immunoassay (Test A) has a Sensitivity of 90.0% (0.90) and a Specificity of 90.0% (0.90). If an infant tests positive on Test A, an independent confirmatory molecular assay (Test B, which also has Sensitivity = 90.0% and Specificity = 90.0%) is immediately performed on the same infant and ALSO returns positive. Assuming conditional independence between the two tests given disease status, what is the infant's updated probability of disease after the first positive test, and what is the final posterior probability after both consecutive positive tests?",
+    "options": [
+      "A. After Test A: 90.0%; After Test B: 99.0%",
+      "B. After Test A: 50.0%; After Test B: 81.0%",
+      "C. After Test A: 1/12 (≈ 8.33%); After Test B: 81/100 (81.0%)",
+      "D. After Test A: 1.0%; After Test B: 45.0%",
+      "E. After Test A: 1/12 (≈ 8.33%); After Test B: 9/20 (45.0%)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In sequential Bayesian updating, the posterior probability from the first test serves as the exact prior probability for the second independent test. Alternatively, using odds formulation: Pre-test odds = P / (1 - P). For independent tests, Final Odds = Pre-test odds · LR+(A) · LR+(B), where LR+ = Sensitivity / (1 - Specificity). The final posterior probability is P = Odds / (1 + Odds).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Initial disease prevalence: P(D) = 0.01. Pre-test odds: 0.01 / 0.99 = 1 / 99.<br>• Likelihood ratios: For both tests, LR+ = 0.90 / (1 - 0.90) = 0.90 / 0.10 = 9.0.<br>• Stage 1 (After Test A+):<br>  - Post-test odds A = (1 / 99) · 9 = 9 / 99 = 1 / 11.<br>  - Posterior probability A = (1/11) / (1 + 1/11) = 1 / 12 ≈ 0.0833 = 8.33%.<br>  (Notice: Despite 90% accuracy, a single positive test yields only an 8.3% chance of disease due to low 1% prevalence!).<br>• Stage 2 (After Test B+):<br>  - The prior odds entering Test B are 1 / 11.<br>  - Post-test odds B = (1 / 11) · LR+(B) = (1 / 11) · 9 = 9 / 11.<br>  - Final posterior probability = (9/11) / (1 + 9/11) = 9 / 20 = 0.45 = 45.0%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Fallacy of the transposed conditional (confusing test sensitivity 90% with posterior probability).<br>• Option B is false: Uses arbitrary guesses.<br>• Option C is false: Correctly calculates 1/12 for Stage 1, but squares sensitivity for Stage 2 (0.90 · 0.90 = 0.81).<br>• Option D is false: Claims the first test provides zero information (leaving prior at 1.0%).<br>• Option E is CORRECT: Exactly computes P1 = 1/12 (≈ 8.33%) and P2 = 9/20 (45.0%).",
+    "trapAlert": "Even after TWO consecutive tests with 90% sensitivity and 90% specificity, a rare condition (1%) only rises to 45% probability (still less than 50%). Never ignore the low baseline prevalence."
+  },
+  {
+    "id": "math_2027_f26",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Discordant Sequential Tests: Positive Screen Followed by Negative Confirmation",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A patient is evaluated for an endocrine disorder with a population prevalence of P(D) = 5.0% (0.05). Pre-test odds are 0.05 / 0.95 = 1/19. The patient undergoes sequential testing:\n• Screening Test 1: Sensitivity = 95.0% (0.95); Specificity = 90.0% (0.90). The result is POSITIVE.\n• Confirmatory Test 2: Sensitivity = 90.0% (0.90); Specificity = 95.0% (0.95). The result is NEGATIVE.\nAssuming conditional independence between the two tests, what are the final post-test odds and the final posterior probability P(D | T1+, T2-)?",
+    "options": [
+      "A. Post-test odds = 1/19; Posterior probability = 5.0% (0.05, exactly returning to the baseline pre-test probability)",
+      "B. Post-test odds = 1.0; Posterior probability = 50.0% (complete clinical equipoise)",
+      "C. Post-test odds = 19/2; Posterior probability = 90.5% (dominated by the screening test)",
+      "D. Post-test odds = 2/19; Posterior probability = 9.5%",
+      "E. Post-test odds = 0; Posterior probability = 0% (the negative confirmatory test completely excludes disease)"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In multi-stage Bayesian diagnostic inference, likelihood ratios combine multiplicatively: Final Odds = Pre-test odds · LR+(Test 1) · LR-(Test 2). The positive likelihood ratio is LR+ = Sensitivity / (1 - Specificity), and the negative likelihood ratio is LR- = (1 - Sensitivity) / Specificity.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Pre-test probability: P(D) = 0.05.<br>• Pre-test odds: 0.05 / 0.95 = 1 / 19.<br>• Test 1 (Positive result):<br>  LR+(1) = Sensitivity1 / (1 - Specificity1) = 0.95 / (1 - 0.90) = 0.95 / 0.10 = 9.5 = 19 / 2.<br>• Test 2 (Negative result):<br>  LR-(2) = (1 - Sensitivity2) / Specificity2 = (1 - 0.90) / 0.95 = 0.10 / 0.95 = 2 / 19.<br>• Product of likelihood ratios: LR+(1) · LR-(2) = (19 / 2) · (2 / 19) = 1.0.<br>• Final post-test odds: (1 / 19) · 1.0 = 1 / 19.<br>• Final posterior probability: (1 / 19) / (1 + 1 / 19) = 1 / 20 = 0.05 = 5.0%.<br>• Because LR+ and LR- are exact reciprocals, the diagnostic evidence perfectly cancels out, leaving the patient's probability exactly at the initial 5.0% pre-test level.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly calculates final odds = 1/19 and posterior probability = 5.0%.<br>• Option B is false: Confuses equal opposing evidence with a 50% probability state.<br>• Option C is false: Considers only the first test, ignoring the negative second test.<br>• Option D is false: Multiplies pre-test odds only by LR- without LR+.<br>• Option E is false: Assumes a negative test provides absolute exclusion (requires 100% sensitivity).",
+    "trapAlert": "When a positive test is followed by a negative test whose LR- is the exact reciprocal of the first test's LR+, the net diagnostic gain is ZERO, returning the patient to the prior probability."
+  },
+  {
+    "id": "math_2027_f27",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "The False Positive Paradox in Ultra-Rare Disease Screening",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A mandatory national screening program tests an asymptomatic population for an ultra-rare viral carrier state with a true prevalence of 1 in 10,000 individuals (P = 0.0001). The laboratory immunoassay is exceptionally accurate, with Sensitivity = 99.9% (0.999) and Specificity = 99.9% (0.999). If 1,000,000 citizens are screened, approximately how many True Positives (TP) and False Positives (FP) will be identified, and what is the Positive Predictive Value (PPV) that a citizen who tests positive actually carries the virus?",
+    "options": [
+      "A. TP = 999; FP = 100; PPV = 90.9%",
+      "B. TP ≈ 100; FP ≈ 1,000; PPV ≈ 9.08% (less than 1 in 10 positive individuals are truly infected)",
+      "C. TP = 100; FP = 10; PPV = 90.9%",
+      "D. TP = 100; FP = 1; PPV = 99.0%",
+      "E. TP = 1,000; FP = 1,000; PPV = 50.0%"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The 'False Positive Paradox' is a mathematical consequence of Bayes' theorem in low-prevalence screening. Even with a tiny false positive rate (1 - Specificity = 0.1%), the vast non-diseased majority generates an absolute number of false positives that dwarfs the small absolute number of true positives generated by the tiny diseased fraction: PPV = TP / (TP + FP).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Total screened population: N = 1,000,000.<br>• True carriers in population: 1,000,000 · 0.0001 = 100 individuals.<br>• Non-carriers in population: 1,000,000 - 100 = 999,900 individuals.<br>• True Positives (TP): 100 · 0.999 = 99.9 ≈ 100 individuals.<br>• False positive rate: 1 - 0.999 = 0.001 (0.1%).<br>• False Positives (FP): 999,900 · 0.001 = 999.9 ≈ 1,000 individuals.<br>• Total positive test results: TP + FP = 99.9 + 999.9 = 1,099.8 ≈ 1,100.<br>• Positive Predictive Value: PPV = TP / (TP + FP) = 99.9 / 1099.8 = 100 / 1101 ≈ 0.0908 = 9.08% (approx. 1 in 11).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inflates true carrier count by a factor of 10.<br>• Option B is CORRECT: Accurately identifies TP ≈ 100, FP ≈ 1,000, and PPV ≈ 9.08%.<br>• Option C is false: Falsely reduces false positives to 10 by assuming 99.99% specificity.<br>• Option D is false: Calculates PPV assuming 99.999% specificity.<br>• Option E is false: Assumes equal counts of TP and FP.",
+    "trapAlert": "A 99.9% specific test does NOT mean a positive result is 99.9% reliable! In a 1 in 10,000 condition, 99.9% of positives are FALSE positives, yielding a PPV of under 10%."
+  },
+  {
+    "id": "math_2027_f28",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Parallel Testing Regimen: Sensitivity and Specificity Synthesis",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In an emergency neurotrauma unit, ruling out an intracranial bleed requires maximum diagnostic sensitivity. The team implements a parallel testing strategy where two rapid independent diagnostic tests (Test 1 and Test 2) are performed simultaneously, and the patient is declared 'positive' if EITHER Test 1 OR Test 2 is positive (or both). Test 1 has Sensitivity = 80.0% (0.80) and Specificity = 90.0% (0.90). Test 2 has Sensitivity = 70.0% (0.70) and Specificity = 85.0% (0.85). Assuming conditional independence, what are the net combined sensitivity (Sens_net) and net combined specificity (Spec_net) of this parallel testing regimen?",
+    "options": [
+      "A. Sens_net = 56.0%; Spec_net = 98.5%",
+      "B. Sens_net = 75.0%; Spec_net = 87.5%",
+      "C. Sens_net = 94.0% (0.94); Spec_net = 76.5% (0.765)",
+      "D. Sens_net = 94.0%; Spec_net = 90.0%",
+      "E. Sens_net = 100.0%; Spec_net = 75.0%"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In parallel diagnostic testing (rule-out strategy), a positive result occurs if Test 1 is positive, Test 2 is positive, or both. For diseased patients, the only way to miss the disease (false negative) is if BOTH tests are simultaneously negative: FN_net = (1 - Sens1) · (1 - Sens2). Therefore, net sensitivity is Sens_net = 1 - (1 - Sens1) · (1 - Sens2). For healthy patients, a correct negative call requires BOTH tests to be negative simultaneously: Spec_net = Spec1 · Spec2.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Test 1: Sens1 = 0.80, Spec1 = 0.90.<br>• Test 2: Sens2 = 0.70, Spec2 = 0.85.<br>• Net Sensitivity:<br>  Sens_net = 1 - (1 - 0.80) · (1 - 0.70) = 1 - (0.20 · 0.30) = 1 - 0.06 = 0.94 = 94.0%.<br>• Net Specificity:<br>  Spec_net = Spec1 · Spec2 = 0.90 · 0.85 = 0.765 = 76.5%.<br>• Parallel testing dramatically increases sensitivity (from 80% to 94%) at the structural cost of decreased specificity (from 90% down to 76.5%).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Inverts the logic, computing metrics for a serial testing strategy (Sens = 0.80·0.70 = 0.56; Spec = 1 - 0.10·0.15 = 0.985).<br>• Option B is false: Computes simple arithmetic means [(80+70)/2 = 75%; (90+85)/2 = 87.5%].<br>• Option C is CORRECT: Accurately deduces Sens_net = 94.0% and Spec_net = 76.5%.<br>• Option D is false: Keeps specificity equal to Test 1, ignoring the compounding of false positives.<br>• Option E is false: Overstates sensitivity to 100%.",
+    "trapAlert": "Parallel testing ('positive if either test is positive') BOOSTS sensitivity via 1 - (1-Sens1)(1-Sens2), but DEPRESSES specificity via Spec1 · Spec2."
+  },
+  {
+    "id": "math_2027_f29",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Serial (Orthogonal) Testing Regimen: Specificity Maximization",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Before initiating lifelong, toxic medical therapy for a chronic viral infection, clinicians employ a serial (confirmatory) diagnostic regimen: a patient is declared 'positive' ONLY IF BOTH Test 1 AND Test 2 return positive. Test 1 has Sensitivity = 99.0% (0.99) and Specificity = 90.0% (0.90). Test 2 has Sensitivity = 95.0% (0.95) and Specificity = 98.0% (0.98). Assuming conditional independence, what are the net combined sensitivity (Sens_serial) and net combined specificity (Spec_serial) of this serial regimen?",
+    "options": [
+      "A. Sens_serial = 99.0%; Spec_serial = 98.0%",
+      "B. Sens_serial = 99.95%; Spec_serial = 88.2%",
+      "C. Sens_serial = 97.0%; Spec_serial = 94.0%",
+      "D. Sens_serial = 94.05% (0.9405); Spec_serial = 99.8% (0.998)",
+      "E. Sens_serial = 94.05%; Spec_serial = 88.2%"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In serial diagnostic testing (rule-in / confirmatory strategy), a positive classification requires that both independent tests are positive. For a diseased individual to be detected, both tests must independently succeed: Sens_serial = Sens1 · Sens2. For a non-diseased individual, a false positive occurs only if BOTH tests are falsely positive simultaneously: FP_serial = (1 - Spec1) · (1 - Spec2). Therefore, net specificity is Spec_serial = 1 - (1 - Spec1) · (1 - Spec2).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Test 1: Sens1 = 0.99, Spec1 = 0.90.<br>• Test 2: Sens2 = 0.95, Spec2 = 0.98.<br>• Serial Sensitivity:<br>  Sens_serial = Sens1 · Sens2 = 0.99 · 0.95 = 0.9405 = 94.05%.<br>• Serial False Positive Rate:<br>  (1 - Spec1) · (1 - Spec2) = (1 - 0.90) · (1 - 0.98) = 0.10 · 0.02 = 0.002 (0.2%).<br>• Serial Specificity:<br>  Spec_serial = 1 - 0.002 = 0.998 = 99.8%.<br>• Serial testing elevates specificity to nearly 100% (99.8%), virtually eliminating false positive diagnoses.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Selects the individual maximums of each test.<br>• Option B is false: Inverts the formulas, calculating parallel metrics.<br>• Option C is false: Simple arithmetic averaging.<br>• Option D is CORRECT: Exactly calculates Sens_serial = 94.05% and Spec_serial = 99.8%.<br>• Option E is false: Computes Spec1 · Spec2 = 0.90 · 0.98 = 0.882 (which applies to parallel, not serial, testing).",
+    "trapAlert": "Serial testing ('positive ONLY if BOTH tests are positive') MAXIMIZES specificity via 1 - (1-Spec1)(1-Spec2) = 99.8%, but REDUCES sensitivity via Sens1 · Sens2."
+  },
+  {
+    "id": "math_2027_f30",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Multi-Stage Bayesian Updating with Three Successive Diagnostic Tests",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A patient with fever and rash in an endemic zone is evaluated for a tropical zoonosis with pre-test prevalence P(D) = 10.0% (0.10). Pre-test odds are 0.10 / 0.90 = 1/9. The patient undergoes three successive, conditionally independent diagnostic evaluations:\n• Test 1 (Point-of-care antigen): Positive result with LR+ = 6.0\n• Test 2 (IgM serology): Positive result with LR+ = 4.5 (9/2)\n• Test 3 (Microscopy smear): Negative result with LR- = 0.10 (1/10)\nWhat is the cumulative post-test odds following all three tests, and what is the final post-test probability of disease?",
+    "options": [
+      "A. Cumulative odds = 2.70; Final probability = 73.0%",
+      "B. Cumulative odds = 1/9; Final probability = 10.0%",
+      "C. Cumulative odds = 3/10; Final probability = 30.0%",
+      "D. Cumulative odds = 1.35; Final probability = 57.4%",
+      "E. Cumulative odds = 3/10 (0.30); Final probability = 3/13 (≈ 23.1%)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Sequential multi-stage Bayesian updating across n conditionally independent diagnostic findings multiplies the pre-test odds by the product of all corresponding likelihood ratios: Post-test odds = Pre-test odds · LR1 · LR2 · ... · LRn. Final posterior probability is then obtained via P = Odds / (1 + Odds).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Pre-test probability: P(D) = 0.10.<br>• Pre-test odds: 0.10 / (1 - 0.10) = 0.10 / 0.90 = 1 / 9.<br>• Likelihood ratios: LR1 = 6.0; LR2 = 4.5 = 9/2; LR3 = 0.10 = 1/10.<br>• Net combined likelihood ratio:<br>  LR_net = 6.0 · (9 / 2) · (1 / 10) = 3 · 9 · (1 / 10) = 27 / 10 = 2.70.<br>• Cumulative post-test odds:<br>  Odds_post = (1 / 9) · (27 / 10) = 3 / 10 = 0.30.<br>• Final post-test probability:<br>  P_post = Odds_post / (1 + Odds_post) = (3 / 10) / (1 + 3 / 10) = (3 / 10) / (13 / 10) = 3 / 13 ≈ 0.2308 = 23.08% (≈ 23.1%).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Mistakenly sets cumulative odds equal to LR_net (2.70) without multiplying by pre-test odds (1/9).<br>• Option B is false: Assumes the third negative test completely cancels both positive tests.<br>• Option C is false: Correctly calculates odds = 3/10, but falsely equates odds to probability (30.0%).<br>• Option D is false: Arithmetic omission of one test factor.<br>• Option E is CORRECT: Exactly calculates cumulative odds = 3/10 (0.30) and final probability = 3/13 (≈ 23.1%).",
+    "trapAlert": "Do not stop when you reach odds = 3/10 and report 30%! Odds of 3/10 (3 to 10 against) corresponds to probability = 3 / (3 + 10) = 3/13 ≈ 23.1%."
+  },
+  {
+    "id": "math_2027_f31",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Mathematical Inversion: Negative Predictive Value (NPV) Across Epidemiological Strata",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A rapid molecular swab assay for respiratory syncytial virus (RSV) has fixed performance: Sensitivity = 95.0% (0.95) and Specificity = 90.0% (0.90). The test is deployed in two contrasting clinical settings:\n• Setting 1 (Routine summer outpatient screening): Disease prevalence = 2.0% (p1 = 0.02)\n• Setting 2 (Winter pediatric intensive care unit during epidemic peak): Disease prevalence = 50.0% (p2 = 0.50)\nWhat are the exact Negative Predictive Values (NPV) in Setting 1 and Setting 2, and what general biostatistical rule governs NPV as prevalence increases?",
+    "options": [
+      "A. Setting 1 NPV = 882/883 (≈ 99.9%); Setting 2 NPV = 18/19 (≈ 94.7%); as disease prevalence increases, Negative Predictive Value universally decreases.",
+      "B. Setting 1 NPV = 90.0%; Setting 2 NPV = 90.0%; NPV is an intrinsic test property that is mathematically invariant to prevalence.",
+      "C. Setting 1 NPV = 94.7%; Setting 2 NPV = 99.9%; as disease prevalence increases, Negative Predictive Value universally increases.",
+      "D. Setting 1 NPV = 95.0%; Setting 2 NPV = 90.0%; determined solely by test sensitivity.",
+      "E. Setting 1 NPV = 98.0%; Setting 2 NPV = 50.0%; NPV drops directly to 50% when prevalence reaches 50%."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> While Sensitivity and Specificity are fixed technical parameters of an assay, predictive values are dynamic functions of disease prevalence p. Negative Predictive Value is defined by Bayes' theorem as NPV = [Specificity · (1 - p)] / [Specificity · (1 - p) + (1 - Sensitivity) · p]. As prevalence p increases, the proportion of diseased individuals grows, expanding the pool of false negatives relative to true negatives, which mathematically forces NPV to decrease monotonically.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Setting 1 (p1 = 0.02):<br>  - True Negatives per 10,000: 9,800 · 0.90 = 8,820.<br>  - False Negatives per 10,000: 200 · (1 - 0.95) = 200 · 0.05 = 10.<br>  - NPV_1 = 8,820 / (8,820 + 10) = 8,820 / 8,830 = 882 / 883 ≈ 0.99887 = 99.89% (≈ 99.9%).<br>• Setting 2 (p2 = 0.50):<br>  - True Negatives per 1,000: 500 · 0.90 = 450.<br>  - False Negatives per 1,000: 500 · 0.05 = 25.<br>  - NPV_2 = 450 / (450 + 25) = 450 / 475 = 18 / 19 ≈ 0.9474 = 94.74% (≈ 94.7%).<br>• Comparison: NPV drops from 99.9% in low-prevalence screening down to 94.7% in high-prevalence epidemic conditions.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly derives NPV1 = 882/883 (≈ 99.9%), NPV2 = 18/19 (≈ 94.7%), and states the universal law.<br>• Option B is false: Mistakenly asserts NPV is independent of prevalence.<br>• Option C is false: Inverts the relationship (PPV increases with prevalence, but NPV decreases).<br>• Option D is false: Confuses NPV with Sensitivity.<br>• Option E is false: Arbitrary linear heuristic.",
+    "trapAlert": "As disease prevalence rises: PPV rises, but NPV falls! A negative test in the middle of a raging epidemic carries far more false-negative risk than in low-season screening."
+  },
+  {
+    "id": "math_2027_f32",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Clinical Prediction Score as Bayesian Prior: Rule-Out Failure in High-Risk Patients",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A 62-year-old post-surgical patient with sudden pleuritic chest pain and hemoptysis is scored on the Wells Criteria for Pulmonary Embolism (PE), placing him in the 'High Risk' category with an estimated pre-test probability of P = 60.0% (0.60). Pre-test odds are 0.60 / 0.40 = 3/2 = 1.50. An inexperienced intern orders a high-sensitivity D-dimer assay (Sensitivity = 96.0%, Specificity = 40.0%), and the test returns NEGATIVE. Which option correctly states the Negative Likelihood Ratio (LR-), the post-test odds, the post-test probability, and explains why a negative D-dimer is clinically unsafe to rule out PE in high-risk patients?",
+    "options": [
+      "A. LR- = 0.04; Post-test odds = 0.06; Post-test probability = 5.7%; PE is safely excluded (< 10%).",
+      "B. LR- = 0.10 (1/10); Post-test odds = 3/20 (0.15); Post-test probability = 3/23 (≈ 13.0%); because residual risk (~13%) substantially exceeds the clinical safety threshold (typically < 1–2%), a negative D-dimer CANNOT rule out PE in high-pre-test-risk patients, mandating CT angiography.",
+      "C. LR- = 0.10; Post-test odds = 0.15; Post-test probability = 4.0%; equal to the false-negative rate of the assay.",
+      "D. LR- = 0.24; Post-test odds = 0.36; Post-test probability = 26.5%.",
+      "E. LR- = 0.10; Post-test odds = 0.15; Post-test probability = 0%; a negative test on a 96% sensitive assay universally clears the patient."
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Diagnostic 'rule-out' depends heavily on pre-test probability. The Negative Likelihood Ratio is LR- = (1 - Sensitivity) / Specificity. Post-test odds = Pre-test odds · LR-. Post-test probability = Odds / (1 + Odds). In high-risk clinical populations, even an exceptionally sensitive test (low LR-) yields a residual posterior probability too high to safely withhold definitive management.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Pre-test probability: P = 0.60.<br>• Pre-test odds: 0.60 / 0.40 = 3 / 2 = 1.50.<br>• Sensitivity = 0.96; Specificity = 0.40.<br>• False negative rate: 1 - Sensitivity = 1 - 0.96 = 0.04.<br>• Negative Likelihood Ratio: LR- = 0.04 / 0.40 = 1 / 10 = 0.10.<br>• Post-test odds = Pre-test odds · LR- = (3 / 2) · (1 / 10) = 3 / 20 = 0.15.<br>• Post-test probability = (3 / 20) / (1 + 3 / 20) = (3 / 20) / (23 / 20) = 3 / 23 ≈ 0.1304 = 13.04% (≈ 13.0%).<br>• A 13% risk of fatal pulmonary embolism is completely unacceptable for patient discharge, illustrating why clinical guidelines forbid using D-dimer in high-risk patients.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits test specificity in the denominator, setting LR- = 1 - Sens = 0.04.<br>• Option B is CORRECT: Exactly calculates LR- = 0.10, post-test odds = 3/20, post-test probability = 3/23 (≈ 13.0%), and gives the correct medical interpretation.<br>• Option C is false: Equates post-test probability to 1 - Sensitivity (4.0%).<br>• Option D is false: Arithmetic multiplication error.<br>• Option E is false: Dangerous clinical fallacy that high sensitivity yields 0% residual risk.",
+    "trapAlert": "A negative test NEVER guarantees zero disease risk. When pre-test probability is high (60%), a negative test leaves a 13% posterior risk. D-dimer must NEVER be used to rule out PE in high-risk patients."
+  },
+  {
+    "id": "math_2027_f33",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Ternary Bayesian Classification Across Three Mutually Exclusive Diagnoses",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A patient presents to a gastroenterologist with acute painless jaundice. The differential diagnosis consists of exactly three mutually exclusive etiologies with assigned clinical prior probabilities:\n• Hemolytic jaundice (H): P(H) = 0.20\n• Acute viral hepatitis (V): P(V) = 0.50\n• Extrahepatic biliary duct obstruction / choledocholithiasis (B): P(B) = 0.30\nSerum Alkaline Phosphatase (ALP) is measured and found to be markedly elevated (> 3x upper normal limit, ALP+). The known conditional probabilities of this marked ALP elevation in each disease are:\n• P(ALP+ | H) = 0.05 (5.0%)\n• P(ALP+ | V) = 0.20 (20.0%)\n• P(ALP+ | B) = 0.80 (80.0%)\nWhat is the total marginal probability of observing marked ALP elevation P(ALP+), and what is the posterior probability that the patient has extrahepatic biliary obstruction P(B | ALP+)?",
+    "options": [
+      "A. P(ALP+) = 0.800; P(B | ALP+) = 80.0%",
+      "B. P(ALP+) = 0.350; P(B | ALP+) = 30.0%",
+      "C. P(ALP+) = 0.350 (35.0%); P(B | ALP+) = 24/35 (≈ 68.6%)",
+      "D. P(ALP+) = 0.240; P(B | ALP+) = 100.0%",
+      "E. P(ALP+) = 0.350; P(B | ALP+) = 12/35 (≈ 34.3%)"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By the Law of Total Probability for a partition {H, V, B}: P(ALP+) = sum[ P(E_i) · P(ALP+ | E_i) ]. Bayes' theorem for multiple hypotheses then gives the posterior probability: P(B | ALP+) = [ P(B) · P(ALP+ | B) ] / P(ALP+).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Calculate joint probabilities for each etiology:<br>  - Hemolytic: P(H ∩ ALP+) = 0.20 · 0.05 = 0.010.<br>  - Viral: P(V ∩ ALP+) = 0.50 · 0.20 = 0.100.<br>  - Biliary: P(B ∩ ALP+) = 0.30 · 0.80 = 0.240.<br>• Total marginal probability of ALP+:<br>  P(ALP+) = 0.010 + 0.100 + 0.240 = 0.350 (35.0%).<br>• Posterior probability of biliary obstruction:<br>  P(B | ALP+) = P(B ∩ ALP+) / P(ALP+) = 0.240 / 0.350 = 24 / 35 ≈ 0.6857 = 68.57% (≈ 68.6%).<br>• (Posterior for Viral = 10/35 ≈ 28.6%; Posterior for Hemolytic = 1/35 ≈ 2.9%. Sum = 24/35 + 10/35 + 1/35 = 35/35 = 1.0. Perfect!).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Sets total probability equal to the single conditional sensitivity P(ALP+|B) = 0.80.<br>• Option B is false: Leaves posterior probability equal to unadjusted prior P(B) = 30%.<br>• Option C is CORRECT: Exactly calculates total probability = 0.350 and posterior probability = 24/35 (≈ 68.6%).<br>• Option D is false: Confuses joint probability (0.240) with total probability.<br>• Option E is false: Halves the numerator.",
+    "trapAlert": "Remember the Law of Total Probability: the denominator must sum the joint probabilities across ALL possible disease states (0.010 + 0.100 + 0.240 = 0.350)."
+  },
+  {
+    "id": "math_2027_f34",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Interval Likelihood Ratio for Multilevel Continuous Diagnostic Tests",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A clinical laboratory stratifies serum Prostate-Specific Antigen (PSA) into three ordinal concentration intervals with empirically validated interval likelihood ratios:\n• Interval I (PSA < 4.0 ng/mL): LR = 0.20\n• Interval II (PSA 4.0–10.0 ng/mL): LR = 1.25\n• Interval III (PSA > 10.0 ng/mL): LR = 7.50 (15/2)\nA 68-year-old male with an abnormal digital rectal examination has an estimated pre-test probability of prostate adenocarcinoma of P = 25.0% (0.25). Pre-test odds are 0.25 / 0.75 = 1/3. His serum PSA returns markedly elevated at 14.8 ng/mL (Interval III). What are his post-test odds and his final posterior probability of prostate adenocarcinoma?",
+    "options": [
+      "A. Post-test odds = 7.50; Posterior probability = 88.2%",
+      "B. Post-test odds = 1/3; Posterior probability = 25.0%",
+      "C. Post-test odds = 2.50; Posterior probability = 250%",
+      "D. Post-test odds = 5/2 (2.50); Posterior probability = 5/7 (≈ 71.4%)",
+      "E. Post-test odds = 1.875; Posterior probability = 65.2%"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Diagnostic tests with continuous outputs are most informatively interpreted using interval likelihood ratios rather than a single arbitrary binary cutoff. The interval likelihood ratio is LR_interval = P(Test in Interval | Disease) / P(Test in Interval | No Disease). Post-test odds = Pre-test odds · LR_interval. Posterior probability = Post-test odds / (1 + Post-test odds).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Pre-test probability: P = 0.25.<br>• Pre-test odds: 0.25 / (1 - 0.25) = 0.25 / 0.75 = 1 / 3.<br>• Observed PSA: 14.8 ng/mL falls into Interval III (> 10.0 ng/mL).<br>• Applicable Likelihood Ratio: LR = 7.50 = 15 / 2.<br>• Post-test odds: (1 / 3) · (15 / 2) = 15 / 6 = 5 / 2 = 2.50.<br>• Posterior probability: (5 / 2) / (1 + 5 / 2) = (5 / 2) / (7 / 2) = 5 / 7 ≈ 0.7143 = 71.43% (≈ 71.4%).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Mistakenly sets post-test odds equal to LR (7.50) without multiplying by pre-test odds (1/3).<br>• Option B is false: Assumes the test result provides no information.<br>• Option C is false: Ridiculous distractor equating odds 2.50 to 250% probability.<br>• Option D is CORRECT: Exactly calculates post-test odds = 5/2 (2.50) and posterior probability = 5/7 (≈ 71.4%).<br>• Option E is false: Uses LR = 15/8 based on arithmetic division error.",
+    "trapAlert": "When converting odds = 5/2 to probability, remember P = Odds / (1 + Odds) = (5/2) / (7/2) = 5/7. Never confuse odds with probability."
+  },
+  {
+    "id": "math_2027_f35",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Information-Neutral Likelihood Ratios: Indeterminate Test Results",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "An automated fluorescence assay for antinuclear antibodies (ANA) reports results in three categories:\n• Positive: P(Pos | SLE) = 0.85; P(Pos | Healthy) = 0.05 (LR+ = 17.0)\n• Indeterminate / Equivocal: P(Ind | SLE) = 0.10; P(Ind | Healthy) = 0.10\n• Negative: P(Neg | SLE) = 0.05; P(Neg | Healthy) = 0.85 (LR- = 1/17)\nA 28-year-old female with polyarthralgia and fatigue has a clinically estimated pre-test probability of Systemic Lupus Erythematosus (SLE) of P = 30.0% (0.30). The laboratory report returns as 'Indeterminate / Equivocal'. What is the exact Likelihood Ratio of this indeterminate result (LR_ind), and what is the patient's updated post-test probability of SLE?",
+    "options": [
+      "A. LR_ind = 0; Post-test probability = 0%",
+      "B. LR_ind = 0.50; Post-test probability = 17.6%",
+      "C. LR_ind = 1.0; Post-test probability = 50.0%",
+      "D. LR_ind = 2.0; Post-test probability = 46.2%",
+      "E. LR_ind = 1.0; Post-test probability = 30.0% (exact identity with baseline pre-test probability)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The likelihood ratio of any diagnostic test outcome is defined as LR = P(Result | Disease) / P(Result | No Disease). When an indeterminate or borderline test result occurs with equal frequency in diseased and non-diseased individuals, its likelihood ratio is exactly LR = 1.0. A likelihood ratio of 1.0 represents completely neutral evidence (zero information gain), leaving post-test odds and post-test probability strictly identical to pre-test values.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Conditional probabilities for Indeterminate result:<br>  P(Ind | SLE) = 0.10.<br>  P(Ind | Healthy) = 0.10.<br>• Likelihood Ratio: LR_ind = 0.10 / 0.10 = 1.0.<br>• Pre-test probability: P = 0.30.<br>• Pre-test odds: 0.30 / (1 - 0.30) = 0.30 / 0.70 = 3 / 7.<br>• Post-test odds: (3 / 7) · LR_ind = (3 / 7) · 1.0 = 3 / 7.<br>• Post-test probability: (3 / 7) / (1 + 3 / 7) = (3 / 7) / (10 / 7) = 3 / 10 = 0.30 = 30.0%.<br>• The patient's probability of SLE is completely unchanged at 30.0%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Equates indeterminate to a perfectly negative result (LR = 0).<br>• Option B is false: Arbitrary fractional attenuation.<br>• Option C is false: Equates neutral information to an arbitrary 50% coin flip.<br>• Option D is false: Arbitrary inflation.<br>• Option E is CORRECT: Exactly deduces LR_ind = 1.0 and Post-test probability = 30.0%.",
+    "trapAlert": "A test result that occurs with equal probability in sick and healthy patients has LR = 1.0. It provides ZERO diagnostic information and leaves the patient's prior probability completely unchanged."
+  },
+  {
+    "id": "math_2027_f36",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayesian Decision Theory",
+    "subtopic": "Case-Control Verification Bias and True Population Diagnostic Accuracy",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A commercial circulating tumor DNA (ctDNA) liquid biopsy for early colorectal cancer is validated in a 1:1 case-control trial of 1,000 subjects:\n• 500 confirmed colorectal cancer patients: test is positive in 450 (Sensitivity = 450/500 = 90.0%)\n• 500 healthy controls: test is negative in 400 (Specificity = 400/500 = 80.0%)\nIn this artificial study sample (sample prevalence = 50.0%), the overall raw accuracy is (450 + 400) / 1,000 = 85.0%. If this assay is subsequently deployed in a real-world asymptomatic screening population of 100,000 adults where the true population prevalence is 2.0% (0.02), what is the total number of correct test classifications (TP + TN) and what is the true population diagnostic accuracy?",
+    "options": [
+      "A. Total correct = 80,200; Population accuracy = 80.2%",
+      "B. Total correct = 85,000; Population accuracy = 85.0%",
+      "C. Total correct = 90,000; Population accuracy = 90.0%",
+      "D. Total correct = 78,400; Population accuracy = 78.4%",
+      "E. Total correct = 82,000; Population accuracy = 82.0%"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Overall diagnostic accuracy is defined as Accuracy = (TP + TN) / Total = [p · Sensitivity] + [(1 - p) · Specificity]. In artificial case-control validation where p = 0.50, accuracy is the unweighted mean (0.90 + 0.80)/2 = 85.0%. However, when deployed in a true population where prevalence is low (p = 0.02), accuracy is heavily weighted (98%) by test Specificity and only lightly weighted (2%) by Sensitivity.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Real-world population: N = 100,000.<br>• True cancer cases: 100,000 · 0.02 = 2,000 patients.<br>• Healthy individuals: 100,000 - 2,000 = 98,000 individuals.<br>• True Positives (TP): 2,000 · Sensitivity = 2,000 · 0.90 = 1,800.<br>• True Negatives (TN): 98,000 · Specificity = 98,000 · 0.80 = 78,400.<br>• Total correct classifications: TP + TN = 1,800 + 78,400 = 80,200.<br>• Population diagnostic accuracy: 80,200 / 100,000 = 0.802 = 80.2%.<br>• (Formulaic check: Accuracy = 0.02 · 0.90 + 0.98 · 0.80 = 0.018 + 0.784 = 0.802 = 80.2%).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly calculates total correct = 80,200 and accuracy = 80.2%.<br>• Option B is false: Naively assumes the 85.0% accuracy from the 50:50 case-control validation study applies to the general population.<br>• Option C is false: Equates population accuracy to sensitivity (90.0%).<br>• Option D is false: Counts only True Negatives (78,400), omitting True Positives.<br>• Option E is false: Arbitrary arithmetic distortion.",
+    "trapAlert": "Overall test accuracy is NOT a constant! Accuracy = p · Sens + (1-p) · Spec. When prevalence is 2%, accuracy is dominated by specificity (80%), pulling overall accuracy down from 85% to 80.2%."
+  },
+  {
+    "id": "math_2027_f37",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Binomial Distribution in Autosomal Recessive Pedigrees",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Both parents are confirmed heterozygous carriers of Spinal Muscular Atrophy (SMA, an autosomal recessive neurodegenerative disease, genotype Aa). According to Mendelian segregation, each child independently has probability p = 1/4 of being affected (aa) and probability 1 - p = 3/4 of being unaffected. If this couple plans a family of 4 children, what is the exact probability that EXACTLY 2 of their 4 children will be affected with SMA?",
+    "options": [
+      "A. 1 / 16 (≈ 6.25%)",
+      "B. 27 / 128 (≈ 21.09%)",
+      "C. 27 / 256 (≈ 10.55%)",
+      "D. 54 / 128 (≈ 42.19%)",
+      "E. 9 / 64 (≈ 14.06%)"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In independent Bernoulli trials where each trial has constant success probability p, the probability of obtaining exactly k successes in n independent trials is governed by the binomial formula: P(X = k) = (n choose k) · p^k · (1 - p)^(n - k), where (n choose k) = n! / [k! · (n - k)!] accounts for all unique orderings.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Total trials (children): n = 4.<br>• Target successes (affected children): k = 2.<br>• Probability of being affected per child: p = 1/4.<br>• Probability of being unaffected: 1 - p = 3/4.<br>• Combinations of 2 affected children out of 4:<br>  (4 choose 2) = (4 · 3) / (2 · 1) = 6.<br>• Probability calculation:<br>  P(X = 2) = 6 · (1/4)^2 · (3/4)^(4 - 2)<br>  P(X = 2) = 6 · (1 / 16) · (9 / 16)<br>  P(X = 2) = 6 · (9 / 256) = 54 / 256.<br>• Simplify fraction by dividing numerator and denominator by 2:<br>  54 / 256 = 27 / 128 ≈ 0.2109375 = 21.09%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits unaffected children and combinations, computing simply (1/4)^2 = 1/16.<br>• Option B is CORRECT: Exactly calculates (4 choose 2) · (1/4)^2 · (3/4)^2 = 27/128 (≈ 21.09%).<br>• Option C is false: Forgets the combination factor (4 choose 2) = 6, yielding 9/256 ≈ 10.55% (Wait: 27/256 is 3·(9/256), half the true probability).<br>• Option D is false: Arithmetic doubling error.<br>• Option E is false: 9/64 = 36/256.",
+    "trapAlert": "Never forget the combinatorial coefficient nCk! The probability of a specific sequence of 2 affected and 2 normal children is 9/256, but there are 4C2 = 6 such sequences, giving 54/256 = 27/128."
+  },
+  {
+    "id": "math_2027_f38",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Complementary Probability: At Least One Affected Child in a Family",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Two phenotypically normal heterozygous carriers of beta-thalassemia major (autosomal recessive, p = 1/4 affected probability per birth) plan to have a family of 5 children. What is the exact mathematical probability that AT LEAST ONE of their 5 children will be affected with beta-thalassemia major?",
+    "options": [
+      "A. 243 / 1024 (≈ 23.73%)",
+      "B. 5 / 4 (125.0%)",
+      "C. 781 / 1024 (≈ 76.27%)",
+      "D. 1,023 / 1,024 (≈ 99.90%)",
+      "E. 3 / 4 (75.0%)"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By the law of complementary probability, the probability that an event occurs 'at least once' in n independent trials is 1 minus the probability that it occurs zero times: P(X >= 1) = 1 - P(X = 0) = 1 - (1 - p)^n. This avoids summing individual binomial probabilities from k = 1 to n.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Number of children: n = 5.<br>• Probability of affected child: p = 1/4.<br>• Probability of unaffected child: q = 1 - p = 3/4.<br>• Probability that ZERO children are affected (all 5 unaffected):<br>  P(X = 0) = q^5 = (3/4)^5 = 3^5 / 4^5.<br>  3^5 = 243.<br>  4^5 = 1024.<br>  P(X = 0) = 243 / 1024 ≈ 0.2373 = 23.73%.<br>• Probability of AT LEAST ONE affected child:<br>  P(X >= 1) = 1 - P(X = 0) = 1 - (243 / 1024) = (1024 - 243) / 1024 = 781 / 1024.<br>• Numerical evaluation: 781 / 1024 ≈ 0.762695 = 76.27%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Calculates the complement P(X = 0) = 243/1024 (the probability that NO children are affected).<br>• Option B is false: Erroneous linear multiplication: 5 · (1/4) = 5/4 = 125% (probabilities cannot exceed 1.0).<br>• Option C is CORRECT: Exactly calculates P(X >= 1) = 781/1024 ≈ 76.27%.<br>• Option D is false: Calculates 1 - (1/4)^5 = 1023/1024 (which would be at least one unaffected child if p=3/4).<br>• Option E is false: Constant single-birth unaffected probability (75.0%).",
+    "trapAlert": "Never multiply number of children by single-birth risk (5 · 1/4 = 1.25 is impossible!). Always use the complement rule: 1 - (3/4)^5 = 781/1024."
+  },
+  {
+    "id": "math_2027_f39",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "X-Linked Recessive Transmission and Joint Offspring Probabilities",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A woman is a confirmed heterozygous carrier of Hemophilia A (genotype X^H X^h), and her male partner is unaffected (genotype X^H Y). Any child has independent probability 1/2 of being female (XX) and 1/2 of being male (XY). Only male offspring who inherit the maternal X^h allele manifest hemophilia (50% risk among sons); female offspring are phenotypically unaffected. If this couple has 3 children, what is the exact probability that ALL 3 children are sons AND EXACTLY 1 of them is affected with hemophilia?",
+    "options": [
+      "A. 3 / 8 (≈ 37.5%)",
+      "B. 1 / 8 (≈ 12.5%)",
+      "C. 3 / 32 (≈ 9.38%)",
+      "D. 3 / 64 (≈ 4.69%)",
+      "E. 1 / 64 (≈ 1.56%)"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By the definition of conditional and joint probability: P(A ∩ B) = P(A) · P(B | A). Here, event A is having 3 sons, and event B is having exactly 1 affected child. Conditional on all 3 children being sons, the disease status of each son is an independent Bernoulli trial with success probability p = 1/2.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Probability that all 3 children are sons: P(3 sons) = (1/2)^3 = 1 / 8.<br>• Given that all 3 children are sons, each son independently inherits X^h with probability p = 1/2 and X^H with probability 1 - p = 1/2.<br>• Probability of exactly 1 affected son among 3 sons:<br>  P(1 affected | 3 sons) = (3 choose 1) · (1/2)^1 · (1/2)^2 = 3 · (1/8) = 3 / 8.<br>• Joint probability of having 3 sons AND exactly 1 affected:<br>  P(3 sons ∩ 1 affected) = P(3 sons) · P(1 affected | 3 sons) = (1 / 8) · (3 / 8) = 3 / 64.<br>• Numerical evaluation: 3 / 64 = 0.046875 = 4.6875% (≈ 4.69%).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Computes only P(1 affected | 3 sons) = 3/8, forgetting to multiply by P(3 sons) = 1/8.<br>• Option B is false: Computes only the probability of having 3 sons: (1/2)^3 = 1/8.<br>• Option C is false: Arithmetic multiplication error (1/4 · 3/8 = 3/32).<br>• Option D is CORRECT: Exactly derives P = (1/8) · (3/8) = 3/64 (≈ 4.69%).<br>• Option E is false: Computes probability that all 3 sons are affected: (1/8) · (1/8) = 1/64.",
+    "trapAlert": "Do not forget the probability of sex determination! The question specifies that ALL 3 children are sons (probability 1/8) AND exactly 1 is affected (conditional probability 3/8), yielding 3/64."
+  },
+  {
+    "id": "math_2027_f40",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Bayesian Carrier Risk Assessment Conditioned on Healthy Prior Offspring",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A 30-year-old woman consults a clinical geneticist regarding her carrier risk for Duchenne Muscular Dystrophy (DMD, an X-linked recessive, genetically lethal condition in males). Her maternal uncle died of DMD, and her mother was an obligate carrier, establishing the woman's prior carrier probability as P(Carrier) = 1/2. The woman has already given birth to 3 healthy sons, none of whom show any signs of DMD. What is her updated posterior probability of being a carrier, conditioned on having 3 healthy sons?",
+    "options": [
+      "A. 1 / 2 (50.0%, unaffected prior)",
+      "B. 1 / 8 (12.5%)",
+      "C. 1 / 4 (25.0%)",
+      "D. 1 / 16 (6.25%)",
+      "E. 1 / 9 (≈ 11.11%)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In clinical genetics, Bayesian pedigree analysis updates carrier status based on negative family history. If a woman is a carrier (C), each son has probability 1/2 of inheriting the normal allele and being healthy. If she is a non-carrier (NC), each son is healthy with probability 1.0. Having multiple healthy sons provides Bayesian evidence that systematically reduces her carrier risk.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Hypothesis 1 (Carrier, C): Prior P(C) = 1/2.<br>  - Likelihood of 3 healthy sons: P(3 healthy | C) = (1/2)^3 = 1/8.<br>  - Joint probability: P(C ∩ 3 healthy) = (1/2) · (1/8) = 1/16.<br>• Hypothesis 2 (Non-carrier, NC): Prior P(NC) = 1/2.<br>  - Likelihood of 3 healthy sons: P(3 healthy | NC) = 1^3 = 1.0.<br>  - Joint probability: P(NC ∩ 3 healthy) = (1/2) · 1.0 = 1/2 = 8/16.<br>• Total marginal probability of 3 healthy sons:<br>  P(3 healthy) = 1/16 + 8/16 = 9/16.<br>• Posterior carrier probability:<br>  P(C | 3 healthy) = (1/16) / (9/16) = 1 / 9 ≈ 0.1111 = 11.11%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Ignores the diagnostic evidence provided by the 3 healthy sons.<br>• Option B is false: Confuses the conditional likelihood (1/8) with the posterior probability.<br>• Option C is false: Arbitrary reduction to 25%.<br>• Option D is false: Confuses the joint probability (1/16) with the posterior probability.<br>• Option E is CORRECT: Exactly calculates P(Carrier | 3 healthy) = 1/9 (≈ 11.11%).",
+    "trapAlert": "Each healthy son reduces the mother's carrier odds by a factor of 2! Prior odds = 1:1. After 3 sons, odds = 1 · (1/2)^3 = 1:8. Probability = 1 / (1 + 8) = 1/9."
+  },
+  {
+    "id": "math_2027_f41",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Geometric Distribution: Waiting Time to First Affected Offspring",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Two carriers of Sickle Cell Anemia (autosomal recessive) each have sickle cell trait (genotype HbAS). For each pregnancy, the probability of producing a child with sickle cell disease (HbSS) is p = 0.25 (1/4), and the probability of an unaffected child is q = 0.75 (3/4). What is the exact probability that their FIRST affected child is born on their 4th pregnancy, and what is the expected number of pregnancies until their first affected child?",
+    "options": [
+      "A. P(X = 4) = 27 / 256 (≈ 10.55%); Expected pregnancies E[X] = 4",
+      "B. P(X = 4) = 1 / 256 (≈ 0.39%); Expected pregnancies E[X] = 16",
+      "C. P(X = 4) = 81 / 256 (≈ 31.64%); Expected pregnancies E[X] = 4",
+      "D. P(X = 4) = 27 / 256; Expected pregnancies E[X] = 2.5",
+      "E. P(X = 4) = 3 / 16 (≈ 18.75%); Expected pregnancies E[X] = 3"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Geometric distribution models the number of Bernoulli trials X required to achieve the first success. The probability mass function is P(X = k) = (1 - p)^(k - 1) · p, representing k - 1 consecutive failures followed by success on the k-th trial. The expected value (mean waiting time) of a geometric random variable is E[X] = 1 / p.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Success probability (affected child): p = 1/4 = 0.25.<br>• Failure probability (unaffected child): q = 1 - p = 3/4 = 0.75.<br>• First affected child on trial k = 4 requires 3 unaffected children followed by 1 affected child:<br>  P(X = 4) = q^3 · p = (3/4)^3 · (1/4) = (27 / 64) · (1 / 4) = 27 / 256.<br>• Numerical evaluation: 27 / 256 ≈ 0.10546875 = 10.55%.<br>• Expected number of pregnancies to first affected child:<br>  E[X] = 1 / p = 1 / 0.25 = 4 pregnancies.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly derives P(X = 4) = 27/256 and expected value E[X] = 4.<br>• Option B is false: Computes (1/4)^4 = 1/256, which is the probability of 4 consecutive affected children.<br>• Option C is false: Computes q^4 = (3/4)^4 = 81/256, which is 4 consecutive unaffected children.<br>• Option D is false: Incorrect expected value.<br>• Option E is false: Uses incorrect powers.",
+    "trapAlert": "In geometric distribution P(X = k) = (1-p)^(k-1) · p, there is NO combination factor nCk because the position of the success is fixed strictly at the k-th trial."
+  },
+  {
+    "id": "math_2027_f42",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Hypergeometric Sampling Without Replacement in Clinical Trial Safety Cohorts",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A phase I clinical trial monitoring group consists of exactly N = 20 patients. Unknown to the investigators at enrollment, exactly K = 4 of these 20 patients carry a CYP2C19 slow-metabolizer polymorphism that predisposes to severe drug toxicity. A regulatory safety auditor randomly selects a sample of n = 5 patients WITHOUT replacement for genetic sequencing. What is the exact probability that EXACTLY k = 2 of the 5 sampled patients carry the slow-metabolizer polymorphism?",
+    "options": [
+      "A. 6 / 323 (≈ 1.86%)",
+      "B. 70 / 323 (≈ 21.67%)",
+      "C. 120 / 323 (≈ 37.15%)",
+      "D. 1 / 5 (20.0%, binomial approximation)",
+      "E. 35 / 323 (≈ 10.84%)"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> When sampling without replacement from a finite population of size N containing K items of interest, the number of successes k in a sample of size n follows the Hypergeometric distribution: P(X = k) = [ (K choose k) · ((N - K) choose (n - k)) ] / (N choose n). Unlike the binomial distribution, successive draws are dependent.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Population size: N = 20.<br>• Total carriers in population: K = 4; Non-carriers: N - K = 16.<br>• Sample size: n = 5; Target carriers: k = 2; Target non-carriers: n - k = 3.<br>• Combinations of 2 carriers from 4: (4 choose 2) = 6.<br>• Combinations of 3 non-carriers from 16:<br>  (16 choose 3) = (16 · 15 · 14) / (3 · 2 · 1) = 16 · 5 · 7 = 560.<br>• Total favorable selections: (4 choose 2) · (16 choose 3) = 6 · 560 = 3,360.<br>• Total possible samples of 5 from 20:<br>  (20 choose 5) = (20 · 19 · 18 · 17 · 16) / (5 · 4 · 3 · 2 · 1) = 19 · 18 · 17 · 4 / 3 = 19 · 6 · 17 · 4 = 15,504.<br>• Exact probability: P(X = 2) = 3,360 / 15,504.<br>• Divide numerator and denominator by 48:<br>  3,360 / 48 = 70.<br>  15,504 / 48 = 323.<br>• P(X = 2) = 70 / 323 ≈ 0.216718 = 21.67%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits (16 choose 3), calculating 6 / 323.<br>• Option B is CORRECT: Exactly evaluates the hypergeometric formula to 70 / 323 (≈ 21.67%).<br>• Option C is false: Fails to divide by 2! in permutations, doubling numerator.<br>• Option D is false: Naively uses 1/5 = 20% (crude binomial approximation with replacement).<br>• Option E is false: Halves the true probability to 35/323.",
+    "trapAlert": "When sampling WITHOUT replacement from a small finite cohort (n=5 from N=20), you MUST use the Hypergeometric distribution [K_C_k · (N-K)_C_(n-k)] / N_C_n, NOT the Binomial formula."
+  },
+  {
+    "id": "math_2027_f43",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Multinomial Distribution in Mendelian Dihybrid Crosses",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a classic Mendelian dihybrid cross between two unlinked double heterozygotes (AaBb x AaBb), the four resulting phenotypic classes occur with theoretical probabilities:\n• Dominant for both traits (A_B_): p1 = 9/16\n• Dominant A, recessive b (A_bb): p2 = 3/16\n• Recessive a, dominant B (aaB_): p3 = 3/16\n• Recessive for both traits (aabb): p4 = 1/16\nIf exactly 4 offspring are generated from this cross, what is the exact probability of observing: exactly 2 dominant for both traits (k1 = 2), 1 dominant A only (k2 = 1), 0 dominant B only (k3 = 0), and 1 double recessive (k4 = 1)?",
+    "options": [
+      "A. 243 / 65,536 (≈ 0.37%)",
+      "B. 81 / 4,096 (≈ 1.98%)",
+      "C. 729 / 16,384 (≈ 4.45%)",
+      "D. 27 / 1,024 (≈ 2.64%)",
+      "E. 243 / 16,384 (≈ 1.48%)"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Multinomial distribution generalizes the binomial distribution to experiments with m > 2 mutually exclusive categorical outcomes. The probability of observing counts k1, k2, ..., km in n trials is: P = [ n! / (k1! · k2! · ... · km!) ] · p1^k1 · p2^k2 · ... · pm^km.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Total offspring: n = 4.<br>• Counts: k1 = 2, k2 = 1, k3 = 0, k4 = 1 (sum = 2 + 1 + 0 + 1 = 4).<br>• Multinomial coefficient:<br>  M = 4! / (2! · 1! · 0! · 1!) = 24 / (2 · 1 · 1 · 1) = 12.<br>• Term powers:<br>  p1^2 = (9/16)^2 = 81 / 256.<br>  p2^1 = (3/16)^1 = 3 / 16.<br>  p3^0 = (3/16)^0 = 1.<br>  p4^1 = (1/16)^1 = 1 / 16.<br>• Probability product:<br>  Product = (81 / 256) · (3 / 16) · 1 · (1 / 16) = 243 / 65,536.<br>• Total probability:<br>  P = 12 · (243 / 65,536) = 2,916 / 65,536.<br>• Simplify by dividing numerator and denominator by 4:<br>  2,916 / 4 = 729.<br>  65,536 / 4 = 16,384.<br>• P = 729 / 16,384 ≈ 0.04449 = 4.45%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits the multinomial permutation coefficient 12, yielding 243 / 65,536.<br>• Option B is false: Erroneous reduction of exponents.<br>• Option C is CORRECT: Exactly calculates 12 · (243 / 65,536) = 729 / 16,384 (≈ 4.45%).<br>• Option D is false: Arithmetic reduction error.<br>• Option E is false: Multiplies by 4 instead of 12.",
+    "trapAlert": "When outcomes have > 2 categories, use the Multinomial formula! The multinomial coefficient 4! / (2! 1! 0! 1!) = 12 accounts for the distinct orderings."
+  },
+  {
+    "id": "math_2027_f44",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Autosomal Dominant Inheritance with Incomplete Penetrance",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Familial Hypertrophic Cardiomyopathy (HCM) is inherited in an autosomal dominant pattern. A heterozygous affected father (genotype Hh) and a genetically normal mother (hh) have children. Each child independently inherits the mutant allele H with probability p_inherit = 1/2. However, the disease exhibits an age-dependent penetrance of K = 80.0% (0.80) by age 40 (meaning 80% of individuals with genotype Hh manifest clinical disease by age 40, while 20% remain asymptomatic). If this couple has 3 children, what is the exact probability that EXACTLY 1 child will manifest clinical HCM by age 40?",
+    "options": [
+      "A. 0.144 (14.4%)",
+      "B. 0.375 (37.5%, assuming 100% complete penetrance)",
+      "C. 0.288 (28.8%)",
+      "D. 0.432 (54/125 = 43.2%)",
+      "E. 0.512 (51.2%)"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In clinical genetics, incomplete penetrance scales down the transmission probability of an autosomal dominant disease. By the law of total probability, the marginal probability that an offspring manifests the clinical phenotype is: p = P(Inherits allele) · P(Penetrance | allele) = p_inherit · K. The family distribution of affected offspring then follows a standard binomial distribution B(n, p).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Allele transmission probability: p_inherit = 1/2 = 0.50.<br>• Clinical penetrance: K = 0.80.<br>• Marginal probability that a child manifests HCM by age 40:<br>  p = 0.50 · 0.80 = 0.40 (40.0% = 2/5).<br>• Probability of remaining clinically unaffected by age 40:<br>  q = 1 - p = 1 - 0.40 = 0.60 (60.0% = 3/5).<br>  (Note: Unaffected includes those who did not inherit the gene [50%] PLUS non-penetrant carriers [10%], total = 60%).<br>• Binomial probability for n = 3 children with exactly k = 1 affected:<br>  P(X = 1) = (3 choose 1) · p^1 · q^2<br>  P(X = 1) = 3 · (0.40)^1 · (0.60)^2<br>  P(X = 1) = 3 · 0.40 · 0.36 = 3 · 0.144 = 0.432 = 43.2% (or 54 / 125).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits the combination coefficient (3 choose 1) = 3, yielding 0.144.<br>• Option B is false: Calculates binomial with complete penetrance (p = 0.50): 3 · (0.5)^3 = 0.375.<br>• Option C is false: Multiplies by 2 instead of 3.<br>• Option D is CORRECT: Exactly calculates 3 · (0.40) · (0.36) = 0.432 (43.2%).<br>• Option E is false: Computes q^3 = (0.8)^3 = 0.512.",
+    "trapAlert": "Do not treat penetrance as a separate conditional at the end. Compute the net marginal phenotypic risk per birth first: p = 0.50 · 0.80 = 0.40. Then apply the binomial formula."
+  },
+  {
+    "id": "math_2027_f45",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Hardy-Weinberg Equilibrium and Population Carrier Mating Risk",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a European population in Hardy-Weinberg equilibrium, the birth incidence of Cystic Fibrosis (autosomal recessive) is 1 in 2,500 live births (q^2 = 1 / 2,500 = 0.0004). The recessive allele frequency is q = 1/50 = 0.02, and the normal allele frequency is p = 49/50 = 0.98. A phenotypically healthy male whose sister died of Cystic Fibrosis (parents were unaffected carriers) marries a healthy, unrelated woman chosen at random from this population. Given that the woman is phenotypically healthy, what is her exact carrier probability, and what is the exact probability that their first child will be affected with Cystic Fibrosis?",
+    "options": [
+      "A. Woman carrier = 1/2,500; Child affected = 1/15,000",
+      "B. Woman carrier = 1/50; Child affected = 1/300",
+      "C. Woman carrier = 2/3; Child affected = 1/9",
+      "D. Woman carrier = 1/25; Child affected = 1/100",
+      "E. Woman carrier = 2/51 (≈ 1/25.5); Child affected = 1/153 (≈ 0.654%)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> For a known healthy sibling of an autosomal recessive patient, carrier probability is P(Male = Aa | not aa) = 2/3. For an unrelated healthy individual from a Hardy-Weinberg population, the probability of being a carrier given a normal phenotype is: P(Aa | normal) = 2pq / (p^2 + 2pq) = 2q / (p + 2q). For their child to be affected (aa), both parents must be carriers, and both must transmit the mutant allele (probability 1/4): P(Child aa) = P(Father Aa) · P(Mother Aa) · (1/4).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Father's carrier probability: Both parents were carriers, so sibling genotypes are 1 AA : 2 Aa : 1 aa. Because he is healthy (not aa), P(Father Aa) = 2 / 3.<br>• Population parameters: q = 0.02, p = 0.98.<br>• Mother's carrier probability given healthy phenotype:<br>  P(Mother Aa | healthy) = 2pq / (p^2 + 2pq) = 2q / (p + 2q)<br>  = 2(0.02) / (0.98 + 2 · 0.02) = 0.04 / (0.98 + 0.04) = 0.04 / 1.02 = 4 / 102 = 2 / 51.<br>  (Note: Often approximated as 2pq ≈ 2(0.02) = 1/25 = 2/50).<br>• Probability of affected child:<br>  P(Child aa) = (2 / 3) · (2 / 51) · (1 / 4) = 4 / (3 · 51 · 4) = 1 / (3 · 51) = 1 / 153.<br>• Numerical evaluation: 1 / 153 ≈ 0.006536 = 0.654%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Sets woman's carrier risk equal to disease prevalence q^2 = 1/2,500.<br>• Option B is false: Confuses carrier frequency with allele frequency q = 1/50.<br>• Option C is false: Treats the woman as if she also had an affected sibling (2/3).<br>• Option D is false: Uses 2pq ≈ 1/25 and forgets the father's 2/3 factor: 1 · (1/25) · (1/4) = 1/100.<br>• Option E is CORRECT: Exactly derives Mother carrier = 2/51 and Child affected = 1/153 (≈ 0.654%).",
+    "trapAlert": "Healthy sibling of an affected individual has a 2/3 (NOT 1/2) chance of being a carrier! In the population, the carrier frequency among HEALTHY people is 2q / (p + 2q) = 2/51."
+  },
+  {
+    "id": "math_2027_f46",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Negative Binomial / Sequential Regimen Failure and Success",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "An oncologist evaluates sequential lines of independent targeted immunotherapy for refractory metastatic melanoma. Each independent line of therapy has a failure probability of q = 0.60 (60.0%) and a remission success probability of p = 0.40 (40.0%). Lines are administered sequentially: Line 2 is attempted only if Line 1 fails; Line 3 only if Line 2 fails; and Line 4 only if Line 3 fails. What is the exact probability that the patient fails the first 2 lines, but achieves objective clinical remission on EITHER the 3rd OR the 4th line?",
+    "options": [
+      "A. 0.2304 (23.04% = 144 / 625)",
+      "B. 0.1440 (14.40%)",
+      "C. 0.0864 (8.64%)",
+      "D. 0.3600 (36.00%)",
+      "E. 0.5184 (51.84%)"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In a sequence of independent Bernoulli trials with stopping rules, disjoint outcomes have additive probabilities: P(A ∪ B) = P(A) + P(B). Remission on the 3rd line requires sequence (Fail, Fail, Success). Remission on the 4th line requires sequence (Fail, Fail, Fail, Success).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Probability of failure per line: q = 0.60.<br>• Probability of success per line: p = 0.40.<br>• Event 1: Remission on Line 3 (fails first 2 lines, succeeds on 3rd):<br>  P(L3) = q · q · p = (0.60)^2 · 0.40 = 0.36 · 0.40 = 0.1440 (14.40%).<br>• Event 2: Remission on Line 4 (fails first 3 lines, succeeds on 4th):<br>  P(L4) = q · q · q · p = (0.60)^3 · 0.40 = 0.216 · 0.40 = 0.0864 (8.64%).<br>• Since Event 1 and Event 2 are mutually exclusive, total probability is:<br>  P = P(L3) + P(L4) = 0.1440 + 0.0864 = 0.2304 = 23.04%.<br>• In fractional terms: 0.2304 = 2304 / 10000 = 144 / 625.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly calculates 0.1440 + 0.0864 = 0.2304 (23.04%).<br>• Option B is false: Considers only remission on the 3rd line (0.1440), omitting the 4th line.<br>• Option C is false: Considers only remission on the 4th line (0.0864), omitting the 3rd line.<br>• Option D is false: Computes probability of failing first two lines: (0.60)^2 = 0.36.<br>• Option E is false: Computes (0.60)^2 · (1 - 0.16) = 0.5184.",
+    "trapAlert": "When asking for success on 'either Line 3 or Line 4', sum the disjoint probabilities: P(F-F-S) + P(F-F-F-S) = 0.1440 + 0.0864 = 0.2304."
+  },
+  {
+    "id": "math_2027_f47",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Reduced Sample Space Conditionals: The 2/3 Carrier Trap",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "Phenylketonuria (PKU) is an autosomal recessive metabolic disorder caused by phenylalanine hydroxylase deficiency. Two confirmed heterozygous carrier parents (genotype Aa x Aa) have an infant who undergoes mandatory newborn screening and is confirmed NOT to have PKU (genotype is NOT aa).\nPart 1: What is the probability that this healthy infant is a heterozygous carrier (Aa)?\nPart 2: If this individual grows up and marries a confirmed heterozygous carrier partner (Aa), what is the exact probability that their first child will have PKU?",
+    "options": [
+      "A. Carrier probability = 1/2; Child affected = 1/8 (12.5%)",
+      "B. Carrier probability = 2/3; Child affected = 1/6 (≈ 16.67%)",
+      "C. Carrier probability = 2/3; Child affected = 1/4 (25.0%)",
+      "D. Carrier probability = 3/4; Child affected = 3/16 (18.75%)",
+      "E. Carrier probability = 1/4; Child affected = 1/16 (6.25%)"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Conditioning on known phenotypic information collapses the Mendelian sample space. A cross between Aa x Aa produces offspring with genotypes {AA, Aa, aA, aa} in proportions 1/4 : 1/4 : 1/4 : 1/4. Knowing an individual is unaffected eliminates the aa state entirely, reducing the sample space to {AA, Aa, aA} with total measure 3/4. Within this restricted space, the conditional probability of being a carrier is (2/4) / (3/4) = 2/3.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Part 1: P(Carrier | Not aa) = P(Aa ∩ Not aa) / P(Not aa) = (2/4) / (3/4) = 2 / 3 ≈ 66.67%.<br>• Part 2: Transmission to grandchild:<br>  - Parent is Aa with probability 2/3.<br>  - Partner is confirmed Aa with probability 1.0.<br>  - If both parents are Aa, the child has PKU (aa) with probability 1/4.<br>  - Total probability: P(Child aa) = (2 / 3) · 1.0 · (1 / 4) = 2 / 12 = 1 / 6 ≈ 0.1667 = 16.67%.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: The classic '1/2 trap' — assumes carrier probability is 1/2 by dividing by the unconditioned sample space.<br>• Option B is CORRECT: Exactly calculates carrier probability = 2/3 and child affected = 1/6.<br>• Option C is false: Assumes the parent is definitely a carrier (probability 1.0), yielding 1/4.<br>• Option D is false: Confuses carrier probability with unaffected probability (3/4).<br>• Option E is false: Uses 1/4 for carrier probability.",
+    "trapAlert": "THE CLASSIC 2/3 TRAP: A healthy sibling of an affected individual has probability 2/3 (NOT 1/2) of being a carrier, because the homozygous recessive genotype aa has been ruled out."
+  },
+  {
+    "id": "math_2027_f48",
+    "subject": "Mathematics",
+    "chapter": "Combinatorics & Discrete Distributions",
+    "subtopic": "Constrained Combinatorial Regimens with Contraindicated Pairs",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A clinical pharmacology committee is designing a multi-agent investigational regimen for multidrug-resistant tuberculosis. The formulary pool consists of:\n• 8 distinct bactericidal antibiotics (Group 1)\n• 5 distinct bacteriostatic adjuncts (Group 2)\nA trial regimen must consist of exactly 3 antibiotics from Group 1 and exactly 2 adjuncts from Group 2. However, pharmacovigilance data reveals that Antibiotic A1 and Antibiotic A2 cannot be co-administered due to severe additive QT-prolongation cardiotoxicity (any regimen containing BOTH A1 and A2 is strictly forbidden). How many valid, safe combination regimens can be formulated?",
+    "options": [
+      "A. 560",
+      "B. 530",
+      "C. 500",
+      "D. 450",
+      "E. 480"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> By the fundamental counting principle with exclusion: Valid Regimens = (Total possible antibiotic selections - Forbidden antibiotic selections) · (Total adjunct selections). Combinations of r items chosen from n items are given by nCr = n! / [r! · (n - r)!].<br><br><strong>2. Step-by-Step Proof:</strong><br>• Total unconstrained antibiotic selections (Group 1):<br>  (8 choose 3) = (8 · 7 · 6) / (3 · 2 · 1) = 56.<br>• Forbidden antibiotic selections (must contain both A1 and A2):<br>  Since A1 and A2 are already chosen (2 drugs), the 3rd drug must be selected from the remaining 8 - 2 = 6 antibiotics:<br>  Forbidden Group 1 selections = (6 choose 1) = 6.<br>• Valid antibiotic selections (Group 1):<br>  56 - 6 = 50 valid antibiotic triplets.<br>• Adjunct selections (Group 2):<br>  (5 choose 2) = (5 · 4) / (2 · 1) = 10 pairs.<br>• Total valid safe regimens:<br>  Valid Total = 50 · 10 = 500 regimens.<br>  (Alternatively: Total unconstrained = 56 · 10 = 560. Forbidden = 6 · 10 = 60. Safe = 560 - 60 = 500).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Unconstrained count: 56 · 10 = 560, failing to subtract the forbidden cardiotoxic combinations.<br>• Option B is false: Subtracts only 3 forbidden regimens instead of 6.<br>• Option C is CORRECT: Exactly calculates 50 · 10 = 500 safe regimens.<br>• Option D is false: Arithmetic subtraction error.<br>• Option E is false: Subtracts 8 instead of 6 from Group 1.",
+    "trapAlert": "When two items cannot be used together in a sample of size 3 from 8: the forbidden selections are (6 choose 1) = 6, NOT 2. Total valid combinations = 56 - 6 = 50."
+  },
+  {
+    "id": "math_2027_f49",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Cartesian Equation of Spherical Tumors and Target Volume Margin Expansion",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In stereotactic radiation oncology planning for an intracranial metastasis, high-resolution MRI defines the Gross Tumor Volume (GTV) as a sphere centered at spatial coordinates C(20, -15, 30) mm with radius R = 10 mm. To account for subclinical microscopic malignant infiltration and patient positioning setup error, the radiation oncologist adds a uniform circumferential radial safety margin of 5 mm to construct the Planning Target Volume (PTV). Which option correctly states the Cartesian equation of the expanded PTV, and the exact percentage increase in target volume requiring irradiation?",
+    "options": [
+      "A. Equation: (x - 20)^2 + (y + 15)^2 + (z - 30)^2 = 125; Volume increase = 50.0%",
+      "B. Equation: (x - 20)^2 + (y + 15)^2 + (z - 30)^2 = 225; Volume increase = 50.0%",
+      "C. Equation: (x - 20)^2 + (y + 15)^2 + (z - 30)^2 = 150; Volume increase = 125.0%",
+      "D. Equation: (x - 20)^2 + (y + 15)^2 + (z - 30)^2 = 225; Volume increase = 237.5% (a volume expansion ratio of 27/8)",
+      "E. Equation: (x + 20)^2 + (y - 15)^2 + (z + 30)^2 = 225; Volume increase = 337.5%"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In 3D Cartesian coordinates, the equation of a sphere centered at (a, b, c) with radius R is: (x - a)^2 + (y - b)^2 + (z - c)^2 = R^2. The volume of a sphere is V = (4/3) · pi · R^3. Because volume scales cubically with linear radius (V ∝ R^3), expanding the radius from R to R' multiplies the volume by (R' / R)^3.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Initial GTV sphere: Center C(20, -15, 30) mm, radius R = 10 mm.<br>  GTV equation: (x - 20)^2 + (y - (-15))^2 + (z - 30)^2 = 10^2 => (x - 20)^2 + (y + 15)^2 + (z - 30)^2 = 100.<br>• Circumferential margin = 5 mm, so new PTV radius: R' = 10 + 5 = 15 mm.<br>• PTV equation: (x - 20)^2 + (y + 15)^2 + (z - 30)^2 = 15^2 = 225.<br>• Volume ratio: V_PTV / V_GTV = (R' / R)^3 = (15 / 10)^3 = (3 / 2)^3 = 27 / 8 = 3.375.<br>• Percentage increase in irradiated volume:<br>  Delta_V = (V_PTV - V_GTV) / V_GTV = 3.375 - 1.0 = 2.375 = 237.5%.<br>  (A mere 50% increase in radius expands irradiated normal tissue volume by 237.5%!).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Computes R'^2 as 10^2 + 5^2 = 125 (pythagorean error) and assumes volume scales linearly (50%).<br>• Option B is false: Correct equation (225), but falsely assumes volume increases linearly by 50% (ignoring cubic scaling).<br>• Option C is false: Sets R'^2 = 150.<br>• Option D is CORRECT: Exactly derives the equation = 225 and volume increase = 237.5% (ratio = 27/8).<br>• Option E is false: Inverts the signs of the sphere center coordinates and reports total volume percentage (337.5%) rather than net increase.",
+    "trapAlert": "Volume scales with the CUBE of radius (R^3). A 50% increase in tumor radius (from 10 to 15 mm) does NOT mean a 50% volume increase; it multiplies volume by (1.5)^3 = 3.375 (a 237.5% increase)."
+  },
+  {
+    "id": "math_2027_f50",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Planar CT Cross-Section of a Spherical Lesion",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A spherical pulmonary nodule is defined in standard 3D DICOM spatial coordinates by the expanded quadratic equation: x^2 + y^2 + z^2 - 8x + 6y - 12z + 36 = 0 (all dimensions in mm). An axial computed tomography (CT) imaging slice corresponds to the horizontal plane z = 9.0 mm. What geometric cross-section does the CT slice reveal, and what is its exact cross-sectional area?",
+    "options": [
+      "A. Circle with radius r = 5.0 mm; Area = 25·pi mm^2",
+      "B. Ellipse with semi-major axis a = 5.0 mm, semi-minor axis b = 4.0 mm; Area = 20·pi mm^2",
+      "C. Circle with radius r = 2.0 mm; Area = 4·pi mm^2",
+      "D. Point of tangency with Area = 0 mm^2",
+      "E. Circle with radius r = 4.0 mm; Area = 16·pi mm^2 (≈ 50.27 mm^2)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Any plane intersecting a sphere at a perpendicular distance d from the sphere's center (where d < R) creates a circular cross-section with radius r = sqrt(R^2 - d^2). The cross-sectional area is Area = pi · r^2 = pi · (R^2 - d^2). To find the center and radius of a sphere from its general quadratic form, complete the square for x, y, and z.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Complete the square:<br>  (x^2 - 8x + 16) + (y^2 + 6y + 9) + (z^2 - 12z + 36) + 36 - 16 - 9 - 36 = 0<br>  (x - 4)^2 + (y + 3)^2 + (z - 6)^2 - 25 = 0<br>  (x - 4)^2 + (y + 3)^2 + (z - 6)^2 = 25.<br>• Sphere center: C(4, -3, 6) mm; Sphere radius: R = sqrt(25) = 5.0 mm.<br>• Axial imaging plane: z = 9.0 mm.<br>• The plane z = 9 is parallel to the xy-plane. Distance from center C(4, -3, 6) to plane z = 9 is:<br>  d = |9.0 - 6.0| = 3.0 mm.<br>• Since d = 3.0 mm < R = 5.0 mm, the plane cuts the sphere in a circle.<br>• Cross-sectional radius: r = sqrt(R^2 - d^2) = sqrt(5^2 - 3^2) = sqrt(25 - 9) = sqrt(16) = 4.0 mm.<br>• Cross-sectional area: Area = pi · r^2 = pi · 4^2 = 16·pi mm^2 ≈ 50.265 mm^2.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Uses the maximum sphere radius R = 5 mm instead of the slice radius r = 4 mm.<br>• Option B is false: Planar cuts of spheres are always circles, never ellipses.<br>• Option C is false: Computes r = R - d = 5 - 3 = 2 mm (subtraction error instead of Pythagorean theorem).<br>• Option D is false: Claims tangency (which would require d = R = 5 mm, i.e., plane z = 11).<br>• Option E is CORRECT: Exactly deduces circle with radius r = 4.0 mm and Area = 16·pi mm^2.",
+    "trapAlert": "A planar section through a sphere is ALWAYS a circle. The radius of the slice is r = sqrt(R^2 - d^2), NOT R - d."
+  },
+  {
+    "id": "math_2027_f51",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Angle Between Converging Radiotherapy Beams (Vector Dot Product)",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In stereotactic radiosurgery, two linear accelerator photon beams converge at the target isocenter situated at the origin O(0, 0, 0):\n• Beam 1 originates at gantry position A(50, 50, 0) mm, traveling along vector u = <-50, -50, 0> towards the isocenter.\n• Beam 2 originates at gantry position B(50, 0, 50) mm, traveling along vector v = <-50, 0, -50> towards the isocenter.\nWhat is the exact angle theta between the two converging radiation beam trajectory vectors at the isocenter?",
+    "options": [
+      "A. theta = 60° (pi/3 rad); cos(theta) = 1/2",
+      "B. theta = 45° (pi/4 rad); cos(theta) = sqrt(2) / 2",
+      "C. theta = 90° (pi/2 rad); cos(theta) = 0",
+      "D. theta = 30° (pi/6 rad); cos(theta) = sqrt(3) / 2",
+      "E. theta = 120° (2pi/3 rad); cos(theta) = -1/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The angle theta between two vectors u and v in 3-dimensional Euclidean space is governed by the vector dot product definition: u · v = |u| · |v| · cos(theta), which yields cos(theta) = (u · v) / (|u| · |v|).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Trajectory vector 1: u = <-50, -50, 0>.<br>  Magnitude: |u| = sqrt((-50)^2 + (-50)^2 + 0^2) = sqrt(2500 + 2500) = sqrt(5000) = 50·sqrt(2) mm.<br>• Trajectory vector 2: v = <-50, 0, -50>.<br>  Magnitude: |v| = sqrt((-50)^2 + 0^2 + (-50)^2) = sqrt(2500 + 2500) = sqrt(5000) = 50·sqrt(2) mm.<br>• Dot product u · v:<br>  u · v = (-50) · (-50) + (-50) · 0 + 0 · (-50) = 2500 + 0 + 0 = 2500.<br>• Evaluate cos(theta):<br>  cos(theta) = (u · v) / (|u| · |v|) = 2500 / [ (50·sqrt(2)) · (50·sqrt(2)) ]<br>  cos(theta) = 2500 / [ 2500 · 2 ] = 2500 / 5000 = 1 / 2 = 0.50.<br>• Find theta: arccos(1/2) = 60° (or pi/3 radians).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly calculates cos(theta) = 1/2 and theta = 60° (pi/3 rad).<br>• Option B is false: Arrives at cos(theta) = sqrt(2)/2 by incorrectly omitting the sqrt(2) factors in denominator.<br>• Option C is false: Falsely assumes orthogonal beams (dot product = 0).<br>• Option D is false: Confuses cos(60°) = 1/2 with sin(60°) = sqrt(3)/2.<br>• Option E is false: Fails to recognize positive dot product ((-50)·(-50) = +2500, not -2500).",
+    "trapAlert": "Watch the signs in dot products! (-50) · (-50) = +2500. Then |u| · |v| = (50·sqrt(2))^2 = 5000, giving cos(theta) = 2500 / 5000 = 1/2, so theta = 60°."
+  },
+  {
+    "id": "math_2027_f52",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Orthogonal Distance from an Organ at Risk to a Linear Radiation Beam Path",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "During high-dose external beam radiation therapy for a head and neck malignancy, a pencil photon beam travels along a straight line in space parameterized by: r(t) = <0, 2, 1> + t · <2, 1, -2> (all coordinates in cm, where t is a scalar parameter). The center of mass of the patient's left optic nerve (a critical organ at risk) is located at point P(1, 5, -2) cm. What is the shortest perpendicular distance (D) from the optic nerve P to the central beam axis?",
+    "options": [
+      "A. D = 5 / 3 cm (≈ 1.67 cm)",
+      "B. D = (5·sqrt(2)) / 3 cm (≈ 2.36 cm)",
+      "C. D = sqrt(50) cm (≈ 7.07 cm)",
+      "D. D = 3 / sqrt(50) cm (≈ 0.42 cm)",
+      "E. D = 2.00 cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The shortest orthogonal distance D from a point P to a line passing through point A with direction vector d is given by the vector cross product formula: D = |AP x d| / |d|, representing the height of the parallelogram formed by vectors AP and d.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Point on line: A(0, 2, 1). Direction vector: d = <2, 1, -2>.<br>• Magnitude of direction vector: |d| = sqrt(2^2 + 1^2 + (-2)^2) = sqrt(4 + 1 + 4) = sqrt(9) = 3 cm.<br>• Vector AP connecting A to P(1, 5, -2):<br>  AP = P - A = <1 - 0, 5 - 2, -2 - 1> = <1, 3, -3>.<br>• Cross product AP x d:<br>  det [ i   j   k ;<br>        1   3  -3 ;<br>        2   1  -2 ]<br>  i-component: 3·(-2) - (-3)·1 = -6 + 3 = -3.<br>  j-component: - [ 1·(-2) - (-3)·2 ] = - [ -2 + 6 ] = -4.<br>  k-component: 1·1 - 3·2 = 1 - 6 = -5.<br>  AP x d = <-3, -4, -5>.<br>• Magnitude of AP x d:<br>  |AP x d| = sqrt((-3)^2 + (-4)^2 + (-5)^2) = sqrt(9 + 16 + 25) = sqrt(50) = 5·sqrt(2) cm.<br>• Shortest distance D:<br>  D = |AP x d| / |d| = (5·sqrt(2)) / 3 cm ≈ 2.357 cm (≈ 2.36 cm).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Omits the sqrt(2) factor, writing 5/3.<br>• Option B is CORRECT: Exactly calculates D = (5·sqrt(2)) / 3 cm (≈ 2.36 cm).<br>• Option C is false: Forgets to divide by the direction vector magnitude |d| = 3 cm.<br>• Option D is false: Inverts the formula (|d| / |AP x d|).<br>• Option E is false: Arbitrary rounded integer.",
+    "trapAlert": "Point-to-line distance in 3D requires the cross product: D = |AP x d| / |d|. Never simply compute |AP|, which is the distance to point A, not the perpendicular distance to the line."
+  },
+  {
+    "id": "math_2027_f53",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Parametric Ray-Sphere Intersection for Stereotactic Biopsy Path Length",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A robotic CT-guided stereotactic biopsy needle advances into hepatic tissue along the parametric path: x(t) = 1 + 2t, y(t) = 2 + t, z(t) = 3 + 2t (where t is a scalar parameter and coordinates are in cm). A spherical hepatocellular carcinoma is described by the equation: (x - 5)^2 + (y - 4)^2 + (z - 7)^2 = 9 (radius R = 3 cm, center C(5, 4, 7)). At what parameter values t does the needle enter and exit the tumor, and what is the total track length of needle traversal inside the malignancy?",
+    "options": [
+      "A. Entry t = 0; Exit t = 2; Traversal length = 3.0 cm",
+      "B. Entry t = 1; Exit t = 3; Traversal length = 3.0 cm",
+      "C. Entry t = 1; Exit t = 3; Traversal length = 6.0 cm (traversing the full diameter 2R = 6 cm through the tumor center)",
+      "D. Entry t = 2; Exit t = 4; Traversal length = 9.0 cm",
+      "E. The needle misses the tumor entirely (discriminant < 0)"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> To find the intersection of a parameterized line r(t) with a 3D sphere, substitute the parametric components x(t), y(t), z(t) directly into the Cartesian sphere equation. Solving the resulting quadratic equation yields the parameter values t_entry and t_exit. The distance traveled inside the sphere is |r(t_exit) - r(t_entry)|.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Substitute x = 1 + 2t, y = 2 + t, z = 3 + 2t into (x - 5)^2 + (y - 4)^2 + (z - 7)^2 = 9:<br>  (1 + 2t - 5)^2 + (2 + t - 4)^2 + (3 + 2t - 7)^2 = 9<br>  (2t - 4)^2 + (t - 2)^2 + (2t - 4)^2 = 9.<br>• Factor out (t - 2):<br>  [2(t - 2)]^2 + (t - 2)^2 + [2(t - 2)]^2 = 9<br>  4(t - 2)^2 + 1(t - 2)^2 + 4(t - 2)^2 = 9<br>  9 · (t - 2)^2 = 9 => (t - 2)^2 = 1.<br>• Solve for t: t - 2 = ±1 => t1 = 2 - 1 = 1 (entry) and t2 = 2 + 1 = 3 (exit).<br>• Entry point P1 (t = 1): (1 + 2(1), 2 + 1, 3 + 2(1)) = (3, 3, 5) cm.<br>• Exit point P2 (t = 3): (1 + 2(3), 2 + 3, 3 + 2(3)) = (7, 5, 9) cm.<br>• Length of needle path inside tumor:<br>  Distance = sqrt((7 - 3)^2 + (5 - 3)^2 + (9 - 5)^2) = sqrt(4^2 + 2^2 + 4^2) = sqrt(16 + 4 + 16) = sqrt(36) = 6.0 cm.<br>• (Notice: Since the sphere radius is R = 3 cm, its diameter is 2R = 6 cm. The path length of 6 cm proves that the needle passes precisely through the tumor center C(5, 4, 7), which corresponds to t = 2).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Incorrect parameter roots.<br>• Option B is false: Correct entry and exit t-values, but confuses path length with radius (3 cm) instead of diameter (6 cm).<br>• Option C is CORRECT: Exactly deduces t_entry = 1, t_exit = 3, and path length = 6.0 cm.<br>• Option D is false: Shifts parameter roots by +1 and reports length = 9 cm.<br>• Option E is false: Falsely claims no intersection.",
+    "trapAlert": "When a needle passes through the exact center of a sphere of radius R, the internal path length is the DIAMETER 2R = 6 cm, not the radius R = 3 cm."
+  },
+  {
+    "id": "math_2027_f54",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Dihedral Angle Between Oblique Resection Plane and Axial Imaging Plane",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In computer-assisted pelvic oncologic surgery, a robot-guided bone resection plane is defined by the Cartesian equation: 2x - 3y + 6z - 14 = 0. The standard axial CT imaging plane corresponds to the horizontal plane z = 0. What is the acute dihedral angle theta between the surgical resection plane and the standard axial imaging plane?",
+    "options": [
+      "A. cos(theta) = 2/7; theta = arccos(2/7) ≈ 73.4°",
+      "B. cos(theta) = 3/7; theta = arccos(3/7) ≈ 64.6°",
+      "C. cos(theta) = 1/2; theta = 60.0°",
+      "D. cos(theta) = 6/7; theta = arccos(6/7) ≈ 31.0°",
+      "E. cos(theta) = 6/49; theta = arccos(6/49) ≈ 83.0°"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The dihedral angle theta between two intersecting planes A1·x + B1·y + C1·z + D1 = 0 and A2·x + B2·y + C2·z + D2 = 0 is equal to the angle between their normal vectors n1 = <A1, B1, C1> and n2 = <A2, B2, C2>: cos(theta) = |n1 · n2| / (|n1| · |n2|).<br><br><strong>2. Step-by-Step Proof:</strong><br>• Resection plane: 2x - 3y + 6z - 14 = 0.<br>  Normal vector: n1 = <2, -3, 6>.<br>  Magnitude: |n1| = sqrt(2^2 + (-3)^2 + 6^2) = sqrt(4 + 9 + 36) = sqrt(49) = 7.<br>• Axial imaging plane: z = 0 (or 0x + 0y + 1z + 0 = 0).<br>  Normal vector: n2 = <0, 0, 1>.<br>  Magnitude: |n2| = sqrt(0 + 0 + 1) = 1.<br>• Dot product n1 · n2: 2·0 + (-3)·0 + 6·1 = 6.<br>• Evaluate cosine of dihedral angle:<br>  cos(theta) = |n1 · n2| / (|n1| · |n2|) = |6| / (7 · 1) = 6 / 7 ≈ 0.8571.<br>• Acute angle: theta = arccos(6/7) ≈ 31.00° (≈ 31.0°).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Uses x-component (2/7).<br>• Option B is false: Uses y-component (3/7).<br>• Option C is false: Guesses standard 60° angle.<br>• Option D is CORRECT: Exactly derives cos(theta) = 6/7 and theta = arccos(6/7) ≈ 31.0°.<br>• Option E is false: Divides by |n1|^2 = 49 instead of |n1| = 7.",
+    "trapAlert": "The normal vector to the axial plane (z = 0) is k = <0, 0, 1>. The angle between planes is the angle between their normal vectors: cos(theta) = (n1 · k) / |n1| = 6/7."
+  },
+  {
+    "id": "math_2027_f55",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Shortest Orthogonal Distance Between Two Non-Intersecting (Skew) Radiation Beams",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In a stereotactic radiosurgery treatment plan, two non-coplanar pencil radiation beams form skew (non-intersecting, non-parallel) lines in 3D space:\n• Beam 1 passes through point A(2, 0, 1) cm with direction vector d1 = <1, 2, 0>.\n• Beam 2 passes through point B(0, 3, 5) cm with direction vector d2 = <0, 1, 2>.\nWhat is the shortest orthogonal clearance distance (D) between the central axes of these two radiation beams?",
+    "options": [
+      "A. D = 0 cm (the beams intersect in space)",
+      "B. D = 6 / sqrt(21) cm",
+      "C. D = 14 / sqrt(21) cm",
+      "D. D = 5.00 cm",
+      "E. D = 10 / sqrt(21) cm (≈ 2.18 cm)"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The shortest distance D between two skew lines in R^3 (Line 1 through A with direction d1; Line 2 through B with direction d2) is the length of the projection of vector AB onto the common normal vector n = d1 x d2: D = |AB · (d1 x d2)| / |d1 x d2|.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Direction vectors: d1 = <1, 2, 0>, d2 = <0, 1, 2>.<br>• Cross product (common normal vector n):<br>  d1 x d2 = det [ i  j  k ;<br>                  1  2  0 ;<br>                  0  1  2 ]<br>  i-component: 2·2 - 0·1 = 4.<br>  j-component: - [ 1·2 - 0·0 ] = -2.<br>  k-component: 1·1 - 2·0 = 1.<br>  n = d1 x d2 = <4, -2, 1>.<br>• Magnitude of normal vector:<br>  |n| = sqrt(4^2 + (-2)^2 + 1^2) = sqrt(16 + 4 + 1) = sqrt(21).<br>• Connecting displacement vector AB = B - A:<br>  AB = <0 - 2, 3 - 0, 5 - 1> = <-2, 3, 4> cm.<br>• Dot product AB · n:<br>  AB · n = (-2)·4 + 3·(-2) + 4·1 = -8 - 6 + 4 = -10.<br>• Absolute shortest distance:<br>  D = |-10| / sqrt(21) = 10 / sqrt(21) cm.<br>• Numerical evaluation: 10 / 4.5826 ≈ 2.182 cm (≈ 2.18 cm).<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Claims lines intersect (which requires AB · (d1 x d2) = 0).<br>• Option B is false: Arithmetic dot product error, yielding 6 / sqrt(21).<br>• Option C is false: Arithmetic error adding coordinates without signs (8 + 6 = 14).<br>• Option D is false: Arbitrary integer.<br>• Option E is CORRECT: Exactly calculates D = 10 / sqrt(21) cm (≈ 2.18 cm).",
+    "trapAlert": "Distance between skew lines requires the scalar triple product: D = |(B - A) · (d1 x d2)| / |d1 x d2|. If the numerator is non-zero, the lines never intersect."
+  },
+  {
+    "id": "math_2027_f56",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Tangent Plane to a Spherical Tumor Surface at a Biopsy Contact Point",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "A spherical intracranial tumor is described by the equation: x^2 + y^2 + z^2 = 49 (radius R = 7.0 cm centered at the origin). A robotic stereotactic probe contacts the tumor boundary at point P(2, 3, 6) cm (verifying 2^2 + 3^2 + 6^2 = 4 + 9 + 36 = 49). What is the Cartesian equation of the tangent plane to the tumor at point P, and what are the spatial coordinates where this tangent plane intercepts the x-axis?",
+    "options": [
+      "A. Tangent Plane: 2x + 3y + 6z = 49; x-intercept: (49/2, 0, 0) cm = (24.5, 0, 0) cm",
+      "B. Tangent Plane: 2x + 3y + 6z = 7; x-intercept: (3.5, 0, 0) cm",
+      "C. Tangent Plane: 4x + 9y + 36z = 49; x-intercept: (12.25, 0, 0) cm",
+      "D. Tangent Plane: 2x + 3y + 6z = 0; x-intercept: (0, 0, 0) cm",
+      "E. Tangent Plane: x + y + z = 11; x-intercept: (11, 0, 0) cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> For a sphere centered at the origin x^2 + y^2 + z^2 = R^2, the gradient vector at any surface point P(x0, y0, z0) is normal to the surface: n = grad(F) = <2x0, 2y0, 2z0> ∥ <x0, y0, z0>. The equation of the tangent plane is x0·(x - x0) + y0·(y - y0) + z0·(z - z0) = 0, which expands elegantly to x0·x + y0·y + z0·z = x0^2 + y0^2 + z0^2 = R^2.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Given contact point: P(x0, y0, z0) = (2, 3, 6).<br>• Sphere radius squared: R^2 = 49.<br>• Tangent plane equation: x0·x + y0·y + z0·z = R^2<br>  2x + 3y + 6z = 49.<br>• To find the x-intercept, set y = 0 and z = 0:<br>  2x + 3(0) + 6(0) = 49 => 2x = 49 => x = 49 / 2 = 24.5 cm.<br>• The x-intercept coordinates are exactly (49/2, 0, 0) cm = (24.5, 0, 0) cm.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is CORRECT: Exactly derives the tangent plane 2x + 3y + 6z = 49 and x-intercept (24.5, 0, 0) cm.<br>• Option B is false: Equates the plane constant to R = 7 instead of R^2 = 49.<br>• Option C is false: Squares the coordinates in the plane equation coefficients.<br>• Option D is false: Sets constant to 0, creating a plane that passes through the origin.<br>• Option E is false: Uses linear sum of coordinates.",
+    "trapAlert": "The tangent plane to x^2 + y^2 + z^2 = R^2 at point (x0, y0, z0) is x0·x + y0·y + z0·z = R^2. Do NOT write R on the right side; it must be R^2 (49, not 7)."
+  },
+  {
+    "id": "math_2027_f57",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Surgical Margin Clearance from Tumor Boundary to Resection Plane",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In surgical oncology for colorectal liver metastases, achieving an R0 negative resection margin requires a clear histological margin between the malignant tumor boundary and the transection plane. A spherical metastasis is centered at C(3, 5, 2) cm with radius R = 1.5 cm. The ultrasonic surgical transection plane is defined by the Cartesian equation: x + 2y - 2z + 5 = 0. What is the perpendicular distance (d) from the tumor center C to the resection plane, and what is the minimum clear surgical margin (M) between the closest tumor surface boundary and the resection plane?",
+    "options": [
+      "A. d = 14/3 cm; M = 14/3 cm (margin equals center distance)",
+      "B. d = 14/3 cm (≈ 4.67 cm); M = 19/6 cm (≈ 3.17 cm, confirming a clear R0 negative margin > 1 cm)",
+      "C. d = 4.00 cm; M = 2.50 cm",
+      "D. d = 14/9 cm; M = 1/18 cm",
+      "E. d = 1.50 cm; M = 0 cm (positive margin R1)"
+    ],
+    "correctIndex": 1,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The perpendicular distance d from a spatial point C(x0, y0, z0) to a plane Ax + By + Cz + D = 0 is: d = |A·x0 + B·y0 + C·z0 + D| / sqrt(A^2 + B^2 + C^2). For a spherical mass of radius R, the closest distance from the outer spherical boundary to the cutting plane (the clear surgical margin M) is M = d - R.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Tumor center: C(3, 5, 2) cm; Tumor radius: R = 1.5 cm = 3/2 cm.<br>• Resection plane: 1x + 2y - 2z + 5 = 0 (A = 1, B = 2, C = -2, D = 5).<br>• Denominator: sqrt(1^2 + 2^2 + (-2)^2) = sqrt(1 + 4 + 4) = sqrt(9) = 3.<br>• Numerator evaluated at C(3, 5, 2):<br>  |1(3) + 2(5) - 2(2) + 5| = |3 + 10 - 4 + 5| = |14| = 14.<br>• Center-to-plane distance: d = 14 / 3 cm ≈ 4.667 cm (≈ 4.67 cm).<br>• Minimum clear margin between tumor boundary and plane:<br>  M = d - R = 14/3 - 3/2 = (28 - 9) / 6 = 19 / 6 cm ≈ 3.167 cm (≈ 3.17 cm).<br>• Because M > 0 (and specifically > 1 cm), an oncologically sound R0 negative resection margin is achieved.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Conflates clear margin M with center-to-plane distance d, forgetting to subtract the tumor radius R.<br>• Option B is CORRECT: Exactly calculates d = 14/3 cm and M = 19/6 cm (≈ 3.17 cm).<br>• Option C is false: Rounding and arithmetic error.<br>• Option D is false: Forgets square root in denominator (dividing by 9 instead of 3).<br>• Option E is false: Assumes margin is zero (R1 positive margin).",
+    "trapAlert": "Center distance d is NOT the surgical margin! The surgical clearance margin M is the distance from the tumor EDGE to the plane: M = d - R = 14/3 - 1.5 = 19/6 cm."
+  },
+  {
+    "id": "math_2027_f58",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Volume of Overlap Between Two Intersecting Spherical Lesions",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "On a high-resolution thoracic CT scan, two confluent necrotizing granulomas are modeled as two intersecting spheres:\n• Granuloma 1 is centered at C1(0, 0, 0) mm with radius R1 = 6.0 mm.\n• Granuloma 2 is centered at C2(0, 0, 8.0) mm with radius R2 = 6.0 mm.\nThe distance between their centers is D = 8.0 mm. For two identical intersecting spheres of radius R separated by center-to-center distance D (where D < 2R), the volume of spatial overlap (intersection lens) is given by: V_overlap = [ pi · (2R - D)^2 · (4R + D) ] / 12. What is the exact volume of overlapping necrotic tissue shared between the two granulomas?",
+    "options": [
+      "A. V_overlap = 16·pi mm^3",
+      "B. V_overlap = 64·pi mm^3",
+      "C. V_overlap = (128/3)·pi mm^3 (≈ 134.04 mm^3)",
+      "D. V_overlap = 288·pi mm^3 (the volume of one entire sphere)",
+      "E. V_overlap = (256/3)·pi mm^3"
+    ],
+    "correctIndex": 2,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> When two identical spheres of radius R intersect with center distance D, they form a symmetric lens composed of two spherical caps. The height of each cap is h = R - D/2. The volume of a single spherical cap is V_cap = (pi · h^2 / 3) · (3R - h). Doubling this yields the total overlap volume: V_overlap = [ pi · (2R - D)^2 · (4R + D) ] / 12.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Given parameters: R = 6.0 mm, D = 8.0 mm.<br>• Calculate term 1: 2R - D = 2(6) - 8 = 12 - 8 = 4.0 mm.<br>  Squared: (2R - D)^2 = 4^2 = 16.0 mm^2.<br>• Calculate term 2: 4R + D = 4(6) + 8 = 24 + 8 = 32.0 mm.<br>• Multiply terms: 16 · 32 = 512.<br>• Evaluate formula: V_overlap = [ pi · 512 ] / 12.<br>• Simplify fraction by dividing 512 and 12 by 4:<br>  512 / 4 = 128.<br>  12 / 4 = 3.<br>• V_overlap = (128 / 3) · pi mm^3.<br>• Numerical evaluation: (128 / 3) · 3.14159 ≈ 42.667 · 3.14159 ≈ 134.04 mm^3.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Evaluates pi · 16 mm^3 without multiplying by the second term.<br>• Option B is false: Evaluates 512·pi / 8.<br>• Option C is CORRECT: Exactly derives V_overlap = (128/3)·pi mm^3 (≈ 134.04 mm^3).<br>• Option D is false: Calculates the full volume of one entire sphere: (4/3)·pi·6^3 = 288·pi mm^3.<br>• Option E is false: Doubles the true overlap volume.",
+    "trapAlert": "Carefully evaluate the arithmetic: (2R - D)^2 = (12 - 8)^2 = 16; (4R + D) = 24 + 8 = 32. 16 · 32 / 12 = 512 / 12 = 128 / 3."
+  },
+  {
+    "id": "math_2027_f59",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Unit Direction Vector and Direction Cosines of an Endovascular Catheter",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In 3D rotational digital subtraction neuroangiography, an endovascular microcatheter tip navigates along a straight vascular segment from proximal entry point A(10, 20, 30) mm to distal intracranial aneurysm neck point B(12, 23, 36) mm. What is the unit direction vector (u) oriented along the forward catheter trajectory, and what are its direction cosines (cos alpha, cos beta, cos gamma) with respect to the Cartesian x, y, and z axes?",
+    "options": [
+      "A. u = <2, 3, 6>; cos(alpha) = 2, cos(beta) = 3, cos(gamma) = 6",
+      "B. u = <1/7, 1/7, 1/7>; cos(alpha) = 1/7, cos(beta) = 1/7, cos(gamma) = 1/7",
+      "C. u = <2/11, 3/11, 6/11>; cos(alpha) = 2/11, cos(beta) = 3/11, cos(gamma) = 6/11",
+      "D. u = <2/7, 3/7, 6/7>; cos(alpha) = 2/7, cos(beta) = 3/7, cos(gamma) = 6/7",
+      "E. u = <4/49, 9/49, 36/49>; cos(alpha) = 4/49, cos(beta) = 9/49, cos(gamma) = 36/49"
+    ],
+    "correctIndex": 3,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The displacement vector from point A to point B is AB = B - A. The unit vector in the direction of AB is u = AB / |AB|. The components of a unit vector u = <u_x, u_y, u_z> are identically equal to its direction cosines with the coordinate axes: cos(alpha) = u_x, cos(beta) = u_y, and cos(gamma) = u_z, satisfying the fundamental identity cos^2(alpha) + cos^2(beta) + cos^2(gamma) = 1.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Initial point: A(10, 20, 30) mm.<br>• Terminal target: B(12, 23, 36) mm.<br>• Displacement vector: AB = <12 - 10, 23 - 20, 36 - 30> = <2, 3, 6> mm.<br>• Vector magnitude:<br>  |AB| = sqrt(2^2 + 3^2 + 6^2) = sqrt(4 + 9 + 36) = sqrt(49) = 7.0 mm.<br>• Unit direction vector:<br>  u = AB / |AB| = <2/7, 3/7, 6/7>.<br>• Direction cosines:<br>  cos(alpha) = 2/7.<br>  cos(beta) = 3/7.<br>  cos(gamma) = 6/7.<br>• Identity check: (2/7)^2 + (3/7)^2 + (6/7)^2 = 4/49 + 9/49 + 36/49 = 49/49 = 1.0. Perfect!<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Direction cosines cannot exceed 1.0 (magnitudes > 1 are impossible for cosines).<br>• Option B is false: Arbitrary equal components.<br>• Option C is false: Divides by the sum of components (2 + 3 + 6 = 11) instead of Euclidean magnitude (7).<br>• Option D is CORRECT: Exactly calculates u = <2/7, 3/7, 6/7> and direction cosines (2/7, 3/7, 6/7).<br>• Option E is false: Squares the direction cosines.",
+    "trapAlert": "A unit vector is normalized by dividing by EUCLIDEAN length sqrt(x^2 + y^2 + z^2) = 7, NOT the simple sum of components (x + y + z = 11)."
+  },
+  {
+    "id": "math_2027_f60",
+    "subject": "Mathematics",
+    "chapter": "Analytic Geometry & Vectors in 3D Space",
+    "subtopic": "Magnetic Torque Vector in Targeted Microrobotic Drug Delivery",
+    "tier": 2,
+    "year": "2027 Prediction",
+    "question": "In targeted endovascular drug delivery, an untethered magnetic microrobot carrying a doxorubicin payload has an intrinsic magnetic dipole moment vector: m = <0, 3, 0> A·m^2 (directed purely along the positive y-axis). To steer the microrobot at a vascular bifurcation, an external MRI navigation magnetic field is applied with magnetic flux density vector: B = <4, 2, 0> Tesla (lying in the xy-plane). The mechanical alignment torque acting on the microrobot is given by the 3D vector cross product: tau = m x B. What is the torque vector tau, its magnitude |tau|, and the physical axis of rotation?",
+    "options": [
+      "A. tau = <12, 0, 0> N·m; |tau| = 12 N·m; rotational torque directed along positive x-axis",
+      "B. tau = <0, 0, 12> N·m; |tau| = 12 N·m; rotational torque directed along positive z-axis",
+      "C. tau = <0, 6, 0> N·m; |tau| = 6 N·m; rotational torque directed along positive y-axis",
+      "D. tau = <4, 5, 0> N·m; |tau| = sqrt(41) N·m",
+      "E. tau = <0, 0, -12> N·m; |tau| = 12 N·m; rotational torque directed along negative z-axis"
+    ],
+    "correctIndex": 4,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In magnetic navigation physics, the mechanical torque exerted on a magnetic dipole m by an external B-field is governed by the vector cross product: tau = m x B. Torque is strictly perpendicular to both m and B. The magnitude is |tau| = |m| · |B| · sin(theta), and its vector direction defines the axis about which the microrobot rotates according to the right-hand rule.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Given vectors: m = <0, 3, 0> A·m^2 and B = <4, 2, 0> T.<br>• Cross product tau = m x B:<br>  tau = det [ i  j  k ;<br>              0  3  0 ;<br>              4  2  0 ]<br>  i-component: 3·0 - 0·2 = 0.<br>  j-component: - [ 0·0 - 0·4 ] = 0.<br>  k-component: 0·2 - 3·4 = 0 - 12 = -12.<br>  tau = <0, 0, -12> N·m.<br>• Magnitude: |tau| = sqrt(0^2 + 0^2 + (-12)^2) = 12 N·m.<br>• Direction: The torque vector points along the negative z-axis (perpendicular to the xy-plane in which m and B reside), exerting a clockwise rotational torque in the xy-plane to align m with B.<br><br><strong>3. Distractor Elimination:</strong><br>• Option A is false: Rotates torque into the x-axis.<br>• Option B is false: Computes B x m = <0, 0, +12> N·m, violating anticommutativity of cross product (tau = m x B = - B x m).<br>• Option C is false: Dot product / scalar multiplication confusion.<br>• Option D is false: Vector addition artifact.<br>• Option E is CORRECT: Exactly calculates tau = <0, 0, -12> N·m, |tau| = 12 N·m, and negative z-axis orientation.",
+    "trapAlert": "Cross product is ANTICOMMUTATIVE: m x B = -(B x m). Here k-component is 0·2 - 3·4 = -12. So tau = <0, 0, -12> N·m, NOT +12."
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "bio_pred_2025_01",
+    "subject": "Biology",
+    "chapter": "A. Cell biology",
+    "subtopic": "Endomembrane system & Vesicular trafficking",
+    "tier": 1,
+    "question": "A newly synthesized lysosomal acid hydrolase fails to undergo phosphorylation of its terminal mannose residues in the cis-Golgi network due to a deficiency in GlcNAc phosphotransferase (I-cell disease). What is the cellular fate and sorting destination of this enzyme?",
+    "options": [
+      "A. It fails to bind M6P receptors in the trans-Golgi and is constitutively secreted into the extracellular space.",
+      "B. It is misdirected to the inner mitochondrial membrane via the TIM/TOM translocase complex.",
+      "C. It is retained permanently in the rough endoplasmic reticulum lumen by the KDEL receptor retrieval system.",
+      "D. It is immediately translocated into peroxisomal matrices via the C-terminal PTS1 tripeptide pathway.",
+      "E. It spontaneously forms amyloid fibrils that trigger immediate caspase-9-mediated apoptosis."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Lysosomal acid hydrolases receive a Mannose-6-Phosphate (M6P) tag in the cis-Golgi. M6P receptors in the trans-Golgi network package tagged proteins into clathrin-coated vesicles destined for late endosomes and lysosomes.<br><br><strong>2. Step-by-Step Proof:</strong> Absence of the M6P marker (as in mucolipidosis II / I-cell disease) prevents trans-Golgi receptor recognition. Proteins lacking retention or diversion signals follow the default constitutive secretory pathway and are discharged into extracellular fluid via exocytosis.<br><br><strong>3. Distractor Elimination:</strong><br>• Option B is false: Mitochondrial import requires an N-terminal amphipathic alpha-helical presequence.<br>• Option C is false: The KDEL receptor retrieves soluble ER proteins from the Golgi back to the ER; lysosomal enzymes lack KDEL.<br>• Option D is false: Peroxisomal targeting requires PTS1 (-SKL-COOH) or PTS2 signals.<br>• Option E is false: Secretion into serum occurs without cell death.",
+    "trapAlert": "Default pathway: any soluble protein entering the ER lumen that lacks a specific sorting or retention signal is constitutively SECRETED by default."
+  },
+  {
+    "id": "bio_pred_2025_02",
+    "subject": "Biology",
+    "chapter": "A. Cell biology",
+    "subtopic": "Active transport & Electrogenic gradients",
+    "tier": 1,
+    "question": "Cardiac myocytes exposed to the digitalis glycoside Digoxin exhibit partial inhibition of the plasmalemmal Na+/K+ ATPase pump. What secondary physiological change directly accounts for the resulting increase in myocardial contractile force?",
+    "options": [
+      "A. Elevated intracellular [Na+] reduces the driving force for the Na+/Ca2+ exchanger (NCX), decreasing Ca2+ efflux and elevating sarcoplasmic [Ca2+].",
+      "B. Hyperpolarization of the resting membrane potential to −110 mV opens L-type voltage-gated calcium channels continuously.",
+      "C. Total depletion of intracellular ATP halts the sarcoplasmic reticulum Ca2+ ATPase (SERCA) pump irreversibly.",
+      "D. Excessive accumulation of intracellular K+ activates troponin C directly in the absence of calcium.",
+      "E. Extracellular Na+ depletion induces immediate opening of ryanodine receptor (RyR2) channels on the sarcolemma."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Na+/K+ ATPase exports 3 Na+ and imports 2 K+ per ATP hydrolyzed, establishing the inward electrochemical Na+ gradient that energizes secondary active antiporters, including the Na+/Ca2+ exchanger (NCX).<br><br><strong>2. Step-by-Step Proof:</strong> Partial inhibition of the pump causes intracellular [Na+] to rise, dissipating the transmembrane Na+ gradient. This reduces the thermodynamic driving force for NCX (which exports 1 Ca2+ in exchange for 3 incoming Na+), leading to increased sarcoplasmic [Ca2+]. The excess Ca2+ is taken up by SERCA, increasing calcium release during subsequent systole (positive inotropy).",
+    "trapAlert": "Digoxin does NOT directly stimulate calcium channels or troponin; its inotropic effect is entirely secondary to the dissipation of the Na+ electrochemical gradient."
+  },
+  {
+    "id": "bio_pred_2025_03",
+    "subject": "Biology",
+    "chapter": "A. Cell biology",
+    "subtopic": "Cell cycle checkpoints & Tumor suppressors",
+    "tier": 1,
+    "question": "In response to ionizing radiation-induced double-strand DNA breaks, the ATM/p53 signaling pathway halts cell cycle progression at the G1/S transition. What is the molecular mechanism mediating this arrest?",
+    "options": [
+      "A. p53 transcriptionally activates p21 (CIP1/WAF1), which binds and inhibits Cyclin E–CDK2 and Cyclin D–CDK4/6 complexes, keeping pRb hypophosphorylated.",
+      "B. p53 directly dephosphorylates the E2F transcription factor, targeting it for ubiquitin-proteasome degradation.",
+      "C. ATM phosphorylates Mdm2, increasing its ubiquitin ligase affinity for p53 and triggering rapid p53 destruction.",
+      "D. p21 cleaves Cyclin B1 in the cytoplasm, preventing its nuclear translocation via importin-beta.",
+      "E. p53 activates DNA polymerase delta to transcribe non-coding microRNAs that degrade the nuclear envelope."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> DNA damage activates sensor kinases (ATM/ATR), which phosphorylate and stabilize p53. p53 is a sequence-specific transcription factor that upregulates the cyclin-dependent kinase inhibitor p21.<br><br><strong>2. Step-by-Step Proof:</strong> p21 inhibits G1 CDKs (Cyclin D-CDK4/6 and Cyclin E-CDK2). Without CDK activity, the Retinoblastoma protein (pRb) remains unphosphorylated (hypophosphorylated) and sequestered to E2F, blocking transcription of S-phase genes (e.g., DNA polymerase, thymidine kinase).",
+    "trapAlert": "pRb is ACTIVE as a cell cycle brake when UNPHOSPHORYLATED. Phosphorylation by CDKs INACTIVATES pRb and allows cell cycle entry."
+  },
+  {
+    "id": "bio_pred_2025_04",
+    "subject": "Biology",
+    "chapter": "A. Cell biology",
+    "subtopic": "Meiosis & Chromosome counting",
+    "tier": 1,
+    "question": "In human gametogenesis, how many total chromosomes, chromatids (double-helical DNA molecules), and centromeres are present in a single secondary oocyte arrested at metaphase II?",
+    "options": [
+      "A. 23 chromosomes, 46 chromatids, and 23 centromeres.",
+      "B. 46 chromosomes, 46 chromatids, and 46 centromeres.",
+      "C. 23 chromosomes, 23 chromatids, and 23 centromeres.",
+      "D. 46 chromosomes, 92 chromatids, and 46 centromeres.",
+      "E. 11.5 chromosomes, 23 chromatids, and 12 centromeres."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Meiosis I is the reductional division: homologous chromosomes separate, reducing ploidy from diploid (2n = 46) to haploid (1n = 23).<br><br><strong>2. Step-by-Step Proof:</strong> In metaphase II, chromosomes are haploid (23 chromosomes, each with 1 centromere), but each chromosome still consists of two sister chromatids joined at the centromere (23 × 2 = 46 chromatids). Chromatids separate only at anaphase II.",
+    "trapAlert": "Count centromeres to count chromosomes! 23 centromeres = 23 chromosomes, but each has two sister chromatids = 46 chromatids."
+  },
+  {
+    "id": "bio_pred_2025_05",
+    "subject": "Biology",
+    "chapter": "B. Bioenergetics",
+    "subtopic": "Glycolytic regulation & PFK-1",
+    "tier": 1,
+    "question": "Phosphofructokinase-1 (PFK-1) catalyzes the committed rate-limiting step of glycolysis. How do high intracellular concentrations of ATP and fructose 2,6-bisphosphate (F-2,6-BP) modulate PFK-1 activity in hepatocytes?",
+    "options": [
+      "A. ATP acts as an allosteric inhibitor by binding a low-affinity regulatory site, whereas F-2,6-BP is the most potent allosteric activator, relieving ATP inhibition.",
+      "B. ATP acts solely as a substrate at the catalytic site to accelerate the reaction, while F-2,6-BP acts as a competitive antagonist.",
+      "C. ATP and F-2,6-BP both bind covalently to active-site lysine residues to permanently denature the enzyme.",
+      "D. ATP stimulates PFK-1 activity ten-fold, whereas F-2,6-BP is an allosteric inhibitor produced exclusively during starvation.",
+      "E. Neither ATP nor F-2,6-BP binds PFK-1; allosteric regulation is exclusively mediated by glucose 6-phosphate."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> PFK-1 possesses two distinct binding sites for ATP: a high-affinity catalytic substrate site and a lower-affinity allosteric regulatory site. When cellular energy charge is high, ATP binds the regulatory site, lowering affinity for fructose-6-phosphate.<br><br><strong>2. Step-by-Step Proof:</strong> Fructose 2,6-bisphosphate (synthesized by PFK-2 in response to insulin) is the most potent allosteric activator of PFK-1, shifting its conformation to the active R-state and overcoming allosteric inhibition by physiological levels of ATP and citrate.",
+    "trapAlert": "ATP is both a substrate AND an allosteric inhibitor of PFK-1! High ATP signals sufficient energy and downregulates glycolytic flux."
+  },
+  {
+    "id": "bio_pred_2025_06",
+    "subject": "Biology",
+    "chapter": "B. Bioenergetics",
+    "subtopic": "Krebs cycle & Decarboxylation reactions",
+    "tier": 1,
+    "question": "During the complete aerobic respiration of one mole of glucose (C6H12O6), at which specific enzymatic steps are all six carbon atoms eliminated as carbon dioxide (CO2)?",
+    "options": [
+      "A. 2 CO2 at Pyruvate dehydrogenase, 2 CO2 at Isocitrate dehydrogenase, and 2 CO2 at alpha-Ketoglutarate dehydrogenase.",
+      "B. 2 CO2 at Hexokinase, 2 CO2 at Citrate synthase, and 2 CO2 at Malate dehydrogenase.",
+      "C. 3 CO2 at Succinyl-CoA synthetase and 3 CO2 at Fumarase.",
+      "D. 4 CO2 at Phosphofructokinase-1 and 2 CO2 at Succinate dehydrogenase.",
+      "E. All 6 CO2 molecules are generated simultaneously by ATP synthase during chemiosmotic rotary catalysis."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Glycolysis cleaves 1 glucose (6C) into 2 pyruvate (3C each) with zero CO2 release.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Transition reaction: Pyruvate dehydrogenase decarboxylates 2 pyruvates to 2 Acetyl-CoA (2C) + 2 CO2.<br>• Krebs Cycle (per glucose = 2 turns):<br>  - Isocitrate dehydrogenase: 2 isocitrate (6C) -> 2 alpha-ketoglutarate (5C) + 2 CO2.<br>  - alpha-Ketoglutarate dehydrogenase: 2 alpha-ketoglutarate (5C) -> 2 Succinyl-CoA (4C) + 2 CO2.<br>Total CO2 released = 2 + 2 + 2 = 6 CO2.",
+    "trapAlert": "Glycolysis releases ZERO CO2. Carbon dioxide is only released at the Pyruvate Dehydrogenase transition step and in the first half of the Krebs cycle."
+  },
+  {
+    "id": "bio_pred_2025_07",
+    "subject": "Biology",
+    "chapter": "B. Bioenergetics",
+    "subtopic": "Electron transport chain & Uncouplers",
+    "tier": 1,
+    "question": "A cell suspension with active cellular respiration is treated with Oligomycin (an ATP synthase F0 proton channel blocker), followed immediately by 2,4-dinitrophenol (DNP). What is the observed effect on oxygen consumption across these sequential treatments?",
+    "options": [
+      "A. Oligomycin halts oxygen consumption by hyperpolarizing the proton gradient; addition of DNP immediately restores and accelerates oxygen consumption to maximal rates.",
+      "B. Oligomycin accelerates oxygen consumption ten-fold; DNP halts oxygen consumption completely by denaturing cytochrome c oxidase.",
+      "C. Oxygen consumption remains completely unaffected by both compounds because electron transport is physically disconnected from the proton gradient.",
+      "D. Both Oligomycin and DNP immediately reduce oxygen consumption to absolute zero by irreversibly chelating iron in heme a3.",
+      "E. DNP induces the synthesis of glycogen from molecular oxygen, bypassing mitochondrial respiration."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Respiratory control couples electron transport to ATP synthesis. Blocking the F0 proton channel of ATP synthase with Oligomycin prevents proton return to the matrix, building an insurmountable electrochemical gradient that stops further electron transport and O2 consumption.<br><br><strong>2. Step-by-Step Proof:</strong> DNP is an ionophore that shuttles protons across the inner mitochondrial membrane, collapsing the proton gradient. This uncouples respiration from ATP synthesis, allowing the electron transport chain to run unimpeded at maximal velocity, consuming O2 while dissipating energy as heat.",
+    "trapAlert": "Uncouplers like DNP and Thermogenin MAXIMIZE oxygen consumption rate while driving ATP synthesis to ZERO."
+  },
+  {
+    "id": "bio_pred_2025_08",
+    "subject": "Biology",
+    "chapter": "B. Bioenergetics",
+    "subtopic": "Enzyme kinetics & Lineweaver-Burk analysis",
+    "tier": 1,
+    "question": "An enzyme-catalyzed reaction is evaluated in the presence of a reversible inhibitor. Kinetic assays demonstrate that the apparent Km increases by a factor of 3, while Vmax remains completely unchanged. How does this inhibitor alter the intercepts of the Lineweaver-Burk double-reciprocal plot?",
+    "options": [
+      "A. The y-intercept (1/Vmax) remains unaltered; the x-intercept (−1/Km) shifts rightward, closer to the origin.",
+      "B. The y-intercept shifts upward; the x-intercept shifts leftward, further away from the origin.",
+      "C. Both the x-intercept and y-intercept shift downward toward negative values.",
+      "D. The x-intercept remains completely fixed while the y-intercept triples.",
+      "E. The plot becomes a parabolic curve with an asymptote along the y-axis."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In competitive inhibition, the inhibitor binds reversibly to the active site, competing with substrate. Saturating substrate concentrations displace the inhibitor, meaning Vmax is unchanged, while higher substrate is required to reach 1/2 Vmax (apparent Km increases).<br><br><strong>2. Step-by-Step Proof:</strong> On a Lineweaver-Burk plot (1/V vs 1/[S]):<br>• y-intercept = 1/Vmax. Since Vmax is unchanged, the y-intercept is identical.<br>• x-intercept = −1/Km. As Km increases, the magnitude |1/Km| decreases, shifting the negative x-intercept rightward toward 0.",
+    "trapAlert": "On a Lineweaver-Burk plot: x-intercept is −1/Km. As Km INCREASES, −1/Km moves CLOSER to zero (rightward)."
+  },
+  {
+    "id": "bio_pred_2025_09",
+    "subject": "Biology",
+    "chapter": "C. Molecular biology",
+    "subtopic": "DNA replication & Proofreading mechanisms",
+    "tier": 1,
+    "question": "During eukaryotic chromosomal replication, the high fidelity of DNA duplication is maintained by enzymatic proofreading and primer excision. Which specific enzymatic activities perform proofreading and primer removal on the lagging strand?",
+    "options": [
+      "A. Proofreading: 3' to 5' exonuclease activity of DNA Polymerase delta/epsilon; Primer removal: Flap Endonuclease 1 (FEN1) and RNase H.",
+      "B. Proofreading: 5' to 3' endonuclease activity of DNA Ligase; Primer removal: Topoisomerase II.",
+      "C. Proofreading: reverse transcriptase activity of Telomerase; Primer removal: DNA Helicase.",
+      "D. Proofreading: RNA polymerase II subunit Rpb1; Primer removal: single-stranded binding protein (RPA).",
+      "E. Proofreading: 5' to 3' exonuclease of DNA Pol beta; Primer removal: Primase operating in reverse."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> High-fidelity replicative DNA polymerases (Pol delta on lagging strand, Pol epsilon on leading strand) have intrinsic 3' -> 5' exonuclease activity that excises misincorporated nucleotides in the reverse direction.<br><br><strong>2. Step-by-Step Proof:</strong> On the lagging strand, RNA primers are removed when Pol delta displaces the RNA end into a flap, which is cleaved by Flap Endonuclease 1 (FEN1) in conjunction with RNase H. DNA ligase I then seals the nick.",
+    "trapAlert": "DNA synthesis proceeds 5' to 3', but PROOFREADING exonuclease activity operates in the REVERSE direction: 3' to 5'."
+  },
+  {
+    "id": "bio_pred_2025_10",
+    "subject": "Biology",
+    "chapter": "C. Molecular biology",
+    "subtopic": "Pre-mRNA processing & Spliceosome transesterification",
+    "tier": 1,
+    "question": "In eukaryotic pre-mRNA splicing, what unique covalent linkage is formed during the first transesterification step, creating the characteristic lariat intermediate?",
+    "options": [
+      "A. A 2',5'-phosphodiester bond between the 5' phosphate of the intron's 5' splice site (GU) and the 2'-OH of the invariant branch-point adenine.",
+      "B. A 3',5'-phosphodiester bond between adjacent exon guanines catalyzed by poly-A polymerase.",
+      "C. A disulfide bridge between cysteine residues of the U2 snRNP and the 7-methylguanosine cap.",
+      "D. A triple hydrogen bond between the TATA box and RNA Polymerase II CTD domain.",
+      "E. A thioester linkage between the poly-A tail and the nuclear pore export receptor TAP/NXF1."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The spliceosome (snRNPs U1, U2, U4, U5, U6) catalyzes two sequential transesterification reactions without requiring ATP hydrolysis for the transesterification itself.<br><br><strong>2. Step-by-Step Proof:</strong> In the first reaction, the 2'-OH of an internal branch-point Adenine executes a nucleophilic attack on the 5' phosphate of the first intron nucleotide (G of the 5' splice site). This forms an unusual 2',5'-phosphodiester linkage, generating the branched circular 'lariat' intermediate.",
+    "trapAlert": "The branch-point nucleotide in spliceosomal intron excision is ALWAYS an ADENINE forming an unusual 2'-5' phosphodiester bond."
+  },
+  {
+    "id": "bio_pred_2025_11",
+    "subject": "Biology",
+    "chapter": "C. Molecular biology",
+    "subtopic": "Genetic code & Wobble hypothesis",
+    "tier": 1,
+    "question": "According to Francis Crick's Wobble Hypothesis, non-Watson-Crick base pairing is permissible at specific positions of the codon-anticodon interaction. Between which positions does wobble pairing occur, and which modified base provides the broadest pairing promiscuity?",
+    "options": [
+      "A. Wobble occurs between the 3' position of the mRNA codon and the 5' position of the tRNA anticodon; Inosine (I) can pair with A, U, or C.",
+      "B. Wobble occurs between the 1st (5') position of the mRNA codon and the 3' position of the tRNA anticodon; Pseudouridine pairs with G or C.",
+      "C. Wobble occurs exclusively at the central 2nd position of both the codon and anticodon; Hypoxanthine pairs with T.",
+      "D. Wobble occurs at all three positions simultaneously in mitochondrial ribosomes only; Thymine pairs with Guanine.",
+      "E. Wobble occurs between the 5' cap of mRNA and the 3' CCA terminus of uncharged tRNA; Adenine pairs with Cytosine."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The 5' base of the tRNA anticodon has spatial flexibility ('wobble') allowing it to form non-standard hydrogen bonds with the 3' base of the mRNA codon.<br><br><strong>2. Step-by-Step Proof:</strong> Inosine (I, formed by deamination of adenine by tRNA-specific adenosine deaminase) at the 5' anticodon position can form hydrogen bonds with three different bases at the 3' codon position: Uracil, Cytosine, or Adenine (I-U, I-C, I-A).",
+    "trapAlert": "Remember the orientation: 3' base of the CODON pairs with the 5' base of the ANTICODON."
+  },
+  {
+    "id": "bio_pred_2025_12",
+    "subject": "Biology",
+    "chapter": "C. Molecular biology",
+    "subtopic": "Bacterial operon regulation & Catabolite repression",
+    "tier": 1,
+    "question": "In an experimental Escherichia coli strain harboring a loss-of-function mutation in the crp gene (which encodes the Catabolite Activator Protein, CAP), what is the transcriptional behavior of the lac operon when cells are cultured in medium containing high lactose and zero glucose?",
+    "options": [
+      "A. Transcription remains at a very low basal level because the cAMP-CAP complex cannot form to recruit RNA polymerase, despite the absence of the Lac repressor.",
+      "B. Transcription is constitutive and maximally elevated because lactose binds directly to the promoter.",
+      "C. The operon undergoes catastrophic DNA inversion driven by RecA recombinase.",
+      "D. Transcription is hyperactivated because the Lac repressor requires active CAP to bind the operator.",
+      "E. The lacZ, lacY, and lacA structural genes are translated without being transcribed into mRNA."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Full expression of the lac operon requires two simultaneous conditions: 1) Presence of lactose (allolactose derepresses the operator by displacing the LacI repressor), and 2) Absence of glucose (elevating intracellular cAMP, which binds CAP; cAMP-CAP then binds the CAP site upstream of the promoter to assist RNA polymerase binding).<br><br><strong>2. Step-by-Step Proof:</strong> If CAP is non-functional (crp mutant), RNA polymerase has very weak affinity for the lac promoter on its own. Even though the repressor is detached, transcription cannot be stimulated and remains at a minimal basal level.",
+    "trapAlert": "Derepression (removing the repressor) is NOT sufficient for full induction; positive activation by cAMP-CAP is mandatory."
+  },
+  {
+    "id": "bio_pred_2025_13",
+    "subject": "Biology",
+    "chapter": "D. Genetics",
+    "subtopic": "Dihybrid testcross & Genetic linkage",
+    "tier": 1,
+    "question": "A female Drosophila melanogaster heterozygous for two autosomal recessive mutations (cinnabar eyes, cn, and vestigial wings, vg) in coupling phase (cn+ vg+ / cn vg) is testcrossed with a homozygous double-mutant male (cn vg / cn vg). The progeny counts are: 465 wild-type (cn+ vg+), 455 cinnabar-vestigial (cn vg), 42 cinnabar (cn vg+), and 38 vestigial (cn+ vg). What is the recombination frequency and the genetic map distance between cn and vg?",
+    "options": [
+      "A. Recombination frequency = 8.0%; Map distance = 8.0 centimorgans (cM).",
+      "B. Recombination frequency = 50.0%; Map distance = 50.0 cM (independent assortment).",
+      "C. Recombination frequency = 4.0%; Map distance = 4.0 cM.",
+      "D. Recombination frequency = 16.0%; Map distance = 16.0 cM.",
+      "E. Recombination frequency = 0.8%; Map distance = 0.8 cM."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In a testcross of a dihybrid individual, parental phenotypes are the two most abundant classes, and recombinant phenotypes represent crossover gametes.<br><br><strong>2. Step-by-Step Proof:</strong><br>• Recombinant offspring = 42 (cn vg+) + 38 (cn+ vg) = 80.<br>• Total offspring = 465 + 455 + 42 + 38 = 1000.<br>• Recombination Frequency (RF) = (Recombinants / Total) × 100% = (80 / 1000) × 100% = 8.0%.<br>• By definition, 1% recombination = 1 map unit = 1 centimorgan (cM). Map distance = 8.0 cM.",
+    "trapAlert": "Map distance (cM) = (Total Recombinant Offspring / Total Offspring) × 100. Parental types are the two largest phenotypic groups."
+  },
+  {
+    "id": "bio_pred_2025_14",
+    "subject": "Biology",
+    "chapter": "D. Genetics",
+    "subtopic": "Human pedigrees & Conditional probability",
+    "tier": 1,
+    "question": "A healthy man whose brother died of infantile Tay-Sachs disease (an autosomal recessive condition with 100% penetrance) marries an unrelated healthy woman from a population where the Tay-Sachs carrier frequency is 1 in 30. What is the exact probability that their first child will be affected by Tay-Sachs disease?",
+    "options": [
+      "A. 1 in 180 (approx. 0.55%).",
+      "B. 1 in 120 (approx. 0.83%).",
+      "C. 1 in 240 (approx. 0.42%).",
+      "D. 1 in 60 (approx. 1.67%).",
+      "E. 1 in 360 (approx. 0.28%)."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Bayesian probability for unaffected siblings: The man is unaffected, meaning he cannot be homozygous recessive (aa). Among the surviving genotypes (AA, Aa, aA), 2 out of 3 are carriers (Aa). Thus, P(Father is carrier) = 2/3.<br><br><strong>2. Step-by-Step Proof:</strong><br>• P(Father is carrier Aa) = 2/3.<br>• P(Mother is carrier Aa) = 1/30 (population frequency).<br>• If both are carriers (Aa × Aa), P(child is affected aa) = 1/4.<br>• Total probability = (2/3) × (1/30) × (1/4) = 2 / 360 = 1 / 180 ≈ 0.555%.",
+    "trapAlert": "The unaffected sibling trap! The father's chance of being a carrier is 2/3, NOT 1/2, because he is known to be healthy (excluding aa from the denominator)."
+  },
+  {
+    "id": "bio_pred_2025_15",
+    "subject": "Biology",
+    "chapter": "D. Genetics",
+    "subtopic": "Hardy-Weinberg equilibrium & Carrier frequencies",
+    "tier": 1,
+    "question": "In a human population in Hardy-Weinberg equilibrium, the incidence of Phenylketonuria (PKU, an autosomal recessive metabolic disorder, q^2) is 1 in 10,000 live births. Assuming random mating, what is the frequency of healthy heterozygous carriers (2pq) in this population?",
+    "options": [
+      "A. Approximately 1.98% (roughly 1 in 50 individuals).",
+      "B. Exactly 0.01% (1 in 10,000 individuals).",
+      "C. Approximately 10.0% (1 in 10 individuals).",
+      "D. Exactly 0.02% (1 in 5,000 individuals).",
+      "E. Approximately 4.0% (1 in 25 individuals)."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> In Hardy-Weinberg equilibrium: p^2 + 2pq + q^2 = 1 and p + q = 1, where q^2 is disease incidence, q is mutant allele frequency, p is dominant allele frequency, and 2pq is carrier frequency.<br><br><strong>2. Step-by-Step Proof:</strong><br>• q^2 = 1 / 10,000 = 0.0001 => q = sqrt(0.0001) = 0.01.<br>• p = 1 − q = 1 − 0.01 = 0.99.<br>• Carrier frequency 2pq = 2 × 0.99 × 0.01 = 0.0198 = 1.98% (approx. 1 in 50.5, or ~1 in 50).",
+    "trapAlert": "Do not confuse allele frequency q (1%) with carrier frequency 2pq (~2%). Carrier frequency in rare recessive conditions is approximately 2q."
+  },
+  {
+    "id": "bio_pred_2025_16",
+    "subject": "Biology",
+    "chapter": "E. Human anatomy & physiology",
+    "subtopic": "Cardiovascular hemodynamics & Wiggers diagram",
+    "tier": 1,
+    "question": "On a classical Wiggers diagram of the human cardiac cycle, what mechanical event marks the exact onset of isovolumetric ventricular contraction?",
+    "options": [
+      "A. Closure of the atrioventricular (mitral and tricuspid) valves producing the first heart sound (S1).",
+      "B. Opening of the aortic and pulmonary semilunar valves producing the second heart sound (S2).",
+      "C. Closure of the aortic valve resulting in the dicrotic notch.",
+      "D. Maximal ejection of stroke volume during rapid ventricular systole.",
+      "E. Passive filling of the ventricles during diastasis."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Isovolumetric ventricular contraction occurs when ventricular pressure exceeds atrial pressure, causing immediate closure of the AV valves (mitral/tricuspid, generating S1).<br><br><strong>2. Step-by-Step Proof:</strong> During this brief phase (~0.05 s), ventricular pressure rises steeply, but aortic and pulmonary valves remain closed because ventricular pressure has not yet surpassed aortic diastolic pressure (80 mmHg). Since all four cardiac valves are closed, ventricular volume remains constant (isovolumetric).",
+    "trapAlert": "S1 = AV valve closure (onset of isovolumetric contraction). S2 = Semilunar valve closure (onset of isovolumetric relaxation)."
+  },
+  {
+    "id": "bio_pred_2025_17",
+    "subject": "Biology",
+    "chapter": "E. Human anatomy & physiology",
+    "subtopic": "Renin-Angiotensin-Aldosterone System (RAAS)",
+    "tier": 1,
+    "question": "In response to renal afferent arteriolar hypoperfusion, juxtaglomerular granular cells secrete Renin. What is the enzymatic substrate of Renin, and what is the primary downstream effector mechanism of Angiotensin II on the renal microvasculature?",
+    "options": [
+      "A. Renin cleaves hepatic Angiotensinogen to Angiotensin I; Angiotensin II preferentially constricts the efferent arteriole, maintaining GFR despite low perfusion pressure.",
+      "B. Renin cleaves Angiotensin I to Angiotensin II directly; Angiotensin II selectively dilates the efferent arteriole to reduce glomerular pressure.",
+      "C. Renin cleaves Aldosterone into Cortisol; Angiotensin II blocks all sodium reabsorption in the loop of Henle.",
+      "D. Renin converts Atrial Natriuretic Peptide into endothelin; Angiotensin II constricts only the systemic vena cava.",
+      "E. Renin degrades Bradykinin in pulmonary capillaries, causing systemic vasodilation."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Renin is an aspartyl protease released by juxtaglomerular cells that cleaves the decapeptide Angiotensin I from circulating hepatic Angiotensinogen. Pulmonary endothelial ACE then converts Angiotensin I into the octapeptide Angiotensin II.<br><br><strong>2. Step-by-Step Proof:</strong> In the kidney, Angiotensin II preferentially constricts the EFFERENT arteriole more than the afferent arteriole. This increases glomerular hydrostatic pressure, preserving the Glomerular Filtration Rate (GFR) even during systemic hypotension.",
+    "trapAlert": "Angiotensin II constricts the EFFERENT arteriole, which BACKS UP pressure in the glomerulus and PRESERVES the filtration fraction."
+  },
+  {
+    "id": "bio_pred_2025_18",
+    "subject": "Biology",
+    "chapter": "E. Human anatomy & physiology",
+    "subtopic": "Respiratory gas exchange & Bohr-Haldane effects",
+    "tier": 1,
+    "question": "Which combination of microenvironmental factors within exercising skeletal muscle tissue shifts the oxyhemoglobin dissociation curve to the RIGHT (Bohr effect), and what is the physiological consequence?",
+    "options": [
+      "A. Increased PCO2, decreased pH (elevated [H+]), elevated temperature, and increased 2,3-BPG; promotes oxygen unloading to active myocytes.",
+      "B. Decreased PCO2, elevated pH (alkalosis), decreased temperature, and decreased 2,3-BPG; promotes tighter oxygen binding.",
+      "C. Carbon monoxide inhalation and fetal hemoglobin synthesis; locks hemoglobin in the high-affinity R state.",
+      "D. Hyperventilation causing respiratory alkalosis; impairs carbon dioxide transport to the pulmonary capillaries.",
+      "E. Complete oxidation of myoglobin into metmyoglobin; increases arterial oxygen saturation to 100%."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The Bohr effect: metabolically active tissues produce CO2 and lactic acid, lowering local pH and generating heat. Protons bind specific histidine residues on hemoglobin, stabilizing the low-affinity T (tense) quaternary conformation.<br><br><strong>2. Step-by-Step Proof:</strong> Higher [H+], higher PCO2, higher temperature, and 2,3-BPG all shift the oxygen dissociation curve to the RIGHT. This decreases hemoglobin's affinity for O2 at any given PO2, facilitating the offloading of oxygen into oxygen-starved muscle tissue.",
+    "trapAlert": "Mnemonic: CADET face RIGHT (CO2, Acid, 2,3-DPG, Exercise, Temperature all cause a RIGHT shift = increased O2 unloading)."
+  },
+  {
+    "id": "bio_pred_2025_19",
+    "subject": "Biology",
+    "chapter": "E. Human anatomy & physiology",
+    "subtopic": "Renal countercurrent multiplier & Nephron transport",
+    "tier": 1,
+    "question": "What is the primary transport mechanism responsible for generating the medullary interstitial hyperosmotic gradient along the thick ascending limb of the loop of Henle, and how does its water permeability compare to the descending limb?",
+    "options": [
+      "A. Active reabsorption of Na+, K+, and 2Cl− via the electroneutral NKCC2 symporter; the thick ascending limb is completely impermeable to water, whereas the descending limb is freely permeable to water via AQP1.",
+      "B. Passive diffusion of urea; the thick ascending limb is hyper-permeable to water, while the descending limb actively pumps salt.",
+      "C. Primary active transport of calcium via PMCA; both limbs are equally permeable to water under ADH control.",
+      "D. Secondary active transport of glucose via SGLT2; both limbs are entirely watertight.",
+      "E. Solvent drag across paracellular claudin channels; water reabsorption occurs exclusively in the ascending limb."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> The countercurrent multiplier requires separation of solute transport from water transport.<br><br><strong>2. Step-by-Step Proof:</strong> The descending limb contains abundant Aquaporin-1 (AQP1) channels and is highly permeable to water but impermeable to solutes, concentrating tubular fluid. Conversely, the thick ascending limb is watertight (impermeable to water) and actively reabsorbs ions via the apical Na+-K+-2Cl− cotransporter (NKCC2). This dilutes tubular fluid while depositing salt into the medullary interstitium, creating the hyperosmotic driving force.",
+    "trapAlert": "The thick ascending limb is the 'DILUTING SEGMENT'—it pumps salt OUT without water following, making urine hypoosmotic and the interstitium hyperosmotic."
+  },
+  {
+    "id": "bio_pred_2025_20",
+    "subject": "Biology",
+    "chapter": "E. Human anatomy & physiology",
+    "subtopic": "Action potential mechanics & Gating kinetics",
+    "tier": 1,
+    "question": "What molecular mechanism is responsible for the absolute refractory period in unmyelinated axons, and how does it guarantee the unidirectional propagation of nerve impulses?",
+    "options": [
+      "A. Time-dependent closure of the intracellular inactivation gate (h-gate) of voltage-gated Na+ channels, preventing reactivation until the membrane repolarizes.",
+      "B. Maximal opening of voltage-gated K+ channels that hyperpolarizes the membrane to −150 mV.",
+      "C. Exhaustion of ATP reserves halting the Na+/K+ ATPase pump for 2 milliseconds.",
+      "D. Degradation of myelin sheaths by Schwann cells during the depolarization phase.",
+      "E. Reversal of the sign of the Nernst equilibrium potential for sodium from positive to negative."
+    ],
+    "correctIndex": 0,
+    "explanation": "<strong>1. Legitimizing Principle:</strong> Voltage-gated Na+ channels (Nav1.2) possess two gates: an extracellular voltage-sensing activation gate (m-gate) and an intracellular inactivation gate (h-gate).<br><br><strong>2. Step-by-Step Proof:</strong> Upon depolarization above threshold (−55 mV), m-gates open rapidly. Within ~1 ms, the flexible inactivation gate swings into the pore, plugging the channel (inactivated state). While inactivated, no stimulus regardless of strength can reopen the channel (absolute refractory period). This prevents backward excitation and guarantees unidirectional anterograde propagation.",
+    "trapAlert": "Absolute refractory period is caused by Na+ channel INACTIVATION, not by K+ channel opening (which causes the RELATIVE refractory period)."
+  }
+]
