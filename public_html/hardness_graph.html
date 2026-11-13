@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMAT 15-Year Historical Examination Hardness & Cognitive Load Graph (2011–2026)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .ref-card {
+      background: #ffffff;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: 1.25rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen antialiased flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-black text-white text-lg shadow-lg shadow-indigo-500/20">
+          📈
+        </div>
+        <div>
+          <div class="font-extrabold text-sm text-white tracking-tight flex items-center gap-2">
+            IMAT 15-Year Examination Hardness Graph
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">70+ Cutoff Era</span>
+          </div>
+          <div class="text-[11px] text-slate-400">Complete Historical Difficulty Calibration across all 15 test sittings (2011–2026)</div>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="index.html#pastpapers" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-1.5 shadow-sm">
+          <span>←</span> Back to IMAT Platform
+        </a>
+        <a href="testas.html" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-1.5 shadow-sm hidden sm:flex">
+          ⚙️ TestAS Cockpit
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Standalone Graph Frame -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6 w-full flex-1">
+    
+    <!-- Top Summary Banner -->
+    <div class="bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-4">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 flex items-center gap-1">
+              <span>📈</span> 15-Year Historical Blueprint
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              MUR & Cambridge Calibrated
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30 font-mono">
+              70+ Admission Cutoff Era
+            </span>
+          </div>
+          <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            15-Year IMAT Examination Hardness & Cognitive Load Trend (2011–2026)
+          </h1>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-4xl">
+            Empirical difficulty calibration across all 15 official test papers (940 authentic questions). <strong>Overall Effort / Composite Hardness is displayed by default</strong>. Select individual subjects or the multi-subject overlay below to inspect difficulty trends in one unified frame.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-2 self-start md:self-center shrink-0">
+          <button onclick="setHardnessSubject('overall')" class="px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-md shadow-indigo-600/30 transition-all flex items-center gap-1.5">
+            <span>⚡ Reset to Overall Effort</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 Top KPI Metric Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 pt-2">
+        <div class="p-4 bg-slate-900/80 rounded-2xl border border-slate-800">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Current 2026 Index</div>
+          <div class="text-2xl font-extrabold text-rose-400 font-mono mt-0.5 flex items-baseline gap-1">
+            8.6 <span class="text-xs font-medium text-slate-500">/ 10.0</span>
+          </div>
+          <div class="text-[11px] text-slate-400 mt-1">Highest composite load in IMAT history</div>
+        </div>
+
+        <div class="p-4 bg-slate-900/80 rounded-2xl border border-slate-800">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Min. Admitted Cutoff</div>
+          <div class="text-2xl font-extrabold text-amber-400 font-mono mt-0.5 flex items-baseline gap-1">
+            70.1 <span class="text-xs font-medium text-slate-500">pts</span>
+          </div>
+          <div class="text-[11px] text-slate-400 mt-1">Historic record: 70-pt barrier breached</div>
+        </div>
+
+        <div class="p-4 bg-slate-900/80 rounded-2xl border border-slate-800">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Most Volatile Subject</div>
+          <div class="text-2xl font-extrabold text-indigo-400 font-mono mt-0.5 flex items-baseline gap-1">
+            Chemistry
+          </div>
+          <div class="text-[11px] text-slate-400 mt-1">Range: 6.3 (2015) to 8.8 (2017)</div>
+        </div>
+
+        <div class="p-4 bg-slate-900/80 rounded-2xl border border-slate-800">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Cambridge Peak Crucible</div>
+          <div class="text-2xl font-extrabold text-purple-400 font-mono mt-0.5 flex items-baseline gap-1">
+            2017 <span class="text-xs font-medium text-slate-500">(8.4)</span>
+          </div>
+          <div class="text-[11px] text-slate-400 mt-1">Lowest national cutoffs on record (42.5 pts)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subject Selection Filter Tabs -->
+    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 space-y-2">
+      <div class="flex items-center justify-between text-xs font-bold text-slate-300 mb-1">
+        <span>Select Subject Metric (Overall Effort selected by default):</span>
+        <span id="active-subject-badge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-900/60 text-indigo-300 border border-indigo-700">
+          ⚡ Overall Effort / Composite Hardness
+        </span>
+      </div>
+
+      <div id="hardness-subject-tabs" class="flex flex-wrap items-center gap-2">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- Interactive Graph Frame Card -->
+    <div class="bg-white text-slate-900 border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl relative">
+      
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+        <div>
+          <h2 id="hardness-graph-title" class="text-lg font-black text-slate-900">⚡ Overall Effort & Cognitive Hardness Curve (2011–2026)</h2>
+          <p id="hardness-graph-subtitle" class="text-xs text-slate-500">Holistic index evaluating calculation density, cognitive traps, and negative marking stress across 15 years.</p>
+        </div>
+
+        <!-- Difficulty Tier Legends -->
+        <div class="flex flex-wrap items-center gap-2 text-[10px] font-bold">
+          <span class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-rose-50 text-rose-700 border border-rose-200">
+            <span class="w-2 h-2 rounded-full bg-rose-500"></span> 8.0–10.0: Brutal / Crucible
+          </span>
+          <span class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 border border-amber-200">
+            <span class="w-2 h-2 rounded-full bg-amber-500"></span> 6.5–8.0: Challenging
+          </span>
+          <span class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span> 4.0–6.5: Moderate
+          </span>
+        </div>
+      </div>
+
+      <!-- SVG Graph Viewport (One Frame) -->
+      <div class="w-full overflow-x-auto relative pb-2" id="hardness-svg-viewport">
+        <div id="hardness-svg-container" class="min-w-[850px] w-full">
+          <!-- SVG dynamically rendered -->
+        </div>
+
+        <!-- Floating Tooltip Card -->
+        <div id="hardness-floating-tooltip" class="hidden absolute pointer-events-none z-30 bg-slate-900/95 backdrop-blur-md text-white p-3.5 rounded-xl shadow-2xl border border-slate-700 max-w-xs text-xs transition-opacity duration-150">
+          <!-- Tooltip content -->
+        </div>
+      </div>
+
+      <!-- Selected Year Deep-Dive Inspector Card -->
+      <div id="hardness-selected-inspector" class="p-5 bg-slate-50 rounded-2xl border border-slate-200 space-y-4">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+
+    <!-- 15-Year Historical Hardness Matrix Table -->
+    <div class="bg-white text-slate-900 border border-slate-200 rounded-3xl overflow-hidden shadow-lg">
+      <div class="p-5 bg-slate-50 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h3 class="text-base font-bold text-slate-900">15-Year Historical Hardness & Cutoff Matrix (2011–2026)</h3>
+          <p class="text-xs text-slate-500">Click any row to focus that year on the graph above, inspect trap profiles, or launch practice mode.</p>
+        </div>
+        <span class="text-xs font-mono font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-3 py-1 rounded-lg">
+          15 Exam Papers • 940 Past Questions
+        </span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs divide-y divide-slate-100">
+          <thead class="bg-slate-100/75 text-slate-600 font-bold text-[11px] uppercase tracking-wider">
+            <tr>
+              <th class="py-3.5 px-4">Year & Era</th>
+              <th class="py-3.5 px-3 text-center">Format</th>
+              <th class="py-3.5 px-3 text-center bg-indigo-50/60 text-indigo-900">⚡ Effort</th>
+              <th class="py-3.5 px-3 text-center text-emerald-800">🧬 Bio</th>
+              <th class="py-3.5 px-3 text-center text-amber-800">🧪 Chem</th>
+              <th class="py-3.5 px-3 text-center text-cyan-800">⚛️ Phys</th>
+              <th class="py-3.5 px-3 text-center text-purple-800">➗ Math</th>
+              <th class="py-3.5 px-3 text-center text-pink-800">🧠 Logic</th>
+              <th class="py-3.5 px-3 text-center text-slate-700">📖 GK</th>
+              <th class="py-3.5 px-3 text-center">Min. Cutoff</th>
+              <th class="py-3.5 px-4 text-right">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="hardness-matrix-tbody" class="divide-y divide-slate-100">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Analytical Breakdown: 70+ Cutoff Strategy -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 space-y-3">
+        <div class="flex items-center gap-2.5">
+          <span class="w-9 h-9 rounded-xl bg-rose-500/20 text-rose-300 border border-rose-500/30 flex items-center justify-center font-bold text-lg">⚠️</span>
+          <div>
+            <h4 class="text-sm font-bold text-white">Why 2026 is Rated 8.6 Effort Index</h4>
+            <p class="text-[11px] text-slate-400">Mathematical impact of negative marking at a 70.1 cutoff</p>
+          </div>
+        </div>
+        <div class="text-xs text-slate-300 space-y-2 leading-relaxed">
+          <p>
+            In the 2011–2022 Cambridge era, candidates gained admission with scores between <strong>42.5 and 52.8 points</strong> (~55% net accuracy). Candidates could afford to skip or guess on entire disciplines.
+          </p>
+          <p>
+            With the 2026 cutoff reaching <strong>70.1 points</strong> (Milan/Bologna 74+), candidate accuracy must exceed <strong>82% net</strong> (+1.5 correct, −0.4 incorrect).
+          </p>
+          <ul class="list-disc pl-5 space-y-1 text-slate-300 font-medium">
+            <li>Requires at least <strong>48 to 51 correct answers</strong> out of 60.</li>
+            <li>Maximum allowable errors across the entire exam: <strong>3 to 4</strong>.</li>
+            <li>Each wrong guess loses 1.9 points against a correct question.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 space-y-3">
+        <div class="flex items-center gap-2.5">
+          <span class="w-9 h-9 rounded-xl bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 flex items-center justify-center font-bold text-lg">🎯</span>
+          <div>
+            <h4 class="text-sm font-bold text-white">Discipline Priority & Time Stress Order</h4>
+            <p class="text-[11px] text-slate-400">Tactical ranking for reaching 70+ marks</p>
+          </div>
+        </div>
+        <div class="text-xs text-slate-300 space-y-2.5 leading-relaxed">
+          <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+            <div class="flex justify-between font-bold text-white">
+              <span>1. Biology (23 Questions • 34.5 pts)</span>
+              <span class="text-emerald-400 font-mono">38.3% of Paper</span>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-1">Must score 21+ correct out of 23. Zero unforced errors in cytology, molecular genetics, and renal feedback.</p>
+          </div>
+          <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+            <div class="flex justify-between font-bold text-white">
+              <span>2. Chemistry (15 Questions • 22.5 pts)</span>
+              <span class="text-amber-400 font-mono">Highest Traps</span>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-1">Highest trap density. Master buffer equilibrium, thermochemistry, and organic functional groups.</p>
+          </div>
+          <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+            <div class="flex justify-between font-bold text-white">
+              <span>3. Physics & Math (13 Questions • 19.5 pts)</span>
+              <span class="text-cyan-400 font-mono">The 70+ Decider</span>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-1">Cannot be left blank. At 70+ cutoff, candidates need 9–10 correct in physics and math to secure admission.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-6 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>IMAT 15-Year Historical Hardness & Cognitive Load Benchmark (2011–2026)</div>
+      <div class="flex items-center gap-4">
+        <a href="index.html#pastpapers" class="text-indigo-400 hover:text-indigo-300">IMAT Past Papers</a>
+        <a href="testas.html" class="text-slate-400 hover:text-white">TestAS Cockpit</a>
+        <a href="portal.html" class="text-slate-400 hover:text-white">Portal Hub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function drillIntoPaper(year, expandSolutions) {
+      window.location.href = `index.html#paper-${year}`;
+    }
+
+    // 10D-2. 15-YEAR IMAT EXAMINATION HARDNESS & EFFORT TREND GRAPH ENGINE
+const imatHistoricalHardnessData = [
+  {
+    year: 2011,
+    format: "80 Qs (Inaugural Cambridge)",
+    questionsCount: 80,
+    timeLimit: 120,
+    cutoff: 45.0,
+    era: "Cambridge 80-Q Era",
+    overall: 6.8,
+    biology: 6.2,
+    chemistry: 6.5,
+    physics: 6.4,
+    math: 6.7,
+    logic: 7.2,
+    generalKnowledge: 5.8,
+    tier: "Moderate-Challenging",
+    keyTraps: "40 Critical Thinking questions; long cognitive endurance; foundational science.",
+    milestone: "First official IMAT examination in Italy; 80 questions format."
+  },
+  {
+    year: 2012,
+    format: "80 Qs (Cambridge Sitting)",
+    questionsCount: 80,
+    timeLimit: 120,
+    cutoff: 48.0,
+    era: "Cambridge 80-Q Era",
+    overall: 7.2,
+    biology: 6.8,
+    chemistry: 7.0,
+    physics: 6.9,
+    math: 7.3,
+    logic: 7.5,
+    generalKnowledge: 6.0,
+    tier: "Challenging",
+    keyTraps: "Complex syllogisms, spatial pattern deduction, Le Chatelier & stereochemistry.",
+    milestone: "Final 80-question paper; heavy problem-solving load."
+  },
+  {
+    year: 2013,
+    format: "60 Qs (First Modern 100-min)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 44.5,
+    era: "Cambridge 60-Q Era",
+    overall: 6.5,
+    biology: 6.4,
+    chemistry: 6.6,
+    physics: 6.3,
+    math: 6.5,
+    logic: 6.8,
+    generalKnowledge: 5.9,
+    tier: "Moderate",
+    keyTraps: "Time management shift to 100s per question; cell cycle and gas laws.",
+    milestone: "First year of standard 60 questions / 100 minutes format."
+  },
+  {
+    year: 2014,
+    format: "60 Qs (Spring / April Sitting)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 46.9,
+    era: "Cambridge 60-Q Era",
+    overall: 6.7,
+    biology: 6.6,
+    chemistry: 7.1,
+    physics: 6.8,
+    math: 6.6,
+    logic: 6.7,
+    generalKnowledge: 6.2,
+    tier: "Moderate-Challenging",
+    keyTraps: "Acid-base buffer calculations, electrical resistor networks, logic assumptions.",
+    milestone: "Unusual April administration; chemistry equilibrium spikes."
+  },
+  {
+    year: 2015,
+    format: "60 Qs (Cambridge Assessment)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 48.2,
+    era: "Cambridge 60-Q Era",
+    overall: 6.2,
+    biology: 6.1,
+    chemistry: 6.3,
+    physics: 6.0,
+    math: 6.2,
+    logic: 6.4,
+    generalKnowledge: 5.7,
+    tier: "Accessible / Moderate",
+    keyTraps: "Direct recall questions; lowest calculation trap density in Cambridge history.",
+    milestone: "Most accessible Cambridge IMAT paper on record."
+  },
+  {
+    year: 2016,
+    format: "60 Qs (Cambridge Assessment)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 47.8,
+    era: "Cambridge 60-Q Era",
+    overall: 7.1,
+    biology: 7.0,
+    chemistry: 7.4,
+    physics: 6.9,
+    math: 6.8,
+    logic: 7.3,
+    generalKnowledge: 6.3,
+    tier: "Challenging",
+    keyTraps: "Hess's Law thermochemistry, antibody biochemistry, numerical data matrices.",
+    milestone: "Re-escalation of scientific calculation difficulty."
+  },
+  {
+    year: 2017,
+    format: "60 Qs (Cambridge Assessment)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 42.5,
+    era: "The Cambridge Crucible",
+    overall: 8.4,
+    biology: 8.1,
+    chemistry: 8.8,
+    physics: 8.5,
+    math: 8.0,
+    logic: 8.2,
+    generalKnowledge: 7.0,
+    tier: "Brutal / Crucible ⭐⭐⭐",
+    keyTraps: "Equilibrium Ksp calculations, electromagnetic induction, lac operon gene regulation.",
+    milestone: "Peak Cambridge Crucible: Lowest national score cutoffs in IMAT history."
+  },
+  {
+    year: 2018,
+    format: "60 Qs (Cambridge Assessment)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 50.1,
+    era: "Cambridge 60-Q Era",
+    overall: 7.6,
+    biology: 7.5,
+    chemistry: 7.8,
+    physics: 7.4,
+    math: 7.3,
+    logic: 8.0,
+    generalKnowledge: 6.5,
+    tier: "Challenging",
+    keyTraps: "Kidney countercurrent multiplier, organic stereoisomers, 20 logic questions.",
+    milestone: "20 questions of critical thinking; deep mammalian physiology."
+  },
+  {
+    year: 2019,
+    format: "60 Qs (12 GK Mandate)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 48.9,
+    era: "Cambridge 60-Q Era",
+    overall: 7.0,
+    biology: 7.1,
+    chemistry: 7.2,
+    physics: 6.8,
+    math: 6.7,
+    logic: 7.2,
+    generalKnowledge: 7.4,
+    tier: "Moderate-Challenging",
+    keyTraps: "Broadest General Knowledge syllabus (12 questions); endocrine axis and orbital hybridisation.",
+    milestone: "Expansion of General Knowledge to 12 questions by ministerial decree."
+  },
+  {
+    year: 2020,
+    format: "60 Qs (COVID-19 Protocol)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 51.3,
+    era: "Cambridge 60-Q Era",
+    overall: 6.9,
+    biology: 7.3,
+    chemistry: 7.0,
+    physics: 6.6,
+    math: 6.5,
+    logic: 6.9,
+    generalKnowledge: 7.1,
+    tier: "Moderate-Challenging",
+    keyTraps: "Viral immunology, recombinant DNA technology, hydrogen bonding boiling point curves.",
+    milestone: "Administered during pandemic; high focus on virology and genetics."
+  },
+  {
+    year: 2021,
+    format: "60 Qs (Cambridge Assessment)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 46.5,
+    era: "Cambridge 60-Q Era",
+    overall: 7.4,
+    biology: 7.4,
+    chemistry: 7.7,
+    physics: 7.1,
+    math: 7.0,
+    logic: 7.5,
+    generalKnowledge: 7.6,
+    tier: "Challenging",
+    keyTraps: "Gas volume equilibrium shifts, Archimedes buoyancy in multi-fluids, logic fallacies.",
+    milestone: "High calculation complexity across physics and chemistry."
+  },
+  {
+    year: 2022,
+    format: "60 Qs (Final Cambridge Paper)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 52.8,
+    era: "Cambridge 60-Q Era",
+    overall: 7.9,
+    biology: 8.2,
+    chemistry: 8.3,
+    physics: 7.6,
+    math: 7.4,
+    logic: 7.7,
+    generalKnowledge: 7.5,
+    tier: "High Difficulty",
+    keyTraps: "Hardy-Weinberg with selective pressures, multi-step organic reaction mechanisms, Doppler effect.",
+    milestone: "Final Cambridge Assessment exam before hand-off to Italian Ministry."
+  },
+  {
+    year: 2023,
+    format: "60 Qs (MUR Transition)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 45.2,
+    era: "MUR Ministerial Era",
+    overall: 6.6,
+    biology: 6.7,
+    chemistry: 6.8,
+    physics: 6.4,
+    math: 6.5,
+    logic: 6.2,
+    generalKnowledge: 6.0,
+    tier: "Moderate",
+    keyTraps: "Structural shock: 23 Biology questions, only 5 Logic questions; Italian syllabus focus.",
+    milestone: "Historic transfer to MUR: Biology increased to 23 questions (38.3% of paper)."
+  },
+  {
+    year: 2024,
+    format: "60 Qs (MUR Second Generation)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 68.4,
+    era: "MUR Ministerial Era",
+    overall: 7.8,
+    biology: 7.9,
+    chemistry: 8.0,
+    physics: 7.7,
+    math: 7.5,
+    logic: 7.2,
+    generalKnowledge: 7.3,
+    tier: "High Difficulty / Cutoff Surge",
+    keyTraps: "Surging applicant competition; high precision required; neurophysiology and redox.",
+    milestone: "Cutoff explosion: national admission baseline jumps into upper 60s."
+  },
+  {
+    year: 2026,
+    format: "60 Qs (MUR Decree n. 1005 - Form A)",
+    questionsCount: 60,
+    timeLimit: 100,
+    cutoff: 70.1,
+    era: "The 70+ Cutoff Frontier",
+    overall: 8.6,
+    biology: 8.8,
+    chemistry: 8.7,
+    physics: 8.5,
+    math: 8.3,
+    logic: 8.4,
+    generalKnowledge: 7.9,
+    tier: "Brutal / Frontier Era ⭐⭐⭐",
+    keyTraps: "Record cutoffs (lowest admitted 70.1); negative marking penalty lethal; CRISPR, Gibbs energy, electromagnetic induction.",
+    milestone: "Highest cognitive complexity and competitive pressure in IMAT history; national 70.0+ threshold breached."
+  }
+];
+
+const imatHardnessSubjects = [
+  {
+    id: 'overall',
+    name: 'Overall Effort / Composite Hardness',
+    shortName: '⚡ Overall Effort (Default)',
+    icon: '⚡',
+    color: '#6366f1',
+    bgLight: 'bg-indigo-50 text-indigo-700 border-indigo-200',
+    bgActive: 'bg-indigo-600 text-white shadow-sm',
+    gradientStart: 'rgba(99, 102, 241, 0.40)',
+    gradientEnd: 'rgba(99, 102, 241, 0.01)',
+    description: 'Composite cognitive load index weighing calculation depth, multi-step deduction, trap density, and time pressure per point.'
+  },
+  {
+    id: 'biology',
+    name: 'Biology Hardness',
+    shortName: '🧬 Biology',
+    icon: '🧬',
+    color: '#10b981',
+    bgLight: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+    bgActive: 'bg-emerald-600 text-white shadow-sm',
+    gradientStart: 'rgba(16, 185, 129, 0.40)',
+    gradientEnd: 'rgba(16, 185, 129, 0.01)',
+    description: 'Cell biology, bioenergetics, Mendelian & molecular genetics, human organ systems, and biotechnology.'
+  },
+  {
+    id: 'chemistry',
+    name: 'Chemistry Hardness',
+    shortName: '🧪 Chemistry',
+    icon: '🧪',
+    color: '#f59e0b',
+    bgLight: 'bg-amber-50 text-amber-700 border-amber-200',
+    bgActive: 'bg-amber-600 text-white shadow-sm',
+    gradientStart: 'rgba(245, 158, 11, 0.40)',
+    gradientEnd: 'rgba(245, 158, 11, 0.01)',
+    description: 'Atomic structure, stoichiometry, thermochemistry, chemical equilibria, acid-base, and organic synthesis.'
+  },
+  {
+    id: 'physics',
+    name: 'Physics Hardness',
+    shortName: '⚛️ Physics',
+    icon: '⚛️',
+    color: '#06b6d4',
+    bgLight: 'bg-cyan-50 text-cyan-700 border-cyan-200',
+    bgActive: 'bg-cyan-600 text-white shadow-sm',
+    gradientStart: 'rgba(6, 182, 212, 0.40)',
+    gradientEnd: 'rgba(6, 182, 212, 0.01)',
+    description: 'Kinematics, Newtonian dynamics, work/energy, fluid mechanics, thermodynamics, and electromagnetism.'
+  },
+  {
+    id: 'math',
+    name: 'Mathematics Hardness',
+    shortName: '➗ Mathematics',
+    icon: '➗',
+    color: '#8b5cf6',
+    bgLight: 'bg-purple-50 text-purple-700 border-purple-200',
+    bgActive: 'bg-purple-600 text-white shadow-sm',
+    gradientStart: 'rgba(139, 92, 246, 0.40)',
+    gradientEnd: 'rgba(139, 92, 246, 0.01)',
+    description: 'Algebraic manipulation, quadratic & rational equations, analytical geometry, trigonometry, and probability.'
+  },
+  {
+    id: 'logic',
+    name: 'Logical Reasoning Hardness',
+    shortName: '🧠 Logical Reasoning',
+    icon: '🧠',
+    color: '#ec4899',
+    bgLight: 'bg-pink-50 text-pink-700 border-pink-200',
+    bgActive: 'bg-pink-600 text-white shadow-sm',
+    gradientStart: 'rgba(236, 72, 153, 0.40)',
+    gradientEnd: 'rgba(236, 72, 153, 0.01)',
+    description: 'Critical thinking, argument flaws, conclusion extraction, spatial puzzles, and multi-variable logic grids.'
+  },
+  {
+    id: 'generalKnowledge',
+    name: 'Reading Skills & General Knowledge',
+    shortName: '📖 Reading & GK',
+    icon: '📖',
+    color: '#64748b',
+    bgLight: 'bg-slate-100 text-slate-700 border-slate-300',
+    bgActive: 'bg-slate-700 text-white shadow-sm',
+    gradientStart: 'rgba(100, 116, 139, 0.40)',
+    gradientEnd: 'rgba(100, 116, 139, 0.01)',
+    description: 'Reading comprehension, literary history, philosophy, civic institutions, and contemporary geopolitics.'
+  },
+  {
+    id: 'all',
+    name: 'All Subjects Multi-Line Overlay',
+    shortName: '🌐 Multi-Subject Overlay',
+    icon: '🌐',
+    color: '#3b82f6',
+    bgLight: 'bg-blue-50 text-blue-700 border-blue-200',
+    bgActive: 'bg-blue-600 text-white shadow-sm',
+    gradientStart: 'rgba(59, 130, 246, 0.40)',
+    gradientEnd: 'rgba(59, 130, 246, 0.01)',
+    description: 'Simultaneous overlay of all subject trajectories to contrast relative subject difficulty across 15 years.'
+  }
+];
+
+let currentHardnessSubject = 'overall';
+let selectedHardnessYear = 2026;
+
+function setHardnessSubject(subjectId) {
+  currentHardnessSubject = subjectId;
+  renderExamHardnessGraph();
+}
+
+function selectHardnessYear(year) {
+  selectedHardnessYear = year;
+  renderExamHardnessGraph();
+  const inspector = document.getElementById('hardness-selected-inspector');
+  if (inspector) inspector.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function generateHardnessSvg(activeSubId, selYear) {
+  const width = 1000;
+  const height = 470;
+  const padLeft = 60;
+  const padRight = 45;
+  const padTop = 50;
+  const padBottom = 75;
+
+  const plotW = width - padLeft - padRight;
+  const plotH = height - padTop - padBottom;
+
+  const minY = 4.0;
+  const maxY = 10.0;
+  const rangeY = maxY - minY;
+
+  const numYears = imatHistoricalHardnessData.length;
+  const stepX = plotW / (numYears - 1);
+
+  function getX(index) {
+    return padLeft + index * stepX;
+  }
+
+  function getY(val) {
+    const clamped = Math.max(minY, Math.min(maxY, val));
+    return padTop + plotH * (1.0 - (clamped - minY) / rangeY);
+  }
+
+  function createBezierPath(points) {
+    if (!points || points.length === 0) return "";
+    let d = `M ${points[0].x.toFixed(2)},${points[0].y.toFixed(2)}`;
+    for (let i = 1; i < points.length; i++) {
+      const p0 = points[i - 1];
+      const p1 = points[i];
+      const dx = p1.x - p0.x;
+      const cp1x = p0.x + dx * 0.42;
+      const cp1y = p0.y;
+      const cp2x = p1.x - dx * 0.42;
+      const cp2y = p1.y;
+      d += ` C ${cp1x.toFixed(2)},${cp1y.toFixed(2)} ${cp2x.toFixed(2)},${cp2y.toFixed(2)} ${p1.x.toFixed(2)},${p1.y.toFixed(2)}`;
+    }
+    return d;
+  }
+
+  const y10 = getY(10.0);
+  const y8 = getY(8.0);
+  const y65 = getY(6.5);
+  const y4 = getY(4.0);
+
+  let defs = `
+    <defs>
+      <filter id="glow-filter" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3.0" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+  `;
+
+  imatHardnessSubjects.forEach(s => {
+    if (s.id !== 'all') {
+      defs += `
+        <linearGradient id="grad-${s.id}" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="${s.color}" stop-opacity="0.35" />
+          <stop offset="70%" stop-color="${s.color}" stop-opacity="0.08" />
+          <stop offset="100%" stop-color="${s.color}" stop-opacity="0.00" />
+        </linearGradient>
+      `;
+    }
+  });
+  defs += `</defs>`;
+
+  // Background difficulty bands
+  let bgBands = `
+    <!-- Crucible Zone: 8.0 to 10.0 -->
+    <rect x="${padLeft}" y="${y10}" width="${plotW}" height="${y8 - y10}" fill="#f43f5e" fill-opacity="0.06" rx="4" />
+    <text x="${padLeft + 12}" y="${y10 + 16}" fill="#e11d48" font-size="9" font-weight="800" font-family="monospace" letter-spacing="0.5">CRUCIBLE / BRUTAL ZONE (8.0 – 10.0)</text>
+
+    <!-- Challenging Zone: 6.5 to 8.0 -->
+    <rect x="${padLeft}" y="${y8}" width="${plotW}" height="${y65 - y8}" fill="#f59e0b" fill-opacity="0.05" />
+    <text x="${padLeft + 12}" y="${y8 + 16}" fill="#d97706" font-size="9" font-weight="800" font-family="monospace" letter-spacing="0.5">CHALLENGING / HIGH EFFORT (6.5 – 8.0)</text>
+
+    <!-- Moderate Zone: 4.0 to 6.5 -->
+    <rect x="${padLeft}" y="${y65}" width="${plotW}" height="${y4 - y65}" fill="#10b981" fill-opacity="0.04" rx="4" />
+    <text x="${padLeft + 12}" y="${y65 + 16}" fill="#059669" font-size="9" font-weight="800" font-family="monospace" letter-spacing="0.5">ACCESSIBLE / MODERATE (4.0 – 6.5)</text>
+  `;
+
+  // Horizontal Grid Lines & Ticks
+  let gridLines = '';
+  [4.0, 5.0, 6.0, 6.5, 7.0, 8.0, 9.0, 10.0].forEach(val => {
+    const y = getY(val);
+    const isMajor = val === 4.0 || val === 6.5 || val === 8.0 || val === 10.0;
+    gridLines += `
+      <line x1="${padLeft}" y1="${y}" x2="${padLeft + plotW}" y2="${y}" stroke="${isMajor ? '#cbd5e1' : '#f1f5f9'}" stroke-width="${isMajor ? 1.2 : 0.8}" stroke-dasharray="${isMajor ? 'none' : '3,3'}" />
+      <text x="${padLeft - 10}" y="${y + 3.5}" text-anchor="end" font-size="10" font-family="monospace" font-weight="${isMajor ? '700' : '500'}" fill="${isMajor ? '#475569' : '#94a3b8'}">${val.toFixed(1)}</text>
+    `;
+  });
+
+  // Vertical Era Lines
+  const era12_13_x = (getX(1) + getX(2)) / 2;
+  const era22_23_x = (getX(11) + getX(12)) / 2;
+
+  let eraLines = `
+    <line x1="${era12_13_x}" y1="${padTop}" x2="${era12_13_x}" y2="${padTop + plotH}" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,4" />
+    <text x="${(getX(0) + era12_13_x) / 2}" y="${padTop - 12}" text-anchor="middle" font-size="10" font-weight="800" fill="#64748b">CAMBRIDGE 80-Q</text>
+
+    <text x="${(era12_13_x + era22_23_x) / 2}" y="${padTop - 12}" text-anchor="middle" font-size="10" font-weight="800" fill="#64748b">CAMBRIDGE 60-Q STANDARD (2013–2022)</text>
+
+    <line x1="${era22_23_x}" y1="${padTop}" x2="${era22_23_x}" y2="${padTop + plotH}" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4,4" />
+    <text x="${(era22_23_x + padLeft + plotW) / 2}" y="${padTop - 12}" text-anchor="middle" font-size="10" font-weight="800" fill="#4f46e5">MUR ERA (2023–26)</text>
+  `;
+
+  // Draw curves & individual trend-colored segments
+  let curvesSvg = '';
+  let nodesSvg = '';
+
+  const subjectObj = imatHardnessSubjects.find(s => s.id === activeSubId) || imatHardnessSubjects[0];
+
+  if (activeSubId === 'all') {
+    // Multi-subject overlay: render each individual subject
+    const subjectsToDraw = ['biology', 'chemistry', 'physics', 'math', 'logic', 'generalKnowledge', 'overall'];
+    subjectsToDraw.forEach(sId => {
+      const sMeta = imatHardnessSubjects.find(s => s.id === sId);
+      const isOverall = sId === 'overall';
+      const pts = imatHistoricalHardnessData.map((d, i) => ({ x: getX(i), y: getY(d[sId]) }));
+      const pathD = createBezierPath(pts);
+
+      curvesSvg += `
+        <path d="${pathD}" fill="none" stroke="${sMeta.color}" stroke-width="${isOverall ? 3.5 : 2.0}" stroke-linecap="round" stroke-linejoin="round" opacity="${isOverall ? 1.0 : 0.85}" ${isOverall ? 'filter="url(#glow-filter)"' : ''} />
+      `;
+    });
+
+    imatHistoricalHardnessData.forEach((d, i) => {
+      const cx = getX(i);
+      const cy = getY(d.overall);
+      const isSelected = d.year === selYear;
+
+      nodesSvg += `
+        <g class="cursor-pointer" onclick="selectHardnessYear(${d.year})" onmouseenter="showGraphTooltip(event, ${i}, 'overall')" onmouseleave="hideGraphTooltip()">
+          ${isSelected ? `<circle cx="${cx}" cy="${cy}" r="12" fill="#6366f1" fill-opacity="0.25" class="animate-pulse" />` : ''}
+          <circle cx="${cx}" cy="${cy}" r="${isSelected ? 6.5 : 4.5}" fill="#ffffff" stroke="#6366f1" stroke-width="${isSelected ? 3.5 : 2.5}" />
+          <circle cx="${cx}" cy="${cy}" r="22" fill="transparent" />
+        </g>
+      `;
+    });
+
+  } else {
+    // Single subject curve with Year-over-Year Increase / Decrease Segments!
+    const pts = imatHistoricalHardnessData.map((d, i) => ({ x: getX(i), y: getY(d[activeSubId]) }));
+    const curveD = createBezierPath(pts);
+    const areaD = `${curveD} L ${pts[pts.length - 1].x},${padTop + plotH} L ${pts[0].x},${padTop + plotH} Z`;
+
+    curvesSvg += `
+      <!-- Area Fill -->
+      <path d="${areaD}" fill="url(#grad-${subjectObj.id})" />
+      <!-- Base Underlying Continuous Line -->
+      <path d="${curveD}" fill="none" stroke="${subjectObj.color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />
+    `;
+
+    // Draw Year-over-Year Trend Colored Segments!
+    // Upward segments (Increased Hardness) = Rose/Red (#ef4444)
+    // Downward segments (Decreased Hardness) = Emerald/Green (#10b981)
+    for (let i = 1; i < pts.length; i++) {
+      const p0 = pts[i - 1];
+      const p1 = pts[i];
+      const val0 = imatHistoricalHardnessData[i - 1][activeSubId];
+      const val1 = imatHistoricalHardnessData[i][activeSubId];
+      const diff = val1 - val0;
+
+      let segColor = '#64748b';
+      let strokeW = 3.5;
+      if (diff > 0.001) {
+        segColor = '#e11d48'; // Rose-600: Hardness Increased
+      } else if (diff < -0.001) {
+        segColor = '#059669'; // Emerald-600: Hardness Decreased
+      }
+
+      const dx = p1.x - p0.x;
+      const cp1x = p0.x + dx * 0.42;
+      const cp1y = p0.y;
+      const cp2x = p1.x - dx * 0.42;
+      const cp2y = p1.y;
+      const segD = `M ${p0.x.toFixed(2)},${p0.y.toFixed(2)} C ${cp1x.toFixed(2)},${cp1y.toFixed(2)} ${cp2x.toFixed(2)},${cp2y.toFixed(2)} ${p1.x.toFixed(2)},${p1.y.toFixed(2)}`;
+
+      curvesSvg += `
+        <path d="${segD}" fill="none" stroke="${segColor}" stroke-width="${strokeW}" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow-filter)" />
+      `;
+    }
+
+    // Selected year vertical indicator line
+    const selIdx = imatHistoricalHardnessData.findIndex(d => d.year === selYear);
+    if (selIdx >= 0) {
+      const selX = getX(selIdx);
+      curvesSvg += `
+        <line x1="${selX}" y1="${padTop}" x2="${selX}" y2="${padTop + plotH}" stroke="${subjectObj.color}" stroke-width="1.8" stroke-dasharray="3,3" opacity="0.75" />
+      `;
+    }
+
+    // Nodes with Clear Increase/Decrease Badges!
+    imatHistoricalHardnessData.forEach((d, i) => {
+      const cx = getX(i);
+      const cy = getY(d[activeSubId]);
+      const isSelected = d.year === selYear;
+      const scoreVal = d[activeSubId].toFixed(1);
+
+      let deltaStr = '● BASE';
+      let deltaBg = '#f1f5f9';
+      let deltaBorder = '#cbd5e1';
+      let deltaColor = '#475569';
+      let ringColor = '#64748b';
+      let trendLabel = 'Baseline';
+
+      if (i > 0) {
+        const diff = d[activeSubId] - imatHistoricalHardnessData[i - 1][activeSubId];
+        if (diff > 0.001) {
+          deltaStr = `▲ +${diff.toFixed(1)}`;
+          deltaBg = '#ffe4e6'; // Rose-100
+          deltaBorder = '#fda4af'; // Rose-300
+          deltaColor = '#b91c1c'; // Rose-700: INCREASE
+          ringColor = '#e11d48';
+          trendLabel = 'Increased Hardness';
+        } else if (diff < -0.001) {
+          deltaStr = `▼ ${diff.toFixed(1)}`;
+          deltaBg = '#dcfce7'; // Emerald-100
+          deltaBorder = '#86efac'; // Emerald-300
+          deltaColor = '#15803d'; // Emerald-700: DECREASE
+          ringColor = '#059669';
+          trendLabel = 'Decreased Hardness';
+        } else {
+          deltaStr = `▬ 0.0`;
+          deltaBg = '#f8fafc';
+          deltaBorder = '#e2e8f0';
+          deltaColor = '#64748b';
+          trendLabel = 'Unchanged';
+        }
+      }
+
+      nodesSvg += `
+        <g class="cursor-pointer transition-transform duration-150" onclick="selectHardnessYear(${d.year})" onmouseenter="showGraphTooltip(event, ${i}, '${activeSubId}')" onmouseleave="hideGraphTooltip()">
+          ${isSelected ? `<circle cx="${cx}" cy="${cy}" r="15" fill="${ringColor}" fill-opacity="0.25" class="animate-pulse" />` : ''}
+          <circle cx="${cx}" cy="${cy}" r="${isSelected ? 7.5 : 5.0}" fill="#ffffff" stroke="${ringColor}" stroke-width="${isSelected ? 3.5 : 2.5}" />
+          
+          <!-- Score Value Label above node -->
+          <text x="${cx}" y="${cy - (isSelected ? 13 : 10)}" text-anchor="middle" font-size="${isSelected ? 11.5 : 10}" font-weight="900" font-family="monospace" fill="${isSelected ? ringColor : '#1e293b'}">${scoreVal}</text>
+
+          <!-- Increase / Decrease Delta Pill Badge below node -->
+          <rect x="${cx - 19}" y="${cy + 8}" width="38" height="15" rx="4" fill="${deltaBg}" stroke="${deltaBorder}" stroke-width="0.9" />
+          <text x="${cx}" y="${cy + 19}" text-anchor="middle" font-size="8.5" font-weight="800" font-family="monospace" fill="${deltaColor}">${deltaStr}</text>
+
+          <!-- Large hit target -->
+          <circle cx="${cx}" cy="${cy}" r="24" fill="transparent" />
+        </g>
+      `;
+    });
+  }
+
+  // X-Axis Year Labels
+  let xLabels = '';
+  imatHistoricalHardnessData.forEach((d, i) => {
+    const x = getX(i);
+    const isSelected = d.year === selYear;
+    const isCrucible = d.year === 2017;
+    const isFrontier = d.year === 2026;
+
+    let fillCol = '#64748b';
+    let weight = '600';
+    if (isSelected) {
+      fillCol = '#0f172a';
+      weight = '800';
+    } else if (isFrontier) {
+      fillCol = '#e11d48';
+      weight = '800';
+    } else if (isCrucible) {
+      fillCol = '#9333ea';
+      weight = '800';
+    }
+
+    xLabels += `
+      <g class="cursor-pointer" onclick="selectHardnessYear(${d.year})">
+        <text x="${x}" y="${padTop + plotH + 34}" text-anchor="middle" font-size="${isSelected ? 12 : 11}" font-weight="${weight}" font-family="monospace" fill="${fillCol}">${d.year}</text>
+        ${isFrontier ? `<rect x="${x - 18}" y="${padTop + plotH + 40}" width="36" height="15" rx="4" fill="#fee2e2" /><text x="${x}" y="${padTop + plotH + 51}" text-anchor="middle" font-size="8.5" font-weight="800" fill="#b91c1c">70+ Era</text>` : ''}
+        ${isCrucible ? `<rect x="${x - 18}" y="${padTop + plotH + 40}" width="36" height="15" rx="4" fill="#f3e8ff" /><text x="${x}" y="${padTop + plotH + 51}" text-anchor="middle" font-size="8.5" font-weight="800" fill="#7e22ce">Crucible</text>` : ''}
+      </g>
+    `;
+  });
+
+  return `
+    <svg viewBox="0 0 ${width} ${height}" class="w-full h-auto select-none" style="font-family: inherit;">
+      ${defs}
+      ${bgBands}
+      ${gridLines}
+      ${eraLines}
+      ${curvesSvg}
+      ${nodesSvg}
+      ${xLabels}
+    </svg>
+  `;
+}
+
+function renderExamHardnessGraph() {
+  const container = document.getElementById('pastpapers-subview-difficulty');
+  if (!container) return;
+
+  const activeSub = imatHardnessSubjects.find(s => s.id === currentHardnessSubject) || imatHardnessSubjects[0];
+  const activeYearData = imatHistoricalHardnessData.find(d => d.year === selectedHardnessYear) || imatHistoricalHardnessData[imatHistoricalHardnessData.length - 1];
+
+  // 1. Update Title and Badges
+  const activeBadge = document.getElementById('active-subject-badge');
+  if (activeBadge) {
+    activeBadge.textContent = `${activeSub.icon} ${activeSub.name}`;
+    activeBadge.className = `px-2.5 py-0.5 rounded-full text-[11px] font-bold ${activeSub.bgLight}`;
+  }
+
+  const graphTitle = document.getElementById('hardness-graph-title');
+  if (graphTitle) {
+    graphTitle.textContent = `${activeSub.icon} ${activeSub.name} Trend (2011–2026)`;
+  }
+
+  const graphSubtitle = document.getElementById('hardness-graph-subtitle');
+  if (graphSubtitle) {
+    graphSubtitle.textContent = activeSub.description;
+  }
+
+  // 2. Render Subject Navigation Tabs
+  const tabsContainer = document.getElementById('hardness-subject-tabs');
+  if (tabsContainer) {
+    let tabsHtml = '';
+    imatHardnessSubjects.forEach(s => {
+      const isActive = s.id === currentHardnessSubject;
+      tabsHtml += `
+        <button onclick="setHardnessSubject('${s.id}')" class="px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${isActive ? s.bgActive : 'bg-slate-100 hover:bg-slate-200 text-slate-700'}">
+          <span>${s.icon}</span>
+          <span>${s.shortName}</span>
+        </button>
+      `;
+    });
+    tabsContainer.innerHTML = tabsHtml;
+  }
+
+  // 3. Render SVG Canvas
+  const svgContainer = document.getElementById('hardness-svg-container');
+  if (svgContainer) {
+    svgContainer.innerHTML = generateHardnessSvg(currentHardnessSubject, selectedHardnessYear);
+  }
+
+  // 4. Render Selected Year Deep-Dive Inspector Card
+  const inspector = document.getElementById('hardness-selected-inspector');
+  if (inspector && activeYearData) {
+    const isFrontier = activeYearData.year === 2026;
+    const isCrucible = activeYearData.year === 2017;
+    let scoreColor = 'text-indigo-600';
+    if (activeYearData.overall >= 8.0) scoreColor = 'text-rose-600';
+    else if (activeYearData.overall >= 7.0) scoreColor = 'text-amber-600';
+
+    inspector.innerHTML = `
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex flex-col items-center justify-center font-mono shadow-md">
+            <span class="text-xs font-medium text-slate-400">IMAT</span>
+            <span class="text-base font-black leading-tight">${activeYearData.year}</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h4 class="text-base font-bold text-slate-900">IMAT ${activeYearData.year} Examination Blueprint</h4>
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-bold ${isFrontier ? 'bg-rose-100 text-rose-800 border border-rose-300' : (isCrucible ? 'bg-purple-100 text-purple-800 border border-purple-300' : 'bg-slate-200 text-slate-700')}">${activeYearData.era}</span>
+            </div>
+            <p class="text-xs text-slate-500">${activeYearData.format} • ${activeYearData.timeLimit} min • Authority: ${activeYearData.year >= 2023 ? 'Italian MUR Ministry' : 'Cambridge Assessment'}</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="drillIntoPaper(${activeYearData.year}, false)" class="py-2 px-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm">
+            <span>📖</span> Practice ${activeYearData.year} Paper
+          </button>
+          <button onclick="drillIntoPaper(${activeYearData.year}, true)" class="py-2 px-3.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm">
+            <span>💡</span> Worked Solutions
+          </button>
+        </div>
+      </div>
+
+      <!-- Subject Difficulty Pills Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2 pt-1 text-center">
+        <div class="p-2.5 rounded-xl bg-indigo-50 border border-indigo-200">
+          <div class="text-[10px] font-bold uppercase text-indigo-700">⚡ Effort</div>
+          <div class="text-lg font-mono font-black ${scoreColor} mt-0.5">${activeYearData.overall.toFixed(1)}</div>
+          <div class="text-[9.5px] font-semibold text-indigo-900/70">${activeYearData.tier}</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200">
+          <div class="text-[10px] font-bold uppercase text-emerald-700">🧬 Bio</div>
+          <div class="text-lg font-mono font-black text-emerald-700 mt-0.5">${activeYearData.biology.toFixed(1)}</div>
+          <div class="text-[9.5px] font-semibold text-emerald-900/70">${activeYearData.year >= 2023 ? '23 Qs' : '18 Qs'}</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-amber-50 border border-amber-200">
+          <div class="text-[10px] font-bold uppercase text-amber-700">🧪 Chem</div>
+          <div class="text-lg font-mono font-black text-amber-700 mt-0.5">${activeYearData.chemistry.toFixed(1)}</div>
+          <div class="text-[9.5px] font-semibold text-amber-900/70">${activeYearData.year >= 2023 ? '15 Qs' : '12 Qs'}</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-cyan-50 border border-cyan-200">
+          <div class="text-[10px] font-bold uppercase text-cyan-700">⚛️ Phys</div>
+          <div class="text-lg font-mono font-black text-cyan-700 mt-0.5">${activeYearData.physics.toFixed(1)}</div>
+          <div class="text-[9.5px] font-semibold text-cyan-900/70">${activeYearData.year >= 2023 ? '7–8 Qs' : '4–5 Qs'}</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-purple-50 border border-purple-200">
+          <div class="text-[10px] font-bold uppercase text-purple-700">➗ Math</div>
+          <div class="text-lg font-mono font-black text-purple-700 mt-0.5">${activeYearData.math.toFixed(1)}</div>
+          <div class="text-[9.5px] font-semibold text-purple-900/70">${activeYearData.year >= 2023 ? '5–6 Qs' : '4 Qs'}</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-pink-50 border border-pink-200">
+          <div class="text-[10px] font-bold uppercase text-pink-700">🧠 Logic</div>
+          <div class="text-lg font-mono font-black text-pink-700 mt-0.5">${activeYearData.logic.toFixed(1)}</div>
+          <div class="text-[9.5px] font-semibold text-pink-900/70">${activeYearData.year >= 2023 ? '5 Qs' : (activeYearData.year <= 2012 ? '40 Qs' : (activeYearData.year >= 2019 ? '10 Qs' : '20 Qs'))}</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-100 border border-slate-300">
+          <div class="text-[10px] font-bold uppercase text-slate-600">📖 GK</div>
+          <div class="text-lg font-mono font-black text-slate-800 mt-0.5">${activeYearData.generalKnowledge.toFixed(1)}</div>
+          <div class="text-[9.5px] font-semibold text-slate-600">${activeYearData.year >= 2023 ? '4 Qs' : (activeYearData.year === 2019 ? '12 Qs' : (activeYearData.year >= 2020 ? '10 Qs' : '2 Qs'))}</div>
+        </div>
+      </div>
+
+      <!-- Cognitive Notes & Historical Context -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2 text-xs">
+        <div class="p-3 bg-white rounded-xl border border-slate-200 md:col-span-2">
+          <div class="font-bold text-slate-800 flex items-center gap-1.5">
+            <span>🔍</span> Cognitive Traps & Syllabus Demands:
+          </div>
+          <p class="text-slate-600 mt-1 leading-relaxed">${activeYearData.keyTraps}</p>
+        </div>
+        <div class="p-3 bg-white rounded-xl border border-slate-200">
+          <div class="font-bold text-slate-800 flex items-center gap-1.5">
+            <span>🎯</span> Historical Admission Cutoff:
+          </div>
+          <div class="text-xl font-extrabold text-emerald-700 font-mono mt-1">${activeYearData.cutoff} <span class="text-xs text-slate-400 font-normal">pts</span></div>
+          <p class="text-[11px] text-slate-500 mt-0.5">${activeYearData.milestone}</p>
+        </div>
+      </div>
+    `;
+  }
+
+  // 5. Render Historical Hardness Matrix Table
+  const tbody = document.getElementById('hardness-matrix-tbody');
+  if (tbody) {
+    let rowsHtml = '';
+    // Reverse order (newest 2026 to oldest 2011)
+    const sortedData = [...imatHistoricalHardnessData].reverse();
+
+    sortedData.forEach(d => {
+      const isSelected = d.year === selectedHardnessYear;
+      const isFrontier = d.year === 2026;
+      const isCrucible = d.year === 2017;
+
+      function getBadge(val) {
+        if (val >= 8.0) return `<span class="px-2 py-0.5 rounded-md font-mono font-bold text-[11px] bg-rose-100 text-rose-800 border border-rose-200">${val.toFixed(1)}</span>`;
+        if (val >= 7.0) return `<span class="px-2 py-0.5 rounded-md font-mono font-bold text-[11px] bg-amber-100 text-amber-800 border border-amber-200">${val.toFixed(1)}</span>`;
+        return `<span class="px-2 py-0.5 rounded-md font-mono font-bold text-[11px] bg-emerald-100 text-emerald-800 border border-emerald-200">${val.toFixed(1)}</span>`;
+      }
+
+      // Compute YoY Delta for selected subject
+      const origIdx = imatHistoricalHardnessData.findIndex(x => x.year === d.year);
+      let trendBadge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-200">● Base</span>';
+      if (origIdx > 0) {
+        const metricKey = currentHardnessSubject === 'all' ? 'overall' : currentHardnessSubject;
+        const diff = d[metricKey] - imatHistoricalHardnessData[origIdx - 1][metricKey];
+        if (diff > 0.001) {
+          trendBadge = `<span class="px-2 py-0.5 rounded font-mono font-bold text-[10.5px] bg-rose-100 text-rose-800 border border-rose-300">▲ +${diff.toFixed(1)} <span class="text-[9px] font-semibold text-rose-600">Harder</span></span>`;
+        } else if (diff < -0.001) {
+          trendBadge = `<span class="px-2 py-0.5 rounded font-mono font-bold text-[10.5px] bg-emerald-100 text-emerald-800 border border-emerald-300">▼ ${diff.toFixed(1)} <span class="text-[9px] font-semibold text-emerald-600">Easier</span></span>`;
+        } else {
+          trendBadge = `<span class="px-2 py-0.5 rounded font-mono font-bold text-[10.5px] bg-slate-100 text-slate-600 border border-slate-200">▬ 0.0</span>`;
+        }
+      }
+
+      rowsHtml += `
+        <tr class="hover:bg-indigo-50/40 transition-colors cursor-pointer ${isSelected ? 'bg-indigo-50/80 font-semibold' : ''}" onclick="selectHardnessYear(${d.year})">
+          <td class="py-3 px-3.5">
+            <div class="flex items-center gap-2">
+              <span class="font-mono font-black text-slate-900 text-sm">${d.year}</span>
+              ${isFrontier ? `<span class="px-1.5 py-0.5 rounded text-[9.5px] font-extrabold bg-rose-100 text-rose-800 border border-rose-300">70+ Cutoff</span>` : ''}
+              ${isCrucible ? `<span class="px-1.5 py-0.5 rounded text-[9.5px] font-extrabold bg-purple-100 text-purple-800 border border-purple-300">Crucible</span>` : ''}
+            </div>
+            <div class="text-[10.5px] text-slate-400 font-medium">${d.era}</div>
+          </td>
+          <td class="py-3 px-3 text-center text-slate-600 font-mono text-[11px]">${d.questionsCount} Qs / ${d.timeLimit}m</td>
+          <td class="py-3 px-3 text-center bg-indigo-50/50">${getBadge(d.overall)}</td>
+          <td class="py-3 px-3 text-center">${trendBadge}</td>
+          <td class="py-3 px-3 text-center">${getBadge(d.biology)}</td>
+          <td class="py-3 px-3 text-center">${getBadge(d.chemistry)}</td>
+          <td class="py-3 px-3 text-center">${getBadge(d.physics)}</td>
+          <td class="py-3 px-3 text-center">${getBadge(d.math)}</td>
+          <td class="py-3 px-3 text-center">${getBadge(d.logic)}</td>
+          <td class="py-3 px-3 text-center">${getBadge(d.generalKnowledge)}</td>
+          <td class="py-3 px-3 text-center font-mono font-bold text-slate-800">${d.cutoff}</td>
+          <td class="py-3 px-3.5 text-right whitespace-nowrap">
+            <button onclick="event.stopPropagation(); drillIntoPaper(${d.year}, false)" class="px-2.5 py-1 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-bold text-[11px] transition-all shadow-xs mr-1">
+              Practice
+            </button>
+            <button onclick="event.stopPropagation(); drillIntoPaper(${d.year}, true)" class="px-2.5 py-1 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 rounded-lg font-bold text-[11px] transition-all shadow-xs">
+              Solutions
+            </button>
+          </td>
+        </tr>
+      `;
+    });
+
+    tbody.innerHTML = rowsHtml;
+  }
+}
+
+function showGraphTooltip(event, yearIndex, subjectId) {
+  const d = imatHistoricalHardnessData[yearIndex];
+  if (!d) return;
+
+  const tooltip = document.getElementById('hardness-floating-tooltip');
+  const viewport = document.getElementById('hardness-svg-viewport');
+  if (!tooltip || !viewport) return;
+
+  const subMeta = imatHardnessSubjects.find(s => s.id === subjectId) || imatHardnessSubjects[0];
+  const scoreVal = d[subjectId] !== undefined ? d[subjectId] : d.overall;
+
+  tooltip.innerHTML = `
+    <div class="space-y-2">
+      <div class="flex items-center justify-between gap-2 border-b border-slate-700/80 pb-1.5">
+        <div class="font-bold text-white flex items-center gap-1.5">
+          <span>📅</span> IMAT ${d.year} Sitting
+        </div>
+        <span class="font-mono text-[10px] font-bold text-emerald-400 bg-emerald-950/80 px-1.5 py-0.5 rounded border border-emerald-800">
+          Cutoff: ${d.cutoff}
+        </span>
+      </div>
+
+      <div class="flex items-center justify-between gap-3">
+        <div class="text-[11px] text-slate-300">${subMeta.name}:</div>
+        <div class="font-mono font-extrabold text-amber-400 text-base">${scoreVal.toFixed(1)} / 10</div>
+      </div>
+
+      <div class="text-[10px] text-slate-300 bg-slate-800/80 p-2 rounded-lg border border-slate-700">
+        <div class="font-bold text-slate-200 mb-0.5">${d.era} • ${d.format}</div>
+        <div class="text-slate-400 leading-tight">${d.keyTraps}</div>
+      </div>
+
+      <div class="text-[9.5px] text-indigo-300 text-center font-semibold pt-0.5">
+        Click point to inspect full breakdown & practice paper
+      </div>
+    </div>
+  `;
+
+  tooltip.classList.remove('hidden');
+
+  // Position tooltip relative to viewport
+  const rect = viewport.getBoundingClientRect();
+  let left = event.clientX - rect.left + 15;
+  let top = event.clientY - rect.top - 80;
+
+  if (left + 260 > rect.width) {
+    left = event.clientX - rect.left - 275;
+  }
+  if (top < 10) top = 10;
+
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
+}
+
+function hideGraphTooltip() {
+  const tooltip = document.getElementById('hardness-floating-tooltip');
+  if (tooltip) tooltip.classList.add('hidden');
+}
+
+
+    
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderExamHardnessGraph();
+    });
+  </script>
+</body>
+</html>
