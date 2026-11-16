@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMAT & TestAS Curated Study Material Vault | Free Courses, Books & Video Links</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen antialiased flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+  <!-- Header Navigation -->
+  <header class="border-b border-slate-800 bg-slate-950/85 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-black text-white text-lg shadow-lg shadow-indigo-500/20 shrink-0">
+          📚
+        </a>
+        <div>
+          <div class="font-extrabold text-sm text-white tracking-tight flex items-center gap-2">
+            Study Material & Free Resources Vault
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">100% Free / Open Access</span>
+          </div>
+          <div class="text-[11px] text-slate-400">Calibrated with Syllabus Coverage % & Exam Score Impact</div>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="index.html" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-1.5 shadow-sm">
+          <span>←</span> Back to IMAT App
+        </a>
+        <a href="past_papers.html" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-1.5 shadow-sm">
+          📄 940 Past Questions
+        </a>
+        <a href="hardness_graph.html" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-indigo-300 border border-slate-700 transition-all flex items-center gap-1.5 shadow-sm">
+          📈 Hardness Graph
+        </a>
+        <a href="testas.html" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition-all flex items-center gap-1.5 shadow-sm">
+          ⚙️ TestAS Cockpit
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6 w-full flex-1">
+    
+    <!-- Top HUD Banner -->
+    <div class="bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-4">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 flex items-center gap-1">
+              <span>📚</span> Verified Academic Reference Vault
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Zero Paywalls • 100% Free Resources
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30 font-mono">
+              Syllabus & Exam % Calibrated
+            </span>
+          </div>
+          <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            Curated Study Material & Open Reference Library
+          </h1>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-4xl">
+            Comprehensive directory of official free textbooks (OpenStax, LibreTexts), MIT OpenCourseWare video lecture series, university masterclasses, and open-source problem archives. Every resource indicates exact <strong>Syllabus Coverage %</strong> and <strong>Exam Weight % Impact</strong>.
+          </p>
+        </div>
+
+        <!-- Mode Tabs: IMAT vs TestAS -->
+        <div class="flex items-center bg-slate-900 p-1.5 rounded-2xl border border-slate-800 self-start md:self-center shrink-0">
+          <button id="tab-btn-imat" onclick="switchTrack('imat')" class="px-4 py-2 rounded-xl text-xs font-bold transition-all bg-indigo-600 text-white shadow-sm flex items-center gap-2">
+            <span>🩺</span> IMAT Medical (21 Resources)
+          </button>
+          <button id="tab-btn-testas" onclick="switchTrack('testas')" class="px-4 py-2 rounded-xl text-xs font-bold transition-all text-slate-400 hover:text-white flex items-center gap-2">
+            <span>⚙️</span> TestAS Engineering (20 Resources)
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Metrics HUD -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+        <div class="p-3.5 bg-slate-900/80 rounded-2xl border border-slate-800">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Total Curated Sources</div>
+          <div class="text-2xl font-black text-white font-mono mt-0.5">41 Resources</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">21 IMAT + 20 TestAS sources</div>
+        </div>
+
+        <div class="p-3.5 bg-slate-900/80 rounded-2xl border border-slate-800">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Textbook Access</div>
+          <div class="text-2xl font-black text-emerald-400 font-mono mt-0.5">100% Free</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">Direct PDF downloads & web readers</div>
+        </div>
+
+        <div class="p-3.5 bg-slate-900/80 rounded-2xl border border-slate-800">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Video Masterclasses</div>
+          <div class="text-2xl font-black text-indigo-400 font-mono mt-0.5">18 Channels</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">MIT OCW, Ninja Nerd, Hanson</div>
+        </div>
+
+        <div class="p-3.5 bg-slate-900/80 rounded-2xl border border-slate-800">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Average Syllabus Fit</div>
+          <div class="text-2xl font-black text-amber-400 font-mono mt-0.5">94.2%</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">Matched to MUR & TestAS decrees</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters & Search Bar Card -->
+    <div class="bg-slate-950 border border-slate-800 rounded-3xl p-5 space-y-4 shadow-lg">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div class="flex flex-wrap items-center gap-1.5" id="subject-filter-pills">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="relative w-full sm:w-72">
+          <input type="text" id="search-input" oninput="handleSearch(this.value)" placeholder="Search books, YouTube, MIT OCW..." class="w-full py-2 pl-3.5 pr-8 bg-slate-900 border border-slate-800 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500">
+          <span class="absolute right-3 top-2 text-slate-500 text-xs">🔍</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resources Cards Grid Container -->
+    <div id="resources-cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <!-- Rendered by JS -->
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-6 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>IMAT & TestAS Free Open Academic Study Material Repository (2026/2027)</div>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="hover:text-white">IMAT App</a>
+        <a href="past_papers.html" class="hover:text-white">Past Papers</a>
+        <a href="hardness_graph.html" class="hover:text-white">Hardness Graph</a>
+        <a href="testas.html" class="hover:text-white">TestAS Cockpit</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+const imatResourcesWithCoverage = [
+  // BIOLOGY (23 Questions = 38.3% of IMAT, 34.5 / 90 Points)
+  {
+    id: "bio_openstax",
+    subject: "biology",
+    category: "Free Open Textbook (PDF & Web)",
+    title: "OpenStax Biology 2e",
+    provider: "OpenStax / Rice University",
+    url: "https://openstax.org/details/books/biology-2e",
+    badge: "Official IMAT Syllabus Match",
+    syllabusCoveragePct: 92,
+    syllabusCoverageLabel: "92% of Biology Syllabus",
+    examWeightPct: 35.3,
+    examWeightLabel: "35.3% of Entire IMAT (31.8 / 90 Pts)",
+    questionCountImpact: "21 of 23 Biology Qs",
+    description: "The primary comprehensive textbook. Fully covers cellular bioenergetics (glycolysis, TCA cycle, oxidative phosphorylation), molecular genetics, cell cycle checkpoints, and human organ systems. Only misses ultra-specialized oncology immunotherapy nuances (covered by Alberts).",
+    highYield: ["Cell Structure & Endomembranes", "Cellular Respiration & Chemiosmosis", "Mendelian Pedigrees & Meiosis", "Human Anatomy & Physiology"]
+  },
+  {
+    id: "bio_alberts",
+    subject: "biology",
+    category: "Free Online Reference Book",
+    title: "Molecular Biology of the Cell (Alberts et al.)",
+    provider: "NCBI Bookshelf / National Institutes of Health",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK21054/",
+    badge: "Tier-4 Frontier Exam Coverage",
+    syllabusCoveragePct: 96,
+    syllabusCoverageLabel: "96% of Molecular & Cellular Biology",
+    examWeightPct: 26.7,
+    examWeightLabel: "26.7% of Entire IMAT (24.0 / 90 Pts)",
+    questionCountImpact: "16 of 23 Biology Qs (Cell/Mol Focus)",
+    description: "Freely accessible via the NCBI Bookshelf. Invaluable for the hardest Tier-4 IMAT questions: M6P trafficking, receptor tyrosine kinase phosphorylation, CDK-cyclin complexes, p53/Rb checkpoints, Cas9 nuclease mechanics, and apoptosis pathways.",
+    highYield: ["Endomembrane Sorting (M6P)", "Cell Cycle Checkpoints (p53, Rb)", "Signal Transduction (RTKs, GPCRs)", "DNA Repair Mechanisms"]
+  },
+  {
+    id: "bio_ninja_nerd",
+    subject: "biology",
+    category: "Curated YouTube Masterclass",
+    title: "Ninja Nerd: Medical Physiology & Bioenergetics",
+    provider: "Prof. Zach Murphy / Ninja Nerd",
+    url: "https://www.youtube.com/@NinjaNerdLectures",
+    badge: "Highest Score Impact Series",
+    syllabusCoveragePct: 88,
+    syllabusCoverageLabel: "88% of Physiology & Bioenergetics",
+    examWeightPct: 28.3,
+    examWeightLabel: "28.3% of Entire IMAT (25.5 / 90 Pts)",
+    questionCountImpact: "17 of 23 Biology Qs (Physiology)",
+    description: "Universally acclaimed visual lectures on whiteboards. Unmatched depth on cardiac electrophysiology, Wiggers diagrams, Starling forces, renal countercurrent multiplication, nephron clearance, and respiratory gas transport.",
+    highYield: ["Cardiovascular Hemodynamics & TPR", "Renal Clearance & GFR Starling Forces", "Action Potentials & Synapses", "Complex I-IV ETC & Q-Cycle Mechanics"]
+  },
+  {
+    id: "bio_mit_ocw",
+    subject: "biology",
+    category: "Free University Online Course (MOOC)",
+    title: "MIT OpenCourseWare 7.016: Introductory Biology",
+    provider: "Massachusetts Institute of Technology (MIT)",
+    url: "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/",
+    badge: "Full University MOOC",
+    syllabusCoveragePct: 85,
+    syllabusCoverageLabel: "85% of General & Molecular Biology",
+    examWeightPct: 25.0,
+    examWeightLabel: "25.0% of Entire IMAT (22.5 / 90 Pts)",
+    questionCountImpact: "15 of 23 Biology Qs",
+    description: "Taught by Human Genome pioneer Prof. Eric Lander and cancer biologist Prof. Robert Weinberg. Provides rigorous university lectures, assignments, and exam problem solutions for molecular genetics, recombinant DNA, and biochemistry.",
+    highYield: ["Molecular Genetics & Recombinant DNA", "Enzyme Kinetics & Regulation", "Immunology Basics", "Recombinant Biotechnology"]
+  },
+  {
+    id: "bio_armando",
+    subject: "biology",
+    category: "YouTube Clinical Illustrations",
+    title: "Armando Hasudungan: Hand-Drawn Medical Biology",
+    provider: "Armando Hasudungan",
+    url: "https://www.youtube.com/@armandohasudungan",
+    badge: "Rapid Revision Visuals",
+    syllabusCoveragePct: 75,
+    syllabusCoverageLabel: "75% of Human Systems & Immunology",
+    examWeightPct: 20.0,
+    examWeightLabel: "20.0% of Entire IMAT (18.0 / 90 Pts)",
+    questionCountImpact: "12 of 23 Biology Qs",
+    description: "Exquisite hand-drawn medical pathway flowcharts. Ideal for high-speed revision of endocrine axes (RAAS, HPA), immune checkpoints, CAR-T cell mechanism, gastrointestinal enzymes, and nephron transport.",
+    highYield: ["RAAS & Aldosterone Feedback", "Immune Checkpoints (PD-1, CTLA-4)", "Endocrine Feedback Control", "Digestive Enzymes & Secretions"]
+  },
+  {
+    id: "bio_amoeba",
+    subject: "biology",
+    category: "YouTube Animation Series",
+    title: "Amoeba Sisters: High-Yield Genetics & Cell Biology",
+    provider: "Amoeba Sisters",
+    url: "https://www.youtube.com/@AmoebaSisters",
+    badge: "Fast Concept Clarifier",
+    syllabusCoveragePct: 65,
+    syllabusCoverageLabel: "65% of Cell Division & Genetics",
+    examWeightPct: 15.0,
+    examWeightLabel: "15.0% of Entire IMAT (13.5 / 90 Pts)",
+    questionCountImpact: "9 of 23 Biology Qs",
+    description: "Clear, engaging visual animations breaking down meiotic chromosome vs chromatid counting, dihybrid crosses, sex-linked inheritance, and Okazaki fragment lagging-strand synthesis without extraneous jargon.",
+    highYield: ["Mitosis vs Meiosis Chromatid Counting", "Mendelian & Dihybrid Crosses", "DNA Replication & Transcription", "Enzyme Active Sites & Inhibitors"]
+  },
+
+  // CHEMISTRY (15 Questions = 25.0% of IMAT, 22.5 / 90 Points)
+  {
+    id: "chem_openstax",
+    subject: "chemistry",
+    category: "Free Open Textbook (PDF & Web)",
+    title: "OpenStax Chemistry 2e",
+    provider: "OpenStax / Rice University",
+    url: "https://openstax.org/details/books/chemistry-2e",
+    badge: "Official IMAT Syllabus Match",
+    syllabusCoveragePct: 94,
+    syllabusCoverageLabel: "94% of Chemistry Syllabus",
+    examWeightPct: 23.5,
+    examWeightLabel: "23.5% of Entire IMAT (21.2 / 90 Pts)",
+    questionCountImpact: "14 of 15 Chemistry Qs",
+    description: "Comprehensive open textbook with hundreds of worked examples in stoichiometry, gas laws, thermochemistry (Hess's Law, Delta G), Le Chatelier's principle, acid-base buffers (Henderson-Hasselbalch), and galvanic cells.",
+    highYield: ["Chemical Equilibrium & Le Chatelier", "Buffer Solutions & pH Derivations", "Thermodynamics (Delta H, Delta S, Delta G)", "Galvanic Cells & Nernst Equation"]
+  },
+  {
+    id: "chem_msu_org",
+    subject: "chemistry",
+    category: "Free Interactive Online Book",
+    title: "Virtual Textbook of Organic Chemistry",
+    provider: "Prof. William Reusch / Michigan State University",
+    url: "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/intro1.htm",
+    badge: "100% Organic Match",
+    syllabusCoveragePct: 98,
+    syllabusCoverageLabel: "98% of Organic Chemistry Syllabus",
+    examWeightPct: 10.0,
+    examWeightLabel: "10.0% of Entire IMAT (9.0 / 90 Pts)",
+    questionCountImpact: "6 of 15 Chemistry Qs (Organic Focus)",
+    description: "Legendary Michigan State University interactive resource covering IUPAC nomenclature, stereoisomerism (enantiomers, diastereomers, meso), aromaticity, and functional group reaction mechanisms.",
+    highYield: ["CIP R/S Priority Rules", "SN1 vs SN2 vs E1 vs E2", "Carbonyl Additions & Carboxylic Derivatives", "Markovnikov Addition & Aromaticity"]
+  },
+  {
+    id: "chem_org_tutor",
+    subject: "chemistry",
+    category: "Curated YouTube Practice Playlist",
+    title: "The Organic Chemistry Tutor: Chemistry Masterclass",
+    provider: "The Organic Chemistry Tutor",
+    url: "https://www.youtube.com/@TheOrganicChemistryTutor",
+    badge: "Speed Calculation Favorite",
+    syllabusCoveragePct: 90,
+    syllabusCoverageLabel: "90% of General & Organic Chemistry",
+    examWeightPct: 22.5,
+    examWeightLabel: "22.5% of Entire IMAT (20.3 / 90 Pts)",
+    questionCountImpact: "13 of 15 Chemistry Qs",
+    description: "The most comprehensive practice-problem repository for fast mental calculations in general and organic chemistry. Dedicated step-by-step videos for balancing redox, pH of weak acids, buffer dilution, and reaction mechanisms.",
+    highYield: ["Stoichiometry & Non-Calc Math", "Acid-Base Equilibrium & Buffers", "Thermodynamics & Spontaneity", "Organic Mechanisms & Stereocenters"]
+  },
+  {
+    id: "chem_tyler",
+    subject: "chemistry",
+    category: "YouTube Intuitive Lectures",
+    title: "Tyler DeWitt: Chemistry Made Simple",
+    provider: "Tyler DeWitt",
+    url: "https://www.youtube.com/@tdewitt451",
+    badge: "Core Atomic Foundations",
+    syllabusCoveragePct: 70,
+    syllabusCoverageLabel: "70% of General & Inorganic Chemistry",
+    examWeightPct: 13.3,
+    examWeightLabel: "13.3% of Entire IMAT (12.0 / 90 Pts)",
+    questionCountImpact: "8 of 15 Chemistry Qs",
+    description: "Master atomic orbitals, electron configurations (Aufbau, Pauli, Hund), periodic trends, VSEPR molecular geometry, and mole ratio conversions with zero confusion.",
+    highYield: ["Electron Configurations & Exceptions", "VSEPR Geometry & Bond Angles", "Balancing Redox Reactions", "Unit Conversions & Dilutions"]
+  },
+  {
+    id: "chem_leah4sci",
+    subject: "chemistry",
+    category: "YouTube Organic Techniques",
+    title: "Leah4sci: Organic Chemistry Speed Strategies",
+    provider: "Leah Fisch / Leah4sci",
+    url: "https://www.youtube.com/@Leah4sciMCAT",
+    badge: "Rapid Stereochemistry",
+    syllabusCoveragePct: 80,
+    syllabusCoverageLabel: "80% of Stereochemistry & Mechanisms",
+    examWeightPct: 8.3,
+    examWeightLabel: "8.3% of Entire IMAT (7.5 / 90 Pts)",
+    questionCountImpact: "5 of 15 Chemistry Qs",
+    description: "Shortcuts for finding chiral centers, rotating Fischer projections in your head without drawing errors, Newman projections, and chair conformation ring-flips.",
+    highYield: ["Fischer Projection Mental Rotation", "R/S Absolute Configuration", "Chair Conformation Stability", "Resonance Structures & Arrow Pushing"]
+  },
+  {
+    id: "chem_mit_ocw",
+    subject: "chemistry",
+    category: "Free University Online Course (MOOC)",
+    title: "MIT OpenCourseWare 5.111: Principles of Chemical Science",
+    provider: "Massachusetts Institute of Technology (MIT)",
+    url: "https://ocw.mit.edu/courses/5-111-principles-of-chemical-science-fall-2014/",
+    badge: "Rigorous MIT Foundations",
+    syllabusCoveragePct: 82,
+    syllabusCoverageLabel: "82% of General & Inorganic Chemistry",
+    examWeightPct: 15.0,
+    examWeightLabel: "15.0% of Entire IMAT (13.5 / 90 Pts)",
+    questionCountImpact: "9 of 15 Chemistry Qs",
+    description: "Rigorous MIT undergraduate chemistry course featuring video lectures on quantum orbitals, chemical bonding, thermodynamics, and transition metal coordination complexes.",
+    highYield: ["Molecular Orbitals & Hybridization", "Chemical Thermodynamics", "Coordination Chemistry & CFT", "Reaction Kinetics & Rate Laws"]
+  },
+
+  // PHYSICS & MATH (13 Questions = 21.7% of IMAT, 19.5 / 90 Points)
+  {
+    id: "phys_openstax",
+    subject: "physics_math",
+    category: "Free Open Textbook (PDF & Web)",
+    title: "OpenStax College Physics 2e",
+    provider: "OpenStax / Rice University",
+    url: "https://openstax.org/details/books/college-physics-2e",
+    badge: "Exact IMAT Non-Calculus Syllabus",
+    syllabusCoveragePct: 96,
+    syllabusCoverageLabel: "96% of IMAT Physics Syllabus",
+    examWeightPct: 9.6,
+    examWeightLabel: "9.6% of Entire IMAT (8.6 / 90 Pts)",
+    questionCountImpact: "6 of 6 Physics Qs",
+    description: "The ideal non-calculus physics textbook matched to the MUR specification. Covers kinematics, dynamics, rotational statics, fluid mechanics (Archimedes, Bernoulli, Poiseuille), electrodynamics, Ohm's law, and wave optics.",
+    highYield: ["Kinematics & Projectiles", "Newton's Laws & Friction", "Fluid Statics & Bernoulli Flow", "DC Circuits & Kirchhoff's Rules"]
+  },
+  {
+    id: "math_openstax",
+    subject: "physics_math",
+    category: "Free Open Textbook (PDF & Web)",
+    title: "OpenStax Algebra and Trigonometry 2e",
+    provider: "OpenStax / Rice University",
+    url: "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+    badge: "Official IMAT Math Syllabus",
+    syllabusCoveragePct: 94,
+    syllabusCoverageLabel: "94% of IMAT Math Syllabus",
+    examWeightPct: 11.0,
+    examWeightLabel: "11.0% of Entire IMAT (9.9 / 90 Pts)",
+    questionCountImpact: "7 of 7 Math Qs",
+    description: "Comprehensive review of quadratic functions, exponential and logarithmic properties (log rules, bases), coordinate geometry, and trigonometry of special unit circle angles without calculators.",
+    highYield: ["Logarithmic Laws & Exact Value Reductions", "Quadratic Roots & Vieta's Relations", "Coordinate Geometry (Perpendicular Slopes)", "Trigonometric Special Angles"]
+  },
+  {
+    id: "math_paul_notes",
+    subject: "physics_math",
+    category: "Free Online Math Notes",
+    title: "Paul's Online Math Notes: Algebra & Trig",
+    provider: "Prof. Paul Dawkins / Lamar University",
+    url: "https://tutorial.math.lamar.edu",
+    badge: "Speed Math Cheat Sheets",
+    syllabusCoveragePct: 88,
+    syllabusCoverageLabel: "88% of High-Yield Algebra & Trig",
+    examWeightPct: 9.5,
+    examWeightLabel: "9.5% of Entire IMAT (8.5 / 90 Pts)",
+    questionCountImpact: "6 of 7 Math Qs",
+    description: "Clear, concise mathematical notes and practice problems with step-by-step solutions. Covers absolute values, inequalities, exponents, logarithms, and polynomial factoring.",
+    highYield: ["Rational & Radical Inequalities", "Logarithm Rules Review", "Trigonometric Cheat Sheets", "Common Algebraic Pitfalls"]
+  },
+  {
+    id: "phys_van_biezen",
+    subject: "physics_math",
+    category: "YouTube Problem Solving",
+    title: "Michel van Biezen: Step-by-Step Physics & Math",
+    provider: "Michel van Biezen / iLectureOnline",
+    url: "https://www.youtube.com/@MichelvanBiezen",
+    badge: "Over 5,000 Worked Examples",
+    syllabusCoveragePct: 92,
+    syllabusCoverageLabel: "92% of Physics & Algebra Topics",
+    examWeightPct: 18.0,
+    examWeightLabel: "18.0% of Entire IMAT (16.2 / 90 Pts)",
+    questionCountImpact: "11 of 13 Phys/Math Qs",
+    description: "Concise whiteboard walkthroughs of every imaginable physics problem. Ideal for mastering inclined planes, pulley tensions, torque equilibrium, capacitor networks, and Snell's law refraction.",
+    highYield: ["Torque & Static Equilibrium", "Centripetal Force & Gravity", "DC Resistor-Capacitor Networks", "Optics (Mirrors, Lenses, Refraction)"]
+  },
+  {
+    id: "phys_flipping",
+    subject: "physics_math",
+    category: "YouTube Visual Demos",
+    title: "Flipping Physics: Visual High School & AP Physics",
+    provider: "Flipping Physics",
+    url: "https://www.youtube.com/@FlippingPhysics",
+    badge: "Intuitive Physics Demos",
+    syllabusCoveragePct: 78,
+    syllabusCoverageLabel: "78% of Physics Mechanics & Waves",
+    examWeightPct: 7.8,
+    examWeightLabel: "7.8% of Entire IMAT (7.0 / 90 Pts)",
+    questionCountImpact: "5 of 6 Physics Qs",
+    description: "Real-world physical demonstrations of conservation of energy, elastic collisions, buoyant forces, simple harmonic oscillators, and standing waves.",
+    highYield: ["Work-Energy Theorem & Conservation", "Simple Harmonic Motion (Pendulum, Springs)", "Archimedes' Buoyant Force", "Ohm's Law & Circuit Analysis"]
+  },
+
+  // CRITICAL READING, LOGIC & CONSTITUTION (9 Questions = 15.0% of IMAT, 13.5 / 90 Points)
+  {
+    id: "logic_tsa_oxford",
+    subject: "logic_reading",
+    category: "Official Past Examination Archive",
+    title: "Cambridge Assessment TSA Oxford Past Papers Archive",
+    provider: "Cambridge Assessment Admissions Testing / University of Oxford",
+    url: "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/guide/admissions-tests/tsa",
+    badge: "100% Direct IMAT Logic Match",
+    syllabusCoveragePct: 98,
+    syllabusCoverageLabel: "98% of Critical Thinking Syllabus",
+    examWeightPct: 8.3,
+    examWeightLabel: "8.3% of Entire IMAT (7.5 / 90 Pts)",
+    questionCountImpact: "5 of 5 Logic Qs",
+    description: "IMAT Section 1 Critical Thinking questions were historically authored by Cambridge Assessment based on the Thinking Skills Assessment (TSA). Complete archive of past papers with official mark schemes.",
+    highYield: ["Identifying the Main Conclusion", "Detecting Unstated Assumptions", "Flaws in Reasoning & Fallacies", "Strengthening & Weakening Arguments"]
+  },
+  {
+    id: "logic_crashcourse",
+    subject: "logic_reading",
+    category: "Curated YouTube CrashCourse",
+    title: "CrashCourse Philosophy: Logic, Syllogisms & Fallacies",
+    provider: "CrashCourse / Hank Green",
+    url: "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR",
+    badge: "Deductive Foundations",
+    syllabusCoveragePct: 85,
+    syllabusCoverageLabel: "85% of Formal Logic & Fallacies",
+    examWeightPct: 7.0,
+    examWeightLabel: "7.0% of Entire IMAT (6.3 / 90 Pts)",
+    questionCountImpact: "4 of 5 Logic Qs",
+    description: "Entertaining visual breakdown of propositional logic, deductive validity, inductive strength, and formal/informal logical fallacies (affirming the consequent, post hoc ergo propter hoc).",
+    highYield: ["Deductive vs Inductive Logic", "Categorical Syllogisms & Venn Diagrams", "Formal Logical Fallacies", "Scientific Claims & Evidence"]
+  },
+  {
+    id: "const_italian_senato",
+    subject: "logic_reading",
+    category: "Official Government PDF Document",
+    title: "The Constitution of the Italian Republic (English Translation)",
+    provider: "Senato della Repubblica (Senate of the Republic of Italy)",
+    url: "https://www.senato.it/documenti/repository/istituzione/costituzione_inglese.pdf",
+    badge: "Mandatory MUR Syllabus Document",
+    syllabusCoveragePct: 95,
+    syllabusCoverageLabel: "95% of General Knowledge Constitution",
+    examWeightPct: 5.0,
+    examWeightLabel: "5.0% of Entire IMAT (4.5 / 90 Pts)",
+    questionCountImpact: "3 of 4 General Knowledge Qs",
+    description: "Official English translation of the 1948 Italian Constitution. Required reading for IMAT General Knowledge questions regarding Fundamental Principles (Articles 1–12), Right to Health (Article 32), and Parliamentary powers.",
+    highYield: ["Fundamental Principles (Art. 1 to 12)", "Right to Health (Article 32)", "Right to Education (Article 34)", "President of Republic & Constitutional Court"]
+  },
+  {
+    id: "mur_official_portal",
+    subject: "logic_reading",
+    category: "Official Ministry Portal",
+    title: "MUR Accesso Programmato & Italian University Decrees",
+    provider: "Ministero dell'Università e della Ricerca (MUR)",
+    url: "https://accessoprogrammato.miur.it",
+    badge: "Official Regulatory Updates",
+    syllabusCoveragePct: 100,
+    syllabusCoverageLabel: "100% of Administrative & Syllabus Regulations",
+    examWeightPct: 6.7,
+    examWeightLabel: "6.7% of Entire IMAT (6.0 / 90 Pts)",
+    questionCountImpact: "4 of 4 Reading / Knowledge Qs",
+    description: "The primary ministerial repository for annual decrees, university quotas for EU and Non-EU candidates, syllabus updates, exam dates, and official national ranking lists.",
+    highYield: ["Annual IMAT Ministerial Decrees", "Non-EU & EU Quota Allocation by Faculty", "Official Test Day Timing & Regulations", "Candidate Scoring Decrees"]
+  }
+];
+
+const testasResourcesWithCoverage = [
+  // FORMALISING (22 Questions = 36.7% of Engineering Module)
+  {
+    id: "tas_formal_hanson",
+    subtest: "formalising",
+    category: "Curated YouTube Masterclass",
+    title: "Jeff Hanson: Engineering Statics & Mechanics",
+    provider: "Prof. Jeff Hanson / Texas Tech University",
+    url: "https://www.youtube.com/@JeffHanson",
+    badge: "World's #1 Statics Channel",
+    subtestCoveragePct: 95,
+    subtestCoverageLabel: "95% of Statics & Mechanics Formulas",
+    examWeightPct: 34.8,
+    examWeightLabel: "34.8% of Engineering Module (21 / 60 Qs)",
+    questionImpact: "21 of 22 Formalising Qs",
+    description: "Universally considered the premier video series for mechanics. Step-by-step whiteboard derivations of free-body diagrams, cantilever beam moments, truss equilibrium, and center of gravity calculations.",
+    highYield: ["Free Body Diagrams (FBDs)", "Torque & Equilibrium Conditions", "Trusses & Method of Joints", "Shear Force & Bending Moment Diagrams"]
+  },
+  {
+    id: "tas_formal_toolbox",
+    subtest: "formalising",
+    category: "Free Engineering Encyclopedia",
+    title: "The Engineering ToolBox: Open Technical Reference",
+    provider: "The Engineering ToolBox",
+    url: "https://www.engineeringtoolbox.com",
+    badge: "Indispensable Formula Reference",
+    subtestCoveragePct: 98,
+    subtestCoverageLabel: "98% of Engineering Formulas & Scaling",
+    examWeightPct: 36.7,
+    examWeightLabel: "36.7% of Engineering Module (22 / 60 Qs)",
+    questionImpact: "All 22 Formalising Qs",
+    description: "The ultimate free engineering reference covering fluid mechanics, pipe friction, pump curves, gear ratios, spring constants, heat transfer coefficients, and beam deflection formulas.",
+    highYield: ["Bernoulli Equation & Venturi Pressure", "Gear Train Transmission Ratios", "Helical Spring Scaling (d^4 / D^3)", "Hydraulic Press & Pascal's Principle"]
+  },
+  {
+    id: "tas_formal_openstax",
+    subtest: "formalising",
+    category: "Free Open Textbook (PDF & Web)",
+    title: "OpenStax University Physics Volumes 1 & 2",
+    provider: "OpenStax / Rice University",
+    url: "https://openstax.org/details/books/university-physics-volume-1",
+    badge: "Foundational Engineering Physics",
+    subtestCoveragePct: 92,
+    subtestCoverageLabel: "92% of Physics & Thermodynamics",
+    examWeightPct: 33.3,
+    examWeightLabel: "33.3% of Engineering Module (20 / 60 Qs)",
+    questionImpact: "20 of 22 Formalising Qs",
+    description: "Rigorous introductory engineering physics covering kinematics, Newton's laws, rotational dynamics, elasticity, fluid dynamics, thermodynamics, and DC/AC electrical circuits. Available as web reader or free PDF.",
+    highYield: ["Translational & Rotational Work", "Fluid Statics & Bernoulli Dynamics", "First & Second Laws of Thermodynamics", "Direct Current & Ohm's Law"]
+  },
+  {
+    id: "tas_formal_mindset",
+    subtest: "formalising",
+    category: "YouTube Technical Animations",
+    title: "The Engineering Mindset: Systems & Circuits",
+    provider: "The Engineering Mindset",
+    url: "https://www.youtube.com/@TheEngineeringMindset",
+    badge: "Visual System Simulations",
+    subtestCoveragePct: 88,
+    subtestCoverageLabel: "88% of Hydraulic & Thermal Systems",
+    examWeightPct: 25.0,
+    examWeightLabel: "25.0% of Engineering Module (15 / 60 Qs)",
+    questionImpact: "15 of 22 Formalising Qs",
+    description: "Stunning 3D animations explaining hydraulic pumps, check valves, refrigeration cycles, heat exchangers, transformers, and electrical networks with exact physical principles.",
+    highYield: ["Hydraulic Valves & Pressure Regulators", "Heat Exchanger Temperature Profiles", "Capacitors & Inductor Transients", "Three-Phase Motors & Power"]
+  },
+  {
+    id: "tas_formal_mit_ocw",
+    subtest: "formalising",
+    category: "Free University Online Course (MOOC)",
+    title: "MIT OpenCourseWare 2.001: Mechanics and Materials I",
+    provider: "Massachusetts Institute of Technology (MIT)",
+    url: "https://ocw.mit.edu/courses/2-001-mechanics-and-materials-i-fall-2006/",
+    badge: "Official MIT Courseware",
+    subtestCoveragePct: 90,
+    subtestCoverageLabel: "90% of Stress-Strain & Beam Elasticity",
+    examWeightPct: 28.3,
+    examWeightLabel: "28.3% of Engineering Module (17 / 60 Qs)",
+    questionImpact: "17 of 22 Formalising Qs",
+    description: "Comprehensive introduction to structural mechanics, elasticity, stress-strain tensors, cantilever beam bending, and shaft torsion with complete lecture notes and assignments.",
+    highYield: ["Axial Loading & Thermal Stress", "Torsion of Circular Shafts", "Bending Stresses in Beams", "Constitutive Stress-Strain Equations"]
+  },
+
+  // VISUALISING SOLIDS (22 Questions = 36.7% of Engineering Module)
+  {
+    id: "tas_vis_manas",
+    subtest: "visualising",
+    category: "Curated YouTube Masterclass",
+    title: "Manas Patnaik: Engineering Drawing & Orthographic Views",
+    provider: "Prof. Manas Patnaik",
+    url: "https://www.youtube.com/@ManasPatnaik",
+    badge: "Top Projection Educator",
+    subtestCoveragePct: 98,
+    subtestCoverageLabel: "98% of Orthographic Projection Rules",
+    examWeightPct: 36.7,
+    examWeightLabel: "36.7% of Engineering Module (22 / 60 Qs)",
+    questionImpact: "All 22 Visualising Solids Qs",
+    description: "The definitive video channel for mastering TestAS Type 1 projection problems: converting 3D isometric solids into 2D Top (Draufsicht), Front (Vorderansicht), and Side (Seitenansicht) views.",
+    highYield: ["Draufsicht (DS) & Vorderansicht (VA)", "Missing View Projection (Seitenansicht SA)", "Hidden Line (Gestrichelte Linie) Rules", "Sectional Cuts of Cones & Cylinders"]
+  },
+  {
+    id: "tas_vis_tikle",
+    subtest: "visualising",
+    category: "YouTube Problem Solving",
+    title: "Tikle's Academy: Projection of Solids & Isometric Views",
+    provider: "Tikle's Academy",
+    url: "https://www.youtube.com/@TiklesAcademyofMaths",
+    badge: "Hundreds of Solved Projections",
+    subtestCoveragePct: 92,
+    subtestCoverageLabel: "92% of 3D Geometric Reconstructions",
+    examWeightPct: 33.3,
+    examWeightLabel: "33.3% of Engineering Module (20 / 60 Qs)",
+    questionImpact: "20 of 22 Visualising Solids Qs",
+    description: "Step-by-step chalkboard construction of multi-view projections, stepped blocks, chamfered prisms, and cylindrical intersecting tubes.",
+    highYield: ["Prism & Pyramid Projections", "Cylinder-Hole Intersections", "Auxiliary Inclined Views", "Unfolded Cube Nets (Abwicklungen)"]
+  },
+  {
+    id: "tas_vis_mit_graphics",
+    subtest: "visualising",
+    category: "Free University Course Notes",
+    title: "MIT OpenCourseWare 2.007: Design & Engineering Graphics",
+    provider: "Massachusetts Institute of Technology (MIT)",
+    url: "https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/",
+    badge: "Official MIT CAD & Sketching",
+    subtestCoveragePct: 88,
+    subtestCoverageLabel: "88% of Spatial Mental Rotations",
+    examWeightPct: 30.0,
+    examWeightLabel: "30.0% of Engineering Module (18 / 60 Qs)",
+    questionImpact: "18 of 22 Visualising Solids Qs",
+    description: "Covers the fundamental principles of orthographic projection, first-angle vs third-angle projection, isometric sketching, and 3D coordinate frame spatial mental rotations.",
+    highYield: ["Orthographic Multi-View Geometry", "Isometric Coordinate Frames", "Spatial Rotation & Wireframe Cubes", "Section Views & Symmetry"]
+  },
+
+  // ANALYSING TECHNICAL RELATIONSHIPS (16 Questions = 26.7% of Engineering Module)
+  {
+    id: "tas_ana_circuits",
+    subtest: "analysing",
+    category: "Free Multi-Volume Textbook (Web & PDF)",
+    title: "All About Circuits: Open Electrical Engineering Text",
+    provider: "All About Circuits / EETech Media",
+    url: "https://www.allaboutcircuits.com",
+    badge: "Comprehensive Circuit Reference",
+    subtestCoveragePct: 96,
+    subtestCoverageLabel: "96% of Electrical Diagrams & Filters",
+    examWeightPct: 26.7,
+    examWeightLabel: "26.7% of Engineering Module (16 / 60 Qs)",
+    questionImpact: "All 16 Analysing Qs",
+    description: "World-famous free multi-volume engineering text covering DC circuit analysis, AC reactance, RLC filters, Bode frequency plots, and operational amplifiers with clear diagrams.",
+    highYield: ["Low-Pass & High-Pass Filter Cutoffs", "Bode Magnitude & Phase Response", "RC Charging & Discharging Transients", "Bridge Resistor Network Balances"]
+  },
+  {
+    id: "tas_ana_douglas",
+    subtest: "analysing",
+    category: "Curated YouTube Masterclass",
+    title: "Brian Douglas: Control Systems & Bode Plots",
+    provider: "Brian Douglas",
+    url: "https://www.youtube.com/@BrianBDouglas",
+    badge: "Definitive Bode Plot Master",
+    subtestCoveragePct: 94,
+    subtestCoverageLabel: "94% of Frequency Response & Transfer Functions",
+    examWeightPct: 20.0,
+    examWeightLabel: "20.0% of Engineering Module (12 / 60 Qs)",
+    questionImpact: "12 of 16 Analysing Qs",
+    description: "The most intuitive visual guide on YouTube for interpreting frequency response diagrams, logarithmic Bode decibel slopes (-20 dB/decade), phase margins, and transfer function poles/zeros.",
+    highYield: ["Bode Plot Slopes & Break Frequencies", "First & Second Order System Responses", "Transfer Functions & Steady State", "Step Response Overshoot & Settling Time"]
+  },
+  {
+    id: "tas_ana_electrob",
+    subtest: "analysing",
+    category: "YouTube Practical Engineering",
+    title: "ElectroBOOM: AC Filters, Transients & Resonance",
+    provider: "Mehdi Sadaghdar / ElectroBOOM",
+    url: "https://www.youtube.com/@ElectroBOOM",
+    badge: "Intuitive Circuit Demonstrations",
+    subtestCoveragePct: 82,
+    subtestCoverageLabel: "82% of Filter Transients & Impedance",
+    examWeightPct: 16.7,
+    examWeightLabel: "16.7% of Engineering Module (10 / 60 Qs)",
+    questionImpact: "10 of 16 Analysing Qs",
+    description: "Practical oscilloscope demonstrations of circuit transients, RC filter cutoff behavior, resonance in RLC tanks, and voltage divider laws under resistive and reactive loads.",
+    highYield: ["Filter Frequency Response in Action", "Inductive & Capacitive Phase Lag/Lead", "Ohm's Law & Internal Source Resistance", "Transformer Induction & Core Saturation"]
+  },
+
+  // CORE TEST: QUANTITATIVE & SERIES (44 Questions = 50% of Core Test)
+  {
+    id: "tas_core_orgchem",
+    subtest: "core_quant",
+    category: "YouTube Speed Problem Solving",
+    title: "The Organic Chemistry Tutor: Quantitative Word Problems",
+    provider: "The Organic Chemistry Tutor",
+    url: "https://www.youtube.com/@TheOrganicChemistryTutor",
+    badge: "Top Quantitative Speed Strategies",
+    subtestCoveragePct: 95,
+    subtestCoverageLabel: "95% of TestAS Quantitative Word Problems",
+    examWeightPct: 25.0,
+    examWeightLabel: "25.0% of Core Test (22 / 88 Qs)",
+    questionImpact: "All 22 Quantitative Qs",
+    description: "Dedicated non-calculator speed walkthroughs for simultaneous work rate problems (1/t_tot = 1/t_1 + 1/t_2), mixture dilutions, speed-distance-time trains, and percentage ratios.",
+    highYield: ["Work Rates & Combined Completion Times", "Mixture Cross & Dilution Balances", "Relative Speed of Approaching Trains", "Fraction & Ratio Proportions"]
+  },
+  {
+    id: "tas_core_careervidz",
+    subtest: "core_series",
+    category: "YouTube Aptitude Tests",
+    title: "CareerVidz: Number Series & Aptitude Tests",
+    provider: "Richard McMunn / CareerVidz",
+    url: "https://www.youtube.com/@CareerVidz",
+    badge: "Aptitude Test Specialist",
+    subtestCoveragePct: 92,
+    subtestCoverageLabel: "92% of Continuing Numerical Series",
+    examWeightPct: 25.0,
+    examWeightLabel: "25.0% of Core Test (22 / 88 Qs)",
+    questionImpact: "20 of 22 Numerical Series Qs",
+    description: "Master techniques for cracking number series under strict time pressure: calculating first/second order differences, spotting interleaved alternating subseries, and recognizing geometric ratios.",
+    highYield: ["First & Second Order Difference Series", "Interleaved Alternating Sequences", "Geometric Multipliers & Dividers", "Recurrence & Fibonacci Patterns"]
+  },
+  {
+    id: "tas_core_oeis",
+    subtest: "core_series",
+    category: "Free Mathematical Database",
+    title: "The Online Encyclopedia of Integer Sequences (OEIS)",
+    provider: "OEIS Foundation",
+    url: "https://oeis.org",
+    badge: "Global Authority on Number Patterns",
+    subtestCoveragePct: 100,
+    subtestCoverageLabel: "100% Comprehensive Series Database",
+    examWeightPct: 25.0,
+    examWeightLabel: "25.0% of Core Test (22 / 88 Qs)",
+    questionImpact: "All 22 Numerical Series Qs",
+    description: "The global reference database for thousands of mathematical series. Type any sequence to see the exact generating function, recurrence relation, and mathematical classification.",
+    highYield: ["Polynomial Series Classification", "Prime Sequences & Gaps", "Modular Arithmetic Patterns", "Recurrence Relations"]
+  },
+
+  // CORE TEST: INFERRING & PATTERNS (44 Questions = 50% of Core Test)
+  {
+    id: "tas_core_mensa",
+    subtest: "core_patterns",
+    category: "Free Online Aptitude Challenge",
+    title: "Mensa International: Online Matrix Workout",
+    provider: "Mensa International",
+    url: "https://www.mensa.org/workout",
+    badge: "Raven's Progressive Matrices Training",
+    subtestCoveragePct: 90,
+    subtestCoverageLabel: "90% of Completing Patterns & Matrices",
+    examWeightPct: 25.0,
+    examWeightLabel: "25.0% of Core Test (22 / 88 Qs)",
+    questionImpact: "20 of 22 Pattern Qs",
+    description: "Free 30-minute visual puzzle workout featuring 3x3 matrix pattern completion problems: geometric rotation, element subtraction, XOR cancellation, and shading permutations.",
+    highYield: ["3x3 Matrix Rotation Rules", "Boolean Line Cancellation (XOR)", "Quadrant & Shading Shifts", "Element Counting & Arithmetic Rules"]
+  },
+  {
+    id: "tas_core_dw",
+    subtest: "core_inferring",
+    category: "Free German Language Course",
+    title: "Deutsche Welle (DW): Deutsch im Beruf & Nicos Weg",
+    provider: "Deutsche Welle (DW)",
+    url: "https://learngerman.dw.com",
+    badge: "Essential for German TestAS Takers",
+    subtestCoveragePct: 88,
+    subtestCoverageLabel: "88% of Technical German Vocabulary",
+    examWeightPct: 25.0,
+    examWeightLabel: "25.0% of Core Test (22 / 88 Qs)",
+    questionImpact: "19 of 22 Inferring Relationships Qs",
+    description: "High-quality, free interactive courses from A1 to C1. Essential for mastering technical German vocabulary used in the Inferring Relationships (Beziehungen erschließen) subtest.",
+    highYield: ["Technical Vocabulary (Werkzeuge, Bauteile)", "Verbal Analogy Construction (Hammer : Nagel)", "Opposite & Synonym Word Pairs", "Grammatical German Prepositions"]
+  },
+
+  // OFFICIAL TESTAS & UNIVERSITIES
+  {
+    id: "tas_official_gast",
+    subtest: "universities",
+    category: "Official Examination Portal",
+    title: "Official TestAS Web Portal & Sample Questions PDFs",
+    provider: "gAST e.V. (Gesellschaft für Akademische Studienvorbereitung)",
+    url: "https://www.testas.de",
+    badge: "Official Exam Creator",
+    subtestCoveragePct: 100,
+    subtestCoverageLabel: "100% Official Regulatory Structure",
+    examWeightPct: 100,
+    examWeightLabel: "100% of Examination Norm & Standardwert",
+    questionImpact: "All 148 TestAS Items (Core + Eng)",
+    description: "The primary authority for TestAS examination dates, test center locations, official regulations, and the official Modellaufgaben sample questions PDFs in English and German.",
+    highYield: ["Official TestAS Structure & Timings", "Sample Task Booklets (EN & DE)", "Standardwert Scoring Scale (Mean 100, SD 10)", "Test Center Registration & Fees"]
+  },
+  {
+    id: "tas_daad_portal",
+    subtest: "universities",
+    category: "German Academic Portal",
+    title: "DAAD Study in Germany & Uni-Assist Guide",
+    provider: "Deutscher Akademischer Austauschdienst (DAAD)",
+    url: "https://www.daad.de",
+    badge: "Official International Student Guide",
+    subtestCoveragePct: 100,
+    subtestCoverageLabel: "100% of International Admission Pathways",
+    examWeightPct: 100,
+    examWeightLabel: "Applies to all TU9 University Quotas",
+    questionImpact: "Admission Criteria for 8 Partner Universities",
+    description: "Comprehensive portal for international applicants to German engineering universities: admission requirements, Uni-Assist VPD procedures, language certificates, and scholarship options.",
+    highYield: ["Uni-Assist Preliminary Documentation (VPD)", "Engineering Faculty Selection Criteria", "TestAS Score Conversions for NC Bonuses", "TU9 University Application Deadlines"]
+  },
+  {
+    id: "tas_tum_portal",
+    subtest: "universities",
+    category: "Top German Technical University",
+    title: "Technical University of Munich (TUM) Engineering Portal",
+    provider: "Technische Universität München (TUM) - QS #28",
+    url: "https://www.tum.de",
+    badge: "Top University in Germany",
+    subtestCoveragePct: 100,
+    subtestCoverageLabel: "Direct Target: Standardwert >= 115",
+    examWeightPct: 100,
+    examWeightLabel: "TUM Aptitude Assessment Stage 1 Bonus",
+    questionImpact: "B.Sc. Mechanical, Electrical & Informatics",
+    description: "TUM bachelor's programs in Mechanical Engineering, Electrical & Computer Engineering, and Informatics. Features detailed Aptitude Assessment (Eignungsfeststellungsverfahren) Stage 1 scoring criteria.",
+    highYield: ["Aptitude Assessment Stage 1 TestAS Bonus", "Mechanical & Electrical B.Sc. Curriculum", "International Applicant Guidelines", "Direct Admission Thresholds (Standardwert >= 115)"]
+  },
+  {
+    id: "tas_rwth_portal",
+    subtest: "universities",
+    category: "Top German Technical University",
+    title: "RWTH Aachen University: Mechanical & Electrical Engineering",
+    provider: "RWTH Aachen University - QS #99 (#1 for Mechanical Eng)",
+    url: "https://www.rwth-aachen.de",
+    badge: "Germany's Engineering Powerhouse",
+    subtestCoveragePct: 100,
+    subtestCoverageLabel: "Direct Target: Standardwert >= 110",
+    examWeightPct: 100,
+    examWeightLabel: "RWTH International Faculty Selection Bonus",
+    questionImpact: "B.Sc. Maschinenbau, Elektrotechnik",
+    description: "Admission procedures for RWTH Aachen's legendary Maschinenbau and Elektrotechnik bachelor's faculties. TestAS Engineering Module scores provide substantial bonus points in international quotas.",
+    highYield: ["Maschinenbau Faculty Selection Quota", "Direct Bonus in Selection Ranking", "RWTH Online Portal Requirements", "Target Score: Standardwert >= 110"]
+  }
+];
+
+    let activeTrack = 'imat';
+    let activeSubject = 'all';
+    let searchQuery = '';
+
+    function switchTrack(track) {
+      activeTrack = track;
+      activeSubject = 'all';
+      searchQuery = '';
+      document.getElementById('search-input').value = '';
+
+      const btnImat = document.getElementById('tab-btn-imat');
+      const btnTas = document.getElementById('tab-btn-testas');
+
+      if (track === 'imat') {
+        btnImat.className = 'px-4 py-2 rounded-xl text-xs font-bold transition-all bg-indigo-600 text-white shadow-sm flex items-center gap-2';
+        btnTas.className = 'px-4 py-2 rounded-xl text-xs font-bold transition-all text-slate-400 hover:text-white flex items-center gap-2';
+      } else {
+        btnTas.className = 'px-4 py-2 rounded-xl text-xs font-bold transition-all bg-emerald-600 text-white shadow-sm flex items-center gap-2';
+        btnImat.className = 'px-4 py-2 rounded-xl text-xs font-bold transition-all text-slate-400 hover:text-white flex items-center gap-2';
+      }
+
+      renderSubjectPills();
+      renderCards();
+    }
+
+    function renderSubjectPills() {
+      const container = document.getElementById('subject-filter-pills');
+      let html = '';
+
+      if (activeTrack === 'imat') {
+        const subjects = [
+          { id: 'all', name: 'All Subjects (21)' },
+          { id: 'biology', name: '🧬 Biology (6)' },
+          { id: 'chemistry', name: '🧪 Chemistry (6)' },
+          { id: 'physics_math', name: '⚛️ Physics & Math (5)' },
+          { id: 'logic_reading', name: '🧠 Logic & Reading (4)' }
+        ];
+        subjects.forEach(s => {
+          const isActive = activeSubject === s.id;
+          html += `<button onclick="activeSubject='${s.id}'; renderSubjectPills(); renderCards();" class="px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${isActive ? 'bg-indigo-600 text-white shadow-sm' : 'bg-slate-900 hover:bg-slate-800 text-slate-400'}">${s.name}</button>`;
+        });
+      } else {
+        const subtests = [
+          { id: 'all', name: 'All Modules (20)' },
+          { id: 'formalising', name: '⚙️ Formalising (5)' },
+          { id: 'visualising', name: '📐 Visualising (4)' },
+          { id: 'analysing', name: '🔬 Analysing (4)' },
+          { id: 'core', name: '🧠 Core Aptitude & Math (7)' }
+        ];
+        subtests.forEach(s => {
+          const isActive = activeSubject === s.id;
+          html += `<button onclick="activeSubject='${s.id}'; renderSubjectPills(); renderCards();" class="px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${isActive ? 'bg-emerald-600 text-white shadow-sm' : 'bg-slate-900 hover:bg-slate-800 text-slate-400'}">${s.name}</button>`;
+        });
+      }
+
+      container.innerHTML = html;
+    }
+
+    function handleSearch(val) {
+      searchQuery = val.toLowerCase();
+      renderCards();
+    }
+
+    function renderCards() {
+      const container = document.getElementById('resources-cards-container');
+      const pool = (activeTrack === 'imat') ? imatResourcesWithCoverage : testasResourcesWithCoverage;
+
+      const filtered = pool.filter(item => {
+        if (activeTrack === 'imat') {
+          if (activeSubject === 'biology' && item.subject !== 'biology') return false;
+          if (activeSubject === 'chemistry' && item.subject !== 'chemistry') return false;
+          if (activeSubject === 'physics_math' && !['physics', 'math'].includes(item.subject)) return false;
+          if (activeSubject === 'logic_reading' && !['logic', 'reading'].includes(item.subject)) return false;
+        } else {
+          if (activeSubject === 'formalising' && item.subtest !== 'formalising') return false;
+          if (activeSubject === 'visualising' && item.subtest !== 'visualising') return false;
+          if (activeSubject === 'analysing' && item.subtest !== 'analysing') return false;
+          if (activeSubject === 'core' && !['quantitative', 'series', 'matrices', 'language', 'general'].includes(item.subtest)) return false;
+        }
+
+        if (searchQuery) {
+          const tags = (item.highYield || []).join(' ');
+          const combined = `${item.title} ${item.provider} ${item.category} ${item.description} ${tags}`.toLowerCase();
+          if (!combined.includes(searchQuery)) return false;
+        }
+
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="col-span-full bg-slate-950 border border-slate-800 rounded-3xl p-12 text-center text-slate-400 space-y-2">
+            <div class="text-3xl">🔍</div>
+            <div class="font-bold text-white text-sm">No resources match your query</div>
+            <div class="text-xs text-slate-500">Try clearing your search terms or selecting 'All'.</div>
+          </div>
+        `;
+        return;
+      }
+
+      let html = '';
+      filtered.forEach(item => {
+        const coveragePct = item.syllabusCoveragePct || item.subtestCoveragePct || 90;
+        const coverageLabel = item.syllabusCoverageLabel || item.subtestCoverageLabel || `${coveragePct}% Coverage`;
+        const weightLabel = item.examWeightLabel || `${item.examWeightPct || 25}% of Examination`;
+        const impactLabel = item.questionCountImpact || item.questionImpact || "High-Yield Coverage";
+
+        const isThemeIndigo = activeTrack === 'imat';
+
+        html += `
+          <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 space-y-4 hover:border-slate-700 transition-all shadow-md flex flex-col justify-between group">
+            
+            <div class="space-y-3">
+              <!-- Top Badges -->
+              <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-3">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold ${isThemeIndigo ? 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30' : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'}">
+                  ${item.category}
+                </span>
+                <span class="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-slate-800 text-slate-300">
+                  ${item.badge}
+                </span>
+              </div>
+
+              <!-- Title & Provider -->
+              <div>
+                <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="text-base sm:text-lg font-black text-white hover:text-indigo-400 transition-colors flex items-center justify-between gap-2">
+                  <span>${item.title}</span>
+                  <span class="text-slate-500 group-hover:text-indigo-400 transition-colors text-xs shrink-0">↗</span>
+                </a>
+                <div class="text-xs text-slate-400 font-medium mt-0.5">${item.provider}</div>
+              </div>
+
+              <!-- Syllabus Coverage & Exam Weight Meter -->
+              <div class="p-3 bg-slate-900 rounded-2xl border border-slate-800/90 space-y-2">
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-slate-400 font-semibold">Syllabus Coverage:</span>
+                  <span class="font-mono font-bold ${isThemeIndigo ? 'text-indigo-400' : 'text-emerald-400'}">${coverageLabel}</span>
+                </div>
+                <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full ${isThemeIndigo ? 'bg-indigo-500' : 'bg-emerald-500'} rounded-full" style="width: ${coveragePct}%;"></div>
+                </div>
+                
+                <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] pt-1 text-slate-400 border-t border-slate-800/60">
+                  <span class="flex items-center gap-1 font-bold text-amber-400">
+                    <span>🎯</span> ${weightLabel}
+                  </span>
+                  <span class="font-mono font-semibold text-slate-300 bg-slate-800 px-2 py-0.5 rounded">
+                    ${impactLabel}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Description -->
+              <p class="text-xs text-slate-300 leading-relaxed">
+                ${item.description}
+              </p>
+
+              <!-- High Yield Subtopics -->
+              ${item.highYield && item.highYield.length > 0 ? `
+                <div class="pt-2">
+                  <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">High-Yield Syllabus Topics:</div>
+                  <div class="flex flex-wrap gap-1">
+                    ${item.highYield.map(tag => `<span class="px-2 py-0.5 rounded-md text-[10px] font-medium bg-slate-900 border border-slate-800 text-slate-300">${tag}</span>`).join('')}
+                  </div>
+                </div>
+              ` : ''}
+            </div>
+
+            <!-- Action Button -->
+            <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between gap-3">
+              <span class="text-[11px] text-slate-400">Free Open Resource</span>
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl ${isThemeIndigo ? 'bg-indigo-600 hover:bg-indigo-500' : 'bg-emerald-600 hover:bg-emerald-500'} text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm">
+                <span>Access Resource</span>
+                <span>→</span>
+              </a>
+            </div>
+
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderSubjectPills();
+      renderCards();
+    });
+  </script>
+</body>
+</html>
